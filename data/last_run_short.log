@@ -1,46 +1,16 @@
-[07:05:52] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: 
-[07:05:52] Gemini error (gemini-2.5-flash): gemini-2.5-flash: HTTP 404 {
-  "error": {
-    "code": 404,
-    "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flas
-[07:05:52] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 429 {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head
-[07:06:12] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: 
-[07:06:12] Gemini error (gemini-2.5-flash): gemini-2.5-flash: HTTP 404 {
-  "error": {
-    "code": 404,
-    "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flas
-[07:06:12] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 429 {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head
-[07:06:53] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: 
-[07:06:53] Gemini error (gemini-2.5-flash): gemini-2.5-flash: HTTP 404 {
-  "error": {
-    "code": 404,
-    "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flas
-[07:06:53] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 429 {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head
-[07:07:53] Search-grounded ideas failed, using plain mode: Gemini failed: gemini-flash-lite-latest: HTTP 429 {
+[07:25:01] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[07:25:01] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[07:25:01] Gemini error (gemini-3.8-flash-lite): gemini-3.8-flash-lite: HTTP 404 {   "error": {     "code": 404,     "message": "models/gemini-3.8-flash-lite is not found for API version v1beta, or is not supp
+[07:25:01] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. 
+[07:25:01] Search-grounded ideas failed, using plain mode: Gemini failed: gemini-flash-lite-latest: HTTP 429 {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your p
-[07:09:40] Topic chosen: How SpaceX Caught a 20-Story Rocket Booster Mid-Air
-[07:12:16] Script ready: SpaceX Mechazilla ne Rocket kaise pakda? | Mid-Air Booster Catch (6 scenes)
-[07:12:16] Voice: {'voice': 'ur-PK-UzmaNeural', 'rate': '+4%', 'pitch': '+3Hz'}
-[07:13:00] 17 clips rendered
-[07:13:41] Video ready: 20261020_0712_short.mp4 (40.0s)
-[07:13:41] YouTube secrets missing - video sirf GitHub artifact mein save hogi
+[07:26:30] Gemini OK (gemini-3.8-flash)
+[07:26:30] Topic chosen: James Webb Telescope Discovered "Impossible" Giant Galaxies Breaking Modern Physics
+[07:28:15] Gemini OK (gemini-3.8-flash)
+[07:28:15] Script ready: James Webb Ne Physics Ke Niyam Tod Diye? Impossible Galaxies Found (6 scenes)
+[07:28:15] Voice: {'voice': 'ur-IN-GulNeural', 'rate': '+4%', 'pitch': '-3Hz'}
+[07:28:46] 16 clips rendered
+[07:29:09] Video ready: 20261020_0728_short.mp4 (36.8s)
+[07:29:09] YouTube secrets missing - video sirf GitHub artifact mein save hogi
