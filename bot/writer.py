@@ -210,7 +210,7 @@ Return ONLY JSON:
 
 
 def _target_words(cfg, kind):
-    return int(cfg["shorts"]["target_seconds"] * 2.4) if kind == "short" else int(cfg["long"]["target_minutes"] * 145)
+    return int(cfg["shorts"]["target_seconds"] * 3.2) if kind == "short" else int(cfg["long"]["target_minutes"] * 190)
 
 
 def _words(data):
