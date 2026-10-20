@@ -1,14 +1,23 @@
-[08:46:44] Channel: Future Ki Duniya (future, mode=facts)
-[08:46:45] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:46:45] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[08:46:47] Gemini OK (gemini-flash-lite-latest)
-[08:46:47] Topic chosen: Neuralink First Patient Plays Video Games Using Only Mind Control
-[08:46:47] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:46:47] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[08:46:50] Gemini OK (gemini-flash-lite-latest)
-[08:46:50] Script ready: Neuralink Patient Plays Video Games With Mind | Sach Kya Hai (6 scenes)
-[08:46:50] Voice: {'voice': 'ur-IN-GulNeural', 'rate': '+10%', 'pitch': '+0Hz'}
-[08:47:15] 11 clips rendered
-[08:49:34] Freesound CC0 music: Electronic Minute 415 - Suspense Music VCV-Rack.wav (id 647695)
-[08:49:49] Video ready: 20261020_0847_future_short.mp4 (23.2s)
-[08:49:49] YouTube secrets missing - video sirf GitHub artifact mein save hogi
+[08:52:05] Channel: Future Ki Duniya (future, mode=facts)
+[08:52:08] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:52:08] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[08:52:34] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:52:34] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[08:53:03] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:53:03] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[08:53:11] Gemini OK (gemini-flash-lite-latest)
+[08:53:11] Topic chosen: China Reusable Spaceplane Mystery Payload Landing in the Gobi Desert
+[08:53:11] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[08:53:11] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[08:53:36] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[08:53:36] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[08:54:01] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[08:54:01] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[08:54:05] Gemini OK (gemini-flash-lite-latest)
+[08:54:05] Script length: 103 words
+[08:54:05] Script ready: China Spaceplane Secret Landing vs USA X-37B (7 scenes)
+[08:54:05] Voice: {'voice': 'ur-PK-UzmaNeural', 'rate': '+9%', 'pitch': '+1Hz'}
+[08:54:33] 14 clips rendered
+[08:54:48] Freesound CC0 music: Ambient Music (id 494318)
+[08:55:10] Video ready: 20261020_0854_future_short.mp4 (29.1s)
+[08:55:10] YouTube secrets missing - video sirf GitHub artifact mein save hogi
