@@ -74,8 +74,7 @@ def _nasa_videos(q, orient, limit=6):
         d = (it.get("data") or [{}])[0]
         files = _nasa_assets(it.get("href", ""))
         mp4 = [f for f in files if f.endswith(".mp4")]
-        pick = next((f for f in mp4 if "~medium" in f), None) or next((f for f in mp4 if "~mobile" in f), None) \
-            or next((f for f in mp4 if "~orig" in f), None)
+        pick = next((f for f in mp4 if "~medium" in f), None) or next((f for f in mp4 if "~mobile" in f), None)
         if pick:
             res.append({"id": f"nasa-v-{d.get('nasa_id', pick)}", "url": pick, "kind": "video", "dur": 20,
                         "desc": f"{d.get('title', '')} {' '.join(d.get('keywords') or [])}"})
@@ -166,10 +165,20 @@ def search(cfg, keywords, orient, used, need=3):
     return found
 
 
+MAX_BYTES = 70 * 1024 * 1024   # skip huge files (some NASA originals are several GB)
+
+
 def download(item, path):
-    with requests.get(item["url"], headers=UA, stream=True, timeout=120) as r:
+    with requests.get(item["url"], headers=UA, stream=True, timeout=(15, 60)) as r:
         r.raise_for_status()
+        size = int(r.headers.get("content-length") or 0)
+        if size > MAX_BYTES:
+            raise RuntimeError(f"file too big ({size // 1_000_000} MB)")
+        got = 0
         with open(path, "wb") as f:
             for chunk in r.iter_content(1 << 20):
+                got += len(chunk)
+                if got > MAX_BYTES:
+                    raise RuntimeError("file too big")
                 f.write(chunk)
     return path

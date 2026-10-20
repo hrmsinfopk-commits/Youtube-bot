@@ -156,7 +156,7 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
             if i in cache:
                 media.append(cache[i])
                 continue
-            need = 3                       # enough different clips so no shot repeats inside a scene
+            need = 3 if kind == "short" else 2   # long videos have many scenes; 2 clips each is plenty
             gk = script.get("global_keywords", [])
             items = footage.search(cfg, sc["keywords"] + rng.sample(gk, min(2, len(gk))), orient, used, need=need)
             if not items:
@@ -178,6 +178,7 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
             if not got:
                 raise RuntimeError("Koi footage nahi mili - PEXELS_API_KEY / PIXABAY_API_KEY check karein")
             media.append(got)
+        log(f"Footage ready for {len(media)} scenes")
         # first scenes may have been empty and filled later: none left empty here
 
     scene_sounds, ambience = [None] * len(script["scenes"]), None

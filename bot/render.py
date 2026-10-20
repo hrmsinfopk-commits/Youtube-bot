@@ -45,7 +45,7 @@ def _clip_filter(W, H, seg, rng, grade=None):
 
 
 def make_clip(src, kind, seg, W, H, out, rng, grade=None):
-    enc = ["-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS),
+    enc = ["-an", "-c:v", "libx264", "-preset", "ultrafast", "-crf", "18", "-r", str(FPS),
            "-pix_fmt", "yuv420p", str(out)]
     if kind == "photo":
         frames = int(seg * FPS) + 1
@@ -284,6 +284,7 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
             remaining -= seg
             k += 1
     log(f"{len(clips)} clips rendered")
+    log("Final render started")
 
     lst = work / "clips.txt"
     lst.write_text("".join(f"file '{c.resolve()}'\n" for c in clips))
@@ -322,7 +323,7 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
     hi = build_ass(kind, cfg, scenes, timings, ass, rng, hook_text, [v[2] if len(v) > 2 else [] for v in voice])
 
     chain = []
-    if punches:
+    if punches and kind == "short":   # zoompan over a whole long video is far too slow
         z = "+".join(f"between(it\\,{p:.2f}\\,{p + 0.4:.2f})*(1-(it-{p:.2f})/0.4)" for p in punches[:12])
         chain.append(f"zoompan=z='1+{0.05 if story else 0.08}*({z})':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
                      f":d=1:s={W}x{H}:fps={FPS}")
@@ -343,7 +344,7 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
         fc = f"[0:v]{','.join(chain)},"
     fc += f"fade=t=in:st=0:d=0.2,fade=t=out:st={max(total - 0.6, 0):.2f}:d=0.6[v]"
     run(["ffmpeg", "-y", "-v", "error"] + inputs + ["-filter_complex", fc,
-         "-map", "[v]", "-map", "1:a", "-c:v", "libx264", "-preset", "fast", "-crf", "22",
+         "-map", "[v]", "-map", "1:a", "-c:v", "libx264", "-preset", "fast" if kind == "short" else "veryfast", "-crf", "22",
          "-maxrate", "8M" if kind == "short" else "6M", "-bufsize", "16M",   # keeps files small (grain!)
          "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart",
          "-t", f"{total:.2f}", str(out_path)])

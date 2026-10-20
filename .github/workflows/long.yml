@@ -45,7 +45,11 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
           YT_REFRESH_TOKEN_KAHANI: ${{ secrets.YT_REFRESH_TOKEN_KAHANI }}
-        run: python -m bot.main --channel future --type long 2>&1 | python scripts/redact.py data/last_run_future_long.log
+        run: |
+          ARGS=""
+          # trigger file mein 'test' likha ho to video banegi magar upload nahi hogi
+          if [ "${{ github.event_name }}" = "push" ] && grep -qi test .github/trigger-long.txt; then ARGS="--no-upload"; fi
+          python -m bot.main --channel future --type long $ARGS 2>&1 | python scripts/redact.py data/last_run_future_long.log
 
       - name: Save video for download
         if: always()
