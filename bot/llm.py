@@ -28,7 +28,8 @@ def _call(model, prompt, json_mode, search, temperature):
     return "".join(p.get("text", "") for p in parts)
 
 
-DEAD = set()  # models that returned 404 (retired) - skipped for the rest of the run
+DEAD = set()  # models that are retired or out of daily quota - skipped for the rest of the run
+HITS = {}     # how often a model said "quota exceeded" (per-minute limits clear after ~1 minute)
 
 
 def ask(cfg, prompt, json_mode=False, search=False, temperature=1.0, attempts=4):
@@ -50,8 +51,12 @@ def ask(cfg, prompt, json_mode=False, search=False, temperature=1.0, attempts=4)
             except Exception as e:  # noqa: BLE001
                 last = e
                 msg = str(e)
-                if "HTTP 404" in msg or ("HTTP 429" in msg and "quota" in msg.lower()):
-                    DEAD.add(model)   # retired, or today's free quota used up -> skip for this run
+                if "HTTP 404" in msg:
+                    DEAD.add(model)   # retired model
+                elif "HTTP 429" in msg and "quota" in msg.lower():
+                    HITS[model] = HITS.get(model, 0) + 1
+                    if HITS[model] >= 3:   # still over quota after waiting ~1 min twice -> daily limit, skip it
+                        DEAD.add(model)
                 log(f"Gemini error ({model}): {msg[:160].replace(chr(10), ' ')}")
         if attempt < attempts - 1:
             time.sleep(25)  # busy (503) / per-minute limit (429) usually clears quickly
