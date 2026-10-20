@@ -29,6 +29,13 @@ visual:
   shot_seconds: [3.5, 5.5]            # mahauli shots, lekin video ruki hui na lage
   grain: 5                            # halka film grain
   progress_bar: true
+  # Har scene ki apni AI tasveer (Pollinations, free). Na bane to stock footage use hoti hai.
+  images: true
+  art_style: >-
+    dark cinematic horror film still, realistic, South Asian setting, muted desaturated colors, deep shadows,
+    single dim warm light source, cold blue moonlight, volumetric fog, 35mm film grain, shallow depth of field,
+    eerie, unsettling, highly detailed
+  sound_design: true                  # Freesound CC0: kahani ka mahaul (barish/hawa) + scene ke sound effects
 
 # awaaz: dheemi, gehri, halki goonj; har jumle ke baad saans
 voice_fx: "horror"
@@ -55,7 +62,8 @@ voices:
     female: ["ur-PK-UzmaNeural", "ur-IN-GulNeural"]
 
 footage:
-  music_volume: 0.26
+  music_volume: 0.22
+  ambience_volume: 0.22
   sfx_volume: 0.7
   # Kahani ke har scene ki footage sirf in mahauli cheezon se dhoondi jati hai
   vocabulary: ["dark corridor", "abandoned house", "abandoned building", "old door", "door opening", "dark room",

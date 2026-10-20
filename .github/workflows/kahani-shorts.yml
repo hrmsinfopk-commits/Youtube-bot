@@ -2,9 +2,8 @@ name: Kahani Shorts
 
 on:
   schedule:
-    # UTC time. Pakistan time = UTC + 5  ->  9:30 PM aur 11:30 PM (kahaniyan raat ko zyada chalti hain)
+    # UTC time. Pakistan time = UTC + 5  ->  9:30 PM (roz 1 kahani, taake bade Gemini model ki limit kahani ke liye bache)
     - cron: "30 16 * * *"
-    - cron: "30 18 * * *"
   workflow_dispatch: {}        # "Run workflow" button se kabhi bhi chala sakte hain
   push:
     paths: [".github/trigger-kahani-short.txt"]   # is file ko badalne se bhi bot chalta hai
@@ -40,6 +39,7 @@ jobs:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           FREESOUND_API_KEY: ${{ secrets.FREESOUND_API_KEY }}
+          POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}

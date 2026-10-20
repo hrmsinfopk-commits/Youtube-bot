@@ -5,7 +5,7 @@ import random
 import shutil
 import time
 
-from . import footage, render, upload, voice, writer
+from . import audiofx, footage, images, render, upload, voice, writer
 from .common import CHANNEL, OUT, WORK, load_config, load_history, log, run, save_history
 
 
@@ -114,7 +114,21 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
         orient = "portrait" if kind == "short" else "landscape"
         used = set(history["used_media"])
         media, cache = [], {}
+        vis = cfg.get("visual", {})
+        if vis.get("images"):   # one original AI picture per scene, same art style for the whole video
+            iw, ih = (768, 1344) if kind == "short" else (1344, 768)
+            seed = rng.randint(1, 10**7)
+            made = 0
+            for i, sc in enumerate(script["scenes"]):
+                p = work / "media" / f"img_{i:03d}.jpg"
+                if sc.get("image") and images.generate(sc["image"], vis.get("art_style", ""), iw, ih, p, seed + i):
+                    cache[i] = [(p, "photo")]
+                    made += 1
+            log(f"AI images: {made}/{len(script['scenes'])}")
         for i, sc in enumerate(script["scenes"]):
+            if i in cache:
+                media.append(cache[i])
+                continue
             need = 3                       # enough different clips so no shot repeats inside a scene
             gk = script.get("global_keywords", [])
             items = footage.search(cfg, sc["keywords"] + rng.sample(gk, min(2, len(gk))), orient, used, need=need)
@@ -137,13 +151,21 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
             if not got:
                 raise RuntimeError("Koi footage nahi mili - PEXELS_API_KEY / PIXABAY_API_KEY check karein")
             media.append(got)
-            cache[i] = got
         # first scenes may have been empty and filled later: none left empty here
+
+    scene_sounds, ambience = [None] * len(script["scenes"]), None
+    if not offline and cfg.get("visual", {}).get("sound_design"):
+        for i, sc in enumerate(script["scenes"]):
+            if sc.get("sound"):
+                scene_sounds[i] = audiofx.freesound_sfx(work / f"sfx_{i:03d}.wav", sc["sound"], max_dur=6)
+        if script.get("ambience"):
+            ambience = audiofx.freesound_sfx(work / "ambience.wav", script["ambience"], max_dur=90, min_dur=8)
 
     slug = time.strftime("%Y%m%d_%H%M") + f"_{CHANNEL['id']}_{kind}"
     video = OUT / f"{slug}.mp4"
     timings, total = render.assemble(kind, cfg, script["scenes"], voices, media, work, video, rng,
-                                     mood=script.get("mood", "suspense"), hook_text=script.get("hook_text", ""))
+                                     mood=script.get("mood", "suspense"), hook_text=script.get("hook_text", ""),
+                                     scene_sounds=scene_sounds, ambience=ambience)
 
     thumb = None
     if kind == "long":

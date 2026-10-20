@@ -133,6 +133,12 @@ Rules:
 For every scene pick 3 stock-footage keywords ONLY from this list (they return proper dark, atmospheric footage):
 {", ".join(cfg.get("footage", {}).get("vocabulary", [])) or "dark corridor, abandoned house, foggy forest, flickering light, rain window, old door, night road, candle, shadow"}
 Pick what best matches what the listener is imagining in that line. Scene 1 = the most chilling one.
+For every scene also write "image": one English sentence describing exactly what the viewer should SEE in that moment
+(setting, light, objects, the character from behind/in shadow, camera angle) for an AI illustration. Rules for "image": always an ORIGINAL scene,
+no real or famous people, no known film/game/cartoon characters, no brands or logos, no written text, no gore. Keep the same main character
+description (clothes, age) in every image so the story looks consistent.
+For every scene also set "sound": a 1-2 word English sound effect that happens in that line if any (e.g. "door knock", "footsteps", "radio static",
+"whisper", "glass break", "thunder"), else "".
 For every scene also set "pace" (fast/normal/slow) and "reveal" (true only for the 1-2 biggest scare/twist moments).
 
 Return ONLY JSON:
@@ -146,8 +152,9 @@ Return ONLY JSON:
  "tags": ["15 search tags mixing English and Roman Urdu/Hindi, e.g. horror story urdu, bhoot ki kahani"],
  "hashtags": ["#3to5", "#hashtags"],
  "global_keywords": ["4-6 atmospheric English stock keywords for the whole story"],
+ "ambience": "1-3 word English background ambience for the whole story, e.g. rain night, wind howling, basement hum, crickets night",
  "scenes": [
-   {{"text": "narration in the narration language/script", "caption": "same in Roman {'Urdu' if lang != 'hindi' else 'Hindi'} (Latin letters)", "keywords": ["specific", "medium", "general"], "pace": "normal", "reveal": false, "chapter": ""}}
+   {{"text": "narration in the narration language/script", "caption": "same in Roman {'Urdu' if lang != 'hindi' else 'Hindi'} (Latin letters)", "keywords": ["specific", "medium", "general"], "image": "what we see", "sound": "", "pace": "normal", "reveal": false, "chapter": ""}}
  ]
 }}"""
 
@@ -156,7 +163,8 @@ def write_script(cfg, topic, kind, style, latest_long_url=None):
     ch = cfg["channel"]
     lang = ch["language"]
     if ch.get("mode") == "stories":
-        return _finish(_ask_script(cfg, _story_prompt(cfg, topic, kind, style), kind, 1.1), topic, style)
+        draft = _ask_script(cfg, _story_prompt(cfg, topic, kind, style), kind, 1.1)
+        return _finish(_edit_story(cfg, draft, kind), topic, style)
     if kind == "short":
         secs = cfg["shorts"]["target_seconds"]
         length = f"about {int(secs * _wps(cfg))} spoken words total ({secs} seconds), 6-9 scenes"
@@ -201,6 +209,12 @@ Keywords must be literal visual subjects that stock sites have (rocket, robot, a
 NOT abstract words from the sentence (avoid: heavy, success, cheap, time, money, tower, second). Every keyword must clearly relate to the video topic.
 Avoid brand names and real people in keywords. For real events prefer REAL footage words (launch, satellite, earth from space, control room)
 over sci-fi words (alien, spaceship, futuristic city) so viewers are not misled.
+For every scene also write "image": one English sentence describing exactly what the viewer should SEE in that moment
+(realistic, accurate to the facts, no fantasy for real events) for an AI illustration. Rules for "image": always an ORIGINAL scene,
+no real or famous people, no known film/game/cartoon characters, no brands or logos, no written text, no gore. Keep the same main character
+description (clothes, age) in every image so the story looks consistent.
+For every scene also set "sound": a 1-2 word English sound effect that happens in that line if any (e.g. "door knock", "footsteps", "radio static",
+"whisper", "glass break", "thunder"), else "".
 Scene 1 keywords must be the single most visually stunning, dramatic shot for this topic (the first second decides if people stay).
 
 For every scene also set:
@@ -219,10 +233,35 @@ Return ONLY JSON:
  "hashtags": ["#3to5", "#hashtags"],
  "global_keywords": ["4-6 general English stock keywords that fit the WHOLE topic visually, e.g. rocket, space, astronaut, earth from space"],
  "scenes": [
-   {{"text": "narration for this scene in the narration language/script", "caption": "same narration in Roman {'Urdu' if lang != 'hindi' else 'Hindi'} (Latin letters)", "keywords": ["specific", "medium", "general"], "pace": "normal", "reveal": false, "chapter": ""}}
+   {{"text": "narration for this scene in the narration language/script", "caption": "same narration in Roman {'Urdu' if lang != 'hindi' else 'Hindi'} (Latin letters)", "keywords": ["specific", "medium", "general"], "image": "what we see", "sound": "", "pace": "normal", "reveal": false, "chapter": ""}}
  ]
 }}"""
     return _finish(_ask_script(cfg, prompt, kind, 1.05), topic, style)
+
+
+def _edit_story(cfg, draft, kind):
+    """Second pass: a harsh editor rewrites the draft to be scarier, more adult and more specific."""
+    import json as _json
+    prompt = f"""You are a harsh, experienced editor of a hit Urdu horror YouTube channel for ADULT listeners.
+Here is a draft script as JSON:
+{_json.dumps(draft, ensure_ascii=False)}
+
+Rewrite it to be genuinely creepy and gripping:
+- Cut anything childish, generic or cliche (no 'bhoot ne kaha bhaago', no cartoonish villains, no explaining the twist).
+- Make the fear personal and specific: real places in an ordinary life, small wrong details, believable reactions.
+- Sharpen the final line so the twist lands like a cold shock in one short sentence.
+- Keep the same premise, roughly the same length ({_target_words(cfg, kind)} words), the same JSON structure and fields,
+  keep "caption" as the Roman Urdu version of "text", keep all rules for keywords, "image" and "sound".
+- 100% original, fictional names and places, no real people, no gore.
+Return ONLY the improved JSON."""
+    try:
+        better = ask(cfg, prompt, json_mode=True, temperature=0.9)
+        if len([sc for sc in better.get("scenes", []) if sc.get("text")]) >= 3 and _words(better) >= 0.7 * _words(draft):
+            log(f"Story edited ({_words(draft)} -> {_words(better)} words)")
+            return better
+    except Exception as e:  # noqa: BLE001
+        log("Editor pass failed, using draft:", str(e)[:120])
+    return draft
 
 
 def _target_words(cfg, kind):
@@ -263,11 +302,14 @@ def _finish(data, topic, style):
         kws = s.get("keywords") or []
         s["keywords"] = [k for k in kws if isinstance(k, str) and k.strip()] or [topic]
         s["pace"] = s.get("pace") if s.get("pace") in ("fast", "normal", "slow") else "normal"
+        s["image"] = str(s.get("image") or "").strip()
+        s["sound"] = str(s.get("sound") or "").strip()
         s["reveal"] = bool(s.get("reveal")) and s is not scenes[0]
     g = [k for k in (data.get("global_keywords") or []) if isinstance(k, str) and k.strip()]
     data["global_keywords"] = g or [topic]
     data["scenes"] = scenes
     data["mood"] = str(data.get("mood", "suspense")).strip().lower()
+    data["ambience"] = str(data.get("ambience") or "").strip()
     data["hook_text"] = " ".join(str(data.get("hook_text") or data.get("thumbnail_text") or "").split()[:4])
     g = str(data.get("narrator_gender", "")).lower()
     data["narrator_gender"] = g if g in ("male", "female") else None

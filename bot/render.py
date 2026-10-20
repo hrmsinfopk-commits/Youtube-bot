@@ -49,9 +49,17 @@ def make_clip(src, kind, seg, W, H, out, rng, grade=None):
            "-pix_fmt", "yuv420p", str(out)]
     if kind == "photo":
         frames = int(seg * FPS) + 1
-        zs = rng.uniform(0.0006, 0.0012)
+        zs = rng.uniform(0.0005, 0.0010)
+        mode = rng.choice(["in", "out", "pan"])
+        if mode == "in":
+            zexpr, xexpr = f"min(zoom+{zs:.5f},1.25)", "iw/2-(iw/zoom/2)"
+        elif mode == "out":
+            zexpr, xexpr = f"if(eq(on,0),1.2,max(zoom-{zs:.5f},1.0))", "iw/2-(iw/zoom/2)"
+        else:
+            zexpr = "1.15"
+            xexpr = f"(iw-iw/zoom)*on/{frames}" if rng.random() < 0.5 else f"(iw-iw/zoom)*(1-on/{frames})"
         vf = (f"scale={W*2}:{H*2}:force_original_aspect_ratio=increase,crop={W*2}:{H*2},"
-              f"zoompan=z='min(zoom+{zs:.5f},1.25)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+              f"zoompan=z='{zexpr}':x='{xexpr}':y='ih/2-(ih/zoom/2)'"
               f":d={frames}:s={W}x{H}:fps={FPS},setsar=1"
               + (",eq=saturation=0.55:contrast=1.12:brightness=-0.07,vignette=PI/4" if grade == "dark" else "")
               + ",format=yuv420p")
@@ -242,7 +250,8 @@ def build_audio(voice, gaps, work, total, cfg, rng, mood="suspense", sfx_events=
 
 
 # ---------------------------------------------------------------- main assembly
-def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspense", hook_text=""):
+def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspense", hook_text="",
+             scene_sounds=None, ambience=None):
     """scenes: list; voice: [(wav, secs, word_times)]; media: per-scene list of (path, kind)."""
     W, H = SIZES[kind]
     vis = cfg.get("visual", {})
@@ -303,6 +312,11 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
                 punches.append(t0)
             elif kind == "short" or sc.get("chapter"):
                 events.append((max(0, t0 - 0.2), "whoosh"))
+    for i, ((t0, _), snd) in enumerate(zip(timings, scene_sounds or [])):
+        if snd:
+            events.append((t0 + 0.15, "file", snd, 0.55))
+    if ambience:
+        events.append((0.0, "ambience", ambience, cfg.get("footage", {}).get("ambience_volume", 0.22)))
     audio = build_audio(voice, gaps, work, total, cfg, rng, mood, events)
     ass = work / "captions.ass"
     hi = build_ass(kind, cfg, scenes, timings, ass, rng, hook_text, [v[2] if len(v) > 2 else [] for v in voice])

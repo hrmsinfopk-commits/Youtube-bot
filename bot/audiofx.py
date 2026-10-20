@@ -169,6 +169,44 @@ def freesound_music(path, seconds, mood):
         return None
 
 
+def freesound_sfx(path, query, max_dur=8, min_dur=0.3):
+    """CC0 sound effect / ambience from Freesound. Returns a WAV path or None."""
+    key = secret("FREESOUND_API_KEY")
+    if not key or not query:
+        return None
+    params = {"query": query, "page_size": 20, "sort": "rating_desc",
+              "filter": f'license:"Creative Commons 0" duration:[{min_dur} TO {max_dur}]',
+              "fields": "id,name,previews,license"}
+    try:
+        for ep in ("https://freesound.org/apiv2/search/", "https://freesound.org/apiv2/search/text/"):
+            r = requests.get(ep, timeout=30, params=params, headers={"Authorization": f"Token {key}"})
+            if r.status_code == 200:
+                res = [x for x in r.json().get("results", []) if "Creative Commons 0" in x.get("license", "")
+                       or x.get("license", "").endswith("/zero/1.0/")]
+                if not res:
+                    return None
+                pick = random.choice(res[:6])
+                mp3 = str(path) + ".mp3"
+                with open(mp3, "wb") as f:
+                    f.write(requests.get(pick["previews"]["preview-hq-mp3"], timeout=60).content)
+                import subprocess
+                subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", mp3, "-ac", "1", "-ar", str(SR),
+                                "-af", "loudnorm=I=-20:TP=-2", str(path)], check=True)
+                log(f"Freesound CC0 sound '{query}': {pick['name']} (id {pick['id']})")
+                return path
+    except Exception as e:  # noqa: BLE001
+        log(f"Freesound sound '{query}' failed:", str(e)[:100])
+    return None
+
+
+def _load_wav_mono(path):
+    with wave.open(str(path), "rb") as w:
+        data = np.frombuffer(w.readframes(w.getnframes()), dtype="<i2").astype(np.float32) / 32768
+        if w.getnchannels() == 2:
+            data = data.reshape(-1, 2).mean(axis=1)
+    return data
+
+
 # ------------------------------------------------------------------ sound effects
 def _bandsweep(n, f0, f1, nrng):
     noise = nrng.standard_normal(n)
@@ -244,10 +282,22 @@ def make_sfx_track(path, seconds, events, seed=None):
     n = int((seconds + 2) * SR)
     track = np.zeros(n, dtype=np.float32)
     cache = {}
-    for t0, kind in events:
-        if kind not in cache:
-            cache[kind] = sfx(kind, nrng).astype(np.float32)
-        s = cache[kind]
+    for ev in events:
+        t0, kind = ev[0], ev[1]
+        if kind == "file":            # real recorded sound effect
+            s = _load_wav_mono(ev[2]) * float(ev[3] if len(ev) > 3 else 0.5)
+        elif kind == "ambience":      # loop under the whole video
+            a = _load_wav_mono(ev[2]) * float(ev[3] if len(ev) > 3 else 0.2)
+            if len(a) > SR:
+                reps = int(np.ceil(n / len(a)))
+                loop = np.tile(a, reps)[:n]
+                fade = np.minimum(1, np.arange(n) / (2 * SR)) * np.minimum(1, (n - np.arange(n)) / (2 * SR))
+                track += (loop * fade).astype(np.float32)
+            continue
+        else:
+            if kind not in cache:
+                cache[kind] = sfx(kind, nrng).astype(np.float32)
+            s = cache[kind]
         start = int(max(0, t0) * SR)
         end = min(n, start + len(s))
         if end > start:
