@@ -203,6 +203,38 @@ def sfx(kind, nrng):
         x = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 3.2)
         x += _lp(nrng.standard_normal(n), 500) * np.exp(-t * 10) * 0.6
         return x / (np.abs(x).max() + 1e-9) * 0.55
+    if kind == "thud":       # low, dull hit for scene changes in horror
+        n = int(0.9 * SR)
+        t = np.arange(n) / SR
+        f = 32 + 40 * np.exp(-t * 14)
+        x = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 5)
+        x += _lp(nrng.standard_normal(n), 220) * np.exp(-t * 18) * 0.5
+        return x / (np.abs(x).max() + 1e-9) * 0.45
+    if kind == "heartbeat":  # lub-dub, speeding up over ~3 s
+        n = int(3.2 * SR)
+        x = np.zeros(n)
+        beat_t, gap = 0.0, 0.85
+        while beat_t < 3.0:
+            for off, amp in ((0.0, 1.0), (0.18, 0.7)):
+                st = int((beat_t + off) * SR)
+                m = min(int(0.25 * SR), n - st)
+                if m <= 0:
+                    continue
+                tt = np.arange(m) / SR
+                x[st:st + m] += amp * np.sin(2 * np.pi * (48 + 30 * np.exp(-tt * 30)) * tt) * np.exp(-tt * 22)
+            beat_t += gap
+            gap = max(0.45, gap * 0.86)
+        x *= np.linspace(0.5, 1.0, n)
+        return x / (np.abs(x).max() + 1e-9) * 0.55
+    if kind == "sting":      # dissonant stab for the scare / twist
+        n = int(1.8 * SR)
+        t = np.arange(n) / SR
+        env = np.minimum(1, t / 0.01) * np.exp(-t * 2.2)
+        x = sum(np.sin(2 * np.pi * f0 * t + nrng.random() * 6) for f0 in (622, 659, 698, 932, 988))
+        x += _bandsweep(n, 2500, 900, nrng) * 0.8
+        x += np.sin(2 * np.pi * (60 + 50 * np.exp(-t * 10)) * t) * 1.5 * np.exp(-t * 4)
+        x *= env
+        return x / (np.abs(x).max() + 1e-9) * 0.5
     raise ValueError(kind)
 
 

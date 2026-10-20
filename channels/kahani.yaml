@@ -25,11 +25,40 @@ upload:
 visual:
   grade: "dark"                       # andheri, thandi rangat + vignette
   palette: "horror"                   # laal / safed captions
+  caption_style: "story"              # typewriter font, aahista ubharte captions, bina pop
+  shot_seconds: [4.5, 7.5]            # har shot zyada der tak (horror mein jaldi cut nahi)
+  grain: 9                            # purani film jaisa grain
+  progress_bar: true
 
-voice_rate: [-8, 0]                   # kahani dheemi aur thehri hui awaaz mein (Future channel: +4 se +12)
+# awaaz: dheemi, gehri, halki goonj; har jumle ke baad saans
+voice_fx: "horror"
+voice_rate: [-14, -7]
+voice_pitch: [-6, -2]
+pauses: [0.55, 0.95]
+reveal_pause: 1.4
+words_per_second: 2.3
 
 voices:
-  urdu: ["ur-PK-AsadNeural", "ur-IN-SalmanNeural", "ur-PK-UzmaNeural"]
+  urdu:
+    male: ["ur-PK-AsadNeural", "ur-IN-SalmanNeural"]
+    female: ["ur-PK-UzmaNeural", "ur-IN-GulNeural"]
+
+footage:
+  music_volume: 0.26
+  sfx_volume: 0.7
+  # Kahani ke har scene ki footage sirf in mahauli cheezon se dhoondi jati hai
+  vocabulary: ["dark corridor", "abandoned house", "abandoned building", "old door", "door opening", "dark room",
+               "empty room", "flickering light", "light bulb", "candle", "candle flame", "foggy forest", "dark forest",
+               "night forest", "fog", "mist", "night road", "empty road", "street light", "night city", "rain window",
+               "rain night", "thunder", "lightning", "storm clouds", "full moon", "moon clouds", "night sky", "old mirror",
+               "mirror", "shadow", "silhouette", "staircase", "old stairs", "hallway", "basement", "attic", "old clock",
+               "clock", "cemetery", "graveyard", "tombstone", "old well", "village night", "haunted", "smoke",
+               "dark water", "lake night", "train night", "railway night", "old photo", "old camera", "telephone",
+               "phone dark", "window night", "curtain wind", "crow", "owl", "spider web", "dead tree", "hospital corridor",
+               "empty hospital", "old book", "old key", "footsteps", "hand shadow", "eyes dark"]
+  exclude_tags: ["smile", "smiling", "happy", "laugh", "laughing", "fun", "party", "celebration", "beach", "summer",
+                 "sunny", "flowers", "business", "office", "wedding", "love", "couple", "kids", "children", "child",
+                 "baby", "toy", "cute", "puppy", "kitten", "food", "christmas", "holiday", "sport", "fitness"]
 
 styles:
   - "Pehla shakhs (main) apni aap beeti sunata hai, dheemi aur sargoshi wali awaaz mein"

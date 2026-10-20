@@ -27,7 +27,7 @@ def _pexels_videos(q, orient):
                       key=lambda f: f["width"] * f["height"])
         if good:
             res.append({"id": f"pexels-v-{v['id']}", "url": good[0]["link"], "kind": "video",
-                        "dur": v.get("duration", 10)})
+                        "dur": v.get("duration", 10), "desc": v.get("url", "")})
     return res
 
 
@@ -46,7 +46,7 @@ def _pixabay_videos(q, orient):
             f = vids.get(size) or {}
             if f.get("url") and min(f.get("width", 0), f.get("height", 0)) >= 720:
                 res.append({"id": f"pixabay-v-{h['id']}", "url": f["url"], "kind": "video",
-                            "dur": h.get("duration", 10)})
+                            "dur": h.get("duration", 10), "desc": h.get("tags", "")})
                 break
     return res
 
@@ -59,8 +59,8 @@ def _pexels_photos(q, orient):
                      params={"query": q, "orientation": orient, "per_page": 15}, timeout=30)
     if r.status_code != 200:
         return []
-    return [{"id": f"pexels-p-{p['id']}", "url": p["src"]["large2x"], "kind": "photo", "dur": 5}
-            for p in r.json().get("photos", [])]
+    return [{"id": f"pexels-p-{p['id']}", "url": p["src"]["large2x"], "kind": "photo", "dur": 5,
+             "desc": (p.get("alt") or "") + " " + p.get("url", "")} for p in r.json().get("photos", [])]
 
 
 def _pixabay_photos(q, orient):
@@ -73,8 +73,15 @@ def _pixabay_photos(q, orient):
                              "image_type": "photo"}, timeout=30)
     if r.status_code != 200:
         return []
-    return [{"id": f"pixabay-p-{h['id']}", "url": h["largeImageURL"], "kind": "photo", "dur": 5}
-            for h in r.json().get("hits", [])]
+    return [{"id": f"pixabay-p-{h['id']}", "url": h["largeImageURL"], "kind": "photo", "dur": 5,
+             "desc": h.get("tags", "")} for h in r.json().get("hits", [])]
+
+
+def _allowed(cfg, item):
+    """Drop clips whose tags/description clash with the channel mood (e.g. smiling people in horror)."""
+    bad = cfg["footage"].get("exclude_tags") or []
+    desc = item.get("desc", "").lower().replace("-", " ")
+    return not any(f" {b} " in f" {desc} " or desc.startswith(b + " ") for b in bad)
 
 
 def search(cfg, keywords, orient, used, need=3):
@@ -88,6 +95,7 @@ def search(cfg, keywords, orient, used, need=3):
         if "pixabay" in sources:
             cands += _pixabay_videos(kw, orient)
         # keep search-relevance order; only mix the top results a little for variety
+        cands = [c for c in cands if _allowed(cfg, c)]
         top, rest = cands[:6], cands[6:]
         random.shuffle(top)
         for c in top + rest:
@@ -99,7 +107,7 @@ def search(cfg, keywords, orient, used, need=3):
         for kw in keywords:
             cands = (_pexels_photos(kw, orient) if "pexels" in sources else []) + \
                     (_pixabay_photos(kw, orient) if "pixabay" in sources else [])
-            for c in cands[:8]:
+            for c in [c for c in cands if _allowed(cfg, c)][:8]:
                 if c["id"] not in used and c["id"] not in {f["id"] for f in found}:
                     found.append(c)
                 if len(found) >= need:

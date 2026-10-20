@@ -75,7 +75,7 @@ def _offline_voice(scenes, work):
         run(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i",
              f"sine=frequency={220 + 40 * (i % 5)}:sample_rate=44100", "-af", "volume=0.2",
              "-ac", "2", "-t", f"{d:.2f}", "-c:a", "pcm_s16le", str(wav)])
-        out.append((wav, d))
+        out.append((wav, d, []))
     return out
 
 
@@ -107,7 +107,7 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
         style = rng.choice(cfg["styles"])
         topic = writer.pick_topic(cfg, history, kind)
         script = writer.write_script(cfg, topic, kind, style)
-        vset = voice.pick_voice(cfg)
+        vset = voice.pick_voice(cfg, script.get("narrator_gender"))
         log("Voice:", vset)
         voices = voice.synth_scenes(cfg, script["scenes"], work, vset)
 

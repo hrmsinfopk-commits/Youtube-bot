@@ -17,8 +17,7 @@ PALETTES = [  # (highlight, outline) in RGB, chosen randomly per video
 
 
 # ---------------------------------------------------------------- footage clips
-HORROR_PALETTES = [((230, 30, 40), (0, 0, 0)), ((255, 70, 70), (0, 0, 0)), ((210, 210, 210), (0, 0, 0)),
-                   ((150, 255, 150), (0, 0, 0))]
+HORROR_PALETTES = [((215, 25, 35), (0, 0, 0)), ((240, 60, 50), (0, 0, 0)), ((180, 15, 20), (0, 0, 0))]
 
 
 def _palettes(cfg):
@@ -33,7 +32,9 @@ def _clip_filter(W, H, seg, rng, grade=None):
     x = {"lr": f"{dx}*t/{seg:.3f}", "rl": f"{dx}*(1-t/{seg:.3f})"}.get(mode, f"{dx}/2")
     y = {"tb": f"{dy}*t/{seg:.3f}", "bt": f"{dy}*(1-t/{seg:.3f})"}.get(mode, f"{dy}/2")
     if grade == "dark":
-        sat, con, bri = rng.uniform(0.45, 0.7), rng.uniform(1.08, 1.18), rng.uniform(-0.09, -0.05)
+        z = rng.uniform(1.04, 1.09)                       # slow, creeping movement
+        sw, sh = int(W * z) // 2 * 2, int(H * z) // 2 * 2
+        sat, con, bri = rng.uniform(0.35, 0.6), rng.uniform(1.1, 1.2), rng.uniform(-0.10, -0.06)
         extra = ",vignette=PI/4,colorbalance=bs=0.06:bm=0.04:rs=-0.03"
     else:
         sat, con, bri = rng.uniform(1.0, 1.18), rng.uniform(1.0, 1.08), rng.uniform(-0.03, 0.02)
@@ -82,25 +83,62 @@ def _ass_time(t):
     return f"{int(h)}:{int(m):02d}:{s:05.2f}"
 
 
-def build_ass(kind, cfg, scenes, timings, path, rng, hook_text=""):
+def _chunk_times(t0, dur, n_words, chunks, word_times):
+    """Start/end time for each caption chunk. Uses real word timings from the TTS when available,
+    so each chunk appears exactly when its first word is spoken and stays until the next one."""
+    nu = len(word_times)
+    starts, a = [], 0
+    for c in chunks:
+        if nu and n_words:
+            starts.append(t0 + word_times[min(nu - 1, round(a * nu / n_words))][0])
+        else:
+            starts = None
+            break
+        a += len(c)
+    if starts is None:  # proportional fallback (no word timings)
+        total = sum(len(" ".join(c)) for c in chunks) or 1
+        starts, t = [], t0
+        for c in chunks:
+            starts.append(t)
+            t += dur * len(" ".join(c)) / total
+    starts[0] = t0
+    for i in range(1, len(starts)):  # keep order strictly increasing
+        starts[i] = max(starts[i], starts[i - 1] + 0.25)
+    ends = starts[1:] + [max(starts[-1] + 0.3, t0 + dur)]
+    return [[st, en] for st, en in zip(starts, ends)]
+
+
+def build_ass(kind, cfg, scenes, timings, path, rng, hook_text="", word_times=None):
     W, H = SIZES[kind]
+    word_times = word_times or [[] for _ in scenes]
+    story = cfg.get("visual", {}).get("caption_style") == "story"
     native = cfg["channel"]["captions"] == "native" and cfg["channel"]["language"] != "english"
     lang = cfg["channel"]["language"]
     if native and lang == "urdu":
         font, size = "Noto Nastaliq Urdu", (96 if kind == "short" else 66)
     elif native and lang == "hindi":
         font, size = "Noto Sans Devanagari", (108 if kind == "short" else 68)
+    elif story:
+        font, size = "Special Elite", (90 if kind == "short" else 64)
     else:
         font, size = "Anton", (150 if kind == "short" else 84)
     hi, _ = rng.choice(_palettes(cfg))
     white = (255, 255, 255)
     if kind == "short":
         align, marginv = 5, 0
-        pos = f"\\pos({W // 2},{int(H * rng.uniform(0.62, 0.70))})"
-        words_per = (2, 3)
+        pos = f"\\pos({W // 2},{int(H * (0.70 if story else rng.uniform(0.62, 0.70)))})"
+        words_per = (4, 6) if story else (2, 3)
     else:
         align, marginv, pos = 2, 70, ""
-        words_per = (4, 7)
+        words_per = (6, 9) if story else (4, 7)
+    if story:
+        hook_style = (f"Style: Hook,Special Elite,{120 if kind == 'short' else 96},{_ass_color((215, 25, 35))},"
+                      f"&H000000FF,&H00000000,&H96000000,1,0,0,0,100,100,2,0,1,5,3,8,60,60,{int(H * 0.17)},1")
+        cap_outline, cap_shadow = 4, 3
+    else:
+        hook_style = (f"Style: Hook,Anton,{150 if kind == 'short' else 110},&H00000000,&H000000FF,"
+                      f"{_ass_color(hi)},{_ass_color(hi)},1,0,0,0,100,100,2,0,3,22,0,8,60,60,{int(H * 0.16)},1")
+        cap_outline, cap_shadow = (7 if kind == "short" else 5), 3
     head = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}
@@ -109,8 +147,8 @@ WrapStyle: 0
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{font},{size},{_ass_color(white)},&H000000FF,&H00000000,&H64000000,1,0,0,0,100,100,1,0,1,{7 if kind == 'short' else 5},3,{align},60,60,{marginv},1
-Style: Hook,Anton,{150 if kind == 'short' else 110},&H00000000,&H000000FF,{_ass_color(hi)},{_ass_color(hi)},1,0,0,0,100,100,2,0,3,22,0,8,60,60,{int(H * 0.16)},1
+Style: Cap,{font},{size},{_ass_color(white)},&H000000FF,&H00000000,&H64000000,{0 if story else 1},0,0,0,100,100,1,0,1,{cap_outline},{cap_shadow},{align},70,70,{marginv},1
+{hook_style}
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -118,9 +156,14 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     lines = []
     hook = re.sub(r"[{}\\]", "", hook_text or "").upper().strip()
     if hook:
-        hook_anim = "{\\fscx40\\fscy40\\t(0,160,\\fscx108\\fscy108)\\t(160,260,\\fscx100\\fscy100)\\fad(0,200)}"
-        lines.append(f"Dialogue: 1,{_ass_time(0)},{_ass_time(2.3)},Hook,,0,0,0,,{hook_anim}{hook}")
-    for sc, (t0, dur) in zip(scenes, timings):
+        if story:
+            hook_anim = "{\\fad(400,300)}"
+            hook_end = 2.8
+        else:
+            hook_anim = "{\\fscx40\\fscy40\\t(0,160,\\fscx108\\fscy108)\\t(160,260,\\fscx100\\fscy100)\\fad(0,200)}"
+            hook_end = 2.3
+        lines.append(f"Dialogue: 1,{_ass_time(0)},{_ass_time(hook_end)},Hook,,0,0,0,,{hook_anim}{hook}")
+    for sc, (t0, dur), wt in zip(scenes, timings, word_times):
         text = (sc["text"] if native else sc["caption"]).strip()
         text = re.sub(r"[{}\\]", "", text)
         words = text.split()
@@ -129,22 +172,24 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         chunks, i = [], 0
         while i < len(words):
             n = rng.randint(*words_per)
+            if len(words) - (i + n) == 1:  # never leave a single orphan word
+                n += 1
             chunks.append(words[i:i + n])
             i += n
-        total = sum(len(" ".join(c)) for c in chunks) or 1
-        t = t0
-        for c in chunks:
-            d = dur * len(" ".join(c)) / total
+        for c, (st, en) in zip(chunks, _chunk_times(t0, dur, len(words), chunks, wt)):
+            if story:
+                col = f"{{\\c{_ass_color(hi)}}}" if sc.get("reveal") else ""
+                lines.append(f"Dialogue: 0,{_ass_time(st)},{_ass_time(en)},Cap,,0,0,0,,"
+                             f"{{{pos}\\fad(180,150)}}{col}{' '.join(c)}")
+                continue
             if kind == "short" and not native:
                 c = [w.upper() for w in c]
-            # highlight the longest word of each chunk
-            k = max(range(len(c)), key=lambda j: len(c[j]))
+            k = max(range(len(c)), key=lambda j: len(c[j]))  # highlight the longest word
             parts = [(f"{{\\c{_ass_color(hi)}}}{w}{{\\c{_ass_color(white)}}}" if j == k else w)
                      for j, w in enumerate(c)]
             anim = "{\\fscx82\\fscy82\\t(0,110,\\fscx104\\fscy104)\\t(110,180,\\fscx100\\fscy100)}"
-            lines.append(f"Dialogue: 0,{_ass_time(t)},{_ass_time(t + d)},Cap,,0,0,0,,"
+            lines.append(f"Dialogue: 0,{_ass_time(st)},{_ass_time(en)},Cap,,0,0,0,,"
                          f"{{{pos}}}{anim}{' '.join(parts)}")
-            t += d
     Path(path).write_text(head + "\n".join(lines) + "\n", encoding="utf-8")
     return hi
 
@@ -168,7 +213,7 @@ def build_audio(voice, gaps, work, total, cfg, rng, mood="suspense", sfx_events=
     silence = {}
     lst = work / "audio_list.txt"
     with open(lst, "w") as f:
-        for (wav, _), g in zip(voice, gaps):
+        for (wav, *_), g in zip(voice, gaps):
             f.write(f"file '{wav.resolve()}'\n")
             key = f"{g:.2f}"
             if key not in silence:
@@ -198,19 +243,22 @@ def build_audio(voice, gaps, work, total, cfg, rng, mood="suspense", sfx_events=
 
 # ---------------------------------------------------------------- main assembly
 def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspense", hook_text=""):
-    """scenes: list; voice: [(wav, secs)]; media: per-scene list of (path, kind)."""
+    """scenes: list; voice: [(wav, secs, word_times)]; media: per-scene list of (path, kind)."""
     W, H = SIZES[kind]
-    gaps = [rng.uniform(0.18, 0.35) for _ in voice]
+    vis = cfg.get("visual", {})
+    story = vis.get("caption_style") == "story"
+    pmin, pmax = cfg.get("pauses", [0.18, 0.35])
+    gaps = [rng.uniform(pmin, pmax) for _ in voice]
     for i in range(len(scenes) - 1):
         if scenes[i + 1].get("reveal"):
-            gaps[i] = 0.75          # dramatic pause before a reveal
-    gaps[-1] = 0.8
+            gaps[i] = cfg.get("reveal_pause", 0.75)   # dramatic silence before a reveal
+    gaps[-1] = 1.2 if story else 0.8
     timings, t = [], 0.0
-    for (_, d), g in zip(voice, gaps):
+    for (_, d, *_), g in zip(voice, gaps):
         timings.append((t, d))
         t += d + g
     total = t
-    seg_range = (1.8, 3.2) if kind == "short" else (3.0, 5.5)
+    seg_range = vis.get("shot_seconds") or ((1.8, 3.2) if kind == "short" else (3.0, 5.5))
 
     clips = []
     for si, ((t0, d), g) in enumerate(zip(timings, gaps)):
@@ -222,7 +270,7 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
                 seg = remaining
             src, mkind = items[k % len(items)]
             out = work / f"clip_{len(clips):04d}.mp4"
-            make_clip(src, mkind, seg, W, H, out, rng, cfg.get("visual", {}).get("grade"))
+            make_clip(src, mkind, seg, W, H, out, rng, vis.get("grade"))
             clips.append(out)
             remaining -= seg
             k += 1
@@ -234,27 +282,44 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
     run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(silent)])
 
     # sound effects + zoom punches
-    events, punches = [(0.0, "boom")], []
-    for i, (sc, (t0, _)) in enumerate(zip(scenes, timings)):
-        if i == 0:
-            continue
-        if sc.get("reveal"):
-            events += [(max(0, t0 - 1.6), "riser"), (t0, "boom")]
-            punches.append(t0)
-        elif kind == "short" or sc.get("chapter"):
-            events.append((max(0, t0 - 0.2), "whoosh"))
+    punches = []
+    if story:  # horror: no whooshes; low hits, heartbeat building to a sting on the reveal
+        events = [(0.0, "thud")]
+        for i, (sc, (t0, _)) in enumerate(zip(scenes, timings)):
+            if i == 0:
+                continue
+            if sc.get("reveal"):
+                events += [(max(0, t0 - 3.2), "heartbeat"), (max(0, t0 - 0.05), "sting")]
+                punches.append(t0)
+            elif sc.get("chapter") or (kind == "short" and i % 3 == 0):
+                events.append((max(0, t0 - 0.1), "thud"))
+    else:
+        events = [(0.0, "boom")]
+        for i, (sc, (t0, _)) in enumerate(zip(scenes, timings)):
+            if i == 0:
+                continue
+            if sc.get("reveal"):
+                events += [(max(0, t0 - 1.6), "riser"), (t0, "boom")]
+                punches.append(t0)
+            elif kind == "short" or sc.get("chapter"):
+                events.append((max(0, t0 - 0.2), "whoosh"))
     audio = build_audio(voice, gaps, work, total, cfg, rng, mood, events)
     ass = work / "captions.ass"
-    hi = build_ass(kind, cfg, scenes, timings, ass, rng, hook_text)
+    hi = build_ass(kind, cfg, scenes, timings, ass, rng, hook_text, [v[2] if len(v) > 2 else [] for v in voice])
 
     chain = []
     if punches:
         z = "+".join(f"between(it\\,{p:.2f}\\,{p + 0.4:.2f})*(1-(it-{p:.2f})/0.4)" for p in punches[:12])
-        chain.append(f"zoompan=z='1+0.08*({z})':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+        chain.append(f"zoompan=z='1+{0.05 if story else 0.08}*({z})':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
                      f":d=1:s={W}x{H}:fps={FPS}")
+    if story and punches:  # brief flash on each reveal
+        fl = "+".join(f"between(t\\,{p:.2f}\\,{p + 0.12:.2f})" for p in punches[:12])
+        chain.append(f"eq=brightness='0.25*({fl})':eval=frame")
+    if vis.get("grain"):
+        chain.append(f"noise=alls={int(vis['grain'])}:allf=t")
     chain.append(f"subtitles={ass.resolve()}:fontsdir={FONTS.resolve()}")
     inputs = ["-i", str(silent), "-i", str(audio)]
-    if kind == "short":   # progress bar keeps people watching to the end
+    if kind == "short" and vis.get("progress_bar", True):   # progress bar keeps people watching
         bar_h = 12
         r, g, b = hi
         inputs += ["-f", "lavfi", "-i", f"color=c=0x{r:02X}{g:02X}{b:02X}:s={W}x{bar_h}:r={FPS}"]

@@ -85,19 +85,28 @@ Return ONLY the 12 premises, one per line, no numbering."""
     return topic
 
 
+def _wps(cfg):
+    """Spoken words per second for this channel's voice settings (stories are told slower)."""
+    return float(cfg.get("words_per_second", 3.2))
+
+
 def _story_prompt(cfg, premise, kind, style):
     ch = cfg["channel"]
     lang = ch["language"]
     if kind == "short":
         secs = cfg["shorts"]["target_seconds"]
-        length = f"about {int(secs * 3.2)} spoken words ({secs} seconds), 7-10 scenes"
-        shape = ("- Shape: line 1 drops the listener INTO the scary moment (no setup, no 'ek dafa ka zikr hai').\n"
-                 "- Then 2-3 lines of rising dread with one concrete sensory detail (awaaz, khushboo, thand, parchhai).\n"
-                 "- Then a turn ('lekin tab mujhe yaad aaya...'), and a final TWIST line that recontextualises everything.\n"
-                 "- Last line: the twist, or a chilling question to the viewer ('aap hote to darwaza kholte?').")
+        length = f"about {int(secs * _wps(cfg))} spoken words ({secs} seconds), 8-12 scenes, ONE short sentence per scene"
+        shape = ("- ONE narrator ('main'), ONE place, ONE night, ONE strange thing that gets worse in 3 steps. No sub-plots, no backstory dumps.\n"
+                 "- Line 1: drop the listener into a specific, quiet, ordinary moment that feels slightly wrong (time + place + one detail),\n"
+                 "  e.g. 'Raat ke teen baj rahe the... aur hostel ki teesri manzil par koi seedhiyan chadh raha tha.'\n"
+                 "- Escalate with concrete SENSORY details the listener can picture/hear (khat-khat, geeli mitti ki boo, achanak thand, dheemi sargoshi).\n"
+                 "- Include ONE short line of dialogue or a whisper in quotes - it is the scariest part.\n"
+                 "- Use '...' inside sentences where the narrator would pause to breathe. Build slowly; do NOT rush.\n"
+                 "- The final line is the TWIST: short, quiet, and it changes the meaning of everything before it. No moral, no explanation after it.\n"
+                 "- The story must make complete sense on its own and be satisfying, not confusing.")
     else:
         mins = cfg["long"]["target_minutes"]
-        length = f"about {int(mins * 190)} spoken words ({mins} minutes), 30-45 scenes"
+        length = f"about {int(mins * 60 * _wps(cfg))} spoken words ({mins} minutes), 40-70 scenes, one or two sentences per scene"
         shape = ("- Cold open: start at the scariest moment, then 'lekin yeh sab shuru kaise hua...' and go back.\n"
                  "- 4-6 parts, each ending on a cliffhanger. Put a 2-4 word part name in 'chapter' on the first scene of each part.\n"
                  "- Plant small clues early that pay off in the final twist. Final twist must be surprising but fair.\n"
@@ -119,9 +128,9 @@ Rules:
 - Never use AI-sounding phrases ("is video mein", "aaiye jaante hain", "dilchasp baat yeh hai").
 {shape}
 
-For every scene give 3 stock-footage keywords in ENGLISH (1-2 words each, specific to general) for ATMOSPHERIC visuals that stock sites have:
-e.g. "dark corridor", "abandoned house", "foggy forest", "flickering light", "rain window", "old door", "night road", "candle", "shadow".
-Never use people's names or abstract words. Scene 1 = the most chilling visual.
+For every scene pick 3 stock-footage keywords ONLY from this list (they return proper dark, atmospheric footage):
+{", ".join(cfg.get("footage", {}).get("vocabulary", [])) or "dark corridor, abandoned house, foggy forest, flickering light, rain window, old door, night road, candle, shadow"}
+Pick what best matches what the listener is imagining in that line. Scene 1 = the most chilling one.
 For every scene also set "pace" (fast/normal/slow) and "reveal" (true only for the 1-2 biggest scare/twist moments).
 
 Return ONLY JSON:
@@ -130,6 +139,7 @@ Return ONLY JSON:
  "thumbnail_text": "2-4 creepy words, Roman Urdu or English",
  "hook_text": "2-4 word ALL-CAPS on-screen hook for the first 2 seconds, e.g. DARWAZA MAT KHOLNA",
  "mood": "one of: horror, dark, suspense, mysterious",
+ "narrator_gender": "male or female - must match the narrator's Urdu verb forms (raha/rahi) used in the story",
  "description": "2 short Roman Urdu paragraphs teasing the story without spoilers, then a 1-line comment question",
  "tags": ["15 search tags mixing English and Roman Urdu/Hindi, e.g. horror story urdu, bhoot ki kahani"],
  "hashtags": ["#3to5", "#hashtags"],
@@ -147,7 +157,7 @@ def write_script(cfg, topic, kind, style, latest_long_url=None):
         return _finish(_ask_script(cfg, _story_prompt(cfg, topic, kind, style), kind, 1.1), topic, style)
     if kind == "short":
         secs = cfg["shorts"]["target_seconds"]
-        length = f"about {int(secs * 3.2)} spoken words total ({secs} seconds), 6-9 scenes"
+        length = f"about {int(secs * _wps(cfg))} spoken words total ({secs} seconds), 6-9 scenes"
         extra = ("- SUSPENSE STRUCTURE: (1) hook line, (2) an open loop in the first 5 seconds that promises a payoff at the end "
                  "(e.g. 'aur aakhri wali baat sab se khatarnak hai'), (3) fast build-up of 2-3 lines, (4) a twist starting with "
                  "'lekin'/'magar' style turn, (5) the REVEAL near the end, delivered slowly, (6) final line.\n"
@@ -156,7 +166,7 @@ def write_script(cfg, topic, kind, style, latest_long_url=None):
                  "- No 'subscribe' begging at the start.")
     else:
         mins = cfg["long"]["target_minutes"]
-        length = f"about {int(mins * 190)} spoken words total ({mins} minutes), 28-45 scenes"
+        length = f"about {int(mins * 60 * _wps(cfg))} spoken words total ({mins} minutes), 28-45 scenes"
         extra = ("- Structure: hook (0-20s) -> promise of what they'll learn -> 4-7 sections each ending with a mini cliffhanger -> satisfying conclusion -> short outro.\n"
                  "- Put a short chapter name (2-5 words, Roman Urdu/English) on the first scene of each section in 'chapter'; other scenes chapter = \"\".\n"
                  "- At ~40% and ~70% add a pattern interrupt (surprising question or fact) to keep retention high.\n"
@@ -197,6 +207,7 @@ Return ONLY JSON:
  "title": "SEO title, max 70 chars, Roman Urdu/Hindi + strong English keywords, curiosity driven, no clickbait lies{' (do NOT add #shorts, it is added later)' if kind == 'short' else ''}",
  "thumbnail_text": "2-4 punchy words in Roman Urdu or English for the thumbnail",
  "hook_text": "2-4 word ALL-CAPS on-screen hook shown in the first 2 seconds (Roman Urdu/English), e.g. PHYSICS FAIL?",
+ "narrator_gender": "male or female (keep Urdu verb forms consistent with it)",
  "mood": "one of: suspense, mysterious, dark, epic, uplifting, calm (for background music)",
  "description": "3 short paragraphs in Roman Urdu with main keywords naturally used in first 2 lines, then a 1-line question to drive comments",
  "tags": ["15 search tags mixing English and Roman Urdu/Hindi"],
@@ -210,7 +221,8 @@ Return ONLY JSON:
 
 
 def _target_words(cfg, kind):
-    return int(cfg["shorts"]["target_seconds"] * 3.2) if kind == "short" else int(cfg["long"]["target_minutes"] * 190)
+    w = _wps(cfg)
+    return int(cfg["shorts"]["target_seconds"] * w) if kind == "short" else int(cfg["long"]["target_minutes"] * 60 * w)
 
 
 def _words(data):
@@ -251,7 +263,9 @@ def _finish(data, topic, style):
     data["global_keywords"] = g or [topic]
     data["scenes"] = scenes
     data["mood"] = str(data.get("mood", "suspense")).strip().lower()
-    data["hook_text"] = str(data.get("hook_text") or data.get("thumbnail_text") or "").strip()[:28]
+    data["hook_text"] = " ".join(str(data.get("hook_text") or data.get("thumbnail_text") or "").split()[:4])
+    g = str(data.get("narrator_gender", "")).lower()
+    data["narrator_gender"] = g if g in ("male", "female") else None
     data["topic"] = topic
     data["style"] = style
     log(f"Script ready: {data['title']} ({len(scenes)} scenes)")
