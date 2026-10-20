@@ -146,14 +146,17 @@ def freesound_music(path, seconds, mood):
          "horror": "horror ambient drone"}.get(mood, "ambient music")
     params = {"query": q, "page_size": 40, "sort": "rating_desc",
               "filter": f'license:"Creative Commons 0" duration:[{int(max(20, min(seconds, 90)))} TO 900]',
-              "fields": "id,name,previews,duration,license"}
+              "fields": "id,name,previews,duration,license,tags"}
     try:
         res = []
         for ep in ("https://freesound.org/apiv2/search/", "https://freesound.org/apiv2/search/text/"):
             r = requests.get(ep, timeout=30, params=params, headers={"Authorization": f"Token {key}"})
             if r.status_code == 200:
-                res = [x for x in r.json().get("results", []) if "Creative Commons 0" in x.get("license", "")
-                       or x.get("license", "").endswith("/zero/1.0/")]
+                musical = ("music", "soundtrack", "ambient", "background", "score", "cinematic", "loop", "atmosphere")
+                res = [x for x in r.json().get("results", []) if ("Creative Commons 0" in x.get("license", "")
+                       or x.get("license", "").endswith("/zero/1.0/"))
+                       and any(m in (x.get("name", "") + " " + " ".join(x.get("tags") or [])).lower() for m in musical)
+                       and not any(b in x.get("name", "").lower() for b in ("chord", " to ", "note", "sample", "stinger"))]
                 break
             log(f"Freesound {ep.split('/')[-2]}: HTTP {r.status_code}")
         if not res:
@@ -176,14 +179,20 @@ def freesound_sfx(path, query, max_dur=8, min_dur=0.3):
         return None
     params = {"query": query, "page_size": 20, "sort": "rating_desc",
               "filter": f'license:"Creative Commons 0" duration:[{min_dur} TO {max_dur}]',
-              "fields": "id,name,previews,license"}
+              "fields": "id,name,previews,license,tags"}
+    words = [w for w in query.lower().split() if len(w) > 2]
     try:
         for ep in ("https://freesound.org/apiv2/search/", "https://freesound.org/apiv2/search/text/"):
             r = requests.get(ep, timeout=30, params=params, headers={"Authorization": f"Token {key}"})
             if r.status_code == 200:
-                bad = ("robot", "game", "cartoon", "8bit", "8-bit", "retro", "funny", "comic", "toy", "arcade", "synth", "laser")
-                res = [x for x in r.json().get("results", []) if ("Creative Commons 0" in x.get("license", "")
-                       or x.get("license", "").endswith("/zero/1.0/")) and not any(b in x.get("name", "").lower() for b in bad)]
+                bad = ("robot", "game", "cartoon", "8bit", "8-bit", "retro", "funny", "comic", "toy", "arcade", "synth", "laser",
+                       "chainsaw", "fart", "bottle", "kitchen")
+
+                def ok(x):
+                    text = (x.get("name", "") + " " + " ".join(x.get("tags") or [])).lower()
+                    return (("Creative Commons 0" in x.get("license", "") or x.get("license", "").endswith("/zero/1.0/"))
+                            and not any(b in text for b in bad) and all(w in text for w in words))
+                res = [x for x in r.json().get("results", []) if ok(x)]
                 if not res:
                     return None
                 pick = random.choice(res[:6])

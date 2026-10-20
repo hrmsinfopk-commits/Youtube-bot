@@ -249,7 +249,9 @@ NOT abstract words. Every keyword must clearly relate to the topic. No brand nam
 For real events prefer REAL footage words (launch, satellite, earth from space, control room) over sci-fi words (alien, spaceship).
 For every scene also write "image": one English sentence describing what the viewer should SEE (realistic, accurate to the facts) for an AI
 illustration - always an ORIGINAL scene: no real or famous people, no known characters, no brands or logos, no text, no gore.
-"sound": a 1-2 word English sound effect in that line if any (e.g. "rocket launch", "beep", "crowd cheer", "engine"), else "".
+"sound": only if the line clearly has one, pick EXACTLY one of: "rocket launch", "jet flyby", "whoosh", "computer beep",
+"notification", "crowd cheer", "camera shutter", "thunder", "explosion distant", "electric motor", "alarm", "heartbeat"; else "".
+Use sounds rarely (at most 3 per Short).
 Scene 1 keywords must be the single most visually stunning shot for this topic (the first second decides if people stay).
 "pace": "fast" for build-up/lists, "normal", or "slow" for reveals. "reveal": true only for the biggest twist/answer moments.
 
