@@ -1,23 +1,32 @@
-[08:52:05] Channel: Future Ki Duniya (future, mode=facts)
-[08:52:08] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:52:08] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[08:52:34] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:52:34] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[08:53:03] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:53:03] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[08:53:11] Gemini OK (gemini-flash-lite-latest)
-[08:53:11] Topic chosen: China Reusable Spaceplane Mystery Payload Landing in the Gobi Desert
-[08:53:11] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[08:53:11] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[08:53:36] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[08:53:36] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[08:54:01] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[08:54:01] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[08:54:05] Gemini OK (gemini-flash-lite-latest)
-[08:54:05] Script length: 103 words
-[08:54:05] Script ready: China Spaceplane Secret Landing vs USA X-37B (7 scenes)
-[08:54:05] Voice: {'voice': 'ur-PK-UzmaNeural', 'rate': '+9%', 'pitch': '+1Hz'}
-[08:54:33] 14 clips rendered
-[08:54:48] Freesound CC0 music: Ambient Music (id 494318)
-[08:55:10] Video ready: 20261020_0854_future_short.mp4 (29.1s)
-[08:55:10] YouTube secrets missing - video sirf GitHub artifact mein save hogi
+[09:41:32] Channel: Future Ki Duniya (future, mode=facts)
+[09:41:36] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[09:41:36] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:42:01] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:42:01] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:42:26] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:42:27] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:42:28] Gemini OK (gemini-flash-lite-latest)
+[09:42:28] Topic chosen: NASA's Europa Clipper Launch to Find Alien Life Beneath Jupiter's Ice
+[09:42:29] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:42:29] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:42:54] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:42:54] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:43:20] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:43:20] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:43:23] Gemini OK (gemini-flash-lite-latest)
+[09:43:23] Script too short (105 words, target ~144) - rewriting longer
+[09:43:23] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:43:24] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:43:49] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:43:49] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:44:14] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:44:14] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:44:18] Gemini OK (gemini-flash-lite-latest)
+[09:44:18] Script length: 105 words
+[09:44:18] Script ready: NASA's Europa Clipper: Finding Alien Life in Space (7 scenes)
+[09:44:18] Voice: {'engine': 'gemini', 'voice': 'Algenib', 'gender': 'male', 'style': 'Read this in natural, fluent Pakistani Urdu like a popular, energetic YouTube science creator talking to a friend: curious, amazed, confident, conversational, medium-fast pace, clear emphasis on surprising words, short natural breaths, never robotic, never like a news reader'}
+[09:44:30] Gemini TTS OK (gemini-3.1-flash-tts-preview, Algenib)
+[09:45:06] 14 clips rendered
+[09:47:26] Freesound CC0 music: Electronic Minute 415 - Suspense Music VCV-Rack.wav (id 647695)
+[09:48:00] Video ready: 20261020_0944_future_short.mp4 (34.1s)
+[09:48:00] YouTube secrets missing - video sirf GitHub artifact mein save hogi
