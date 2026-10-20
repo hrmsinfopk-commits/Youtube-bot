@@ -181,9 +181,14 @@ def align_words(cfg, wavs):
         if name not in _WHISPER:
             _WHISPER[name] = WhisperModel(name, device="cpu", compute_type="int8")
         model = _WHISPER[name]
+        import numpy as np
         out = []
         for w in wavs:
-            segs, _ = model.transcribe(str(w), language=lang, word_timestamps=True, beam_size=1,
+            # decode ourselves (16 kHz mono float) - avoids PyAV version problems inside faster-whisper
+            raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(w), "-ac", "1", "-ar", "16000",
+                                  "-f", "s16le", "-"], capture_output=True, check=True).stdout
+            audio = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+            segs, _ = model.transcribe(audio, language=lang, word_timestamps=True, beam_size=1,
                                        condition_on_previous_text=False)
             out.append([(float(x.start), float(x.end)) for sg in segs for x in (sg.words or [])])
         log(f"Captions aligned to the voice ({sum(len(x) for x in out)} words)")

@@ -152,10 +152,12 @@ def freesound_music(path, seconds, mood, scary_ok=False):
         for ep in ("https://freesound.org/apiv2/search/", "https://freesound.org/apiv2/search/text/"):
             r = requests.get(ep, timeout=30, params=params, headers={"Authorization": f"Token {key}"})
             if r.status_code == 200:
-                musical = ("music", "soundtrack", "ambient", "background", "score", "cinematic", "loop", "atmosphere")
                 res = [x for x in r.json().get("results", []) if ("Creative Commons 0" in x.get("license", "")
                        or x.get("license", "").endswith("/zero/1.0/"))
-                       and any(m in (x.get("name", "") + " " + " ".join(x.get("tags") or [])).lower() for m in musical)
+                       and "music" in [t.lower() for t in (x.get("tags") or [])]
+                       and not any(b in (x.get("name", "") + " " + " ".join(x.get("tags") or [])).lower()
+                                   for b in ("fx", "sfx", "effect", "funny", " fun", "kids", "children", "cartoon",
+                                             "comedy", "circus", "sailor", "polka", "silly"))
                        and not any(b in (x.get("name", "") + " " + " ".join(x.get("tags") or [])).lower()
                                   for b in ("chord", " to ", "note", "sample", "stinger", "game", "8bit", "chiptune", "arcade")
                                   + (() if scary_ok else ("creepy", "horror", "scary", "spooky", "ghost", "evil")))]
