@@ -1,21 +1,30 @@
-[12:17:36] Channel: Tomorrowly (future, mode=facts)
-[12:17:49] News headlines collected: 170
-[12:17:52] YouTube videos analysed: 74
-[12:17:53] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[12:17:53] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[12:18:18] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[12:18:45] Gemini OK (gemini-flash-lite-latest)
-[12:18:48] Gemini OK (gemini-flash-lite-latest)
-[12:18:48] Trend topic: Quantinuum's Record-Breaking Quantum Error Correction | why: Quantum computing breakthroughs and hardware milestones consistently attract strong technical engagement from curious tech audiences globally. While mainstream media chases repetitive consumer tech news, focusing on actual error-correction milestones provides a high-credibility niche.
-[12:18:51] Gemini OK (gemini-flash-lite-latest)
-[12:18:51] Script length: 99 words
-[12:18:51] Script ready: Quantinuum Just Shattered the Quantum Computing Record! (7 scenes)
-[12:18:51] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[12:19:09] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[12:19:51] Freesound CC0 sound 'computer beep': Laptop disk slot open and close.mp3 (id 510253)
-[12:20:19] 17 clips rendered
-[12:21:20] Freesound CC0 music: epic game music by kris klavenes 3 mins.mp3 (id 395435)
-[12:22:04] Video ready: 20261020_1219_future_short.mp4 (43.0s)
-[12:22:05] Upload 36%
-[12:22:05] Upload 73%
-[12:22:06] Uploaded: https://youtu.be/J9O4qdiPSgk
+[14:30:25] Channel: Tomorrowly (future, mode=facts)
+[14:30:25] Topic from topics file: Tesla's flying Roadster: what was actually announced, how it would fly, and is it real or just a promise?
+[14:30:26] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:30:26] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:30:51] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:30:51] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:31:17] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:31:20] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:31:58] Gemini OK (gemini-flash-lite-latest)
+[14:31:58] Fact sheet for queued topic: 8 facts
+[14:31:58] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:31:59] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:32:42] Gemini OK (gemini-flash-lite-latest)
+[14:32:42] Script length: 100 words
+[14:32:42] Script ready: Tesla Flying Roadster: Real SpaceX Car Or Total Marketing Hype? (9 scenes)
+[14:32:42] Voice: {'engine': 'gemini', 'voice': 'Iapetus', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[14:32:58] Gemini TTS OK (gemini-3.1-flash-tts-preview, Iapetus)
+[14:33:12] Download failed: file too big (413 MB)
+[14:33:28] Download failed: file too big (160 MB)
+[14:33:31] Download failed: file too big (2140 MB)
+[14:33:36] Footage ready for 9 scenes
+[14:33:38] Freesound CC0 sound 'whoosh': Wooden Stick Swing 1_2 (id 485277)
+[14:33:40] Freesound CC0 sound 'computer beep': as_ab_al_computer_noise_1_16bit.wav (id 543045)
+[14:33:59] 19 clips rendered
+[14:33:59] Final render started
+[14:34:30] Freesound CC0 music: creepy2.mp3 (id 407469)
+[14:35:12] Video ready: 20261020_1433_future_short.mp4 (43.9s)
+[14:35:13] Upload 40%
+[14:35:13] Upload 81%
+[14:35:14] Uploaded: https://youtu.be/ujBL9LBgPHk

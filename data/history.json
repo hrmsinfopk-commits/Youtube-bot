@@ -313,6 +313,56 @@
    ],
    "format": "deep dive",
    "why": "Topic chosen by channel owner"
+  },
+  {
+   "date": "2026-10-20 14:35",
+   "type": "short",
+   "title": "Tesla Flying Roadster: Real SpaceX Car Or Total Marketing Hype? #shorts",
+   "topic": "Tesla's flying Roadster: what was actually announced, how it would fly, and is it real or just a promise?",
+   "style": "Before vs now: how this used to work vs what just changed",
+   "youtube_id": "ujBL9LBgPHk",
+   "voice": "Iapetus",
+   "seconds": 43.9,
+   "scene_times": [
+    [
+     0.0,
+     "Tesla just unveiled a brand-new Roadster strapped with actual SpaceX thrusters."
+    ],
+    [
+     7.1,
+     "Elon Musk claims it can turn right in midair and that flying cars are officially here."
+    ],
+    [
+     11.1,
+     "During demos, it reportedly hit zero to sixty in under one second."
+    ],
+    [
+     17.1,
+     "And yes, they are already taking two hundred fifty thousand dollar deposits."
+    ],
+    [
+     23.4,
+     "But here is the catch."
+    ],
+    [
+     25.2,
+     "The FAA says it is definitely not an aircraft."
+    ],
+    [
+     28.9,
+     "Experts doubt the twenty-twenty-eight delivery date and question if the thrusters are just"
+    ],
+    [
+     37.1,
+     "Send this to the friend who thinks flying cars are finally arriving."
+    ],
+    [
+     41.0,
+     "Would you actually fly in one of these?"
+    ]
+   ],
+   "format": null,
+   "why": "Topic chosen by channel owner"
   }
  ],
  "used_media": [
@@ -512,6 +562,30 @@
   "pixabay-v-182254",
   "pixabay-v-5364",
   "pixabay-v-342458",
-  "pixabay-v-324085"
+  "pixabay-v-324085",
+  "pixabay-v-1136",
+  "pixabay-v-45301",
+  "pixabay-v-64210",
+  "pixabay-v-115999",
+  "pixabay-v-34776",
+  "pixabay-v-307791",
+  "nasa-v-AFRC-2025-14538-02-X-43 Flight 3 20 Year RetrospectiveYT",
+  "nasa-v-GSFC_20180213_SeaLevelRise_m12849_Acceleration",
+  "nasa-v-GSFC_20160912_CFC_m12356_Campaign",
+  "pixabay-v-632",
+  "pixabay-v-151706",
+  "nasa-v-ksc_121304_comet_history",
+  "pixabay-v-29754",
+  "pixabay-v-40821",
+  "pixabay-v-204999",
+  "nasa-v-ksc_072605_rtf_launch",
+  "nasa-v-ksc_082905_rtf_overview",
+  "nasa-v-OTE-Engineering-History",
+  "nasa-v-GSFC_20180417_EarthDay_m12929_2018",
+  "pixabay-v-142641",
+  "pixabay-v-28660",
+  "pixabay-v-74",
+  "pixabay-v-80441",
+  "pixabay-v-911"
  ]
 }
