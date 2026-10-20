@@ -156,7 +156,8 @@ def freesound_music(path, seconds, mood):
                 res = [x for x in r.json().get("results", []) if ("Creative Commons 0" in x.get("license", "")
                        or x.get("license", "").endswith("/zero/1.0/"))
                        and any(m in (x.get("name", "") + " " + " ".join(x.get("tags") or [])).lower() for m in musical)
-                       and not any(b in x.get("name", "").lower() for b in ("chord", " to ", "note", "sample", "stinger"))]
+                       and not any(b in (x.get("name", "") + " " + " ".join(x.get("tags") or [])).lower()
+                                  for b in ("chord", " to ", "note", "sample", "stinger", "game", "8bit", "chiptune", "arcade"))]
                 break
             log(f"Freesound {ep.split('/')[-2]}: HTTP {r.status_code}")
         if not res:
