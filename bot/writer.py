@@ -90,14 +90,14 @@ def _story_prompt(cfg, premise, kind, style):
     lang = ch["language"]
     if kind == "short":
         secs = cfg["shorts"]["target_seconds"]
-        length = f"about {int(secs * 2.4)} spoken words ({secs} seconds), 7-10 scenes"
+        length = f"about {int(secs * 3.2)} spoken words ({secs} seconds), 7-10 scenes"
         shape = ("- Shape: line 1 drops the listener INTO the scary moment (no setup, no 'ek dafa ka zikr hai').\n"
                  "- Then 2-3 lines of rising dread with one concrete sensory detail (awaaz, khushboo, thand, parchhai).\n"
                  "- Then a turn ('lekin tab mujhe yaad aaya...'), and a final TWIST line that recontextualises everything.\n"
                  "- Last line: the twist, or a chilling question to the viewer ('aap hote to darwaza kholte?').")
     else:
         mins = cfg["long"]["target_minutes"]
-        length = f"about {int(mins * 145)} spoken words ({mins} minutes), 30-45 scenes"
+        length = f"about {int(mins * 190)} spoken words ({mins} minutes), 30-45 scenes"
         shape = ("- Cold open: start at the scariest moment, then 'lekin yeh sab shuru kaise hua...' and go back.\n"
                  "- 4-6 parts, each ending on a cliffhanger. Put a 2-4 word part name in 'chapter' on the first scene of each part.\n"
                  "- Plant small clues early that pay off in the final twist. Final twist must be surprising but fair.\n"
@@ -147,7 +147,7 @@ def write_script(cfg, topic, kind, style, latest_long_url=None):
         return _finish(_ask_script(cfg, _story_prompt(cfg, topic, kind, style), kind, 1.1), topic, style)
     if kind == "short":
         secs = cfg["shorts"]["target_seconds"]
-        length = f"about {int(secs * 2.4)} spoken words total ({secs} seconds), 6-9 scenes"
+        length = f"about {int(secs * 3.2)} spoken words total ({secs} seconds), 6-9 scenes"
         extra = ("- SUSPENSE STRUCTURE: (1) hook line, (2) an open loop in the first 5 seconds that promises a payoff at the end "
                  "(e.g. 'aur aakhri wali baat sab se khatarnak hai'), (3) fast build-up of 2-3 lines, (4) a twist starting with "
                  "'lekin'/'magar' style turn, (5) the REVEAL near the end, delivered slowly, (6) final line.\n"
@@ -156,7 +156,7 @@ def write_script(cfg, topic, kind, style, latest_long_url=None):
                  "- No 'subscribe' begging at the start.")
     else:
         mins = cfg["long"]["target_minutes"]
-        length = f"about {int(mins * 145)} spoken words total ({mins} minutes), 28-45 scenes"
+        length = f"about {int(mins * 190)} spoken words total ({mins} minutes), 28-45 scenes"
         extra = ("- Structure: hook (0-20s) -> promise of what they'll learn -> 4-7 sections each ending with a mini cliffhanger -> satisfying conclusion -> short outro.\n"
                  "- Put a short chapter name (2-5 words, Roman Urdu/English) on the first scene of each section in 'chapter'; other scenes chapter = \"\".\n"
                  "- At ~40% and ~70% add a pattern interrupt (surprising question or fact) to keep retention high.\n"
