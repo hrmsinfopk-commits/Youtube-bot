@@ -1,4 +1,5 @@
-# Yahan apne topics likhein, har line par ek. Bot pehle yahan se topic lega.
-# Jo topic use ho jaye, bot usay khud hata dega. List khali ho to bot khud trending topic dhoondega.
-# Example:
-# 2035 mein smartphone kaisa hoga
+# Yahan apne topics likhein, har line par ek. Bot pehle yahan se topic lega aur use hone ke baad khud hata dega.
+# Aam line = Short ke liye.  "long:" se shuru hone wali line = long video ke liye.
+# Khali ho to bot khud taaza khabron aur YouTube trends se topic dhoondta hai.
+# Example:  long: Everything about NASA's next Moon mission
+Tesla's flying Roadster: what was actually announced, how it would fly, and is it real or just a promise?

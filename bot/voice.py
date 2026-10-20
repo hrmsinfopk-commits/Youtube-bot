@@ -78,11 +78,16 @@ def pick_voice(cfg, gender=None):
 GEMINI_TTS_API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
 
-def _gemini_tts_call(cfg, text, voice_name, style):
+def _gemini_tts_call(cfg, text, voice_name, style, vsettings=None):
     tts = cfg["tts"]
     last = None
-    for attempt in range(4):
-        for model in tts.get("models", ["gemini-3.1-flash-tts-preview"]):
+    models = list(tts.get("models", ["gemini-3.1-flash-tts-preview"]))
+    locked = (vsettings or {}).get("tts_model")
+    for attempt in range(5):
+        # once a model has spoken part of this video, keep using it so the voice sounds the same throughout;
+        # only switch if it keeps failing (attempt >= 3)
+        order = [locked] if locked and attempt < 3 else models
+        for model in order:
             body = {"contents": [{"parts": [{"text": f"{style}:\n\n{text}"}]}],
                     "generationConfig": {"responseModalities": ["AUDIO"],
                                          "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice_name}}}}}
@@ -99,6 +104,8 @@ def _gemini_tts_call(cfg, text, voice_name, style):
                 if len(pcm) < 24000:
                     raise RuntimeError(f"{model}: empty audio")
                 log(f"Gemini TTS OK ({model}, {voice_name})")
+                if vsettings is not None:
+                    vsettings["tts_model"] = model
                 return pcm
             except Exception as e:  # noqa: BLE001
                 last = e
@@ -146,7 +153,7 @@ def _gemini_scenes(cfg, scenes, workdir, vsettings):
     pieces = {}
     for ci, idxs in enumerate(chunks):
         pcm = _gemini_tts_call(cfg, "\n\n".join(scenes[i]["text"] for i in idxs),
-                               vsettings["voice"], vsettings["style"])
+                               vsettings["voice"], vsettings["style"], vsettings)
         raw = workdir / f"gtts_{ci:02d}.pcm"
         raw.write_bytes(pcm)
         wav = workdir / f"gtts_{ci:02d}.wav"

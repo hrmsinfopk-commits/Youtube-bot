@@ -15,15 +15,17 @@ LANG_RULES = {
 }
 
 
-def queued_topic():
-    """Next line from topics.txt (your own topics always go first)."""
+def queued_topic(kind="short"):
+    """Next line from topics.txt (your own topics go first). Lines starting with 'long:' are for long videos."""
     qfile = topics_file()
     if not qfile.exists():
         return None
     lines = qfile.read_text(encoding="utf-8").splitlines()
     for i, line in enumerate(lines):
         t = line.strip()
-        if t and not t.startswith("#"):
+        is_long = t.lower().startswith("long:")
+        if t and not t.startswith("#") and is_long == (kind == "long"):
+            t = t[5:].strip() if is_long else t
             del lines[i]
             qfile.write_text("\n".join(lines) + "\n", encoding="utf-8")
             log("Topic from topics file:", t)

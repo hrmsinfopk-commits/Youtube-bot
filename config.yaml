@@ -16,7 +16,7 @@ shorts:
 
 long:
   per_run: 1
-  target_minutes: 8                    # 8-10 minute: watch hours ke liye best
+  target_minutes: 9                    # 8+ minute = beech mein bhi ads (mid-roll) lag sakte hain
   formats: ["weekly roundup", "deep dive"]   # baari baari: hafte ki top khabrein / ek khabar ki poori kahani
 
 upload:
@@ -55,7 +55,7 @@ tts:
     short natural breaths, never robotic, never like a news anchor
 
 voice_rate: [0, 8]                     # sirf Microsoft backup awaaz ke liye
-words_per_second: 2.6                  # English awaaz ki raftaar
+words_per_second: 2.35                 # English awaaz ki asal raftaar (test se naapi gayi)
 
 voices:
   urdu:    ["ur-PK-AsadNeural", "ur-PK-UzmaNeural", "ur-IN-SalmanNeural", "ur-IN-GulNeural"]
