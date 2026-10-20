@@ -1,16 +1,10 @@
-[07:25:01] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[07:25:01] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[07:25:01] Gemini error (gemini-3.8-flash-lite): gemini-3.8-flash-lite: HTTP 404 {   "error": {     "code": 404,     "message": "models/gemini-3.8-flash-lite is not found for API version v1beta, or is not supp
-[07:25:01] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. 
-[07:25:01] Search-grounded ideas failed, using plain mode: Gemini failed: gemini-flash-lite-latest: HTTP 429 {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your p
-[07:26:30] Gemini OK (gemini-3.8-flash)
-[07:26:30] Topic chosen: James Webb Telescope Discovered "Impossible" Giant Galaxies Breaking Modern Physics
-[07:28:15] Gemini OK (gemini-3.8-flash)
-[07:28:15] Script ready: James Webb Ne Physics Ke Niyam Tod Diye? Impossible Galaxies Found (6 scenes)
-[07:28:15] Voice: {'voice': 'ur-IN-GulNeural', 'rate': '+4%', 'pitch': '-3Hz'}
-[07:28:46] 16 clips rendered
-[07:29:09] Video ready: 20261020_0728_short.mp4 (36.8s)
-[07:29:09] YouTube secrets missing - video sirf GitHub artifact mein save hogi
+[08:21:52] Gemini OK (gemini-3.8-flash)
+[08:21:52] Topic chosen: Korea’s Artificial Sun Maintained 100 Million Degrees for 48 Seconds
+[08:21:54] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:23:40] Gemini OK (gemini-flash-latest)
+[08:23:40] Script ready: Korea Ne Banaya Asli Sooraj! 100 Million Degrees Record (8 scenes)
+[08:23:40] Voice: {'voice': 'ur-PK-AsadNeural', 'rate': '+5%', 'pitch': '+2Hz'}
+[08:24:43] 20 clips rendered
+[08:24:44] Music generated: mood=suspense, tempo=87
+[08:25:38] Video ready: 20261020_0824_short.mp4 (48.5s)
+[08:25:38] YouTube secrets missing - video sirf GitHub artifact mein save hogi
