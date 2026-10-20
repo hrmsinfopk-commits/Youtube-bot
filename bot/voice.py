@@ -1,9 +1,15 @@
 """Text-to-speech per scene: Microsoft Edge neural voices (free), gTTS fallback.
 Also returns word timings so captions stay exactly in sync with the voice."""
 import asyncio
+import base64
 import random
+import re
+import subprocess
+import time
 
-from .common import duration, log, run
+import requests
+
+from .common import duration, log, run, secret
 
 GTTS_LANG = {"urdu": "ur", "hindi": "hi", "english": "en"}
 FEMALE = {"ur-PK-UzmaNeural", "ur-IN-GulNeural", "hi-IN-SwaraNeural", "en-US-AvaNeural",
@@ -44,14 +50,110 @@ def _voices(cfg, gender=None):
     return pool or (list(v) if not isinstance(v, dict) else v.get("male", []) + v.get("female", []))
 
 
+def edge_fallback(cfg, vsettings):
+    lo, hi = cfg.get("voice_pitch", [-4, 4])
+    return {"engine": "edge", "voice": random.choice(_voices(cfg, vsettings.get("gender"))),
+            "rate": f"{random.randint(*cfg.get('voice_rate', [4, 12])):+d}%",
+            "pitch": f"{random.randint(lo, hi):+d}Hz"}
+
+
 def pick_voice(cfg, gender=None):
     """Voice matching the narrator's gender + slight random speed/pitch so every video sounds different."""
+    tts = cfg.get("tts", {})
+    if tts.get("engine") == "gemini" and secret("GEMINI_API_KEY"):
+        pool = tts.get("voices", {})
+        names = pool.get(gender) if gender in ("male", "female") else (pool.get("male", []) + pool.get("female", []))
+        if names:
+            g = gender or ("female" if names[0] in pool.get("female", []) else "male")
+            return {"engine": "gemini", "voice": random.choice(names), "gender": g, "style": tts["style"]}
     lo, hi = cfg.get("voice_pitch", [-4, 4])
-    return {
+    return {"engine": "edge", "gender": gender,
         "voice": random.choice(_voices(cfg, gender)),
         "rate": f"{random.randint(*cfg.get('voice_rate', [4, 12])):+d}%",
         "pitch": f"{random.randint(lo, hi):+d}Hz",
     }
+
+
+# ------------------------------------------------------------------ Gemini TTS (natural, directable voice)
+GEMINI_TTS_API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+
+
+def _gemini_tts_call(cfg, text, voice_name, style):
+    tts = cfg["tts"]
+    last = None
+    for attempt in range(4):
+        for model in tts.get("models", ["gemini-3.1-flash-tts-preview"]):
+            body = {"contents": [{"parts": [{"text": f"{style}:\n\n{text}"}]}],
+                    "generationConfig": {"responseModalities": ["AUDIO"],
+                                         "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice_name}}}}}
+            try:
+                r = requests.post(GEMINI_TTS_API.format(model=model), json=body, timeout=300,
+                                  headers={"x-goog-api-key": secret("GEMINI_API_KEY")})
+                if r.status_code != 200:
+                    raise RuntimeError(f"{model}: HTTP {r.status_code} {r.text[:150]}")
+                part = r.json()["candidates"][0]["content"]["parts"][0]
+                pcm = base64.b64decode(part["inlineData"]["data"])
+                if len(pcm) < 24000:
+                    raise RuntimeError(f"{model}: empty audio")
+                log(f"Gemini TTS OK ({model}, {voice_name})")
+                return pcm
+            except Exception as e:  # noqa: BLE001
+                last = e
+                log("Gemini TTS error:", str(e)[:160].replace("\n", " "))
+        time.sleep(35)
+    raise RuntimeError(f"Gemini TTS failed: {last}")
+
+
+def _silences(wav):
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(wav), "-af", "silencedetect=n=-38dB:d=0.16",
+                        "-f", "null", "-"], capture_output=True, text=True)
+    st = [float(x) for x in re.findall(r"silence_start: ([0-9.]+)", r.stderr)]
+    en = [float(x) for x in re.findall(r"silence_end: ([0-9.]+)", r.stderr)]
+    return [((a + b) / 2) for a, b in zip(st, en)]
+
+
+def _split_points(total, weights, sil):
+    """Estimated scene boundaries (by text length) snapped to the nearest real pause in the audio."""
+    cum, acc = [], 0
+    for w in weights[:-1]:
+        acc += w
+        cum.append(total * acc / sum(weights))
+    pts, prev = [], 0.0
+    for est in cum:
+        near = [x for x in sil if abs(x - est) <= 1.6 and x > prev + 0.4]
+        p = min(near, key=lambda x: abs(x - est)) if near else max(est, prev + 0.4)
+        pts.append(p)
+        prev = p
+    return pts
+
+
+def _gemini_scenes(cfg, scenes, workdir, vsettings):
+    """Narrate scenes in a few large chunks (fewer API calls, more natural flow), then cut per scene."""
+    max_words = cfg["tts"].get("chunk_words", 140)
+    chunks, cur, n = [], [], 0
+    for i, s in enumerate(scenes):
+        w = len(s["text"].split())
+        if cur and n + w > max_words:
+            chunks.append(cur)
+            cur, n = [], 0
+        cur.append(i)
+        n += w
+    if cur:
+        chunks.append(cur)
+    pieces = {}
+    for ci, idxs in enumerate(chunks):
+        pcm = _gemini_tts_call(cfg, "\n\n".join(scenes[i]["text"] for i in idxs),
+                               vsettings["voice"], vsettings["style"])
+        raw = workdir / f"gtts_{ci:02d}.pcm"
+        raw.write_bytes(pcm)
+        wav = workdir / f"gtts_{ci:02d}.wav"
+        run(["ffmpeg", "-y", "-v", "error", "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", str(raw), str(wav)])
+        total = duration(wav)
+        pts = _split_points(total, [max(1, len(scenes[i]["text"])) for i in idxs], _silences(wav))
+        bounds = [0.0] + pts + [total]
+        for k, i in enumerate(idxs):
+            pieces[i] = (wav, bounds[k], bounds[k + 1])
+    return pieces
 
 
 def synth_scenes(cfg, scenes, workdir, vsettings):
@@ -59,6 +161,23 @@ def synth_scenes(cfg, scenes, workdir, vsettings):
     lang = cfg["channel"]["language"]
     fx = VOICE_FX.get(cfg.get("voice_fx"), "")
     out = []
+    if vsettings.get("engine") == "gemini":
+        try:
+            pieces = _gemini_scenes(cfg, scenes, workdir, vsettings)
+            for i in range(len(scenes)):
+                src, a, b = pieces[i]
+                wav = workdir / f"voice_{i:03d}.wav"
+                run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-af",
+                     f"atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS,"
+                     "silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
+                     "silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
+                     f"loudnorm=I=-16:TP=-1.5:LRA=11{fx}", "-ar", "44100", "-ac", "2", str(wav)])
+                out.append((wav, duration(wav), []))
+            return out
+        except Exception as e:  # noqa: BLE001
+            log("Gemini voice failed, switching whole video to Microsoft voice:", str(e)[:150])
+            vsettings.update(edge_fallback(cfg, vsettings))
+            out = []
     for i, s in enumerate(scenes):
         mp3 = workdir / f"voice_{i:03d}.mp3"
         wav = workdir / f"voice_{i:03d}.wav"

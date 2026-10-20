@@ -329,7 +329,8 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
         fc = f"[0:v]{','.join(chain)},"
     fc += f"fade=t=in:st=0:d=0.2,fade=t=out:st={max(total - 0.6, 0):.2f}:d=0.6[v]"
     run(["ffmpeg", "-y", "-v", "error"] + inputs + ["-filter_complex", fc,
-         "-map", "[v]", "-map", "1:a", "-c:v", "libx264", "-preset", "fast", "-crf", "21",
+         "-map", "[v]", "-map", "1:a", "-c:v", "libx264", "-preset", "fast", "-crf", "22",
+         "-maxrate", "8M" if kind == "short" else "6M", "-bufsize", "16M",   # keeps files small (grain!)
          "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart",
          "-t", f"{total:.2f}", str(out_path)])
     log(f"Video ready: {out_path.name} ({total:.1f}s)")

@@ -95,13 +95,15 @@ def _story_prompt(cfg, premise, kind, style):
     lang = ch["language"]
     if kind == "short":
         secs = cfg["shorts"]["target_seconds"]
-        length = f"about {int(secs * _wps(cfg))} spoken words ({secs} seconds), 8-12 scenes, ONE short sentence per scene"
+        length = f"about {int(secs * _wps(cfg))} spoken words ({secs} seconds), 5-8 scenes of 2-3 flowing sentences each"
         shape = ("- ONE narrator ('main'), ONE place, ONE night, ONE strange thing that gets worse in 3 steps. No sub-plots, no backstory dumps.\n"
                  "- Line 1: drop the listener into a specific, quiet, ordinary moment that feels slightly wrong (time + place + one detail),\n"
                  "  e.g. 'Raat ke teen baj rahe the... aur hostel ki teesri manzil par koi seedhiyan chadh raha tha.'\n"
                  "- Escalate with concrete SENSORY details the listener can picture/hear (khat-khat, geeli mitti ki boo, achanak thand, dheemi sargoshi).\n"
                  "- Include ONE short line of dialogue or a whisper in quotes - it is the scariest part.\n"
-                 "- Use '...' inside sentences where the narrator would pause to breathe. Build slowly; do NOT rush.\n"
+                 "- Tell it the way people really tell a scary incident to friends: flowing and natural, one sentence leading into the next,\n"
+                 "  with everyday Urdu, not poetic or bookish. Use '...' only 2-3 times where a real pause adds tension.\n"
+                 "- Keep the momentum: every line must add something new (a sound, a detail, a realisation). No filler, no repeating.\n"
                  "- The final line is the TWIST: short, quiet, and it changes the meaning of everything before it. No moral, no explanation after it.\n"
                  "- The story must make complete sense on its own and be satisfying, not confusing.")
     else:

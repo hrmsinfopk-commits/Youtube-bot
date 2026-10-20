@@ -26,17 +26,28 @@ visual:
   grade: "dark"                       # andheri, thandi rangat + vignette
   palette: "horror"                   # laal / safed captions
   caption_style: "story"              # typewriter font, aahista ubharte captions, bina pop
-  shot_seconds: [4.5, 7.5]            # har shot zyada der tak (horror mein jaldi cut nahi)
-  grain: 9                            # purani film jaisa grain
+  shot_seconds: [3.5, 5.5]            # mahauli shots, lekin video ruki hui na lage
+  grain: 5                            # halka film grain
   progress_bar: true
 
 # awaaz: dheemi, gehri, halki goonj; har jumle ke baad saans
 voice_fx: "horror"
-voice_rate: [-14, -7]
-voice_pitch: [-6, -2]
-pauses: [0.55, 0.95]
-reveal_pause: 1.4
-words_per_second: 2.3
+voice_rate: [-5, 0]                   # sirf Microsoft wali backup awaaz ke liye
+voice_pitch: [-4, -1]
+pauses: [0.15, 0.35]                  # kahani rawani se chale; lamba pause sirf twist se pehle
+reveal_pause: 0.9
+words_per_second: 2.6
+
+tts:
+  voices:
+    male: ["Charon", "Algenib", "Enceladus", "Orus"]
+    female: ["Gacrux", "Sulafat", "Achernar", "Kore"]
+  style: >-
+    You are a famous late-night Urdu horror storyteller on radio. Narrate this in natural, fluent Pakistani Urdu
+    as if telling a true incident to friends sitting in the dark: steady, flowing, medium pace (not slow),
+    low and tense voice, small natural pauses only where there is "...", lower your voice almost to a whisper
+    on the scariest lines and for whispered dialogue, a quick breath before the final twist. Sound like a real
+    human, not an actor and not a robot
 
 voices:
   urdu:

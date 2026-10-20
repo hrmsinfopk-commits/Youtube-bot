@@ -30,6 +30,20 @@ gemini:
   models: ["gemini-3.8-flash", "gemini-flash-latest", "gemini-flash-lite-latest"]
   use_google_search_for_trends: false   # free key par Google Search band hai
 
+# Awaaz: "gemini" = Google ki natural, insaan jaisi Urdu awaaz (isi Gemini key se).
+# Agar Gemini awaaz na mile (limit / error) to bot khud neeche wali Microsoft awaaz use karta hai.
+tts:
+  engine: "gemini"
+  models: ["gemini-3.1-flash-tts-preview", "gemini-2.5-flash-preview-tts"]
+  chunk_words: 140
+  voices:
+    male: ["Charon", "Orus", "Algenib", "Iapetus"]
+    female: ["Kore", "Aoede", "Sulafat", "Gacrux"]
+  style: >-
+    Read this in natural, fluent Pakistani Urdu like a popular, energetic YouTube science creator talking to a friend:
+    curious, amazed, confident, conversational, medium-fast pace, clear emphasis on surprising words, short natural breaths,
+    never robotic, never like a news reader
+
 voices:
   urdu:    ["ur-PK-AsadNeural", "ur-PK-UzmaNeural", "ur-IN-SalmanNeural", "ur-IN-GulNeural"]
   hindi:   ["hi-IN-MadhurNeural", "hi-IN-SwaraNeural"]
