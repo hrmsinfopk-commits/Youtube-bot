@@ -363,6 +363,48 @@
    ],
    "format": null,
    "why": "Topic chosen by channel owner"
+  },
+  {
+   "date": "2026-10-20 14:48",
+   "type": "short",
+   "title": "The Impossible Green Star Astronomers Just Found #shorts",
+   "topic": "The 'Impossible' Green Star Discovered by Astronomers - Every physics textbook teaches that green stars are physically impossible to see—until astronomers just detected a bizarre 'cosmic zombie' star glowing green.",
+   "style": "Countdown: 3-5 surprising facts about it, the most shocking one last",
+   "youtube_id": null,
+   "voice": "Puck",
+   "seconds": 47.5,
+   "scene_times": [
+    [
+     0.0,
+     "Every physics textbook says seeing a green star with your own eyes is completely impossibl"
+    ],
+    [
+     6.8,
+     "That is until astronomers just detected a bizarre stellar object glowing with a ghostly gr"
+    ],
+    [
+     15.0,
+     "Normally, stars blast out red, green, and blue light all at once, which our eyes just blen"
+    ],
+    [
+     21.8,
+     "So starlight usually looks red, yellow, or blue, but never green."
+    ],
+    [
+     26.7,
+     "But here is the twist. This new object is a cosmic zombie white dwarf that ate its own pla"
+    ],
+    [
+     34.0,
+     "Intense oxygen gas around it creates powerful emission lines that completely overwhelm the"
+    ],
+    [
+     43.6,
+     "Sending this to your friend who loves weird space facts."
+    ]
+   ],
+   "format": null,
+   "why": "Space mystery Shorts command massive viral viewership, with recent space science videos pulling 1.8M to over 4.2M views. Freshly reported on October 15, this counterintuitive astronomy discovery has zero presence on the trending Shorts feed yet, giving us an uncontested first-mover advantage."
   }
  ],
  "used_media": [
@@ -586,6 +628,27 @@
   "pixabay-v-28660",
   "pixabay-v-74",
   "pixabay-v-80441",
-  "pixabay-v-911"
+  "pixabay-v-911",
+  "pixabay-v-121204",
+  "pixabay-v-121795",
+  "nasa-v-GSFC_20190626_WFIRST_m13235_WideField_60",
+  "nasa-v-GSFC_20131217_ArgoSun_m11385",
+  "pixabay-v-65236",
+  "pixabay-v-7348",
+  "nasa-v-ksc_080805_mro_smrekar7",
+  "nasa-v-jsc2021m000788_JSC_Lighting Lab",
+  "nasa-v-MIRI_Feature_Edit",
+  "nasa-v-JPL-20190301-WHATSUf-0001-Whats Up March 2019",
+  "nasa-v-NASA Minute Nov. 28, 2025",
+  "nasa-v-JPL-20201101-WHATSUf-0001-Whats_Up_November_2020",
+  "nasa-v-GSFC_20190110_AT2018COW_m12855_4k",
+  "nasa-v-Will the Sun Ever Burn Out",
+  "pixabay-v-185459",
+  "nasa-v-GSFC_20131121_ISON_m11384_Comet",
+  "nasa-v-ksc_012505_black_holes",
+  "nasa-v-JPL-20241009-EXOPLNf-0001-NASA_Detects_Possible_Volcanic_MoonCC",
+  "pixabay-v-204527",
+  "pixabay-v-3176",
+  "pixabay-v-736"
  ]
 }

@@ -1,30 +1,25 @@
-[14:30:25] Channel: Tomorrowly (future, mode=facts)
-[14:30:25] Topic from topics file: Tesla's flying Roadster: what was actually announced, how it would fly, and is it real or just a promise?
-[14:30:26] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:30:26] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:30:51] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:30:51] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:31:17] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:31:20] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:31:58] Gemini OK (gemini-flash-lite-latest)
-[14:31:58] Fact sheet for queued topic: 8 facts
-[14:31:58] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:31:59] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:32:42] Gemini OK (gemini-flash-lite-latest)
-[14:32:42] Script length: 100 words
-[14:32:42] Script ready: Tesla Flying Roadster: Real SpaceX Car Or Total Marketing Hype? (9 scenes)
-[14:32:42] Voice: {'engine': 'gemini', 'voice': 'Iapetus', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[14:32:58] Gemini TTS OK (gemini-3.1-flash-tts-preview, Iapetus)
-[14:33:12] Download failed: file too big (413 MB)
-[14:33:28] Download failed: file too big (160 MB)
-[14:33:31] Download failed: file too big (2140 MB)
-[14:33:36] Footage ready for 9 scenes
-[14:33:38] Freesound CC0 sound 'whoosh': Wooden Stick Swing 1_2 (id 485277)
-[14:33:40] Freesound CC0 sound 'computer beep': as_ab_al_computer_noise_1_16bit.wav (id 543045)
-[14:33:59] 19 clips rendered
-[14:33:59] Final render started
-[14:34:30] Freesound CC0 music: creepy2.mp3 (id 407469)
-[14:35:12] Video ready: 20261020_1433_future_short.mp4 (43.9s)
-[14:35:13] Upload 40%
-[14:35:13] Upload 81%
-[14:35:14] Uploaded: https://youtu.be/ujBL9LBgPHk
+[14:42:55] Channel: Tomorrowly (future, mode=facts)
+[14:43:07] News headlines collected: 169
+[14:43:11] YouTube videos analysed: 74
+[14:44:13] Gemini OK (gemini-3.8-flash)
+[14:44:14] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:44:46] Gemini OK (gemini-flash-latest)
+[14:44:46] Trend topic: The 'Impossible' Green Star Discovered by Astronomers | why: Space mystery Shorts command massive viral viewership, with recent space science videos pulling 1.8M to over 4.2M views. Freshly reported on October 15, this counterintuitive astronomy discovery has zero presence on the trending Shorts feed yet, giving us an uncontested first-mover advantage.
+[14:44:46] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:44:46] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:45:12] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:45:12] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:45:37] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:45:37] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:46:06] Gemini OK (gemini-flash-lite-latest)
+[14:46:06] Script length: 106 words
+[14:46:06] Script ready: The Impossible Green Star Astronomers Just Found (7 scenes)
+[14:46:06] Voice: {'engine': 'gemini', 'voice': 'Puck', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[14:46:26] Gemini TTS OK (gemini-3.1-flash-tts-preview, Puck)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[14:46:30] Caption alignment unavailable, using estimated timing: open() got an unexpected keyword argument 'metadata_errors'
+[14:47:06] Footage ready for 7 scenes
+[14:47:19] 20 clips rendered
+[14:47:19] Final render started
+[14:47:59] Freesound CC0 music: Sailors Having Fun (FX) (id 690997)
+[14:48:26] Video ready: 20261020_1447_future_short.mp4 (47.5s)
