@@ -91,7 +91,10 @@ def _gemini_tts_call(cfg, text, voice_name, style):
                                   headers={"x-goog-api-key": secret("GEMINI_API_KEY")})
                 if r.status_code != 200:
                     raise RuntimeError(f"{model}: HTTP {r.status_code} {r.text[:150]}")
-                part = r.json()["candidates"][0]["content"]["parts"][0]
+                cand = (r.json().get("candidates") or [{}])[0]
+                if "content" not in cand:
+                    raise RuntimeError(f"{model}: no audio (finishReason={cand.get('finishReason')})")
+                part = cand["content"]["parts"][0]
                 pcm = base64.b64decode(part["inlineData"]["data"])
                 if len(pcm) < 24000:
                     raise RuntimeError(f"{model}: empty audio")

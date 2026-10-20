@@ -181,8 +181,9 @@ def freesound_sfx(path, query, max_dur=8, min_dur=0.3):
         for ep in ("https://freesound.org/apiv2/search/", "https://freesound.org/apiv2/search/text/"):
             r = requests.get(ep, timeout=30, params=params, headers={"Authorization": f"Token {key}"})
             if r.status_code == 200:
-                res = [x for x in r.json().get("results", []) if "Creative Commons 0" in x.get("license", "")
-                       or x.get("license", "").endswith("/zero/1.0/")]
+                bad = ("robot", "game", "cartoon", "8bit", "8-bit", "retro", "funny", "comic", "toy", "arcade", "synth", "laser")
+                res = [x for x in r.json().get("results", []) if ("Creative Commons 0" in x.get("license", "")
+                       or x.get("license", "").endswith("/zero/1.0/")) and not any(b in x.get("name", "").lower() for b in bad)]
                 if not res:
                     return None
                 pick = random.choice(res[:6])
