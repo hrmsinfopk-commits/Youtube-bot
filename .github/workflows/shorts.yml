@@ -1,11 +1,10 @@
-name: Daily Shorts
+name: Future Shorts
 
 on:
   schedule:
-    # UTC time. Pakistan = UTC+5  ->  9:30 AM, 3:30 PM, 8:30 PM PKT
-    - cron: "30 4 * * *"
-    - cron: "30 10 * * *"
-    - cron: "30 15 * * *"
+    # UTC time. Pakistan time = UTC + 5  ->  10:30 AM aur 7:30 PM
+    - cron: "30 5 * * *"
+    - cron: "30 14 * * *"
   workflow_dispatch: {}        # "Run workflow" button se kabhi bhi chala sakte hain
   push:
     paths: [".github/trigger-short.txt"]   # is file ko badalne se bhi bot chalta hai
@@ -14,7 +13,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: yt-bot
+  group: ${{ github.workflow }}
   cancel-in-progress: false
 
 jobs:
@@ -35,21 +34,23 @@ jobs:
           pip install -q -r requirements.txt
           bash scripts/get_fonts.sh
 
-      - name: Make & upload Short
+      - name: Make & upload video
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          FREESOUND_API_KEY: ${{ secrets.FREESOUND_API_KEY }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-        run: python -m bot.main --type short 2>&1 | python scripts/redact.py data/last_run_short.log
+          YT_REFRESH_TOKEN_KAHANI: ${{ secrets.YT_REFRESH_TOKEN_KAHANI }}
+        run: python -m bot.main --channel future --type short 2>&1 | python scripts/redact.py data/last_run_future_short.log
 
       - name: Save video for download
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: shorts-${{ github.run_number }}
+          name: future-short-${{ github.run_number }}
           path: output/
           retention-days: 7
           if-no-files-found: ignore
@@ -59,6 +60,6 @@ jobs:
         run: |
           git config user.name "yt-bot"
           git config user.email "yt-bot@users.noreply.github.com"
-          git add data/ topics.txt
-          git diff --cached --quiet || git commit -m "bot: history update"
-          git pull --rebase -q && git push -q || true
+          git add data/ topics*.txt
+          git diff --cached --quiet || git commit -m "bot: history update (future short)"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done

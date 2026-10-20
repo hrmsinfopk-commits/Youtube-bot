@@ -1,0 +1,65 @@
+name: Kahani Shorts
+
+on:
+  schedule:
+    # UTC time. Pakistan time = UTC + 5  ->  9:30 PM aur 11:30 PM (kahaniyan raat ko zyada chalti hain)
+    - cron: "30 16 * * *"
+    - cron: "30 18 * * *"
+  workflow_dispatch: {}        # "Run workflow" button se kabhi bhi chala sakte hain
+  push:
+    paths: [".github/trigger-kahani-short.txt"]   # is file ko badalne se bhi bot chalta hai
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg libraqm0 > /dev/null
+          pip install -q -r requirements.txt
+          bash scripts/get_fonts.sh
+
+      - name: Make & upload video
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          FREESOUND_API_KEY: ${{ secrets.FREESOUND_API_KEY }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_REFRESH_TOKEN_KAHANI: ${{ secrets.YT_REFRESH_TOKEN_KAHANI }}
+        run: python -m bot.main --channel kahani --type short 2>&1 | python scripts/redact.py data/last_run_kahani_short.log
+
+      - name: Save video for download
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kahani-short-${{ github.run_number }}
+          path: output/
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Save history
+        if: always()
+        run: |
+          git config user.name "yt-bot"
+          git config user.email "yt-bot@users.noreply.github.com"
+          git add data/ topics*.txt
+          git diff --cached --quiet || git commit -m "bot: history update (kahani short)"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done

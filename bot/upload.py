@@ -1,5 +1,5 @@
 """YouTube upload via the official Data API (OAuth refresh token stored as GitHub secret)."""
-from .common import log, secret
+from .common import log, secret, yt_secret_suffix
 
 SCOPES = ["https://www.googleapis.com/auth/youtube.upload",
           "https://www.googleapis.com/auth/youtube.readonly"]
@@ -8,7 +8,7 @@ SCOPES = ["https://www.googleapis.com/auth/youtube.upload",
 def _service():
     from google.oauth2.credentials import Credentials
     from googleapiclient.discovery import build
-    creds = Credentials(None, refresh_token=secret("YT_REFRESH_TOKEN"),
+    creds = Credentials(None, refresh_token=secret("YT_REFRESH_TOKEN" + yt_secret_suffix()),
                         token_uri="https://oauth2.googleapis.com/token",
                         client_id=secret("YT_CLIENT_ID"), client_secret=secret("YT_CLIENT_SECRET"),
                         scopes=SCOPES)
@@ -16,7 +16,7 @@ def _service():
 
 
 def ready():
-    return all(secret(k) for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"))
+    return all(secret(k) for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN" + yt_secret_suffix()))
 
 
 def upload(cfg, video, meta, thumb=None):

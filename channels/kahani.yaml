@@ -1,0 +1,39 @@
+# ===========================================================
+#  Doosra channel: Kahaniyan (horror / mystery / crime fiction)
+#  Sirf woh settings yahan hain jo config.yaml se alag hain.
+# ===========================================================
+
+channel:
+  name: "Raat Ki Kahaniyan"           # apne channel ka naam yahan likhein
+  mode: "stories"
+  niche: "Original Urdu horror, mystery aur crime/thriller kahaniyan (fiction), twist endings ke saath"
+  audience: "Pakistan aur India ke 16-40 saal ke log jo raat ko darawni aur suspense kahaniyan sunna pasand karte hain"
+  language: "urdu"
+  captions: "roman"
+  fallback_keywords: ["dark corridor", "foggy forest", "night road", "abandoned house"]
+  extra_instructions: ""
+
+shorts:
+  target_seconds: 50
+
+long:
+  target_minutes: 9
+
+upload:
+  category_id: "24"                   # 24 = Entertainment
+
+visual:
+  grade: "dark"                       # andheri, thandi rangat + vignette
+  palette: "horror"                   # laal / safed captions
+
+voices:
+  urdu: ["ur-PK-AsadNeural", "ur-IN-SalmanNeural", "ur-PK-UzmaNeural"]
+
+styles:
+  - "Pehla shakhs (main) apni aap beeti sunata hai, dheemi aur sargoshi wali awaaz mein"
+  - "Raat ki shift: hospital, chowkidar, call center ya highway dhaba"
+  - "Purani haveli ya gaon: khandani raaz aur purane waqiat"
+  - "Ajeeb phone call, message ya voice note jo nahi aana chahiye tha"
+  - "Crime thriller: ek chhoti si galti jo poora sach khol deti hai"
+  - "Sach ya wehem? aakhir tak shak rahe ke yeh bhoot tha ya insaan"
+  - "Safar ki kahani: aakhri train, sunsan sadak, ya ajnabi musafir"

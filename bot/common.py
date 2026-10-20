@@ -15,21 +15,56 @@ OUT = ROOT / "output"
 WORK = ROOT / "work"
 FONTS = ROOT / "fonts"
 MUSIC = ROOT / "music"
-HISTORY_FILE = DATA / "history.json"
+CHANNEL = {"id": "future"}   # set by main.py (--channel)
+
+
+def history_file():
+    ch = CHANNEL["id"]
+    return DATA / ("history.json" if ch == "future" else f"history_{ch}.json")
+
+
+def topics_file():
+    ch = CHANNEL["id"]
+    return ROOT / ("topics.txt" if ch == "future" else f"topics_{ch}.txt")
+
+
+def yt_secret_suffix():
+    ch = CHANNEL["id"]
+    return "" if ch == "future" else f"_{ch.upper()}"
 
 
 def log(*args):
     print(time.strftime("[%H:%M:%S]"), *args, flush=True)
 
 
-def load_config():
+def _merge(base, over):
+    for k, v in (over or {}).items():
+        if isinstance(v, dict) and isinstance(base.get(k), dict):
+            _merge(base[k], v)
+        else:
+            base[k] = v
+    return base
+
+
+def load_config(channel="future"):
+    """config.yaml = base (Future channel). channels/<name>.yaml overrides it for other channels."""
+    CHANNEL["id"] = channel
     with open(ROOT / "config.yaml", encoding="utf-8") as f:
-        return yaml.safe_load(f)
+        cfg = yaml.safe_load(f)
+    extra = ROOT / "channels" / f"{channel}.yaml"
+    if channel != "future":
+        if not extra.exists():
+            raise SystemExit(f"channels/{channel}.yaml nahi mili")
+        with open(extra, encoding="utf-8") as f:
+            _merge(cfg, yaml.safe_load(f))
+    cfg.setdefault("channel", {}).setdefault("mode", "facts")
+    cfg.setdefault("visual", {})
+    return cfg
 
 
 def load_history():
-    if HISTORY_FILE.exists():
-        with open(HISTORY_FILE, encoding="utf-8") as f:
+    if history_file().exists():
+        with open(history_file(), encoding="utf-8") as f:
             h = json.load(f)
     else:
         h = {}
@@ -41,7 +76,7 @@ def load_history():
 def save_history(h):
     DATA.mkdir(exist_ok=True)
     h["used_media"] = h["used_media"][-5000:]
-    with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+    with open(history_file(), "w", encoding="utf-8") as f:
         json.dump(h, f, ensure_ascii=False, indent=1)
 
 

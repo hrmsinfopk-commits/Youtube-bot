@@ -19,6 +19,7 @@ MOODS = {
     "epic":       ("minor", (85, 105), 1600, ["pad", "sub", "pulse", "drum"]),
     "uplifting":  ("major", (90, 115), 2200, ["pad", "sub", "bell", "pulse"]),
     "calm":       ("major", (60, 75), 1400, ["pad", "bell"]),
+    "horror":     ("phrygian", (50, 65), 550, ["pad", "sub", "drone", "tick", "bell"]),
 }
 SCALES = {"minor": [0, 2, 3, 5, 7, 8, 10], "major": [0, 2, 4, 5, 7, 9, 11],
           "phrygian": [0, 1, 3, 5, 7, 8, 10]}
@@ -140,14 +141,21 @@ def freesound_music(path, seconds, mood):
     key = secret("FREESOUND_API_KEY")
     if not key:
         return None
-    q = {"suspense": "suspense ambient", "mysterious": "mysterious ambient", "dark": "dark ambient",
-         "epic": "cinematic epic", "uplifting": "uplifting background", "calm": "calm ambient"}.get(mood, "ambient")
+    q = {"suspense": "suspense music", "mysterious": "mysterious ambient music", "dark": "dark ambient music",
+         "epic": "cinematic epic music", "uplifting": "uplifting background music", "calm": "calm ambient music",
+         "horror": "horror ambient drone"}.get(mood, "ambient music")
+    params = {"query": q, "page_size": 40, "sort": "rating_desc",
+              "filter": f'license:"Creative Commons 0" duration:[{int(max(20, min(seconds, 90)))} TO 900]',
+              "fields": "id,name,previews,duration,license"}
     try:
-        r = requests.get("https://freesound.org/apiv2/search/text/", timeout=30, params={
-            "query": q, "token": key, "page_size": 30, "sort": "rating_desc",
-            "filter": f'license:"Creative Commons 0" duration:[{max(20, min(seconds, 120))} TO 600] tag:music',
-            "fields": "id,name,previews,duration"})
-        res = r.json().get("results", []) if r.status_code == 200 else []
+        res = []
+        for ep in ("https://freesound.org/apiv2/search/", "https://freesound.org/apiv2/search/text/"):
+            r = requests.get(ep, timeout=30, params=params, headers={"Authorization": f"Token {key}"})
+            if r.status_code == 200:
+                res = [x for x in r.json().get("results", []) if "Creative Commons 0" in x.get("license", "")
+                       or x.get("license", "").endswith("/zero/1.0/")]
+                break
+            log(f"Freesound {ep.split('/')[-2]}: HTTP {r.status_code}")
         if not res:
             return None
         pick = random.choice(res[:12])

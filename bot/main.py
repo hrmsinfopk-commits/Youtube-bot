@@ -6,7 +6,7 @@ import shutil
 import time
 
 from . import footage, render, upload, voice, writer
-from .common import OUT, WORK, load_config, load_history, log, run, save_history
+from .common import CHANNEL, OUT, WORK, load_config, load_history, log, run, save_history
 
 
 def fmt_ts(t):
@@ -37,6 +37,8 @@ def build_description(cfg, kind, script, chap, history):
             parts.append(f"Poori video dekhein: https://youtu.be/{longs[-1]['youtube_id']}")
     if chap:
         parts.append("Chapters:\n" + chap)
+    if cfg["channel"].get("mode") == "stories":
+        parts.append("Yeh kahani fiction hai. Tamam kirdaar aur waqiat farzi hain.")
     parts.append(" ".join(script.get("hashtags", [])[:5]))
     parts.append("Footage: Pexels / Pixabay")
     return "\n\n".join(p for p in parts if p)
@@ -117,7 +119,8 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
             gk = script.get("global_keywords", [])
             items = footage.search(cfg, sc["keywords"] + rng.sample(gk, min(2, len(gk))), orient, used, need=need)
             if not items:
-                items = footage.search(cfg, gk + ["futuristic technology"], orient, used, need=need)
+                items = footage.search(cfg, gk + cfg["channel"].get("fallback_keywords", ["futuristic technology"]),
+                                       orient, used, need=need)
             got = []
             for it in items:
                 ext = ".mp4" if it["kind"] == "video" else ".jpg"
@@ -137,7 +140,7 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
             cache[i] = got
         # first scenes may have been empty and filled later: none left empty here
 
-    slug = time.strftime("%Y%m%d_%H%M") + f"_{kind}"
+    slug = time.strftime("%Y%m%d_%H%M") + f"_{CHANNEL['id']}_{kind}"
     video = OUT / f"{slug}.mp4"
     timings, total = render.assemble(kind, cfg, script["scenes"], voices, media, work, video, rng,
                                      mood=script.get("mood", "suspense"), hook_text=script.get("hook_text", ""))
@@ -175,8 +178,10 @@ def main():
     ap.add_argument("--type", choices=["short", "long"], default="short")
     ap.add_argument("--no-upload", action="store_true")
     ap.add_argument("--offline-test", action="store_true")
+    ap.add_argument("--channel", default="future", help="future | kahani (channels/<name>.yaml)")
     a = ap.parse_args()
-    cfg = load_config()
+    cfg = load_config(a.channel)
+    log(f"Channel: {cfg['channel']['name']} ({a.channel}, mode={cfg['channel']['mode']})")
     history = load_history()
     n = cfg["shorts"]["per_run"] if a.type == "short" else cfg["long"]["per_run"]
     fails = 0

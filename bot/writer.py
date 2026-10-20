@@ -2,7 +2,7 @@
 import random
 import re
 
-from .common import ROOT, log
+from .common import log, topics_file
 from .llm import ask
 
 LANG_RULES = {
@@ -16,7 +16,7 @@ LANG_RULES = {
 
 def pick_topic(cfg, history, kind):
     """1) topics.txt queue, 2) Gemini trending ideas avoiding repeats."""
-    qfile = ROOT / "topics.txt"
+    qfile = topics_file()
     if qfile.exists():
         lines = qfile.read_text(encoding="utf-8").splitlines()
         for i, line in enumerate(lines):
@@ -29,6 +29,8 @@ def pick_topic(cfg, history, kind):
 
     past = [v.get("topic", "") for v in history["videos"]][-150:]
     ch = cfg["channel"]
+    if ch.get("mode") == "stories":
+        return _pick_story_premise(cfg, past, kind)
     prompt = f"""You are a YouTube growth strategist for a faceless channel.
 Niche: {ch['niche']}
 Audience: {ch['audience']}
@@ -59,9 +61,91 @@ Return ONLY the 12 topics, one per line, each a short working title in English, 
     return topic
 
 
+def _pick_story_premise(cfg, past, kind):
+    ch = cfg["channel"]
+    prompt = f"""You create ORIGINAL story premises for a faceless Urdu story channel.
+Genres: {ch['niche']}
+Audience: {ch['audience']}
+Format: {"45-55 second YouTube Short with a twist ending" if kind == "short" else "8-10 minute story with several twists"}
+
+Write 12 fresh, completely ORIGINAL premises (your own invention - never retell existing books, films, TV shows,
+famous creepypastas, urban legends attributed to real people, or real crimes). Settings should feel local to
+Pakistan/India (gaon, haveli, hostel, hospital night shift, highway dhaba, purana mohalla, train) but use fictional names/places.
+Each premise: one line, English, with the hook and the twist hinted, e.g. "Night-shift nurse hears a patient call from an empty ward - the call comes from her own phone".
+
+Do NOT repeat or resemble these already-made stories:
+{chr(10).join('- ' + p for p in past) or '- (none yet)'}
+
+Return ONLY the 12 premises, one per line, no numbering."""
+    text = ask(cfg, prompt, temperature=1.15)
+    ideas = [re.sub(r"^\s*(?:[-•*]+|\d{1,2}[.)])\s*", "", l).strip(" *\"") for l in text.splitlines()]
+    ideas = [i for i in ideas if 15 < len(i) < 220]
+    topic = random.choice(ideas[:8])
+    log("Story premise:", topic)
+    return topic
+
+
+def _story_prompt(cfg, premise, kind, style):
+    ch = cfg["channel"]
+    lang = ch["language"]
+    if kind == "short":
+        secs = cfg["shorts"]["target_seconds"]
+        length = f"about {int(secs * 2.4)} spoken words ({secs} seconds), 7-10 scenes"
+        shape = ("- Shape: line 1 drops the listener INTO the scary moment (no setup, no 'ek dafa ka zikr hai').\n"
+                 "- Then 2-3 lines of rising dread with one concrete sensory detail (awaaz, khushboo, thand, parchhai).\n"
+                 "- Then a turn ('lekin tab mujhe yaad aaya...'), and a final TWIST line that recontextualises everything.\n"
+                 "- Last line: the twist, or a chilling question to the viewer ('aap hote to darwaza kholte?').")
+    else:
+        mins = cfg["long"]["target_minutes"]
+        length = f"about {int(mins * 145)} spoken words ({mins} minutes), 30-45 scenes"
+        shape = ("- Cold open: start at the scariest moment, then 'lekin yeh sab shuru kaise hua...' and go back.\n"
+                 "- 4-6 parts, each ending on a cliffhanger. Put a 2-4 word part name in 'chapter' on the first scene of each part.\n"
+                 "- Plant small clues early that pay off in the final twist. Final twist must be surprising but fair.\n"
+                 "- Mark the 3-6 biggest scare/twist moments reveal: true.")
+    return f"""You are a master storyteller writing an ORIGINAL story for the YouTube channel "{ch['name']}".
+Genres: {ch['niche']}
+Premise: {premise}
+Storytelling style for THIS video: {style}
+Format: {"YouTube Short (vertical)" if kind == "short" else "Long YouTube video (horizontal)"}
+Length: {length}
+Narration language: {LANG_RULES[lang]}
+{ch.get('extra_instructions') or ''}
+
+Rules:
+- 100% original fiction. Never retell or borrow plots, characters or lines from existing books, films, shows or famous stories.
+- Fictional names and places only; never name real people, real crimes or real victims.
+- Advertiser-friendly: build fear with atmosphere, sound and suspense, NOT gore. No graphic violence, no self-harm, no harm to children, no sexual content.
+- Sound like a real person telling a story late at night: short sentences, pauses, everyday words, present-tense moments for tension.
+- Never use AI-sounding phrases ("is video mein", "aaiye jaante hain", "dilchasp baat yeh hai").
+{shape}
+
+For every scene give 3 stock-footage keywords in ENGLISH (1-2 words each, specific to general) for ATMOSPHERIC visuals that stock sites have:
+e.g. "dark corridor", "abandoned house", "foggy forest", "flickering light", "rain window", "old door", "night road", "candle", "shadow".
+Never use people's names or abstract words. Scene 1 = the most chilling visual.
+For every scene also set "pace" (fast/normal/slow) and "reveal" (true only for the 1-2 biggest scare/twist moments).
+
+Return ONLY JSON:
+{{
+ "title": "Curiosity title, max 70 chars, Roman Urdu/Hindi + a few English words, no lies{' (do NOT add #shorts)' if kind == 'short' else ''}",
+ "thumbnail_text": "2-4 creepy words, Roman Urdu or English",
+ "hook_text": "2-4 word ALL-CAPS on-screen hook for the first 2 seconds, e.g. DARWAZA MAT KHOLNA",
+ "mood": "one of: horror, dark, suspense, mysterious",
+ "description": "2 short Roman Urdu paragraphs teasing the story without spoilers, then a 1-line comment question",
+ "tags": ["15 search tags mixing English and Roman Urdu/Hindi, e.g. horror story urdu, bhoot ki kahani"],
+ "hashtags": ["#3to5", "#hashtags"],
+ "global_keywords": ["4-6 atmospheric English stock keywords for the whole story"],
+ "scenes": [
+   {{"text": "narration in the narration language/script", "caption": "same in Roman {'Urdu' if lang != 'hindi' else 'Hindi'} (Latin letters)", "keywords": ["specific", "medium", "general"], "pace": "normal", "reveal": false, "chapter": ""}}
+ ]
+}}"""
+
+
 def write_script(cfg, topic, kind, style, latest_long_url=None):
     ch = cfg["channel"]
     lang = ch["language"]
+    if ch.get("mode") == "stories":
+        return _finish(ask(cfg, _story_prompt(cfg, topic, kind, style), json_mode=True, temperature=1.1),
+                       topic, style)
     if kind == "short":
         secs = cfg["shorts"]["target_seconds"]
         length = f"about {int(secs * 2.4)} spoken words total ({secs} seconds), 6-9 scenes"
@@ -124,6 +208,10 @@ Return ONLY JSON:
  ]
 }}"""
     data = ask(cfg, prompt, json_mode=True, temperature=1.05)
+    return _finish(data, topic, style)
+
+
+def _finish(data, topic, style):
     scenes = [s for s in data.get("scenes", []) if s.get("text", "").strip()]
     if len(scenes) < 3:
         raise RuntimeError("Script too short / malformed")

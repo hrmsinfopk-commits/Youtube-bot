@@ -17,20 +17,33 @@ PALETTES = [  # (highlight, outline) in RGB, chosen randomly per video
 
 
 # ---------------------------------------------------------------- footage clips
-def _clip_filter(W, H, seg, rng):
+HORROR_PALETTES = [((230, 30, 40), (0, 0, 0)), ((255, 70, 70), (0, 0, 0)), ((210, 210, 210), (0, 0, 0)),
+                   ((150, 255, 150), (0, 0, 0))]
+
+
+def _palettes(cfg):
+    return HORROR_PALETTES if cfg.get("visual", {}).get("palette") == "horror" else PALETTES
+
+
+def _clip_filter(W, H, seg, rng, grade=None):
     z = rng.uniform(1.06, 1.16)
     sw, sh = int(W * z) // 2 * 2, int(H * z) // 2 * 2
     mode = rng.choice(["lr", "rl", "tb", "bt", "c"])
     dx, dy = f"(iw-{W})", f"(ih-{H})"
     x = {"lr": f"{dx}*t/{seg:.3f}", "rl": f"{dx}*(1-t/{seg:.3f})"}.get(mode, f"{dx}/2")
     y = {"tb": f"{dy}*t/{seg:.3f}", "bt": f"{dy}*(1-t/{seg:.3f})"}.get(mode, f"{dy}/2")
-    sat, con, bri = rng.uniform(1.0, 1.18), rng.uniform(1.0, 1.08), rng.uniform(-0.03, 0.02)
+    if grade == "dark":
+        sat, con, bri = rng.uniform(0.45, 0.7), rng.uniform(1.08, 1.18), rng.uniform(-0.09, -0.05)
+        extra = ",vignette=PI/4,colorbalance=bs=0.06:bm=0.04:rs=-0.03"
+    else:
+        sat, con, bri = rng.uniform(1.0, 1.18), rng.uniform(1.0, 1.08), rng.uniform(-0.03, 0.02)
+        extra = ""
     return (f"scale={sw}:{sh}:force_original_aspect_ratio=increase,crop={W}:{H}:{x}:{y},"
-            f"setsar=1,fps={FPS},eq=saturation={sat:.2f}:contrast={con:.2f}:brightness={bri:.3f},"
-            f"format=yuv420p")
+            f"setsar=1,fps={FPS},eq=saturation={sat:.2f}:contrast={con:.2f}:brightness={bri:.3f}"
+            f"{extra},format=yuv420p")
 
 
-def make_clip(src, kind, seg, W, H, out, rng):
+def make_clip(src, kind, seg, W, H, out, rng, grade=None):
     enc = ["-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS),
            "-pix_fmt", "yuv420p", str(out)]
     if kind == "photo":
@@ -38,7 +51,9 @@ def make_clip(src, kind, seg, W, H, out, rng):
         zs = rng.uniform(0.0006, 0.0012)
         vf = (f"scale={W*2}:{H*2}:force_original_aspect_ratio=increase,crop={W*2}:{H*2},"
               f"zoompan=z='min(zoom+{zs:.5f},1.25)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
-              f":d={frames}:s={W}x{H}:fps={FPS},setsar=1,format=yuv420p")
+              f":d={frames}:s={W}x{H}:fps={FPS},setsar=1"
+              + (",eq=saturation=0.55:contrast=1.12:brightness=-0.07,vignette=PI/4" if grade == "dark" else "")
+              + ",format=yuv420p")
         run(["ffmpeg", "-y", "-v", "error", "-loop", "1", "-i", str(src), "-t", f"{seg:.3f}",
              "-vf", vf] + enc)
         return
@@ -52,7 +67,7 @@ def make_clip(src, kind, seg, W, H, out, rng):
     else:
         pre = ["-stream_loop", "-1"]
     run(["ffmpeg", "-y", "-v", "error"] + pre + ["-i", str(src), "-t", f"{seg:.3f}",
-         "-vf", _clip_filter(W, H, seg, rng)] + enc)
+         "-vf", _clip_filter(W, H, seg, rng, grade)] + enc)
 
 
 # ---------------------------------------------------------------- captions (ASS)
@@ -77,7 +92,7 @@ def build_ass(kind, cfg, scenes, timings, path, rng, hook_text=""):
         font, size = "Noto Sans Devanagari", (108 if kind == "short" else 68)
     else:
         font, size = "Anton", (150 if kind == "short" else 84)
-    hi, _ = rng.choice(PALETTES)
+    hi, _ = rng.choice(_palettes(cfg))
     white = (255, 255, 255)
     if kind == "short":
         align, marginv = 5, 0
@@ -167,10 +182,10 @@ def build_audio(voice, gaps, work, total, cfg, rng, mood="suspense", sfx_events=
          "-c:a", "pcm_s16le", str(narr)])
     music = pick_music(work, total, mood, rng)
     sfx = audiofx.make_sfx_track(work / "sfx.wav", total, list(sfx_events), seed=rng.randint(0, 10**6))
-    vol = cfg["footage"].get("music_volume", 0.1) * (1.6 if str(music).endswith("music_gen.wav") else 1.0)
+    vol = cfg["footage"].get("music_volume", 0.22)
     sfx_vol = cfg["footage"].get("sfx_volume", 0.6)
     mixed = work / "mixed.wav"
-    fc = (f"[1:a]volume={vol:.3f},afade=t=in:d=1.0,afade=t=out:st={max(total - 2.5, 0):.2f}:d=2.5[m];"
+    fc = (f"[1:a]loudnorm=I=-18:TP=-2,aresample=44100,volume={vol:.3f},afade=t=in:d=1.0,afade=t=out:st={max(total - 2.5, 0):.2f}:d=2.5[m];"
           f"[0:a]asplit=2[v][sc];"
           f"[m][sc]sidechaincompress=threshold=0.04:ratio=6:attack=30:release=500[duck];"
           f"[2:a]volume={sfx_vol}[fx];"
@@ -207,7 +222,7 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
                 seg = remaining
             src, mkind = items[k % len(items)]
             out = work / f"clip_{len(clips):04d}.mp4"
-            make_clip(src, mkind, seg, W, H, out, rng)
+            make_clip(src, mkind, seg, W, H, out, rng, cfg.get("visual", {}).get("grade"))
             clips.append(out)
             remaining -= seg
             k += 1

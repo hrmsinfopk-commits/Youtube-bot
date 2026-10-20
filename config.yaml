@@ -37,7 +37,8 @@ voices:
 
 footage:
   sources: ["pexels", "pixabay"]       # keys: PEXELS_API_KEY, PIXABAY_API_KEY
-  music_volume: 0.10
+  # Music: 1) music/ folder ki files  2) Freesound CC0 (FREESOUND_API_KEY)  3) bot ka apna banaya music
+  music_volume: 0.22                   # background music (awaaz ke neeche khud dheema hota hai)
   sfx_volume: 0.6                      # whoosh/boom ki awaaz (0 = band)
 
 # Har video ka andaaz in mein se random chuna jata hai, taake har video alag lage
