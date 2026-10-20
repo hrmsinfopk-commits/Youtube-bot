@@ -166,6 +166,33 @@ def _gemini_scenes(cfg, scenes, workdir, vsettings):
     return pieces
 
 
+_WHISPER = {}
+
+
+def align_words(cfg, wavs):
+    """Real word timings for each scene WAV using faster-whisper (free, runs on the GitHub machine).
+    Gemini voices don't report word timings; without this, captions drift a little inside each scene."""
+    if not cfg.get("caption_align", True):
+        return None
+    try:
+        from faster_whisper import WhisperModel
+        lang = {"english": "en", "urdu": "ur", "hindi": "hi"}[cfg["channel"]["language"]]
+        name = "base.en" if lang == "en" else "small"
+        if name not in _WHISPER:
+            _WHISPER[name] = WhisperModel(name, device="cpu", compute_type="int8")
+        model = _WHISPER[name]
+        out = []
+        for w in wavs:
+            segs, _ = model.transcribe(str(w), language=lang, word_timestamps=True, beam_size=1,
+                                       condition_on_previous_text=False)
+            out.append([(float(x.start), float(x.end)) for sg in segs for x in (sg.words or [])])
+        log(f"Captions aligned to the voice ({sum(len(x) for x in out)} words)")
+        return out
+    except Exception as e:  # noqa: BLE001
+        log("Caption alignment unavailable, using estimated timing:", str(e)[:120])
+        return None
+
+
 def synth_scenes(cfg, scenes, workdir, vsettings):
     """One normalised WAV per scene. Returns list of (path, seconds, word_times)."""
     lang = cfg["channel"]["language"]
@@ -183,6 +210,9 @@ def synth_scenes(cfg, scenes, workdir, vsettings):
                      "silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
                      f"loudnorm=I=-16:TP=-1.5:LRA=11{fx}", "-ar", "44100", "-ac", "2", str(wav)])
                 out.append((wav, duration(wav), []))
+            aligned = align_words(cfg, [o[0] for o in out])
+            if aligned and len(aligned) == len(out):
+                out = [(w, d, wt) for (w, d, _), wt in zip(out, aligned)]
             return out
         except Exception as e:  # noqa: BLE001
             log("Gemini voice failed, switching whole video to Microsoft voice:", str(e)[:150])

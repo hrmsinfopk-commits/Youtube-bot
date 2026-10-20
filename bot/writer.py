@@ -15,7 +15,7 @@ LANG_RULES = {
 }
 
 
-def queued_topic(kind="short"):
+def queued_topic(kind="short", consume=True):
     """Next line from topics.txt (your own topics go first). Lines starting with 'long:' are for long videos."""
     qfile = topics_file()
     if not qfile.exists():
@@ -26,6 +26,9 @@ def queued_topic(kind="short"):
         is_long = t.lower().startswith("long:")
         if t and not t.startswith("#") and is_long == (kind == "long"):
             t = t[5:].strip() if is_long else t
+            if not consume:   # test runs (no upload) leave your list untouched
+                log("Topic from topics file (test, kept in list):", t)
+                return t
             del lines[i]
             qfile.write_text("\n".join(lines) + "\n", encoding="utf-8")
             log("Topic from topics file:", t)
