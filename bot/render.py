@@ -1,0 +1,251 @@
+"""Video assembly with ffmpeg: footage cuts with motion, voice + ducked music, animated captions."""
+import random
+import re
+from pathlib import Path
+
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
+
+from .common import FONTS, MUSIC, duration, log, run
+
+FPS = 30
+SIZES = {"short": (1080, 1920), "long": (1920, 1080)}
+PALETTES = [  # (highlight, outline) in RGB, chosen randomly per video
+    ((255, 214, 0), (0, 0, 0)), ((0, 229, 255), (0, 0, 0)), ((57, 255, 20), (0, 0, 0)),
+    ((255, 72, 120), (0, 0, 0)), ((255, 145, 0), (0, 0, 0)), ((180, 120, 255), (0, 0, 0)),
+]
+
+
+# ---------------------------------------------------------------- footage clips
+def _clip_filter(W, H, seg, rng):
+    z = rng.uniform(1.06, 1.16)
+    sw, sh = int(W * z) // 2 * 2, int(H * z) // 2 * 2
+    mode = rng.choice(["lr", "rl", "tb", "bt", "c"])
+    dx, dy = f"(iw-{W})", f"(ih-{H})"
+    x = {"lr": f"{dx}*t/{seg:.3f}", "rl": f"{dx}*(1-t/{seg:.3f})"}.get(mode, f"{dx}/2")
+    y = {"tb": f"{dy}*t/{seg:.3f}", "bt": f"{dy}*(1-t/{seg:.3f})"}.get(mode, f"{dy}/2")
+    sat, con, bri = rng.uniform(1.0, 1.18), rng.uniform(1.0, 1.08), rng.uniform(-0.03, 0.02)
+    return (f"scale={sw}:{sh}:force_original_aspect_ratio=increase,crop={W}:{H}:{x}:{y},"
+            f"setsar=1,fps={FPS},eq=saturation={sat:.2f}:contrast={con:.2f}:brightness={bri:.3f},"
+            f"format=yuv420p")
+
+
+def make_clip(src, kind, seg, W, H, out, rng):
+    enc = ["-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS),
+           "-pix_fmt", "yuv420p", str(out)]
+    if kind == "photo":
+        frames = int(seg * FPS) + 1
+        zs = rng.uniform(0.0006, 0.0012)
+        vf = (f"scale={W*2}:{H*2}:force_original_aspect_ratio=increase,crop={W*2}:{H*2},"
+              f"zoompan=z='min(zoom+{zs:.5f},1.25)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+              f":d={frames}:s={W}x{H}:fps={FPS},setsar=1,format=yuv420p")
+        run(["ffmpeg", "-y", "-v", "error", "-loop", "1", "-i", str(src), "-t", f"{seg:.3f}",
+             "-vf", vf] + enc)
+        return
+    try:
+        cd = duration(src)
+    except Exception:  # noqa: BLE001
+        cd = seg
+    pre = []
+    if cd > seg + 0.5:
+        pre = ["-ss", f"{rng.uniform(0, cd - seg - 0.3):.2f}"]
+    else:
+        pre = ["-stream_loop", "-1"]
+    run(["ffmpeg", "-y", "-v", "error"] + pre + ["-i", str(src), "-t", f"{seg:.3f}",
+         "-vf", _clip_filter(W, H, seg, rng)] + enc)
+
+
+# ---------------------------------------------------------------- captions (ASS)
+def _ass_color(rgb):
+    r, g, b = rgb
+    return f"&H00{b:02X}{g:02X}{r:02X}"
+
+
+def _ass_time(t):
+    h, rem = divmod(max(t, 0), 3600)
+    m, s = divmod(rem, 60)
+    return f"{int(h)}:{int(m):02d}:{s:05.2f}"
+
+
+def build_ass(kind, cfg, scenes, timings, path, rng):
+    W, H = SIZES[kind]
+    native = cfg["channel"]["captions"] == "native" and cfg["channel"]["language"] != "english"
+    lang = cfg["channel"]["language"]
+    if native and lang == "urdu":
+        font, size = "Noto Nastaliq Urdu", (70 if kind == "short" else 58)
+    elif native and lang == "hindi":
+        font, size = "Noto Sans Devanagari", (78 if kind == "short" else 60)
+    else:
+        font, size = "Anton", (92 if kind == "short" else 64)
+    hi, _ = rng.choice(PALETTES)
+    white = (255, 255, 255)
+    if kind == "short":
+        align, marginv = 5, 0
+        pos = f"\\pos({W // 2},{int(H * rng.uniform(0.62, 0.70))})"
+        words_per = (2, 4)
+    else:
+        align, marginv, pos = 2, 70, ""
+        words_per = (4, 7)
+    head = f"""[Script Info]
+ScriptType: v4.00+
+PlayResX: {W}
+PlayResY: {H}
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,{font},{size},{_ass_color(white)},&H000000FF,&H00000000,&H64000000,1,0,0,0,100,100,1,0,1,{7 if kind == 'short' else 5},3,{align},60,60,{marginv},1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+    lines = []
+    for sc, (t0, dur) in zip(scenes, timings):
+        text = (sc["text"] if native else sc["caption"]).strip()
+        text = re.sub(r"[{}\\]", "", text)
+        words = text.split()
+        if not words:
+            continue
+        chunks, i = [], 0
+        while i < len(words):
+            n = rng.randint(*words_per)
+            chunks.append(words[i:i + n])
+            i += n
+        total = sum(len(" ".join(c)) for c in chunks) or 1
+        t = t0
+        for c in chunks:
+            d = dur * len(" ".join(c)) / total
+            if kind == "short" and not native:
+                c = [w.upper() for w in c]
+            # highlight the longest word of each chunk
+            k = max(range(len(c)), key=lambda j: len(c[j]))
+            parts = [(f"{{\\c{_ass_color(hi)}}}{w}{{\\c{_ass_color(white)}}}" if j == k else w)
+                     for j, w in enumerate(c)]
+            anim = "{\\fscx82\\fscy82\\t(0,110,\\fscx104\\fscy104)\\t(110,180,\\fscx100\\fscy100)}"
+            lines.append(f"Dialogue: 0,{_ass_time(t)},{_ass_time(t + d)},Cap,,0,0,0,,"
+                         f"{{{pos}}}{anim}{' '.join(parts)}")
+            t += d
+    Path(path).write_text(head + "\n".join(lines) + "\n", encoding="utf-8")
+
+
+# ---------------------------------------------------------------- audio
+def build_audio(voice, gaps, work, total, cfg, rng):
+    """Concatenate scene voices with gaps, then mix in ducked background music."""
+    silence = {}
+    lst = work / "audio_list.txt"
+    with open(lst, "w") as f:
+        for (wav, _), g in zip(voice, gaps):
+            f.write(f"file '{wav.resolve()}'\n")
+            key = f"{g:.2f}"
+            if key not in silence:
+                sp = work / f"sil_{key}.wav"
+                run(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i",
+                     "anullsrc=r=44100:cl=stereo", "-t", key, "-c:a", "pcm_s16le", str(sp)])
+                silence[key] = sp
+            f.write(f"file '{silence[key].resolve()}'\n")
+    narr = work / "narration.wav"
+    run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst),
+         "-c:a", "pcm_s16le", str(narr)])
+    tracks = sorted([p for p in MUSIC.glob("*") if p.suffix.lower() in (".mp3", ".wav", ".m4a", ".ogg")])
+    if not tracks:
+        return narr
+    music = rng.choice(tracks)
+    vol = cfg["footage"].get("music_volume", 0.1)
+    mixed = work / "mixed.wav"
+    fc = (f"[1:a]volume={vol},afade=t=in:d=1.5,afade=t=out:st={max(total - 2.5, 0):.2f}:d=2.5[m];"
+          f"[0:a]asplit=2[v][sc];"
+          f"[m][sc]sidechaincompress=threshold=0.04:ratio=6:attack=30:release=500[duck];"
+          f"[v][duck]amix=inputs=2:duration=first:normalize=0[a]")
+    run(["ffmpeg", "-y", "-v", "error", "-i", str(narr), "-stream_loop", "-1", "-i", str(music),
+         "-filter_complex", fc, "-map", "[a]", "-t", f"{total:.2f}", "-c:a", "pcm_s16le", str(mixed)])
+    log("Music:", music.name)
+    return mixed
+
+
+# ---------------------------------------------------------------- main assembly
+def assemble(kind, cfg, scenes, voice, media, work, out_path, rng):
+    """scenes: list; voice: [(wav, secs)]; media: per-scene list of (path, kind)."""
+    W, H = SIZES[kind]
+    gaps = [rng.uniform(0.18, 0.35) for _ in voice]
+    gaps[-1] = 0.8
+    timings, t = [], 0.0
+    for (_, d), g in zip(voice, gaps):
+        timings.append((t, d))
+        t += d + g
+    total = t
+    seg_range = (1.8, 3.2) if kind == "short" else (3.0, 5.5)
+
+    clips = []
+    for si, ((t0, d), g) in enumerate(zip(timings, gaps)):
+        items = media[si]
+        remaining, k = d + g, 0
+        while remaining > 0.05:
+            seg = min(rng.uniform(*seg_range), remaining)
+            if remaining - seg < 1.0:
+                seg = remaining
+            src, mkind = items[k % len(items)]
+            out = work / f"clip_{len(clips):04d}.mp4"
+            make_clip(src, mkind, seg, W, H, out, rng)
+            clips.append(out)
+            remaining -= seg
+            k += 1
+    log(f"{len(clips)} clips rendered")
+
+    lst = work / "clips.txt"
+    lst.write_text("".join(f"file '{c.resolve()}'\n" for c in clips))
+    silent = work / "video_noaudio.mp4"
+    run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(silent)])
+
+    audio = build_audio(voice, gaps, work, total, cfg, rng)
+    ass = work / "captions.ass"
+    build_ass(kind, cfg, scenes, timings, ass, rng)
+
+    vf = (f"subtitles={ass.resolve()}:fontsdir={FONTS.resolve()},"
+          f"fade=t=in:st=0:d=0.25,fade=t=out:st={max(total - 0.6, 0):.2f}:d=0.6")
+    run(["ffmpeg", "-y", "-v", "error", "-i", str(silent), "-i", str(audio), "-vf", vf,
+         "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-preset", "fast", "-crf", "21",
+         "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart",
+         "-t", f"{total:.2f}", str(out_path)])
+    log(f"Video ready: {out_path.name} ({total:.1f}s)")
+    return timings, total
+
+
+# ---------------------------------------------------------------- thumbnail
+def _font(size):
+    for p in [FONTS / "Anton-Regular.ttf", Path("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")]:
+        if p.exists():
+            return ImageFont.truetype(str(p), size)
+    return ImageFont.load_default()
+
+
+def thumbnail(video, text, out, rng, at=None):
+    frame = out.with_suffix(".frame.jpg")
+    at = at if at is not None else min(3.0, duration(video) / 3)
+    run(["ffmpeg", "-y", "-v", "error", "-ss", f"{at:.2f}", "-i", str(video), "-frames:v", "1", str(frame)])
+    img = Image.open(frame).convert("RGB").resize((1280, 720))
+    img = Image.blend(img, img.filter(ImageFilter.GaussianBlur(2)), 0.3)
+    shade = Image.new("L", (1280, 720))
+    ImageDraw.Draw(shade).rectangle([0, 0, 1280, 720], fill=0)
+    for x in range(1280):
+        ImageDraw.Draw(shade).line([(x, 0), (x, 720)], fill=int(200 * max(0, 1 - x / 900)))
+    img = Image.composite(Image.new("RGB", (1280, 720), (0, 0, 0)), img, shade)
+    d = ImageDraw.Draw(img)
+    hi, _ = rng.choice(PALETTES)
+    words = text.upper().split()
+    lines, cur = [], ""
+    for w in words:
+        if len(cur + " " + w) > 11 and cur:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = (cur + " " + w).strip()
+    lines.append(cur)
+    size = 150 if len(lines) <= 2 else 115
+    f = _font(size)
+    y = 360 - (len(lines) * size * 1.05) / 2
+    for i, line in enumerate(lines[:4]):
+        d.text((60, y), line, font=f, fill=hi if i == len(lines) - 1 else (255, 255, 255),
+               stroke_width=8, stroke_fill=(0, 0, 0))
+        y += size * 1.05
+    img.save(out, quality=92)
+    frame.unlink(missing_ok=True)
+    return out

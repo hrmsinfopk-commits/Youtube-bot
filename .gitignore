@@ -1,0 +1,5 @@
+output/
+work/
+fonts/*.ttf
+__pycache__/
+client_secret*.json

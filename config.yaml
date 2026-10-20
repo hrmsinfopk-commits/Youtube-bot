@@ -1,0 +1,50 @@
+# ===========================================================
+#  YouTube Bot Settings: sirf yahi file badalni hai
+# ===========================================================
+
+channel:
+  name: "Future Ki Duniya"            # aapke channel ka naam (outro/description mein aata hai)
+  niche: "AI aur Future Technology: robots, AI tools, space tech, future gadgets, science ki nayi khoj"
+  audience: "Pakistan aur India ke 16-35 saal ke log jo Urdu/Hindi samajhte hain"
+  language: "urdu"                     # urdu | hindi | english  (awaaz ki zubaan)
+  captions: "roman"                    # roman = Roman Urdu captions (PK + India dono parh saken) | native = Urdu/Hindi script
+  extra_instructions: ""               # koi khaas hidayat, jaise "har video mein Pakistan ka zikr ho"
+
+shorts:
+  per_run: 1                           # har run mein kitne Shorts (workflow din mein 3 dafa chalta hai)
+  target_seconds: 45                   # 30-55 behtar hai
+
+long:
+  per_run: 1
+  target_minutes: 8                    # 8-10 minute: watch hours ke liye best
+
+upload:
+  enabled: true                        # false = sirf video banegi, upload nahi (GitHub se download kar lein)
+  privacy: "public"                    # public | private (private = pehle aap dekhen, phir khud public karen)
+  category_id: "28"                    # 28 = Science & Technology
+  made_for_kids: false
+  link_long_video_in_shorts: true      # Shorts ki description mein latest long video ka link
+
+gemini:
+  # Free key: https://aistudio.google.com/apikey  (GitHub secret: GEMINI_API_KEY)
+  models: ["gemini-flash-latest", "gemini-2.5-flash", "gemini-flash-lite-latest"]
+  use_google_search_for_trends: true
+
+voices:
+  urdu:    ["ur-PK-AsadNeural", "ur-PK-UzmaNeural", "ur-IN-SalmanNeural", "ur-IN-GulNeural"]
+  hindi:   ["hi-IN-MadhurNeural", "hi-IN-SwaraNeural"]
+  english: ["en-US-AndrewNeural", "en-US-AvaNeural", "en-GB-RyanNeural", "en-US-BrianNeural"]
+
+footage:
+  sources: ["pexels", "pixabay"]       # keys: PEXELS_API_KEY, PIXABAY_API_KEY
+  music_volume: 0.10
+
+# Har video ka andaaz in mein se random chuna jata hai, taake har video alag lage
+styles:
+  - "Countdown: top 3-5 cheezein, sab se zabardast aakhir mein"
+  - "Story: ek kirdaar ya waqia, suspense ke saath"
+  - "Myth vs Fact: log kya samajhte hain aur sach kya hai"
+  - "Sawal-jawab: ek bada sawal, phir step by step jawab"
+  - "Future scenario: 'Socho saal 2040 hai...' wala andaaz"
+  - "Shocking fact: ek hairan kar dene wali baat se shuru, phir wajah"
+  - "Comparison: pehle vs ab, ya do cheezon ka muqabla"
