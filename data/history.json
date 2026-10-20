@@ -405,6 +405,40 @@
    ],
    "format": null,
    "why": "Space mystery Shorts command massive viral viewership, with recent space science videos pulling 1.8M to over 4.2M views. Freshly reported on October 15, this counterintuitive astronomy discovery has zero presence on the trending Shorts feed yet, giving us an uncontested first-mover advantage."
+  },
+  {
+   "date": "2026-10-20 14:54",
+   "type": "short",
+   "title": "Google Just Slashed Quantum Computer Errors by 40% #shorts",
+   "topic": "Google's Quantum Computer Just Achieved a Massive Breakthrough - Explaining Google's 'magic states' quantum computing breakthrough simply—how it cracks the massive error bottleneck that scientists have struggled with for decades to make supercomputers a reality.",
+   "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
+   "youtube_id": null,
+   "voice": "Puck",
+   "seconds": 29.5,
+   "scene_times": [
+    [
+     0.0,
+     "Your current supercomputer would take millions of years to solve what Google just cracked "
+    ],
+    [
+     6.7,
+     "Quantum computers have been basically useless for real tasks because tiny disturbances rui"
+    ],
+    [
+     12.9,
+     "But Google just dropped a method called magic states that changes everything."
+    ],
+    [
+     18.2,
+     "They managed to slash error rates by a factor of forty with 99.99 percent accuracy."
+    ],
+    [
+     25.0,
+     "Send this to the friend who thinks quantum computers are still decades away."
+    ]
+   ],
+   "format": null,
+   "why": "Quantum computing and tech breakthrough shorts regularly pull millions of views across tech channels. This leverages fresh news from Google's recent major hardware milestones with low direct saturation compared to massive consumer news like the Tesla Roadster."
   }
  ],
  "used_media": [
@@ -649,6 +683,21 @@
   "nasa-v-JPL-20241009-EXOPLNf-0001-NASA_Detects_Possible_Volcanic_MoonCC",
   "pixabay-v-204527",
   "pixabay-v-3176",
-  "pixabay-v-736"
+  "pixabay-v-736",
+  "pixabay-v-362312",
+  "pixabay-v-379018",
+  "pixabay-v-365382",
+  "pixabay-v-380334",
+  "pixabay-v-380332",
+  "pixabay-v-286689",
+  "nasa-v-ksc_101005_bacteria",
+  "pixabay-v-365154",
+  "pixabay-v-279625",
+  "pixabay-v-5440",
+  "nasa-v-ksc_070905_sssr",
+  "nasa-v-JPL-20210305-M2020f-0001Perseverance Lands on Mars UHD Master",
+  "pixabay-v-168343",
+  "pixabay-v-3180",
+  "pixabay-v-204526"
  ]
 }
