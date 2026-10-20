@@ -27,8 +27,8 @@ upload:
 
 gemini:
   # Free key: https://aistudio.google.com/apikey  (GitHub secret: GEMINI_API_KEY)
-  models: ["gemini-3.8-flash", "gemini-flash-latest", "gemini-3.8-flash-lite", "gemini-flash-lite-latest"]
-  use_google_search_for_trends: true
+  models: ["gemini-3.8-flash", "gemini-flash-latest", "gemini-flash-lite-latest"]
+  use_google_search_for_trends: false   # free key par Google Search band hai
 
 voices:
   urdu:    ["ur-PK-AsadNeural", "ur-PK-UzmaNeural", "ur-IN-SalmanNeural", "ur-IN-GulNeural"]
