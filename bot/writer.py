@@ -45,7 +45,7 @@ Return ONLY the 12 topics, one per line, each a short working title in English, 
     text = None
     if cfg["gemini"].get("use_google_search_for_trends", True):
         try:
-            text = ask(cfg, prompt, search=True)
+            text = ask(cfg, prompt, search=True, attempts=1)
         except Exception as e:  # noqa: BLE001
             log("Search-grounded ideas failed, using plain mode:", str(e)[:150])
     if not text:

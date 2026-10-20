@@ -28,21 +28,30 @@ def _call(model, prompt, json_mode, search, temperature):
     return "".join(p.get("text", "") for p in parts)
 
 
-def ask(cfg, prompt, json_mode=False, search=False, temperature=1.0):
+DEAD = set()  # models that returned 404 (retired) - skipped for the rest of the run
+
+
+def ask(cfg, prompt, json_mode=False, search=False, temperature=1.0, attempts=4):
     if not secret("GEMINI_API_KEY"):
         raise RuntimeError("GEMINI_API_KEY secret missing")
     last = None
-    for attempt in range(3):
+    for attempt in range(attempts):
         for model in cfg["gemini"]["models"]:
+            if model in DEAD:
+                continue
             try:
                 text = _call(model, prompt, json_mode, search, temperature)
-                if json_mode:
-                    return parse_json(text)
-                return text
+                result = parse_json(text) if json_mode else text
+                log(f"Gemini OK ({model})")
+                return result
             except Exception as e:  # noqa: BLE001
                 last = e
-                log(f"Gemini error ({model}): {str(e)[:200]}")
-        time.sleep(20 * (attempt + 1))
+                msg = str(e)
+                if "HTTP 404" in msg:
+                    DEAD.add(model)
+                log(f"Gemini error ({model}): {msg[:160].replace(chr(10), ' ')}")
+        if attempt < attempts - 1:
+            time.sleep(35)  # free-tier per-minute limit resets after ~1 minute
     raise RuntimeError(f"Gemini failed: {last}")
 
 
