@@ -259,6 +259,10 @@ illustration - always an ORIGINAL scene: no real or famous people, no known char
 Use sounds rarely (at most 3 per Short).
 Scene 1 keywords must be the single most visually stunning shot for this topic (the first second decides if people stay).
 "pace": "fast" for build-up/lists, "normal", or "slow" for reveals. "reveal": true only for the biggest twist/answer moments.
+"subject": if the line is about a specific REAL named thing people would want to see (e.g. "Tesla Roadster", "Starship",
+"James Webb Space Telescope", "Boston Dynamics Atlas"), its exact name - used to find real licensed photos; else "".
+"on_screen": for the 20-30% of scenes with a striking number or 2-4 word fact, the text to flash big on screen
+(e.g. "$250,000", "10 THRUSTERS", "0-60 IN 1.9s", "BY 2027?"); else "". Never more than 5 words.
 
 Return ONLY JSON:
 {{
@@ -272,7 +276,7 @@ Return ONLY JSON:
  "hashtags": ["#3to5", "#hashtags"],
  "global_keywords": ["4-6 general English stock keywords that fit the WHOLE topic visually"],
  "scenes": [
-   {{"text": "narration for this scene", "caption": "{'same as text' if en else 'same narration in Roman Urdu (Latin letters)'}", "keywords": ["specific", "medium", "general"], "image": "what we see", "sound": "", "pace": "normal", "reveal": false, "chapter": ""}}
+   {{"text": "narration for this scene", "caption": "{'same as text' if en else 'same narration in Roman Urdu (Latin letters)'}", "keywords": ["specific", "medium", "general"], "image": "what we see", "sound": "", "subject": "", "on_screen": "", "pace": "normal", "reveal": false, "chapter": ""}}
  ]
 }}"""
     return _finish(_ask_script(cfg, prompt, kind, 1.0), topic, style)
@@ -343,6 +347,8 @@ def _finish(data, topic, style):
         s["pace"] = s.get("pace") if s.get("pace") in ("fast", "normal", "slow") else "normal"
         s["image"] = str(s.get("image") or "").strip()
         s["sound"] = str(s.get("sound") or "").strip()
+        s["subject"] = str(s.get("subject") or "").strip()
+        s["on_screen"] = " ".join(str(s.get("on_screen") or "").split()[:5])
         s["reveal"] = bool(s.get("reveal")) and s is not scenes[0]
     g = [k for k in (data.get("global_keywords") or []) if isinstance(k, str) and k.strip()]
     data["global_keywords"] = g or [topic]

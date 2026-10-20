@@ -1,5 +1,6 @@
 """Free, licensed stock footage from Pexels and Pixabay (videos first, photos as fallback)."""
 import random
+import re
 
 import requests
 
@@ -122,6 +123,94 @@ def _pixabay_photos(q, orient):
         return []
     return [{"id": f"pixabay-p-{h['id']}", "url": h["largeImageURL"], "kind": "photo", "dur": 5,
              "desc": h.get("tags", "")} for h in r.json().get("hits", [])]
+
+
+# ------------------------------------------------------------------ licensed photos of REAL things (with credit)
+OK_LICENSES = ("cc0", "pdm", "public domain", "cc by", "cc-by", "by", "by-sa", "cc by-sa", "cc-by-sa")
+
+
+def _wikimedia_photos(q, limit=8):
+    """Wikimedia Commons: real photos (cars at shows, rockets, buildings...). Only licenses that allow commercial use + edits."""
+    try:
+        r = requests.get("https://commons.wikimedia.org/w/api.php", headers=UA, timeout=25, params={
+            "action": "query", "format": "json", "generator": "search", "gsrnamespace": 6,
+            "gsrsearch": f"{q} filetype:bitmap", "gsrlimit": limit, "prop": "imageinfo",
+            "iiprop": "url|extmetadata|size", "iiurlwidth": 1920})
+        pages = (r.json().get("query") or {}).get("pages", {}) if r.status_code == 200 else {}
+    except Exception:  # noqa: BLE001
+        return []
+    out = []
+    for p in pages.values():
+        ii = (p.get("imageinfo") or [{}])[0]
+        meta = ii.get("extmetadata") or {}
+        lic = re.sub(r"<[^>]+>", "", (meta.get("LicenseShortName") or {}).get("value", "")).strip()
+        lic_l = lic.lower()
+        if not lic or "nc" in lic_l.split("-") or " nc" in lic_l or "nd" in lic_l.replace("-", " ").split() \
+                or not any(lic_l.startswith(x) or x in lic_l for x in ("cc0", "public domain", "cc by", "cc-by", "pd")):
+            continue
+        if min(ii.get("width", 0), ii.get("height", 0)) < 700:
+            continue
+        artist = re.sub(r"<[^>]+>", "", (meta.get("Artist") or {}).get("value", "")).strip()[:60] or "Unknown"
+        desc = re.sub(r"<[^>]+>", " ", (meta.get("ImageDescription") or {}).get("value", ""))[:200]
+        out.append({"id": f"wm-{p.get('pageid')}", "url": ii.get("thumburl") or ii.get("url"), "kind": "photo", "dur": 5,
+                    "desc": f"{p.get('title', '')} {desc}", "credit": f"{artist} / Wikimedia Commons, {lic}"})
+    return out
+
+
+def _openverse_photos(q, limit=10):
+    """Openverse (Flickr etc.): only licenses that allow commercial use AND modification."""
+    try:
+        r = requests.get("https://api.openverse.org/v1/images/", headers=UA, timeout=25, params={
+            "q": q, "license_type": "commercial,modification", "page_size": limit, "mature": "false"})
+        res = r.json().get("results", []) if r.status_code == 200 else []
+    except Exception:  # noqa: BLE001
+        return []
+    out = []
+    for x in res:
+        if min(x.get("width") or 0, x.get("height") or 0) < 700:
+            continue
+        lic = f"CC {x.get('license', '').upper()} {x.get('license_version') or ''}".strip()
+        out.append({"id": f"ov-{x.get('id')}", "url": x.get("url"), "kind": "photo", "dur": 5,
+                    "desc": f"{x.get('title', '')} {' '.join(t.get('name', '') for t in (x.get('tags') or [])[:10])}",
+                    "credit": f"{(x.get('creator') or 'Unknown')[:50]} / {x.get('source', 'Openverse')}, {lic}"})
+    return out
+
+
+SPACE_WORDS = ("space", "rocket", "nasa", "moon", "mars", "astronaut", "satellite", "planet", "galaxy", "star", "orbit",
+               "launch", "earth from space", "telescope", "iss", "spacecraft", "nebula", "solar", "asteroid", "comet")
+
+
+def candidates(cfg, keywords, orient, used, subject=None, per_kw=4):
+    """Many options for one scene (not downloaded yet). A relevance check picks the right ones afterwards."""
+    sources = cfg["footage"]["sources"]
+    spacey = any(w in " ".join(keywords).lower() for w in SPACE_WORDS)
+    out, seen = [], set(used)
+    def add(items, n):
+        k = 0
+        for c in items:
+            if c["id"] in seen or not c.get("url") or not _allowed(cfg, c):
+                continue
+            seen.add(c["id"])
+            out.append(c)
+            k += 1
+            if k >= n:
+                break
+    if subject:   # a real, named thing -> licensed real photos first
+        add(_wikimedia_photos(subject), 3)
+        add(_openverse_photos(subject), 3)
+    for kw in keywords[:3]:
+        if "nasa" in sources and spacey:
+            add(_nasa_videos(kw, orient), 2)
+        if "pexels" in sources:
+            add(_pexels_videos(kw, orient), per_kw)
+        if "pixabay" in sources:
+            add(_pixabay_videos(kw, orient), per_kw)
+    if len(out) < 4:
+        for kw in keywords[:2]:
+            if "nasa" in sources and spacey:
+                add(_nasa_photos(kw, orient), 2)
+            add(_pixabay_photos(kw, orient) if "pixabay" in sources else [], 3)
+    return out[:14]
 
 
 def _allowed(cfg, item):

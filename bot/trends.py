@@ -201,7 +201,10 @@ ALREADY MADE (do not repeat): {"; ".join(past) or "nothing yet"}
 
 Choose the best topic by: (1) fresh, real news from the list, (2) proven audience demand (similar videos getting many views),
 (3) room for us: avoid topics where huge channels already uploaded many near-identical videos unless we have a clearly different angle,
-(4) a strong curiosity hook that works for a global English audience. Never pick rumours, celebrity gossip or politics.
+(4) a strong curiosity hook that works for a global English audience,
+(5) something to SHOW: prefer stories with free real visuals (NASA/space, science, nature, public institutions) or that can be
+explained with generic footage; avoid stories whose whole point is seeing one brand-new product nobody has free images of -
+unless you turn it into an explainer (e.g. "how flying cars actually fly"). Never pick rumours, celebrity gossip or politics.
 
 Return ONLY JSON:
 {{

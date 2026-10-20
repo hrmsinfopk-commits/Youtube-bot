@@ -5,7 +5,7 @@ import random
 import shutil
 import time
 
-from . import audiofx, footage, images, render, trends, upload, voice, writer
+from . import audiofx, curate, footage, images, render, trends, upload, voice, writer
 from .common import CHANNEL, DATA, OUT, WORK, load_config, load_history, log, run, save_history
 
 
@@ -116,6 +116,7 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
     OUT.mkdir(exist_ok=True)
     rng = random.Random()
 
+    credits, concept_scenes = [], []
     if offline:
         script = _offline_script(kind)
         vset = {"voice": "offline", "rate": "+0%", "pitch": "+0Hz"}
@@ -152,13 +153,35 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                     cache[i] = [(p, "photo")]
                     made += 1
             log(f"AI images: {made}/{len(script['scenes'])}")
+        need = 3 if kind == "short" else 2   # long videos have many scenes; 2 clips each is plenty
+        gk = script.get("global_keywords", [])
+        picked = [None] * len(script["scenes"])
+        if cfg["footage"].get("relevance_check", True):
+            # gather options for every scene, then the picture editor (Gemini) keeps only the fitting ones
+            opts = []
+            for i, sc in enumerate(script["scenes"]):
+                opts.append([] if i in cache else footage.candidates(
+                    cfg, sc["keywords"] + rng.sample(gk, min(1, len(gk))), orient, used, subject=sc.get("subject")))
+            for sc in script["scenes"]:
+                sc["topic"] = script["topic"]
+            picked = curate.pick(cfg, script["scenes"], opts, per_scene=need)
         for i, sc in enumerate(script["scenes"]):
             if i in cache:
                 media.append(cache[i])
                 continue
-            need = 3 if kind == "short" else 2   # long videos have many scenes; 2 clips each is plenty
-            gk = script.get("global_keywords", [])
-            items = footage.search(cfg, sc["keywords"] + rng.sample(gk, min(2, len(gk))), orient, used, need=need)
+            if picked[i] is not None:
+                items = picked[i]
+            else:
+                items = footage.search(cfg, sc["keywords"] + rng.sample(gk, min(2, len(gk))), orient, used, need=need)
+            if not items and sc.get("image") and cfg["footage"].get("concept_images", True):
+                # nothing real fits -> an original AI "concept illustration" (labelled on screen)
+                iw, ih = (768, 1344) if kind == "short" else (1344, 768)
+                p = work / "media" / f"concept_{i:03d}.jpg"
+                style = cfg["footage"].get("concept_style", "realistic cinematic concept art")
+                if images.generate(sc["image"], style, iw, ih, p):
+                    media.append([(p, "photo")])
+                    concept_scenes.append(i)
+                    continue
             if not items:
                 items = footage.search(cfg, gk + cfg["channel"].get("fallback_keywords", ["futuristic technology"]),
                                        orient, used, need=need)
@@ -171,6 +194,8 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                     got.append((p, it["kind"]))
                     used.add(it["id"])
                     history["used_media"].append(it["id"])
+                    if it.get("credit"):
+                        credits.append(it["credit"])
                 except Exception as e:  # noqa: BLE001
                     log("Download failed:", str(e)[:100])
             if not got:  # reuse previous scene's footage
@@ -193,7 +218,8 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
     video = OUT / f"{slug}.mp4"
     timings, total = render.assemble(kind, cfg, script["scenes"], voices, media, work, video, rng,
                                      mood=script.get("mood", "suspense"), hook_text=script.get("hook_text", ""),
-                                     scene_sounds=scene_sounds, ambience=ambience)
+                                     scene_sounds=scene_sounds, ambience=ambience,
+                                     concept_scenes=concept_scenes)
 
     thumb = None
     if kind == "long":
@@ -204,6 +230,10 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
     if kind == "short" and "#shorts" not in title.lower():
         title = f"{title[:88]} #shorts"
     desc = build_description(cfg, kind, script, chap, history)
+    if credits:
+        desc += "\n\nImage credits: " + "; ".join(dict.fromkeys(credits))[:900]
+    if concept_scenes:
+        desc += "\nSome images are AI concept illustrations, not real photos."
     if not offline and brief and brief.get("sources"):
         outlets = sorted({x["source"] for x in brief["sources"] if x.get("source")})[:6]
         if outlets:

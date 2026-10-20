@@ -67,7 +67,12 @@ voices:
 footage:
   sources: ["nasa", "pexels", "pixabay"]   # nasa = NASA ki asli videos/tasveeren (space topics par pehle)
   # Music: 1) music/ folder ki files  2) Freesound CC0 (FREESOUND_API_KEY)  3) bot ka apna banaya music
-  exclude_tags: ["alien", "ufo", "fantasy", "monster", "dragon", "cartoon", "anime", "magic", "zombie", "game"]
+  exclude_tags: ["alien", "ufo", "fantasy", "monster", "dragon", "cartoon", "anime", "magic", "zombie", "game",
+                 "green screen", "greenscreen", "chroma", "chroma key", "birthday", "candles", "zodiac", "horoscope",
+                 "astrology", "wedding", "christmas", "halloween", "valentine"]
+  relevance_check: true                # Gemini har scene ki footage check karta hai ke line se milti hai ya nahi
+  concept_images: true                 # kuch na mile to AI "Concept illustration" (screen par likha hota hai)
+  concept_style: "realistic cinematic concept art, photorealistic lighting, generic design (no real brand, no logo)"
   music_volume: 0.22                   # background music (awaaz ke neeche khud dheema hota hai)
   sfx_volume: 0.6                      # whoosh/boom ki awaaz (0 = band)
 
