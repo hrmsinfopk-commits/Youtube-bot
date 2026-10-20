@@ -144,8 +144,7 @@ def write_script(cfg, topic, kind, style, latest_long_url=None):
     ch = cfg["channel"]
     lang = ch["language"]
     if ch.get("mode") == "stories":
-        return _finish(ask(cfg, _story_prompt(cfg, topic, kind, style), json_mode=True, temperature=1.1),
-                       topic, style)
+        return _finish(_ask_script(cfg, _story_prompt(cfg, topic, kind, style), kind, 1.1), topic, style)
     if kind == "short":
         secs = cfg["shorts"]["target_seconds"]
         length = f"about {int(secs * 2.4)} spoken words total ({secs} seconds), 6-9 scenes"
@@ -207,8 +206,34 @@ Return ONLY JSON:
    {{"text": "narration for this scene in the narration language/script", "caption": "same narration in Roman {'Urdu' if lang != 'hindi' else 'Hindi'} (Latin letters)", "keywords": ["specific", "medium", "general"], "pace": "normal", "reveal": false, "chapter": ""}}
  ]
 }}"""
-    data = ask(cfg, prompt, json_mode=True, temperature=1.05)
-    return _finish(data, topic, style)
+    return _finish(_ask_script(cfg, prompt, kind, 1.05), topic, style)
+
+
+def _target_words(cfg, kind):
+    return int(cfg["shorts"]["target_seconds"] * 2.4) if kind == "short" else int(cfg["long"]["target_minutes"] * 145)
+
+
+def _words(data):
+    return sum(len(str(sc.get("caption") or sc.get("text", "")).split()) for sc in data.get("scenes", []))
+
+
+def _ask_script(cfg, prompt, kind, temperature):
+    """Ask for a script; if it comes back much shorter than the target, ask once more for a full-length one."""
+    target = _target_words(cfg, kind)
+    best = ask(cfg, prompt, json_mode=True, temperature=temperature)
+    n = _words(best)
+    if n < 0.75 * target:
+        log(f"Script too short ({n} words, target ~{target}) - rewriting longer")
+        try:
+            again = ask(cfg, prompt + f"\n\nIMPORTANT: your last draft had only {n} words. This script MUST have "
+                                      f"at least {target} spoken words in total across the scenes. Keep every rule above.",
+                        json_mode=True, temperature=temperature)
+            if _words(again) > n:
+                best = again
+        except Exception as e:  # noqa: BLE001
+            log("Rewrite failed, keeping first draft:", str(e)[:120])
+    log(f"Script length: {_words(best)} words")
+    return best
 
 
 def _finish(data, topic, style):

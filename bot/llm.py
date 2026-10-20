@@ -36,8 +36,10 @@ def ask(cfg, prompt, json_mode=False, search=False, temperature=1.0, attempts=4)
         raise RuntimeError("GEMINI_API_KEY secret missing")
     last = None
     for attempt in range(attempts):
+        # first tries: only the stronger models (better, longer scripts); "lite" only as a last resort
+        use_lite = attempt >= min(2, attempts - 1)
         for model in cfg["gemini"]["models"]:
-            if model in DEAD:
+            if model in DEAD or ("lite" in model and not use_lite):
                 continue
             try:
                 text = _call(model, prompt, json_mode, search, temperature)
@@ -51,7 +53,7 @@ def ask(cfg, prompt, json_mode=False, search=False, temperature=1.0, attempts=4)
                     DEAD.add(model)
                 log(f"Gemini error ({model}): {msg[:160].replace(chr(10), ' ')}")
         if attempt < attempts - 1:
-            time.sleep(35)  # free-tier per-minute limit resets after ~1 minute
+            time.sleep(25)  # busy (503) / per-minute limit (429) usually clears quickly
     raise RuntimeError(f"Gemini failed: {last}")
 
 

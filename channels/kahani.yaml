@@ -26,6 +26,8 @@ visual:
   grade: "dark"                       # andheri, thandi rangat + vignette
   palette: "horror"                   # laal / safed captions
 
+voice_rate: [-8, 0]                   # kahani dheemi aur thehri hui awaaz mein (Future channel: +4 se +12)
+
 voices:
   urdu: ["ur-PK-AsadNeural", "ur-IN-SalmanNeural", "ur-PK-UzmaNeural"]
 

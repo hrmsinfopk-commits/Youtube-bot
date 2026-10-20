@@ -17,7 +17,7 @@ def pick_voice(cfg):
     lang = cfg["channel"]["language"]
     return {
         "voice": random.choice(cfg["voices"][lang]),
-        "rate": f"+{random.randint(4, 12)}%",
+        "rate": f"{random.randint(*cfg.get('voice_rate', [4, 12])):+d}%",
         "pitch": f"{random.choice(['-', '+'])}{random.randint(0, 4)}Hz",
     }
 
