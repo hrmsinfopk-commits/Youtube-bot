@@ -7,6 +7,8 @@ on:
     - cron: "30 10 * * *"
     - cron: "30 15 * * *"
   workflow_dispatch: {}        # "Run workflow" button se kabhi bhi chala sakte hain
+  push:
+    paths: [".github/trigger-short.txt"]   # is file ko badalne se bhi bot chalta hai
 
 permissions:
   contents: write
@@ -41,7 +43,7 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-        run: python -m bot.main --type short
+        run: python -m bot.main --type short 2>&1 | python scripts/redact.py data/last_run_short.log
 
       - name: Save video for download
         if: always()
@@ -57,6 +59,6 @@ jobs:
         run: |
           git config user.name "yt-bot"
           git config user.email "yt-bot@users.noreply.github.com"
-          git add data/history.json topics.txt
+          git add data/ topics.txt
           git diff --cached --quiet || git commit -m "bot: history update"
           git pull --rebase -q && git push -q || true

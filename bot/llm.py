@@ -19,7 +19,7 @@ def _call(model, prompt, json_mode, search, temperature):
         body["generationConfig"]["responseMimeType"] = "application/json"
     if search:
         body["tools"] = [{"google_search": {}}]
-    r = requests.post(API.format(model=model), params={"key": secret("GEMINI_API_KEY")},
+    r = requests.post(API.format(model=model), headers={"x-goog-api-key": secret("GEMINI_API_KEY")},
                       json=body, timeout=180)
     if r.status_code != 200:
         raise RuntimeError(f"{model}: HTTP {r.status_code} {r.text[:300]}")
