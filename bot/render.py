@@ -75,7 +75,7 @@ def build_ass(kind, cfg, scenes, timings, path, rng):
     elif native and lang == "hindi":
         font, size = "Noto Sans Devanagari", (108 if kind == "short" else 68)
     else:
-        font, size = "Anton", (132 if kind == "short" else 78)
+        font, size = "Anton", (150 if kind == "short" else 84)
     hi, _ = rng.choice(PALETTES)
     white = (255, 255, 255)
     if kind == "short":
