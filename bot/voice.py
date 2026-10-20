@@ -30,9 +30,12 @@ def synth_scenes(cfg, scenes, workdir, vsettings):
         mp3 = workdir / f"voice_{i:03d}.mp3"
         wav = workdir / f"voice_{i:03d}.wav"
         ok = False
+        base = int(vsettings["rate"].strip("%+"))
+        rate = base + {"fast": 8, "normal": 0, "slow": -10}.get(s.get("pace", "normal"), 0)
+        rate_s = f"{rate:+d}%"
         for attempt in range(3):
             try:
-                asyncio.run(_edge(s["text"], vsettings["voice"], vsettings["rate"],
+                asyncio.run(_edge(s["text"], vsettings["voice"], rate_s,
                                   vsettings["pitch"], mp3))
                 ok = mp3.exists() and mp3.stat().st_size > 1000
                 if ok:

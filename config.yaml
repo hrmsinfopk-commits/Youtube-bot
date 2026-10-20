@@ -38,6 +38,7 @@ voices:
 footage:
   sources: ["pexels", "pixabay"]       # keys: PEXELS_API_KEY, PIXABAY_API_KEY
   music_volume: 0.10
+  sfx_volume: 0.6                      # whoosh/boom ki awaaz (0 = band)
 
 # Har video ka andaaz in mein se random chuna jata hai, taake har video alag lage
 styles:

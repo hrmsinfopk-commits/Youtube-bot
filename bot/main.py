@@ -57,10 +57,11 @@ def _offline_script(kind):
     scenes = []
     for i in range(n):
         t, k = lines[i % len(lines)]
-        scenes.append({"text": t, "caption": t, "keywords": [k],
+        scenes.append({"text": t, "caption": t, "keywords": [k], "pace": ["fast", "normal", "slow"][i % 3],
+                       "reveal": i in (2, 6),
                        "chapter": (f"Hissa {i // 3 + 1}" if kind == "long" and i % 3 == 0 else "")})
     return {"title": "2040 Mein Har Ghar Mein Robot? Future Of AI Robots", "thumbnail_text": "ROBOT GHAR MEIN?",
-            "description": "Test description.", "tags": ["ai", "robot"], "hashtags": ["#AI", "#Future"],
+            "description": "Test description.", "hook_text": "ROBOT GHAR MEIN?", "mood": "suspense", "tags": ["ai", "robot"], "hashtags": ["#AI", "#Future"],
             "scenes": scenes, "topic": "offline test", "style": "test"}
 
 
@@ -138,7 +139,8 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
 
     slug = time.strftime("%Y%m%d_%H%M") + f"_{kind}"
     video = OUT / f"{slug}.mp4"
-    timings, total = render.assemble(kind, cfg, script["scenes"], voices, media, work, video, rng)
+    timings, total = render.assemble(kind, cfg, script["scenes"], voices, media, work, video, rng,
+                                     mood=script.get("mood", "suspense"), hook_text=script.get("hook_text", ""))
 
     thumb = None
     if kind == "long":

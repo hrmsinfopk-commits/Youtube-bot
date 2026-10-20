@@ -65,14 +65,20 @@ def write_script(cfg, topic, kind, style, latest_long_url=None):
     if kind == "short":
         secs = cfg["shorts"]["target_seconds"]
         length = f"about {int(secs * 2.4)} spoken words total ({secs} seconds), 6-9 scenes"
-        extra = ("- The LAST line must flow naturally back into the FIRST line so the Short loops seamlessly.\n"
-                 "- No 'subscribe' begging at the start; one quick casual CTA allowed at the end.")
+        extra = ("- SUSPENSE STRUCTURE: (1) hook line, (2) an open loop in the first 5 seconds that promises a payoff at the end "
+                 "(e.g. 'aur aakhri wali baat sab se khatarnak hai'), (3) fast build-up of 2-3 lines, (4) a twist starting with "
+                 "'lekin'/'magar' style turn, (5) the REVEAL near the end, delivered slowly, (6) final line.\n"
+                 "- One natural SHARE trigger near the end, aimed at a specific friend type (e.g. 'yeh us dost ko bhejo jo kehta hai...').\n"
+                 "- Final line: either flows seamlessly back into the first line (loop) OR is a short opinion question people want to answer in comments.\n"
+                 "- No 'subscribe' begging at the start.")
     else:
         mins = cfg["long"]["target_minutes"]
         length = f"about {int(mins * 145)} spoken words total ({mins} minutes), 28-45 scenes"
         extra = ("- Structure: hook (0-20s) -> promise of what they'll learn -> 4-7 sections each ending with a mini cliffhanger -> satisfying conclusion -> short outro.\n"
                  "- Put a short chapter name (2-5 words, Roman Urdu/English) on the first scene of each section in 'chapter'; other scenes chapter = \"\".\n"
-                 "- At ~40% and ~70% add a pattern interrupt (surprising question or fact) to keep retention high.")
+                 "- At ~40% and ~70% add a pattern interrupt (surprising question or fact) to keep retention high.\n"
+                 "- Open a big question in the first 20 seconds and only fully answer it in the last section (open loop).\n"
+                 "- Mark the 3-6 biggest twist/answer moments as reveal: true.")
 
     prompt = f"""You write viral YouTube scripts for the channel "{ch['name']}".
 Niche: {ch['niche']}
@@ -97,17 +103,24 @@ each 1-2 words, showing what the viewer should SEE while hearing that line (e.g.
 Keywords must be literal visual subjects that stock sites have (rocket, robot, astronaut, circuit board, city skyline, hospital, laboratory),
 NOT abstract words from the sentence (avoid: heavy, success, cheap, time, money, tower, second). Every keyword must clearly relate to the video topic.
 Avoid brand names and real people in keywords.
+Scene 1 keywords must be the single most visually stunning, dramatic shot for this topic (the first second decides if people stay).
+
+For every scene also set:
+- "pace": "fast" for build-up/lists, "normal", or "slow" for the reveal/emotional lines
+- "reveal": true only for the 1-2 biggest twist/answer scenes (a short pause + boom sound + zoom will be added before them), else false
 
 Return ONLY JSON:
 {{
  "title": "SEO title, max 70 chars, Roman Urdu/Hindi + strong English keywords, curiosity driven, no clickbait lies{' (do NOT add #shorts, it is added later)' if kind == 'short' else ''}",
  "thumbnail_text": "2-4 punchy words in Roman Urdu or English for the thumbnail",
+ "hook_text": "2-4 word ALL-CAPS on-screen hook shown in the first 2 seconds (Roman Urdu/English), e.g. PHYSICS FAIL?",
+ "mood": "one of: suspense, mysterious, dark, epic, uplifting, calm (for background music)",
  "description": "3 short paragraphs in Roman Urdu with main keywords naturally used in first 2 lines, then a 1-line question to drive comments",
  "tags": ["15 search tags mixing English and Roman Urdu/Hindi"],
  "hashtags": ["#3to5", "#hashtags"],
  "global_keywords": ["4-6 general English stock keywords that fit the WHOLE topic visually, e.g. rocket, space, astronaut, earth from space"],
  "scenes": [
-   {{"text": "narration for this scene in the narration language/script", "caption": "same narration in Roman {'Urdu' if lang != 'hindi' else 'Hindi'} (Latin letters)", "keywords": ["specific", "medium", "general"], "chapter": ""}}
+   {{"text": "narration for this scene in the narration language/script", "caption": "same narration in Roman {'Urdu' if lang != 'hindi' else 'Hindi'} (Latin letters)", "keywords": ["specific", "medium", "general"], "pace": "normal", "reveal": false, "chapter": ""}}
  ]
 }}"""
     data = ask(cfg, prompt, json_mode=True, temperature=1.05)
@@ -119,9 +132,13 @@ Return ONLY JSON:
         s.setdefault("chapter", "")
         kws = s.get("keywords") or []
         s["keywords"] = [k for k in kws if isinstance(k, str) and k.strip()] or [topic]
+        s["pace"] = s.get("pace") if s.get("pace") in ("fast", "normal", "slow") else "normal"
+        s["reveal"] = bool(s.get("reveal")) and s is not scenes[0]
     g = [k for k in (data.get("global_keywords") or []) if isinstance(k, str) and k.strip()]
     data["global_keywords"] = g or [topic]
     data["scenes"] = scenes
+    data["mood"] = str(data.get("mood", "suspense")).strip().lower()
+    data["hook_text"] = str(data.get("hook_text") or data.get("thumbnail_text") or "").strip()[:28]
     data["topic"] = topic
     data["style"] = style
     log(f"Script ready: {data['title']} ({len(scenes)} scenes)")

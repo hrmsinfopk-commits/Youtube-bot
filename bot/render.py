@@ -5,6 +5,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
+from . import audiofx
 from .common import FONTS, MUSIC, duration, log, run
 
 FPS = 30
@@ -66,7 +67,7 @@ def _ass_time(t):
     return f"{int(h)}:{int(m):02d}:{s:05.2f}"
 
 
-def build_ass(kind, cfg, scenes, timings, path, rng):
+def build_ass(kind, cfg, scenes, timings, path, rng, hook_text=""):
     W, H = SIZES[kind]
     native = cfg["channel"]["captions"] == "native" and cfg["channel"]["language"] != "english"
     lang = cfg["channel"]["language"]
@@ -94,11 +95,16 @@ WrapStyle: 0
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Cap,{font},{size},{_ass_color(white)},&H000000FF,&H00000000,&H64000000,1,0,0,0,100,100,1,0,1,{7 if kind == 'short' else 5},3,{align},60,60,{marginv},1
+Style: Hook,Anton,{150 if kind == 'short' else 110},&H00000000,&H000000FF,{_ass_color(hi)},{_ass_color(hi)},1,0,0,0,100,100,2,0,3,22,0,8,60,60,{int(H * 0.16)},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     lines = []
+    hook = re.sub(r"[{}\\]", "", hook_text or "").upper().strip()
+    if hook:
+        hook_anim = "{\\fscx40\\fscy40\\t(0,160,\\fscx108\\fscy108)\\t(160,260,\\fscx100\\fscy100)\\fad(0,200)}"
+        lines.append(f"Dialogue: 1,{_ass_time(0)},{_ass_time(2.3)},Hook,,0,0,0,,{hook_anim}{hook}")
     for sc, (t0, dur) in zip(scenes, timings):
         text = (sc["text"] if native else sc["caption"]).strip()
         text = re.sub(r"[{}\\]", "", text)
@@ -125,11 +131,25 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
                          f"{{{pos}}}{anim}{' '.join(parts)}")
             t += d
     Path(path).write_text(head + "\n".join(lines) + "\n", encoding="utf-8")
+    return hi
 
 
 # ---------------------------------------------------------------- audio
-def build_audio(voice, gaps, work, total, cfg, rng):
-    """Concatenate scene voices with gaps, then mix in ducked background music."""
+def pick_music(work, total, mood, rng):
+    """1) your own files in music/  2) Freesound CC0 (if key)  3) generated original music."""
+    tracks = sorted([p for p in MUSIC.glob("*") if p.suffix.lower() in (".mp3", ".wav", ".m4a", ".ogg")])
+    if tracks:
+        m = rng.choice(tracks)
+        log("Music (own file):", m.name)
+        return m
+    fs = audiofx.freesound_music(work / "music_fs.mp3", total, mood)
+    if fs:
+        return fs
+    return audiofx.make_music(work / "music_gen.wav", total, mood, seed=rng.random())
+
+
+def build_audio(voice, gaps, work, total, cfg, rng, mood="suspense", sfx_events=()):
+    """Concatenate scene voices with gaps, mix in ducked background music and sound effects."""
     silence = {}
     lst = work / "audio_list.txt"
     with open(lst, "w") as f:
@@ -145,27 +165,30 @@ def build_audio(voice, gaps, work, total, cfg, rng):
     narr = work / "narration.wav"
     run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst),
          "-c:a", "pcm_s16le", str(narr)])
-    tracks = sorted([p for p in MUSIC.glob("*") if p.suffix.lower() in (".mp3", ".wav", ".m4a", ".ogg")])
-    if not tracks:
-        return narr
-    music = rng.choice(tracks)
-    vol = cfg["footage"].get("music_volume", 0.1)
+    music = pick_music(work, total, mood, rng)
+    sfx = audiofx.make_sfx_track(work / "sfx.wav", total, list(sfx_events), seed=rng.randint(0, 10**6))
+    vol = cfg["footage"].get("music_volume", 0.1) * (1.6 if str(music).endswith("music_gen.wav") else 1.0)
+    sfx_vol = cfg["footage"].get("sfx_volume", 0.6)
     mixed = work / "mixed.wav"
-    fc = (f"[1:a]volume={vol},afade=t=in:d=1.5,afade=t=out:st={max(total - 2.5, 0):.2f}:d=2.5[m];"
+    fc = (f"[1:a]volume={vol:.3f},afade=t=in:d=1.0,afade=t=out:st={max(total - 2.5, 0):.2f}:d=2.5[m];"
           f"[0:a]asplit=2[v][sc];"
           f"[m][sc]sidechaincompress=threshold=0.04:ratio=6:attack=30:release=500[duck];"
-          f"[v][duck]amix=inputs=2:duration=first:normalize=0[a]")
+          f"[2:a]volume={sfx_vol}[fx];"
+          f"[v][duck][fx]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.95[a]")
     run(["ffmpeg", "-y", "-v", "error", "-i", str(narr), "-stream_loop", "-1", "-i", str(music),
-         "-filter_complex", fc, "-map", "[a]", "-t", f"{total:.2f}", "-c:a", "pcm_s16le", str(mixed)])
-    log("Music:", music.name)
+         "-i", str(sfx), "-filter_complex", fc, "-map", "[a]", "-t", f"{total:.2f}",
+         "-c:a", "pcm_s16le", str(mixed)])
     return mixed
 
 
 # ---------------------------------------------------------------- main assembly
-def assemble(kind, cfg, scenes, voice, media, work, out_path, rng):
+def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspense", hook_text=""):
     """scenes: list; voice: [(wav, secs)]; media: per-scene list of (path, kind)."""
     W, H = SIZES[kind]
     gaps = [rng.uniform(0.18, 0.35) for _ in voice]
+    for i in range(len(scenes) - 1):
+        if scenes[i + 1].get("reveal"):
+            gaps[i] = 0.75          # dramatic pause before a reveal
     gaps[-1] = 0.8
     timings, t = [], 0.0
     for (_, d), g in zip(voice, gaps):
@@ -195,14 +218,38 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng):
     silent = work / "video_noaudio.mp4"
     run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(silent)])
 
-    audio = build_audio(voice, gaps, work, total, cfg, rng)
+    # sound effects + zoom punches
+    events, punches = [(0.0, "boom")], []
+    for i, (sc, (t0, _)) in enumerate(zip(scenes, timings)):
+        if i == 0:
+            continue
+        if sc.get("reveal"):
+            events += [(max(0, t0 - 1.6), "riser"), (t0, "boom")]
+            punches.append(t0)
+        elif kind == "short" or sc.get("chapter"):
+            events.append((max(0, t0 - 0.2), "whoosh"))
+    audio = build_audio(voice, gaps, work, total, cfg, rng, mood, events)
     ass = work / "captions.ass"
-    build_ass(kind, cfg, scenes, timings, ass, rng)
+    hi = build_ass(kind, cfg, scenes, timings, ass, rng, hook_text)
 
-    vf = (f"subtitles={ass.resolve()}:fontsdir={FONTS.resolve()},"
-          f"fade=t=in:st=0:d=0.25,fade=t=out:st={max(total - 0.6, 0):.2f}:d=0.6")
-    run(["ffmpeg", "-y", "-v", "error", "-i", str(silent), "-i", str(audio), "-vf", vf,
-         "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-preset", "fast", "-crf", "21",
+    chain = []
+    if punches:
+        z = "+".join(f"between(it\\,{p:.2f}\\,{p + 0.4:.2f})*(1-(it-{p:.2f})/0.4)" for p in punches[:12])
+        chain.append(f"zoompan=z='1+0.08*({z})':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+                     f":d=1:s={W}x{H}:fps={FPS}")
+    chain.append(f"subtitles={ass.resolve()}:fontsdir={FONTS.resolve()}")
+    inputs = ["-i", str(silent), "-i", str(audio)]
+    if kind == "short":   # progress bar keeps people watching to the end
+        bar_h = 12
+        r, g, b = hi
+        inputs += ["-f", "lavfi", "-i", f"color=c=0x{r:02X}{g:02X}{b:02X}:s={W}x{bar_h}:r={FPS}"]
+        fc = (f"[0:v]{','.join(chain)}[base];"
+              f"[base][2:v]overlay=x='-w+w*t/{total:.2f}':y=H-{bar_h}:eval=frame:shortest=1,")
+    else:
+        fc = f"[0:v]{','.join(chain)},"
+    fc += f"fade=t=in:st=0:d=0.2,fade=t=out:st={max(total - 0.6, 0):.2f}:d=0.6[v]"
+    run(["ffmpeg", "-y", "-v", "error"] + inputs + ["-filter_complex", fc,
+         "-map", "[v]", "-map", "1:a", "-c:v", "libx264", "-preset", "fast", "-crf", "21",
          "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart",
          "-t", f"{total:.2f}", str(out_path)])
     log(f"Video ready: {out_path.name} ({total:.1f}s)")
