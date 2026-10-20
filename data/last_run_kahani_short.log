@@ -1,24 +1,39 @@
-[09:41:25] Channel: Raat Ki Kahaniyan (kahani, mode=stories)
-[09:44:25] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[09:44:25] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[09:44:50] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[09:44:54] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[09:45:23] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[09:45:23] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[09:45:26] Gemini OK (gemini-flash-lite-latest)
-[09:45:26] Story premise: A night-shift baker in a damp basement bakery in Faisalabad kneads dough while listening to a podcast about a local missing person, until the radio voice describes the unique silver ring the baker is currently wearing.
-[09:45:26] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[09:45:27] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[09:45:52] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[09:45:52] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[09:46:17] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[09:46:17] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[09:46:23] Gemini OK (gemini-flash-lite-latest)
-[09:46:23] Script length: 107 words
-[09:46:23] Script ready: Faisalabad Basement Bakery Ka Raaz (6 scenes)
-[09:46:23] Voice: {'engine': 'gemini', 'voice': 'Enceladus', 'gender': 'male', 'style': 'You are a famous late-night Urdu horror storyteller on radio. Narrate this in natural, fluent Pakistani Urdu as if telling a true incident to friends sitting in the dark: steady, flowing, medium pace (not slow), low and tense voice, small natural pauses only where there is "...", lower your voice almost to a whisper on the scariest lines and for whispered dialogue, a quick breath before the final twist. Sound like a real human, not an actor and not a robot'}
-[09:46:42] Gemini TTS OK (gemini-3.1-flash-tts-preview, Enceladus)
-[09:48:20] 13 clips rendered
-[09:49:10] Freesound CC0 music: Space dark atmo.wav (id 583590)
-[09:50:26] Video ready: 20261020_0946_kahani_short.mp4 (52.5s)
-[09:50:26] YouTube secrets missing - video sirf GitHub artifact mein save hogi
+[10:00:47] Channel: Raat Ki Kahaniyan (kahani, mode=stories)
+[10:00:47] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[10:00:47] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[10:01:16] Gemini OK (gemini-flash-lite-latest)
+[10:01:16] Story premise: A tired cab driver in Karachi picks up a weeping bride at 2 AM, but when she steps out at a deserted graveyard, she leaves behind his own wedding album opened to a page soaked in fresh blood.
+[10:01:20] Gemini OK (gemini-flash-lite-latest)
+[10:01:20] Script length: 114 words
+[10:01:24] Gemini OK (gemini-flash-lite-latest)
+[10:01:24] Story edited (114 -> 123 words)
+[10:01:24] Script ready: Raat 2 Baje Ki Sawari Aur Khoon Se Bhari Album (6 scenes)
+[10:01:24] Voice: {'engine': 'gemini', 'voice': 'Enceladus', 'gender': 'male', 'style': 'You are a famous late-night Urdu horror storyteller on radio. Narrate this in natural, fluent Pakistani Urdu as if telling a true incident to friends sitting in the dark: steady, flowing, medium pace (not slow), low and tense voice, small natural pauses only where there is "...", lower your voice almost to a whisper on the scariest lines and for whispered dialogue, a quick breath before the final twist. Sound like a real human, not an actor and not a robot'}
+[10:01:39] Gemini TTS error: 'content'
+[10:02:04] Gemini TTS error: 'content'
+[10:02:55] Gemini TTS error: 'content'
+[10:05:08] Gemini TTS error: 'content'
+[10:06:02] Gemini TTS error: 'content'
+[10:06:19] Gemini TTS OK (gemini-2.5-flash-preview-tts, Enceladus)
+[10:06:38] Image HTTP 402 (try 1)
+[10:06:54] Image HTTP 402 (try 2)
+[10:07:26] Image HTTP 402 (try 1)
+[10:07:42] Image HTTP 402 (try 2)
+[10:08:14] Image HTTP 402 (try 1)
+[10:08:30] Image HTTP 402 (try 2)
+[10:09:02] Image HTTP 402 (try 1)
+[10:09:18] Image HTTP 402 (try 2)
+[10:09:50] Image HTTP 402 (try 1)
+[10:10:06] Image HTTP 402 (try 2)
+[10:10:34] AI images: 6/6
+[10:10:36] Freesound CC0 sound 'door knock': Knock_1.wav (id 144943)
+[10:10:37] Freesound CC0 sound 'car door': cardooropen_2.wav (id 123020)
+[10:10:40] Freesound CC0 sound 'wind howling': Wind  howling 1/1 (id 721216)
+[10:10:41] Freesound CC0 sound 'whisper': quick overe here edit.wav (id 192172)
+[10:10:42] Freesound CC0 sound 'footsteps': Big robot footstep 003 (id 813054)
+[10:10:44] Freesound CC0 sound 'page turn': Page Turn - 20 (id 484940)
+[10:11:15] Freesound CC0 sound 'wind howling': Ambient Drone - sijsijsijsijsijs by CVLTIV8R.wav (id 799350)
+[10:11:47] 13 clips rendered
+[10:12:32] Freesound CC0 music: Space dark atmo.wav (id 583590)
+[10:13:28] Video ready: 20261020_1011_kahani_short.mp4 (47.9s)
+[10:13:28] YouTube secrets missing - video sirf GitHub artifact mein save hogi
