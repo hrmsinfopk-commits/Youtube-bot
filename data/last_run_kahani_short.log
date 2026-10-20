@@ -1,11 +1,24 @@
-[09:13:07] Channel: Raat Ki Kahaniyan (kahani, mode=stories)
-[09:14:15] Gemini OK (gemini-3.8-flash)
-[09:14:15] Story premise: A highway dhaba cook serving tea to a silent trucker at 3 AM realizes the customer is reciting the exact confession the cook whispered while burying a hit-and-run victim an hour earlier.
-[09:16:08] Gemini OK (gemini-3.8-flash)
-[09:16:08] Script length: 138 words
-[09:16:08] Script ready: 3 AM Highway Dhaba Par Aaya Ek Khaufnaak Voice Note (8 scenes)
-[09:16:08] Voice: {'voice': 'ur-PK-AsadNeural', 'rate': '-12%', 'pitch': '-5Hz'}
-[09:18:04] 15 clips rendered
-[09:19:17] Freesound CC0 music: horror music (id 237091)
-[09:21:57] Video ready: 20261020_0916_kahani_short.mp4 (60.5s)
-[09:21:57] YouTube secrets missing - video sirf GitHub artifact mein save hogi
+[09:41:25] Channel: Raat Ki Kahaniyan (kahani, mode=stories)
+[09:44:25] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[09:44:25] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:44:50] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:44:54] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[09:45:23] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[09:45:23] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:45:26] Gemini OK (gemini-flash-lite-latest)
+[09:45:26] Story premise: A night-shift baker in a damp basement bakery in Faisalabad kneads dough while listening to a podcast about a local missing person, until the radio voice describes the unique silver ring the baker is currently wearing.
+[09:45:26] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:45:27] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:45:52] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:45:52] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:46:17] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:46:17] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:46:23] Gemini OK (gemini-flash-lite-latest)
+[09:46:23] Script length: 107 words
+[09:46:23] Script ready: Faisalabad Basement Bakery Ka Raaz (6 scenes)
+[09:46:23] Voice: {'engine': 'gemini', 'voice': 'Enceladus', 'gender': 'male', 'style': 'You are a famous late-night Urdu horror storyteller on radio. Narrate this in natural, fluent Pakistani Urdu as if telling a true incident to friends sitting in the dark: steady, flowing, medium pace (not slow), low and tense voice, small natural pauses only where there is "...", lower your voice almost to a whisper on the scariest lines and for whispered dialogue, a quick breath before the final twist. Sound like a real human, not an actor and not a robot'}
+[09:46:42] Gemini TTS OK (gemini-3.1-flash-tts-preview, Enceladus)
+[09:48:20] 13 clips rendered
+[09:49:10] Freesound CC0 music: Space dark atmo.wav (id 583590)
+[09:50:26] Video ready: 20261020_0946_kahani_short.mp4 (52.5s)
+[09:50:26] YouTube secrets missing - video sirf GitHub artifact mein save hogi
