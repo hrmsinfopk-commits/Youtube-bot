@@ -3,7 +3,7 @@
 # ===========================================================
 
 channel:
-  name: "Future Ki Duniya"            # aapke channel ka naam (outro/description mein aata hai)
+  name: "Tomorrowly"                   # aapke channel ka naam (outro/description mein aata hai)
   niche: "AI aur Future Technology: robots, AI tools, space tech, future gadgets, science ki nayi khoj"
   audience: "Pakistan aur India ke 16-35 saal ke log jo Urdu/Hindi samajhte hain"
   language: "urdu"                     # urdu | hindi | english  (awaaz ki zubaan)
