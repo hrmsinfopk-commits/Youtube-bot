@@ -12,7 +12,7 @@ channel:
 
 shorts:
   per_run: 1                           # har run mein kitne Shorts (workflow din mein 3 dafa chalta hai)
-  target_seconds: 45                   # 30-55 behtar hai
+  target_seconds: 40                   # research: 30-50 second wali Shorts sab se zyada aakhir tak dekhi jati hain
 
 long:
   per_run: 1

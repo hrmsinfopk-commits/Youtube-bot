@@ -37,7 +37,8 @@ def ask(cfg, prompt, json_mode=False, search=False, temperature=1.0, attempts=4)
     last = None
     for attempt in range(attempts):
         # first tries: only the stronger models (better, longer scripts); "lite" only as a last resort
-        use_lite = attempt >= min(2, attempts - 1)
+        strong_left = [m for m in cfg["gemini"]["models"] if "lite" not in m and m not in DEAD]
+        use_lite = attempt >= min(2, attempts - 1) or not strong_left
         for model in cfg["gemini"]["models"]:
             if model in DEAD or ("lite" in model and not use_lite):
                 continue
@@ -49,8 +50,8 @@ def ask(cfg, prompt, json_mode=False, search=False, temperature=1.0, attempts=4)
             except Exception as e:  # noqa: BLE001
                 last = e
                 msg = str(e)
-                if "HTTP 404" in msg:
-                    DEAD.add(model)
+                if "HTTP 404" in msg or ("HTTP 429" in msg and "quota" in msg.lower()):
+                    DEAD.add(model)   # retired, or today's free quota used up -> skip for this run
                 log(f"Gemini error ({model}): {msg[:160].replace(chr(10), ' ')}")
         if attempt < attempts - 1:
             time.sleep(25)  # busy (503) / per-minute limit (429) usually clears quickly
