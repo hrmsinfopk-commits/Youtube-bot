@@ -188,6 +188,8 @@ Write it like a real, passionate human creator talking to a friend, NOT like an 
 - Short punchy sentences, varied rhythm, everyday words, occasional casual reactions ("socho zara", "yahi to twist hai").
 - Never use these AI-sounding phrases: "is video mein", "aaiye jaante hain", "dilchasp baat yeh hai", "in conclusion", "delve", "kya aap jaante hain" as an opener.
 - Only true, verifiable facts. If unsure, frame as possibility, not fact. No fake statistics.
+- No fear-mongering: never claim or hint at wars, attacks, cover-ups or conspiracies that are not established fact. Excitement must come from real facts, not invented danger.
+- Never say "is video mein" / "yeh video" - talk about the topic itself.
 - Give specific details (names, years, numbers) instead of vague claims.
 {extra}
 
@@ -195,7 +197,8 @@ For every scene give 3 stock-footage search keywords in ENGLISH, ordered from mo
 each 1-2 words, showing what the viewer should SEE while hearing that line (e.g. for a rocket-landing line: "rocket launch", "rocket", "space").
 Keywords must be literal visual subjects that stock sites have (rocket, robot, astronaut, circuit board, city skyline, hospital, laboratory),
 NOT abstract words from the sentence (avoid: heavy, success, cheap, time, money, tower, second). Every keyword must clearly relate to the video topic.
-Avoid brand names and real people in keywords.
+Avoid brand names and real people in keywords. For real events prefer REAL footage words (launch, satellite, earth from space, control room)
+over sci-fi words (alien, spaceship, futuristic city) so viewers are not misled.
 Scene 1 keywords must be the single most visually stunning, dramatic shot for this topic (the first second decides if people stay).
 
 For every scene also set:

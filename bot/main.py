@@ -115,7 +115,7 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
         used = set(history["used_media"])
         media, cache = [], {}
         for i, sc in enumerate(script["scenes"]):
-            need = 2 if kind == "short" else 3
+            need = 3                       # enough different clips so no shot repeats inside a scene
             gk = script.get("global_keywords", [])
             items = footage.search(cfg, sc["keywords"] + rng.sample(gk, min(2, len(gk))), orient, used, need=need)
             if not items:
