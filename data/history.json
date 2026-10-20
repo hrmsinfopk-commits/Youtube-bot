@@ -47,6 +47,48 @@
    "topic": "NASA's Europa Clipper Launch to Find Alien Life Beneath Jupiter's Ice",
    "style": "Story: ek kirdaar ya waqia, suspense ke saath",
    "youtube_id": null
+  },
+  {
+   "date": "2026-10-20 11:21",
+   "type": "short",
+   "title": "Tesla's New Flying Roadster Actually Uses Rocket Thrusters #shorts",
+   "topic": "Tesla Unveils Its 'Flying' Roadster - Breaking down the engineering reality and regulatory nightmare behind Tesla's newly unveiled 'flying car'—explaining why the FAA and DOT have no idea who is supposed to regulate a car with rocket thrusters.",
+   "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
+   "youtube_id": null,
+   "voice": "Iapetus",
+   "seconds": 42.3,
+   "scene_times": [
+    [
+     0.0,
+     "Tesla just unveiled a brand new Roadster that actually has rocket thrusters."
+    ],
+    [
+     5.9,
+     "Elon Musk claims this electric car can hit sixty miles per hour in under one second."
+    ],
+    [
+     12.0,
+     "Hidden behind the license plate are SpaceX cold gas thrusters meant for short bursts of le"
+    ],
+    [
+     18.0,
+     "But here is the catch. The FAA admits this vehicle does not fit any current aviation rules"
+    ],
+    [
+     24.5,
+     "Engineers say the gas tanks drain so fast, flight only lasts a few seconds."
+    ],
+    [
+     29.9,
+     "With no commercial release planned until 2028, regulators are scrambling to figure out how"
+    ],
+    [
+     38.9,
+     "Send this to the friend who would definitely try to fly to work."
+    ]
+   ],
+   "format": null,
+   "why": "Videos breaking down Tesla's wild engineering promises and flying car prototypes regularly pull millions of views on YouTube Shorts due to the mix of skepticism, spectacle, and curiosity. This news dropped across mainstream outlets like CNN and CNBC within the last few days, giving us a sharp technical and regulatory angle rather than generic hype."
   }
  ],
  "used_media": [
@@ -136,6 +178,27 @@
   "pixabay-v-135988",
   "pixabay-v-215697",
   "pixabay-v-30356",
-  "pixabay-v-139105"
+  "pixabay-v-139105",
+  "pixabay-v-8558",
+  "pixabay-v-1295",
+  "pixabay-v-1137",
+  "pixabay-v-252242",
+  "pixabay-v-35124",
+  "pixabay-v-65202",
+  "pixabay-v-2165",
+  "pixabay-v-5626",
+  "pixabay-v-184734",
+  "nasa-v-van_051305_noaa_intro",
+  "nasa-v-van_052005_noaa_intro",
+  "nasa-v-ksc_011806_crawlers40th",
+  "pixabay-v-43629",
+  "pixabay-v-49815",
+  "pixabay-v-212554",
+  "pixabay-v-23232",
+  "pixabay-v-43849",
+  "pixabay-v-3249",
+  "nasa-v-jcs2025m000066_Space to Ground_566_250418",
+  "pixabay-v-38084",
+  "nasa-v-NHQ_2019_0403_Spinoff 2019"
  ]
 }

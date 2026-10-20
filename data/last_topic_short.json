@@ -1,0 +1,94 @@
+{
+ "topic": "Tesla Unveils Its 'Flying' Roadster",
+ "angle": "Breaking down the engineering reality and regulatory nightmare behind Tesla's newly unveiled 'flying car'—explaining why the FAA and DOT have no idea who is supposed to regulate a car with rocket thrusters.",
+ "why": "Videos breaking down Tesla's wild engineering promises and flying car prototypes regularly pull millions of views on YouTube Shorts due to the mix of skepticism, spectacle, and curiosity. This news dropped across mainstream outlets like CNN and CNBC within the last few days, giving us a sharp technical and regulatory angle rather than generic hype.",
+ "keywords": [
+  "tesla flying car",
+  "tesla roadster flying",
+  "elon musk flying car",
+  "next gen roadster",
+  "spacex thruster car",
+  "flying cars 2026",
+  "future transport",
+  "tesla roadster cold gas thrusters",
+  "faa tesla flying car",
+  "future tech explained",
+  "tesla roadster update",
+  "flying car technology"
+ ],
+ "facts": [
+  "Tesla has publicly unveiled what it describes as a 'flying' version of its next-generation Roadster [announced/claimed].",
+  "The concept relies on integrating SpaceX cold-gas thruster technology to achieve short bursts of levitation or extreme acceleration [announced/claimed].",
+  "Traditional flying cars rely on wings, rotors, or eVTOL designs, whereas Tesla's concept uses ultra-high-pressure gas thrusters hidden behind the license plate area [announced/claimed].",
+  "The Federal Aviation Administration (FAA) stated that the proposed vehicle does not fall under their traditional regulatory oversight [reported].",
+  "Officials at the Department of Transportation (DOT) admitted there is currently no clear regulatory framework for road vehicles equipped with rocket thrusters [reported].",
+  "Aeronautical engineers point out that cold-gas thrusters consume compressed gas extremely rapidly, meaning any 'flight' would likely be limited to seconds rather than sustained travel [analysis].",
+  "Carrying composite-overwrapped pressure vessels (COPVs) operating at thousands of psi presents massive crash safety and road-legal certification hurdles.",
+  "State agencies and transportation departments are already debating whether future transit infrastructure needs to accommodate levitating vehicles alongside standard EV charging stations [reported].",
+  "Competing eVTOL and flying car manufacturers released tongue-in-cheek responses welcoming Tesla into the personal flight sector [reported].",
+  "No commercial delivery date or finalized street-legal certification timeline has been validated by federal safety regulators [planned/unconfirmed].",
+  "Tesla introduced the newest generation of its Roadster vehicle.",
+  "Tesla claims that the newly unveiled automobile is a flying car.",
+  "The vehicle incorporates compressed air thrusters developed by SpaceX.",
+  "The onboard thrusters are stated to enable the car to rotate while airborne.",
+  "The Roadster is reported to reach 60 miles per hour from a standstill in under one second.",
+  "The flight functionality of the vehicle is characterized as limited.",
+  "The automobile is not planned to arrive or be released until 2028.",
+  "The debut took place after approximately ten years of postponements.",
+  "Elon Musk presented the vehicle, claiming that flying cars are now a reality."
+ ],
+ "long_format": null,
+ "sources": [
+  {
+   "title": "What Does It Say That Elon Musk Finds It Easier To Build A Flying Car Than A Cheap EV?",
+   "source": "The Autopian",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdElDN2tvZ0J4MWRsWDE1Q2FTSVVWcVFxSDFNc3FDTmwxRFRhTmFlRmxDdF9Mc0pQaVU2TFNHTVp1TEQtTWhlZzNxWWpIMEg5X1ZpbkhBSmZZWnhFRldmdW8xT2xORnBVaGgzUXNvY2hLZU1FNE9Nek5SQ01xMHFNS18zY1pXYUE4ZFI4dlRiT1JwbTVOazJWcFoxdDUzNTh6NkZHa1NfVFZ6ZzkweGM1VlEyaDE?oc=5"
+  },
+  {
+   "title": "Elon Musk's flying Tesla is gloriously absurd",
+   "source": "Axios",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE41amE5a0NrVFFwTktIam1oQWhZOEV4YnE1Nk8xVi1JU1ZWWk9vMlRsQzFnQkdxdGtXblRWTE9KSzQtUWNCdi0yeWgyRHpVS3BPWWlQS3FWR2R2dHlzcjVIMWFPSE9wWXRBUmFhN1owZ05DWDFaNVhB?oc=5"
+  },
+  {
+   "title": "Electric Vehicle Chargers Or Flying Cars? Tesla And The State Of Florida Can’t Decide",
+   "source": "CleanTechnica",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRHBOYmpUQ1ljSTlveXVhWWZmOUN3TndRVDZkNUVxcWNNQ3BIeXpLbktsYkh2MUx6ZDF3SUZPLWFGM0lhZDlya2NRV2hGWHVGQkdGRFl5c0l6ZXlwbXBjUU53QkIxRTJMdVVNUS1yY3B2Z0ttaXA2aU13M01La1VfNGMwQXFFX0dUYXJlMnlLRzZqQng5YnozcUNRb0tnWWk4TkN3V2VmM2t2bWZBYXN5VjNuMDBLQVBmMERQOFhn?oc=5"
+  },
+  {
+   "title": "Elon Musk unveils Tesla's 'flying' car",
+   "source": "Phys.org",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB2TnFjMkRVRzlKMHF5ZkF2cFJhbkJDMDEwTFZwQTh5SHAyTlBHNEFsZDJkZHR6RXVLU1lwbTBNVEkwMEYzT3NMZ3NSNWpLcFF0TS1GU2tEMmpvLWFPSTA4TU44Y0RQWENYUDNyNERvb1Rxa3M?oc=5"
+  },
+  {
+   "title": "Tesla unveils what it says is a flying car",
+   "source": "CNN",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcDNkZ0NmTUtLYkNwbEUyRklCUE9rUnE4WHNfQk42d0ZHVUpoUGpQd1JMQWNUSElNQkVQbExQSmdWcVRnRXdjWEZMeHUxSVdOTVNCbHdHWGRBUGI3c2dxMnNrc3RqSExQZlBQb1g0bkYzMTZHb1RtNUpfSHRCZ1NDS0x5SnlVdFhWTmc?oc=5"
+  },
+  {
+   "title": "We asked the DOT who would oversee a flying car like Tesla's Roadster. The answer isn't readily clear.",
+   "source": "CBS News",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9oNmdxejNBQ2FlekU1ejk1ZlFGSndSSFRpRW1uZ2ZNdDBoWmtaVVJyN3hFVXJfcS1HTEVVMGJDSndfbjVEaFUtbHBWbmdGT0tPcGpaazBXSGN1Ui1VeF84TFk4VE14MHFhd3Vn?oc=5"
+  },
+  {
+   "title": "A Tesla Flying Car? I Don’t Know, Man",
+   "source": "WIRED",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBkYmZoSHM1Q200YTZ3TUo2RWtsX0p1NXlHMmxlRHp2a1FQenlnV3c3R2d3aEFSdXp4VWU1MF85Z3N1a0RiVUcxc09raWlnR0owbVVMUElhaE5LbjVOTkE?oc=5"
+  },
+  {
+   "title": "FAA: Musk’s flying car not our responsibility",
+   "source": "Politico",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9qSGJNTmVqSDdrcXNTbmhsZExMengzQ0p4WUlJOG8zOGJ3ZndZSDRlSk5YZEtlWElvVjI1dHNlVndnN0gyb0FYeU5HQ0JsaVRrN1RVeHhvd1pmLTZOOTVxZmFWS0NZV1FWVmp2WXd2dmNNN0UwcTl6c05R?oc=5"
+  },
+  {
+   "title": "Tesla unveils its next-generation Roadster 'flying car'",
+   "source": "CNBC",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSGhwMkZ2SGtsTTFxTHVQejVFelA1XzZSVm9HWjNEWVdVY2Q3R1JFV0RwVGRkbklVeDRQN1dtaFBwLVFROVlqVV9pajkyRVN5Z3hrazJPeE1ya2tVZlZ5RnBzMGhwVTQxbDFENFVOZmY1QjNOT3BPc3R3VTMyc0xlMlB0Y3g3OUhSbmJaOEo2RU5hZjhoanhHOG1ncGI?oc=5"
+  },
+  {
+   "title": "Opinion | Another reason to be excited about Elon Musk’s flying car",
+   "source": "The Washington Post",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTl9DWkVDYWRkQ3R0Qmg3el8wV1BteFRDSDE0aXZ2ZndkeHk3ZUZrVEtxQXMxYmYySDhGYUpRX2xKRVFPcm9hMlZPRmFROHpfeHNVT1VKU3pheWxwelZnN200akV0TW9wZVpJZHRhbEtFN05Bby1xTldHeDVfTGVLUHpHNlgyNk1fX1ZfUU9wSUduRkJlLWhZQWZqYm11a1FIbWYteExkOTlHQ3k2ZmF3V05maw?oc=5"
+  }
+ ],
+ "youtube_top": []
+}

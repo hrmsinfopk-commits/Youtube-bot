@@ -1,32 +1,20 @@
-[09:41:32] Channel: Future Ki Duniya (future, mode=facts)
-[09:41:36] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[09:41:36] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[09:42:01] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[09:42:01] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[09:42:26] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[09:42:27] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[09:42:28] Gemini OK (gemini-flash-lite-latest)
-[09:42:28] Topic chosen: NASA's Europa Clipper Launch to Find Alien Life Beneath Jupiter's Ice
-[09:42:29] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[09:42:29] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[09:42:54] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[09:42:54] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[09:43:20] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[09:43:20] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[09:43:23] Gemini OK (gemini-flash-lite-latest)
-[09:43:23] Script too short (105 words, target ~144) - rewriting longer
-[09:43:23] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[09:43:24] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[09:43:49] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[09:43:49] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[09:44:14] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[09:44:14] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[09:44:18] Gemini OK (gemini-flash-lite-latest)
-[09:44:18] Script length: 105 words
-[09:44:18] Script ready: NASA's Europa Clipper: Finding Alien Life in Space (7 scenes)
-[09:44:18] Voice: {'engine': 'gemini', 'voice': 'Algenib', 'gender': 'male', 'style': 'Read this in natural, fluent Pakistani Urdu like a popular, energetic YouTube science creator talking to a friend: curious, amazed, confident, conversational, medium-fast pace, clear emphasis on surprising words, short natural breaths, never robotic, never like a news reader'}
-[09:44:30] Gemini TTS OK (gemini-3.1-flash-tts-preview, Algenib)
-[09:45:06] 14 clips rendered
-[09:47:26] Freesound CC0 music: Electronic Minute 415 - Suspense Music VCV-Rack.wav (id 647695)
-[09:48:00] Video ready: 20261020_0944_future_short.mp4 (34.1s)
-[09:48:00] YouTube secrets missing - video sirf GitHub artifact mein save hogi
+[11:15:41] Channel: Tomorrowly (future, mode=facts)
+[11:15:50] News headlines collected: 169
+[11:15:50] YouTube login missing - trend data from news only
+[11:17:38] Gemini OK (gemini-3.8-flash)
+[11:19:02] Gemini OK (gemini-3.8-flash)
+[11:19:02] Trend topic: Tesla Unveils Its 'Flying' Roadster | why: Videos breaking down Tesla's wild engineering promises and flying car prototypes regularly pull millions of views on YouTube Shorts due to the mix of skepticism, spectacle, and curiosity. This news dropped across mainstream outlets like CNN and CNBC within the last few days, giving us a sharp technical and regulatory angle rather than generic hype.
+[11:19:02] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[11:19:03] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[11:19:31] Gemini OK (gemini-flash-lite-latest)
+[11:19:31] Script length: 106 words
+[11:19:31] Script ready: Tesla's New Flying Roadster Actually Uses Rocket Thrusters (7 scenes)
+[11:19:31] Voice: {'engine': 'gemini', 'voice': 'Iapetus', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[11:19:47] Gemini TTS OK (gemini-3.1-flash-tts-preview, Iapetus)
+[11:20:02] Freesound CC0 sound 'engine rev': Chainsaw_Stop.wav (id 340629)
+[11:20:03] Freesound CC0 sound 'whoosh': Whoosh to HIT 1.wav (id 434874)
+[11:20:04] Freesound CC0 sound 'gas hiss': fizzy water bottle open 001.WAV (id 60385)
+[11:20:35] 16 clips rendered
+[11:20:49] Freesound CC0 music: C#m7 to C#7 00 with swell.wav (id 432835)
+[11:21:33] Video ready: 20261020_1120_future_short.mp4 (42.3s)
+[11:21:33] YouTube secrets missing - video sirf GitHub artifact mein save hogi
