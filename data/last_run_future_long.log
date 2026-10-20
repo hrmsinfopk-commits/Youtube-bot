@@ -1,0 +1,47 @@
+[13:29:02] Channel: Tomorrowly (future, mode=facts)
+[13:29:02] Topic from topics file: Tesla's flying Roadster: what was actually announced, how it would fly, and is it real or just a promise?
+[13:29:03] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[13:29:14] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[13:32:01] Gemini OK (gemini-3.8-flash)
+[13:32:01] Fact sheet for queued topic: 11 facts
+[13:32:02] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[13:32:02] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[13:32:27] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[13:32:27] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[13:34:09] Gemini OK (gemini-3.8-flash)
+[13:34:09] Script length: 978 words
+[13:34:09] Script ready: Tesla's Flying Roadster: Real SpaceX Tech or $250k Illusion? (42 scenes)
+[13:34:09] Voice: {'engine': 'gemini', 'voice': 'Puck', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[13:34:31] Gemini TTS OK (gemini-3.1-flash-tts-preview, Puck)
+[13:35:01] Gemini TTS OK (gemini-3.1-flash-tts-preview, Puck)
+[13:35:01] Gemini TTS error: gemini-3.1-flash-tts-preview: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing detai
+[13:35:31] Gemini TTS OK (gemini-2.5-flash-preview-tts, Puck)
+[13:35:54] Gemini TTS OK (gemini-3.1-flash-tts-preview, Puck)
+[13:35:55] Gemini TTS error: gemini-3.1-flash-tts-preview: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing detai
+[13:36:19] Gemini TTS OK (gemini-2.5-flash-preview-tts, Puck)
+[13:36:41] Gemini TTS OK (gemini-3.1-flash-tts-preview, Puck)
+[13:36:42] Gemini TTS error: gemini-3.1-flash-tts-preview: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing detai
+[13:37:06] Gemini TTS OK (gemini-2.5-flash-preview-tts, Puck)
+[13:37:21] Download failed: file too big (121 MB)
+[13:37:24] Download failed: file too big (84 MB)
+[13:37:25] Download failed: file too big (359 MB)
+[13:37:25] Download failed: file too big (403 MB)
+[13:37:26] Download failed: file too big (92 MB)
+[13:37:33] Download failed: file too big (966 MB)
+[13:37:37] Download failed: file too big (82 MB)
+[13:37:39] Download failed: file too big (1024 MB)
+[13:37:39] Download failed: file too big (1080 MB)
+[13:37:47] Download failed: file too big (86 MB)
+[13:37:49] Download failed: file too big (543 MB)
+[13:37:54] Download failed: file too big (89 MB)
+[13:37:57] Download failed: file too big (313 MB)
+[13:37:58] Download failed: file too big (161 MB)
+[13:37:59] Download failed: file too big (152 MB)
+[13:37:59] Download failed: file too big (134 MB)
+[13:38:00] Footage ready for 42 scenes
+[13:38:02] Freesound CC0 sound 'whoosh': Whoosh 03 (id 733890)
+[13:38:03] Freesound CC0 sound 'whoosh': Jacket/Cloth Rustle 3 (id 494789)
+[13:39:55] 110 clips rendered
+[13:39:55] Final render started
+[13:41:35] Freesound CC0 music: The Devils Etude Piano Concerto - Mastered.wav (id 621384)
+[13:44:30] Video ready: 20261020_1338_future_long.mp4 (420.1s)

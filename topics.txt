@@ -2,4 +2,3 @@
 # Jo topic use ho jaye, bot usay khud hata dega. List khali ho to bot khud trending topic dhoondega.
 # Example:
 # 2035 mein smartphone kaisa hoga
-Tesla's flying Roadster: what was actually announced, how it would fly, and is it real or just a promise?
