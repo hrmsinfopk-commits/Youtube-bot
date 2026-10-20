@@ -87,8 +87,10 @@ def search(cfg, keywords, orient, used, need=3):
             cands += _pexels_videos(kw, orient)
         if "pixabay" in sources:
             cands += _pixabay_videos(kw, orient)
-        random.shuffle(cands)
-        for c in cands:
+        # keep search-relevance order; only mix the top results a little for variety
+        top, rest = cands[:6], cands[6:]
+        random.shuffle(top)
+        for c in top + rest:
             if c["id"] not in used and c["id"] not in {f["id"] for f in found}:
                 found.append(c)
             if len(found) >= need:
@@ -97,8 +99,7 @@ def search(cfg, keywords, orient, used, need=3):
         for kw in keywords:
             cands = (_pexels_photos(kw, orient) if "pexels" in sources else []) + \
                     (_pixabay_photos(kw, orient) if "pixabay" in sources else [])
-            random.shuffle(cands)
-            for c in cands:
+            for c in cands[:8]:
                 if c["id"] not in used and c["id"] not in {f["id"] for f in found}:
                     found.append(c)
                 if len(found) >= need:

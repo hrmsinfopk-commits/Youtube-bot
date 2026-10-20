@@ -92,7 +92,11 @@ Write it like a real, passionate human creator talking to a friend, NOT like an 
 - Give specific details (names, years, numbers) instead of vague claims.
 {extra}
 
-For every scene give stock-footage search keywords in ENGLISH (2-3 options, concrete visual nouns that exist on Pexels, e.g. "humanoid robot", "server room", "city night aerial"). Avoid brand names and specific real people in keywords.
+For every scene give 3 stock-footage search keywords in ENGLISH, ordered from most specific to more general,
+each 1-2 words, showing what the viewer should SEE while hearing that line (e.g. for a rocket-landing line: "rocket launch", "rocket", "space").
+Keywords must be literal visual subjects that stock sites have (rocket, robot, astronaut, circuit board, city skyline, hospital, laboratory),
+NOT abstract words from the sentence (avoid: heavy, success, cheap, time, money, tower, second). Every keyword must clearly relate to the video topic.
+Avoid brand names and real people in keywords.
 
 Return ONLY JSON:
 {{
@@ -101,8 +105,9 @@ Return ONLY JSON:
  "description": "3 short paragraphs in Roman Urdu with main keywords naturally used in first 2 lines, then a 1-line question to drive comments",
  "tags": ["15 search tags mixing English and Roman Urdu/Hindi"],
  "hashtags": ["#3to5", "#hashtags"],
+ "global_keywords": ["4-6 general English stock keywords that fit the WHOLE topic visually, e.g. rocket, space, astronaut, earth from space"],
  "scenes": [
-   {{"text": "narration for this scene in the narration language/script", "caption": "same narration in Roman {'Urdu' if lang != 'hindi' else 'Hindi'} (Latin letters)", "keywords": ["kw1", "kw2"], "chapter": ""}}
+   {{"text": "narration for this scene in the narration language/script", "caption": "same narration in Roman {'Urdu' if lang != 'hindi' else 'Hindi'} (Latin letters)", "keywords": ["specific", "medium", "general"], "chapter": ""}}
  ]
 }}"""
     data = ask(cfg, prompt, json_mode=True, temperature=1.05)
@@ -114,6 +119,8 @@ Return ONLY JSON:
         s.setdefault("chapter", "")
         kws = s.get("keywords") or []
         s["keywords"] = [k for k in kws if isinstance(k, str) and k.strip()] or [topic]
+    g = [k for k in (data.get("global_keywords") or []) if isinstance(k, str) and k.strip()]
+    data["global_keywords"] = g or [topic]
     data["scenes"] = scenes
     data["topic"] = topic
     data["style"] = style

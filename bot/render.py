@@ -71,17 +71,17 @@ def build_ass(kind, cfg, scenes, timings, path, rng):
     native = cfg["channel"]["captions"] == "native" and cfg["channel"]["language"] != "english"
     lang = cfg["channel"]["language"]
     if native and lang == "urdu":
-        font, size = "Noto Nastaliq Urdu", (70 if kind == "short" else 58)
+        font, size = "Noto Nastaliq Urdu", (96 if kind == "short" else 66)
     elif native and lang == "hindi":
-        font, size = "Noto Sans Devanagari", (78 if kind == "short" else 60)
+        font, size = "Noto Sans Devanagari", (108 if kind == "short" else 68)
     else:
-        font, size = "Anton", (92 if kind == "short" else 64)
+        font, size = "Anton", (132 if kind == "short" else 78)
     hi, _ = rng.choice(PALETTES)
     white = (255, 255, 255)
     if kind == "short":
         align, marginv = 5, 0
         pos = f"\\pos({W // 2},{int(H * rng.uniform(0.62, 0.70))})"
-        words_per = (2, 4)
+        words_per = (2, 3)
     else:
         align, marginv, pos = 2, 70, ""
         words_per = (4, 7)
