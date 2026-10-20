@@ -51,6 +51,54 @@ def _pixabay_videos(q, orient):
     return res
 
 
+NASA_API = "https://images-api.nasa.gov/search"
+
+
+def _nasa_assets(href):
+    try:
+        files = requests.get(href, headers=UA, timeout=20).json()
+    except Exception:  # noqa: BLE001
+        return []
+    return [f.replace("http://", "https://") for f in files if isinstance(f, str)]
+
+
+def _nasa_videos(q, orient, limit=6):
+    """NASA Image & Video Library: real mission footage (generally not copyrighted; no NASA logo use/endorsement)."""
+    try:
+        r = requests.get(NASA_API, params={"q": q, "media_type": "video"}, headers=UA, timeout=25)
+        items = r.json().get("collection", {}).get("items", []) if r.status_code == 200 else []
+    except Exception:  # noqa: BLE001
+        return []
+    res = []
+    for it in items[:limit]:
+        d = (it.get("data") or [{}])[0]
+        files = _nasa_assets(it.get("href", ""))
+        mp4 = [f for f in files if f.endswith(".mp4")]
+        pick = next((f for f in mp4 if "~medium" in f), None) or next((f for f in mp4 if "~mobile" in f), None) \
+            or next((f for f in mp4 if "~orig" in f), None)
+        if pick:
+            res.append({"id": f"nasa-v-{d.get('nasa_id', pick)}", "url": pick, "kind": "video", "dur": 20,
+                        "desc": f"{d.get('title', '')} {' '.join(d.get('keywords') or [])}"})
+    return res
+
+
+def _nasa_photos(q, orient, limit=8):
+    try:
+        r = requests.get(NASA_API, params={"q": q, "media_type": "image"}, headers=UA, timeout=25)
+        items = r.json().get("collection", {}).get("items", []) if r.status_code == 200 else []
+    except Exception:  # noqa: BLE001
+        return []
+    res = []
+    for it in items[:limit]:
+        d = (it.get("data") or [{}])[0]
+        files = _nasa_assets(it.get("href", ""))
+        pick = next((f for f in files if "~large.jpg" in f), None) or next((f for f in files if "~orig.jpg" in f), None)
+        if pick:
+            res.append({"id": f"nasa-p-{d.get('nasa_id', pick)}", "url": pick, "kind": "photo", "dur": 5,
+                        "desc": f"{d.get('title', '')} {' '.join(d.get('keywords') or [])}"})
+    return res
+
+
 def _pexels_photos(q, orient):
     key = secret("PEXELS_API_KEY")
     if not key:
@@ -90,6 +138,8 @@ def search(cfg, keywords, orient, used, need=3):
     found = []
     for kw in keywords:
         cands = []
+        if "nasa" in sources:
+            cands += _nasa_videos(kw, orient)
         if "pexels" in sources:
             cands += _pexels_videos(kw, orient)
         if "pixabay" in sources:
@@ -105,7 +155,8 @@ def search(cfg, keywords, orient, used, need=3):
                 return found
     if len(found) < 2:  # photo fallback
         for kw in keywords:
-            cands = (_pexels_photos(kw, orient) if "pexels" in sources else []) + \
+            cands = (_nasa_photos(kw, orient) if "nasa" in sources else []) + \
+                    (_pexels_photos(kw, orient) if "pexels" in sources else []) + \
                     (_pixabay_photos(kw, orient) if "pixabay" in sources else [])
             for c in [c for c in cands if _allowed(cfg, c)][:8]:
                 if c["id"] not in used and c["id"] not in {f["id"] for f in found}:

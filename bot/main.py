@@ -5,8 +5,26 @@ import random
 import shutil
 import time
 
-from . import audiofx, footage, images, render, upload, voice, writer
-from .common import CHANNEL, OUT, WORK, load_config, load_history, log, run, save_history
+from . import audiofx, footage, images, render, trends, upload, voice, writer
+from .common import CHANNEL, DATA, OUT, WORK, load_config, load_history, log, run, save_history
+
+
+def load_learning():
+    p = DATA / f"learning_{CHANNEL['id']}.json"
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return {}
+
+
+def pick_style(cfg, learning, rng):
+    """Mostly pick styles that performed well on our channel, but keep exploring (25%) so we keep learning."""
+    styles = cfg["styles"]
+    scores = (learning or {}).get("style_scores", {})
+    if not scores or rng.random() < 0.25:
+        return rng.choice(styles)
+    weights = [max(0.2, scores.get(s, 1.0)) for s in styles]
+    return rng.choices(styles, weights=weights, k=1)[0]
 
 
 def fmt_ts(t):
@@ -104,9 +122,18 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
         voices = _offline_voice(script["scenes"], work)
         media = _offline_media(script["scenes"], work, kind)
     else:
-        style = rng.choice(cfg["styles"])
-        topic = writer.pick_topic(cfg, history, kind)
-        script = writer.write_script(cfg, topic, kind, style)
+        learning = load_learning()
+        style = pick_style(cfg, learning, rng)
+        brief = None
+        if cfg.get("trends", {}).get("enabled") and cfg["channel"].get("mode") != "stories":
+            queued = writer.queued_topic()
+            brief = None if queued else trends.find_topic(cfg, history, kind, learning)
+            topic = queued or (f"{brief['topic']} - {brief['angle']}" if brief and brief.get("angle") else
+                               (brief or {}).get("topic"))
+        else:
+            topic = None
+        topic = topic or writer.pick_topic(cfg, history, kind)
+        script = writer.write_script(cfg, topic, kind, style, brief)
         vset = voice.pick_voice(cfg, script.get("narrator_gender"))
         log("Voice:", vset)
         voices = voice.synth_scenes(cfg, script["scenes"], work, vset)
@@ -175,7 +202,12 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
     title = script["title"].strip()
     if kind == "short" and "#shorts" not in title.lower():
         title = f"{title[:88]} #shorts"
-    meta = {"title": title, "description": build_description(cfg, kind, script, chap, history),
+    desc = build_description(cfg, kind, script, chap, history)
+    if not offline and brief and brief.get("sources"):
+        outlets = sorted({x["source"] for x in brief["sources"] if x.get("source")})[:6]
+        if outlets:
+            desc += "\n\nBased on reporting from: " + ", ".join(outlets)
+    meta = {"title": title, "description": desc,
             "tags": script.get("tags", []), "topic": script["topic"], "style": script["style"],
             "voice": vset, "seconds": round(total, 1)}
     (OUT / f"{slug}.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -189,7 +221,12 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
             log("YouTube secrets missing - video sirf GitHub artifact mein save hogi")
 
     history["videos"].append({"date": time.strftime("%Y-%m-%d %H:%M"), "type": kind, "title": title,
-                              "topic": script["topic"], "style": script["style"], "youtube_id": yt_id})
+                              "topic": script["topic"], "style": script["style"], "youtube_id": yt_id,
+                              "voice": vset.get("voice"), "seconds": round(total, 1),
+                              "scene_times": [[round(t0, 1), sc.get("caption", "")[:90]]
+                                              for sc, (t0, _) in zip(script["scenes"], timings)],
+                              "format": (brief or {}).get("long_format") if not offline else None,
+                              "why": (brief or {}).get("why", "") if not offline else ""})
     save_history(history) if not offline else None
     shutil.rmtree(work, ignore_errors=True)
     return video

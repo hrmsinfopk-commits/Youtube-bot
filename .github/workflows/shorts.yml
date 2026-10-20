@@ -1,10 +1,10 @@
-name: Future Shorts
+name: Tomorrowly Shorts
 
 on:
   schedule:
-    # UTC time. Pakistan time = UTC + 5  ->  10:30 AM aur 7:30 PM
-    - cron: "30 5 * * *"
-    - cron: "30 14 * * *"
+    # UTC. Monday + Thursday 7:00 PM Pakistan = 10:00 AM US East (video ~20 min baad upload)
+    - cron: "0 14 * * 1"
+    - cron: "0 14 * * 4"
   workflow_dispatch: {}        # "Run workflow" button se kabhi bhi chala sakte hain
   push:
     paths: [".github/trigger-short.txt"]   # is file ko badalne se bhi bot chalta hai

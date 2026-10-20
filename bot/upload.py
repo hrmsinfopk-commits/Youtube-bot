@@ -2,17 +2,21 @@
 from .common import log, secret, yt_secret_suffix
 
 SCOPES = ["https://www.googleapis.com/auth/youtube.upload",
-          "https://www.googleapis.com/auth/youtube.readonly"]
+          "https://www.googleapis.com/auth/youtube.readonly",
+          "https://www.googleapis.com/auth/yt-analytics.readonly"]
 
 
 def _service():
-    from google.oauth2.credentials import Credentials
     from googleapiclient.discovery import build
-    creds = Credentials(None, refresh_token=secret("YT_REFRESH_TOKEN" + yt_secret_suffix()),
+    return build("youtube", "v3", credentials=_creds(), cache_discovery=False)
+
+
+def _creds():
+    from google.oauth2.credentials import Credentials
+    return Credentials(None, refresh_token=secret("YT_REFRESH_TOKEN" + yt_secret_suffix()),
                         token_uri="https://oauth2.googleapis.com/token",
                         client_id=secret("YT_CLIENT_ID"), client_secret=secret("YT_CLIENT_SECRET"),
                         scopes=SCOPES)
-    return build("youtube", "v3", credentials=creds, cache_discovery=False)
 
 
 def ready():

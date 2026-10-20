@@ -1,9 +1,7 @@
-name: Kahani Long Videos
+name: (paused) Kahani Long Videos
 
 on:
-  schedule:
-    # UTC time. Pakistan time = UTC + 5  ->  Wednesday aur Saturday 10:00 PM
-    - cron: "0 17 * * 3,6"
+  # schedule band hai (doosra channel abhi nahi). Dobara chalana ho to cron wapas daal dein.
   workflow_dispatch: {}        # "Run workflow" button se kabhi bhi chala sakte hain
   push:
     paths: [".github/trigger-kahani-long.txt"]   # is file ko badalne se bhi bot chalta hai

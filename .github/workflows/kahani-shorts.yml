@@ -1,9 +1,7 @@
-name: Kahani Shorts
+name: (paused) Kahani Shorts
 
 on:
-  schedule:
-    # UTC time. Pakistan time = UTC + 5  ->  9:30 PM (roz 1 kahani, taake bade Gemini model ki limit kahani ke liye bache)
-    - cron: "30 16 * * *"
+  # schedule band hai (doosra channel abhi nahi). Dobara chalana ho to cron wapas daal dein.
   workflow_dispatch: {}        # "Run workflow" button se kabhi bhi chala sakte hain
   push:
     paths: [".github/trigger-kahani-short.txt"]   # is file ko badalne se bhi bot chalta hai

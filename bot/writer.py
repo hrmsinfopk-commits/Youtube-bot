@@ -10,8 +10,25 @@ LANG_RULES = {
              "Mushkil Farsi/Arabi alfaaz se bacho. Tech words English mein hi likho magar Urdu script mein (jaise روبوٹ، اے آئی)."),
     "hindi": ("Hindi Devanagari script mein, aam bol-chaal wali Hindustani. "
               "Tech words English hi rakho magar Devanagari mein."),
-    "english": "simple, conversational English.",
+    "english": ("natural spoken American-style English for a global audience: simple words, contractions, "
+                "energetic but not hype; avoid British spellings and slang that non-native speakers won't get."),
 }
+
+
+def queued_topic():
+    """Next line from topics.txt (your own topics always go first)."""
+    qfile = topics_file()
+    if not qfile.exists():
+        return None
+    lines = qfile.read_text(encoding="utf-8").splitlines()
+    for i, line in enumerate(lines):
+        t = line.strip()
+        if t and not t.startswith("#"):
+            del lines[i]
+            qfile.write_text("\n".join(lines) + "\n", encoding="utf-8")
+            log("Topic from topics file:", t)
+            return t
+    return None
 
 
 def pick_topic(cfg, history, kind):
@@ -159,30 +176,52 @@ Return ONLY JSON:
 }}"""
 
 
-def write_script(cfg, topic, kind, style, latest_long_url=None):
+def write_script(cfg, topic, kind, style, brief=None):
+    """brief: optional dict from trends.find_topic() with real news facts + search keywords."""
     ch = cfg["channel"]
     lang = ch["language"]
     if ch.get("mode") == "stories":
         draft = _ask_script(cfg, _story_prompt(cfg, topic, kind, style), kind, 1.1)
         return _finish(_edit_story(cfg, draft, kind), topic, style)
+    en = lang == "english"
     if kind == "short":
         secs = cfg["shorts"]["target_seconds"]
         length = f"about {int(secs * _wps(cfg))} spoken words total ({secs} seconds), 6-9 scenes"
-        extra = ("- SUSPENSE STRUCTURE: (1) hook line, (2) an open loop in the first 5 seconds that promises a payoff at the end "
-                 "(e.g. 'aur aakhri wali baat sab se khatarnak hai'), (3) fast build-up of 2-3 lines, (4) a twist starting with "
-                 "'lekin'/'magar' style turn, (5) the REVEAL near the end, delivered slowly, (6) final line.\n"
-                 "- One natural SHARE trigger near the end, aimed at a specific friend type (e.g. 'yeh us dost ko bhejo jo kehta hai...').\n"
-                 "- Final line: either flows seamlessly back into the first line (loop) OR is a short opinion question people want to answer in comments.\n"
-                 "- No 'subscribe' begging at the start.")
+        extra = ("- STRUCTURE: (1) bold statement or vivid 'you' scenario as the hook (not a question), "
+                 "(2) an open loop in the first 5 seconds that promises a payoff at the end, (3) fast build-up of 2-3 lines, "
+                 "(4) a twist ('but here's the thing...'), (5) the REVEAL near the end, (6) final line.\n"
+                 "- One natural SHARE trigger near the end aimed at a specific friend type (e.g. 'send this to the friend who...').\n"
+                 "- Final line: either flows seamlessly back into the first line (loop) OR is a short opinion question people want to answer.\n"
+                 "- One idea only. Every line must add something new. No intro, no 'subscribe' at the start.")
     else:
         mins = cfg["long"]["target_minutes"]
-        length = f"about {int(mins * 60 * _wps(cfg))} spoken words total ({mins} minutes), 28-45 scenes"
-        extra = ("- Structure: hook (0-20s) -> promise of what they'll learn -> 4-7 sections each ending with a mini cliffhanger -> satisfying conclusion -> short outro.\n"
-                 "- Put a short chapter name (2-5 words, Roman Urdu/English) on the first scene of each section in 'chapter'; other scenes chapter = \"\".\n"
+        length = f"about {int(mins * 60 * _wps(cfg))} spoken words total ({mins} minutes), 35-60 scenes"
+        fmt = (brief or {}).get("long_format", "deep dive")
+        if fmt == "weekly roundup":
+            shape = ("- FORMAT: weekly roundup of the 5 biggest stories in the fact sheet, counting down from #5 to #1 (the biggest).\n"
+                     "- Cold open teasing #1 in the first 15 seconds, then go through each story: what happened, why it matters, what's next.")
+        else:
+            shape = ("- FORMAT: deep dive on ONE story: cold open with the most surprising fact, then context/background, "
+                     "how it works, who is behind it, problems and doubts, what happens next, and what it means for ordinary people.")
+        extra = (shape + "\n"
+                 "- 4-7 sections, each ending with a mini cliffhanger. Put a 2-5 word chapter name on the first scene of each section in 'chapter'; other scenes \"\".\n"
                  "- At ~40% and ~70% add a pattern interrupt (surprising question or fact) to keep retention high.\n"
                  "- Open a big question in the first 20 seconds and only fully answer it in the last section (open loop).\n"
-                 "- Mark the 3-6 biggest twist/answer moments as reveal: true.")
+                 "- Mark the 3-6 biggest twist/answer moments as reveal: true.\n"
+                 "- End with a short outro inviting people to comment and to watch the next video; no begging.")
 
+    facts = ""
+    if brief and brief.get("facts"):
+        facts = ("\nFACT SHEET (from real news published in the last days; these are the ONLY facts you may state as true):\n"
+                 + "\n".join(f"- {f}" for f in brief["facts"][:40]) +
+                 "\nRules for using it: explain in your OWN words - never copy sentences from it; if something is only announced,"
+                 " planned or claimed, say so clearly; don't add numbers or claims that are not in the fact sheet or well-established science.\n")
+    seo = ""
+    if brief and brief.get("keywords"):
+        seo = ("\nSEO: people are actively searching/watching these phrases right now - use the best ones naturally in the title,"
+               " the first two lines of the description and the tags: " + ", ".join(brief["keywords"][:15]) + "\n")
+
+    title_lang = "English" if en else "Roman Urdu/Hindi + strong English keywords"
     prompt = f"""You write viral YouTube scripts for the channel "{ch['name']}".
 Niche: {ch['niche']}
 Audience: {ch['audience']}
@@ -191,52 +230,45 @@ Format: {"YouTube Short (vertical)" if kind == "short" else "Long YouTube video 
 Style for THIS video: {style}
 Length: {length}
 Narration language: {LANG_RULES[lang]}
-{ch.get('extra_instructions') or ''}
-
+{ch.get('extra_instructions') or ''}{facts}{seo}
 Write it like a real, passionate human creator talking to a friend, NOT like an AI:
-- First sentence = a scroll-stopping hook (shock, curiosity gap, bold claim, or direct question). No greetings, no "aaj hum baat karenge".
-- Short punchy sentences, varied rhythm, everyday words, occasional casual reactions ("socho zara", "yahi to twist hai").
-- Never use these AI-sounding phrases: "is video mein", "aaiye jaante hain", "dilchasp baat yeh hai", "in conclusion", "delve", "kya aap jaante hain" as an opener.
-- Only true, verifiable facts. If unsure, frame as possibility, not fact. No fake statistics.
-- No fear-mongering: never claim or hint at wars, attacks, cover-ups or conspiracies that are not established fact. Excitement must come from real facts, not invented danger.
-- Never say "is video mein" / "yeh video" - talk about the topic itself.
-- Give specific details (names, years, numbers) instead of vague claims.
+- First sentence = a scroll-stopping hook. No greetings, no "today we're going to talk about".
+- Short punchy sentences, varied rhythm, everyday words, occasional casual reactions.
+- Never use AI-sounding phrases: "in this video", "let's dive in", "delve", "buckle up", "in conclusion", "fascinating world of",
+  "did you know" as an opener{', "is video mein", "aaiye jaante hain", "dilchasp baat yeh hai"' if not en else ''}.
+- Only true, verifiable facts. If unsure, frame as possibility. No fake statistics.
+- No fear-mongering: never claim or hint at wars, attacks, cover-ups or conspiracies that are not established fact.
+- Weapons/military tech: explain the technology and why it matters, neutral tone, no glorifying violence, no how-to.
+- Give specific details (names, dates, numbers) instead of vague claims.
 {extra}
 
 For every scene give 3 stock-footage search keywords in ENGLISH, ordered from most specific to more general,
 each 1-2 words, showing what the viewer should SEE while hearing that line (e.g. for a rocket-landing line: "rocket launch", "rocket", "space").
-Keywords must be literal visual subjects that stock sites have (rocket, robot, astronaut, circuit board, city skyline, hospital, laboratory),
-NOT abstract words from the sentence (avoid: heavy, success, cheap, time, money, tower, second). Every keyword must clearly relate to the video topic.
-Avoid brand names and real people in keywords. For real events prefer REAL footage words (launch, satellite, earth from space, control room)
-over sci-fi words (alien, spaceship, futuristic city) so viewers are not misled.
-For every scene also write "image": one English sentence describing exactly what the viewer should SEE in that moment
-(realistic, accurate to the facts, no fantasy for real events) for an AI illustration. Rules for "image": always an ORIGINAL scene,
-no real or famous people, no known film/game/cartoon characters, no brands or logos, no written text, no gore. Keep the same main character
-description (clothes, age) in every image so the story looks consistent.
-For every scene also set "sound": a 1-2 word English sound effect that happens in that line if any (e.g. "door knock", "footsteps", "radio static",
-"whisper", "glass break", "thunder"), else "".
-Scene 1 keywords must be the single most visually stunning, dramatic shot for this topic (the first second decides if people stay).
-
-For every scene also set:
-- "pace": "fast" for build-up/lists, "normal", or "slow" for the reveal/emotional lines
-- "reveal": true only for the 1-2 biggest twist/answer scenes (a short pause + boom sound + zoom will be added before them), else false
+Keywords must be literal visual subjects that stock sites have (rocket, robot, astronaut, circuit board, city skyline, laboratory),
+NOT abstract words. Every keyword must clearly relate to the topic. No brand names or real people in keywords.
+For real events prefer REAL footage words (launch, satellite, earth from space, control room) over sci-fi words (alien, spaceship).
+For every scene also write "image": one English sentence describing what the viewer should SEE (realistic, accurate to the facts) for an AI
+illustration - always an ORIGINAL scene: no real or famous people, no known characters, no brands or logos, no text, no gore.
+"sound": a 1-2 word English sound effect in that line if any (e.g. "rocket launch", "beep", "crowd cheer", "engine"), else "".
+Scene 1 keywords must be the single most visually stunning shot for this topic (the first second decides if people stay).
+"pace": "fast" for build-up/lists, "normal", or "slow" for reveals. "reveal": true only for the biggest twist/answer moments.
 
 Return ONLY JSON:
 {{
- "title": "SEO title, max 70 chars, Roman Urdu/Hindi + strong English keywords, curiosity driven, no clickbait lies{' (do NOT add #shorts, it is added later)' if kind == 'short' else ''}",
- "thumbnail_text": "2-4 punchy words in Roman Urdu or English for the thumbnail",
- "hook_text": "2-4 word ALL-CAPS on-screen hook shown in the first 2 seconds (Roman Urdu/English), e.g. PHYSICS FAIL?",
- "narrator_gender": "male or female (keep Urdu verb forms consistent with it)",
- "mood": "one of: suspense, mysterious, dark, epic, uplifting, calm (for background music)",
- "description": "3 short paragraphs in Roman Urdu with main keywords naturally used in first 2 lines, then a 1-line question to drive comments",
- "tags": ["15 search tags mixing English and Roman Urdu/Hindi"],
+ "title": "SEO title in {title_lang}, max 70 chars, curiosity driven, no clickbait lies{' (do NOT add #shorts)' if kind == 'short' else ''}",
+ "thumbnail_text": "2-4 punchy words for the thumbnail",
+ "hook_text": "2-4 word ALL-CAPS on-screen hook for the first 2 seconds, e.g. IT CAN FLY?",
+ "narrator_gender": "male or female",
+ "mood": "one of: suspense, mysterious, dark, epic, uplifting, calm (background music)",
+ "description": "{'3 short English paragraphs' if en else '3 short Roman Urdu paragraphs'} with the main search keywords in the first 2 lines, then a 1-line question to drive comments",
+ "tags": ["15 search tags people really type"],
  "hashtags": ["#3to5", "#hashtags"],
- "global_keywords": ["4-6 general English stock keywords that fit the WHOLE topic visually, e.g. rocket, space, astronaut, earth from space"],
+ "global_keywords": ["4-6 general English stock keywords that fit the WHOLE topic visually"],
  "scenes": [
-   {{"text": "narration for this scene in the narration language/script", "caption": "same narration in Roman {'Urdu' if lang != 'hindi' else 'Hindi'} (Latin letters)", "keywords": ["specific", "medium", "general"], "image": "what we see", "sound": "", "pace": "normal", "reveal": false, "chapter": ""}}
+   {{"text": "narration for this scene", "caption": "{'same as text' if en else 'same narration in Roman Urdu (Latin letters)'}", "keywords": ["specific", "medium", "general"], "image": "what we see", "sound": "", "pace": "normal", "reveal": false, "chapter": ""}}
  ]
 }}"""
-    return _finish(_ask_script(cfg, prompt, kind, 1.05), topic, style)
+    return _finish(_ask_script(cfg, prompt, kind, 1.0), topic, style)
 
 
 def _edit_story(cfg, draft, kind):
