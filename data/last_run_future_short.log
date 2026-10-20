@@ -1,26 +1,26 @@
-[14:50:49] Channel: Tomorrowly (future, mode=facts)
-[14:51:01] News headlines collected: 171
-[14:51:04] YouTube videos analysed: 74
-[14:51:04] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:51:04] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:51:30] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:51:30] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:51:55] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:51:55] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:52:13] Gemini OK (gemini-flash-lite-latest)
-[14:52:39] Gemini OK (gemini-flash-lite-latest)
-[14:52:39] Trend topic: Google's Quantum Computer Just Achieved a Massive Breakthrough | why: Quantum computing and tech breakthrough shorts regularly pull millions of views across tech channels. This leverages fresh news from Google's recent major hardware milestones with low direct saturation compared to massive consumer news like the Tesla Roadster.
-[14:53:17] Gemini OK (gemini-flash-lite-latest)
-[14:53:17] Script length: 71 words
-[14:53:17] Script ready: Google Just Slashed Quantum Computer Errors by 40% (5 scenes)
-[14:53:17] Voice: {'engine': 'gemini', 'voice': 'Puck', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[14:53:17] Gemini TTS error: gemini-3.1-flash-tts-preview: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing detai
-[14:53:30] Gemini TTS OK (gemini-2.5-flash-preview-tts, Puck)
-[14:53:40] Captions aligned to the voice (73 words)
-[14:53:53] Footage ready for 5 scenes
-[14:53:54] Freesound CC0 sound 'computer beep': as_ab_al_computer_noise_1_16bit.wav (id 543045)
-[14:53:56] Freesound CC0 sound 'whoosh': Jacket/Cloth Rustle 3 (id 494789)
-[14:54:10] 12 clips rendered
-[14:54:10] Final render started
-[14:54:21] Freesound CC0 music: Orchestral Score 2 - Mastered NO Stereo Imaging.wav (id 621292)
-[14:54:55] Video ready: 20261020_1453_future_short.mp4 (29.5s)
+[15:23:07] Channel: Tomorrowly (future, mode=facts)
+[15:23:20] News headlines collected: 167
+[15:23:24] YouTube videos analysed: 74
+[15:25:06] Gemini OK (gemini-3.8-flash)
+[15:25:07] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:25:07] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:25:32] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:25:32] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:25:58] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:25:58] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:26:10] Gemini OK (gemini-flash-lite-latest)
+[15:26:10] Trend topic: How This Robot Finishes Drywall 3X Faster Than Humans | why: Demand is proven by construction automation Shorts like 'The Future of Construction: This Robot Plasters Walls Instantly!' racking up 9.1 million views in just days. Backed by fresh reporting from Forbes on October 15 about a drywall robot bagging $20 million to learn new trades, this provides an engaging, visually satisfying topic that avoids the oversaturated Tesla flying car wave.
+[15:26:46] Gemini OK (gemini-flash-lite-latest)
+[15:26:46] Script length: 105 words
+[15:26:46] Script ready: How This Robot Finishes Drywall 3X Faster Than Humans (8 scenes)
+[15:26:46] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[15:27:01] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[15:27:11] Captions aligned to the voice (107 words)
+[15:27:58] Gemini OK (gemini-flash-lite-latest)
+[15:27:58] Footage check: kept 17 fitting clips, 1 scenes had nothing fitting
+[15:28:13] Footage ready for 8 scenes
+[15:28:16] Freesound CC0 sound 'electric motor': DeWalt Drill_1.wav (id 566206)
+[15:28:33] 19 clips rendered
+[15:28:33] Final render started
+[15:29:03] Freesound CC0 music: Orchestral Score 1 - NOT mastered.wav (id 621294)
+[15:29:50] Video ready: 20261020_1528_future_short.mp4 (44.9s)
