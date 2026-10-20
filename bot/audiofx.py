@@ -136,7 +136,7 @@ def make_music(path, seconds, mood="suspense", seed=None):
     return path
 
 
-def freesound_music(path, seconds, mood):
+def freesound_music(path, seconds, mood, scary_ok=False):
     """Optional: CC0 (no-attribution, monetization-safe) music loop from Freesound."""
     key = secret("FREESOUND_API_KEY")
     if not key:
@@ -157,7 +157,8 @@ def freesound_music(path, seconds, mood):
                        or x.get("license", "").endswith("/zero/1.0/"))
                        and any(m in (x.get("name", "") + " " + " ".join(x.get("tags") or [])).lower() for m in musical)
                        and not any(b in (x.get("name", "") + " " + " ".join(x.get("tags") or [])).lower()
-                                  for b in ("chord", " to ", "note", "sample", "stinger", "game", "8bit", "chiptune", "arcade"))]
+                                  for b in ("chord", " to ", "note", "sample", "stinger", "game", "8bit", "chiptune", "arcade")
+                                  + (() if scary_ok else ("creepy", "horror", "scary", "spooky", "ghost", "evil")))]
                 break
             log(f"Freesound {ep.split('/')[-2]}: HTTP {r.status_code}")
         if not res:

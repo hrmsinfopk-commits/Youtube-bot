@@ -210,7 +210,7 @@ def pick_music(work, total, mood, rng):
         m = rng.choice(tracks)
         log("Music (own file):", m.name)
         return m
-    fs = audiofx.freesound_music(work / "music_fs.mp3", total, mood)
+    fs = audiofx.freesound_music(work / "music_fs.mp3", total, mood, scary_ok=(mood == "horror"))
     if fs:
         return fs
     return audiofx.make_music(work / "music_gen.wav", total, mood, seed=rng.random())
