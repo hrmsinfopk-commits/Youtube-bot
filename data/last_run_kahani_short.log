@@ -1,0 +1,14 @@
+[08:47:13] Channel: Raat Ki Kahaniyan (kahani, mode=stories)
+[08:47:13] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:47:14] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[08:47:23] Gemini OK (gemini-flash-lite-latest)
+[08:47:23] Story premise: An overnight train guard checks a completely empty sleeper bogie, only to find his own dead grandfather sitting on the top berth meticulously packing a suitcase.
+[08:47:23] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:47:23] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[08:47:27] Gemini OK (gemini-flash-lite-latest)
+[08:47:27] Script ready: Train Guard Ka Khofnak Safar | Raat Ki Kahaniyan (7 scenes)
+[08:47:27] Voice: {'voice': 'ur-PK-UzmaNeural', 'rate': '+12%', 'pitch': '+4Hz'}
+[08:48:22] 9 clips rendered
+[08:48:58] Freesound CC0 music: Dark Ghost House (id 560618)
+[08:49:16] Video ready: 20261020_0847_kahani_short.mp4 (21.7s)
+[08:49:16] YouTube secrets missing - video sirf GitHub artifact mein save hogi
