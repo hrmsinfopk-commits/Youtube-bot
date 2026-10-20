@@ -89,6 +89,48 @@
    ],
    "format": null,
    "why": "Videos breaking down Tesla's wild engineering promises and flying car prototypes regularly pull millions of views on YouTube Shorts due to the mix of skepticism, spectacle, and curiosity. This news dropped across mainstream outlets like CNN and CNBC within the last few days, giving us a sharp technical and regulatory angle rather than generic hype."
+  },
+  {
+   "date": "2026-10-20 12:22",
+   "type": "short",
+   "title": "Quantinuum Just Shattered the Quantum Computing Record! #shorts",
+   "topic": "Quantinuum's Record-Breaking Quantum Error Correction - Focus on the 10x error-correction breakthrough that accelerates the path to fault-tolerant quantum computing by 2029, bypassing the mainstream noise around consumer hype.",
+   "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
+   "youtube_id": "J9O4qdiPSgk",
+   "voice": "Charon",
+   "seconds": 43.0,
+   "scene_times": [
+    [
+     0.0,
+     "It is 2040, and a hundred-billion-dollar industry runs entirely on machines that used to b"
+    ],
+    [
+     8.5,
+     "For years, noise and calculation errors crippled every attempt to build a stable quantum s"
+    ],
+    [
+     15.4,
+     "Then Quantinuum smashed the world record by cutting those errors by a massive factor of te"
+    ],
+    [
+     22.1,
+     "This sudden leap in accuracy validates their entire roadmap."
+    ],
+    [
+     24.1,
+     "Because of this, researchers are scaling up fast to hit fully fault-tolerant quantum compu"
+    ],
+    [
+     32.1,
+     "Send this to the friend who still thinks quantum computers are just science fiction."
+    ],
+    [
+     38.0,
+     "How will you use a computer that thinks in infinite dimensions?"
+    ]
+   ],
+   "format": null,
+   "why": "Quantum computing breakthroughs and hardware milestones consistently attract strong technical engagement from curious tech audiences globally. While mainstream media chases repetitive consumer tech news, focusing on actual error-correction milestones provides a high-credibility niche."
   }
  ],
  "used_media": [
@@ -199,6 +241,27 @@
   "pixabay-v-3249",
   "nasa-v-jcs2025m000066_Space to Ground_566_250418",
   "pixabay-v-38084",
-  "nasa-v-NHQ_2019_0403_Spinoff 2019"
+  "nasa-v-NHQ_2019_0403_Spinoff 2019",
+  "pixabay-v-45985",
+  "pixabay-v-152521",
+  "pixabay-v-15153",
+  "nasa-v-LRC_2022_B701_V_Measurement_Systems_Laboratory_Ribbon_Cutting_Tour_V0001002",
+  "nasa-v-KSC-20231207-VP-MWC01-001-ISS25TH-HORIZONTAL-M1852-BATCH-5-UHD",
+  "nasa-v-JPL-20200612-MSLf-0001-MSL Operations Team Media Reel",
+  "nasa-v-NHQ20201221ARMD",
+  "nasa-v-ARC-20191118-AAV3240-Mars-SeasonsAnimation-NASAWeb1080",
+  "nasa-v-ARC-20221004-AAV3443-MoonOrigin-Social-NASAWeb-1080p",
+  "pixabay-v-311497",
+  "pixabay-v-321537",
+  "pixabay-v-312510",
+  "nasa-v-NASA Scientists Challenge 2021 Spelling Bee Champion Zaila Avant-garde",
+  "nasa-v-SS_SpaceFoodScientist_Final_Social",
+  "nasa-v-GSFC_20121017_LynnCarter_m11113_Profile",
+  "nasa-v-ARC-20211118-AAV3384-SC21-LaunchAbortVisualization-NASAWeb-1080p24",
+  "nasa-v-ARC-20200109-AAV3245-Orion-EscapeAbortViz-NASAWeb",
+  "nasa-v-ARC-20190821-AAV3214-ModularSupercomputer-BRollResource-NASAWeb",
+  "pixabay-v-36954",
+  "pixabay-v-141188",
+  "pixabay-v-45986"
  ]
 }

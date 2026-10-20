@@ -1,20 +1,21 @@
-[11:15:41] Channel: Tomorrowly (future, mode=facts)
-[11:15:50] News headlines collected: 169
-[11:15:50] YouTube login missing - trend data from news only
-[11:17:38] Gemini OK (gemini-3.8-flash)
-[11:19:02] Gemini OK (gemini-3.8-flash)
-[11:19:02] Trend topic: Tesla Unveils Its 'Flying' Roadster | why: Videos breaking down Tesla's wild engineering promises and flying car prototypes regularly pull millions of views on YouTube Shorts due to the mix of skepticism, spectacle, and curiosity. This news dropped across mainstream outlets like CNN and CNBC within the last few days, giving us a sharp technical and regulatory angle rather than generic hype.
-[11:19:02] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[11:19:03] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[11:19:31] Gemini OK (gemini-flash-lite-latest)
-[11:19:31] Script length: 106 words
-[11:19:31] Script ready: Tesla's New Flying Roadster Actually Uses Rocket Thrusters (7 scenes)
-[11:19:31] Voice: {'engine': 'gemini', 'voice': 'Iapetus', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[11:19:47] Gemini TTS OK (gemini-3.1-flash-tts-preview, Iapetus)
-[11:20:02] Freesound CC0 sound 'engine rev': Chainsaw_Stop.wav (id 340629)
-[11:20:03] Freesound CC0 sound 'whoosh': Whoosh to HIT 1.wav (id 434874)
-[11:20:04] Freesound CC0 sound 'gas hiss': fizzy water bottle open 001.WAV (id 60385)
-[11:20:35] 16 clips rendered
-[11:20:49] Freesound CC0 music: C#m7 to C#7 00 with swell.wav (id 432835)
-[11:21:33] Video ready: 20261020_1120_future_short.mp4 (42.3s)
-[11:21:33] YouTube secrets missing - video sirf GitHub artifact mein save hogi
+[12:17:36] Channel: Tomorrowly (future, mode=facts)
+[12:17:49] News headlines collected: 170
+[12:17:52] YouTube videos analysed: 74
+[12:17:53] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[12:17:53] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[12:18:18] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[12:18:45] Gemini OK (gemini-flash-lite-latest)
+[12:18:48] Gemini OK (gemini-flash-lite-latest)
+[12:18:48] Trend topic: Quantinuum's Record-Breaking Quantum Error Correction | why: Quantum computing breakthroughs and hardware milestones consistently attract strong technical engagement from curious tech audiences globally. While mainstream media chases repetitive consumer tech news, focusing on actual error-correction milestones provides a high-credibility niche.
+[12:18:51] Gemini OK (gemini-flash-lite-latest)
+[12:18:51] Script length: 99 words
+[12:18:51] Script ready: Quantinuum Just Shattered the Quantum Computing Record! (7 scenes)
+[12:18:51] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[12:19:09] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[12:19:51] Freesound CC0 sound 'computer beep': Laptop disk slot open and close.mp3 (id 510253)
+[12:20:19] 17 clips rendered
+[12:21:20] Freesound CC0 music: epic game music by kris klavenes 3 mins.mp3 (id 395435)
+[12:22:04] Video ready: 20261020_1219_future_short.mp4 (43.0s)
+[12:22:05] Upload 36%
+[12:22:05] Upload 73%
+[12:22:06] Uploaded: https://youtu.be/J9O4qdiPSgk

@@ -1,94 +1,83 @@
 {
- "topic": "Tesla Unveils Its 'Flying' Roadster",
- "angle": "Breaking down the engineering reality and regulatory nightmare behind Tesla's newly unveiled 'flying car'—explaining why the FAA and DOT have no idea who is supposed to regulate a car with rocket thrusters.",
- "why": "Videos breaking down Tesla's wild engineering promises and flying car prototypes regularly pull millions of views on YouTube Shorts due to the mix of skepticism, spectacle, and curiosity. This news dropped across mainstream outlets like CNN and CNBC within the last few days, giving us a sharp technical and regulatory angle rather than generic hype.",
+ "topic": "Quantinuum's Record-Breaking Quantum Error Correction",
+ "angle": "Focus on the 10x error-correction breakthrough that accelerates the path to fault-tolerant quantum computing by 2029, bypassing the mainstream noise around consumer hype.",
+ "why": "Quantum computing breakthroughs and hardware milestones consistently attract strong technical engagement from curious tech audiences globally. While mainstream media chases repetitive consumer tech news, focusing on actual error-correction milestones provides a high-credibility niche.",
  "keywords": [
-  "tesla flying car",
-  "tesla roadster flying",
-  "elon musk flying car",
-  "next gen roadster",
-  "spacex thruster car",
-  "flying cars 2026",
-  "future transport",
-  "tesla roadster cold gas thrusters",
-  "faa tesla flying car",
-  "future tech explained",
-  "tesla roadster update",
-  "flying car technology"
+  "quantum computing",
+  "fault-tolerant quantum computing",
+  "Quantinuum quantum computer",
+  "quantum error correction",
+  "future technology",
+  "science news",
+  "quantum tech",
+  "supercomputer breakthrough",
+  "quantum milestone 2029",
+  "advanced computing"
  ],
  "facts": [
-  "Tesla has publicly unveiled what it describes as a 'flying' version of its next-generation Roadster [announced/claimed].",
-  "The concept relies on integrating SpaceX cold-gas thruster technology to achieve short bursts of levitation or extreme acceleration [announced/claimed].",
-  "Traditional flying cars rely on wings, rotors, or eVTOL designs, whereas Tesla's concept uses ultra-high-pressure gas thrusters hidden behind the license plate area [announced/claimed].",
-  "The Federal Aviation Administration (FAA) stated that the proposed vehicle does not fall under their traditional regulatory oversight [reported].",
-  "Officials at the Department of Transportation (DOT) admitted there is currently no clear regulatory framework for road vehicles equipped with rocket thrusters [reported].",
-  "Aeronautical engineers point out that cold-gas thrusters consume compressed gas extremely rapidly, meaning any 'flight' would likely be limited to seconds rather than sustained travel [analysis].",
-  "Carrying composite-overwrapped pressure vessels (COPVs) operating at thousands of psi presents massive crash safety and road-legal certification hurdles.",
-  "State agencies and transportation departments are already debating whether future transit infrastructure needs to accommodate levitating vehicles alongside standard EV charging stations [reported].",
-  "Competing eVTOL and flying car manufacturers released tongue-in-cheek responses welcoming Tesla into the personal flight sector [reported].",
-  "No commercial delivery date or finalized street-legal certification timeline has been validated by federal safety regulators [planned/unconfirmed].",
-  "Tesla introduced the newest generation of its Roadster vehicle.",
-  "Tesla claims that the newly unveiled automobile is a flying car.",
-  "The vehicle incorporates compressed air thrusters developed by SpaceX.",
-  "The onboard thrusters are stated to enable the car to rotate while airborne.",
-  "The Roadster is reported to reach 60 miles per hour from a standstill in under one second.",
-  "The flight functionality of the vehicle is characterized as limited.",
-  "The automobile is not planned to arrive or be released until 2028.",
-  "The debut took place after approximately ten years of postponements.",
-  "Elon Musk presented the vehicle, claiming that flying cars are now a reality."
+  "Quantinuum broke the world record for quantum error-correction by 10x.",
+  "The milestone validates a leading path toward fault-tolerant quantum computing by the year 2029.",
+  "Quantum computing market projections estimate growth to over $100 billion per year by 2040.",
+  "Researchers and federal agencies are rapidly scaling strategies to prepare for the quantum computing era.",
+  "Quantinuum surpassed the previous world record for quantum error correction.",
+  "The reduction in quantum errors achieved by the company reached a factor of ten.",
+  "Accuracy levels in quantum computing hit a new record according to the announcements.",
+  "The organization targets the year 2029 for achieving fault-tolerant quantum computing (claim/plan).",
+  "These advancements are viewed by the company as confirmation of its development strategy (claim)."
  ],
  "long_format": null,
  "sources": [
   {
-   "title": "What Does It Say That Elon Musk Finds It Easier To Build A Flying Car Than A Cheap EV?",
-   "source": "The Autopian",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdElDN2tvZ0J4MWRsWDE1Q2FTSVVWcVFxSDFNc3FDTmwxRFRhTmFlRmxDdF9Mc0pQaVU2TFNHTVp1TEQtTWhlZzNxWWpIMEg5X1ZpbkhBSmZZWnhFRldmdW8xT2xORnBVaGgzUXNvY2hLZU1FNE9Nek5SQ01xMHFNS18zY1pXYUE4ZFI4dlRiT1JwbTVOazJWcFoxdDUzNTh6NkZHa1NfVFZ6ZzkweGM1VlEyaDE?oc=5"
+   "title": "Quantinuum Breaks Error-Correction World Record by 10x, Validating its Leading Path to Fault-Tolerant Quantum Computing by 2029",
+   "source": "Quantinuum",
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQUXE3RDhVTTA5S2huNV9SUm9Cek0yeGx3T05xWEc4cmp5ZkU3OGZQaTh0cEpLajVrMGIyV2l0akhDY0xxSkQtN2N4eVMxaEdTMlI2dTNXemtlNm1PSXA4MEEtdW0zUVdyMXkzUUVtTVBpMy02NjJHeENNM2ZQMEZyTVltVWw1eTRlLUhkWDl6LUppaTJQYjhBMHh5RTZMR2QyeEpzX0h1Mm40VU9Mb2ttdEVpbFY1M1ZjNE9UenN3LTJoSE1TNFdpQ1h2dXZhN1N5Ym1SSHJ6eFZGZWs0SnlWakdBWFI3VGpHVUNCaXVYSE9yNWFIM1NCNzliUzM?oc=5"
   },
   {
-   "title": "Elon Musk's flying Tesla is gloriously absurd",
-   "source": "Axios",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE41amE5a0NrVFFwTktIam1oQWhZOEV4YnE1Nk8xVi1JU1ZWWk9vMlRsQzFnQkdxdGtXblRWTE9KSzQtUWNCdi0yeWgyRHpVS3BPWWlQS3FWR2R2dHlzcjVIMWFPSE9wWXRBUmFhN1owZ05DWDFaNVhB?oc=5"
-  },
-  {
-   "title": "Electric Vehicle Chargers Or Flying Cars? Tesla And The State Of Florida Can’t Decide",
-   "source": "CleanTechnica",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRHBOYmpUQ1ljSTlveXVhWWZmOUN3TndRVDZkNUVxcWNNQ3BIeXpLbktsYkh2MUx6ZDF3SUZPLWFGM0lhZDlya2NRV2hGWHVGQkdGRFl5c0l6ZXlwbXBjUU53QkIxRTJMdVVNUS1yY3B2Z0ttaXA2aU13M01La1VfNGMwQXFFX0dUYXJlMnlLRzZqQng5YnozcUNRb0tnWWk4TkN3V2VmM2t2bWZBYXN5VjNuMDBLQVBmMERQOFhn?oc=5"
-  },
-  {
-   "title": "Elon Musk unveils Tesla's 'flying' car",
-   "source": "Phys.org",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB2TnFjMkRVRzlKMHF5ZkF2cFJhbkJDMDEwTFZwQTh5SHAyTlBHNEFsZDJkZHR6RXVLU1lwbTBNVEkwMEYzT3NMZ3NSNWpLcFF0TS1GU2tEMmpvLWFPSTA4TU44Y0RQWENYUDNyNERvb1Rxa3M?oc=5"
-  },
-  {
-   "title": "Tesla unveils what it says is a flying car",
-   "source": "CNN",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcDNkZ0NmTUtLYkNwbEUyRklCUE9rUnE4WHNfQk42d0ZHVUpoUGpQd1JMQWNUSElNQkVQbExQSmdWcVRnRXdjWEZMeHUxSVdOTVNCbHdHWGRBUGI3c2dxMnNrc3RqSExQZlBQb1g0bkYzMTZHb1RtNUpfSHRCZ1NDS0x5SnlVdFhWTmc?oc=5"
-  },
-  {
-   "title": "We asked the DOT who would oversee a flying car like Tesla's Roadster. The answer isn't readily clear.",
-   "source": "CBS News",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9oNmdxejNBQ2FlekU1ejk1ZlFGSndSSFRpRW1uZ2ZNdDBoWmtaVVJyN3hFVXJfcS1HTEVVMGJDSndfbjVEaFUtbHBWbmdGT0tPcGpaazBXSGN1Ui1VeF84TFk4VE14MHFhd3Vn?oc=5"
-  },
-  {
-   "title": "A Tesla Flying Car? I Don’t Know, Man",
-   "source": "WIRED",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBkYmZoSHM1Q200YTZ3TUo2RWtsX0p1NXlHMmxlRHp2a1FQenlnV3c3R2d3aEFSdXp4VWU1MF85Z3N1a0RiVUcxc09raWlnR0owbVVMUElhaE5LbjVOTkE?oc=5"
-  },
-  {
-   "title": "FAA: Musk’s flying car not our responsibility",
-   "source": "Politico",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9qSGJNTmVqSDdrcXNTbmhsZExMengzQ0p4WUlJOG8zOGJ3ZndZSDRlSk5YZEtlWElvVjI1dHNlVndnN0gyb0FYeU5HQ0JsaVRrN1RVeHhvd1pmLTZOOTVxZmFWS0NZV1FWVmp2WXd2dmNNN0UwcTl6c05R?oc=5"
-  },
-  {
-   "title": "Tesla unveils its next-generation Roadster 'flying car'",
-   "source": "CNBC",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSGhwMkZ2SGtsTTFxTHVQejVFelA1XzZSVm9HWjNEWVdVY2Q3R1JFV0RwVGRkbklVeDRQN1dtaFBwLVFROVlqVV9pajkyRVN5Z3hrazJPeE1ya2tVZlZ5RnBzMGhwVTQxbDFENFVOZmY1QjNOT3BPc3R3VTMyc0xlMlB0Y3g3OUhSbmJaOEo2RU5hZjhoanhHOG1ncGI?oc=5"
-  },
-  {
-   "title": "Opinion | Another reason to be excited about Elon Musk’s flying car",
-   "source": "The Washington Post",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTl9DWkVDYWRkQ3R0Qmg3el8wV1BteFRDSDE0aXZ2ZndkeHk3ZUZrVEtxQXMxYmYySDhGYUpRX2xKRVFPcm9hMlZPRmFROHpfeHNVT1VKU3pheWxwelZnN200akV0TW9wZVpJZHRhbEtFN05Bby1xTldHeDVfTGVLUHpHNlgyNk1fX1ZfUU9wSUduRkJlLWhZQWZqYm11a1FIbWYteExkOTlHQ3k2ZmF3V05maw?oc=5"
+   "title": "Exclusive | Quantinuum Sees Path to Fault-Tolerant Quantum Computing by 2029 With New Milestone",
+   "source": "WSJ",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOLTNKaUU2aGVEM3l5YWxBc21vVGlqWjZNc2xwMk9KSERielRic1Znczl1c2FxTUplZUhUaW9sNmRVRmh6YzZEVDgxUEtZbzkwLW5jblZSRWR4TnA1ckpHdTlkeGpEVnNzMU9nQ2NvVGtObzgzUlRNU0szenF1LWdkRG1Za1JaNjlXSFhTdkxyazVQQjhNUWNWTTFZNXpXeDY0NnFHMFpKc1h2QW5zX1ZlSmx2RDBUVVFB?oc=5"
   }
  ],
- "youtube_top": []
+ "youtube_top": [
+  {
+   "title": "HOW TO MAKE A HOMEMADE PROJECTOR 😱😱",
+   "views": 14156436
+  },
+  {
+   "title": "amrud se nasa aaya 😅Mercedes Built the GTR at $2.5 M lucky drivers experienced power #reelschallenge",
+   "views": 13962982
+  },
+  {
+   "title": "Why Cats Rub Against Your Laptop 🤔",
+   "views": 11784797
+  },
+  {
+   "title": "yang dapat robot mobil gg si #parfum #velixir",
+   "views": 10930050
+  },
+  {
+   "title": "NEW TESLA ROADSTER - It Can Fly!!! (SpaceX Technology)",
+   "views": 9671977
+  },
+  {
+   "title": "Tesla's Flying Roadster Revealed: Everything That Happened in 10 Minutes",
+   "views": 9558333
+  },
+  {
+   "title": "The Future of Construction: This Robot Plasters Walls Instantly!",
+   "views": 8992888
+  },
+  {
+   "title": "I thought the “Intel inside” sticker WAS the chip..",
+   "views": 8326022
+  },
+  {
+   "title": "Flying Car Real hai 🥲",
+   "views": 8020232
+  },
+  {
+   "title": "🥶🔥 \"there will never be flying cars\"",
+   "views": 7940798
+  }
+ ]
 }
