@@ -111,12 +111,18 @@ def run_analytics(cfg, write_report=False):
     if not __import__("bot.upload", fromlist=["ready"]).ready():
         log("YouTube login missing - analytics skipped")
         return
+    yt, ya = _services()
+    try:
+        me = yt.channels().list(part="snippet,statistics", mine=True).execute()["items"][0]
+        log(f"Logged in as YouTube channel: {me['snippet']['title']} (subscribers: {me['statistics'].get('subscriberCount')})")
+    except Exception as e:  # noqa: BLE001
+        log("Channel check failed:", str(e)[:200])
+        return
     hist = load_history()
     ours = [v for v in hist["videos"] if v.get("youtube_id")]
     if not ours:
         log("No uploaded videos yet")
         return
-    yt, ya = _services()
     start = min(v["date"][:10] for v in ours)
     stats = video_stats(ya, [v["youtube_id"] for v in ours], start)
     # channel totals
