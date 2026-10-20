@@ -1,14 +1,23 @@
-[08:47:13] Channel: Raat Ki Kahaniyan (kahani, mode=stories)
-[08:47:13] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:47:14] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[08:47:23] Gemini OK (gemini-flash-lite-latest)
-[08:47:23] Story premise: An overnight train guard checks a completely empty sleeper bogie, only to find his own dead grandfather sitting on the top berth meticulously packing a suitcase.
-[08:47:23] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:47:23] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[08:47:27] Gemini OK (gemini-flash-lite-latest)
-[08:47:27] Script ready: Train Guard Ka Khofnak Safar | Raat Ki Kahaniyan (7 scenes)
-[08:47:27] Voice: {'voice': 'ur-PK-UzmaNeural', 'rate': '+12%', 'pitch': '+4Hz'}
-[08:48:22] 9 clips rendered
-[08:48:58] Freesound CC0 music: Dark Ghost House (id 560618)
-[08:49:16] Video ready: 20261020_0847_kahani_short.mp4 (21.7s)
-[08:49:16] YouTube secrets missing - video sirf GitHub artifact mein save hogi
+[08:51:52] Channel: Raat Ki Kahaniyan (kahani, mode=stories)
+[08:51:52] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:51:52] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[08:52:18] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:52:19] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[08:52:44] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[08:52:44] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[08:52:48] Gemini OK (gemini-flash-lite-latest)
+[08:52:48] Story premise: A wedding photographer editing late-night portraits in a Lahore studio notices a smiling uncle in the background of every single family picture—a man who has been dead since the venue was a barren graveyard.
+[08:52:48] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:52:48] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[08:53:13] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[08:53:13] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[08:53:39] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[08:53:39] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[08:53:43] Gemini OK (gemini-flash-lite-latest)
+[08:53:43] Script length: 175 words
+[08:53:43] Script ready: Lahore Studio Wedding Photo Mein Murda Uncle Ka Chehra (7 scenes)
+[08:53:43] Voice: {'voice': 'ur-PK-AsadNeural', 'rate': '-1%', 'pitch': '+1Hz'}
+[08:55:38] 23 clips rendered
+[08:56:12] Freesound CC0 music: Looppelganger #243 | Dark Ambient Sound (id 865787)
+[08:57:01] Video ready: 20261020_0853_kahani_short.mp4 (55.5s)
+[08:57:01] YouTube secrets missing - video sirf GitHub artifact mein save hogi
