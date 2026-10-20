@@ -190,7 +190,7 @@ def freesound_sfx(path, query, max_dur=8, min_dur=0.3):
             r = requests.get(ep, timeout=30, params=params, headers={"Authorization": f"Token {key}"})
             if r.status_code == 200:
                 bad = ("robot", "game", "cartoon", "8bit", "8-bit", "retro", "funny", "comic", "toy", "arcade", "synth", "laser",
-                       "chainsaw", "fart", "bottle", "kitchen")
+                       "chainsaw", "fart", "bottle", "kitchen", "cloth", "jacket", "rustle", "stick", "swing")
 
                 def ok(x):
                     text = (x.get("name", "") + " " + " ".join(x.get("tags") or [])).lower()
