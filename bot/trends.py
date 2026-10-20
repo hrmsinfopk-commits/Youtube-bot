@@ -239,3 +239,28 @@ Return ONLY JSON:
     DATA.mkdir(exist_ok=True)
     (DATA / f"last_topic_{kind}.json").write_text(json.dumps(brief, ensure_ascii=False, indent=1), encoding="utf-8")
     return brief
+
+
+def brief_for(cfg, topic, kind):
+    """For a topic you queued yourself: collect today's headlines about it and turn them into a fact sheet
+    (own words, no copying) + search keywords, so the script is based on real, current reporting."""
+    items = google_news(topic, cfg["trends"].get("region", "US"), limit=15)
+    if not items:
+        return None
+    try:
+        res = ask(cfg, f"Topic for our next YouTube video: \"{topic}\".\nRecent headlines:\n"
+                  + "\n".join(f"- {n['title']} ({n['source']})" for n in items)
+                  + "\nReturn ONLY JSON {\"facts\": [\"8-20 short factual points in your OWN words, only what the headlines clearly"
+                  " support or well-established background; mark announced/planned/claimed things as such\"], "
+                  "\"keywords\": [\"10 phrases people search for this\"]}", json_mode=True, temperature=0.3)
+    except Exception as e:  # noqa: BLE001
+        log("Fact sheet for queued topic failed:", str(e)[:100])
+        return None
+    long_fmt = None
+    if kind == "long":
+        long_fmt = "deep dive"
+    log(f"Fact sheet for queued topic: {len(res.get('facts', []))} facts")
+    return {"topic": topic, "angle": "", "why": "Topic chosen by channel owner", "keywords": res.get("keywords", []),
+            "facts": res.get("facts", []), "long_format": long_fmt,
+            "sources": [{"title": n["title"], "source": n["source"], "link": n["link"]} for n in items[:8]],
+            "youtube_top": []}

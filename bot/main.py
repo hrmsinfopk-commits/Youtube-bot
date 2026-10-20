@@ -127,7 +127,7 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
         brief = None
         if cfg.get("trends", {}).get("enabled") and cfg["channel"].get("mode") != "stories":
             queued = writer.queued_topic()
-            brief = None if queued else trends.find_topic(cfg, history, kind, learning)
+            brief = trends.brief_for(cfg, queued, kind) if queued else trends.find_topic(cfg, history, kind, learning)
             topic = queued or (f"{brief['topic']} - {brief['angle']}" if brief and brief.get("angle") else
                                (brief or {}).get("topic"))
         else:
