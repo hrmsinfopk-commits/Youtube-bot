@@ -299,6 +299,9 @@ def has_text(path, kind):
     import subprocess
     import tempfile
     if not shutil.which("tesseract"):
+        if not getattr(has_text, "warned", False):
+            log("Text check off: tesseract not installed")
+            has_text.warned = True
         return False
     with tempfile.TemporaryDirectory() as td:
         shots = []
