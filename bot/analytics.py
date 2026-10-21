@@ -107,6 +107,28 @@ def diagnose(v, avg):
     return notes
 
 
+def seo_audit(yt, ids):
+    """Show exactly what YouTube has for our latest uploads (title, tags, description, chapters...)."""
+    import re as _re
+    try:
+        items = yt.videos().list(part="snippet,status,contentDetails", id=",".join(ids)).execute().get("items", [])
+    except Exception as e:  # noqa: BLE001
+        log("SEO audit failed:", str(e)[:120])
+        return
+    for v in items:
+        sn, st = v["snippet"], v["status"]
+        desc = sn.get("description", "")
+        log("SEO AUDIT -------------------------------------------")
+        log(f"  Video: https://youtu.be/{v['id']} | {st.get('privacyStatus')} | {v['contentDetails'].get('duration')}")
+        log(f"  Title ({len(sn['title'])} chars): {sn['title']}")
+        log(f"  Tags ({len(sn.get('tags') or [])}): {', '.join(sn.get('tags') or [])}")
+        log(f"  Category: {sn.get('categoryId')} | Language: {sn.get('defaultAudioLanguage')} / {sn.get('defaultLanguage')}")
+        log(f"  Description ({len(desc)} chars), first lines: {desc[:300]!r}")
+        log(f"  Hashtags: {' '.join(_re.findall(r'#\\w+', desc))} | Chapters: {'yes' if _re.search(r'^0?0:00', desc, _re.M) else 'no'}"
+            f" | Credits line: {'yes' if 'credits' in desc.lower() or 'reporting from' in desc.lower() else 'no'}")
+        log(f"  Custom thumbnail: {'yes' if 'maxres' in (sn.get('thumbnails') or {}) or 'standard' in (sn.get('thumbnails') or {}) else 'unknown/auto'}")
+
+
 def run_analytics(cfg, write_report=False):
     if not __import__("bot.upload", fromlist=["ready"]).ready():
         log("YouTube login missing - analytics skipped")
@@ -123,6 +145,7 @@ def run_analytics(cfg, write_report=False):
     if not ours:
         log("No uploaded videos yet")
         return
+    seo_audit(yt, [v["youtube_id"] for v in ours[-4:]])
     start = min(v["date"][:10] for v in ours)
     stats = video_stats(ya, [v["youtube_id"] for v in ours], start)
     # channel totals
