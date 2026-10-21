@@ -1,15 +1,11 @@
-# YouTube Auto Bot: Future Ki Duniya
+# Tomorrowly – YouTube Auto Bot
 
-Yeh bot har roz khud:
-1. Trending topic dhoondta hai (ya `topics.txt` se leta hai)
-2. Urdu script likhta hai (Gemini AI, free)
-3. AI awaaz lagata hai (Microsoft neural voice, free)
-4. Pexels/Pixabay se free licensed footage leta hai
-5. Captions, music, zoom/motion ke saath video banata hai
-6. SEO title, description, tags, chapters, thumbnail bana kar YouTube par upload karta hai
+English science, future-tech, AI and space channel – fully automatic on GitHub Actions.
 
-**Schedule:** 3 Shorts roz (9:30 AM, 3:30 PM, 8:30 PM) + 2 long videos har hafte (Tuesday, Friday 6 PM), Pakistan time.
+- **Rozmarra ki guide (Roman Urdu):** [BOT_GUIDE.md](BOT_GUIDE.md)
+- **Script writer ki hidayat:** [writer_brief.md](writer_brief.md)
+- **Apne topics:** [topics.txt](topics.txt)
+- **Settings:** [config.yaml](config.yaml)
+- **Haftawar report:** [REPORT.md](REPORT.md) (har Monday)
 
-Setup ke liye **[SETUP_URDU.md](SETUP_URDU.md)** parhein (ek dafa, takreeban 30-40 minute).
-
-Settings badalni hon to sirf **`config.yaml`** edit karein.
+_`SETUP_URDU.md` pehli dafa ke setup ki purani guide hai (Urdu channel ke waqt ki). Ab sirf BOT_GUIDE.md kaafi hai._
