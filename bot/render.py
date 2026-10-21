@@ -183,7 +183,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             hook_end = 2.3
         lines.append(f"Dialogue: 1,{_ass_time(0)},{_ass_time(hook_end)},Hook,,0,0,0,,{hook_anim}{hook}")
     for i, (sc, (t0, dur)) in enumerate(zip(scenes, timings)):
-        card = re.sub(r"[{}\\]", "", str(sc.get("on_screen") or "")).strip().upper()
+        card = "" if sc.get("graphic") else re.sub(r"[{}\\]", "", str(sc.get("on_screen") or "")).strip().upper()
         if card:   # big fact/number on screen for ~2.5 s
             cy = int(H * (0.38 if kind == "short" else 0.42))
             anim = "{\\pos(%d,%d)\\fscx60\\fscy60\\t(0,150,\\fscx105\\fscy105)\\t(150,230,\\fscx100\\fscy100)\\fad(0,250)}" % (W // 2, cy)

@@ -17,7 +17,8 @@ For each scene you get the narration line and numbered stock/archive options (wi
 Choose up to {per_scene} options whose content clearly matches what the viewer should SEE while hearing that line.
 Rules: literal word matches are NOT enough (a line about a car "deadline" must not get a clock; "reservations" must not get coffee).
 Reject: unrelated places/people, green screens, text/graphics with other words, birthdays/holidays, zodiac/astrology,
-anything that contradicts the line. A generic but fitting shot (e.g. a sports car on a road for a car line) is fine.
+anything that contradicts the line, people talking to camera (interviews, briefings),
+labelled diagrams or charts about a different subject. A generic but fitting shot (e.g. a sports car on a road for a car line) is fine.
 If nothing fits, return an empty list for that scene.
 
 SCENES:

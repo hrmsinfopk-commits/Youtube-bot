@@ -154,7 +154,11 @@ def _bars(g, W, H, t, short):
                                 fill=ACCENT if i % 2 == 0 else ACCENT2)
         if a > 0.2:
             vt = f"{_fmt(values[i] * a)} {g.get('unit', '')}".strip()
-            d.text((left + 14, by + bh * 0.38 * 0.5 - vf.size * 0.6), vt, font=vf, fill=(9, 13, 28))
+            ty = by + bh * 0.38 * 0.5 - vf.size * 0.6
+            if d.textlength(vt, font=vf) + 28 < full * a:      # fits inside the bar
+                d.text((left + 14, ty), vt, font=vf, fill=(9, 13, 28))
+            else:                                               # short bar: write it next to the bar
+                d.text((left + full * a + 14, ty), vt, font=vf, fill=WHITE)
     return img
 
 
