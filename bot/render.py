@@ -391,35 +391,44 @@ def _font(size):
     return ImageFont.load_default()
 
 
-def thumbnail(video, text, out, rng, at=None):
+def thumbnail(video, text, out, rng, at=None, tag=""):
+    """Tomorrowly-style thumbnail: dramatic frame, dark left side, 2-3 big lines (last one in brand colour), tag, logo."""
+    from . import graphics
     frame = out.with_suffix(".frame.jpg")
     at = at if at is not None else min(3.0, duration(video) / 3)
     run(["ffmpeg", "-y", "-v", "error", "-ss", f"{at:.2f}", "-i", str(video), "-frames:v", "1", str(frame)])
     img = Image.open(frame).convert("RGB").resize((1280, 720))
-    img = Image.blend(img, img.filter(ImageFilter.GaussianBlur(2)), 0.3)
+    img = Image.blend(img, img.filter(ImageFilter.GaussianBlur(1.5)), 0.2)
     shade = Image.new("L", (1280, 720))
-    ImageDraw.Draw(shade).rectangle([0, 0, 1280, 720], fill=0)
+    sd = ImageDraw.Draw(shade)
     for x in range(1280):
-        ImageDraw.Draw(shade).line([(x, 0), (x, 720)], fill=int(200 * max(0, 1 - x / 900)))
-    img = Image.composite(Image.new("RGB", (1280, 720), (0, 0, 0)), img, shade)
+        sd.line([(x, 0), (x, 720)], fill=int(215 * max(0, 1 - x / 820)))
+    img = Image.composite(Image.new("RGB", (1280, 720), (5, 8, 20)), img, shade)
     d = ImageDraw.Draw(img)
-    hi, _ = rng.choice(PALETTES)
     words = text.upper().split()
     lines, cur = [], ""
     for w in words:
-        if len(cur + " " + w) > 11 and cur:
+        if len(cur + " " + w) > 9 and cur:
             lines.append(cur)
             cur = w
         else:
             cur = (cur + " " + w).strip()
     lines.append(cur)
-    size = 150 if len(lines) <= 2 else 115
-    f = _font(size)
-    y = 360 - (len(lines) * size * 1.05) / 2
-    for i, line in enumerate(lines[:4]):
-        d.text((60, y), line, font=f, fill=hi if i == len(lines) - 1 else (255, 255, 255),
+    lines = lines[:3]
+    size = 150 if len(lines) <= 2 else 128
+    f = graphics._font(size)
+    y = 360 - (len(lines) * size * 1.0) / 2 - (30 if tag else 0)
+    for i, line in enumerate(lines):
+        d.text((54, y), line, font=f, fill=graphics.ACCENT if i == len(lines) - 1 else (245, 247, 250),
                stroke_width=8, stroke_fill=(0, 0, 0))
-        y += size * 1.05
-    img.save(out, quality=92)
+        y += size * 1.0
+    if tag:
+        lf = graphics._label_font(40)
+        tw = d.textlength(tag.upper(), font=lf)
+        d.rounded_rectangle([58, y + 30, 58 + tw + 44, y + 100], radius=14, fill=graphics.ACCENT2)
+        d.text((80, y + 39), tag.upper(), font=lf, fill=(9, 13, 28))
+    img = img.convert("RGBA")
+    img.alpha_composite(graphics.logo(110), (1280 - 140, 30))
+    img.convert("RGB").save(out, quality=93)
     frame.unlink(missing_ok=True)
     return out

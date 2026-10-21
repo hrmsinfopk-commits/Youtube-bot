@@ -268,7 +268,9 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
 
     thumb = None
     if kind == "long":
-        thumb = render.thumbnail(work / "video_noaudio.mp4", script.get("thumbnail_text") or script["title"], OUT / f"{slug}_thumb.jpg", rng)
+        tag = next((sc.get("subject") for sc in script["scenes"] if sc.get("subject")), "")[:22]
+        thumb = render.thumbnail(work / "video_noaudio.mp4", script.get("thumbnail_text") or script["title"],
+                                 OUT / f"{slug}_thumb.jpg", rng, at=1.5, tag=tag)
 
     chap = chapters(script["scenes"], timings, total) if kind == "long" else ""
     title = script["title"].strip()
