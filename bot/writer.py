@@ -2,7 +2,7 @@
 import random
 import re
 
-from .common import log, topics_file
+from .common import ROOT, log, topics_file
 from .llm import ask
 
 LANG_RULES = {
@@ -107,6 +107,19 @@ Return ONLY the 12 premises, one per line, no numbering."""
     return topic
 
 
+def writer_brief():
+    """The owner's standing brief for the script writer (writer_brief.md, editable on GitHub)."""
+    p = ROOT / "writer_brief.md"
+    try:
+        txt = p.read_text(encoding="utf-8")
+        return "\n".join(l for l in txt.splitlines() if not l.startswith(">"))
+    except Exception:  # noqa: BLE001
+        return ""
+
+
+SIGNATURES = ["THE CATCH", "WE DID THE MATH", "HYPE METER", "TOMORROW TEST"]
+
+
 def _wps(cfg):
     """Spoken words per second for this channel's voice settings (stories are told slower)."""
     return float(cfg.get("words_per_second", 3.2))
@@ -181,7 +194,7 @@ Return ONLY JSON:
 }}"""
 
 
-def write_script(cfg, topic, kind, style, brief=None):
+def write_script(cfg, topic, kind, style, brief=None, memory=None):
     """brief: optional dict from trends.find_topic() with real news facts + search keywords."""
     ch = cfg["channel"]
     lang = ch["language"]
@@ -230,6 +243,32 @@ def write_script(cfg, topic, kind, style, brief=None):
                " the first two lines of the description and the tags: " + ", ".join(brief["keywords"][:15]) + "\n")
 
     title_lang = "English" if en else "Roman Urdu/Hindi + strong English keywords"
+    memory = memory or {}
+    brief_txt = writer_brief()
+    if kind == "short":
+        recent = memory.get("recent_signatures", [])
+        options = [x for x in SIGNATURES if x not in recent[-2:]] or SIGNATURES
+        signature = __import__("random").choice(options)
+        sig_rule = (f"- SIGNATURE for this Short: use exactly one - {signature} - placed where it hits hardest "
+                    f"(HYPE METER / TOMORROW TEST work best as the last line).")
+    else:
+        signature = "ALL"
+        sig_rule = ("- SIGNATURES for this long video: THE CATCH (in the twist part) and WE DID THE MATH (one calculation, "
+                    "with a 'bars' or 'counter' graphic), then end with HYPE METER and TOMORROW TEST (each with its graphic).")
+    avoid = memory.get("openings", [])[-25:] + memory.get("endings", [])[-15:]
+    avoid_txt = ("\nNEVER reuse or closely imitate these openings/endings from our previous videos:\n"
+                 + "\n".join(f"- {x}" for x in avoid) + "\n") if avoid else ""
+    owner = (brief or {}).get("owner_take")
+    owner_txt = f"\nCHANNEL OWNER'S OWN TAKE - weave this opinion in naturally, in your words: {owner}\n" if owner else ""
+    graphics_rule = (
+        "\nOWN GRAPHICS (made by our code - they make the channel unique). Add a \"graphic\" to "
+        + ("at most 1-2 scenes" if kind == "short" else "4-7 scenes") + ", only where it truly helps; else null:\n"
+        '- {"type": "counter", "value": 250000, "prefix": "$", "suffix": "", "label": "starting price"}  (one big number counting up)\n'
+        '- {"type": "bars", "title": "Top speed", "labels": ["Car", "Jet"], "values": [300, 900], "unit": "km/h"}  (2-4 bars, real numbers only)\n'
+        '- {"type": "timeline", "items": [{"year": "2024", "text": "First test"}, {"year": "2027", "text": "Planned launch"}]}  (2-4 items)\n'
+        '- {"type": "hype_meter", "value": 6}  (1-10; the HYPE METER scene)\n'
+        '- {"type": "tomorrow_test", "answer": "Maybe"}  (Yes / Maybe / Not yet; the TOMORROW TEST scene)\n'
+        "Every number in a graphic must come from the fact sheet, well-established facts, or your clearly rough WE DID THE MATH.\n")
     prompt = f"""You write viral YouTube scripts for the channel "{ch['name']}".
 Niche: {ch['niche']}
 Audience: {ch['audience']}
@@ -238,7 +277,12 @@ Format: {"YouTube Short (vertical)" if kind == "short" else "Long YouTube video 
 Style for THIS video: {style}
 Length: {length}
 Narration language: {LANG_RULES[lang]}
-{ch.get('extra_instructions') or ''}{facts}{seo}
+{ch.get('extra_instructions') or ''}{facts}{seo}{owner_txt}
+=== CHANNEL WRITER BRIEF (your standing instructions - follow it) ===
+{brief_txt}
+=== END OF BRIEF ===
+{sig_rule}
+{avoid_txt}
 Write it like a real, passionate human creator talking to a friend, NOT like an AI:
 - First sentence = a scroll-stopping hook. No greetings, no "today we're going to talk about".
 - Short punchy sentences, varied rhythm, everyday words, occasional casual reactions.
@@ -260,7 +304,7 @@ illustration - always an ORIGINAL scene: no real or famous people, no known char
 "sound": only if the line clearly has one, pick EXACTLY one of: "rocket launch", "jet flyby", "whoosh", "computer beep",
 "notification", "crowd cheer", "camera shutter", "thunder", "explosion distant", "electric motor", "alarm", "heartbeat"; else "".
 Use sounds rarely (at most 3 per Short).
-Scene 1 keywords must be the single most visually stunning shot for this topic (the first second decides if people stay).
+Scene 1 keywords must be the single most visually stunning shot for this topic (the first second decides if people stay).{graphics_rule}
 "pace": "fast" for build-up/lists, "normal", or "slow" for reveals. "reveal": true only for the biggest twist/answer moments.
 "subject": if the line is about a specific REAL named thing people would want to see (e.g. "Tesla Roadster", "Starship",
 "James Webb Space Telescope", "Boston Dynamics Atlas"), its exact name - used to find real licensed photos; else "".
@@ -279,13 +323,55 @@ Return ONLY JSON:
  "hashtags": ["#3to5", "#hashtags"],
  "global_keywords": ["4-6 general English stock keywords that fit the WHOLE topic visually"],
  "scenes": [
-   {{"text": "narration for this scene", "caption": "{'same as text' if en else 'same narration in Roman Urdu (Latin letters)'}", "keywords": ["specific", "medium", "general"], "image": "what we see", "sound": "", "subject": "", "on_screen": "", "pace": "normal", "reveal": false, "chapter": ""}}
- ]
+   {{"text": "narration for this scene", "caption": "{'same as text' if en else 'same narration in Roman Urdu (Latin letters)'}", "keywords": ["specific", "medium", "general"], "image": "what we see", "sound": "", "subject": "", "on_screen": "", "graphic": null, "pace": "normal", "reveal": false, "chapter": ""}}
+ ],
+ "hype_score": "1-10 (your HYPE METER verdict)",
+ "tomorrow_test": "Yes / Maybe / Not yet"
 }}"""
     draft = _ask_script(cfg, prompt, kind, 1.0)
+    draft = _uniqueness_check(cfg, draft, prompt, kind, memory)
+    draft["signature"] = signature
     if kind == "long":
         draft = _edit_long(cfg, draft, topic)
     return _finish(draft, topic, style)
+
+
+def _shingles(text, n=5):
+    w = re.findall(r"[a-z0-9']+", text.lower())
+    return {" ".join(w[i:i + n]) for i in range(max(0, len(w) - n + 1))}
+
+
+def script_text(data):
+    return " ".join(str(sc.get("text", "")) for sc in data.get("scenes", []))
+
+
+def _uniqueness_check(cfg, draft, prompt, kind, memory):
+    """Compare with our previous scripts; if too similar (repeated phrasing/structure), ask for a fresh rewrite once."""
+    past = memory.get("scripts", [])
+    if not past:
+        return draft
+    me = _shingles(script_text(draft))
+    worst = 0.0
+    for old in past[-60:]:
+        o = _shingles(old)
+        if me and o:
+            worst = max(worst, len(me & o) / min(len(me), len(o)))
+    first = (draft.get("scenes") or [{}])[0].get("text", "").lower()
+    same_open = any(len(set(first.split()) & set(x.lower().split())) >= 0.6 * max(1, len(first.split()))
+                    for x in memory.get("openings", [])[-25:])
+    log(f"Uniqueness: {100 * (1 - worst):.0f}% unique vs previous scripts" + (" (opening too similar)" if same_open else ""))
+    if worst < 0.12 and not same_open:
+        return draft
+    try:
+        again = ask(cfg, prompt + "\n\nIMPORTANT: your draft repeated phrasing/openings from our earlier videos. Write a FRESH script with a "
+                    "different opening type, different sentence patterns and a different structure, same facts and rules.",
+                    json_mode=True, temperature=1.1)
+        if len(again.get("scenes", [])) >= 3:
+            log("Rewritten for uniqueness")
+            return again
+    except Exception as e:  # noqa: BLE001
+        log("Uniqueness rewrite failed:", str(e)[:100])
+    return draft
 
 
 def _edit_long(cfg, draft, topic):
@@ -301,7 +387,7 @@ Check and fix:
 - Are there boring stretches (more than ~35 s without a question, surprise, number or reveal)? Fix them.
 - Is the most impressive fact saved for late in the video? Is there an honest "catch"? Is the ending short and does it call back to the hook?
 - Keep facts exactly as true as in the draft (do not invent numbers). Keep spoken words within +-10% of the draft length.
-- Keep the same JSON structure and all fields (text, caption = same as text, keywords, image, sound, subject, on_screen, pace, reveal, chapter).
+- Keep the same JSON structure and all fields (text, caption = same as text, keywords, image, sound, subject, on_screen, graphic, pace, reveal, chapter) and hype_score, tomorrow_test.
 Return ONLY the improved JSON."""
     try:
         better = ask(cfg, prompt, json_mode=True, temperature=0.7)
@@ -380,6 +466,9 @@ def _finish(data, topic, style):
         s["sound"] = str(s.get("sound") or "").strip()
         s["subject"] = str(s.get("subject") or "").strip()
         s["on_screen"] = " ".join(str(s.get("on_screen") or "").split()[:5])
+        g = s.get("graphic")
+        s["graphic"] = g if isinstance(g, dict) and g.get("type") in (
+            "counter", "bars", "timeline", "hype_meter", "tomorrow_test") else None
         s["reveal"] = bool(s.get("reveal")) and s is not scenes[0]
     g = [k for k in (data.get("global_keywords") or []) if isinstance(k, str) and k.strip()]
     data["global_keywords"] = g or [topic]

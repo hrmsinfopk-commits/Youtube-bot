@@ -21,7 +21,12 @@ HORROR_PALETTES = [((215, 25, 35), (0, 0, 0)), ((240, 60, 50), (0, 0, 0)), ((180
 
 
 def _palettes(cfg):
-    return HORROR_PALETTES if cfg.get("visual", {}).get("palette") == "horror" else PALETTES
+    vis = cfg.get("visual", {})
+    if vis.get("palette") == "horror":
+        return HORROR_PALETTES
+    if vis.get("brand_color"):   # one fixed channel colour = recognisable look
+        return [(tuple(vis["brand_color"]), (0, 0, 0))]
+    return PALETTES
 
 
 def _clip_filter(W, H, seg, rng, grade=None):
@@ -47,6 +52,10 @@ def _clip_filter(W, H, seg, rng, grade=None):
 def make_clip(src, kind, seg, W, H, out, rng, grade=None):
     enc = ["-an", "-c:v", "libx264", "-preset", "ultrafast", "-crf", "18", "-r", str(FPS),
            "-pix_fmt", "yuv420p", str(out)]
+    if kind == "graphic":   # our own animated graphic: play from the start, hold the last frame
+        run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-t", f"{seg:.3f}",
+             "-vf", f"scale={W}:{H},tpad=stop_mode=clone:stop_duration=30,fps={FPS},format=yuv420p"] + enc)
+        return
     if kind == "photo":
         frames = int(seg * FPS) + 1
         zs = rng.uniform(0.0005, 0.0010)
@@ -285,7 +294,7 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
         remaining, k = d + g, 0
         while remaining > 0.05:
             seg = min(rng.uniform(*seg_range), remaining)
-            if remaining - seg < 1.0:
+            if remaining - seg < 1.0 or items[k % len(items)][1] == "graphic":
                 seg = remaining
             src, mkind = items[k % len(items)]
             out = work / f"clip_{len(clips):04d}.mp4"
@@ -345,14 +354,25 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
         chain.append(f"noise=alls={int(vis['grain'])}:allf=t")
     chain.append(f"subtitles={ass.resolve()}:fontsdir={FONTS.resolve()}")
     inputs = ["-i", str(silent), "-i", str(audio)]
+    nxt = 2
     if kind == "short" and vis.get("progress_bar", True):   # progress bar keeps people watching
         bar_h = 12
         r, g, b = hi
         inputs += ["-f", "lavfi", "-i", f"color=c=0x{r:02X}{g:02X}{b:02X}:s={W}x{bar_h}:r={FPS}"]
         fc = (f"[0:v]{','.join(chain)}[base];"
-              f"[base][2:v]overlay=x='-w+w*t/{total:.2f}':y=H-{bar_h}:eval=frame:shortest=1,")
+              f"[base][{nxt}:v]overlay=x='-w+w*t/{total:.2f}':y=H-{bar_h}:eval=frame:shortest=1[b2];")
+        nxt += 1
     else:
-        fc = f"[0:v]{','.join(chain)},"
+        fc = f"[0:v]{','.join(chain)}[b2];"
+    if vis.get("watermark"):   # small channel logo = brand recognition
+        from . import graphics
+        lp = work / "logo.png"
+        graphics.logo(int(W * (0.075 if kind == "short" else 0.045))).save(lp)
+        inputs += ["-i", str(lp)]
+        mx = int(W * 0.03)
+        fc += f"[{nxt}:v]format=rgba,colorchannelmixer=aa=0.75[lg];[b2][lg]overlay=x={mx}:y={mx},"
+    else:
+        fc += "[b2]null,"
     fc += f"fade=t=in:st=0:d=0.2,fade=t=out:st={max(total - 0.6, 0):.2f}:d=0.6[v]"
     run(["ffmpeg", "-y", "-v", "error"] + inputs + ["-filter_complex", fc,
          "-map", "[v]", "-map", "1:a", "-c:v", "libx264", "-preset", "fast" if kind == "short" else "veryfast", "-crf", "22",

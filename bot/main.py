@@ -5,7 +5,7 @@ import random
 import shutil
 import time
 
-from . import audiofx, curate, footage, images, render, trends, upload, voice, writer
+from . import audiofx, curate, footage, graphics, images, render, trends, upload, voice, writer
 from .common import CHANNEL, DATA, OUT, WORK, load_config, load_history, log, run, save_history
 
 
@@ -17,9 +17,32 @@ def load_learning():
         return {}
 
 
+def load_memory():
+    """What we said before: openings, endings, full scripts, signatures (to never repeat ourselves)."""
+    p = DATA / f"memory_{CHANNEL['id']}.json"
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return {"openings": [], "endings": [], "scripts": [], "recent_signatures": [], "recent_styles": []}
+
+
+def save_memory(mem, script, style):
+    sc = script.get("scenes") or [{}]
+    mem.setdefault("openings", []).append(sc[0].get("text", "")[:160])
+    mem.setdefault("endings", []).append(sc[-1].get("text", "")[:160])
+    mem.setdefault("scripts", []).append(writer.script_text(script)[:6000])
+    mem.setdefault("recent_signatures", []).append(script.get("signature", ""))
+    mem.setdefault("recent_styles", []).append(style)
+    for k, n in (("openings", 80), ("endings", 80), ("scripts", 60), ("recent_signatures", 20), ("recent_styles", 20)):
+        mem[k] = mem[k][-n:]
+    DATA.mkdir(exist_ok=True)
+    (DATA / f"memory_{CHANNEL['id']}.json").write_text(json.dumps(mem, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 def pick_style(cfg, learning, rng):
     """Mostly pick styles that performed well on our channel, but keep exploring (25%) so we keep learning."""
-    styles = cfg["styles"]
+    last = (load_memory().get("recent_styles") or [None])[-1]
+    styles = [x for x in cfg["styles"] if x != last] or cfg["styles"]
     scores = (learning or {}).get("style_scores", {})
     if not scores or rng.random() < 0.25:
         return rng.choice(styles)
@@ -128,14 +151,24 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
         brief = None
         if cfg.get("trends", {}).get("enabled") and cfg["channel"].get("mode") != "stories":
             queued = writer.queued_topic(kind, consume=do_upload)
+            take = None
+            if queued and " | " in queued:      # "topic | my take ..." in topics.txt
+                queued, take = [x.strip() for x in queued.split(" | ", 1)]
             brief = trends.brief_for(cfg, queued, kind) if queued else trends.find_topic(cfg, history, kind, learning)
+            if take:
+                brief = brief or {}
+                brief["owner_take"] = take
             topic = queued or (f"{brief['topic']} - {brief['angle']}" if brief and brief.get("angle") else
                                (brief or {}).get("topic"))
         else:
             topic = None
         topic = topic or writer.pick_topic(cfg, history, kind)
-        script = writer.write_script(cfg, topic, kind, style, brief)
-        vset = voice.pick_voice(cfg, script.get("narrator_gender"))
+        memory = load_memory()
+        script = writer.write_script(cfg, topic, kind, style, brief, memory)
+        host = cfg.get("tts", {}).get("host_voice")
+        vset = voice.pick_voice(cfg, None if host else script.get("narrator_gender"))
+        if host and vset.get("engine") == "gemini":
+            vset["voice"] = host      # one recognisable channel narrator
         log("Voice:", vset)
         voices = voice.synth_scenes(cfg, script["scenes"], work, vset)
 
@@ -153,6 +186,14 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                     cache[i] = [(p, "photo")]
                     made += 1
             log(f"AI images: {made}/{len(script['scenes'])}")
+        gw, gh = render.SIZES[kind]
+        for i, sc in enumerate(script["scenes"]):
+            if i not in cache and sc.get("graphic"):
+                gp = work / "media" / f"graphic_{i:03d}.mp4"
+                if graphics.render(sc["graphic"], gw, gh, voices[i][1] + 1.6, gp, kind == "short"):
+                    cache[i] = [(gp, "graphic")]
+        if any(v[0][1] == "graphic" for v in cache.values()):
+            log(f"Own graphics: {sum(1 for v in cache.values() if v[0][1] == 'graphic')}")
         need = 3 if kind == "short" else 2   # long videos have many scenes; 2 clips each is plenty
         gk = script.get("global_keywords", [])
         picked = [None] * len(script["scenes"])
@@ -258,7 +299,9 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                                               for sc, (t0, _) in zip(script["scenes"], timings)],
                               "format": (brief or {}).get("long_format") if not offline else None,
                               "why": (brief or {}).get("why", "") if not offline else ""})
-    save_history(history) if not offline else None
+    if not offline:
+        save_history(history)
+        save_memory(load_memory(), script, script.get("style", ""))
     shutil.rmtree(work, ignore_errors=True)
     return video
 
