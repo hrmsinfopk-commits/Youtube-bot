@@ -162,12 +162,36 @@ def _weapon_share(history):
     return sum(any(w in v.get("topic", "").lower() for w in WEAPON_WORDS) for v in recent) / len(recent)
 
 
+STOP = set("""a an the and or of to in on for with by from at as is are was were be this that these those its it's it
+how why what who when where which new just now first big real really vs versus inside into about after before over
+can could will would may might than then their they them our your you we his her he she has have had not no yes
+breaking down explained explaining explain story video short shorts actually make makes made using use""".split())
+
+
+def _words(t):
+    import re as _re
+    w = {x.strip("'").removesuffix("'s") for x in _re.findall(r"[a-z0-9'\-]+", t.lower())}
+    return {x for x in w if len(x) > 2 and x not in STOP}
+
+
+def _clash(topic, past):
+    """Returns the past topic this one repeats (same story / same main subject), else None."""
+    tw = _words(topic)
+    for p in past:
+        pw = _words(p)
+        common = tw & pw
+        if len(common) >= 3 or (pw and len(common) >= 2 and len(common) / min(len(tw), len(pw)) >= 0.5):
+            return p
+    return None
+
+
 def find_topic(cfg, history, kind, learning=None):
     news = collect_news(cfg)
     if not news:
         return None
     yt = youtube_demand(cfg)
     past = [v.get("topic", "") for v in history["videos"]][-60:]
+    recent = [v.get("topic", "") for v in history["videos"]][-14:]   # about the last week, Shorts + long
     long_fmt = None
     if kind == "long":
         fmts = cfg["long"].get("formats", ["deep dive"])
@@ -197,6 +221,9 @@ WHAT IS GETTING VIEWS ON YOUTUBE RIGHT NOW (last 7 days, our keywords + Science 
 {yt_txt}
 {learn_txt}
 ALREADY MADE (do not repeat): {"; ".join(past) or "nothing yet"}
+MADE IN THE LAST FEW DAYS - the new topic must be a COMPLETELY DIFFERENT story and subject (not the same mission, spacecraft,
+company, product or technology, not a new angle on it):
+{chr(10).join("- " + t for t in recent) or "- nothing yet"}{{banned}}
 {"Military/weapons topics are allowed this time." if weapons_ok else "Do NOT choose a military/weapons topic this time."}
 
 Choose the best topic by: (1) fresh, real news from the list, (2) proven audience demand (similar videos getting many views),
@@ -215,10 +242,21 @@ Return ONLY JSON:
  "keywords": ["10-15 phrases people search/watch for this topic, taken from the YouTube titles/tags above and common search wording"],
  "facts": ["8-25 short factual points rewritten in your own words, only from the chosen headlines/summaries or well-established background knowledge; mark anything that is only announced/planned/claimed"]
 }}"""
-    try:
-        res = ask(cfg, prompt, json_mode=True, temperature=0.6)
-    except Exception as e:  # noqa: BLE001
-        log("Topic selection failed:", str(e)[:120])
+    banned, res = [], None
+    for attempt in range(3):
+        extra = ("\nREJECTED because they repeat a recent video - choose something else entirely: " + "; ".join(banned)) if banned else ""
+        try:
+            res = ask(cfg, prompt.replace("{banned}", extra), json_mode=True, temperature=0.6 + 0.15 * attempt)
+        except Exception as e:  # noqa: BLE001
+            log("Topic selection failed:", str(e)[:120])
+            return None
+        hit = _clash(f"{res.get('topic', '')} {res.get('angle', '')}", recent)
+        if not hit:
+            break
+        log(f"Topic '{res.get('topic')}' repeats recent video '{hit[:70]}' - choosing again")
+        banned.append(res.get("topic", ""))
+    else:
+        log("Could not find a fresh topic - skipping this run instead of repeating")
         return None
     used = [news[i] for i in res.get("news_ids", []) if isinstance(i, int) and 0 <= i < len(news)]
     # more angles on the same story from other outlets -> better facts

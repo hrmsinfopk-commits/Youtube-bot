@@ -129,6 +129,40 @@ def seo_audit(yt, ids):
         log(f"  Description end: {desc[-220:]!r}")
 
 
+def sync_uploads(yt, hist):
+    """Add any channel upload that is missing from history (e.g. history was not saved), so the bot
+    never repeats that topic and the video gets analysed too."""
+    from .common import save_history
+    try:
+        ch = yt.channels().list(part="contentDetails", mine=True).execute()["items"][0]
+        pl = ch["contentDetails"]["relatedPlaylists"]["uploads"]
+        items = yt.playlistItems().list(part="snippet", playlistId=pl, maxResults=50).execute().get("items", [])
+    except Exception as e:  # noqa: BLE001
+        log("Upload sync failed:", str(e)[:120])
+        return
+    known = {v.get("youtube_id") for v in hist["videos"]}
+    added = 0
+    for it in reversed(items):
+        sn = it["snippet"]
+        vid = sn["resourceId"]["videoId"]
+        if vid in known:
+            continue
+        title = sn["title"]
+        twin = next((v for v in hist["videos"] if not v.get("youtube_id") and v.get("title") == title), None)
+        if twin:
+            twin["youtube_id"] = vid
+        else:
+            hist["videos"].append({"date": sn["publishedAt"][:16].replace("T", " "),
+                                   "type": "short" if "#shorts" in title.lower() else "long",
+                                   "title": title, "topic": title.replace("#shorts", "").strip(),
+                                   "style": "", "youtube_id": vid, "synced": True})
+        added += 1
+    if added:
+        hist["videos"].sort(key=lambda v: v.get("date", ""))
+        save_history(hist)
+        log(f"Upload sync: {added} upload(s) added to history")
+
+
 def run_analytics(cfg, write_report=False):
     if not __import__("bot.upload", fromlist=["ready"]).ready():
         log("YouTube login missing - analytics skipped")
@@ -141,6 +175,7 @@ def run_analytics(cfg, write_report=False):
         log("Channel check failed:", str(e)[:200])
         return
     hist = load_history()
+    sync_uploads(yt, hist)
     ours = [v for v in hist["videos"] if v.get("youtube_id")]
     if not ours:
         log("No uploaded videos yet")

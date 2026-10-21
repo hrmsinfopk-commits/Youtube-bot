@@ -309,7 +309,7 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                                               for sc, (t0, _) in zip(script["scenes"], timings)],
                               "format": (brief or {}).get("long_format") if not offline else None,
                               "why": (brief or {}).get("why", "") if not offline else ""})
-    if not offline:
+    if not offline and do_upload:          # test runs are not remembered (their topic stays available)
         save_history(history)
         save_memory(load_memory(), script, script.get("style", ""))
     shutil.rmtree(work, ignore_errors=True)

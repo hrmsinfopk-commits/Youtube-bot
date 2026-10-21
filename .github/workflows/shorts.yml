@@ -70,6 +70,14 @@ jobs:
         run: |
           git config user.name "yt-bot"
           git config user.email "yt-bot@users.noreply.github.com"
-          git add data/ topics*.txt
-          git diff --cached --quiet || git commit -m "bot: history update (future short)"
-          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+          # another run may have saved at the same time -> merge instead of losing this run's history
+          BASE=$(git rev-parse HEAD); MINE="$RUNNER_TEMP/mine"; rm -rf "$MINE"; mkdir -p "$MINE"
+          cp -r data topics*.txt "$MINE"/ 2>/dev/null || true
+          for i in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python scripts/merge_data.py "$BASE" "$MINE"
+            git add data/ topics*.txt 2>/dev/null || git add data/
+            if git diff --cached --quiet; then echo "nothing to save"; break; fi
+            git commit -q -m "bot: history update (future short)" && git push -q origin HEAD:main && echo "saved" && break
+            sleep $((5 + RANDOM % 15))
+          done
