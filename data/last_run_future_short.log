@@ -1,26 +1,31 @@
-[15:23:07] Channel: Tomorrowly (future, mode=facts)
-[15:23:20] News headlines collected: 167
-[15:23:24] YouTube videos analysed: 74
-[15:25:06] Gemini OK (gemini-3.8-flash)
-[15:25:07] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[15:25:07] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[15:25:32] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[15:25:32] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[15:25:58] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[15:25:58] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[15:26:10] Gemini OK (gemini-flash-lite-latest)
-[15:26:10] Trend topic: How This Robot Finishes Drywall 3X Faster Than Humans | why: Demand is proven by construction automation Shorts like 'The Future of Construction: This Robot Plasters Walls Instantly!' racking up 9.1 million views in just days. Backed by fresh reporting from Forbes on October 15 about a drywall robot bagging $20 million to learn new trades, this provides an engaging, visually satisfying topic that avoids the oversaturated Tesla flying car wave.
-[15:26:46] Gemini OK (gemini-flash-lite-latest)
-[15:26:46] Script length: 105 words
-[15:26:46] Script ready: How This Robot Finishes Drywall 3X Faster Than Humans (8 scenes)
-[15:26:46] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[15:27:01] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[15:27:11] Captions aligned to the voice (107 words)
-[15:27:58] Gemini OK (gemini-flash-lite-latest)
-[15:27:58] Footage check: kept 17 fitting clips, 1 scenes had nothing fitting
-[15:28:13] Footage ready for 8 scenes
-[15:28:16] Freesound CC0 sound 'electric motor': DeWalt Drill_1.wav (id 566206)
-[15:28:33] 19 clips rendered
-[15:28:33] Final render started
-[15:29:03] Freesound CC0 music: Orchestral Score 1 - NOT mastered.wav (id 621294)
-[15:29:50] Video ready: 20261020_1528_future_short.mp4 (44.9s)
+[05:51:55] Channel: Tomorrowly (future, mode=facts)
+[05:52:08] News headlines collected: 168
+[05:52:11] YouTube videos analysed: 73
+[05:55:11] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[05:55:11] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[05:58:36] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[05:58:37] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[05:59:02] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[05:59:02] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[05:59:04] Gemini OK (gemini-flash-lite-latest)
+[05:59:04] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[05:59:30] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[05:59:55] Gemini OK (gemini-flash-lite-latest)
+[05:59:55] Trend topic: KBR's New Laser Base Defense: Pitting Lasers Against Drones | why: Military technology and drone defense content consistently pull high engagement and views on platforms like YouTube (e.g., WSJ and WION defense videos pulling 800k+ views). This fresh piece covers KBR's new base defense technology announced in mid-October 2026 with little saturation from mega-channels yet.
+[05:59:59] Gemini OK (gemini-flash-lite-latest)
+[05:59:59] Script too short (62 words, target ~94) - rewriting longer
+[06:00:03] Gemini OK (gemini-flash-lite-latest)
+[06:00:03] Script length: 91 words
+[06:00:03] Script ready: KBR Weaponized Light: Lasers vs Drones (7 scenes)
+[06:00:03] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[06:00:25] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[06:00:34] Captions aligned to the voice (99 words)
+[06:00:40] Own graphics: 1
+[06:00:52] Gemini OK (gemini-flash-lite-latest)
+[06:00:52] Footage check: kept 12 fitting clips, 1 scenes had nothing fitting
+[06:00:56] Footage ready for 7 scenes
+[06:00:58] Freesound CC0 sound 'computer beep': PIN beep (id 759010)
+[06:01:16] 15 clips rendered
+[06:01:16] Final render started
+[06:02:15] Freesound CC0 music: Dark Moody Rhythmic Orchestral Ambient Music (Obsidian) (id 789404)
+[06:02:52] Video ready: 20261021_0600_future_short.mp4 (37.9s)

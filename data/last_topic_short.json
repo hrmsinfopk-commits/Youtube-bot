@@ -1,89 +1,72 @@
 {
- "topic": "How This Robot Finishes Drywall 3X Faster Than Humans",
- "angle": "Break down how a new AI-guided construction robot uses LiDAR scanning and precision troweling to finish drywall 3x faster than human crews—explaining why robotics is rapidly targeting the dirtiest, most repetitive building trades.",
- "why": "Demand is proven by construction automation Shorts like 'The Future of Construction: This Robot Plasters Walls Instantly!' racking up 9.1 million views in just days. Backed by fresh reporting from Forbes on October 15 about a drywall robot bagging $20 million to learn new trades, this provides an engaging, visually satisfying topic that avoids the oversaturated Tesla flying car wave.",
+ "topic": "KBR's New Laser Base Defense: Pitting Lasers Against Drones",
+ "angle": "Breaking down how 'weaponized light' uses high-powered lasers to instantly vaporize incoming drones, solving modern military defense economics.",
+ "why": "Military technology and drone defense content consistently pull high engagement and views on platforms like YouTube (e.g., WSJ and WION defense videos pulling 800k+ views). This fresh piece covers KBR's new base defense technology announced in mid-October 2026 with little saturation from mega-channels yet.",
  "keywords": [
-  "construction robot",
-  "drywall robot",
-  "the future of construction",
-  "robot plastering walls",
-  "autonomous robot",
-  "future technology",
-  "robot worker",
-  "robot finishing drywall",
-  "AI in construction",
-  "new technology",
-  "robot technology",
-  "smart construction",
-  "construction automation"
+  "weaponized light",
+  "laser base defense",
+  "laser against drones",
+  "military technology",
+  "new defense tech",
+  "counter drone weapons",
+  "CUAS technology",
+  "future military tech",
+  "directed energy weapons",
+  "drone defense system",
+  "laser weapon test"
  ],
  "facts": [
-  "Drywall finishing—taping, mudding, and sanding joints between drywall sheets—is widely considered one of the most physically exhausting, repetitive, and dusty trades in construction.",
-  "A specialized commercial construction robot has demonstrated finishing drywall seams up to three times faster than typical human workflows.",
-  "The robotic system operates on an autonomous wheeled base equipped with LiDAR sensors and optical cameras to navigate cluttered active jobsites.",
-  "The machine performs real-time 3D scans of the wall surfaces to identify joint seams and surface imperfections down to millimeter tolerances.",
-  "A multi-axis robotic arm applies drywall mud and joint compound with consistent, computer-controlled pressure to deliver seamless Level 4 and Level 5 finishes.",
-  "Integrated vacuum suction at the sanding head captures drywall dust at the point of contact, eliminating hazardous airborne particulate clouds on the jobsite.",
-  "The startup developing the system raised $20 million in new funding to train the robotic platform for additional trades, such as spray painting and wall prep.",
-  "Human tradespeople do not get replaced entirely; instead, human supervisors manage layout planning and edge detailing while the machine executes the repetitive middle work.",
-  "The construction sector is experiencing historic labor shortages, driving commercial builders to adopt robotic helpers to meet tight commercial deadlines.",
-  "Automating overhead reaching and continuous sanding helps prevent common repetitive strain injuries and chronic respiratory hazards among construction workers.",
-  "A certain robot can complete drywall tasks three times faster than human workers.",
-  "This drywall robot recently secured funding amounting to twenty million dollars.",
-  "The financial backing is intended to help the robot learn additional trade skills.",
-  "Investor Ronnie Screwvala is placing financial bets on the drywall robot.",
-  "The film 'Prahaar', featuring Rajkummar Rao in a courtroom drama, had a lukewarm box office opening on its first day.",
-  "Saudi Arabia is facing a projected rebuilding period lasting between seven and ten years.",
-  "Vladimir Putin has suggested holding a summit with Donald Trump aimed at concluding the conflict in Ukraine."
+  "KBR has introduced a new base defense technology designed to pit lasers directly against drones.",
+  "The system is referred to as 'weaponized light'.",
+  "It is aimed at countering the massive modern threat of cheap aerial drones in military zones.",
+  "Military forces are increasingly shifting toward directed-energy systems to reduce the high economic cost of firing multi-thousand-dollar missiles at cheap consumer drones.",
+  "KBR has introduced a novel defense system for military bases.",
+  "This technology utilizes directed energy or concentrated light.",
+  "The primary purpose of the system is to neutralize unmanned aerial vehicles.",
+  "The solution involves deploying laser beams directly against aerial targets."
  ],
  "long_format": null,
- "sources": [
-  {
-   "title": "This Robot Finishes Drywall 3X Faster Than Humans. Now It Has $20 Million To Learn More Trades",
-   "source": "Forbes",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNTjVYNktVTVNZNktsbmktN0xock9HbFBKbks0ZXhDSHZDdkFPUGxJV291WGxxbW51cEdSRWYwSDRMSEd6Rkd1dEJIcTB3dl9WcTcyWjhkdXVxZklONE9FNDZ5NFBUM1dDR25makRodl96MERBRmJvYi1WcmhCaWE5Y0hiTUxEY2Rzc1lRNUNLbi1HazBUNE5TSmZNZWQ1RUNBdTR6clNyWUpUMlp0dEhobGd6Z29mWF9qVV9YUW1FVUVOUldkdlpERDBxc05YOHItWU1ONVZsbnZBeFRRMjVR?oc=5"
-  }
- ],
+ "sources": [],
  "youtube_top": [
   {
    "title": "HOW TO MAKE A HOMEMADE PROJECTOR 😱😱",
-   "views": 14641428
+   "views": 15855680
   },
   {
    "title": "amrud se nasa aaya 😅Mercedes Built the GTR at $2.5 M lucky drivers experienced power #reelschallenge",
-   "views": 14268981
+   "views": 14978356
   },
   {
    "title": "Why Cats Rub Against Your Laptop 🤔",
-   "views": 11883597
+   "views": 12204626
+  },
+  {
+   "title": "The NEW Tesla Roadster: My Honest Reaction",
+   "views": 11595809
   },
   {
    "title": "yang dapat robot mobil gg si #parfum #velixir",
-   "views": 11054932
+   "views": 11560434
   },
   {
    "title": "NEW TESLA ROADSTER - It Can Fly!!! (SpaceX Technology)",
-   "views": 9722937
-  },
-  {
-   "title": "Tesla's Flying Roadster Revealed: Everything That Happened in 10 Minutes",
-   "views": 9578201
-  },
-  {
-   "title": "The Future of Construction: This Robot Plasters Walls Instantly!",
-   "views": 9107201
+   "views": 9993030
   },
   {
    "title": "I thought the “Intel inside” sticker WAS the chip..",
-   "views": 8608491
+   "views": 9847241
+  },
+  {
+   "title": "Tesla's Flying Roadster Revealed: Everything That Happened in 10 Minutes",
+   "views": 9718498
   },
   {
    "title": "Flying Car Real hai 🥲",
-   "views": 8339306
+   "views": 8979091
   },
   {
    "title": "🥶🔥 \"there will never be flying cars\"",
-   "views": 8150335
+   "views": 8774248
   }
  ]
 }
