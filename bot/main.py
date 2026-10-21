@@ -239,7 +239,7 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
         if outlets:
             desc += "\n\nBased on reporting from: " + ", ".join(outlets)
     meta = {"title": title, "description": desc,
-            "tags": script.get("tags", []), "topic": script["topic"], "style": script["style"],
+            "tags": script.get("tags", []), "topic": script["topic"], "style": script["style"], "kind": kind,
             "voice": vset, "seconds": round(total, 1)}
     (OUT / f"{slug}.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / f"{slug}_script.txt").write_text("\n\n".join(s["text"] for s in script["scenes"]), encoding="utf-8")

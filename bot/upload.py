@@ -27,7 +27,7 @@ def upload(cfg, video, meta, thumb=None):
     from googleapiclient.http import MediaFileUpload
     yt = _service()
     lang = {"urdu": "ur", "hindi": "hi", "english": "en"}[cfg["channel"]["language"]]
-    privacy = cfg["upload"]["privacy"]
+    privacy = cfg["upload"].get(f"{meta.get('kind', '')}_privacy") or cfg["upload"]["privacy"]
     body = {
         "snippet": {
             "title": meta["title"][:100],
