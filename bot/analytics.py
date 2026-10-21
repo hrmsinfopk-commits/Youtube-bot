@@ -124,9 +124,9 @@ def seo_audit(yt, ids):
         log(f"  Tags ({len(sn.get('tags') or [])}): {', '.join(sn.get('tags') or [])}")
         log(f"  Category: {sn.get('categoryId')} | Language: {sn.get('defaultAudioLanguage')} / {sn.get('defaultLanguage')}")
         log(f"  Description ({len(desc)} chars), first lines: {desc[:300]!r}")
-        log(f"  Hashtags: {' '.join(_re.findall(r'#\\w+', desc))} | Chapters: {'yes' if _re.search(r'^0?0:00', desc, _re.M) else 'no'}"
+        log(f"  Hashtags: {' '.join(_re.findall(r'#[A-Za-z0-9_]+', desc)) or 'none'} | Chapters: {'yes' if _re.search(r'^0?0:00', desc, _re.M) else 'no'}"
             f" | Credits line: {'yes' if 'credits' in desc.lower() or 'reporting from' in desc.lower() else 'no'}")
-        log(f"  Custom thumbnail: {'yes' if 'maxres' in (sn.get('thumbnails') or {}) or 'standard' in (sn.get('thumbnails') or {}) else 'unknown/auto'}")
+        log(f"  Description end: {desc[-220:]!r}")
 
 
 def run_analytics(cfg, write_report=False):
