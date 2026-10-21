@@ -19,6 +19,7 @@ Rules: literal word matches are NOT enough (a line about a car "deadline" must n
 Reject: unrelated places/people, green screens, text/graphics with other words, birthdays/holidays, zodiac/astrology,
 anything that contradicts the line, people talking to camera (interviews, briefings),
 labelled diagrams or charts about a different subject. A generic but fitting shot (e.g. a sports car on a road for a car line) is fine.
+For scene 0 (the opening) pick the most dramatic, high-energy option that fits (launch, explosion of light, motion) - never a calm or static shot.
 If nothing fits, return an empty list for that scene.
 
 SCENES:

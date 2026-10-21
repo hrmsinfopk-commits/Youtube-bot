@@ -216,7 +216,11 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
         length = f"about {int(mins * 60 * _wps(cfg))} spoken words total ({mins} minutes), 18-30 scenes"
         extra = (
             "- ONE story, ONE central question, told from start to end. Every scene must move the viewer closer to the answer;\n"
-            "  if a line does not connect to the central question, cut it. No lists of unrelated facts.\n"
+            "  if a line does not connect to the central question, cut it. No lists of unrelated facts, no side-stories about\n"
+            "  other projects or missions, even if they are interesting.\n"
+            "- OPENING: scene 1 is ONE short punchy sentence (max ~5 seconds) with the most dramatic visual of the whole topic;\n"
+            "  the hook_text must be a bold 2-4 word question or claim. Scene 2 states the central question.\n"
+            "- The HOW IT WORKS part must use at least one 'flow' graphic (step-by-step diagram).\n"
             "- STORY SPINE (with approximate share of the video):\n"
             "  1. HOOK (first 10-15 s): the most surprising concrete fact + the central question + why the viewer should care.\n"
             "  2. CONTEXT (~15%): the problem or situation before this news, in simple everyday terms.\n"
@@ -268,6 +272,8 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
         '- {"type": "timeline", "items": [{"year": "2024", "text": "First test"}, {"year": "2027", "text": "Planned launch"}]}  (2-4 items)\n'
         '- {"type": "hype_meter", "value": 6}  (1-10; the HYPE METER scene)\n'
         '- {"type": "tomorrow_test", "answer": "Maybe"}  (Yes / Maybe / Not yet; the TOMORROW TEST scene)\n'
+        '- {"type": "flow", "title": "How it works", "steps": ["Reactor", "Electricity", "Ion engine", "Thrust"]}  (2-5 short steps; '
+        'USE THIS whenever a line explains HOW something works - never leave a technical explanation on random footage)\n'
         "Every number in a graphic must come from the fact sheet, well-established facts, or your clearly rough WE DID THE MATH.\n")
     prompt = f"""You write viral YouTube scripts for the channel "{ch['name']}".
 Niche: {ch['niche']}
@@ -385,6 +391,8 @@ Check and fix:
 - Is there ONE central question stated in the first 15 seconds and clearly answered at the end? If not, add/fix it.
 - Does every scene connect to that question and follow logically from the previous one? Rewrite or cut lines that feel random.
 - Are there boring stretches (more than ~35 s without a question, surprise, number or reveal)? Fix them.
+- Cut every tangent or side-story that does not directly serve the central question - even if it is interesting.
+- Is scene 1 a single punchy sentence with a dramatic visual? Does every technical "how it works" line have a 'flow' graphic?
 - Is the most impressive fact saved for late in the video? Is there an honest "catch"? Is the ending short and does it call back to the hook?
 - Keep facts exactly as true as in the draft (do not invent numbers). Keep spoken words within +-10% of the draft length.
 - Keep the same JSON structure and all fields (text, caption = same as text, keywords, image, sound, subject, on_screen, graphic, pace, reveal, chapter) and hype_score, tomorrow_test.
@@ -468,7 +476,7 @@ def _finish(data, topic, style):
         s["on_screen"] = " ".join(str(s.get("on_screen") or "").split()[:5])
         g = s.get("graphic")
         s["graphic"] = g if isinstance(g, dict) and g.get("type") in (
-            "counter", "bars", "timeline", "hype_meter", "tomorrow_test") else None
+            "counter", "bars", "timeline", "hype_meter", "tomorrow_test", "flow") else None
         s["reveal"] = bool(s.get("reveal")) and s is not scenes[0]
     g = [k for k in (data.get("global_keywords") or []) if isinstance(k, str) and k.strip()]
     data["global_keywords"] = g or [topic]

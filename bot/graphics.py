@@ -256,8 +256,56 @@ def _tomorrow_test(g, W, H, t, short):
     return img
 
 
+def _flow(g, W, H, t, short):
+    """How-it-works diagram: boxes connected by arrows, appearing one by one (e.g. Reactor -> Power -> Engine -> Thrust)."""
+    img = _background(W, H)
+    d = ImageDraw.Draw(img)
+    steps = [str(x) for x in (g.get("steps") or [])][:5]
+    if len(steps) < 2:
+        return img
+    tf = _font(int(W * (0.065 if short else 0.045)))
+    title = str(g.get("title", "")).upper()
+    if title:
+        _center_text(d, W / 2, H * (0.07 if short else 0.10), title, tf, WHITE)
+    bf = _label_font(int(W * (0.042 if short else 0.024)))
+    n = len(steps)
+    per = 0.55
+    for i, st in enumerate(steps):
+        a = _ease((t - 0.3 - per * i) / 0.4)
+        if a <= 0:
+            continue
+        active = i == min(n - 1, int(max(0, t - 0.3) / per))
+        if short:   # vertical chain in the upper 60% (captions stay readable)
+            bw, bh = W * 0.70, H * 0.075
+            x0 = W / 2 - bw / 2
+            y0 = H * 0.17 + i * (H * 0.43 / n)
+            box = [x0, y0, x0 + bw, y0 + bh]
+            if i > 0:
+                py = H * 0.17 + (i - 1) * (H * 0.43 / n) + bh
+                d.line([(W / 2, py + 6), (W / 2, y0 - 10)], fill=GREY, width=6)
+                d.polygon([(W / 2 - 16, y0 - 26), (W / 2 + 16, y0 - 26), (W / 2, y0 - 6)], fill=GREY)
+        else:       # horizontal chain
+            gap = W * 0.035
+            bw = (W * 0.88 - gap * (n - 1)) / n
+            bh = H * 0.22
+            x0 = W * 0.06 + i * (bw + gap)
+            y0 = H * 0.42
+            box = [x0, y0, x0 + bw, y0 + bh]
+            if i > 0:
+                ax = x0 - gap
+                d.line([(ax + 6, y0 + bh / 2), (x0 - 14, y0 + bh / 2)], fill=GREY, width=6)
+                d.polygon([(x0 - 26, y0 + bh / 2 - 14), (x0 - 26, y0 + bh / 2 + 14), (x0 - 6, y0 + bh / 2)], fill=GREY)
+        fill = ACCENT if active else (30, 41, 59)
+        d.rounded_rectangle(box, radius=18, fill=fill, outline=ACCENT, width=3)
+        lines = _wrap(d, st, bf, (box[2] - box[0]) * 0.86)[:3]
+        ty = (box[1] + box[3]) / 2 - len(lines) * bf.size * 0.6
+        for k, ln in enumerate(lines):
+            _center_text(d, (box[0] + box[2]) / 2, ty + k * bf.size * 1.15, ln, bf, (9, 13, 28) if active else WHITE)
+    return img
+
+
 PAINTERS = {"counter": _counter, "bars": _bars, "timeline": _timeline, "hype_meter": _hype_meter,
-            "tomorrow_test": _tomorrow_test}
+            "tomorrow_test": _tomorrow_test, "flow": _flow}
 
 
 def render(graphic, W, H, seconds, out_path, short):
