@@ -397,13 +397,16 @@ def thumbnail(video, text, out, rng, at=None, tag=""):
     frame = out.with_suffix(".frame.jpg")
     at = at if at is not None else min(3.0, duration(video) / 3)
     run(["ffmpeg", "-y", "-v", "error", "-ss", f"{at:.2f}", "-i", str(video), "-frames:v", "1", str(frame)])
-    img = Image.open(frame).convert("RGB").resize((1280, 720))
-    img = Image.blend(img, img.filter(ImageFilter.GaussianBlur(1.5)), 0.2)
+    pic = Image.open(frame).convert("RGB").resize((1280, 720))
+    # move the picture right so the subject sits clear of the text block on the left
+    shift = 300
+    canvas = Image.new("RGB", (1280, 720), (5, 8, 20))
+    canvas.paste(pic, (shift, 0))
     shade = Image.new("L", (1280, 720))
     sd = ImageDraw.Draw(shade)
     for x in range(1280):
-        sd.line([(x, 0), (x, 720)], fill=int(215 * max(0, 1 - x / 820)))
-    img = Image.composite(Image.new("RGB", (1280, 720), (5, 8, 20)), img, shade)
+        sd.line([(x, 0), (x, 720)], fill=255 if x < shift else int(255 * max(0.0, 1 - (x - shift) / 360)))
+    img = Image.composite(Image.new("RGB", (1280, 720), (5, 8, 20)), canvas, shade)
     d = ImageDraw.Draw(img)
     words = text.upper().split()
     lines, cur = [], ""
@@ -415,12 +418,15 @@ def thumbnail(video, text, out, rng, at=None, tag=""):
             cur = (cur + " " + w).strip()
     lines.append(cur)
     lines = lines[:3]
-    size = 150 if len(lines) <= 2 else 128
+    size = 128 if len(lines) <= 2 else 112
     f = graphics._font(size)
+    while size > 70 and max(d.textlength(l, font=f) for l in lines) > 620:   # text must stay in the left half
+        size -= 6
+        f = graphics._font(size)
     y = 360 - (len(lines) * size * 1.0) / 2 - (30 if tag else 0)
     for i, line in enumerate(lines):
-        d.text((54, y), line, font=f, fill=graphics.ACCENT if i == len(lines) - 1 else (245, 247, 250),
-               stroke_width=8, stroke_fill=(0, 0, 0))
+        d.text((50, y), line, font=f, fill=graphics.ACCENT if i == len(lines) - 1 else (245, 247, 250),
+               stroke_width=7, stroke_fill=(0, 0, 0))
         y += size * 1.0
     if tag:
         lf = graphics._label_font(40)
