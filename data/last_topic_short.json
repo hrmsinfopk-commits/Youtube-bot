@@ -1,72 +1,87 @@
 {
- "topic": "KBR's New Laser Base Defense: Pitting Lasers Against Drones",
- "angle": "Breaking down how 'weaponized light' uses high-powered lasers to instantly vaporize incoming drones, solving modern military defense economics.",
- "why": "Military technology and drone defense content consistently pull high engagement and views on platforms like YouTube (e.g., WSJ and WION defense videos pulling 800k+ views). This fresh piece covers KBR's new base defense technology announced in mid-October 2026 with little saturation from mega-channels yet.",
+ "topic": "How 'Weaponized Light' Lasers Are Vaporizing Drone Swarms",
+ "angle": "Examine the extreme cost-asymmetry of modern warfare—why militaries are ditching million-dollar missiles to swat $500 plastic drones, and how focused directed-energy lasers melt incoming threats out of the sky for pennies per shot.",
+ "why": "Anti-drone technology shorts have exploded in viewership over the past week (e.g., recent anti-drone tech videos racking up over 1 million views), proving high audience appetite for next-gen defense explainers. This fresh directed-energy breakthrough provides a compelling physics and cost breakdown that hasn't been saturated on Shorts yet.",
  "keywords": [
+  "military laser weapons",
+  "anti drone technology",
   "weaponized light",
-  "laser base defense",
-  "laser against drones",
-  "military technology",
-  "new defense tech",
-  "counter drone weapons",
-  "CUAS technology",
-  "future military tech",
+  "drone defense",
   "directed energy weapons",
-  "drone defense system",
-  "laser weapon test"
+  "laser air defense",
+  "counter drone system",
+  "new military technology",
+  "future weapons",
+  "high energy laser",
+  "drone swarm defense",
+  "military technology explained"
  ],
  "facts": [
-  "KBR has introduced a new base defense technology designed to pit lasers directly against drones.",
-  "The system is referred to as 'weaponized light'.",
-  "It is aimed at countering the massive modern threat of cheap aerial drones in military zones.",
-  "Military forces are increasingly shifting toward directed-energy systems to reduce the high economic cost of firing multi-thousand-dollar missiles at cheap consumer drones.",
-  "KBR has introduced a novel defense system for military bases.",
-  "This technology utilizes directed energy or concentrated light.",
-  "The primary purpose of the system is to neutralize unmanned aerial vehicles.",
-  "The solution involves deploying laser beams directly against aerial targets."
+  "Cheap autonomous drones and loitering munitions costing as little as $500 to $2,000 have fundamentally upended modern battlefield air defense.",
+  "Traditional base air defenses rely on interceptor missiles that often cost between $300,000 and $2 million each, creating an economically unsustainable defense model against swarms.",
+  "Defense contractor KBR has rolled out a new base defense technology centered on high-energy lasers termed 'weaponized light' specifically designed to counter drone threats.",
+  "Directed-energy systems fire concentrated photons that travel at the speed of light (approximately 300,000 kilometers per second), completely eliminating the need to calculate target lead or bullet drop.",
+  "The laser delivers intense thermal energy onto a tight focal point, melting through drone composite hulls, burning lithium batteries, or severing aerodynamic control surfaces in 1 to 3 seconds.",
+  "Targeting optics on high-energy laser systems can also blind or melt the optical and infrared cameras of incoming drones before they reach visual range.",
+  "A single shot from a directed-energy laser costs roughly $1 to $10 in electrical power, compared to the astronomical cost of kinetic munitions.",
+  "Unlike missile batteries with limited launch tubes, a laser weapon has a virtually 'infinite magazine,' limited only by generator fuel and onboard cooling capacity.",
+  "The U.S. military announced the creation of Task Force Easy to accelerate the testing, adaptation, and field deployment of counter-drone technologies.",
+  "Environmental conditions like heavy rain, dense fog, and battlefield smoke still pose physical challenges by scattering laser energy before it hits targets.",
+  "Engineers are actively developing advanced adaptive optics and thermal management systems to ensure laser weapons can sustain rapid, multi-target engagements during mass swarm attacks."
  ],
  "long_format": null,
- "sources": [],
+ "sources": [
+  {
+   "title": "‘Weaponized light’: KBR’s new base defense technology pits lasers against drones",
+   "source": "Defense News",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMXNDbjlHN3V5cGROdi1zeWVPRzdGZzQzMl9RVWVXYjJYVTZ3OU1adzFKSV9TN3BQeVNaOHdXQl9BS3VmTmo3VE1MY0xXUVUzaXF5dUw1WUJOVHBmZ0RvZ0NzLWlnVWlFZzh1LWNjRHUtSWVTX2cxMlNGVGNTZUtHNEE0aE9pWXVhTUItaVd1ejNRX0hGVERtSk1EdDFlSnBiTHdNOHN6LVdubURKclF4OUJOZWxJMU1zNUl2dkpuNDFmcTA0VjlBaGFMWk1vSE5P?oc=5"
+  },
+  {
+   "title": "U.S. military debuts new Task Force Easy to enable drone tech ‘adaptation dominance’",
+   "source": "DefenseScoop",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1JRkpSYUNtckYzeGpzMElqRFA5blMtX0tYNWJZU3B4LW9wVWFvQzMxTE1LcktQQXg3S1d5alBNMmh3NXNwMTQ2dDZ2ZzlYODRhSFpqcWlqNk5xMG1uemMwcGUtcXA3T0NHbVByZXlWNlRWNDZMeTNFejhQeDI?oc=5"
+  }
+ ],
  "youtube_top": [
   {
    "title": "HOW TO MAKE A HOMEMADE PROJECTOR 😱😱",
-   "views": 15855680
-  },
-  {
-   "title": "amrud se nasa aaya 😅Mercedes Built the GTR at $2.5 M lucky drivers experienced power #reelschallenge",
-   "views": 14978356
+   "views": 17898641
   },
   {
    "title": "Why Cats Rub Against Your Laptop 🤔",
-   "views": 12204626
-  },
-  {
-   "title": "The NEW Tesla Roadster: My Honest Reaction",
-   "views": 11595809
+   "views": 12647114
   },
   {
    "title": "yang dapat robot mobil gg si #parfum #velixir",
-   "views": 11560434
+   "views": 12285256
   },
   {
-   "title": "NEW TESLA ROADSTER - It Can Fly!!! (SpaceX Technology)",
-   "views": 9993030
+   "title": "The NEW Tesla Roadster: My Honest Reaction",
+   "views": 11755851
   },
   {
    "title": "I thought the “Intel inside” sticker WAS the chip..",
-   "views": 9847241
-  },
-  {
-   "title": "Tesla's Flying Roadster Revealed: Everything That Happened in 10 Minutes",
-   "views": 9718498
+   "views": 10471352
   },
   {
    "title": "Flying Car Real hai 🥲",
-   "views": 8979091
+   "views": 10359253
+  },
+  {
+   "title": "NEW TESLA ROADSTER - It Can Fly!!! (SpaceX Technology)",
+   "views": 10172369
+  },
+  {
+   "title": "Episode 5 - Sheela Tez Hai 🧠🤓 | Kaamwali Bai vs AI Robot 🤖🧹 |#shorts #shortsbreakplus",
+   "views": 9964049
+  },
+  {
+   "title": "Tesla's Flying Roadster Revealed: Everything That Happened in 10 Minutes",
+   "views": 9788968
   },
   {
    "title": "🥶🔥 \"there will never be flying cars\"",
-   "views": 8774248
+   "views": 8915830
   }
  ]
 }

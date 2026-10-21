@@ -1,31 +1,29 @@
-[05:51:55] Channel: Tomorrowly (future, mode=facts)
-[05:52:08] News headlines collected: 168
-[05:52:11] YouTube videos analysed: 73
-[05:55:11] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[05:55:11] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[05:58:36] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[05:58:37] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[05:59:02] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[05:59:02] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[05:59:04] Gemini OK (gemini-flash-lite-latest)
-[05:59:04] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[05:59:30] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[05:59:55] Gemini OK (gemini-flash-lite-latest)
-[05:59:55] Trend topic: KBR's New Laser Base Defense: Pitting Lasers Against Drones | why: Military technology and drone defense content consistently pull high engagement and views on platforms like YouTube (e.g., WSJ and WION defense videos pulling 800k+ views). This fresh piece covers KBR's new base defense technology announced in mid-October 2026 with little saturation from mega-channels yet.
-[05:59:59] Gemini OK (gemini-flash-lite-latest)
-[05:59:59] Script too short (62 words, target ~94) - rewriting longer
-[06:00:03] Gemini OK (gemini-flash-lite-latest)
-[06:00:03] Script length: 91 words
-[06:00:03] Script ready: KBR Weaponized Light: Lasers vs Drones (7 scenes)
-[06:00:03] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[06:00:25] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[06:00:34] Captions aligned to the voice (99 words)
-[06:00:40] Own graphics: 1
-[06:00:52] Gemini OK (gemini-flash-lite-latest)
-[06:00:52] Footage check: kept 12 fitting clips, 1 scenes had nothing fitting
-[06:00:56] Footage ready for 7 scenes
-[06:00:58] Freesound CC0 sound 'computer beep': PIN beep (id 759010)
-[06:01:16] 15 clips rendered
-[06:01:16] Final render started
-[06:02:15] Freesound CC0 music: Dark Moody Rhythmic Orchestral Ambient Music (Obsidian) (id 789404)
-[06:02:52] Video ready: 20261021_0600_future_short.mp4 (37.9s)
+[18:46:57] Channel: Tomorrowly (future, mode=facts)
+[18:47:10] News headlines collected: 163
+[18:47:14] YouTube videos analysed: 74
+[18:47:47] Gemini OK (gemini-3.8-flash)
+[18:47:47] Trend topic: How 'Weaponized Light' Lasers Are Vaporizing Drone Swarms | why: Anti-drone technology shorts have exploded in viewership over the past week (e.g., recent anti-drone tech videos racking up over 1 million views), proving high audience appetite for next-gen defense explainers. This fresh directed-energy breakthrough provides a compelling physics and cost breakdown that hasn't been saturated on Shorts yet.
+[18:47:48] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[18:47:48] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[18:48:13] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[18:48:13] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[18:48:49] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[18:48:49] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[18:48:53] Gemini OK (gemini-flash-lite-latest)
+[18:48:53] Script length: 99 words
+[18:48:53] Uniqueness: 100% unique vs previous scripts
+[18:48:53] Script ready: How Weaponized Light Lasers Vaporize Drone Swarms (8 scenes)
+[18:48:53] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[18:49:13] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[18:49:21] Captions aligned to the voice (98 words)
+[18:49:25] Own graphics: 1
+[18:49:37] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[18:50:03] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[18:50:28] Gemini OK (gemini-flash-lite-latest)
+[18:50:28] Footage check: kept 7 fitting clips, 1 scenes had nothing fitting
+[18:51:08] Footage ready for 8 scenes
+[18:51:10] Freesound CC0 sound 'rocket launch': S18-15a Fireworks rocket launching.wav (id 675773)
+[18:51:29] 18 clips rendered
+[18:51:29] Final render started
+[18:51:59] Freesound CC0 music: Orchestral Score 1 - Mastered WITH Stereo Imaging.wav (id 621289)
+[18:52:38] Video ready: 20261021_1851_future_short.mp4 (44.4s)
