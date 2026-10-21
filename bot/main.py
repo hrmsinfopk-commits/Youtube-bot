@@ -226,23 +226,34 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
             if not items:
                 items = footage.search(cfg, gk + cfg["channel"].get("fallback_keywords", ["futuristic technology"]),
                                        orient, used, need=need)
-            got = []
-            for it in items:
-                ext = ".mp4" if it["kind"] == "video" else ".jpg"
-                p = work / "media" / f"{it['id']}{ext}"
-                try:
-                    footage.download(it, p)
-                    got.append((p, it["kind"]))
-                    used.add(it["id"])
-                    history["used_media"].append(it["id"])
-                    if it.get("credit"):
-                        credits.append(it["credit"])
-                    src_name = {"nasa": "NASA", "pexels": "Pexels", "pixabay": "Pixabay", "wm": "Wikimedia Commons",
-                                "ov": "Openverse"}.get(it["id"].split("-")[0])
-                    if src_name and src_name not in footage_sources:
-                        footage_sources.append(src_name)
-                except Exception as e:  # noqa: BLE001
-                    log("Download failed:", str(e)[:100])
+            got, rejected = [], 0
+            for rnd in range(2):
+                if rnd == 1:             # every clip had burned-in text -> one more search for this scene
+                    if got or not rejected:
+                        break
+                    items = footage.search(cfg, sc["keywords"] + rng.sample(gk, min(2, len(gk))), orient, used, need=need)
+                for it in items:
+                    ext = ".mp4" if it["kind"] == "video" else ".jpg"
+                    p = work / "media" / f"{it['id']}{ext}"
+                    try:
+                        footage.download(it, p)
+                        if cfg["footage"].get("reject_text", True) and footage.has_text(p, it["kind"]):
+                            used.add(it["id"])               # burned-in subtitles/titles -> never use this clip
+                            history["used_media"].append(it["id"])
+                            p.unlink(missing_ok=True)
+                            rejected += 1
+                            continue
+                        got.append((p, it["kind"]))
+                        used.add(it["id"])
+                        history["used_media"].append(it["id"])
+                        if it.get("credit"):
+                            credits.append(it["credit"])
+                        src_name = {"nasa": "NASA", "pexels": "Pexels", "pixabay": "Pixabay", "wm": "Wikimedia Commons",
+                                    "ov": "Openverse"}.get(it["id"].split("-")[0])
+                        if src_name and src_name not in footage_sources:
+                            footage_sources.append(src_name)
+                    except Exception as e:  # noqa: BLE001
+                        log("Download failed:", str(e)[:100])
             if not got:  # reuse previous scene's footage
                 got = media[-1] if media else []
             if not got:

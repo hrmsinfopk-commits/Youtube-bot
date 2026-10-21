@@ -74,6 +74,7 @@ footage:
                  "astrology", "wedding", "christmas", "halloween", "valentine",
                  "interview", "press conference", "briefing", "speaks", "talks about", "panel discussion",
                  "infographic", "diagram", "instruments labeled"]
+  reject_text: true                    # jis clip mein pehle se likha hua text/subtitles hon, woh skip
   relevance_check: true                # Gemini har scene ki footage check karta hai ke line se milti hai ya nahi
   concept_images: true                 # kuch na mile to AI "Concept illustration" (screen par likha hota hai)
   concept_style: "realistic cinematic concept art, photorealistic lighting, generic design (no real brand, no logo)"

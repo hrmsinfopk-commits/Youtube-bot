@@ -271,3 +271,58 @@ def download(item, path):
                     raise RuntimeError("file too big")
                 f.write(chunk)
     return path
+
+
+def _frame_words(img_path):
+    """Big, confidently-read words in one frame (tesseract). Small text (logos, tiny labels) is ignored."""
+    import subprocess
+    r = subprocess.run(["tesseract", str(img_path), "stdout", "--psm", "11", "tsv"], capture_output=True, text=True)
+    rows = [ln.split("\t") for ln in r.stdout.splitlines()[1:]]
+    page = next(((int(x[8]), int(x[9])) for x in rows if len(x) == 12 and x[0] == "1"), (1, 1))
+    side = min(page) or 1      # text size relative to the short side (works for portrait and landscape)
+    words = []
+    for x in rows:
+        if len(x) != 12 or x[0] != "5":
+            continue
+        txt, conf, h = x[11].strip(), float(x[10]), int(x[9])
+        letters = "".join(ch for ch in txt if ch.isalpha())
+        if (conf >= 70 and len(letters) >= 3 and len(letters) >= 0.8 * len(txt)
+                and any(v in letters.lower() for v in "aeiouy") and h >= 0.022 * side):
+            words.append(letters)
+    return words
+
+
+def has_text(path, kind):
+    """True when a clip/photo carries burned-in subtitles or titles (e.g. another video's captions).
+    Such text clashes with our own captions and looks like reused content, so the clip is skipped."""
+    import shutil
+    import subprocess
+    import tempfile
+    if not shutil.which("tesseract"):
+        return False
+    with tempfile.TemporaryDirectory() as td:
+        shots = []
+        if kind == "video":
+            try:
+                dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+                                            str(path)], capture_output=True, text=True).stdout.strip() or 0)
+            except ValueError:
+                dur = 0
+            points = [dur * f for f in (0.15, 0.4, 0.65, 0.9)] if dur > 1 else [0]
+        else:
+            points = [None]
+        # two looks at every frame: plain grey, and a mask of the brightest pixels (white/yellow subtitles)
+        looks = ["format=gray", "lutyuv=y='if(gt(val,200),0,255)':u=128:v=128,format=gray"]
+        for k, t in enumerate(points):
+            for j, look in enumerate(looks):
+                out = f"{td}/f{k}_{j}.png"
+                cmd = ["ffmpeg", "-v", "error", "-y"] + (["-ss", f"{t:.2f}"] if t is not None else []) + \
+                      ["-i", str(path), "-frames:v", "1", "-vf", f"scale='min(1280,iw)':-2,{look}", out]
+                if subprocess.run(cmd, capture_output=True).returncode == 0:
+                    shots.append(out)
+        for s in shots:
+            w = _frame_words(s)
+            if len(w) >= 3:
+                log(f"Skipping clip with burned-in text: {' '.join(w[:8])}")
+                return True
+    return False
