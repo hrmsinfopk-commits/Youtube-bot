@@ -527,6 +527,112 @@
    ],
    "format": null,
    "why": "Military technology and drone defense content consistently pull high engagement and views on platforms like YouTube (e.g., WSJ and WION defense videos pulling 800k+ views). This fresh piece covers KBR's new base defense technology announced in mid-October 2026 with little saturation from mega-channels yet."
+  },
+  {
+   "date": "2026-10-21 13:49",
+   "type": "long",
+   "title": "NASA's New Nuclear Spaceship: How SR-1 Freedom Changes Mars Travel",
+   "topic": "NASA's New Nuclear-Powered Spaceship to Mars - Breaking down how NASA's Space Reactor-1 (SR-1) Freedom is changing deep space travel forever with nuclear electric propulsion, and why it's humanity's key to reaching Mars and beyond.",
+   "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
+   "youtube_id": "BZuC5VJ6kDM",
+   "voice": "Charon",
+   "seconds": 227.2,
+   "scene_times": [
+    [
+     0.0,
+     "Could splitting atoms in a deep space reactor actually cut down our voyage to the Red Plan"
+    ],
+    [
+     11.0,
+     "It is 2040, and a crew bound for Mars is already halfway there while previous missions wou"
+    ],
+    [
+     20.7,
+     "NASA recently pulled the curtain back on something we have never flown past Earth's orbit "
+    ],
+    [
+     30.8,
+     "For seventy years, every deep space mission relied on chemical propellants. Think of it li"
+    ],
+    [
+     41.2,
+     "Chemical burns are quick and violent, but once that fuel is spent, the spacecraft simply c"
+    ],
+    [
+     49.5,
+     "With long journeys comes prolonged cosmic radiation and muscle loss for crews, making deep"
+    ],
+    [
+     57.4,
+     "That is where nuclear electric propulsion flips the equation. Instead of burning chemical "
+    ],
+    [
+     68.8,
+     "That electricity accelerates charged particles to create smooth, continuous thrust for mon"
+    ],
+    [
+     73.4,
+     "The energy density difference between uranium fuel and rocket gas is staggering—like tradi"
+    ],
+    [
+     85.2,
+     "Let us do the math on that efficiency gain. Traditional chemical rockets empty their massi"
+    ],
+    [
+     98.0,
+     "A small nuclear module provides continuous acceleration, meaning travel times to Mars and "
+    ],
+    [
+     109.6,
+     "This is not just a CAD drawing anymore. NASA and the Department of Energy have teamed up t"
+    ],
+    [
+     120.1,
+     "NASA even appointed veteran aerospace engineer Stephen Cash to direct Marshall Space Fligh"
+    ],
+    [
+     128.1,
+     "Meanwhile, robotic exploration is already pressing ahead. Japan launched a mission to retu"
+    ],
+    [
+     143.0,
+     "But we have to look at the catch. Operating an active nuclear fission reactor millions of "
+    ],
+    [
+     152.4,
+     "In the vacuum of space, you cannot simply dump reactor heat into air or water. Every kilow"
+    ],
+    [
+     163.4,
+     "That requires massive, delicate radiator panels and heavy radiation shielding that eat rig"
+    ],
+    [
+     171.1,
+     "Even with those hurdles, SR-1 Freedom is designed to prove that nuclear power can survive "
+    ],
+    [
+     180.4,
+     "Shorter flight times mean safer astronauts, heavier robotic gear, and reliable power grids"
+    ],
+    [
+     190.1,
+     "For our Tomorrowly hype meter, we rate SR-1 Freedom an eight out of ten because the physic"
+    ],
+    [
+     199.3,
+     "And for the Tomorrow Test: will nuclear spacecraft change your everyday life in the next f"
+    ],
+    [
+     210.5,
+     "By 2040, fission power will definitively answer our opening question—transforming from a d"
+    ],
+    [
+     220.1,
+     "Would you personally board a nuclear-powered spacecraft to Mars, or would you wait for che"
+    ]
+   ],
+   "format": "deep dive",
+   "why": "Space news and NASA missions consistently pull millions of views on YouTube (e.g., 'The Lid NASA Couldn’t Open' with 4.7M views and recent space doc shorts exceeding 1M views). This fresh story from the past week has low competition among major deep-dive channels, allowing us to explain complex nuclear space tech simply with abundant NASA public domain visuals."
   }
  ],
  "used_media": [
@@ -815,6 +921,35 @@
   "pixabay-v-57993",
   "pixabay-v-183448",
   "pixabay-v-47743",
-  "pixabay-v-1110"
+  "pixabay-v-1110",
+  "pixabay-v-184344",
+  "pixabay-v-149029",
+  "pixabay-v-203",
+  "pixabay-v-186363",
+  "wm-187237898",
+  "pixabay-v-8",
+  "pixabay-v-237",
+  "nasa-v-jsc2025m000169_Artemis_II_Mission-Map",
+  "pixabay-v-228976",
+  "pixabay-v-132347",
+  "pixabay-v-226200",
+  "nasa-v-Dart Propulsion_V2",
+  "nasa-v-PPE-NASA ARTEMIS PRIMES_High_",
+  "pixabay-v-279606",
+  "pixabay-v-138113",
+  "pixabay-v-5",
+  "pixabay-v-225171",
+  "nasa-v-GSFC_20141015_ATLAS_m11709_Dolly_Selects",
+  "nasa-v-GSFC_20120614_GPM_m10999_Cleanroom",
+  "nasa-v-ksc_020105_why_jpl",
+  "pixabay-v-126412",
+  "nasa-v-JPL-20230919-PSYCHEf-0001-Behind the Spacecraft Luis Dominguez Psyche English",
+  "pixabay-v-65941",
+  "wm-187237898",
+  "pixabay-v-186200",
+  "pixabay-v-186199",
+  "nasa-v-JPL-20230424-CLIPPRf-0001-Spacecraft Makers Episode 01_2160p",
+  "pixabay-v-186200",
+  "pixabay-v-150605"
  ]
 }
