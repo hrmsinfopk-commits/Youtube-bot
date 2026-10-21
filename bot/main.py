@@ -139,7 +139,7 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
     OUT.mkdir(exist_ok=True)
     rng = random.Random()
 
-    credits, concept_scenes = [], []
+    credits, concept_scenes, footage_sources = [], [], []
     if offline:
         script = _offline_script(kind)
         vset = {"voice": "offline", "rate": "+0%", "pitch": "+0Hz"}
@@ -237,6 +237,10 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                     history["used_media"].append(it["id"])
                     if it.get("credit"):
                         credits.append(it["credit"])
+                    src_name = {"nasa": "NASA", "pexels": "Pexels", "pixabay": "Pixabay", "wm": "Wikimedia Commons",
+                                "ov": "Openverse"}.get(it["id"].split("-")[0])
+                    if src_name and src_name not in footage_sources:
+                        footage_sources.append(src_name)
                 except Exception as e:  # noqa: BLE001
                     log("Download failed:", str(e)[:100])
             if not got:  # reuse previous scene's footage
@@ -271,6 +275,10 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
     if kind == "short" and "#shorts" not in title.lower():
         title = f"{title[:88]} #shorts"
     desc = build_description(cfg, kind, script, chap, history)
+    if footage_sources:
+        desc = desc.replace("Footage: Pexels / Pixabay", "Footage: " + ", ".join(footage_sources))
+    elif any(sc.get("graphic") for sc in script.get("scenes", [])):
+        desc = desc.replace("Footage: Pexels / Pixabay\n\n", "").replace("Footage: Pexels / Pixabay", "")
     if credits:
         desc += "\n\nImage credits: " + "; ".join(dict.fromkeys(credits))[:900]
     if concept_scenes:
