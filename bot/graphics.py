@@ -210,9 +210,9 @@ def _hype_meter(g, W, H, t, short):
     except (TypeError, ValueError):
         val = 5
     tf = _font(int(W * (0.09 if short else 0.055)))
-    cy = H * (0.36 if short else 0.58)
-    _center_text(d, W / 2, H * (0.08 if short else 0.10), "HYPE METER", tf, WHITE)
-    R = W * (0.36 if short else 0.22)
+    cy = H * (0.36 if short else 0.50)      # keep the verdict above the captions
+    _center_text(d, W / 2, H * (0.08 if short else 0.08), "HYPE METER", tf, WHITE)
+    R = W * (0.36 if short else 0.18)
     cx = W / 2
     for i in range(10):   # 10 coloured segments from red (hype) to green (real)
         a0, a1 = 180 + i * 18 + 1, 180 + (i + 1) * 18 - 1
