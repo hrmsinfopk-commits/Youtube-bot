@@ -16,8 +16,8 @@ shorts:
 
 long:
   per_run: 1
-  target_minutes: 9                    # 8+ minute = beech mein bhi ads (mid-roll) lag sakte hain
-  formats: ["weekly roundup", "deep dive"]   # baari baari: hafte ki top khabrein / ek khabar ki poori kahani
+  target_minutes: 3.5                  # 3-4 minute: ek topic, shuru se aakhir tak ek kahani (baad mein data dekh kar barhayenge)
+  formats: ["deep dive"]               # har long video ek hi topic ki poori kahani
 
 upload:
   enabled: true                        # false = sirf video banegi, upload nahi (GitHub se download kar lein)

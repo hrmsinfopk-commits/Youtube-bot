@@ -200,20 +200,23 @@ def write_script(cfg, topic, kind, style, brief=None):
                  "- One idea only. Every line must add something new. No intro, no 'subscribe' at the start.")
     else:
         mins = cfg["long"]["target_minutes"]
-        length = f"about {int(mins * 60 * _wps(cfg))} spoken words total ({mins} minutes), 35-60 scenes"
-        fmt = (brief or {}).get("long_format", "deep dive")
-        if fmt == "weekly roundup":
-            shape = ("- FORMAT: weekly roundup of the 5 biggest stories in the fact sheet, counting down from #5 to #1 (the biggest).\n"
-                     "- Cold open teasing #1 in the first 15 seconds, then go through each story: what happened, why it matters, what's next.")
-        else:
-            shape = ("- FORMAT: deep dive on ONE story: cold open with the most surprising fact, then context/background, "
-                     "how it works, who is behind it, problems and doubts, what happens next, and what it means for ordinary people.")
-        extra = (shape + "\n"
-                 "- 4-7 sections, each ending with a mini cliffhanger. Put a 2-5 word chapter name on the first scene of each section in 'chapter'; other scenes \"\".\n"
-                 "- At ~40% and ~70% add a pattern interrupt (surprising question or fact) to keep retention high.\n"
-                 "- Open a big question in the first 20 seconds and only fully answer it in the last section (open loop).\n"
-                 "- Mark the 3-6 biggest twist/answer moments as reveal: true.\n"
-                 "- End with a short outro inviting people to comment and to watch the next video; no begging.")
+        length = f"about {int(mins * 60 * _wps(cfg))} spoken words total ({mins} minutes), 18-30 scenes"
+        extra = (
+            "- ONE story, ONE central question, told from start to end. Every scene must move the viewer closer to the answer;\n"
+            "  if a line does not connect to the central question, cut it. No lists of unrelated facts.\n"
+            "- STORY SPINE (with approximate share of the video):\n"
+            "  1. HOOK (first 10-15 s): the most surprising concrete fact + the central question + why the viewer should care.\n"
+            "  2. CONTEXT (~15%): the problem or situation before this news, in simple everyday terms.\n"
+            "  3. HOW IT WORKS (~25%): explain the key idea with one clear everyday analogy; show, don't lecture.\n"
+            "  4. THE PEOPLE/STAKES (~15%): who is doing it, what they risk, a concrete number or moment.\n"
+            "  5. THE TWIST (~15%): 'but here's the catch...' - the real limitation, doubt, cost or open problem (be honest).\n"
+            "  6. PAYOFF (~20%): answer the central question clearly, then what it means for ordinary people in the next years.\n"
+            "  7. END (last 10 s): one short sentence that calls back to the hook, then ONE opinion question for the comments. No outro, no begging.\n"
+            "- Each part ends with a one-line bridge that makes the viewer want the next part (a small open question).\n"
+            "- Escalate: the most impressive fact goes late, not at the start (except the hook).\n"
+            "- Change rhythm every 30-40 s: a question to the viewer, a big on_screen number, a quick comparison, or a reveal.\n"
+            "- Put a 2-4 word chapter name on the first scene of each of the 7 parts in 'chapter'; other scenes \"\".\n"
+            "- Mark the 2-4 biggest reveal moments as reveal: true.")
 
     facts = ""
     if brief and brief.get("facts"):
@@ -279,7 +282,35 @@ Return ONLY JSON:
    {{"text": "narration for this scene", "caption": "{'same as text' if en else 'same narration in Roman Urdu (Latin letters)'}", "keywords": ["specific", "medium", "general"], "image": "what we see", "sound": "", "subject": "", "on_screen": "", "pace": "normal", "reveal": false, "chapter": ""}}
  ]
 }}"""
-    return _finish(_ask_script(cfg, prompt, kind, 1.0), topic, style)
+    draft = _ask_script(cfg, prompt, kind, 1.0)
+    if kind == "long":
+        draft = _edit_long(cfg, draft, topic)
+    return _finish(draft, topic, style)
+
+
+def _edit_long(cfg, draft, topic):
+    """Second pass by a strict editor: one clear thread from hook to payoff, no random lines, no boring stretches."""
+    import json as _json
+    prompt = f"""You are the head editor of a top science & tech YouTube channel. Improve this {cfg['long']['target_minutes']}-minute script about
+"{topic}" so a curious viewer watches until the end. Draft JSON:
+{_json.dumps(draft, ensure_ascii=False)}
+
+Check and fix:
+- Is there ONE central question stated in the first 15 seconds and clearly answered at the end? If not, add/fix it.
+- Does every scene connect to that question and follow logically from the previous one? Rewrite or cut lines that feel random.
+- Are there boring stretches (more than ~35 s without a question, surprise, number or reveal)? Fix them.
+- Is the most impressive fact saved for late in the video? Is there an honest "catch"? Is the ending short and does it call back to the hook?
+- Keep facts exactly as true as in the draft (do not invent numbers). Keep spoken words within +-10% of the draft length.
+- Keep the same JSON structure and all fields (text, caption = same as text, keywords, image, sound, subject, on_screen, pace, reveal, chapter).
+Return ONLY the improved JSON."""
+    try:
+        better = ask(cfg, prompt, json_mode=True, temperature=0.7)
+        if len([sc for sc in better.get("scenes", []) if sc.get("text")]) >= 8 and _words(better) >= 0.75 * _words(draft):
+            log(f"Long script edited for flow ({_words(draft)} -> {_words(better)} words)")
+            return better
+    except Exception as e:  # noqa: BLE001
+        log("Long-script editor failed, using draft:", str(e)[:120])
+    return draft
 
 
 def _edit_story(cfg, draft, kind):
