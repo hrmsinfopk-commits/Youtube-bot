@@ -633,6 +633,116 @@
    ],
    "format": "deep dive",
    "why": "Space news and NASA missions consistently pull millions of views on YouTube (e.g., 'The Lid NASA Couldn’t Open' with 4.7M views and recent space doc shorts exceeding 1M views). This fresh story from the past week has low competition among major deep-dive channels, allowing us to explain complex nuclear space tech simply with abundant NASA public domain visuals."
+  },
+  {
+   "date": "2026-10-21 14:34",
+   "type": "long",
+   "title": "Inside the US Navy's New AI Ghost Fleet",
+   "topic": "Inside the US Navy's New AI Ghost Fleet - While traditional naval warfare relies on multi-billion-dollar supercarriers that take a decade to build, the US Navy is rapidly quadrupling funding for an autonomous 'Ghost Fleet.' We break down how AI captains navigate open oceans without human intervention, how autonomous drone swarms coordinate in GPS-denied environments, and the brutal engineering challenge of keeping complex warship machinery running at sea without a maintenance crew.",
+   "style": "Myth vs fact: what people assume vs what is actually true",
+   "youtube_id": null,
+   "voice": "Charon",
+   "seconds": 180.1,
+   "scene_times": [
+    [
+     0.0,
+     "Can an artificial intelligence captain really navigate open oceans without a single human "
+    ],
+    [
+     7.5,
+     "Funding for robotic surface and subsurface vessels has quadrupled, and the strategy is cha"
+    ],
+    [
+     14.4,
+     "A multi-billion-dollar supercarrier takes a decade to build, but the US Navy is quickly sh"
+    ],
+    [
+     21.1,
+     "To understand this massive pivot, we have to look at the strategic competition in the Indo"
+    ],
+    [
+     27.9,
+     "China has built the world's largest naval surface fleet by total hull count."
+    ],
+    [
+     32.7,
+     "Concentrating vulnerability in a handful of thirteen-billion-dollar supercarriers is no lo"
+    ],
+    [
+     40.9,
+     "The Pentagon's solution is Distributed Maritime Operations, spreading combat power across "
+    ],
+    [
+     46.4,
+     "And the military launched Task Force Easy to speed up frontline drone technology developme"
+    ],
+    [
+     54.3,
+     "So how do these robotic vessels actually drive themselves across thousands of miles of ope"
+    ],
+    [
+     59.6,
+     "Programs like Ghost Fleet Overlord, including vessels like Sea Hunter, Mariner, and Ranger"
+    ],
+    [
+     67.6,
+     "To share civilian sea lanes safely, the AI navigation stack must follow strict maritime ru"
+    ],
+    [
+     75.6,
+     "That means automated fusion of radar, LiDAR, and computer vision cameras constantly scanni"
+    ],
+    [
+     81.9,
+     "When satellite links and GPS signals get jammed in electronic warfare zones, these robots "
+    ],
+    [
+     89.8,
+     "And it is not just surface vessels. Underwater drones like the Boeing Orca XLUUV handle lo"
+    ],
+    [
+     98.6,
+     "Similar autonomous submersibles, like Australia's Ghost Shark, are designed to carry advan"
+    ],
+    [
+     105.9,
+     "Even with all this autonomy, here is the catch: mechanical reliability remains a brutal en"
+    ],
+    [
+     112.8,
+     "Marine hardware faces relentless saltwater corrosion, biofouling, and engine wear that usu"
+    ],
+    [
+     120.4,
+     "Let's do the math on this maintenance problem. Imagine a fleet of fifty robot ships deploy"
+    ],
+    [
+     127.5,
+     "That is three thousand cumulative operating days where a single clogged fuel filter or blo"
+    ],
+    [
+     138.3,
+     "And what about weapons? Under current Pentagon policy, any lethal weapon release strictly "
+    ],
+    [
+     146.7,
+     "Autonomous fleets will not replace sailors tomorrow, but they are rapidly redefining how n"
+    ],
+    [
+     154.8,
+     "The hype meter score for this autonomous naval shift is a solid eight out of ten, because "
+    ],
+    [
+     164.6,
+     "Will this change your everyday life in the next five years? Not yet, because these robotic"
+    ],
+    [
+     172.2,
+     "These autonomous ghost ships are patrolling the waves, answering whether AI can truly sail"
+    ]
+   ],
+   "format": "deep dive",
+   "why": "Military technology and autonomous defense videos are pulling massive viewership on YouTube (such as WSJ's weapon breakdown hitting over 872,000 views and drone combat tech topping 878,000 views in just a few days). This story is breaking this week as the US Navy quadruples its unmanned contracts, giving Tomorrowly an open lane to explain the technical reality of robotic naval warfare using high-quality, public-domain military footage before major tech channels produce deep dives."
   }
  ],
  "used_media": [
@@ -950,6 +1060,25 @@
   "pixabay-v-186199",
   "nasa-v-JPL-20230424-CLIPPRf-0001-Spacecraft Makers Episode 01_2160p",
   "pixabay-v-186200",
-  "pixabay-v-150605"
+  "pixabay-v-150605",
+  "pixabay-v-281627",
+  "pixabay-v-281652",
+  "pixabay-v-5194",
+  "pixabay-v-299916",
+  "pixabay-v-281627",
+  "pixabay-v-2420",
+  "pixabay-v-1058",
+  "wm-154824897",
+  "pixabay-v-1103",
+  "pixabay-v-2420",
+  "pixabay-v-47217",
+  "wm-156388232",
+  "pixabay-v-2420",
+  "pixabay-v-5394",
+  "pixabay-v-32742",
+  "pixabay-v-42057",
+  "pixabay-v-118838",
+  "pixabay-v-1236",
+  "pixabay-v-304019"
  ]
 }

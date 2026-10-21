@@ -1,69 +1,36 @@
-[13:32:02] Channel: Tomorrowly (future, mode=facts)
-[13:32:14] News headlines collected: 169
-[13:32:19] YouTube videos analysed: 74
-[13:32:20] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[13:32:21] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[13:32:47] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[13:32:48] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[13:33:14] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[13:33:14] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[13:33:44] Gemini OK (gemini-flash-lite-latest)
-[13:33:45] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[13:33:46] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[13:34:21] Gemini OK (gemini-3.8-flash)
-[13:34:21] Trend topic: NASA's New Nuclear-Powered Spaceship to Mars | why: Space news and NASA missions consistently pull millions of views on YouTube (e.g., 'The Lid NASA Couldn’t Open' with 4.7M views and recent space doc shorts exceeding 1M views). This fresh story from the past week has low competition among major deep-dive channels, allowing us to explain complex nuclear space tech simply with abundant NASA public domain visuals.
-[13:35:13] Gemini OK (gemini-3.8-flash)
-[13:35:13] Script length: 531 words
-[13:35:13] Uniqueness: 100% unique vs previous scripts
-[13:35:14] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[13:35:14] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[13:35:40] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[13:35:40] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[13:36:11] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[13:36:12] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[13:36:36] Gemini OK (gemini-flash-lite-latest)
-[13:36:36] Long script edited for flow (531 -> 536 words)
-[13:36:36] Script ready: NASA's New Nuclear Spaceship: How SR-1 Freedom Changes Mars Travel (23 scenes)
-[13:36:36] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[13:36:57] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[13:37:20] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[13:37:42] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[13:37:56] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[13:38:29] Captions aligned to the voice (548 words)
-[13:39:09] Own graphics: 3
-[13:41:57] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[13:42:26] Gemini OK (gemini-flash-latest)
-[13:42:26] Footage check: kept 32 fitting clips, 6 scenes had nothing fitting
-[13:42:28] Download failed: 429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/common
-[13:42:32] Download failed: file too big (290 MB)
-[13:42:40] Download failed: file too big (473 MB)
-[13:42:50] Image HTTP 503 (try 1)
-[13:43:00] Image HTTP 402 (try 2)
-[13:43:16] Image HTTP 402 (try 3)
-[13:43:28] Download failed: file too big (1721 MB)
-[13:43:29] Download failed: file too big (116 MB)
-[13:43:38] Download failed: 429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/common
-[13:43:49] Image HTTP 402 (try 1)
-[13:44:04] Image HTTP 402 (try 2)
-[13:44:25] Image HTTP 503 (try 3)
-[13:44:36] Download failed: file too big (446 MB)
-[13:44:39] Footage ready for 23 scenes
-[13:44:40] Freesound CC0 sound 'rocket launch': Orbital Rocket Exhaust Close (id 617902)
-[13:44:43] Freesound CC0 sound 'electric motor': DeWalt Drill_1.wav (id 566206)
-[13:44:44] Freesound CC0 sound 'computer beep': as_ab_al_computer_noise_7_16bit.wav (id 543053)
-[13:45:43] 54 clips rendered
-[13:45:43] Final render started
-[13:47:22] Freesound CC0 music: epic score best one ever by kris klavenes 18.08.17.mp3 (id 399846)
-[13:49:13] Video ready: 20261021_1344_future_long.mp4 (227.2s)
-[13:49:15] Upload 9%
-[13:49:15] Upload 18%
-[13:49:15] Upload 28%
-[13:49:15] Upload 37%
-[13:49:16] Upload 46%
-[13:49:16] Upload 56%
-[13:49:16] Upload 65%
-[13:49:16] Upload 74%
-[13:49:17] Upload 84%
-[13:49:17] Upload 93%
-[13:49:17] Uploaded: https://youtu.be/BZuC5VJ6kDM
-[13:49:18] Thumbnail set nahi hua (channel phone-verify karein): <HttpError 403 when requesting https://youtube.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=BZuC5VJ6kDM&alt=json&uploadType=media returned 
+[14:23:14] Channel: Tomorrowly (future, mode=facts)
+[14:23:28] News headlines collected: 168
+[14:23:31] YouTube videos analysed: 73
+[14:24:15] Gemini OK (gemini-3.8-flash)
+[14:24:16] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:24:16] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:24:42] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:24:42] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:25:08] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:25:08] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:25:20] Gemini OK (gemini-flash-lite-latest)
+[14:25:20] Trend topic: Inside the US Navy's New AI Ghost Fleet | why: Military technology and autonomous defense videos are pulling massive viewership on YouTube (such as WSJ's weapon breakdown hitting over 872,000 views and drone combat tech topping 878,000 views in just a few days). This story is breaking this week as the US Navy quadruples its unmanned contracts, giving Tomorrowly an open lane to explain the technical reality of robotic naval warfare using high-quality, public-domain military footage before major tech channels produce deep dives.
+[14:25:20] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:25:20] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:25:45] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:25:45] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:26:11] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:26:31] Gemini OK (gemini-flash-lite-latest)
+[14:26:31] Script length: 430 words
+[14:26:31] Uniqueness: 97% unique vs previous scripts
+[14:26:54] Gemini OK (gemini-flash-lite-latest)
+[14:26:54] Long script edited for flow (430 -> 428 words)
+[14:26:54] Script ready: Inside the US Navy's New AI Ghost Fleet (24 scenes)
+[14:26:54] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[14:27:22] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[14:27:43] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[14:28:02] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[14:28:34] Captions aligned to the voice (443 words)
+[14:29:53] Own graphics: 5
+[14:31:45] Gemini OK (gemini-flash-lite-latest)
+[14:31:45] Footage check: kept 19 fitting clips, 5 scenes had nothing fitting
+[14:31:48] Footage ready for 24 scenes
+[14:32:31] 44 clips rendered
+[14:32:31] Final render started
+[14:33:30] Freesound CC0 music: Dark Moody Rhythmic Orchestral Ambient Music (Obsidian) (id 789404)
+[14:34:56] Video ready: 20261021_1431_future_long.mp4 (180.1s)
