@@ -22,7 +22,7 @@ long:
 upload:
   enabled: true                        # false = sirf video banegi, upload nahi (GitHub se download kar lein)
   privacy: "public"                    # public | private (private = pehle aap dekhen, phir khud public karen)
-  long_privacy: "private"              # naye andaaz ki pehli long video: aap dekh kar Studio se public karein (baad mein "public" kar denge)
+  long_privacy: "public"               # long videos bhi seedhi public (review ke liye "private" kar sakte hain)
   category_id: "28"                    # 28 = Science & Technology
   made_for_kids: false
   link_long_video_in_shorts: true      # Shorts ki description mein latest long video ka link
