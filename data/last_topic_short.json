@@ -1,87 +1,83 @@
 {
- "topic": "How 'Weaponized Light' Lasers Are Vaporizing Drone Swarms",
- "angle": "Examine the extreme cost-asymmetry of modern warfare—why militaries are ditching million-dollar missiles to swat $500 plastic drones, and how focused directed-energy lasers melt incoming threats out of the sky for pennies per shot.",
- "why": "Anti-drone technology shorts have exploded in viewership over the past week (e.g., recent anti-drone tech videos racking up over 1 million views), proving high audience appetite for next-gen defense explainers. This fresh directed-energy breakthrough provides a compelling physics and cost breakdown that hasn't been saturated on Shorts yet.",
+ "topic": "How Do Submarines Make Unlimited Air Underwater?",
+ "angle": "Over 140 sailors can live locked in an airtight steel tube deep underwater for four months without ever suffocating, because the submarine continuously synthesizes breathable air from the ocean.",
+ "why": "Explainer videos on extreme closed-system engineering regularly pull tens of millions of views (e.g. 18.5M on underwater tunnel engineering, 16.6M on jet engine mechanics, and 35.1M on underwater hydrostatic pressure). This question taps into a universal claustrophobic mystery that nearly everyone has wondered about, answered through clean, step-by-step physics and chemistry.",
  "keywords": [
-  "military laser weapons",
-  "anti drone technology",
-  "weaponized light",
-  "drone defense",
-  "directed energy weapons",
-  "laser air defense",
-  "counter drone system",
-  "new military technology",
-  "future weapons",
-  "high energy laser",
-  "drone swarm defense",
-  "military technology explained"
+  "how submarines make oxygen",
+  "how do nuclear submarines get air",
+  "submarine life support system",
+  "where do submarines get oxygen",
+  "how do sailors breathe underwater",
+  "submarine electrolysis explained",
+  "submarine amine scrubber",
+  "submarine oxygen candle",
+  "how long can a submarine stay submerged",
+  "nuclear submarine engineering",
+  "how submarines recycle air",
+  "submarine air generation system"
  ],
  "facts": [
-  "Cheap autonomous drones and loitering munitions costing as little as $500 to $2,000 have fundamentally upended modern battlefield air defense.",
-  "Traditional base air defenses rely on interceptor missiles that often cost between $300,000 and $2 million each, creating an economically unsustainable defense model against swarms.",
-  "Defense contractor KBR has rolled out a new base defense technology centered on high-energy lasers termed 'weaponized light' specifically designed to counter drone threats.",
-  "Directed-energy systems fire concentrated photons that travel at the speed of light (approximately 300,000 kilometers per second), completely eliminating the need to calculate target lead or bullet drop.",
-  "The laser delivers intense thermal energy onto a tight focal point, melting through drone composite hulls, burning lithium batteries, or severing aerodynamic control surfaces in 1 to 3 seconds.",
-  "Targeting optics on high-energy laser systems can also blind or melt the optical and infrared cameras of incoming drones before they reach visual range.",
-  "A single shot from a directed-energy laser costs roughly $1 to $10 in electrical power, compared to the astronomical cost of kinetic munitions.",
-  "Unlike missile batteries with limited launch tubes, a laser weapon has a virtually 'infinite magazine,' limited only by generator fuel and onboard cooling capacity.",
-  "The U.S. military announced the creation of Task Force Easy to accelerate the testing, adaptation, and field deployment of counter-drone technologies.",
-  "Environmental conditions like heavy rain, dense fog, and battlefield smoke still pose physical challenges by scattering laser energy before it hits targets.",
-  "Engineers are actively developing advanced adaptive optics and thermal management systems to ensure laser weapons can sustain rapid, multi-target engagements during mass swarm attacks."
+  "Modern nuclear submarines routinely stay submerged hundreds of meters deep for 90 to 120 consecutive days without surfacing.",
+  "A typical military submarine crew of 130 to 160 sailors consumes roughly 20 to 25 cubic meters of pure oxygen every 24 hours.",
+  "Submarines do not carry thousands of heavy compressed oxygen tanks because high-pressure tanks take up massive cargo space and present severe explosion risks.",
+  "Instead, the submarine manufactures fresh oxygen continuously on demand using an onboard life-support system called an Oxygen Generator Plant (OGP).",
+  "Seawater is brought into the hull and purified through multi-stage distillation or reverse osmosis to remove all salts and impurities, yielding deionized water.",
+  "The ultra-pure water is pumped into an electrolysis unit powered by the vessel's nuclear reactor, which provides virtually unlimited electrical power.",
+  "High-amperage electrical current passes between electrodes in the water, splitting liquid H2O molecules into gaseous oxygen (O2) and hydrogen (H2).",
+  "The pure oxygen gas is regulated and pumped directly into the submarine's central air ducts to maintain atmospheric oxygen between 18% and 21%.",
+  "Hydrogen gas is highly explosive, so it is immediately compressed and pumped out through the hull to dissolve safely into the surrounding ocean.",
+  "Producing oxygen is only half the challenge; exhaled carbon dioxide (CO2) is toxic and will kill the crew within days if not continuously removed.",
+  "To remove carbon dioxide, the interior air is blown through liquid amine scrubbers containing monoethanolamine (MEA), which chemically binds to CO2 at room temperature.",
+  "Once saturated, the amine solution is heated inside a closed boiler, causing the amine to release the trapped CO2 gas, which is pumped overboard into the sea.",
+  "After cooling down, the amine liquid is recirculated to capture more CO2 in a continuous, indefinitely reusable closed loop.",
+  "Catalytic burner units running at over 300 degrees Celsius burn off trace contaminants like carbon monoxide from cooking and hydrogen gas off-gassing from lead-acid backup batteries.",
+  "For power-failure emergencies where electrolysis stops, submarines carry solid chemical 'oxygen candles' made of sodium chlorate and iron powder.",
+  "When struck with a mechanical primer like a road flare, an oxygen candle burns thermally, producing enough breathable oxygen for dozens of crew members for an hour.",
+  "Because reactor fuel lasts up to 25 years and air and freshwater are manufactured indefinitely, a nuclear submarine's only true limit to staying underwater is the amount of food it can physically carry."
  ],
  "long_format": null,
- "sources": [
-  {
-   "title": "‘Weaponized light’: KBR’s new base defense technology pits lasers against drones",
-   "source": "Defense News",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMXNDbjlHN3V5cGROdi1zeWVPRzdGZzQzMl9RVWVXYjJYVTZ3OU1adzFKSV9TN3BQeVNaOHdXQl9BS3VmTmo3VE1MY0xXUVUzaXF5dUw1WUJOVHBmZ0RvZ0NzLWlnVWlFZzh1LWNjRHUtSWVTX2cxMlNGVGNTZUtHNEE0aE9pWXVhTUItaVd1ejNRX0hGVERtSk1EdDFlSnBiTHdNOHN6LVdubURKclF4OUJOZWxJMU1zNUl2dkpuNDFmcTA0VjlBaGFMWk1vSE5P?oc=5"
-  },
-  {
-   "title": "U.S. military debuts new Task Force Easy to enable drone tech ‘adaptation dominance’",
-   "source": "DefenseScoop",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1JRkpSYUNtckYzeGpzMElqRFA5blMtX0tYNWJZU3B4LW9wVWFvQzMxTE1LcktQQXg3S1d5alBNMmh3NXNwMTQ2dDZ2ZzlYODRhSFpqcWlqNk5xMG1uemMwcGUtcXA3T0NHbVByZXlWNlRWNDZMeTNFejhQeDI?oc=5"
-  }
- ],
+ "format": "big question",
+ "sources": [],
  "youtube_top": [
   {
-   "title": "HOW TO MAKE A HOMEMADE PROJECTOR 😱😱",
-   "views": 17898641
+   "title": "Bruno Mars - I Just Might [Official Music Video]",
+   "views": 177373055
   },
   {
-   "title": "Why Cats Rub Against Your Laptop 🤔",
-   "views": 12647114
+   "title": "This is What Happens When A Hockey Season Ends 🤯",
+   "views": 158529386
   },
   {
-   "title": "yang dapat robot mobil gg si #parfum #velixir",
-   "views": 12285256
+   "title": "You Can't Leave | Official Trailer | Only In Theaters October 16th",
+   "views": 108445827
   },
   {
-   "title": "The NEW Tesla Roadster: My Honest Reaction",
-   "views": 11755851
+   "title": "Ariana Grande - hate that i made you love me (official music video)",
+   "views": 105432215
   },
   {
-   "title": "I thought the “Intel inside” sticker WAS the chip..",
-   "views": 10471352
+   "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
+   "views": 100940774
   },
   {
-   "title": "Flying Car Real hai 🥲",
-   "views": 10359253
+   "title": "Why Can't We Print Unlimited Money 😱",
+   "views": 74595310
   },
   {
-   "title": "NEW TESLA ROADSTER - It Can Fly!!! (SpaceX Technology)",
-   "views": 10172369
+   "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
+   "views": 73187918
   },
   {
-   "title": "Episode 5 - Sheela Tez Hai 🧠🤓 | Kaamwali Bai vs AI Robot 🤖🧹 |#shorts #shortsbreakplus",
-   "views": 9964049
+   "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
+   "views": 72477701
   },
   {
-   "title": "Tesla's Flying Roadster Revealed: Everything That Happened in 10 Minutes",
-   "views": 9788968
+   "title": "How These Energy Saving Stairs Work 😮",
+   "views": 72168338
   },
   {
-   "title": "🥶🔥 \"there will never be flying cars\"",
-   "views": 8915830
+   "title": "The Closest Thing We Have to Alien Technology",
+   "views": 64016505
   }
  ]
 }

@@ -206,6 +206,44 @@
    "style": "",
    "youtube_id": "sWFi6T_3Kf8",
    "synced": true
+  },
+  {
+   "date": "2026-10-22 14:47",
+   "type": "short",
+   "title": "How Nuclear Submarines Make Unlimited Air Underwater #shorts",
+   "topic": "How Do Submarines Make Unlimited Air Underwater? - Over 140 sailors can live locked in an airtight steel tube deep underwater for four months without ever suffocating, because the submarine continuously synthesizes breathable air from the ocean.",
+   "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
+   "youtube_id": "RFzD-PyILsQ",
+   "voice": "Charon",
+   "seconds": 44.6,
+   "scene_times": [
+    [
+     0.0,
+     "A submarine crew of over a hundred sailors can stay submerged for four months without ever"
+    ],
+    [
+     7.4,
+     "Yet they don't carry massive oxygen tanks. Tanks waste precious space and create severe ex"
+    ],
+    [
+     14.5,
+     "Instead, nuclear electricity splits purified seawater, separating it into breathable oxyge"
+    ],
+    [
+     23.1,
+     "The hydrogen gets dumped overboard, while reusable liquid scrubbers trap and boil away tox"
+    ],
+    [
+     31.3,
+     "Because fresh air is manufactured on demand, the submarine's only true limit underwater is"
+    ],
+    [
+     37.8,
+     "Hype meter score: a solid ten out of ten. Send this to a friend who hates tight spaces!"
+    ]
+   ],
+   "format": "big question",
+   "why": "Explainer videos on extreme closed-system engineering regularly pull tens of millions of views (e.g. 18.5M on underwater tunnel engineering, 16.6M on jet engine mechanics, and 35.1M on underwater hydrostatic pressure). This question taps into a universal claustrophobic mystery that nearly everyone has wondered about, answered through clean, step-by-step physics and chemistry."
   }
  ],
  "used_media": [
@@ -542,6 +580,13 @@
   "pixabay-v-42057",
   "pixabay-v-118838",
   "pixabay-v-1236",
-  "pixabay-v-304019"
+  "pixabay-v-304019",
+  "pixabay-v-16394",
+  "pixabay-v-308835",
+  "pixabay-v-154540",
+  "pixabay-v-200994",
+  "pixabay-v-154540",
+  "nasa-v-GSFC_20170517_VanAllen_m12591_Bubble",
+  "nasa-v-GSFC_20181011_SeaIce_m13089_Thinning"
  ]
 }

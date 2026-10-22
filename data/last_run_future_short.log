@@ -1,29 +1,31 @@
-[18:46:57] Channel: Tomorrowly (future, mode=facts)
-[18:47:10] News headlines collected: 163
-[18:47:14] YouTube videos analysed: 74
-[18:47:47] Gemini OK (gemini-3.8-flash)
-[18:47:47] Trend topic: How 'Weaponized Light' Lasers Are Vaporizing Drone Swarms | why: Anti-drone technology shorts have exploded in viewership over the past week (e.g., recent anti-drone tech videos racking up over 1 million views), proving high audience appetite for next-gen defense explainers. This fresh directed-energy breakthrough provides a compelling physics and cost breakdown that hasn't been saturated on Shorts yet.
-[18:47:48] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[18:47:48] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[18:48:13] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[18:48:13] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[18:48:49] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[18:48:49] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[18:48:53] Gemini OK (gemini-flash-lite-latest)
-[18:48:53] Script length: 99 words
-[18:48:53] Uniqueness: 100% unique vs previous scripts
-[18:48:53] Script ready: How Weaponized Light Lasers Vaporize Drone Swarms (8 scenes)
-[18:48:53] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[18:49:13] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[18:49:21] Captions aligned to the voice (98 words)
-[18:49:25] Own graphics: 1
-[18:49:37] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[18:50:03] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[18:50:28] Gemini OK (gemini-flash-lite-latest)
-[18:50:28] Footage check: kept 7 fitting clips, 1 scenes had nothing fitting
-[18:51:08] Footage ready for 8 scenes
-[18:51:10] Freesound CC0 sound 'rocket launch': S18-15a Fireworks rocket launching.wav (id 675773)
-[18:51:29] 18 clips rendered
-[18:51:29] Final render started
-[18:51:59] Freesound CC0 music: Orchestral Score 1 - Mastered WITH Stereo Imaging.wav (id 621289)
-[18:52:38] Video ready: 20261021_1851_future_short.mp4 (44.4s)
+[14:33:23] Channel: Tomorrowly (future, mode=facts)
+[14:33:23] Format today: big question
+[14:33:28] YouTube videos analysed: 60
+[14:35:32] Gemini OK (gemini-3.8-flash)
+[14:35:33] Trend topic: How Do Submarines Make Unlimited Air Underwater? | why: Explainer videos on extreme closed-system engineering regularly pull tens of millions of views (e.g. 18.5M on underwater tunnel engineering, 16.6M on jet engine mechanics, and 35.1M on underwater hydrostatic pressure). This question taps into a universal claustrophobic mystery that nearly everyone has wondered about, answered through clean, step-by-step physics and chemistry.
+[14:38:19] Gemini OK (gemini-3.8-flash)
+[14:38:19] Script length: 100 words
+[14:38:19] Uniqueness: 100% unique vs previous scripts
+[14:38:19] Script ready: How Nuclear Submarines Make Unlimited Air Underwater (6 scenes)
+[14:38:19] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[14:38:35] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[14:38:44] Captions aligned to the voice (99 words)
+[14:39:05] Own graphics: 2
+[14:39:12] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:39:13] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:41:58] Gemini OK (gemini-3.8-flash)
+[14:41:58] Footage check: kept 5 fitting clips, 4 scenes had nothing fitting
+[14:42:38] Image HTTP 402 (try 1)
+[14:42:54] Image HTTP 402 (try 2)
+[14:45:40] Image error: HTTPSConnectionPool(host='image.pollinations.ai', port=443): Read timed out. (read timeout=150)
+[14:45:52] Download failed: file too big (385 MB)
+[14:45:57] Skipping clip with burned-in text: Sea Ice Agi Anew study combined satellite data
+[14:45:57] Footage ready for 6 scenes
+[14:45:59] Freesound CC0 sound 'electric motor': Drill bit falling 03.wav (id 418488)
+[14:46:00] Freesound CC0 sound 'whoosh': ARCHERY flyby 2.wav (id 394181)
+[14:46:12] 14 clips rendered
+[14:46:12] Final render started
+[14:46:51] Freesound CC0 music: Slightly Mysterious Sounding Track (id 683821)
+[14:47:24] Video ready: 20261022_1446_future_short.mp4 (44.6s)
+[14:47:25] Upload 53%
+[14:47:26] Uploaded: https://youtu.be/RFzD-PyILsQ
