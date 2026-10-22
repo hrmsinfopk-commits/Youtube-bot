@@ -75,7 +75,17 @@ def build_description(cfg, kind, script, chap, history):
     if kind == "short" and cfg["upload"].get("link_long_video_in_shorts"):
         longs = [v for v in history["videos"] if v.get("type") == "long" and v.get("youtube_id")]
         if longs:
-            parts.append(f"Poori video dekhein: https://youtu.be/{longs[-1]['youtube_id']}")
+            # same subject -> "full video"; otherwise name the latest long video so the link is clear
+            hit = trends._clash(script.get("topic", "") + " " + script.get("title", ""),
+                                [v.get("topic", "") for v in longs[-10:]])
+            lv = next((v for v in reversed(longs) if v.get("topic") == hit), None) if hit else None
+            en = cfg["channel"].get("language", "english") == "english"
+            if lv:
+                label = "Watch the full story" if en else "Poori video dekhein"
+            else:
+                lv = longs[-1]
+                label = "Our latest deep dive" if en else "Hamari nayi video"
+            parts.append(f"{label}: {lv.get('title', '').strip()}\nhttps://youtu.be/{lv['youtube_id']}")
     if chap:
         parts.append("Chapters:\n" + chap)
     if cfg["channel"].get("mode") == "stories":
