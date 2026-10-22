@@ -280,8 +280,15 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
     thumb = None
     if kind == "long":
         tag = next((sc.get("subject") for sc in script["scenes"] if sc.get("subject")), "")[:22]
+        at = 1.5
+        try:                       # the scene the writer chose as "story in one glance" (real footage only)
+            ti = int(script.get("thumbnail_scene"))
+            if 0 < ti < len(timings) and not script["scenes"][ti].get("graphic"):
+                at = timings[ti][0] + min(1.2, max(0.3, timings[ti][1] / 2))
+        except (TypeError, ValueError):
+            pass
         thumb = render.thumbnail(work / "video_noaudio.mp4", script.get("thumbnail_text") or script["title"],
-                                 OUT / f"{slug}_thumb.jpg", rng, at=1.5, tag=tag)
+                                 OUT / f"{slug}_thumb.jpg", rng, at=at, tag=tag)
 
     chap = chapters(script["scenes"], timings, total) if kind == "long" else ""
     title = script["title"].strip()
@@ -318,7 +325,7 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                               "voice": vset.get("voice"), "seconds": round(total, 1),
                               "scene_times": [[round(t0, 1), sc.get("caption", "")[:90]]
                                               for sc, (t0, _) in zip(script["scenes"], timings)],
-                              "format": (brief or {}).get("long_format") if not offline else None,
+                              "format": ((brief or {}).get("format") or "news") if not offline else None,
                               "why": (brief or {}).get("why", "") if not offline else ""})
     if not offline and do_upload:          # test runs are not remembered (their topic stays available)
         save_history(history)

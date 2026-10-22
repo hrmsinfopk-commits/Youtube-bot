@@ -13,11 +13,14 @@ channel:
 shorts:
   per_run: 1
   target_seconds: 40                   # research: 30-50 second wali Shorts sab se zyada aakhir tak dekhi jati hain
+  big_question_days: ["mon", "thu"]    # in dinon ki Short "bara sawal" (sada-bahar), baqi din trending khabar
 
 long:
   per_run: 1
   target_minutes: 3.5                  # 3-4 minute: ek topic, shuru se aakhir tak ek kahani (baad mein data dekh kar barhayenge)
-  formats: ["deep dive"]               # har long video ek hi topic ki poori kahani
+  formats_by_day:                      # din (UTC) ke hisaab se long video ki qisam
+    wed: "news"                        # Budh: trending khabar ki deep dive
+    sat: "big question"                # Hafta: sada-bahar "bara sawal" (mahino tak views laati hai)
 
 upload:
   enabled: true                        # false = sirf video banegi, upload nahi (GitHub se download kar lein)
@@ -35,6 +38,9 @@ trends:
   youtube_keywords: ["new technology", "AI news", "NASA", "space news", "future technology", "robots", "flying car", "new weapon technology"]
   region: "US"
   avoid_weapons_ratio: 0.2             # hathiyar wale topics zyada se zyada itne hisse (ads kam milte hain)
+  # "bara sawal" videos ke liye: pichhle saal ki sab se zyada dekhi gayi explainer videos
+  evergreen_keywords: ["how does it work", "why can't we", "how is it possible", "engineering explained",
+                       "how do they build", "why don't planes", "what happens if", "science explained"]
 
 gemini:
   # Free key: https://aistudio.google.com/apikey  (GitHub secret: GEMINI_API_KEY)

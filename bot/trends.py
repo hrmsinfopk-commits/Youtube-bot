@@ -104,7 +104,7 @@ def collect_news(cfg):
 
 
 # ------------------------------------------------------------------ YouTube demand
-def youtube_demand(cfg):
+def youtube_demand(cfg, keywords=None, days=7, chart=True):
     from . import upload
     if not upload.ready():
         log("YouTube login missing - trend data from news only")
@@ -115,9 +115,9 @@ def youtube_demand(cfg):
         log("YouTube API unavailable:", str(e)[:100])
         return []
     tr = cfg["trends"]
-    since = (dt.datetime.utcnow() - dt.timedelta(days=7)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    since = (dt.datetime.utcnow() - dt.timedelta(days=days)).strftime("%Y-%m-%dT%H:%M:%SZ")
     ids, src = [], {}
-    for kw in tr["youtube_keywords"]:
+    for kw in (keywords or tr["youtube_keywords"]):
         try:
             res = yt.search().list(part="id", q=kw, type="video", order="viewCount", publishedAfter=since,
                                    maxResults=8, regionCode=tr.get("region", "US"), relevanceLanguage="en").execute()
@@ -129,11 +129,15 @@ def youtube_demand(cfg):
             log(f"YouTube search failed ({kw}):", str(e)[:100])
             break
     try:
+        if not chart:
+            raise StopIteration
         chart = yt.videos().list(part="id", chart="mostPopular", regionCode=tr.get("region", "US"),
                                  videoCategoryId="28", maxResults=15).execute()
         for it in chart.get("items", []):
             ids.append(it["id"])
             src[it["id"]] = "trending: science & tech"
+    except StopIteration:
+        pass
     except Exception as e:  # noqa: BLE001
         log("Trending chart failed:", str(e)[:100])
     out = []
@@ -185,18 +189,77 @@ def _clash(topic, past):
     return None
 
 
+def todays_format(cfg, kind):
+    """'news' (trending story) or 'big question' (evergreen explainer), by weekday (UTC) from config.
+    BOT_FORMAT=news / BOT_FORMAT="big question" overrides it (for manual runs)."""
+    import os
+    import time as _t
+    forced = os.environ.get("BOT_FORMAT", "").strip().lower()
+    if forced in ("news", "big question"):
+        return forced
+    day = _t.strftime("%a", _t.gmtime()).lower()[:3]
+    if kind == "long":
+        return (cfg["long"].get("formats_by_day") or {}).get(day, "news")
+    return "big question" if day in (cfg["shorts"].get("big_question_days") or []) else "news"
+
+
+def _big_question_prompt(cfg, kind, yt, past, recent, learn_txt):
+    ch = cfg["channel"]
+    yt_txt = "\n".join(f"- \"{v['title']}\" | {v['views']:,} views | {v['published']} | {v['channel']}" for v in yt[:50]) \
+        or "(no YouTube data available)"
+    what = "a YouTube Short (one punchy idea, answerable in 40 seconds)" if kind == "short" else "a 3-4 minute explainer video"
+    return f"""You are the content strategist for the YouTube channel "{ch['name']}".
+Niche: {ch['niche']}
+Audience: {ch['audience']}
+We need {what} in our EVERGREEN "BIG QUESTION" format - not news. It must still be interesting and true in 3 years.
+
+The model to learn from: "How a Country With Zero Rivers Drinks Water" (3.8M views in 11 days). Why it works: a contradiction
+almost everyone half-knows but never thought about ("rich desert country, zero rivers"), answered with real engineering;
+everyone on earth can understand it; the thumbnail tells the story in one glance.
+
+Rules:
+- Stay inside our niche: science, engineering, space, technology, transport, energy, the future. No politics, religion, wars,
+  celebrities, health/medical advice.
+- The question must contain a contradiction, an "impossible" situation or a surprising number, and be answerable with
+  well-established, widely documented facts (no speculation presented as fact).
+- Something to SHOW: generic real footage exists (cities, machines, factories, nature, space, transport) and the mechanism can be
+  drawn as a simple step-by-step diagram.
+- Global appeal: people in the US, India, UK, Pakistan, Brazil would all be curious.
+- Prefer questions that proven explainer videos (below) show demand for - but find OUR own question, never copy a title.
+
+EXPLAINER VIDEOS WITH THE MOST VIEWS IN THE LAST YEAR (demand evidence):
+{yt_txt}
+{learn_txt}
+ALREADY MADE (do not repeat): {"; ".join(past) or "nothing yet"}
+MADE IN THE LAST FEW DAYS - choose a COMPLETELY DIFFERENT subject:
+{chr(10).join("- " + t for t in recent) or "- nothing yet"}{{banned}}
+
+Return ONLY JSON:
+{{
+ "topic": "the big question, phrased the way viewers would search it (e.g. 'How Does Dubai Make Rain')",
+ "angle": "the contradiction / surprise at its heart, in one line",
+ "news_ids": [],
+ "why": "2 sentences: demand evidence (similar explainers and their views) + why this question is irresistible",
+ "keywords": ["10-15 phrases people search for this question"],
+ "facts": ["12-25 short, well-established facts in your own words that answer the question (numbers, how it works, who/where);
+            mark estimates as estimates; nothing you are not sure about"]
+}}"""
+
+
 def find_topic(cfg, history, kind, learning=None):
-    news = collect_news(cfg)
-    if not news:
-        return None
-    yt = youtube_demand(cfg)
+    fmt = todays_format(cfg, kind)
+    log(f"Format today: {fmt}")
+    if fmt == "big question":
+        news = []
+        yt = youtube_demand(cfg, cfg["trends"].get("evergreen_keywords"), days=365, chart=False)
+    else:
+        news = collect_news(cfg)
+        if not news:
+            return None
+        yt = youtube_demand(cfg)
     past = [v.get("topic", "") for v in history["videos"]][-60:]
     recent = [v.get("topic", "") for v in history["videos"]][-14:]   # about the last week, Shorts + long
-    long_fmt = None
-    if kind == "long":
-        fmts = cfg["long"].get("formats", ["deep dive"])
-        n_long = sum(1 for v in history["videos"] if v.get("type") == "long")
-        long_fmt = fmts[n_long % len(fmts)]
+    long_fmt = fmt if kind == "long" else None
     weapons_ok = _weapon_share(history) < cfg["trends"].get("avoid_weapons_ratio", 0.2)
     random.shuffle(news)
     news_txt = "\n".join(f"[{i}] {n['title']} ({n['source']}{', ' + n['date'] if n['date'] else ''})"
@@ -242,6 +305,8 @@ Return ONLY JSON:
  "keywords": ["10-15 phrases people search/watch for this topic, taken from the YouTube titles/tags above and common search wording"],
  "facts": ["8-25 short factual points rewritten in your own words, only from the chosen headlines/summaries or well-established background knowledge; mark anything that is only announced/planned/claimed"]
 }}"""
+    if fmt == "big question":
+        prompt = _big_question_prompt(cfg, kind, yt, past, recent, learn_txt)
     banned, res = [], None
     for attempt in range(3):
         extra = ("\nREJECTED because they repeat a recent video - choose something else entirely: " + "; ".join(banned)) if banned else ""
@@ -272,6 +337,7 @@ Return ONLY JSON:
                 pass
     brief = {"topic": res.get("topic"), "angle": res.get("angle", ""), "why": res.get("why", ""),
              "keywords": res.get("keywords", []), "facts": res.get("facts", []), "long_format": long_fmt,
+             "format": fmt,
              "sources": [{"title": n["title"], "source": n["source"], "link": n["link"]} for n in used],
              "youtube_top": [{"title": v["title"], "views": v["views"]} for v in yt[:10]]}
     if not brief["topic"]:

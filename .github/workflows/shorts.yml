@@ -54,6 +54,11 @@ jobs:
           ARGS=""
           # trigger file mein 'test' likha ho to video banegi magar upload nahi hogi
           if [ "${{ github.event_name }}" = "push" ] && grep -qi test .github/trigger-short.txt; then ARGS="--no-upload"; fi
+          # trigger file mein "big question" ya "news" likha ho to us din ka format badal jata hai
+          if [ "${{ github.event_name }}" = "push" ]; then
+            if grep -qi "big question" .github/trigger-short.txt; then export BOT_FORMAT="big question";
+            elif grep -qiw "news" .github/trigger-short.txt; then export BOT_FORMAT="news"; fi
+          fi
           python -m bot.main --channel future --type short $ARGS 2>&1 | python scripts/redact.py data/last_run_future_short.log
 
       - name: Save video for download

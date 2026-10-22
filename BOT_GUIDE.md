@@ -90,3 +90,11 @@ Kisi bhi nayi Claude chat mein GitHub connect karein aur kahen:
 Saara code aur settings repo mein hain, is liye koi bhi wahin se kaam aage badha sakta hai.
 
 ⚠️ **Kabhi bhi apni keys/token chat mein paste na karein** – sirf GitHub Secrets mein.
+
+## 📰 Khabar aur ❓ Bara sawal (do qisam ki videos)
+
+- **Long videos:** Budh = trending khabar, Hafta = "bara sawal" (sada-bahar explainer, jaise "How a Country With Zero Rivers Drinks Water").
+- **Shorts:** Somvaar aur Jumeraat = "bara sawal", baqi din trending khabar.
+- Din badalne hon to `config.yaml` mein `long.formats_by_day` aur `shorts.big_question_days` badlein.
+- Titles hamesha ek ulti/hairaan karne wali baat + How/Why par bante hain; thumbnail ke liye writer woh scene chunta hai jo ek nazar mein kahani bata de.
+- Haftawar `REPORT.md` mein "Khabar vs Bara sawal" ka hisaab aata hai - 4 hafte baad jo behtar chale us ke din barha denge.

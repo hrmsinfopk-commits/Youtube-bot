@@ -236,8 +236,16 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
             "- Mark the 2-4 biggest reveal moments as reveal: true.")
 
     facts = ""
+    evergreen = bool(brief and brief.get("format") == "big question")
+    if evergreen:
+        extra += ("\n- FORMAT: EVERGREEN BIG QUESTION (not news). The whole video answers ONE question built on a contradiction"
+                  " (see the angle). Never say 'just announced', 'this week', 'recently' - it must still be true in 3 years.\n"
+                  "- Open with the contradiction in plain words (what everyone assumes vs the surprising reality), then answer it"
+                  " step by step like a detective; the most jaw-dropping number or method comes late.\n"
+                  "- Use everyday comparisons for scale (Olympic pools, football fields, a city's daily water use).")
     if brief and brief.get("facts"):
-        facts = ("\nFACT SHEET (from real news published in the last days; these are the ONLY facts you may state as true):\n"
+        facts = (("\nFACT SHEET (well-established facts; these are the ONLY specifics you may state as true):\n" if evergreen else
+                  "\nFACT SHEET (from real news published in the last days; these are the ONLY facts you may state as true):\n")
                  + "\n".join(f"- {f}" for f in brief["facts"][:40]) +
                  "\nRules for using it: explain in your OWN words - never copy sentences from it; if something is only announced,"
                  " planned or claimed, say so clearly; don't add numbers or claims that are not in the fact sheet or well-established science.\n")
@@ -319,8 +327,9 @@ Scene 1 keywords must be the single most visually stunning shot for this topic (
 
 Return ONLY JSON:
 {{
- "title": "SEO title in {title_lang}, max 70 chars, curiosity driven, no clickbait lies{' (do NOT add #shorts)' if kind == 'short' else ''}",
- "thumbnail_text": "2-4 punchy words for the thumbnail",
+ "title": "SEO title in {title_lang}, max 70 chars, built on a contradiction, a surprising number or an 'impossible' fact + How/Why/What (e.g. 'How a Country With Zero Rivers Drinks Water', 'Why This Engine Never Stops Firing'); main search phrase early; must be TRUE - no clickbait lies{' (do NOT add #shorts)' if kind == 'short' else ''}",
+ "thumbnail_text": "2-4 punchy words that ADD to the title (never repeat it): the contradiction or the stakes, e.g. ZERO RIVERS?",
+ "thumbnail_scene": "0-based index of the scene whose FOOTAGE tells the whole story in one glance (one clear subject, strong contrast, no graphic) - becomes the thumbnail picture",
  "hook_text": "2-4 word ALL-CAPS on-screen hook for the first 2 seconds, e.g. IT CAN FLY?",
  "narrator_gender": "male or female",
  "mood": "one of: suspense, mysterious, dark, epic, uplifting, calm (background music)",

@@ -208,7 +208,8 @@ def run_analytics(cfg, write_report=False):
             row["traffic"] = traffic(ya, v["youtube_id"], v["date"][:10])
         rows.append(row)
 
-    learning = {"updated": _iso(dt.date.today()), "channel": chan, "style_scores": {}, "insights": [], "videos": []}
+    learning = {"updated": _iso(dt.date.today()), "channel": chan, "style_scores": {}, "format_scores": {},
+                "insights": [], "videos": []}
     for kind in ("short", "long"):
         group = [r for r in rows if r.get("type") == kind and r["age_days"] >= 2]
         if not group:
@@ -223,13 +224,20 @@ def run_analytics(cfg, write_report=False):
         by_style = {}
         for r in group:
             by_style.setdefault(r.get("style", "?"), []).append(r["score"])
+        by_fmt = {}
+        for r in group:
+            by_fmt.setdefault(f"{kind}: {r.get('format') or 'news'}", []).append(r)
+        for f, rs in by_fmt.items():
+            learning["format_scores"][f] = {"videos": len(rs), "score": round(sum(r["score"] for r in rs) / len(rs), 2),
+                                            "avg_views": int(sum(r["views"] for r in rs) / len(rs)),
+                                            "avg_pct": round(sum(r["averageViewPercentage"] for r in rs) / len(rs), 1)}
         for st, sc in by_style.items():
             prev = learning["style_scores"].get(st)
             val = sum(sc) / len(sc)
             learning["style_scores"][st] = round((prev + val) / 2, 2) if prev else round(val, 2)
     for r in rows:
         learning["videos"].append({k: r.get(k) for k in ("title", "type", "style", "views", "averageViewPercentage",
-                                                          "likes", "comments", "shares", "subscribersGained",
+                                                          "likes", "comments", "shares", "subscribersGained", "format",
                                                           "score", "notes", "traffic", "age_days", "youtube_id")})
 
     if len([r for r in rows if r["age_days"] >= 2]) >= 3:
@@ -281,6 +289,12 @@ def write_weekly_report(cfg, learning, rows):
         md += ["", "## 🎬 Kaun sa andaaz chal raha hai (1.0 = average)", ""]
         for st, sc in sorted(learning["style_scores"].items(), key=lambda x: -x[1]):
             md.append(f"- {sc:.2f} - {st.split(':')[0]}")
+    if learning.get("format_scores"):
+        md += ["", "## 📰 Khabar vs ❓ Bara sawal (score 1.0 = average)", ""]
+        for f, d in sorted(learning["format_scores"].items()):
+            md.append(f"- **{f}** - {d['videos']} videos, score {d['score']:.2f}, average {d['avg_views']:,} views, "
+                      f"{d['avg_pct']:.0f}% dekhi gayi")
+        md.append("- _4 hafte ke data ke baad jo qisam behtar ho, us ke din barha denge._")
     if learning.get("insights"):
         md += ["", "## 🧠 Bot ne kya seekha (aagey isi hisaab se topics/andaaz chunega)", ""]
         md += [f"- {x}" for x in learning["insights"]]
