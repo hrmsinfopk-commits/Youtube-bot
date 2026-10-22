@@ -1,36 +1,38 @@
-[14:23:14] Channel: Tomorrowly (future, mode=facts)
-[14:23:28] News headlines collected: 168
-[14:23:31] YouTube videos analysed: 73
-[14:24:15] Gemini OK (gemini-3.8-flash)
-[14:24:16] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:24:16] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:24:42] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:24:42] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:25:08] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:25:08] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:25:20] Gemini OK (gemini-flash-lite-latest)
-[14:25:20] Trend topic: Inside the US Navy's New AI Ghost Fleet | why: Military technology and autonomous defense videos are pulling massive viewership on YouTube (such as WSJ's weapon breakdown hitting over 872,000 views and drone combat tech topping 878,000 views in just a few days). This story is breaking this week as the US Navy quadruples its unmanned contracts, giving Tomorrowly an open lane to explain the technical reality of robotic naval warfare using high-quality, public-domain military footage before major tech channels produce deep dives.
-[14:25:20] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:25:20] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:25:45] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:25:45] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:26:11] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:26:31] Gemini OK (gemini-flash-lite-latest)
-[14:26:31] Script length: 430 words
-[14:26:31] Uniqueness: 97% unique vs previous scripts
-[14:26:54] Gemini OK (gemini-flash-lite-latest)
-[14:26:54] Long script edited for flow (430 -> 428 words)
-[14:26:54] Script ready: Inside the US Navy's New AI Ghost Fleet (24 scenes)
-[14:26:54] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[14:27:22] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[14:27:43] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[14:28:02] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[14:28:34] Captions aligned to the voice (443 words)
-[14:29:53] Own graphics: 5
-[14:31:45] Gemini OK (gemini-flash-lite-latest)
-[14:31:45] Footage check: kept 19 fitting clips, 5 scenes had nothing fitting
-[14:31:48] Footage ready for 24 scenes
-[14:32:31] 44 clips rendered
-[14:32:31] Final render started
-[14:33:30] Freesound CC0 music: Dark Moody Rhythmic Orchestral Ambient Music (Obsidian) (id 789404)
-[14:34:56] Video ready: 20261021_1431_future_long.mp4 (180.1s)
+[08:33:10] Channel: Tomorrowly (future, mode=facts)
+[08:33:10] Format today: big question
+[08:33:14] YouTube videos analysed: 60
+[08:34:05] Gemini OK (gemini-3.8-flash)
+[08:34:05] Trend topic: How 99% of the Internet Crosses the Ocean Floor | why: Massive view counts on infrastructure engineering explainers—such as underwater tunnel construction (18.5M views) and extreme engineering deep-dives (63M+ views)—demonstrate intense global appetite for hidden megaprojects. The contradiction between ethereal 'cloud' computing and dirty, heavy-duty deep-sea physical cables creates an immediate, universal hook for anyone who uses a phone.
+[08:34:06] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:34:07] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[08:34:37] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:34:38] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[08:35:04] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:35:05] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[08:35:18] Gemini OK (gemini-flash-lite-latest)
+[08:35:18] Script length: 570 words
+[08:35:18] Uniqueness: 100% unique vs previous scripts
+[08:35:19] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:35:57] Gemini OK (gemini-flash-latest)
+[08:35:57] Long script edited for flow (570 -> 498 words)
+[08:35:57] Script ready: How 99% of the Internet Crosses the Ocean Floor (28 scenes)
+[08:35:57] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[08:36:22] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[08:36:45] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[08:37:10] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[08:37:17] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[08:37:56] Captions aligned to the voice (497 words)
+[08:40:08] Own graphics: 10
+[08:40:25] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:40:53] Gemini OK (gemini-flash-latest)
+[08:40:53] Footage check: kept 25 fitting clips, 14 scenes had nothing fitting
+[08:42:15] Image HTTP 402 (try 1)
+[08:42:47] Image HTTP 402 (try 1)
+[08:43:03] Image HTTP 402 (try 2)
+[08:43:37] Image HTTP 402 (try 1)
+[08:43:53] Image HTTP 402 (try 2)
+[08:45:07] Footage ready for 28 scenes
+[08:46:02] 48 clips rendered
+[08:46:02] Final render started
+[08:46:34] Freesound CC0 music: Orchestral Score 1 - Mastered NO Stereo Imaging.wav (id 621297)
+[08:48:07] Video ready: 20261022_0845_future_long.mp4 (222.2s)

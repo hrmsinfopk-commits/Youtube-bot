@@ -1,91 +1,82 @@
 {
- "topic": "Inside the US Navy's New AI Ghost Fleet",
- "angle": "While traditional naval warfare relies on multi-billion-dollar supercarriers that take a decade to build, the US Navy is rapidly quadrupling funding for an autonomous 'Ghost Fleet.' We break down how AI captains navigate open oceans without human intervention, how autonomous drone swarms coordinate in GPS-denied environments, and the brutal engineering challenge of keeping complex warship machinery running at sea without a maintenance crew.",
- "why": "Military technology and autonomous defense videos are pulling massive viewership on YouTube (such as WSJ's weapon breakdown hitting over 872,000 views and drone combat tech topping 878,000 views in just a few days). This story is breaking this week as the US Navy quadruples its unmanned contracts, giving Tomorrowly an open lane to explain the technical reality of robotic naval warfare using high-quality, public-domain military footage before major tech channels produce deep dives.",
+ "topic": "How 99% of the Internet Crosses the Ocean Floor",
+ "angle": "Most people assume the modern internet lives in space satellites, but nearly all global data flows through hair-thin glass strands wrapped in cables barely thicker than a garden hose, resting unanchored beneath miles of ocean pressure.",
+ "why": "Massive view counts on infrastructure engineering explainers—such as underwater tunnel construction (18.5M views) and extreme engineering deep-dives (63M+ views)—demonstrate intense global appetite for hidden megaprojects. The contradiction between ethereal 'cloud' computing and dirty, heavy-duty deep-sea physical cables creates an immediate, universal hook for anyone who uses a phone.",
  "keywords": [
-  "US Navy robot ships",
-  "autonomous warships",
-  "AI naval fleet",
-  "Ghost Fleet Overlord",
-  "military technology explained",
-  "future naval warfare",
-  "US Navy AI at sea",
-  "unmanned surface vessel",
-  "autonomous drone swarms",
-  "Orca XLUUV",
-  "military robotics 2026",
-  "defense technology breakthrough"
+  "undersea internet cables",
+  "how subsea cables work",
+  "how does the internet cross the ocean",
+  "submarine communications cable",
+  "fiber optic ocean cable",
+  "cable laying ship",
+  "how deep sea cables are laid",
+  "underwater internet cables map",
+  "do sharks bite internet cables",
+  "how undersea cables are repaired",
+  "transatlantic communications cable",
+  "optical repeaters undersea"
  ],
  "facts": [
-  "The US Navy has quadrupled funding and contract allocations for autonomous robotic surface and subsurface vessels to integrate artificial intelligence into fleet operations (announced).",
-  "The push is heavily motivated by strategic competition in the Indo-Pacific, where China has built the world's largest naval surface fleet by total hull count.",
-  "The Pentagon's strategy hinges on 'Distributed Maritime Operations,' dispersing combat power across numerous unmanned, low-cost vessels rather than concentrating vulnerability in a handful of $13-billion supercarriers.",
-  "The US military launched 'Task Force Easy' to accelerate frontline drone technology development and achieve operational adaptation dominance.",
-  "Unmanned surface vessels (USVs) developed under programs like Ghost Fleet Overlord (including the Sea Hunter, Mariner, and Ranger) have already demonstrated multi-thousand-mile autonomous ocean transits.",
-  "To navigate civilian sea lanes safely, the AI navigation stack must comply with International Regulations for Preventing Collisions at Sea (COLREGS) using automated fusion of radar, LiDAR, and computer-vision cameras.",
-  "Operating in contested electronic warfare environments requires these robotic vessels to execute complex tactical maneuvers using edge computing and localized sensor fusion when satellite links and GPS signals are jammed.",
-  "Autonomous underwater drones, such as the Boeing Orca Extra Large Unmanned Undersea Vehicle (XLUUV), are designed for long-endurance underwater scouting, mine countermeasure operations, and payload deployment.",
-  "A primary unresolved engineering bottleneck for unmanned ocean vessels is mechanical reliability: marine hardware faces relentless saltwater corrosion, biofouling, and engine wear that usually require daily maintenance by human crews.",
-  "Under current Department of Defense policy, any lethal weapon release from an unmanned or autonomous maritime platform strictly requires a human-in-the-loop confirmation before firing.",
-  "Plan: The Australian Ghost Shark submarine is intended to carry advanced sea mines and aerial drones.",
-  "The internal payload bay of the Ghost Shark extra-large uncrewed underwater vehicle has been publicly displayed.",
-  "Australia has equipped its self-propelled Ghost Shark submarine with supplementary attack capabilities.",
-  "A proposal exists to establish a large naval ship recycling facility in California for the US Navy.",
-  "The vice chief of the navy mentioned specific procurement numbers, including dozens of naval platforms on order and interceptor boats approved."
+  "Over 95% to 99% of all international internet traffic is carried through undersea submarine cables, while satellites carry only a tiny fraction.",
+  "As of 2024, there are more than 550 active and planned undersea fiber optic cables globally, stretching over 1.4 million kilometers.",
+  "At the deep ocean bottom, the cable is surprisingly thin—typically between 17 and 21 millimeters in diameter, roughly the thickness of an ordinary garden hose.",
+  "In deep open water, cables are unarmored because human hazards like boat anchors are absent; heavy steel armoring is only added near shallow coastal waters.",
+  "The data itself travels as pulses of infrared laser light bouncing through glass optical fibers no thicker than a single strand of human hair.",
+  "To survive crushing pressures exceeding 800 atmospheres at depths of 8,000 meters, cables contain no hollow air spaces; voids are packed with water-blocking petroleum jelly and solid polymers.",
+  "Because light signals weaken after traveling through dozens of kilometers of glass, optical repeaters are spliced into the cable every 50 to 100 kilometers to amplify the signal.",
+  "The repeaters require electricity, which is delivered down the length of the cable through an inner copper tube carrying up to 10,000 volts of direct current from shore stations.",
+  "Cables are deployed by specialized cable-laying vessels that can hold thousands of kilometers of coiled cable weighing thousands of metric tons in massive internal carousels.",
+  "Near shorelines and shallow continental shelves, underwater robotic plows or ROVs dig trenches 1 to 3 meters deep into the seabed to bury and shield the cable from ship anchors and fishing trawlers.",
+  "In the deep ocean abyss, the cable is not buried; it is simply unspooled from the ship and left to rest naturally across the seafloor, valleys, and underwater mountain ranges.",
+  "In the late 1980s, sharks were recorded biting early subsea cables due to sensitivity to electromagnetic fields, leading engineers to encase sensitive segments in steel protective tape.",
+  "Around 100 to 150 undersea cable cuts occur every year worldwide, with roughly 70% caused accidentally by commercial fishing gear and dragging anchors, and the rest caused by underwater landslides or earthquakes.",
+  "When a deep-sea cable snaps, specialized repair ships drop grapnel hooks or deploy ROVs to locate the severed ends, haul them to the surface, and splice the microscopic fibers inside cleanrooms on the ship's deck.",
+  "Modern transatlantic cables can transmit over 250 terabits of data per second across a single system, enough to stream millions of 4K movies simultaneously.",
+  "Subsea fiber cables are engineered for an operational design lifespan of at least 25 years before economic or technological retirement."
  ],
- "long_format": "deep dive",
- "sources": [
-  {
-   "title": "Navy robot deal quadruples as US looks to ‘outsmart’ China with AI at sea",
-   "source": "Fox News",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPb19kT2UtT29hMkxVRGltd3pLSmtQM185bXV2M0NvRUN6TGtxXzU0QjZ5QzVUMlhxUjQ3ZVdfb3RmTmdfbmEtcEp5M1U4a3FoT0wzT1lHT2tSdXpSaG1YbGxrem5nbHhDaU4xMjhmbEZOdldZazM4YllqRDBnWXVzSk85RXo5b282eXBkRmZYNDQzSFRy0gGaAUFVX3lxTE1RNlJFcnluY3NaTkVYRHBaalFZaG50TVJnUTBUc3hvS2xfQjk0TXFoSXI5bVVzcllkNWR3YUx4MThfQi1XdG5aOWtHREtaNzBVLTRyMHBEWFFZRWQ5NHBaLUl0WWl5MUg0bVRrQ2RiYTY2V3oxaGdCcHJJMXNoNHJ4dk1ySEY1N3NHdnYteW5sckV6UldaRjB2Y0E?oc=5"
-  },
-  {
-   "title": "U.S. military debuts new Task Force Easy to enable drone tech ‘adaptation dominance’",
-   "source": "DefenseScoop",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1JRkpSYUNtckYzeGpzMElqRFA5blMtX0tYNWJZU3B4LW9wVWFvQzMxTE1LcktQQXg3S1d5alBNMmh3NXNwMTQ2dDZ2ZzlYODRhSFpqcWlqNk5xMG1uemMwcGUtcXA3T0NHbVByZXlWNlRWNDZMeTNFejhQeDI?oc=5"
-  }
- ],
+ "long_format": "big question",
+ "format": "big question",
+ "sources": [],
  "youtube_top": [
   {
-   "title": "HOW TO MAKE A HOMEMADE PROJECTOR 😱😱",
-   "views": 17096602
+   "title": "Bruno Mars - I Just Might [Official Music Video]",
+   "views": 177320307
   },
   {
-   "title": "Why Cats Rub Against Your Laptop 🤔",
-   "views": 12457312
+   "title": "This is What Happens When A Hockey Season Ends 🤯",
+   "views": 158490825
   },
   {
-   "title": "yang dapat robot mobil gg si #parfum #velixir",
-   "views": 11975187
+   "title": "You Can't Leave | Official Trailer | Only In Theaters October 16th",
+   "views": 108444875
   },
   {
-   "title": "The NEW Tesla Roadster: My Honest Reaction",
-   "views": 11699990
+   "title": "Ariana Grande - hate that i made you love me (official music video)",
+   "views": 105328641
   },
   {
-   "title": "I thought the “Intel inside” sticker WAS the chip..",
-   "views": 10189448
+   "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
+   "views": 100894250
   },
   {
-   "title": "NEW TESLA ROADSTER - It Can Fly!!! (SpaceX Technology)",
-   "views": 10096015
+   "title": "Why Can't We Print Unlimited Money 😱",
+   "views": 74563007
   },
   {
-   "title": "Flying Car Real hai 🥲",
-   "views": 9941865
+   "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
+   "views": 73179473
   },
   {
-   "title": "Tesla's Flying Roadster Revealed: Everything That Happened in 10 Minutes",
-   "views": 9764431
+   "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
+   "views": 72447429
   },
   {
-   "title": "Episode 5 - Sheela Tez Hai 🧠🤓 | Kaamwali Bai vs AI Robot 🤖🧹 |#shorts #shortsbreakplus",
-   "views": 9574907
+   "title": "How These Energy Saving Stairs Work 😮",
+   "views": 72135192
   },
   {
-   "title": "🥶🔥 \"there will never be flying cars\"",
-   "views": 8870774
+   "title": "The Closest Thing We Have to Alien Technology",
+   "views": 63997727
   }
  ]
 }
