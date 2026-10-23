@@ -501,6 +501,21 @@ def _ask_script(cfg, prompt, kind, temperature):
                 best = again
         except Exception as e:  # noqa: BLE001
             log("Rewrite failed, keeping first draft:", str(e)[:120])
+    n = _words(best)
+    if kind == "short" and n > 1.3 * target:
+        # Shorts have a fixed length (news 20-25 s, big question 30-35 s): cut the weakest lines, keep the structure
+        log(f"Script too long ({n} words, target ~{target}) - tightening")
+        try:
+            tight = ask(cfg, "Here is a YouTube Short script as JSON. It is too long: " + str(n) + " spoken words, but it must be "
+                        f"about {target} words (max {int(target * 1.15)}). Cut the weakest lines and merge scenes so it fits - keep the "
+                        "named-subject hook as the first line, the single most surprising number with its comparison, the one thing it "
+                        "teaches, and the final line exactly as it is. Keep every JSON field and the same format for every scene. "
+                        "Return ONLY the full JSON.\n\n" + json.dumps(best, ensure_ascii=False), json_mode=True, temperature=0.3)
+            m = _words(tight)
+            if 0.7 * target <= m < n and len(tight.get("scenes", [])) >= 3:
+                best = tight
+        except Exception as e:  # noqa: BLE001
+            log("Tightening failed, keeping draft:", str(e)[:120])
     log(f"Script length: {_words(best)} words")
     return best
 
