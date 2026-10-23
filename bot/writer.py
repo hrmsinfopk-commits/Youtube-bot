@@ -1,4 +1,5 @@
 """Topic selection and script writing (Gemini)."""
+import json
 import random
 import re
 
@@ -107,6 +108,20 @@ Return ONLY the 12 premises, one per line, no numbering."""
     return topic
 
 
+def _playbook(kind):
+    """Patterns found by the weekly study of viral videos in our niche (data/playbook_<channel>.json)."""
+    from .common import CHANNEL, DATA
+    try:
+        pb = json.loads((DATA / f"playbook_{CHANNEL['id']}.json").read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return ""
+    rules = pb.get("shorts_rules" if kind == "short" else "long_rules") or pb.get("rules") or []
+    if not rules:
+        return ""
+    return ("\nWHAT IS WORKING IN VIRAL VIDEOS OF OUR NICHE RIGHT NOW (from our weekly study - use the PATTERNS,"
+            " never copy anyone's wording):\n" + "\n".join(f"- {r}" for r in rules[:12]) + "\n")
+
+
 def writer_brief():
     """The owner's standing brief for the script writer (writer_brief.md, editable on GitHub)."""
     p = ROOT / "writer_brief.md"
@@ -118,6 +133,7 @@ def writer_brief():
 
 
 SIGNATURES = ["THE CATCH", "WE DID THE MATH", "HYPE METER", "TOMORROW TEST"]
+SHORT_SIGNATURES = ["THE CATCH", "WE DID THE MATH"]     # the verdict signatures felt like a formula in Shorts
 
 
 def _wps(cfg):
@@ -205,16 +221,25 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
     if kind == "short":
         secs = cfg["shorts"]["target_seconds"]
         length = f"about {int(secs * _wps(cfg))} spoken words total ({secs} seconds), 6-9 scenes"
-        extra = ("- FIRST 2 SECONDS: scene 1 is ONE sentence of max 8 words that states the contradiction / headline itself"
-                 " (basically the title said aloud, e.g. 'The biggest rocket ever built has no landing legs.'), and its keywords"
-                 " must show EXACTLY that thing. hook_text = the same idea in 2-4 words.\n"
+        extra = ("- FIRST 2 SECONDS: scene 1 is ONE sentence of max 10 words that NAMES the real subject and makes a promise or"
+                 " states the contradiction (e.g. 'Google's quantum computer Sycamore just did something impossible.',"
+                 " 'The biggest rocket ever built has no landing legs.'); its keywords must show EXACTLY that thing."
+                 " hook_text = the same idea in 2-4 words. NEVER open with a hypothetical ('It's 2040', 'Imagine', 'What if').\n"
+                 "- ONE FEELABLE COMPARISON: the key number must be turned into something everyone feels"
+                 " ('a few seconds vs 47 years on the world's fastest supercomputer', 'as long as 3 football fields').\n"
+                 "- TEACH ONE THING: explain the single core idea in plain words a 12-year-old understands"
+                 " (e.g. 'a qubit can be 0 and 1 at the same time'). The viewer must learn something.\n"
+                 "- PLAIN WORDS: no jargon (roadmap, validates, fault-tolerant, paradigm, leverage, ecosystem, scalable,"
+                 " cutting-edge...) unless you explain it in the same sentence. Numbers instead of hype adjectives"
+                 " (no 'smashed', 'massive', 'insane').\n"
+                 "- ONE HONEST LINE: what is still limited, unproven or early - it builds trust.\n"
                  "- PICTURE = WORDS: every line must be showable - name concrete things the viewer can SEE; the first keyword of"
                  " each scene is the exact object/place named in that line.\n"
                  "- STRUCTURE: (1) the contradiction / headline hook above (not a question), "
                  "(2) an open loop in the first 5 seconds that promises a payoff at the end, (3) fast build-up of 2-3 lines, "
                  "(4) a twist ('but here's the thing...'), (5) the REVEAL near the end, (6) final line.\n"
-                 "- One natural SHARE trigger near the end aimed at a specific friend type (e.g. 'send this to the friend who...').\n"
-                 "- Final line: either flows seamlessly back into the first line (loop) OR is a short opinion question people want to answer.\n"
+                 "- ENDING: one short payoff sentence (what it means for us), then the LAST scene is exactly:"
+                 " 'Follow Tomorrowly for tomorrow's tech, today.' No 'send this to a friend', no hype meter, no questions.\n"
                  "- One idea only. Every line must add something new. No intro, no 'subscribe' at the start.")
     else:
         mins = cfg["long"]["target_minutes"]
@@ -262,12 +287,13 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
     title_lang = "English" if en else "Roman Urdu/Hindi + strong English keywords"
     memory = memory or {}
     brief_txt = writer_brief()
+    playbook = _playbook(kind)
     if kind == "short":
         recent = memory.get("recent_signatures", [])
-        options = [x for x in SIGNATURES if x not in recent[-2:]] or SIGNATURES
+        options = [x for x in SHORT_SIGNATURES if x not in recent[-1:]] or SHORT_SIGNATURES
         signature = __import__("random").choice(options)
-        sig_rule = (f"- SIGNATURE for this Short: use exactly one - {signature} - placed where it hits hardest "
-                    f"(HYPE METER / TOMORROW TEST work best as the last line).")
+        sig_rule = (f"- SIGNATURE for this Short: use exactly one - {signature} - woven in naturally "
+                    f"(THE CATCH = the honest line; WE DID THE MATH = the feelable comparison). No HYPE METER or TOMORROW TEST in Shorts.")
     else:
         signature = "ALL"
         sig_rule = ("- SIGNATURES for this long video: THE CATCH (in the twist part) and WE DID THE MATH (one calculation, "
@@ -279,7 +305,8 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
     owner_txt = f"\nCHANNEL OWNER'S OWN TAKE - weave this opinion in naturally, in your words: {owner}\n" if owner else ""
     graphics_rule = (
         "\nOWN GRAPHICS (made by our code - they make the channel unique). Add a \"graphic\" to "
-        + ("1-2 scenes (a 'flow' for the HOW/answer part, or a 'counter'/'bars' for the key number)" if kind == "short"
+        + ("1-2 scenes (a 'flow' for the HOW/answer part, or a 'counter'/'bars' for the key number; never hype_meter or"
+           " tomorrow_test in Shorts)" if kind == "short"
            else "4-7 scenes") + ", only where it truly helps; else null:\n"
         '- {"type": "counter", "value": 250000, "prefix": "$", "suffix": "", "label": "starting price"}  (one big number counting up)\n'
         '- {"type": "bars", "title": "Top speed", "labels": ["Car", "Jet"], "values": [300, 900], "unit": "km/h"}  (2-4 bars, real numbers only)\n'
@@ -300,6 +327,7 @@ Narration language: {LANG_RULES[lang]}
 {ch.get('extra_instructions') or ''}{facts}{seo}{owner_txt}
 === CHANNEL WRITER BRIEF (your standing instructions - follow it) ===
 {brief_txt}
+{playbook}
 === END OF BRIEF ===
 {sig_rule}
 {avoid_txt}

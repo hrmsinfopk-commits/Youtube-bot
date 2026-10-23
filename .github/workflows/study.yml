@@ -1,0 +1,54 @@
+name: Tomorrowly Viral Study
+
+on:
+  schedule:
+    # UTC. Har Itwar subah 9 baje (Pakistan). Viral Shorts dekh kar script writer ki playbook update hoti hai.
+    - cron: "0 4 * * 0"
+  workflow_dispatch: {}
+  push:
+    paths: [".github/trigger-study.txt"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  study:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: pip install -q -r requirements.txt
+      - name: Watch viral Shorts and update the playbook
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          ARGS=""
+          # trigger file mein 'test' likha ho to sirf 3 videos (jaldi check)
+          if [ "${{ github.event_name }}" = "push" ] && grep -qi test .github/trigger-study.txt; then ARGS="--limit 3"; fi
+          python -m bot.study --channel future $ARGS 2>&1 | python scripts/redact.py data/last_run_study.log
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "yt-bot"
+          git config user.email "yt-bot@users.noreply.github.com"
+          BASE=$(git rev-parse HEAD); MINE="$RUNNER_TEMP/mine"; rm -rf "$MINE"; mkdir -p "$MINE"
+          cp -r data "$MINE"/ 2>/dev/null || true
+          for i in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python scripts/merge_data.py "$BASE" "$MINE"
+            git add data/
+            if git diff --cached --quiet; then echo "nothing to save"; break; fi
+            git commit -q -m "bot: viral study update" && git push -q origin HEAD:main && echo "saved" && break
+            sleep $((5 + RANDOM % 15))
+          done

@@ -10,9 +10,12 @@ from .common import log, secret
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
 
-def _call(model, prompt, json_mode, search, temperature):
+def _call(model, prompt, json_mode, search, temperature, video_url=None):
+    parts = [{"text": prompt}]
+    if video_url:   # Gemini watches a public YouTube video itself (nothing is downloaded)
+        parts = [{"file_data": {"file_uri": video_url}}] + parts
     body = {
-        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+        "contents": [{"role": "user", "parts": parts}],
         "generationConfig": {"temperature": temperature},
     }
     if json_mode:
@@ -20,7 +23,7 @@ def _call(model, prompt, json_mode, search, temperature):
     if search:
         body["tools"] = [{"google_search": {}}]
     r = requests.post(API.format(model=model), headers={"x-goog-api-key": secret("GEMINI_API_KEY")},
-                      json=body, timeout=180)
+                      json=body, timeout=300 if video_url else 180)
     if r.status_code != 200:
         raise RuntimeError(f"{model}: HTTP {r.status_code} {r.text[:300]}")
     data = r.json()
@@ -32,7 +35,7 @@ DEAD = set()  # models that are retired or out of daily quota - skipped for the 
 HITS = {}     # how often a model said "quota exceeded" (per-minute limits clear after ~1 minute)
 
 
-def ask(cfg, prompt, json_mode=False, search=False, temperature=1.0, attempts=4):
+def ask(cfg, prompt, json_mode=False, search=False, temperature=1.0, attempts=4, video_url=None):
     if not secret("GEMINI_API_KEY"):
         raise RuntimeError("GEMINI_API_KEY secret missing")
     last = None
@@ -44,7 +47,7 @@ def ask(cfg, prompt, json_mode=False, search=False, temperature=1.0, attempts=4)
             if model in DEAD or ("lite" in model and not use_lite):
                 continue
             try:
-                text = _call(model, prompt, json_mode, search, temperature)
+                text = _call(model, prompt, json_mode, search, temperature, video_url)
                 result = parse_json(text) if json_mode else text
                 log(f"Gemini OK ({model})")
                 return result

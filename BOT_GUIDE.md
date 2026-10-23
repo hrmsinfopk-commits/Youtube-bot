@@ -98,3 +98,9 @@ Saara code aur settings repo mein hain, is liye koi bhi wahin se kaam aage badha
 - Din badalne hon to `config.yaml` mein `long.formats_by_day` aur `shorts.big_question_days` badlein.
 - Titles hamesha ek ulti/hairaan karne wali baat + How/Why par bante hain; thumbnail ke liye writer woh scene chunta hai jo ek nazar mein kahani bata de.
 - Haftawar `REPORT.md` mein "Khabar vs Bara sawal" ka hisaab aata hai - 4 hafte baad jo behtar chale us ke din barha denge.
+
+## 🔎 Har Itwar: viral Shorts ka mutala
+- Bot hamare niche ki pichhle 30 din ki sab se viral ~12 Shorts dhoondta hai, Gemini unhein khud "dekhta" hai (download nahi hota),
+  aur un ke patterns se script writer ki playbook (`data/playbook_future.json`) update hoti hai.
+- Kisi khaas video se seekhwana ho to uska link `inspiration.txt` mein daal dein.
+- Monday ki `REPORT.md` mein "Viral Shorts ka mutala" section mein khulasa aata hai.

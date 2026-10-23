@@ -298,6 +298,13 @@ def write_weekly_report(cfg, learning, rows):
     if learning.get("insights"):
         md += ["", "## 🧠 Bot ne kya seekha (aagey isi hisaab se topics/andaaz chunega)", ""]
         md += [f"- {x}" for x in learning["insights"]]
+    try:
+        pb = json.loads((DATA / f"playbook_{CHANNEL['id']}.json").read_text(encoding="utf-8"))
+        md += ["", f"## 🔎 Viral Shorts ka mutala ({pb.get('updated', '')}, {len(pb.get('studied', []))} videos)", "",
+               pb.get("summary_roman_urdu", ""), "", "**Script writer ke naye usool:**", ""]
+        md += [f"- {r}" for r in pb.get("shorts_rules", [])]
+    except Exception:  # noqa: BLE001
+        pass
     md += ["", "## ✅ Aap ke liye (5 minute)", "",
            "- YouTube Studio mein har video ka **impressions click-through rate** dekhein (yeh API se nahi milta). 4% se kam ho to title/thumbnail kamzor hai.",
            "- Achhe comments ka jawab dein aur pin karein - engagement barhta hai.",

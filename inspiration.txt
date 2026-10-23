@@ -1,0 +1,2 @@
+# Koi achhi viral video dekhein to uska YouTube link yahan neeche paste kar dein (ek line mein ek link).
+# Bot har Itwar usay bhi "dekh" kar seekhega (sirf andaaz/pattern - kisi ke alfaaz copy nahi hote).

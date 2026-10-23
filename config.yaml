@@ -45,6 +45,14 @@ trends:
   evergreen_keywords: ["how does it work", "why can't we", "how is it possible", "engineering explained",
                        "how do they build", "why don't planes", "what happens if", "science explained"]
 
+# Har Itwar: hamare niche ki sab se viral Shorts ka mutala (Gemini khud video dekhta hai) -> script writer ki playbook
+study:
+  videos: 12                           # kitni viral Shorts dekhni hain
+  days: 30                             # pichhle kitne din ki
+  min_views: 200000
+  keywords: ["science shorts", "space facts", "quantum computer", "new technology", "AI explained", "NASA",
+             "engineering facts", "how does it work", "future technology", "rocket"]
+
 gemini:
   # Free key: https://aistudio.google.com/apikey  (GitHub secret: GEMINI_API_KEY)
   models: ["gemini-3.8-flash", "gemini-flash-latest", "gemini-flash-lite-latest"]
