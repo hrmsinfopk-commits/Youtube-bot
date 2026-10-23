@@ -1,0 +1,20 @@
+/home/runner/work/Youtube-bot/Youtube-bot/bot/study.py:45: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  since = (dt.datetime.utcnow() - dt.timedelta(days=st.get("days", 30))).strftime("%Y-%m-%dT%H:%M:%SZ")
+[08:05:30] Viral Shorts found: 92, studying 3
+[08:09:59] Gemini OK (gemini-3.8-flash)
+[08:09:59] Studied: Does this actually work?! 😳 OMG… let’s find out together!  # (39,264,878 views) - hook: visual shock
+[08:12:01] Gemini OK (gemini-3.8-flash)
+[08:12:01] Studied: The entire rocket passes right in front of the camera (15,882,899 views) - hook: visual shock
+[08:12:17] Gemini OK (gemini-3.8-flash)
+[08:12:17] Studied: The Smart AI Shopping 😱 (13,462,890 views) - hook: relatable seasonal observation + skepticism question
+[08:12:38] Gemini OK (gemini-3.8-flash)
+[08:12:38] Playbook updated from 3 viral Shorts:
+[08:12:38]   - Hook with an immediate visual shock or a relatable scam/myth rather than corporate announcements or brand press releases.
+[08:12:38]   - Introduce the core conflict or tension within the first 1 to 5 seconds; never spend the opening lines describing product specs.
+[08:12:38]   - Make numbers feelable using everyday tangible comparisons rather than abstract high-level concepts.
+[08:12:38]   - Structure long shorts (60-90s) as an active test, experiment, or step-by-step problem debunk rather than a monologue lecture.
+[08:12:38]   - If producing short-form spectacle (15-20s), eliminate spoken voiceover entirely and rely purely on immersive natural sound and clear visual scale.
+[08:12:38]   - Keep language strictly simple and conversational; completely ban abstract pseudo-philosophical questions.
+[08:12:38]   - End the script abruptly on the punchline, critical payoff, or definitive result without rolling into generic outro questions.
+[08:12:38]   - Keep overall length intentionally binary: either ultra-tight 15-20s visual spectacles or 60-85s narrative investigations, avoiding mid-length dragging.
+[08:12:38]   - Space out dialogue to maintain breathing room; do not exceed 2.6 words per second to prevent cognitive overload.

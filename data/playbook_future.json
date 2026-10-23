@@ -1,0 +1,43 @@
+{
+ "shorts_rules": [
+  "Hook with an immediate visual shock or a relatable scam/myth rather than corporate announcements or brand press releases.",
+  "Introduce the core conflict or tension within the first 1 to 5 seconds; never spend the opening lines describing product specs.",
+  "Make numbers feelable using everyday tangible comparisons rather than abstract high-level concepts.",
+  "Structure long shorts (60-90s) as an active test, experiment, or step-by-step problem debunk rather than a monologue lecture.",
+  "If producing short-form spectacle (15-20s), eliminate spoken voiceover entirely and rely purely on immersive natural sound and clear visual scale.",
+  "Keep language strictly simple and conversational; completely ban abstract pseudo-philosophical questions.",
+  "End the script abruptly on the punchline, critical payoff, or definitive result without rolling into generic outro questions.",
+  "Keep overall length intentionally binary: either ultra-tight 15-20s visual spectacles or 60-85s narrative investigations, avoiding mid-length dragging.",
+  "Space out dialogue to maintain breathing room; do not exceed 2.6 words per second to prevent cognitive overload."
+ ],
+ "visual_sound_notes": [
+  "Prioritize authentic real-world footage, practical screen demonstrations, or raw event audio over sterile stock b-roll.",
+  "Use diegetic audio prominently (booster rumble, mechanical clicks, physical reactions) layered with tension-building ambient sound design.",
+  "Maintain a steady cutting pace of 2 to 3 cuts per 10 seconds for informative narrative videos, or zero cuts for continuous raw tracking shots.",
+  "Use minimal, high-impact text callouts for key metrics and names instead of cluttered full-sentence subtitles."
+ ],
+ "typical": {
+  "seconds": 70,
+  "words_per_second": 1.0,
+  "cuts_per_10_seconds": 1.6
+ },
+ "summary_roman_urdu": "Is maheenay viral shorts ya toh 15 second ka raw visual spectacle dikha rahi hain ya 60 se 90 second ka practical experiment aur reality check. Humari ghalti yeh hai ke hum technical press releases aur abstract concepts par monologue shuru kar dete hain jahan se viewer foran drop ho jata hai. Aakhri sawal generic aur fake lagne ke bajaye video ko seedha punchline ya final result par abruptly khatam karna chahiye. Script mein 'infinite dimensions' jaisi bhaari baatein band karke relatable examples aur practical proof dikhana zaroori hai. Audio mein background music se zyada real sound effects aur natural tension retention ko barhati hain.",
+ "updated": "2026-10-23",
+ "studied": [
+  {
+   "title": "Does this actually work?! 😳 OMG… let’s find out together!  #asmr #crashtest #hair #hairstyle",
+   "views": 39264878,
+   "id": "HW7nK-qyg1A"
+  },
+  {
+   "title": "The entire rocket passes right in front of the camera",
+   "views": 15882899,
+   "id": "JJ5wl9zysuw"
+  },
+  {
+   "title": "The Smart AI Shopping 😱",
+   "views": 13462890,
+   "id": "T3yuix4KqAk"
+  }
+ ]
+}
