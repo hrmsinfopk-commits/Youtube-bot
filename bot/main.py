@@ -149,7 +149,7 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
     OUT.mkdir(exist_ok=True)
     rng = random.Random()
 
-    credits, concept_scenes, footage_sources = [], [], []
+    credits, concept_scenes, footage_sources, labels = [], [], [], {}
     if offline:
         script = _offline_script(kind)
         vset = {"voice": "offline", "rate": "+0%", "pitch": "+0Hz"}
@@ -173,6 +173,12 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
         else:
             topic = None
         topic = topic or writer.pick_topic(cfg, history, kind)
+        if kind == "short":            # Short length depends on the format (news 20-25 s, big question 30-35 s)
+            fmt = (brief or {}).get("format") or "news"
+            secs = (cfg["shorts"].get("seconds_by_format") or {}).get(fmt)
+            if secs:
+                cfg = {**cfg, "shorts": {**cfg["shorts"], "target_seconds": secs}}
+                log(f"Short length for '{fmt}': {secs} s")
         memory = load_memory()
         script = writer.write_script(cfg, topic, kind, style, brief, memory)
         host = cfg.get("tts", {}).get("host_voice")
@@ -254,6 +260,8 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                             rejected += 1
                             continue
                         got.append((p, it["kind"]))
+                        if it.get("subject_match") and sc.get("subject"):   # real photo of the named thing -> name tag
+                            labels[i] = (sc["subject"], sc.get("subject_note", ""))
                         used.add(it["id"])
                         history["used_media"].append(it["id"])
                         if it.get("credit"):
@@ -285,7 +293,7 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
     timings, total = render.assemble(kind, cfg, script["scenes"], voices, media, work, video, rng,
                                      mood=script.get("mood", "suspense"), hook_text=script.get("hook_text", ""),
                                      scene_sounds=scene_sounds, ambience=ambience,
-                                     concept_scenes=concept_scenes)
+                                     concept_scenes=concept_scenes, labels=labels)
 
     thumb = None
     if kind == "long":

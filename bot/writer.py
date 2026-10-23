@@ -205,7 +205,12 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
     if kind == "short":
         secs = cfg["shorts"]["target_seconds"]
         length = f"about {int(secs * _wps(cfg))} spoken words total ({secs} seconds), 6-9 scenes"
-        extra = ("- STRUCTURE: (1) bold statement or vivid 'you' scenario as the hook (not a question), "
+        extra = ("- FIRST 2 SECONDS: scene 1 is ONE sentence of max 8 words that states the contradiction / headline itself"
+                 " (basically the title said aloud, e.g. 'The biggest rocket ever built has no landing legs.'), and its keywords"
+                 " must show EXACTLY that thing. hook_text = the same idea in 2-4 words.\n"
+                 "- PICTURE = WORDS: every line must be showable - name concrete things the viewer can SEE; the first keyword of"
+                 " each scene is the exact object/place named in that line.\n"
+                 "- STRUCTURE: (1) the contradiction / headline hook above (not a question), "
                  "(2) an open loop in the first 5 seconds that promises a payoff at the end, (3) fast build-up of 2-3 lines, "
                  "(4) a twist ('but here's the thing...'), (5) the REVEAL near the end, (6) final line.\n"
                  "- One natural SHARE trigger near the end aimed at a specific friend type (e.g. 'send this to the friend who...').\n"
@@ -274,7 +279,8 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
     owner_txt = f"\nCHANNEL OWNER'S OWN TAKE - weave this opinion in naturally, in your words: {owner}\n" if owner else ""
     graphics_rule = (
         "\nOWN GRAPHICS (made by our code - they make the channel unique). Add a \"graphic\" to "
-        + ("at most 1-2 scenes" if kind == "short" else "4-7 scenes") + ", only where it truly helps; else null:\n"
+        + ("1-2 scenes (a 'flow' for the HOW/answer part, or a 'counter'/'bars' for the key number)" if kind == "short"
+           else "4-7 scenes") + ", only where it truly helps; else null:\n"
         '- {"type": "counter", "value": 250000, "prefix": "$", "suffix": "", "label": "starting price"}  (one big number counting up)\n'
         '- {"type": "bars", "title": "Top speed", "labels": ["Car", "Jet"], "values": [300, 900], "unit": "km/h"}  (2-4 bars, real numbers only)\n'
         '- {"type": "timeline", "items": [{"year": "2024", "text": "First test"}, {"year": "2027", "text": "Planned launch"}]}  (2-4 items)\n'
@@ -322,6 +328,8 @@ Scene 1 keywords must be the single most visually stunning shot for this topic (
 "pace": "fast" for build-up/lists, "normal", or "slow" for reveals. "reveal": true only for the biggest twist/answer moments.
 "subject": if the line is about a specific REAL named thing people would want to see (e.g. "Tesla Roadster", "Starship",
 "James Webb Space Telescope", "Boston Dynamics Atlas"), its exact name - used to find real licensed photos; else "".
+"subject_note": when "subject" is set, 2-4 plain words saying what it is (e.g. "SpaceX's smaller rocket", "the booster");
+shown as a small name tag under the subject's name the first time real photos of it appear; else "".
 "on_screen": for the 20-30% of scenes with a striking number or 2-4 word fact, the text to flash big on screen
 (e.g. "$250,000", "10 THRUSTERS", "0-60 IN 1.9s", "BY 2027?"); else "". Never more than 5 words.
 
@@ -338,7 +346,7 @@ Return ONLY JSON:
  "hashtags": ["#3to5", "#hashtags"],
  "global_keywords": ["4-6 general English stock keywords that fit the WHOLE topic visually"],
  "scenes": [
-   {{"text": "narration for this scene", "caption": "{'same as text' if en else 'same narration in Roman Urdu (Latin letters)'}", "keywords": ["specific", "medium", "general"], "image": "what we see", "sound": "", "subject": "", "on_screen": "", "graphic": null, "pace": "normal", "reveal": false, "chapter": ""}}
+   {{"text": "narration for this scene", "caption": "{'same as text' if en else 'same narration in Roman Urdu (Latin letters)'}", "keywords": ["specific", "medium", "general"], "image": "what we see", "sound": "", "subject": "", "subject_note": "", "on_screen": "", "graphic": null, "pace": "normal", "reveal": false, "chapter": ""}}
  ],
  "hype_score": "1-10 (your HYPE METER verdict)",
  "tomorrow_test": "Yes / Maybe / Not yet"

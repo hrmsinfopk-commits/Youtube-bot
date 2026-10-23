@@ -125,7 +125,7 @@ def _chunk_times(t0, dur, n_words, chunks, word_times):
     return [[st, en] for st, en in zip(starts, ends)]
 
 
-def build_ass(kind, cfg, scenes, timings, path, rng, hook_text="", word_times=None, concept_scenes=()):
+def build_ass(kind, cfg, scenes, timings, path, rng, hook_text="", word_times=None, concept_scenes=(), labels=None):
     W, H = SIZES[kind]
     word_times = word_times or [[] for _ in scenes]
     story = cfg.get("visual", {}).get("caption_style") == "story"
@@ -168,6 +168,8 @@ Style: Cap,{font},{size},{_ass_color(white)},&H000000FF,&H00000000,&H64000000,{0
 {hook_style}
 Style: Card,Anton,{130 if kind == 'short' else 110},&H00FFFFFF,&H000000FF,&H00000000,{_ass_color(hi)},1,0,0,0,100,100,2,0,3,26,0,5,80,80,0,1
 Style: Label,Anton,{34 if kind == 'short' else 30},&H00FFFFFF,&H000000FF,&H00000000,&H80000000,0,0,0,0,100,100,1,0,3,8,0,9,30,30,30,1
+Style: Tag,Anton,{74 if kind == 'short' else 48},&H001C0D09,&H000000FF,{_ass_color((251, 191, 36))},{_ass_color((251, 191, 36))},0,0,0,0,100,100,1,0,3,10,0,7,0,0,0,1
+Style: TagNote,DejaVu Sans,{40 if kind == 'short' else 28},&H00FFFFFF,&H000000FF,&HB4000000,&HB4000000,1,0,0,0,100,100,0,0,3,8,0,7,0,0,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -182,12 +184,27 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             hook_anim = "{\\fscx40\\fscy40\\t(0,160,\\fscx108\\fscy108)\\t(160,260,\\fscx100\\fscy100)\\fad(0,200)}"
             hook_end = 2.3
         lines.append(f"Dialogue: 1,{_ass_time(0)},{_ass_time(hook_end)},Hook,,0,0,0,,{hook_anim}{hook}")
+    tagged = set()
     for i, (sc, (t0, dur)) in enumerate(zip(scenes, timings)):
         card = "" if sc.get("graphic") else re.sub(r"[{}\\]", "", str(sc.get("on_screen") or "")).strip().upper()
         if card:   # big fact/number on screen for ~2.5 s
             cy = int(H * (0.38 if kind == "short" else 0.42))
             anim = "{\\pos(%d,%d)\\fscx60\\fscy60\\t(0,150,\\fscx105\\fscy105)\\t(150,230,\\fscx100\\fscy100)\\fad(0,250)}" % (W // 2, cy)
             lines.append(f"Dialogue: 2,{_ass_time(t0 + 0.1)},{_ass_time(t0 + min(dur, 2.6))},Card,,0,0,0,,{anim}{card}")
+        if (i in (labels or {}) and not sc.get("graphic") and i not in set(concept_scenes or ())
+                and str(labels[i][0]).lower() not in tagged):
+            name, note = labels[i]
+            tagged.add(str(name).lower())          # each thing is named once
+            name = re.sub(r"[{}\\]", "", str(name)).upper()[:26]
+            note = re.sub(r"[{}\\]", "", str(note or ""))[:34]
+            x, y = int(W * 0.07), int(H * (0.15 if kind == "short" else 0.10))
+            end = t0 + min(dur, 2.8)
+            lines.append(f"Dialogue: 4,{_ass_time(t0 + 0.15)},{_ass_time(end)},Tag,,0,0,0,,"
+                         f"{{\\pos({x},{y})\\fad(150,200)}}{name}")
+            if note:
+                ny = y + (104 if kind == "short" else 72)
+                lines.append(f"Dialogue: 4,{_ass_time(t0 + 0.3)},{_ass_time(end)},TagNote,,0,0,0,,"
+                             f"{{\\pos({x},{ny})\\fad(150,200)}}{note}")
         if i in set(concept_scenes or ()):
             lines.append(f"Dialogue: 3,{_ass_time(t0)},{_ass_time(t0 + dur + 0.3)},Label,,0,0,0,,Concept illustration")
     for sc, (t0, dur), wt in zip(scenes, timings, word_times):
@@ -270,7 +287,7 @@ def build_audio(voice, gaps, work, total, cfg, rng, mood="suspense", sfx_events=
 
 # ---------------------------------------------------------------- main assembly
 def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspense", hook_text="",
-             scene_sounds=None, ambience=None, concept_scenes=()):
+             scene_sounds=None, ambience=None, concept_scenes=(), labels=None):
     """scenes: list; voice: [(wav, secs, word_times)]; media: per-scene list of (path, kind)."""
     W, H = SIZES[kind]
     vis = cfg.get("visual", {})
@@ -340,7 +357,7 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
     audio = build_audio(voice, gaps, work, total, cfg, rng, mood, events)
     ass = work / "captions.ass"
     hi = build_ass(kind, cfg, scenes, timings, ass, rng, hook_text, [v[2] if len(v) > 2 else [] for v in voice],
-                   concept_scenes)
+                   concept_scenes, labels)
 
     chain = []
     if punches and kind == "short":   # zoompan over a whole long video is far too slow

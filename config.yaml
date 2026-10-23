@@ -12,7 +12,10 @@ channel:
 
 shorts:
   per_run: 1
-  target_seconds: 40                   # research: 30-50 second wali Shorts sab se zyada aakhir tak dekhi jati hain
+  target_seconds: 30                   # (sirf tab jab format pata na ho)
+  seconds_by_format:                   # khabar = tez jhatka; bara sawal = jawab samjhane ka waqt
+    news: 22                           # 20-25 second
+    big question: 32                   # 30-35 second
   big_question_days: ["mon", "thu"]    # in dinon ki Short "bara sawal" (sada-bahar), baqi din trending khabar
 
 long:

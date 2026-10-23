@@ -195,9 +195,9 @@ def candidates(cfg, keywords, orient, used, subject=None, per_kw=4):
             k += 1
             if k >= n:
                 break
-    if subject:   # a real, named thing -> licensed real photos first
-        add(_wikimedia_photos(subject), 3)
-        add(_openverse_photos(subject), 3)
+    if subject:   # a real, named thing -> licensed real photos first (marked: they may carry a name tag)
+        add([{**c, "subject_match": True} for c in _wikimedia_photos(subject)], 3)
+        add([{**c, "subject_match": True} for c in _openverse_photos(subject)], 3)
     for kw in keywords[:3]:
         if "nasa" in sources and spacey:
             add(_nasa_videos(kw, orient), 2)
