@@ -1,12 +1,80 @@
 {
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "channel": {
-  "subscribers": 8,
-  "total_views": 0,
-  "videos": 4,
-  "watch_hours_12m": 0.0
+  "subscribers": 9,
+  "total_views": 2778,
+  "videos": 5,
+  "watch_hours_12m": 7.1
  },
- "style_scores": {},
+ "style_scores": {
+  "Future scenario: 'It's 2040...' - show how this changes everyday life": 1.03,
+  "Before vs now: how this used to work vs what just changed": 0.97
+ },
+ "format_scores": {
+  "short: news": {
+   "videos": 2,
+   "score": 1.0,
+   "avg_views": 1144,
+   "avg_pct": 42.8
+  }
+ },
  "insights": [],
- "videos": []
+ "videos": [
+  {
+   "title": "Quantinuum Just Shattered the Quantum Computing Record! #shorts",
+   "type": "short",
+   "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
+   "views": 1108,
+   "averageViewPercentage": 45.39,
+   "likes": 12,
+   "comments": 0,
+   "shares": 1,
+   "subscribersGained": 3,
+   "format": null,
+   "score": 1.03,
+   "notes": [
+    "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
+    "Sab se zyada log 42.6s par chhod gaye (5.8% gire) - wahan line thi: \"How will you use a computer that thinks in infinite dimensions?\"."
+   ],
+   "traffic": {
+    "NO_LINK_OTHER": 0,
+    "SUBSCRIBER": 0,
+    "YT_CHANNEL": 1,
+    "YT_SEARCH": 5,
+    "YT_OTHER_PAGE": 3,
+    "PLAYLIST": 0,
+    "SHORTS": 90
+   },
+   "age_days": 3,
+   "youtube_id": "J9O4qdiPSgk"
+  },
+  {
+   "title": "Tesla Flying Roadster: Real SpaceX Car Or Total Marketing Hype? #shorts",
+   "type": "short",
+   "style": "Before vs now: how this used to work vs what just changed",
+   "views": 1181,
+   "averageViewPercentage": 40.22,
+   "likes": 25,
+   "comments": 0,
+   "shares": 0,
+   "subscribersGained": 3,
+   "format": null,
+   "score": 0.97,
+   "notes": [
+    "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
+    "Sab se zyada log 6.1s par chhod gaye (6.7% gire) - wahan line thi: \"Tesla just unveiled a brand-new Roadster strapped with actual SpaceX thrusters.\"."
+   ],
+   "traffic": {
+    "NO_LINK_OTHER": 0,
+    "SUBSCRIBER": 0,
+    "YT_CHANNEL": 0,
+    "YT_SEARCH": 2,
+    "YT_OTHER_PAGE": 1,
+    "SHORTS": 97,
+    "SOUND_PAGE": 0
+   },
+   "age_days": 3,
+   "youtube_id": "ujBL9LBgPHk"
+  }
+ ]
 }
