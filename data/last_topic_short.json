@@ -1,83 +1,86 @@
 {
- "topic": "How Do Submarines Make Unlimited Air Underwater?",
- "angle": "Over 140 sailors can live locked in an airtight steel tube deep underwater for four months without ever suffocating, because the submarine continuously synthesizes breathable air from the ocean.",
- "why": "Explainer videos on extreme closed-system engineering regularly pull tens of millions of views (e.g. 18.5M on underwater tunnel engineering, 16.6M on jet engine mechanics, and 35.1M on underwater hydrostatic pressure). This question taps into a universal claustrophobic mystery that nearly everyone has wondered about, answered through clean, step-by-step physics and chemistry.",
+ "topic": "China's New Combat Robot Can Disarm Attackers and Lift Cars",
+ "angle": "Breaking down Unitree's newly unveiled 'guardian' robot: how it combines extreme hydraulic strength to flip vehicles with precision AI reflexes to neutralize weapons in split seconds.",
+ "why": "Humanoid and defense robotics content is exploding on YouTube Shorts with clips pulling over 7-11M views this week. This brand-new Unitree announcement offers fresh viral footage potential and an irresistible curiosity hook about real-world robot security forces.",
  "keywords": [
-  "how submarines make oxygen",
-  "how do nuclear submarines get air",
-  "submarine life support system",
-  "where do submarines get oxygen",
-  "how do sailors breathe underwater",
-  "submarine electrolysis explained",
-  "submarine amine scrubber",
-  "submarine oxygen candle",
-  "how long can a submarine stay submerged",
-  "nuclear submarine engineering",
-  "how submarines recycle air",
-  "submarine air generation system"
+  "Unitree robot",
+  "guardian robot",
+  "combat robot",
+  "China robot",
+  "humanoid robot",
+  "AI robot",
+  "robot lifting car",
+  "future military technology",
+  "defense technology",
+  "robot disarm attacker",
+  "new technology 2026",
+  "robotics breakthrough"
  ],
  "facts": [
-  "Modern nuclear submarines routinely stay submerged hundreds of meters deep for 90 to 120 consecutive days without surfacing.",
-  "A typical military submarine crew of 130 to 160 sailors consumes roughly 20 to 25 cubic meters of pure oxygen every 24 hours.",
-  "Submarines do not carry thousands of heavy compressed oxygen tanks because high-pressure tanks take up massive cargo space and present severe explosion risks.",
-  "Instead, the submarine manufactures fresh oxygen continuously on demand using an onboard life-support system called an Oxygen Generator Plant (OGP).",
-  "Seawater is brought into the hull and purified through multi-stage distillation or reverse osmosis to remove all salts and impurities, yielding deionized water.",
-  "The ultra-pure water is pumped into an electrolysis unit powered by the vessel's nuclear reactor, which provides virtually unlimited electrical power.",
-  "High-amperage electrical current passes between electrodes in the water, splitting liquid H2O molecules into gaseous oxygen (O2) and hydrogen (H2).",
-  "The pure oxygen gas is regulated and pumped directly into the submarine's central air ducts to maintain atmospheric oxygen between 18% and 21%.",
-  "Hydrogen gas is highly explosive, so it is immediately compressed and pumped out through the hull to dissolve safely into the surrounding ocean.",
-  "Producing oxygen is only half the challenge; exhaled carbon dioxide (CO2) is toxic and will kill the crew within days if not continuously removed.",
-  "To remove carbon dioxide, the interior air is blown through liquid amine scrubbers containing monoethanolamine (MEA), which chemically binds to CO2 at room temperature.",
-  "Once saturated, the amine solution is heated inside a closed boiler, causing the amine to release the trapped CO2 gas, which is pumped overboard into the sea.",
-  "After cooling down, the amine liquid is recirculated to capture more CO2 in a continuous, indefinitely reusable closed loop.",
-  "Catalytic burner units running at over 300 degrees Celsius burn off trace contaminants like carbon monoxide from cooking and hydrogen gas off-gassing from lead-acid backup batteries.",
-  "For power-failure emergencies where electrolysis stops, submarines carry solid chemical 'oxygen candles' made of sodium chlorate and iron powder.",
-  "When struck with a mechanical primer like a road flare, an oxygen candle burns thermally, producing enough breathable oxygen for dozens of crew members for an hour.",
-  "Because reactor fuel lasts up to 25 years and air and freshwater are manufactured indefinitely, a nuclear submarine's only true limit to staying underwater is the amount of food it can physically carry."
+  "Chinese robotics company Unitree officially unveiled a new specialized 'guardian' robot platform designed for security and physical intervention.",
+  "The robot is reportedly engineered with high-torque actuators enabling it to lift heavy obstacles, including portions of cars and debris.",
+  "The system integrates computer vision and rapid-response motion planning to identify, track, and physically disarm armed attackers in close quarters.",
+  "Unitree has previously achieved global fame for agile quadruped robot dogs and lightweight humanoid models capable of flips and sprinting.",
+  "Unlike fragile industrial humanoids, this new design utilizes reinforced composite framing and high-impact joints to survive physical collisions.",
+  "Tactical response times for its limbs are governed by low-latency onboard AI models rather than remote human control, allowing microsecond reactions.",
+  "Company representatives claim the platform is targeted for emergency rescue missions, perimeter protection, and hazardous response operations.",
+  "Demonstrations show the robotic hands and grippers exerting massive clamping force while retaining enough agility to strip objects from a person's grasp.",
+  "Critics and defense analysts caution that dual-use security humanoids can quickly transition from civilian defense tools to lethal autonomous urban combat units.",
+  "A Chinese robotics firm named Unitree has revealed a new robotic system.",
+  "The newly introduced machine is configured as a humanoid robot.",
+  "The developer planned and designed the robot with the stated purpose of functioning as an actual guardian.",
+  "The robot is claimed to have the capability to disarm aggressive individuals.",
+  "The machine is claimed to possess sufficient power to hoist automobiles."
  ],
  "long_format": null,
- "format": "big question",
- "sources": [],
+ "format": "news",
+ "sources": [
+  {
+   "title": "China’s Unitree unveils ‘guardian’ robot that can disarm attackers, lift cars",
+   "source": "South China Morning Post",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQTVzQ1pUazRJanZRV2I2aG5BM1FkcERRaWs4WVdnVWUyN3lSNmx3b1lGRXNGZzV4NnhjZzFTOXRacko3TmVGTjV5czFuQk1ucnNRRzFHdU9mWWlxQUF1b3V3M3NuT3dFVUhjQlo3aWtILXhlZUNrNGxCTGo4OUZlSkdESkdEcjdXamhpcHpxbGxDdUhTcUVGcjNxTTRxSlEwYUtDYlp3RERPLTBNNVA3dFBZam1nVklIYXlJR9IBvAFBVV95cUxNanpxLTBkMVF4d2g4QkpPczJRMFpkNzJWeHduRVpZX1dHMHkybXJtdGxKVUtyTXJzTmRrZVh0S2FKRlREUlJNc1o1Nzh3OXJkT1hkcTlVY0RtQm9fVkpZUDZnei0xSDBuRm9ETEhiM3ZobEJHME5Qc1hUcTkxanh1YVJHWU5BeGdRMk4wRUtkOWJyUWY4dVBsZjRGY2Zpb3ZSY3gtaWE1THdUQkx6b3ZPQVBBMWhtOWpjcGdPQQ?oc=5"
+  }
+ ],
  "youtube_top": [
   {
-   "title": "Bruno Mars - I Just Might [Official Music Video]",
-   "views": 177373055
+   "title": "HOW TO MAKE A HOMEMADE PROJECTOR 😱😱",
+   "views": 20725331
   },
   {
-   "title": "This is What Happens When A Hockey Season Ends 🤯",
-   "views": 158529386
+   "title": "This Flying Car Mocks Elon Musk's New Tesla Roadster",
+   "views": 14836056
   },
   {
-   "title": "You Can't Leave | Official Trailer | Only In Theaters October 16th",
-   "views": 108445827
+   "title": "Why Cats Rub Against Your Laptop 🤔",
+   "views": 13473128
   },
   {
-   "title": "Ariana Grande - hate that i made you love me (official music video)",
-   "views": 105432215
+   "title": "I thought the “Intel inside” sticker WAS the chip..",
+   "views": 12056018
   },
   {
-   "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
-   "views": 100940774
+   "title": "The NEW Tesla Roadster: My Honest Reaction",
+   "views": 11964279
   },
   {
-   "title": "Why Can't We Print Unlimited Money 😱",
-   "views": 74595310
+   "title": "Episode 5 - Sheela Tez Hai 🧠🤓 | Kaamwali Bai vs AI Robot 🤖🧹 |#shorts #shortsbreakplus",
+   "views": 11118538
   },
   {
-   "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
-   "views": 73187918
+   "title": "Flying Car Real hai 🥲",
+   "views": 11059585
   },
   {
-   "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
-   "views": 72477701
+   "title": "NEW TESLA ROADSTER - It Can Fly!!! (SpaceX Technology)",
+   "views": 10489480
   },
   {
-   "title": "How These Energy Saving Stairs Work 😮",
-   "views": 72168338
+   "title": "Satisfying Toy Story with ASMR | Review Robot Mario Luigi & Princess Peach Collection #asmr #mario",
+   "views": 9919606
   },
   {
-   "title": "The Closest Thing We Have to Alien Technology",
-   "views": 64016505
+   "title": "🥶🔥 \"there will never be flying cars\"",
+   "views": 9115115
   }
  ]
 }

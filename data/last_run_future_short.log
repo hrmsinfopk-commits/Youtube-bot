@@ -1,31 +1,26 @@
-[14:33:23] Channel: Tomorrowly (future, mode=facts)
-[14:33:23] Format today: big question
-[14:33:28] YouTube videos analysed: 60
-[14:35:32] Gemini OK (gemini-3.8-flash)
-[14:35:33] Trend topic: How Do Submarines Make Unlimited Air Underwater? | why: Explainer videos on extreme closed-system engineering regularly pull tens of millions of views (e.g. 18.5M on underwater tunnel engineering, 16.6M on jet engine mechanics, and 35.1M on underwater hydrostatic pressure). This question taps into a universal claustrophobic mystery that nearly everyone has wondered about, answered through clean, step-by-step physics and chemistry.
-[14:38:19] Gemini OK (gemini-3.8-flash)
-[14:38:19] Script length: 100 words
-[14:38:19] Uniqueness: 100% unique vs previous scripts
-[14:38:19] Script ready: How Nuclear Submarines Make Unlimited Air Underwater (6 scenes)
-[14:38:19] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[14:38:35] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[14:38:44] Captions aligned to the voice (99 words)
-[14:39:05] Own graphics: 2
-[14:39:12] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:39:13] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:41:58] Gemini OK (gemini-3.8-flash)
-[14:41:58] Footage check: kept 5 fitting clips, 4 scenes had nothing fitting
-[14:42:38] Image HTTP 402 (try 1)
-[14:42:54] Image HTTP 402 (try 2)
-[14:45:40] Image error: HTTPSConnectionPool(host='image.pollinations.ai', port=443): Read timed out. (read timeout=150)
-[14:45:52] Download failed: file too big (385 MB)
-[14:45:57] Skipping clip with burned-in text: Sea Ice Agi Anew study combined satellite data
-[14:45:57] Footage ready for 6 scenes
-[14:45:59] Freesound CC0 sound 'electric motor': Drill bit falling 03.wav (id 418488)
-[14:46:00] Freesound CC0 sound 'whoosh': ARCHERY flyby 2.wav (id 394181)
-[14:46:12] 14 clips rendered
-[14:46:12] Final render started
-[14:46:51] Freesound CC0 music: Slightly Mysterious Sounding Track (id 683821)
-[14:47:24] Video ready: 20261022_1446_future_short.mp4 (44.6s)
-[14:47:25] Upload 53%
-[14:47:26] Uploaded: https://youtu.be/RFzD-PyILsQ
+[02:32:23] Channel: Tomorrowly (future, mode=facts)
+[02:32:23] Format today: news
+[02:32:36] News headlines collected: 168
+[02:32:40] YouTube videos analysed: 71
+[02:33:18] Gemini OK (gemini-3.8-flash)
+[02:34:03] Gemini OK (gemini-3.8-flash)
+[02:34:03] Trend topic: China's New Combat Robot Can Disarm Attackers and Lift Cars | why: Humanoid and defense robotics content is exploding on YouTube Shorts with clips pulling over 7-11M views this week. This brand-new Unitree announcement offers fresh viral footage potential and an irresistible curiosity hook about real-world robot security forces.
+[02:34:03] Short length for 'news': 22 s
+[02:35:00] Gemini OK (gemini-3.8-flash)
+[02:35:00] Script length: 54 words
+[02:35:00] Uniqueness: 98% unique vs previous scripts
+[02:35:00] Script ready: China's Guardian Robot: Can This Humanoid Actually Lift Cars? (6 scenes)
+[02:35:00] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[02:35:09] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[02:35:16] Captions aligned to the voice (55 words)
+[02:35:41] Own graphics: 2
+[02:37:21] Gemini OK (gemini-3.8-flash)
+[02:37:21] Footage check: kept 8 fitting clips, 2 scenes had nothing fitting
+[02:38:15] Footage ready for 6 scenes
+[02:38:18] Freesound CC0 sound 'electric motor': Electric machine engine large air-conditioner hum noise (id 324665)
+[02:38:19] Freesound CC0 sound 'computer beep': as_ab_al_computer_noise_7_16bit.wav (id 543053)
+[02:38:21] Freesound CC0 sound 'whoosh': whoosh low (id 830856)
+[02:38:30] 8 clips rendered
+[02:38:30] Final render started
+[02:38:44] Freesound CC0 music: crushed-suspense-001 (id 818855)
+[02:39:04] Video ready: 20261023_0238_future_short.mp4 (24.8s)
