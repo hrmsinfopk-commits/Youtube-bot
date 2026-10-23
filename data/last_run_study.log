@@ -1,20 +1,46 @@
-/home/runner/work/Youtube-bot/Youtube-bot/bot/study.py:45: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  since = (dt.datetime.utcnow() - dt.timedelta(days=st.get("days", 30))).strftime("%Y-%m-%dT%H:%M:%SZ")
-[08:05:30] Viral Shorts found: 92, studying 3
-[08:09:59] Gemini OK (gemini-3.8-flash)
-[08:09:59] Studied: Does this actually work?! 😳 OMG… let’s find out together!  # (39,264,878 views) - hook: visual shock
-[08:12:01] Gemini OK (gemini-3.8-flash)
-[08:12:01] Studied: The entire rocket passes right in front of the camera (15,882,899 views) - hook: visual shock
-[08:12:17] Gemini OK (gemini-3.8-flash)
-[08:12:17] Studied: The Smart AI Shopping 😱 (13,462,890 views) - hook: relatable seasonal observation + skepticism question
-[08:12:38] Gemini OK (gemini-3.8-flash)
-[08:12:38] Playbook updated from 3 viral Shorts:
-[08:12:38]   - Hook with an immediate visual shock or a relatable scam/myth rather than corporate announcements or brand press releases.
-[08:12:38]   - Introduce the core conflict or tension within the first 1 to 5 seconds; never spend the opening lines describing product specs.
-[08:12:38]   - Make numbers feelable using everyday tangible comparisons rather than abstract high-level concepts.
-[08:12:38]   - Structure long shorts (60-90s) as an active test, experiment, or step-by-step problem debunk rather than a monologue lecture.
-[08:12:38]   - If producing short-form spectacle (15-20s), eliminate spoken voiceover entirely and rely purely on immersive natural sound and clear visual scale.
-[08:12:38]   - Keep language strictly simple and conversational; completely ban abstract pseudo-philosophical questions.
-[08:12:38]   - End the script abruptly on the punchline, critical payoff, or definitive result without rolling into generic outro questions.
-[08:12:38]   - Keep overall length intentionally binary: either ultra-tight 15-20s visual spectacles or 60-85s narrative investigations, avoiding mid-length dragging.
-[08:12:38]   - Space out dialogue to maintain breathing room; do not exceed 2.6 words per second to prevent cognitive overload.
+[08:13:44] Viral Shorts found: 38, studying 12
+[08:14:37] Gemini OK (gemini-3.8-flash)
+[08:14:37] Studied: The entire rocket passes right in front of the camera (15,885,071 views) - hook: visual shock
+[08:15:31] Gemini OK (gemini-3.8-flash)
+[08:15:31] Studied: The Smart AI Shopping 😱 (13,464,185 views) - hook: relatable problem + question
+[08:16:58] Gemini OK (gemini-3.8-flash)
+[08:16:58] Studied: This Animal Might Be Living On The Moon (5,924,626 views) - hook: contradiction / shocking mystery
+[08:17:33] Gemini OK (gemini-3.8-flash)
+[08:17:33] Studied: How the WATCHMAN Device Works (5,685,604 views) - hook: visual shock + intriguing device introduction
+[08:18:09] Gemini OK (gemini-3.8-flash)
+[08:18:09] Studied: How Small Is the Planck Length? 💀🔬 #Shorts #Space #Astronomy (5,295,130 views) - hook: question / visual shock
+[08:19:04] Gemini OK (gemini-3.8-flash)
+[08:19:04] Studied: Humanoid Robots Are Already Working in Factories 🤖 Elon Musk (4,691,147 views) - hook: visual shock
+[08:19:50] Gemini OK (gemini-3.8-flash)
+[08:19:50] Studied: 500 फीट नीचे से बोरवेल का पानी ऊपर कैसे आता है? 😱 | How Bore (3,938,689 views) - hook: mystery + question
+[08:21:00] Gemini OK (gemini-3.8-flash)
+[08:21:00] Studied: कसारा घाट का 160 साल पुराना Engineering Secret! 😱 #shorts #v (3,768,846 views) - hook: shocking number + question + visual awe
+[08:23:28] Gemini OK (gemini-3.8-flash)
+[08:23:28] Studied: The Dead Wheel That Dug a Rover's Grave (3,688,401 views) - hook: contradiction
+[08:28:28] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=300)
+[08:28:34] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[08:31:46] Gemini OK (gemini-3.8-flash)
+[08:31:46] Studied: How Plants Turn Sunlight Into Food. ☀️🌱#Photosynthesis #Plan (3,400,958 views) - hook: visual zoom / POV immersion + educational promise
+[08:31:58] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:32:06] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[08:35:13] Gemini OK (gemini-3.8-flash)
+[08:35:13] Studied: Jio new device #Jio (3,304,622 views) - hook: named subject + promise
+[08:40:11] Gemini error (gemini-3.8-flash): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[08:40:12] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[08:40:37] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[08:40:37] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[08:40:40] Gemini OK (gemini-flash-lite-latest)
+[08:40:40] Studied: The Moon Ship With No Radiation Shelter (3,035,338 views) - hook: contradiction / shocking statement + visual shock
+[08:40:41] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[08:40:41] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[08:41:06] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[08:41:33] Gemini OK (gemini-flash-lite-latest)
+[08:41:33] Playbook updated from 12 viral Shorts:
+[08:41:33]   - State the central topic or resolve the hook's premise within the first 5 seconds to prevent immediate early drop-off.
+[08:41:33]   - Make abstract numbers or scales feelable by comparing them to everyday objects like ballpoint pens, cars, or food.
+[08:41:33]   - Use a contradiction, hidden mystery, or counter-intuitive fact as the opening line to drive strong initial curiosity.
+[08:41:33]   - Structure scripts with clear cause-and-effect progression: introduce a problem, show the failure, and reveal the physical or mechanical solution.
+[08:41:33]   - Keep our narration pace between 2.4 and 2.8 words per second to ensure clear delivery without feeling rushed.
+[08:41:33]   - Avoid open-ended, overly philosophical questions near the end which kill engagement; use concrete payoffs instead.
+[08:41:33]   - Always conclude the video by immediately transitioning into our mandatory brand sign-off without dragging out the ending.
+[08:41:33]   - Ensure the core subject or device name is explicitly stated early rather than relying purely on vague pronoun hooks.

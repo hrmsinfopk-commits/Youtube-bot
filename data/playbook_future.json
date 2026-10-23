@@ -1,43 +1,87 @@
 {
  "shorts_rules": [
-  "Hook with an immediate visual shock or a relatable scam/myth rather than corporate announcements or brand press releases.",
-  "Introduce the core conflict or tension within the first 1 to 5 seconds; never spend the opening lines describing product specs.",
-  "Make numbers feelable using everyday tangible comparisons rather than abstract high-level concepts.",
-  "Structure long shorts (60-90s) as an active test, experiment, or step-by-step problem debunk rather than a monologue lecture.",
-  "If producing short-form spectacle (15-20s), eliminate spoken voiceover entirely and rely purely on immersive natural sound and clear visual scale.",
-  "Keep language strictly simple and conversational; completely ban abstract pseudo-philosophical questions.",
-  "End the script abruptly on the punchline, critical payoff, or definitive result without rolling into generic outro questions.",
-  "Keep overall length intentionally binary: either ultra-tight 15-20s visual spectacles or 60-85s narrative investigations, avoiding mid-length dragging.",
-  "Space out dialogue to maintain breathing room; do not exceed 2.6 words per second to prevent cognitive overload."
+  "State the central topic or resolve the hook's premise within the first 5 seconds to prevent immediate early drop-off.",
+  "Make abstract numbers or scales feelable by comparing them to everyday objects like ballpoint pens, cars, or food.",
+  "Use a contradiction, hidden mystery, or counter-intuitive fact as the opening line to drive strong initial curiosity.",
+  "Structure scripts with clear cause-and-effect progression: introduce a problem, show the failure, and reveal the physical or mechanical solution.",
+  "Keep our narration pace between 2.4 and 2.8 words per second to ensure clear delivery without feeling rushed.",
+  "Avoid open-ended, overly philosophical questions near the end which kill engagement; use concrete payoffs instead.",
+  "Always conclude the video by immediately transitioning into our mandatory brand sign-off without dragging out the ending.",
+  "Ensure the core subject or device name is explicitly stated early rather than relying purely on vague pronoun hooks."
  ],
  "visual_sound_notes": [
-  "Prioritize authentic real-world footage, practical screen demonstrations, or raw event audio over sterile stock b-roll.",
-  "Use diegetic audio prominently (booster rumble, mechanical clicks, physical reactions) layered with tension-building ambient sound design.",
-  "Maintain a steady cutting pace of 2 to 3 cuts per 10 seconds for informative narrative videos, or zero cuts for continuous raw tracking shots.",
-  "Use minimal, high-impact text callouts for key metrics and names instead of cluttered full-sentence subtitles."
+  "Use high-end 3D animated cutaways or continuous zoom visuals to match complex technical and microscopic explanations.",
+  "Maintain an average cut rate of 2.0 to 2.8 cuts per 10 seconds to keep visual pacing brisk without causing motion fatigue.",
+  "Incorporate bold, dynamic center captions with highlighted keywords and alternating color badges for key scientific terms.",
+  "Layer low atmospheric ambient music with sharp mechanical or spatial Foley effects under a clean, close-mic voice-over."
  ],
  "typical": {
-  "seconds": 70,
-  "words_per_second": 1.0,
-  "cuts_per_10_seconds": 1.6
+  "seconds": 32,
+  "words_per_second": 2.6,
+  "cuts_per_10_seconds": 2.4
  },
- "summary_roman_urdu": "Is maheenay viral shorts ya toh 15 second ka raw visual spectacle dikha rahi hain ya 60 se 90 second ka practical experiment aur reality check. Humari ghalti yeh hai ke hum technical press releases aur abstract concepts par monologue shuru kar dete hain jahan se viewer foran drop ho jata hai. Aakhri sawal generic aur fake lagne ke bajaye video ko seedha punchline ya final result par abruptly khatam karna chahiye. Script mein 'infinite dimensions' jaisi bhaari baatein band karke relatable examples aur practical proof dikhana zaroori hai. Audio mein background music se zyada real sound effects aur natural tension retention ko barhati hain.",
+ "summary_roman_urdu": "Is mahine ke viral shorts se yeh pata chalta hai ke viewers ko complex science aur tech topics mein ajeeb o ghareeb contradictions aur real-world comparisons bohot pasand aate hain. Hamare apne pichle videos mein log isliye chhod gaye kyunke shuruat mein topic clear hone ke bajaye confuse ho gaye aur aakhir mein sawal bohat philosophical tha. Hamein apni script ki pehli 5 seconds mein subject bilkul clear karna hoga aur ajeeb analogies use karni hongi taake log hook ho jayein. Visuals mein 3D cutaways aur fast pacing rakhni hai aur aakhir mein apna fixed sentence bina kisi lambi philosophy ke bol kar video khatam karni hai.",
  "updated": "2026-10-23",
  "studied": [
   {
-   "title": "Does this actually work?! 😳 OMG… let’s find out together!  #asmr #crashtest #hair #hairstyle",
-   "views": 39264878,
-   "id": "HW7nK-qyg1A"
-  },
-  {
    "title": "The entire rocket passes right in front of the camera",
-   "views": 15882899,
+   "views": 15885071,
    "id": "JJ5wl9zysuw"
   },
   {
    "title": "The Smart AI Shopping 😱",
-   "views": 13462890,
+   "views": 13464185,
    "id": "T3yuix4KqAk"
+  },
+  {
+   "title": "This Animal Might Be Living On The Moon",
+   "views": 5924626,
+   "id": "KvOOhdCWRyc"
+  },
+  {
+   "title": "How the WATCHMAN Device Works",
+   "views": 5685604,
+   "id": "-lytYKi7xn4"
+  },
+  {
+   "title": "How Small Is the Planck Length? 💀🔬 #Shorts #Space #Astronomy #Science #QuantumPhysics #Physics",
+   "views": 5295130,
+   "id": "Buh0gX_-5lY"
+  },
+  {
+   "title": "Humanoid Robots Are Already Working in Factories 🤖 Elon Musk Visions become true 😱",
+   "views": 4691147,
+   "id": "544DDHB4cJU"
+  },
+  {
+   "title": "500 फीट नीचे से बोरवेल का पानी ऊपर कैसे आता है? 😱 | How Borewell Pumps Water #Shorts",
+   "views": 3938689,
+   "id": "Y9jcDu6dMPA"
+  },
+  {
+   "title": "कसारा घाट का 160 साल पुराना Engineering Secret! 😱 #shorts #viral #youtubeshorts",
+   "views": 3768846,
+   "id": "OXz6qiGahbg"
+  },
+  {
+   "title": "The Dead Wheel That Dug a Rover's Grave",
+   "views": 3688401,
+   "id": "nfuwtAeaPIU"
+  },
+  {
+   "title": "How Plants Turn Sunlight Into Food. ☀️🌱#Photosynthesis #Plants #Biology #Science #shorts #KurioScope",
+   "views": 3400958,
+   "id": "ulSEEOag64c"
+  },
+  {
+   "title": "Jio new device #Jio",
+   "views": 3304622,
+   "id": "y7xV8g73n9U"
+  },
+  {
+   "title": "The Moon Ship With No Radiation Shelter",
+   "views": 3035338,
+   "id": "ytapOSwQZp0"
   }
  ]
 }
