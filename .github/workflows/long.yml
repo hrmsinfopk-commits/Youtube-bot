@@ -35,8 +35,8 @@ jobs:
 
       - name: Install tools
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg libraqm0 tesseract-ocr > /dev/null
+          sudo apt-get update -qq -o Acquire::Retries=3 -o Acquire::http::Timeout=30
+          timeout 900 sudo apt-get install -y -qq --no-install-recommends -o Acquire::Retries=3 ffmpeg libraqm0 tesseract-ocr > /dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg libraqm0 tesseract-ocr > /dev/null)
           pip install -q -r requirements.txt
           bash scripts/get_fonts.sh
 
