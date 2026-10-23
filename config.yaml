@@ -87,7 +87,7 @@ footage:
   relevance_check: true                # Gemini har scene ki footage check karta hai ke line se milti hai ya nahi
   concept_images: true                 # kuch na mile to AI "Concept illustration" (screen par likha hota hai)
   concept_style: "realistic cinematic concept art, photorealistic lighting, generic design (no real brand, no logo)"
-  music_volume: 0.22                   # background music (awaaz ke neeche khud dheema hota hai)
+  music_volume: 0.27                   # background music (awaaz ke neeche khud dheema hota hai)
   sfx_volume: 0.6                      # whoosh/boom ki awaaz (0 = band)
 
 visual:
