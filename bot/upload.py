@@ -38,7 +38,9 @@ def upload(cfg, video, meta, thumb=None):
             "defaultAudioLanguage": lang,
         },
         "status": {"privacyStatus": privacy,
-                   "selfDeclaredMadeForKids": bool(cfg["upload"]["made_for_kids"])},
+                   "selfDeclaredMadeForKids": bool(cfg["upload"]["made_for_kids"]),
+                   # honest label when realistic AI images are used (YouTube's altered/synthetic content disclosure)
+                   "containsSyntheticMedia": bool(meta.get("synthetic"))},
     }
     req = yt.videos().insert(part="snippet,status", body=body,
                              media_body=MediaFileUpload(str(video), chunksize=8 * 1024 * 1024,

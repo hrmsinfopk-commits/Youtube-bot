@@ -289,6 +289,15 @@ def write_weekly_report(cfg, learning, rows):
         md += ["", "## 🎬 Kaun sa andaaz chal raha hai (1.0 = average)", ""]
         for st, sc in sorted(learning["style_scores"].items(), key=lambda x: -x[1]):
             md.append(f"- {sc:.2f} - {st.split(':')[0]}")
+    gated = [r for r in rows if r["age_days"] <= 7 and r.get("gate")]
+    if gated:
+        md += ["", "## 🛡️ Quality gate (monetization protocol)", "",
+               "| Video | Apni graphics | Graphics par narration | Facts theek kiye | Sahi tasveerein | AI tasveerein |",
+               "|---|---|---|---|---|---|"]
+        for r in gated:
+            g = r["gate"]
+            md.append(f"| {r['title'][:50]} | {g.get('graphics', '-')} | {int(g.get('own_share', 0) * 100)}% | "
+                      f"{g.get('fact_fixes', '-')} | {int(g.get('fit_share', 0) * 100)}% | {int(g.get('concept_share', 0) * 100)}% |")
     if learning.get("format_scores"):
         md += ["", "## 📰 Khabar vs ❓ Bara sawal (score 1.0 = average)", ""]
         for f, d in sorted(learning["format_scores"].items()):

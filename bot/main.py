@@ -5,7 +5,7 @@ import random
 import shutil
 import time
 
-from . import audiofx, curate, footage, graphics, images, render, trends, upload, voice, writer
+from . import audiofx, curate, footage, gate, graphics, images, render, trends, upload, voice, writer
 from .common import CHANNEL, DATA, OUT, WORK, load_config, load_history, log, run, save_history
 
 
@@ -150,6 +150,7 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
     rng = random.Random()
 
     credits, concept_scenes, footage_sources, labels = [], [], [], {}
+    gate_rep, vkinds = {}, []
     if offline:
         script = _offline_script(kind)
         vset = {"voice": "offline", "rate": "+0%", "pitch": "+0Hz"}
@@ -181,6 +182,8 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                 log(f"Short length for '{fmt}': {secs} s")
         memory = load_memory()
         script = writer.write_script(cfg, topic, kind, style, brief, memory)
+        if cfg["channel"].get("mode") != "stories":      # monetization protocol: own work, checked facts
+            gate_rep = gate.check_script(cfg, script, kind, brief)
         host = cfg.get("tts", {}).get("host_voice")
         vset = voice.pick_voice(cfg, None if host else script.get("narrator_gender"))
         if host and vset.get("engine") == "gemini":
@@ -222,15 +225,20 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
             for sc in script["scenes"]:
                 sc["topic"] = script["topic"]
             picked = curate.pick(cfg, script["scenes"], opts, per_scene=need)
+        n_sc = len(script["scenes"])
         for i, sc in enumerate(script["scenes"]):
             if i in cache:
                 media.append(cache[i])
+                vkinds.append("graphic" if cache[i][0][1] == "graphic" else "ai_image")
                 continue
+            kind_i = "curated"
             if picked[i] is not None:
                 items = picked[i]
             else:
                 items = footage.search(cfg, sc["keywords"] + rng.sample(gk, min(2, len(gk))), orient, used, need=need)
-            if not items and sc.get("image") and cfg["footage"].get("concept_images", True):
+                kind_i = "unchecked"
+            if (not items and sc.get("image") and cfg["footage"].get("concept_images", True)
+                    and len(concept_scenes) < gate.MAX_CONCEPT_SHARE * n_sc):
                 # nothing real fits -> an original AI "concept illustration" (labelled on screen)
                 iw, ih = (768, 1344) if kind == "short" else (1344, 768)
                 p = work / "media" / f"concept_{i:03d}.jpg"
@@ -238,8 +246,15 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                 if images.generate(sc["image"], style, iw, ih, p):
                     media.append([(p, "photo")])
                     concept_scenes.append(i)
+                    vkinds.append("concept")
                     continue
+            if not items and media and vkinds and vkinds[-1] in ("curated", "continued"):
+                # nothing fits -> stay on the previous scene's subject a little longer (better than random footage)
+                media.append(media[-1])
+                vkinds.append("continued")
+                continue
             if not items:
+                kind_i = "fallback"
                 items = footage.search(cfg, gk + cfg["channel"].get("fallback_keywords", ["futuristic technology"]),
                                        orient, used, need=need)
             got, rejected = [], 0
@@ -274,10 +289,14 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                         log("Download failed:", str(e)[:100])
             if not got:  # reuse previous scene's footage
                 got = media[-1] if media else []
+                kind_i = "continued"
             if not got:
                 raise RuntimeError("Koi footage nahi mili - PEXELS_API_KEY / PIXABAY_API_KEY check karein")
             media.append(got)
+            vkinds.append(kind_i)
         log(f"Footage ready for {len(media)} scenes")
+        if gate_rep:
+            gate.check_visuals(gate_rep, vkinds, len(script["scenes"]))
         # first scenes may have been empty and filled later: none left empty here
 
     scene_sounds, ambience = [None] * len(script["scenes"]), None
@@ -327,13 +346,15 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
             desc += "\n\nBased on reporting from: " + ", ".join(outlets)
     meta = {"title": title, "description": desc,
             "tags": script.get("tags", []), "topic": script["topic"], "style": script["style"], "kind": kind,
-            "voice": vset, "seconds": round(total, 1)}
+            "voice": vset, "seconds": round(total, 1), "synthetic": bool(concept_scenes)}
     (OUT / f"{slug}.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / f"{slug}_script.txt").write_text("\n\n".join(s["text"] for s in script["scenes"]), encoding="utf-8")
 
     yt_id = None
     if do_upload and cfg["upload"]["enabled"] and not offline:
-        if upload.ready():
+        if gate_rep and not gate_rep.get("script_ok", True):
+            log("GATE BLOCKED UPLOAD:", ", ".join(gate_rep.get("problems", [])), "- video saved as GitHub artifact only")
+        elif upload.ready():
             yt_id = upload.upload(cfg, video, meta, thumb)
         else:
             log("YouTube secrets missing - video sirf GitHub artifact mein save hogi")
@@ -344,7 +365,8 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                               "scene_times": [[round(t0, 1), sc.get("caption", "")[:90]]
                                               for sc, (t0, _) in zip(script["scenes"], timings)],
                               "format": ((brief or {}).get("format") or "news") if not offline else None,
-                              "why": (brief or {}).get("why", "") if not offline else ""})
+                              "why": (brief or {}).get("why", "") if not offline else "",
+                              "gate": gate_rep})
     if not offline and do_upload:          # test runs are not remembered (their topic stays available)
         save_history(history)
         save_memory(load_memory(), script, script.get("style", ""))

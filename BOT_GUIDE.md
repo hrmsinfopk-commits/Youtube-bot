@@ -104,3 +104,14 @@ Saara code aur settings repo mein hain, is liye koi bhi wahin se kaam aage badha
   aur un ke patterns se script writer ki playbook (`data/playbook_future.json`) update hoti hai.
 - Kisi khaas video se seekhwana ho to uska link `inspiration.txt` mein daal dein.
 - Monday ki `REPORT.md` mein "Viral Shorts ka mutala" section mein khulasa aata hai.
+
+## 🛡️ Monetization protocol (quality gate)
+Har video upload se pehle bot yeh check karta hai (aur jo ho sake khud theek karta hai):
+1. Apni graphics: Short mein 1+, long mein 4+ (kam hon to graphics editor khud daalta hai).
+2. Long video ki ~22%+ narration hamari apni graphics par (sirf "AI awaaz + stock footage" nahi).
+3. Fact check: har daawa fact sheet se milaya jata hai; ghalat/be-saboot line badal di jati hai.
+4. Khabar ke alfaaz copy nahi (overlap check).
+5. Tasveer = alfaaz: kam az kam 80% scenes par fitting footage/graphics; AI tasveerein 20% se zyada nahi.
+6. AI tasveer ho to YouTube ka "altered/synthetic content" label khud lagta hai.
+7. Koi hard rule fail ho to video upload NAHI hoti (sirf GitHub artifact).
+Monday ki REPORT.md mein har video ka gate result aata hai.
