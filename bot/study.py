@@ -42,7 +42,7 @@ def find_viral(cfg, n):
     from . import upload
     yt = upload._service()
     st = cfg.get("study", {})
-    since = (dt.datetime.utcnow() - dt.timedelta(days=st.get("days", 30))).strftime("%Y-%m-%dT%H:%M:%SZ")
+    since = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=st.get("days", 30))).strftime("%Y-%m-%dT%H:%M:%SZ")
     region = cfg["trends"].get("region", "US")
     ids = []
     for kw in st.get("keywords") or cfg["trends"]["youtube_keywords"]:
@@ -64,7 +64,8 @@ def find_viral(cfg, n):
             m = re.match(r"PT(?:(\d+)M)?(?:(\d+)S)?$", v["contentDetails"].get("duration", ""))
             secs = (int(m.group(1) or 0) * 60 + int(m.group(2) or 0)) if m else 999
             views = int(v.get("statistics", {}).get("viewCount", 0))
-            if secs > 180 or views < st.get("min_views", 200000) or v["snippet"]["channelId"] == me:
+            if (secs > 180 or views < st.get("min_views", 200000) or v["snippet"]["channelId"] == me
+                    or v["snippet"].get("categoryId") not in st.get("categories", ["27", "28"])):   # Education, Science & Tech
                 continue
             out.append({"id": v["id"], "title": v["snippet"]["title"], "channel": v["snippet"]["channelTitle"],
                         "channel_id": v["snippet"]["channelId"], "views": views, "seconds": secs,
@@ -118,8 +119,11 @@ def run(cfg, limit=None):
     pb = ask(cfg, f"""You are the head writer of the science/tech YouTube channel "{cfg['channel']['name']}".
 Below are analyses of the most-viewed Shorts in our niche this month, and our own recent results.
 Find the PATTERNS that the successful ones share and turn them into concrete rules for our script writer.
-Rules must be about structure, hooks, pacing, length, language, endings, visuals and sound - NEVER copy anyone's sentences,
+Rules must be about structure, hooks, pacing, language, visuals and sound - NEVER copy anyone's sentences,
 titles or catchphrases. Only rules supported by several videos. If something differs a lot between videos, say what works when.
+OUR FIXED FORMAT (rules must fit it, don't contradict it): narrated Shorts (always a voice-over) built from real/stock/NASA
+footage plus our own animated graphics; length is fixed (news 20-25 s, big question 30-35 s); every Short ends with our line
+"Follow Tomorrowly for tomorrow's tech, today."; facts must be true.
 
 VIRAL SHORTS: {table}
 OUR RECENT VIDEOS: {ours or '(no data yet)'}

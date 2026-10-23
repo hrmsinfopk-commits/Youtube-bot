@@ -119,7 +119,7 @@ def _playbook(kind):
     if not rules:
         return ""
     return ("\nWHAT IS WORKING IN VIRAL VIDEOS OF OUR NICHE RIGHT NOW (from our weekly study - use the PATTERNS,"
-            " never copy anyone's wording):\n" + "\n".join(f"- {r}" for r in rules[:12]) + "\n")
+            " never copy anyone's wording; our length, ending and fact rules below always win if anything conflicts):\n" + "\n".join(f"- {r}" for r in rules[:12]) + "\n")
 
 
 def writer_brief():

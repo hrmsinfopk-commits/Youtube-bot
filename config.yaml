@@ -50,6 +50,7 @@ study:
   videos: 12                           # kitni viral Shorts dekhni hain
   days: 30                             # pichhle kitne din ki
   min_views: 200000
+  categories: ["27", "28"]             # sirf Education + Science & Tech videos
   keywords: ["science shorts", "space facts", "quantum computer", "new technology", "AI explained", "NASA",
              "engineering facts", "how does it work", "future technology", "rocket"]
 
