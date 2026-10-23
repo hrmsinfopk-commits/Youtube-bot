@@ -244,6 +244,51 @@
    ],
    "format": "big question",
    "why": "Explainer videos on extreme closed-system engineering regularly pull tens of millions of views (e.g. 18.5M on underwater tunnel engineering, 16.6M on jet engine mechanics, and 35.1M on underwater hydrostatic pressure). This question taps into a universal claustrophobic mystery that nearly everyone has wondered about, answered through clean, step-by-step physics and chemistry."
+  },
+  {
+   "date": "2026-10-23 14:44",
+   "type": "short",
+   "title": "Unitree's Guardian Robot Can Lift Cars and Disarm Attackers #shorts",
+   "topic": "Unitree Unveils 'Guardian' Robot That Lifts Cars and Disarms Attackers - Breaking down the mechanical torque and AI vision behind Unitree's new guardian robot, explaining how electric actuators can deliver enough raw power to flip vehicles and disarm human threats in tactical scenarios.",
+   "style": "Countdown: 3-5 surprising facts about it, the most shocking one last",
+   "youtube_id": "dck9ttHCJic",
+   "voice": "Charon",
+   "seconds": 25.6,
+   "scene_times": [
+    [
+     0.0,
+     "Unitree just unveiled a heavy-duty security robot called the Guardian."
+    ],
+    [
+     5.2,
+     "It packs enough raw torque to actually lift passenger cars."
+    ],
+    [
+     10.1,
+     "The company claims it can also intercept and disarm hostile attackers."
+    ],
+    [
+     14.9,
+     "But here is the catch. Relying on AI for non-lethal tactical force raises massive safety d"
+    ],
+    [
+     22.6,
+     "Follow Tomorrowly for tomorrow's tech, today."
+    ]
+   ],
+   "format": "news",
+   "why": "Robot-focused Shorts are driving tens of millions of views across YouTube this week (with top clips reaching 7M to 11M+ views), showing massive global appetite for physical machines. With this news published on October 22, 2026 and major science explainer channels yet to cover the mechanics behind it, Tomorrowly can capture immediate search and browse traffic.",
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.19,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -587,6 +632,11 @@
   "pixabay-v-200994",
   "pixabay-v-154540",
   "nasa-v-GSFC_20170517_VanAllen_m12591_Bubble",
-  "nasa-v-GSFC_20181011_SeaIce_m13089_Thinning"
+  "nasa-v-GSFC_20181011_SeaIce_m13089_Thinning",
+  "pixabay-v-199740",
+  "pixabay-v-339863",
+  "pixabay-v-320453",
+  "pixabay-v-181802",
+  "pixabay-v-78823"
  ]
 }

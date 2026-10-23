@@ -1,40 +1,39 @@
-[11:20:56] Channel: Tomorrowly (future, mode=facts)
-[11:20:56] Format today: news
-[11:21:08] News headlines collected: 170
-[11:21:11] YouTube videos analysed: 78
-[11:22:17] Gemini OK (gemini-3.8-flash)
-[11:22:17] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[11:22:21] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[11:24:04] Gemini OK (gemini-3.8-flash)
-[11:24:04] Trend topic: China's New 'Guardian' Robot Can Lift Cars and Disarm Attackers | why: Robotics content is exploding on YouTube Shorts right now, with humanoid and robot clips regularly amassing 5M to 11M+ views in recent days. Reported on October 22, this story bridges viral robotics curiosity with defense tech, offering Tomorrowly a distinct engineering-first angle before mainstream tech channels saturate the news.
-[11:24:04] Short length for 'news': 22 s
-[11:24:04] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[11:24:04] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[11:24:29] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[11:24:29] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[11:24:54] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[11:24:59] Gemini OK (gemini-flash-lite-latest)
-[11:24:59] Script length: 95 words
-[11:24:59] Uniqueness: 100% unique vs previous scripts
-[11:24:59] Script ready: Unitree's New Guardian Robot Can Lift Cars and Disarm People (7 scenes)
-[11:25:05] Gemini OK (gemini-flash-lite-latest)
-[11:25:05] Gate fact fix [3]: The specific math and force figure (twenty thousand newton meters) is not supported by the fact shee
-[11:25:05] Gate (script): {"graphics": 1, "own_share": 0.2, "fact_fixes": 1, "source_overlap": 0.0, "script_ok": true, "problems": []}
-[11:25:05] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[11:25:22] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[11:25:30] Captions aligned to the voice (97 words)
-[11:25:49] Own graphics: 1
-[11:25:54] Gemini OK (gemini-flash-lite-latest)
-[11:25:54] Footage check: kept 8 fitting clips, 1 scenes had nothing fitting
-[11:26:00] Download failed: file too big (90 MB)
-[11:26:14] Skipping clip with burned-in text: THANKS FOR WATCHING
-[11:26:17] Download failed: file too big (449 MB)
-[11:26:17] Download failed: file too big (361 MB)
-[11:26:18] Download failed: file too big (456 MB)
-[11:26:18] Footage ready for 7 scenes
-[11:26:18] Gate (visuals): fit 100%, concept 0%, fallback 0
-[11:26:20] Freesound CC0 sound 'electric motor': Electric machine engine large air-conditioner hum noise (id 324665)
-[11:26:33] 16 clips rendered
-[11:26:33] Final render started
-[11:27:31] Freesound CC0 music: Dark Moody Rhythmic Orchestral Ambient Music (Obsidian) (id 789404)
-[11:28:00] Video ready: 20261023_1126_future_short.mp4 (45.1s)
+[14:34:32] Channel: Tomorrowly (future, mode=facts)
+[14:34:32] Format today: news
+[14:34:47] News headlines collected: 173
+[14:34:50] YouTube videos analysed: 78
+[14:37:18] Gemini OK (gemini-3.8-flash)
+[14:37:22] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:37:24] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:37:49] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:37:49] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:38:15] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:40:56] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:41:04] Gemini OK (gemini-flash-lite-latest)
+[14:41:04] Trend topic: Unitree Unveils 'Guardian' Robot That Lifts Cars and Disarms Attackers | why: Robot-focused Shorts are driving tens of millions of views across YouTube this week (with top clips reaching 7M to 11M+ views), showing massive global appetite for physical machines. With this news published on October 22, 2026 and major science explainer channels yet to cover the mechanics behind it, Tomorrowly can capture immediate search and browse traffic.
+[14:41:04] Short length for 'news': 22 s
+[14:41:05] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:41:05] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:41:30] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:41:31] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:42:00] Gemini OK (gemini-flash-lite-latest)
+[14:42:00] Script length: 53 words
+[14:42:00] Uniqueness: 100% unique vs previous scripts
+[14:42:00] Script ready: Unitree's Guardian Robot Can Lift Cars and Disarm Attackers (5 scenes)
+[14:42:09] Gemini OK (gemini-flash-lite-latest)
+[14:42:09] Gate (script): {"graphics": 1, "own_share": 0.19, "fact_fixes": 0, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[14:42:09] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[14:42:19] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[14:42:23] Captions aligned to the voice (54 words)
+[14:42:26] Own graphics: 1
+[14:42:36] Gemini OK (gemini-flash-lite-latest)
+[14:42:36] Footage check: kept 5 fitting clips, 1 scenes had nothing fitting
+[14:42:55] Footage ready for 5 scenes
+[14:42:55] Gate (visuals): fit 100%, concept 0%, fallback 0
+[14:42:57] Freesound CC0 sound 'electric motor': Drill bit falling 03.wav (id 418488)
+[14:43:05] 9 clips rendered
+[14:43:05] Final render started
+[14:44:02] Freesound CC0 music: Dark Moody Rhythmic Orchestral Ambient Music (Obsidian) (id 789404)
+[14:44:18] Video ready: 20261023_1442_future_short.mp4 (25.6s)
+[14:44:19] Upload 53%
+[14:44:19] Uploaded: https://youtu.be/dck9ttHCJic
