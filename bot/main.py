@@ -73,7 +73,8 @@ def chapters(scenes, timings, total):
 def build_description(cfg, kind, script, chap, history):
     parts = [script.get("description", "").strip()]
     if kind == "short" and cfg["upload"].get("link_long_video_in_shorts"):
-        longs = [v for v in history["videos"] if v.get("type") == "long" and v.get("youtube_id")]
+        longs = [v for v in history["videos"] if v.get("type") == "long" and v.get("youtube_id")
+                 and v.get("status") != "private"]
         if longs:
             # same subject -> "full video"; otherwise name the latest long video so the link is clear
             hit = trends._clash(script.get("topic", "") + " " + script.get("title", ""),

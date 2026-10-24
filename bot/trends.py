@@ -192,7 +192,8 @@ def _clash(topic, past):
 def teaser_brief(cfg, history):
     """Short that sends viewers to our newest long video (same story, different hook)."""
     import datetime as _dt
-    longs = [v for v in history["videos"] if v.get("type") == "long" and v.get("youtube_id")]
+    longs = [v for v in history["videos"] if v.get("type") == "long" and v.get("youtube_id")
+             and v.get("status") != "private"]
     if not longs:
         return None
     lv = longs[-1]

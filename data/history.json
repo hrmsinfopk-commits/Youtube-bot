@@ -458,7 +458,8 @@
     "fit_share": 0.92,
     "concept_share": 0.22,
     "fallback_scenes": 3
-   }
+   },
+   "status": "private"
   },
   {
    "date": "2026-10-24 14:36",
