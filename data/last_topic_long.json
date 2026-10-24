@@ -1,38 +1,43 @@
 {
- "topic": "How 99% of the Internet Crosses the Ocean Floor",
- "angle": "Most people assume the modern internet lives in space satellites, but nearly all global data flows through hair-thin glass strands wrapped in cables barely thicker than a garden hose, resting unanchored beneath miles of ocean pressure.",
- "why": "Massive view counts on infrastructure engineering explainers—such as underwater tunnel construction (18.5M views) and extreme engineering deep-dives (63M+ views)—demonstrate intense global appetite for hidden megaprojects. The contradiction between ethereal 'cloud' computing and dirty, heavy-duty deep-sea physical cables creates an immediate, universal hook for anyone who uses a phone.",
+ "topic": "Why Don't Jet Engines Melt?",
+ "angle": "The burning gas inside modern jet engines reaches over 1,700°C, but the metal turbine blades melt at 1,350°C—meaning engines fly for hours hotter than their own melting point without liquefying.",
+ "why": "Proven by Veritasium's hit 'The Ridiculous Engineering Of Jet Engines' (16.7M views) and Cleo Abram's aviation explainers (17M views), jet engine engineering draws massive evergreen global viewership. The core contradiction—operating hundreds of degrees above the metal's physical melting point—instantly hooks anyone who has ever looked out an airplane window.",
  "keywords": [
-  "undersea internet cables",
-  "how subsea cables work",
-  "how does the internet cross the ocean",
-  "submarine communications cable",
-  "fiber optic ocean cable",
-  "cable laying ship",
-  "how deep sea cables are laid",
-  "underwater internet cables map",
-  "do sharks bite internet cables",
-  "how undersea cables are repaired",
-  "transatlantic communications cable",
-  "optical repeaters undersea"
+  "why jet engines don't melt",
+  "how jet engines work",
+  "jet engine turbine blade cooling",
+  "jet engine melting point",
+  "how hot does a jet engine get",
+  "film cooling jet engines",
+  "jet engine engineering explained",
+  "single crystal turbine blades",
+  "thermal barrier coating jet engine",
+  "rolls royce jet engine technology",
+  "airplane turbine blade physics",
+  "high pressure turbine temperature"
  ],
  "facts": [
-  "Over 95% to 99% of all international internet traffic is carried through undersea submarine cables, while satellites carry only a tiny fraction.",
-  "As of 2024, there are more than 550 active and planned undersea fiber optic cables globally, stretching over 1.4 million kilometers.",
-  "At the deep ocean bottom, the cable is surprisingly thin—typically between 17 and 21 millimeters in diameter, roughly the thickness of an ordinary garden hose.",
-  "In deep open water, cables are unarmored because human hazards like boat anchors are absent; heavy steel armoring is only added near shallow coastal waters.",
-  "The data itself travels as pulses of infrared laser light bouncing through glass optical fibers no thicker than a single strand of human hair.",
-  "To survive crushing pressures exceeding 800 atmospheres at depths of 8,000 meters, cables contain no hollow air spaces; voids are packed with water-blocking petroleum jelly and solid polymers.",
-  "Because light signals weaken after traveling through dozens of kilometers of glass, optical repeaters are spliced into the cable every 50 to 100 kilometers to amplify the signal.",
-  "The repeaters require electricity, which is delivered down the length of the cable through an inner copper tube carrying up to 10,000 volts of direct current from shore stations.",
-  "Cables are deployed by specialized cable-laying vessels that can hold thousands of kilometers of coiled cable weighing thousands of metric tons in massive internal carousels.",
-  "Near shorelines and shallow continental shelves, underwater robotic plows or ROVs dig trenches 1 to 3 meters deep into the seabed to bury and shield the cable from ship anchors and fishing trawlers.",
-  "In the deep ocean abyss, the cable is not buried; it is simply unspooled from the ship and left to rest naturally across the seafloor, valleys, and underwater mountain ranges.",
-  "In the late 1980s, sharks were recorded biting early subsea cables due to sensitivity to electromagnetic fields, leading engineers to encase sensitive segments in steel protective tape.",
-  "Around 100 to 150 undersea cable cuts occur every year worldwide, with roughly 70% caused accidentally by commercial fishing gear and dragging anchors, and the rest caused by underwater landslides or earthquakes.",
-  "When a deep-sea cable snaps, specialized repair ships drop grapnel hooks or deploy ROVs to locate the severed ends, haul them to the surface, and splice the microscopic fibers inside cleanrooms on the ship's deck.",
-  "Modern transatlantic cables can transmit over 250 terabits of data per second across a single system, enough to stream millions of 4K movies simultaneously.",
-  "Subsea fiber cables are engineered for an operational design lifespan of at least 25 years before economic or technological retirement."
+  "Combustion gas temperatures inside modern high-bypass turbofan engines routinely reach 1,700°C to 2,000°C (3,100°F to 3,600°F).",
+  "The advanced nickel-based superalloys used to forge high-pressure turbine blades have a melting point of approximately 1,300°C to 1,350°C.",
+  "Without active cooling systems, high-pressure turbine blades directly downstream of the combustion chamber would soften and melt within seconds of full takeoff thrust.",
+  "Engineers run engines at these extreme temperatures because the laws of thermodynamics dictate that higher combustion heat yields significantly greater fuel efficiency and thrust.",
+  "To survive, turbine blades use single-crystal casting, meaning an entire blade is grown as one continuous metallic crystal in a vacuum furnace with zero internal grain boundaries.",
+  "Eliminating microscopic grain boundaries prevents the metal from stretching or cracking under centrifugal loads exceeding 10,000 RPM (roughly 10 to 15 tons of outward pulling force per blade).",
+  "Turbine blades are cast completely hollow with intricate internal serpentine labyrinths designed to circulate cooler air throughout the interior of the metal.",
+  "Cooling air is borrowed from the high-pressure compressor stage before combustion occurs and is routed around the combustion chamber directly into the blade roots.",
+  "Although this bypass bleed air is relatively hot (around 600°C to 700°C), it is roughly 1,000°C colder than the burning combustion gas rushing past the outside of the blade.",
+  "Thousands of microscopic holes—each roughly 0.3 to 0.5 millimeters wide—are drilled through the blade walls using precision lasers or electrical discharge machining.",
+  "The internal cooling air pushes out through these micro-holes and spreads across the blade's outer surface, creating an insulating fluid cushion called film cooling.",
+  "This invisible layer of cooler air acts as a physical buffer, preventing the 1,700°C fiery exhaust gases from directly touching the blade's exterior surface.",
+  "Blades are also coated with a micro-thin thermal barrier coating (TBC) made of yttria-stabilized zirconia ceramic, typically between 100 and 300 micrometers thick.",
+  "Because ceramics have very low thermal conductivity, this ultra-thin coating drops the surface temperature by another 100°C to 200°C across a layer thinner than a fingernail.",
+  "Together, internal cooling channels, film-cooling air jackets, and ceramic thermal barriers keep the metallic blade body below 1,050°C, well below its structural melting point.",
+  "An article published by Raksha Anirveda examines how hypersonic missiles avoid melting under extreme heat.",
+  "Hypersonic missiles are subjected to temperatures high enough to raise concerns about structural melting.",
+  "Mount Dukono is an active volcano located in Indonesia.",
+  "Indonesia's Dukono volcano propelled an ash plume reaching an altitude of 7,000 feet.",
+  "The volcanic ash emission from Dukono prompted an official aviation warning.",
+  "Rus Tourism News reported on the 7,000-foot ash cloud and the related warning for aircraft."
  ],
  "long_format": "big question",
  "format": "big question",
@@ -40,43 +45,43 @@
  "youtube_top": [
   {
    "title": "Bruno Mars - I Just Might [Official Music Video]",
-   "views": 177320307
+   "views": 177895103
+  },
+  {
+   "title": "Trapped On An Island Until I Build A Boat",
+   "views": 174941427
   },
   {
    "title": "This is What Happens When A Hockey Season Ends 🤯",
-   "views": 158490825
-  },
-  {
-   "title": "You Can't Leave | Official Trailer | Only In Theaters October 16th",
-   "views": 108444875
+   "views": 158910288
   },
   {
    "title": "Ariana Grande - hate that i made you love me (official music video)",
-   "views": 105328641
+   "views": 106282736
   },
   {
    "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
-   "views": 100894250
+   "views": 101261126
+  },
+  {
+   "title": "WE CAN’T BELIEVE WE JUST HIT 26M FAMILY MEMBERS! 🥹😭🥰",
+   "views": 84472649
   },
   {
    "title": "Why Can't We Print Unlimited Money 😱",
-   "views": 74563007
+   "views": 74786766
   },
   {
    "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
-   "views": 73179473
+   "views": 73260907
   },
   {
    "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
-   "views": 72447429
+   "views": 72707774
   },
   {
    "title": "How These Energy Saving Stairs Work 😮",
-   "views": 72135192
-  },
-  {
-   "title": "The Closest Thing We Have to Alien Technology",
-   "views": 63997727
+   "views": 72331343
   }
  ]
 }

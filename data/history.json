@@ -289,6 +289,176 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-10-24 14:12",
+   "type": "long",
+   "title": "Why Don't Jet Engines Melt? The Engineering Secret",
+   "topic": "Why Don't Jet Engines Melt? - The burning gas inside modern jet engines reaches over 1,700°C, but the metal turbine blades melt at 1,350°C—meaning engines fly for hours hotter than their own melting point without liquefying.",
+   "style": "Explainer: one big question, answered step by step with a surprise at the end",
+   "youtube_id": "oGPOL4VkwGI",
+   "voice": "Charon",
+   "seconds": 278.5,
+   "scene_times": [
+    [
+     0.0,
+     "Inside a modern jet engine, burning gas roars at seventeen hundred degrees Celsius, yet th"
+    ],
+    [
+     9.1,
+     "How can these thin metallic blades survive for hours inside a blowtorch four hundred degre"
+    ],
+    [
+     19.6,
+     "The answer is a masterclass in extreme thermodynamics, built on three layers of impossible"
+    ],
+    [
+     26.3,
+     "Why do engineers push the temperature this high in the first place? Because the hotter an "
+    ],
+    [
+     35.5,
+     "Without active cooling systems, these turbine blades would soften and melt within seconds "
+    ],
+    [
+     44.2,
+     "That brings us to defense number one: how the blade is grown at the atomic level."
+    ],
+    [
+     48.9,
+     "Normal metal consists of millions of microscopic crystal grains jammed together, but those"
+    ],
+    [
+     57.6,
+     "So aerospace foundries cast every high-pressure blade as a single continuous metallic crys"
+    ],
+    [
+     66.2,
+     "This flawless atomic lattice is vital because the rotor spins at over ten thousand revolut"
+    ],
+    [
+     73.3,
+     "Each blade experiences centrifugal forces equivalent to hanging a fifteen-ton double-decke"
+    ],
+    [
+     80.2,
+     "Yet even a single-crystal superalloy still melts at thirteen hundred and fifty degrees, so"
+    ],
+    [
+     89.3,
+     "That is why the blade is not solid at all: defense number two is an internal serpentine la"
+    ],
+    [
+     95.7,
+     "How does the engine cool a blade when everything around it is ablaze? It steals air from u"
+    ],
+    [
+     99.5,
+     "High-pressure air is bled off before the combustion chamber and pumped straight into the b"
+    ],
+    [
+     107.7,
+     "This cooling air is six hundred and fifty degrees Celsius—scalding hot to human skin, but "
+    ],
+    [
+     115.9,
+     "As this pressurized air serpentines through the internal ribs, it rapidly draws heat away "
+    ],
+    [
+     123.9,
+     "Then comes the engineering miracle: thousands of laser-drilled micro-holes along the leadi"
+    ],
+    [
+     131.2,
+     "Each hole is only zero point three to zero point five millimeters wide, angled backward at"
+    ],
+    [
+     139.6,
+     "As the bleed air exits, it does not blow straight out—it hugs the surface, creating an unb"
+    ],
+    [
+     149.2,
+     "This is film cooling, and it means the seventeen hundred degree exhaust gas never actually"
+    ],
+    [
+     156.7,
+     "Still, at takeoff power, radiation alone would overpower that air film without defense num"
+    ],
+    [
+     163.4,
+     "Engineers spray the outer skin with a thermal barrier coating of yttria-stabilized zirconi"
+    ],
+    [
+     170.0,
+     "This ceramic armor is between one hundred and three hundred micrometers thick—thinner than"
+    ],
+    [
+     177.6,
+     "Yet because ceramics conduct heat terribly, this paper-thin coat drops the alloy's surface"
+    ],
+    [
+     187.3,
+     "Here is the big reveal: combining single-crystal superalloys, internal labyrinth air, and "
+    ],
+    [
+     195.5,
+     "While the surrounding gas burns at seventeen hundred degrees, the actual metal underneath "
+    ],
+    [
+     203.0,
+     "That is three hundred degrees below its melting point, keeping the alloy rock-solid while "
+    ],
+    [
+     213.9,
+     "So why don't we cool the blades even more? Here is the catch."
+    ],
+    [
+     216.0,
+     "Every cubic foot of compressed air bled off for cooling is air stolen from combustion, dir"
+    ],
+    [
+     225.5,
+     "If engineers bleed too little air, the blades melt; bleed too much, and the airliner burns"
+    ],
+    [
+     233.0,
+     "Our Hype Meter score for modern turbine blade cooling is a definitive nine out of ten."
+    ],
+    [
+     237.9,
+     "This isn't laboratory theory: it powers every long-haul commercial flight crossing oceans "
+    ],
+    [
+     243.8,
+     "Does it pass our Tomorrow Test? Yes, because further advances in ceramic matrix composites"
+    ],
+    [
+     252.8,
+     "Next time you fly at thirty-five thousand feet, look at that engine nacelle outside your w"
+    ],
+    [
+     259.8,
+     "Remember that inches away, metal blades spin safely through gas hotter than glowing lava, "
+    ],
+    [
+     268.4,
+     "Would you fly on an experimental hypersonic craft that faces extreme melting heat like thi"
+    ]
+   ],
+   "format": "big question",
+   "why": "Proven by Veritasium's hit 'The Ridiculous Engineering Of Jet Engines' (16.7M views) and Cleo Abram's aviation explainers (17M views), jet engine engineering draws massive evergreen global viewership. The core contradiction—operating hundreds of degrees above the metal's physical melting point—instantly hooks anyone who has ever looked out an airplane window.",
+   "gate": {
+    "graphics": 8,
+    "own_share": 0.24,
+    "own_math": true,
+    "fact_fixes": 2,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 0.92,
+    "concept_share": 0.22,
+    "fallback_scenes": 3
+   }
   }
  ],
  "used_media": [
@@ -637,6 +807,44 @@
   "pixabay-v-339863",
   "pixabay-v-320453",
   "pixabay-v-181802",
-  "pixabay-v-78823"
+  "pixabay-v-78823",
+  "pixabay-v-379762",
+  "pixabay-v-27597",
+  "pixabay-v-277104",
+  "pixabay-v-21531",
+  "pixabay-v-281546",
+  "pixabay-v-244334",
+  "nasa-v-JPL-20190712-M2020f-0001-PIT_CREW_FOR_MARS",
+  "nasa-v-JPL-20230905-PSYCHEf-0001-Behind the Spacecraft Ben Inouye Psyche",
+  "pixabay-v-44647",
+  "pixabay-v-83870",
+  "pixabay-v-282244",
+  "pixabay-v-27916",
+  "pixabay-v-37071",
+  "nasa-v-JPL-20210625-M2020f-0001-Taking a Selfie on Mars UHD",
+  "pixabay-v-76426",
+  "pixabay-v-135378",
+  "pixabay-v-14098",
+  "nasa-v-JPL-20221122-SWOTf-0003-SWOT Mission Makers Christine Gebara",
+  "pixabay-v-3612",
+  "pixabay-v-21531",
+  "pixabay-v-168788",
+  "pixabay-v-39",
+  "pixabay-v-2673",
+  "pixabay-v-21531",
+  "pixabay-v-52536",
+  "pixabay-v-428",
+  "nasa-v-ksc_060204_spaceblanket",
+  "pixabay-v-12437",
+  "pixabay-v-363199",
+  "pixabay-v-5497",
+  "pixabay-v-13305",
+  "pixabay-v-4732",
+  "pixabay-v-3586",
+  "pixabay-v-1393",
+  "pixabay-v-52536",
+  "pixabay-v-378988",
+  "pixabay-v-323784",
+  "pixabay-v-323793"
  ]
 }
