@@ -1,43 +1,48 @@
-[14:23:34] Channel: Tomorrowly (future, mode=facts)
-[14:23:34] Format today: news
-[14:23:46] News headlines collected: 170
-[14:23:49] YouTube videos analysed: 78
-[14:26:16] Gemini OK (gemini-3.8-flash)
-[14:26:16] Topic 'Digit 5: The Humanoid Robot Built for 20-Hour Shifts' repeats recent video 'Why Don't Jet Engines Melt? - The burning gas inside modern jet engine' - choosing again
-[14:29:16] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[14:29:19] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:29:48] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:29:52] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:33:17] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[14:33:17] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:33:23] Gemini OK (gemini-flash-lite-latest)
-[14:33:23] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:33:23] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:33:49] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:33:49] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:34:14] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:34:18] Gemini OK (gemini-flash-lite-latest)
-[14:34:18] Trend topic: Scientists Just Reversed 60 Years of Aging in Human Cells | why: Science and tech longevity breakthroughs have massive multi-million view potential on Shorts due to broad human curiosity. The news is extremely fresh (Oct 21, 2026) and lacks heavy saturation from top-tier massive tech creators, leaving a wide open gap for a punchy explainer.
-[14:34:18] Short length for 'news': 22 s
-[14:34:27] Gemini OK (gemini-flash-lite-latest)
-[14:34:27] Script too long (74 words, target ~51) - tightening
-[14:34:37] Gemini OK (gemini-flash-lite-latest)
-[14:34:37] Script length: 41 words
-[14:34:37] Uniqueness: 95% unique vs previous scripts
-[14:34:37] Script ready: Scientists Just Reversed 60 Years of Aging in Human Cells (4 scenes)
-[14:34:45] Gemini OK (gemini-flash-lite-latest)
-[14:34:45] Gate (script): {"graphics": 1, "own_share": 0.37, "fact_fixes": 0, "source_overlap": 0.0, "script_ok": true, "problems": []}
-[14:34:45] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[14:34:55] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[14:35:01] Captions aligned to the voice (41 words)
-[14:35:12] Own graphics: 1
-[14:35:26] Gemini OK (gemini-flash-lite-latest)
-[14:35:26] Footage check: kept 4 fitting clips, 1 scenes had nothing fitting
-[14:35:39] Footage ready for 4 scenes
-[14:35:39] Gate (visuals): fit 100%, concept 0%, fallback 0
-[14:35:40] Freesound CC0 sound 'computer beep': PIN beep (id 759010)
-[14:35:46] 7 clips rendered
-[14:35:46] Final render started
-[14:36:37] Freesound CC0 music: Free Uplifting Music (id 670819)
-[14:36:52] Video ready: 20261024_1435_future_short.mp4 (19.8s)
-[14:36:55] Uploaded: https://youtu.be/5yhWmoUjmZY
+[14:54:53] Channel: Tomorrowly (future, mode=facts)
+[14:54:53] Format today: news
+[14:55:03] News headlines collected: 171
+[14:55:06] YouTube videos analysed: 78
+[14:55:26] Gemini OK (gemini-3.8-flash)
+[14:55:27] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:56:12] Gemini OK (gemini-flash-latest)
+[14:56:12] Trend topic: How Digit 5 Pulls 20-Hour Shifts on a 9-Minute Charge | why: Humanoid robotics is currently capturing millions of views across YouTube Shorts (such as videos on new robot workers earning over 6 to 8 million views), but almost all coverage focuses on flashy demos rather than how warehouse robots actually sustain continuous work. This fresh announcement on Digit 5 highlights an astonishing engineering breakthrough—20-hour shifts with 9-minute rapid recharging—giving us an untapped, highly visual explainer angle without repeating our past topics.
+[14:56:12] Short length for 'news': 22 s
+[14:57:35] Gemini OK (gemini-3.8-flash)
+[14:57:35] Script length: 54 words
+[14:57:35] Uniqueness: 95% unique vs previous scripts
+[14:57:35] Script ready: How Digit 5 Humanoid Robot Pulls 20-Hour Warehouse Shifts (6 scenes)
+[14:57:35] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:57:35] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:58:01] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:58:01] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:59:54] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:59:58] Gemini OK (gemini-flash-lite-latest)
+[14:59:58] Gate fact fix [0]: Digit 5 is claimed to operate for 20-hour shifts, but the script states it was given 20-hour work sh
+[14:59:58] Gate (script): {"graphics": 1, "own_share": 0.17, "fact_fixes": 1, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[14:59:58] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[15:00:10] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[15:00:16] Captions aligned to the voice (56 words)
+[15:00:23] Own graphics: 1
+[15:00:53] Picture editor: 46/48 previews loaded
+[15:00:53] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:01:36] Gemini OK (gemini-flash-lite-latest)
+[15:01:46] Gemini OK (gemini-flash-lite-latest)
+[15:01:46] Footage check: kept 4 fitting clips, 3 scenes had nothing fitting
+[15:01:49] Image HTTP 503 (try 1)
+[15:02:02] Image HTTP 402 (try 2)
+[15:02:18] Image HTTP 402 (try 3)
+[15:02:29] Download failed: file too big (1178 MB)
+[15:02:42] Skipping clip with burned-in text: WEBB CELEBRATES FIRST YEAR SCIENCE WITH NEW IMAGE
+[15:02:58] Image HTTP 402 (try 1)
+[15:03:14] Image HTTP 402 (try 2)
+[15:03:33] Image HTTP 503 (try 3)
+[15:03:46] Download failed: file too big (1178 MB)
+[15:04:04] Footage ready for 6 scenes
+[15:04:04] Gate (visuals): fit 67%, concept 17%, fallback 2
+[15:04:05] Freesound CC0 sound 'electric motor': Electric Train Motor Idle - Loop (Queensland Rail InterCity Express).wav (id 700034)
+[15:04:06] Freesound CC0 sound 'computer beep': as_ab_al_computer_noise_7_16bit.wav (id 543053)
+[15:04:08] Freesound CC0 sound 'whoosh': _metalic_flyby_whoosh_ambience_strange_.flac (id 365814)
+[15:04:17] 10 clips rendered
+[15:04:17] Final render started
+[15:04:28] Freesound CC0 music: Orchestral Score 2 - NOT mastered.wav (id 621293)
+[15:04:51] Video ready: 20261024_1504_future_short.mp4 (27.2s)
