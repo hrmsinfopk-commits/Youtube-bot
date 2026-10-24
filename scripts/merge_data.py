@@ -46,6 +46,12 @@ def main():
         if not p.is_file():
             continue
         rel = p.relative_to(mine_dir).as_posix()
+        if p.suffix.lower() not in (".json", ".txt", ".log", ".md", ".yaml", ".yml", ".csv"):
+            dest = ROOT / rel                  # binary files (thumbnails...): this run's copy wins
+            if not dest.exists() or dest.read_bytes() != p.read_bytes():
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                dest.write_bytes(p.read_bytes())
+            continue
         mine = p.read_text(encoding="utf-8")
         orig = at_base(base, rel)
         dest = ROOT / rel
