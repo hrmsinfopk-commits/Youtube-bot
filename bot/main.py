@@ -225,6 +225,21 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
             for sc in script["scenes"]:
                 sc["topic"] = script["topic"]
             picked = curate.pick(cfg, script["scenes"], opts, per_scene=need)
+            # second chance for scenes where nothing fitted: other keywords, then the picture editor looks again
+            empty = [i for i, pk in enumerate(picked) if not pk and i not in cache]
+            if empty:
+                seen_ids = set(used) | {c["id"] for o in opts for c in o}
+                opts2 = [[] for _ in script["scenes"]]
+                for i in empty:
+                    sc = script["scenes"][i]
+                    kws = list(dict.fromkeys((sc.get("keywords") or [])[1:] + gk))[:4]
+                    opts2[i] = footage.candidates(cfg, kws, orient, seen_ids, subject=sc.get("subject"))
+                if any(opts2):
+                    log(f"Second footage search for {len(empty)} scenes")
+                    p2 = curate.pick(cfg, script["scenes"], opts2, per_scene=need)
+                    for i in empty:
+                        if p2[i]:
+                            picked[i] = p2[i]
         n_sc = len(script["scenes"])
         for i, sc in enumerate(script["scenes"]):
             if i in cache:
