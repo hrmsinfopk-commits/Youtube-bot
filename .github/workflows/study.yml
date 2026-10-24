@@ -2,8 +2,8 @@ name: Tomorrowly Viral Study
 
 on:
   schedule:
-    # UTC. Har Itwar subah 9 baje (Pakistan). Viral Shorts dekh kar script writer ki playbook update hoti hai.
-    - cron: "0 4 * * 0"
+    # UTC. Har Somvaar 12:15 PM (Pakistan) - Gemini ki roz ki limit reset hone ke foran baad.
+    - cron: "15 7 * * 1"
   workflow_dispatch: {}
   push:
     paths: [".github/trigger-study.txt"]
