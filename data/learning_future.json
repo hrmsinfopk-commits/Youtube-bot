@@ -1,80 +1,150 @@
 {
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "channel": {
   "subscribers": 9,
-  "total_views": 2778,
-  "videos": 5,
-  "watch_hours_12m": 7.1
+  "total_views": 2972,
+  "videos": 6,
+  "watch_hours_12m": 8.9
  },
  "style_scores": {
-  "Future scenario: 'It's 2040...' - show how this changes everyday life": 1.03,
-  "Before vs now: how this used to work vs what just changed": 0.97
+  "Future scenario: 'It's 2040...' - show how this changes everyday life": 0.97,
+  "Before vs now: how this used to work vs what just changed": 0.92,
+  "": 1.1
  },
  "format_scores": {
   "short: news": {
-   "videos": 2,
+   "videos": 3,
+   "score": 0.99,
+   "avg_views": 916,
+   "avg_pct": 52.8
+  },
+  "long: deep dive": {
+   "videos": 1,
    "score": 1.0,
-   "avg_views": 1144,
-   "avg_pct": 42.8
+   "avg_views": 23,
+   "avg_pct": 47.8
   }
  },
- "insights": [],
+ "insights": [
+  "Zero comments across all 4 videos confirms call-to-actions and closing questions are currently ineffective at driving viewer replies.",
+  "Recognizable consumer brands and breakthrough hype (Tesla/SpaceX, Quantinuum) drove over 3.5x more Short views (~1,200) than NASA space exploration (335 views).",
+  "High retention did not translate to algorithmic reach: the NASA Short had 70.72% retention but only 335 views, whereas ~42-46% retention Shorts broke 1,100+ views.",
+  "Late abstract questions cause drop-off: the Quantinuum Short lost 6.1% of viewers at 42.6s during an abstract closing question about infinite dimensions.",
+  "Narrative sci-fi hooks lose viewers early: opening with 'It is 2040...' caused an 11.1% drop at 20.4s on the long-form NASA video.",
+  "Controversial debate framing drives higher engagement: the 'Real SpaceX Car Or Total Marketing Hype?' title produced 27 likes, more than double any other video.",
+  "With only 1 long-form video (23 views) and 3 Shorts, long-form and deep-dive performance data is currently too thin to draw firm conclusions."
+ ],
  "videos": [
   {
    "title": "Quantinuum Just Shattered the Quantum Computing Record! #shorts",
    "type": "short",
    "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
-   "views": 1108,
-   "averageViewPercentage": 45.39,
+   "views": 1192,
+   "averageViewPercentage": 45.94,
    "likes": 12,
    "comments": 0,
-   "shares": 1,
-   "subscribersGained": 3,
+   "shares": 2,
+   "subscribersGained": 4,
    "format": null,
-   "score": 1.03,
+   "score": 0.95,
    "notes": [
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
-    "Sab se zyada log 42.6s par chhod gaye (5.8% gire) - wahan line thi: \"How will you use a computer that thinks in infinite dimensions?\"."
+    "Sab se zyada log 42.6s par chhod gaye (6.1% gire) - wahan line thi: \"How will you use a computer that thinks in infinite dimensions?\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 0,
-    "YT_CHANNEL": 1,
-    "YT_SEARCH": 5,
-    "YT_OTHER_PAGE": 3,
-    "PLAYLIST": 0,
-    "SHORTS": 90
+    "YT_CHANNEL": 2,
+    "YT_SEARCH": 6,
+    "YT_OTHER_PAGE": 2,
+    "EXT_URL": 0,
+    "PLAYLIST": 1,
+    "SHORTS": 88
    },
-   "age_days": 3,
+   "age_days": 4,
    "youtube_id": "J9O4qdiPSgk"
   },
   {
    "title": "Tesla Flying Roadster: Real SpaceX Car Or Total Marketing Hype? #shorts",
    "type": "short",
    "style": "Before vs now: how this used to work vs what just changed",
-   "views": 1181,
-   "averageViewPercentage": 40.22,
-   "likes": 25,
+   "views": 1221,
+   "averageViewPercentage": 41.61,
+   "likes": 27,
    "comments": 0,
    "shares": 0,
    "subscribersGained": 3,
    "format": null,
-   "score": 0.97,
+   "score": 0.92,
    "notes": [
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
-    "Sab se zyada log 6.1s par chhod gaye (6.7% gire) - wahan line thi: \"Tesla just unveiled a brand-new Roadster strapped with actual SpaceX thrusters.\"."
+    "Sab se zyada log 6.1s par chhod gaye (6.6% gire) - wahan line thi: \"Tesla just unveiled a brand-new Roadster strapped with actual SpaceX thrusters.\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 0,
-    "YT_CHANNEL": 0,
+    "YT_CHANNEL": 1,
     "YT_SEARCH": 2,
     "YT_OTHER_PAGE": 1,
-    "SHORTS": 97,
+    "SHORTS": 96,
     "SOUND_PAGE": 0
    },
-   "age_days": 3,
+   "age_days": 4,
    "youtube_id": "ujBL9LBgPHk"
+  },
+  {
+   "title": "NASA's New Nuclear Spaceship: How SR-1 Freedom Changes Mars Travel",
+   "type": "long",
+   "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
+   "views": 23,
+   "averageViewPercentage": 47.79,
+   "likes": 2,
+   "comments": 0,
+   "shares": 3,
+   "subscribersGained": 1,
+   "format": "deep dive",
+   "score": 1.0,
+   "notes": [
+    "Sab se zyada log 20.4s par chhod gaye (11.1% gire) - wahan line thi: \"It is 2040, and a crew bound for Mars is already halfway there while previous mi\"."
+   ],
+   "traffic": {
+    "NO_LINK_OTHER": 13,
+    "SUBSCRIBER": 9,
+    "YT_CHANNEL": 9,
+    "YT_SEARCH": 22,
+    "RELATED_VIDEO": 43,
+    "EXT_URL": 4
+   },
+   "age_days": 3,
+   "youtube_id": "BZuC5VJ6kDM"
+  },
+  {
+   "title": "NASA's First Nuclear Spaceship Built for Mars #shorts",
+   "type": "short",
+   "style": "",
+   "views": 335,
+   "averageViewPercentage": 70.72,
+   "likes": 8,
+   "comments": 0,
+   "shares": 0,
+   "subscribersGained": 0,
+   "format": null,
+   "score": 1.1,
+   "notes": [
+    "Jo log aaye unhon ne achhi dekhi, lekin bohat kam log aaye: topic/title/thumbnail ne kashish nahi ki.",
+    "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
+    "Sab se zyada log 0.0s par chhod gaye (9.7% gire) - wahan line thi: \"\"."
+   ],
+   "traffic": {
+    "NO_LINK_OTHER": 0,
+    "SUBSCRIBER": 1,
+    "YT_CHANNEL": 1,
+    "YT_SEARCH": 1,
+    "YT_OTHER_PAGE": 3,
+    "SHORTS": 94
+   },
+   "age_days": 3,
+   "youtube_id": "sWFi6T_3Kf8"
   }
  ]
 }
