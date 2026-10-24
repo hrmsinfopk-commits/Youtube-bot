@@ -10,8 +10,8 @@ from .common import log, secret
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
 
-def _call(model, prompt, json_mode, search, temperature, video_url=None):
-    parts = [{"text": prompt}]
+def _call(model, prompt, json_mode, search, temperature, video_url=None, extra_parts=None):
+    parts = [{"text": prompt}] + list(extra_parts or [])
     if video_url:   # Gemini watches a public YouTube video itself (nothing is downloaded)
         parts = [{"file_data": {"file_uri": video_url}}] + parts
     body = {
@@ -35,7 +35,7 @@ DEAD = set()  # models that are retired or out of daily quota - skipped for the 
 HITS = {}     # how often a model said "quota exceeded" (per-minute limits clear after ~1 minute)
 
 
-def ask(cfg, prompt, json_mode=False, search=False, temperature=1.0, attempts=4, video_url=None):
+def ask(cfg, prompt, json_mode=False, search=False, temperature=1.0, attempts=4, video_url=None, extra_parts=None):
     if not secret("GEMINI_API_KEY"):
         raise RuntimeError("GEMINI_API_KEY secret missing")
     last = None
@@ -47,7 +47,7 @@ def ask(cfg, prompt, json_mode=False, search=False, temperature=1.0, attempts=4,
             if model in DEAD or ("lite" in model and not use_lite):
                 continue
             try:
-                text = _call(model, prompt, json_mode, search, temperature, video_url)
+                text = _call(model, prompt, json_mode, search, temperature, video_url, extra_parts)
                 result = parse_json(text) if json_mode else text
                 log(f"Gemini OK ({model})")
                 return result

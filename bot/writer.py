@@ -296,8 +296,13 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
                     f"(THE CATCH = the honest line; WE DID THE MATH = the feelable comparison). No HYPE METER or TOMORROW TEST in Shorts.")
     else:
         signature = "ALL"
-        sig_rule = ("- SIGNATURES for this long video: THE CATCH (in the twist part) and WE DID THE MATH (one calculation, "
-                    "with a 'bars' or 'counter' graphic), then end with HYPE METER and TOMORROW TEST (each with its graphic).")
+        if brief and brief.get("format") == "big question":
+            sig_rule = ("- SIGNATURES for this long video: THE CATCH (in the twist part) and WE DID THE MATH (one calculation, "
+                        "with a 'bars' or 'counter' graphic). NO Hype Meter and NO Tomorrow Test (this is not new tech - "
+                        "they make no sense here); end with a short payoff that changes how the viewer sees an everyday thing.")
+        else:
+            sig_rule = ("- SIGNATURES for this long video: THE CATCH (in the twist part) and WE DID THE MATH (one calculation, "
+                        "with a 'bars' or 'counter' graphic), then end with HYPE METER and TOMORROW TEST (each with its graphic).")
     avoid = memory.get("openings", [])[-25:] + memory.get("endings", [])[-15:]
     avoid_txt = ("\nNEVER reuse or closely imitate these openings/endings from our previous videos:\n"
                  + "\n".join(f"- {x}" for x in avoid) + "\n") if avoid else ""
@@ -524,7 +529,11 @@ def _finish(data, topic, style):
     scenes = [s for s in data.get("scenes", []) if s.get("text", "").strip()]
     if len(scenes) < 3:
         raise RuntimeError("Script too short / malformed")
+    from .gate import clean_line
     for s in scenes:
+        s["text"] = clean_line(s["text"]) or s["text"]
+        if s.get("caption"):
+            s["caption"] = clean_line(s["caption"]) or s["caption"]
         s.setdefault("caption", s["text"])
         s.setdefault("chapter", "")
         kws = s.get("keywords") or []

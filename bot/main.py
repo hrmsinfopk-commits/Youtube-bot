@@ -268,7 +268,8 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                     p = work / "media" / f"{it['id']}{ext}"
                     try:
                         footage.download(it, p)
-                        if cfg["footage"].get("reject_text", True) and footage.has_text(p, it["kind"]):
+                        if (cfg["footage"].get("reject_text", True) and footage.has_text(p, it["kind"])) or \
+                                footage.is_greenscreen(p, it["kind"]):
                             used.add(it["id"])               # burned-in subtitles/titles -> never use this clip
                             history["used_media"].append(it["id"])
                             p.unlink(missing_ok=True)

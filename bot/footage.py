@@ -28,7 +28,7 @@ def _pexels_videos(q, orient):
                       key=lambda f: f["width"] * f["height"])
         if good:
             res.append({"id": f"pexels-v-{v['id']}", "url": good[0]["link"], "kind": "video",
-                        "dur": v.get("duration", 10), "desc": v.get("url", "")})
+                        "dur": v.get("duration", 10), "desc": v.get("url", ""), "thumb": v.get("image")})
     return res
 
 
@@ -47,7 +47,7 @@ def _pixabay_videos(q, orient):
             f = vids.get(size) or {}
             if f.get("url") and min(f.get("width", 0), f.get("height", 0)) >= 720:
                 res.append({"id": f"pixabay-v-{h['id']}", "url": f["url"], "kind": "video",
-                            "dur": h.get("duration", 10), "desc": h.get("tags", "")})
+                            "dur": h.get("duration", 10), "desc": h.get("tags", ""), "thumb": f.get("thumbnail")})
                 break
     return res
 
@@ -78,7 +78,8 @@ def _nasa_videos(q, orient, limit=6):
         pick = next((f for f in mp4 if "~medium" in f), None) or next((f for f in mp4 if "~mobile" in f), None)
         if pick:
             res.append({"id": f"nasa-v-{d.get('nasa_id', pick)}", "url": pick, "kind": "video", "dur": 20,
-                        "desc": f"{d.get('title', '')} {' '.join(d.get('keywords') or [])}"})
+                        "desc": f"{d.get('title', '')} {' '.join(d.get('keywords') or [])}",
+                        "thumb": ((it.get("links") or [{}])[0].get("href") or "").replace("http://", "https://") or None})
     return res
 
 
@@ -95,7 +96,8 @@ def _nasa_photos(q, orient, limit=8):
         pick = next((f for f in files if "~large.jpg" in f), None) or next((f for f in files if "~orig.jpg" in f), None)
         if pick:
             res.append({"id": f"nasa-p-{d.get('nasa_id', pick)}", "url": pick, "kind": "photo", "dur": 5,
-                        "desc": f"{d.get('title', '')} {' '.join(d.get('keywords') or [])}"})
+                        "desc": f"{d.get('title', '')} {' '.join(d.get('keywords') or [])}",
+                        "thumb": ((it.get("links") or [{}])[0].get("href") or "").replace("http://", "https://") or None})
     return res
 
 
@@ -108,7 +110,8 @@ def _pexels_photos(q, orient):
     if r.status_code != 200:
         return []
     return [{"id": f"pexels-p-{p['id']}", "url": p["src"]["large2x"], "kind": "photo", "dur": 5,
-             "desc": (p.get("alt") or "") + " " + p.get("url", "")} for p in r.json().get("photos", [])]
+             "desc": (p.get("alt") or "") + " " + p.get("url", ""), "thumb": p["src"].get("medium")}
+            for p in r.json().get("photos", [])]
 
 
 def _pixabay_photos(q, orient):
@@ -122,7 +125,7 @@ def _pixabay_photos(q, orient):
     if r.status_code != 200:
         return []
     return [{"id": f"pixabay-p-{h['id']}", "url": h["largeImageURL"], "kind": "photo", "dur": 5,
-             "desc": h.get("tags", "")} for h in r.json().get("hits", [])]
+             "desc": h.get("tags", ""), "thumb": h.get("webformatURL")} for h in r.json().get("hits", [])]
 
 
 # ------------------------------------------------------------------ licensed photos of REAL things (with credit)
@@ -153,6 +156,7 @@ def _wikimedia_photos(q, limit=8):
         artist = re.sub(r"<[^>]+>", "", (meta.get("Artist") or {}).get("value", "")).strip()[:60] or "Unknown"
         desc = re.sub(r"<[^>]+>", " ", (meta.get("ImageDescription") or {}).get("value", ""))[:200]
         out.append({"id": f"wm-{p.get('pageid')}", "url": ii.get("thumburl") or ii.get("url"), "kind": "photo", "dur": 5,
+                    "thumb": (ii.get("thumburl") or "").replace("/1920px-", "/320px-") or None,
                     "desc": f"{p.get('title', '')} {desc}", "credit": f"{artist} / Wikimedia Commons, {lic}"})
     return out
 
@@ -170,7 +174,7 @@ def _openverse_photos(q, limit=10):
         if min(x.get("width") or 0, x.get("height") or 0) < 700:
             continue
         lic = f"CC {x.get('license', '').upper()} {x.get('license_version') or ''}".strip()
-        out.append({"id": f"ov-{x.get('id')}", "url": x.get("url"), "kind": "photo", "dur": 5,
+        out.append({"id": f"ov-{x.get('id')}", "url": x.get("url"), "kind": "photo", "dur": 5, "thumb": x.get("thumbnail"),
                     "desc": f"{x.get('title', '')} {' '.join(t.get('name', '') for t in (x.get('tags') or [])[:10])}",
                     "credit": f"{(x.get('creator') or 'Unknown')[:50]} / {x.get('source', 'Openverse')}, {lic}"})
     return out
@@ -329,3 +333,31 @@ def has_text(path, kind):
                 log(f"Skipping clip with burned-in text: {' '.join(w[:8])}")
                 return True
     return False
+
+
+def is_greenscreen(path, kind):
+    """True for chroma-key footage (big flat green/blue screen areas) - it looks broken in a video."""
+    import subprocess
+    import numpy as np
+    pts = [0.2, 0.5, 0.8] if kind == "video" else [None]
+    try:
+        dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+                                   capture_output=True, text=True).stdout.strip() or 0) if kind == "video" else 0
+    except ValueError:
+        dur = 0
+    hits = 0
+    for f in pts:
+        cmd = ["ffmpeg", "-v", "error"] + (["-ss", f"{dur * f:.2f}"] if f is not None and dur else []) + \
+              ["-i", str(path), "-frames:v", "1", "-vf", "scale=160:90", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"]
+        raw = subprocess.run(cmd, capture_output=True).stdout
+        if len(raw) < 160 * 90 * 3:
+            continue
+        a = np.frombuffer(raw[:160 * 90 * 3], np.uint8).reshape(90, 160, 3).astype(int)
+        r, g, b = a[..., 0], a[..., 1], a[..., 2]
+        green = (g > 120) & (g > r * 1.5) & (g > b * 1.5)
+        blue = (b > 120) & (b > r * 1.8) & (b > g * 1.3) & (g > 60)
+        if green.mean() > 0.25 or (blue.mean() > 0.45 and (np.std(b[blue]) if blue.any() else 99) < 12):
+            hits += 1
+    if hits:
+        log("Skipping chroma-key (green screen) clip")
+    return hits > 0

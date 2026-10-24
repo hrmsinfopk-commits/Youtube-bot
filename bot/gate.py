@@ -23,6 +23,13 @@ GRAPHIC_SCHEMA = (
 TYPES = {"counter", "bars", "timeline", "flow", "hype_meter", "tomorrow_test"}
 
 
+def clean_line(t):
+    """Remove stage notes that must never be spoken: (on screen: ...), (graphic: ...), [..]."""
+    t = re.sub(r"\((?:on[ -]?screen|graphic|visual|sfx|sound|music)[^)]*\)?", "", str(t or ""), flags=re.I)
+    t = re.sub(r"\[[^\]]*\]", "", t)
+    return " ".join(t.split()).strip()
+
+
 def _words(s):
     return len(str(s.get("text", "")).split())
 
@@ -83,6 +90,7 @@ def _fact_check(cfg, script, brief):
 and well-established knowledge. Flag ONLY real problems: an invented or wrong number, a claim not supported by the fact sheet,
 something only announced/planned/claimed presented as done, or an exaggeration that is not true. Style is not your job.
 For each problem give a corrected line of about the same length (same meaning where possible, honest wording).
+new_text is SPOKEN NARRATION ONLY: never include "(on screen: ...)", "(graphic: ...)", brackets or stage notes.
 FACT SHEET:
 {_facts(brief)}
 SCRIPT:
@@ -95,7 +103,7 @@ Return ONLY JSON {{"fixes": [{{"scene": 2, "problem": "...", "new_text": "...", 
         return None
     n = 0
     for f in res.get("fixes", []):
-        i, t = f.get("scene"), str(f.get("new_text") or "").strip()
+        i, t = f.get("scene"), clean_line(f.get("new_text"))
         if isinstance(i, int) and 0 <= i < len(scenes) and t:
             log(f"Gate fact fix [{i}]: {str(f.get('problem', ''))[:100]}")
             scenes[i]["text"] = t
