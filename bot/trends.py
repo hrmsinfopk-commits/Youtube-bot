@@ -368,6 +368,6 @@ def brief_for(cfg, topic, kind):
         long_fmt = "deep dive"
     log(f"Fact sheet for queued topic: {len(res.get('facts', []))} facts")
     return {"topic": topic, "angle": "", "why": "Topic chosen by channel owner", "keywords": res.get("keywords", []),
-            "facts": res.get("facts", []), "long_format": long_fmt,
+            "facts": res.get("facts", []), "long_format": long_fmt, "format": todays_format(cfg, kind),
             "sources": [{"title": n["title"], "source": n["source"], "link": n["link"]} for n in items[:8]],
             "youtube_top": []}
