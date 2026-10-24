@@ -459,6 +459,47 @@
     "concept_share": 0.22,
     "fallback_scenes": 3
    }
+  },
+  {
+   "date": "2026-10-24 14:36",
+   "type": "short",
+   "title": "Scientists Just Reversed 60 Years of Aging in Human Cells #shorts",
+   "topic": "Scientists Just Reversed 60 Years of Aging in Human Cells - Explain the biological mechanism of how researchers successfully reversed sixty years of aging in human cells, focusing on the future of human rejuvenation without relying on dry medical jargon.",
+   "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
+   "youtube_id": "5yhWmoUjmZY",
+   "voice": "Charon",
+   "seconds": 19.8,
+   "scene_times": [
+    [
+     0.0,
+     "Scientists just reversed sixty years of aging in human cells."
+    ],
+    [
+     5.9,
+     "Using direct cellular reprogramming, they reset blood cells from age 80 to less than 20."
+    ],
+    [
+     12.5,
+     "That is like taking sixty years off your physical clock."
+    ],
+    [
+     16.3,
+     "Follow Tomorrowly for tomorrow's tech, today."
+    ]
+   ],
+   "format": "news",
+   "why": "Science and tech longevity breakthroughs have massive multi-million view potential on Shorts due to broad human curiosity. The news is extremely fresh (Oct 21, 2026) and lacks heavy saturation from top-tier massive tech creators, leaving a wide open gap for a punchy explainer.",
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.37,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -845,6 +886,10 @@
   "pixabay-v-52536",
   "pixabay-v-378988",
   "pixabay-v-323784",
-  "pixabay-v-323793"
+  "pixabay-v-323793",
+  "pixabay-v-6973",
+  "pixabay-v-7549",
+  "pixabay-v-161343",
+  "pixabay-v-1992"
  ]
 }
