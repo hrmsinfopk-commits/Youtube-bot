@@ -78,11 +78,11 @@ jobs:
           git config user.email "yt-bot@users.noreply.github.com"
           # another run may have saved at the same time -> merge instead of losing this run's history
           BASE=$(git rev-parse HEAD); MINE="$RUNNER_TEMP/mine"; rm -rf "$MINE"; mkdir -p "$MINE"
-          cp -r data topics*.txt "$MINE"/ 2>/dev/null || true
+          cp -r data topics*.txt thumbnails "$MINE"/ 2>/dev/null || true
           for i in 1 2 3 4 5; do
             git fetch -q origin main && git reset -q --hard origin/main
             python scripts/merge_data.py "$BASE" "$MINE"
-            git add data/ topics*.txt 2>/dev/null || git add data/
+            git add data/ topics*.txt thumbnails/ 2>/dev/null || git add data/ topics*.txt
             if git diff --cached --quiet; then echo "nothing to save"; break; fi
             git commit -q -m "bot: history update (future long)" && git push -q origin HEAD:main && echo "saved" && break
             sleep $((5 + RANDOM % 15))

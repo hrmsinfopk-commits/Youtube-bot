@@ -115,3 +115,11 @@ Har video upload se pehle bot yeh check karta hai (aur jo ho sake khud theek kar
 6. AI tasveer ho to YouTube ka "altered/synthetic content" label khud lagta hai.
 7. Koi hard rule fail ho to video upload NAHI hoti (sirf GitHub artifact).
 Monday ki REPORT.md mein har video ka gate result aata hai.
+
+## 🖼️ Thumbnail A/B test (har long video ke baad, 1 minute)
+- GitHub repo mein `thumbnails/<date>_future_long/` folder mein 3 thumbnails hote hain: A (upload ho chuka), B, C.
+- YouTube Studio → video → Thumbnail → **Test & Compare** → teeno upload kar dein. YouTube khud batata hai kaun sa zyada click hota hai.
+
+## 📣 Teaser Shorts
+- Jumeraat aur Itwar ki Short = Budh/Hafta wali long video ka teaser (aakhir mein "The full breakdown is on our channel").
+- Studio mein us Short par **Related video** = woh long video select kar dein (1 minute) - Short ke neeche clickable link aa jata hai.

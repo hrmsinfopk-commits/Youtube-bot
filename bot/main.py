@@ -6,7 +6,7 @@ import shutil
 import time
 
 from . import audiofx, curate, footage, gate, graphics, images, render, trends, upload, voice, writer
-from .common import CHANNEL, DATA, OUT, WORK, load_config, load_history, log, run, save_history
+from .common import CHANNEL, DATA, OUT, ROOT, WORK, load_config, load_history, log, run, save_history
 
 
 def load_learning():
@@ -161,11 +161,18 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
         style = pick_style(cfg, learning, rng)
         brief = None
         if cfg.get("trends", {}).get("enabled") and cfg["channel"].get("mode") != "stories":
+            brief = None
             queued = writer.queued_topic(kind, consume=do_upload)
             take = None
             if queued and " | " in queued:      # "topic | my take ..." in topics.txt
                 queued, take = [x.strip() for x in queued.split(" | ", 1)]
-            brief = trends.brief_for(cfg, queued, kind) if queued else trends.find_topic(cfg, history, kind, learning)
+            if not queued and kind == "short" and trends.todays_format(cfg, kind) == "teaser":
+                brief = trends.teaser_brief(cfg, history)
+                if not brief:                    # no fresh long video -> a normal news Short
+                    import os
+                    os.environ["BOT_FORMAT"] = "news"
+            if not brief:
+                brief = trends.brief_for(cfg, queued, kind) if queued else trends.find_topic(cfg, history, kind, learning)
             if take:
                 brief = brief or {}
                 brief["owner_take"] = take
@@ -340,8 +347,19 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                 at = timings[ti][0] + min(1.2, max(0.3, timings[ti][1] / 2))
         except (TypeError, ValueError):
             pass
-        thumb = render.thumbnail(work / "video_noaudio.mp4", script.get("thumbnail_text") or script["title"],
-                                 OUT / f"{slug}_thumb.jpg", rng, at=at, tag=tag)
+        # A = opening shot (matches what the viewer sees first) - uploaded; B/C = alternatives for "Test & Compare"
+        text_a = script.get("thumbnail_text") or script["title"]
+        thumb = render.thumbnail(work / "video_noaudio.mp4", text_a, OUT / f"{slug}_thumb.jpg", rng, at=1.5, tag=tag)
+        tdir = ROOT / "thumbnails" / slug
+        tdir.mkdir(parents=True, exist_ok=True)
+        try:
+            shutil.copy(thumb, tdir / "A_uploaded.jpg")
+            render.thumbnail(work / "video_noaudio.mp4", text_a, tdir / "B_story_scene.jpg", rng, at=at, tag=tag)
+            render.thumbnail(work / "video_noaudio.mp4", script.get("thumbnail_text_alt") or script["title"],
+                             tdir / "C_other_text.jpg", rng, at=1.5, tag=tag)
+            log(f"Thumbnails for Test & Compare: thumbnails/{slug}/")
+        except Exception as e:  # noqa: BLE001
+            log("Extra thumbnails failed:", str(e)[:100])
 
     chap = chapters(script["scenes"], timings, total) if kind == "long" else ""
     title = script["title"].strip()
@@ -382,6 +400,8 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                                               for sc, (t0, _) in zip(script["scenes"], timings)],
                               "format": ((brief or {}).get("format") or "news") if not offline else None,
                               "why": (brief or {}).get("why", "") if not offline else "",
+                              "facts": ((brief or {}).get("facts") or [])[:25] if kind == "long" else [],
+                              "keywords": ((brief or {}).get("keywords") or [])[:12] if kind == "long" else [],
                               "gate": gate_rep})
     if not offline and do_upload:          # test runs are not remembered (their topic stays available)
         save_history(history)

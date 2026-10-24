@@ -267,6 +267,11 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
 
     facts = ""
     evergreen = bool(brief and brief.get("format") == "big question")
+    if brief and brief.get("format") == "teaser" and kind == "short":
+        t = brief.get("teaser_of", {})
+        extra += ("\n- FORMAT: TEASER for our full video \"" + str(t.get("title", "")) + "\". Give the ONE most surprising"
+                  " moment of that story with a different hook than the long video, leave the full explanation open, and make"
+                  " the LAST scene exactly: 'The full breakdown is on our channel.' (instead of the usual follow line).")
     if evergreen:
         extra += ("\n- FORMAT: EVERGREEN BIG QUESTION (not news). The whole video answers ONE question built on a contradiction"
                   " (see the angle). Never say 'just announced', 'this week', 'recently' - it must still be true in 3 years.\n"
@@ -370,6 +375,7 @@ Return ONLY JSON:
 {{
  "title": "SEO title in {title_lang}, max 70 chars, built on a contradiction, a surprising number or an 'impossible' fact + How/Why/What (e.g. 'How a Country With Zero Rivers Drinks Water', 'Why This Engine Never Stops Firing'); main search phrase early; must be TRUE - no clickbait lies{' (do NOT add #shorts)' if kind == 'short' else ''}",
  "thumbnail_text": "2-4 punchy words that ADD to the title (never repeat it): the contradiction or the stakes, e.g. ZERO RIVERS?",
+ "thumbnail_text_alt": "a DIFFERENT 2-4 word thumbnail text (another angle: a number, a question or a warning) for A/B testing",
  "thumbnail_scene": "0-based index of the scene whose FOOTAGE tells the whole story in one glance (one clear subject, strong contrast, no graphic) - becomes the thumbnail picture",
  "hook_text": "2-4 word ALL-CAPS on-screen hook for the first 2 seconds, e.g. IT CAN FLY?",
  "narrator_gender": "male or female",

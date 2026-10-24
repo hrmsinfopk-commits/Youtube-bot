@@ -16,7 +16,9 @@ shorts:
   seconds_by_format:                   # khabar = tez jhatka; bara sawal = jawab samjhane ka waqt
     news: 22                           # 20-25 second
     big question: 32                   # 30-35 second
-  big_question_days: ["mon", "thu"]    # in dinon ki Short "bara sawal" (sada-bahar), baqi din trending khabar
+    teaser: 30                         # long video ka teaser
+  big_question_days: ["mon", "fri"]    # in dinon ki Short "bara sawal" (sada-bahar)
+  teaser_days: ["thu", "sun"]          # long video (Budh/Hafta) ke agle din: usi ka teaser Short (long video par log bhejne ke liye)
 
 long:
   per_run: 1

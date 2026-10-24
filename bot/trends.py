@@ -189,17 +189,38 @@ def _clash(topic, past):
     return None
 
 
+def teaser_brief(cfg, history):
+    """Short that sends viewers to our newest long video (same story, different hook)."""
+    import datetime as _dt
+    longs = [v for v in history["videos"] if v.get("type") == "long" and v.get("youtube_id")]
+    if not longs:
+        return None
+    lv = longs[-1]
+    try:
+        age = (_dt.datetime.utcnow() - _dt.datetime.strptime(lv["date"], "%Y-%m-%d %H:%M")).days
+    except ValueError:
+        age = 0
+    if age > 4:
+        return None
+    log(f"Teaser Short for: {lv['title']}")
+    return {"topic": lv.get("topic") or lv["title"], "angle": "short teaser of our full video", "why": "Teaser for our newest long video",
+            "keywords": lv.get("keywords", []), "facts": lv.get("facts", []), "format": "teaser",
+            "teaser_of": {"title": lv["title"], "id": lv["youtube_id"]}, "sources": []}
+
+
 def todays_format(cfg, kind):
     """'news' (trending story) or 'big question' (evergreen explainer), by weekday (UTC) from config.
     BOT_FORMAT=news / BOT_FORMAT="big question" overrides it (for manual runs)."""
     import os
     import time as _t
     forced = os.environ.get("BOT_FORMAT", "").strip().lower()
-    if forced in ("news", "big question"):
+    if forced in ("news", "big question", "teaser"):
         return forced
     day = _t.strftime("%a", _t.gmtime()).lower()[:3]
     if kind == "long":
         return (cfg["long"].get("formats_by_day") or {}).get(day, "news")
+    if day in (cfg["shorts"].get("teaser_days") or []):
+        return "teaser"
     return "big question" if day in (cfg["shorts"].get("big_question_days") or []) else "news"
 
 
@@ -351,15 +372,25 @@ Return ONLY JSON:
 def brief_for(cfg, topic, kind):
     """For a topic you queued yourself: collect today's headlines about it and turn them into a fact sheet
     (own words, no copying) + search keywords, so the script is based on real, current reporting."""
+    fmt = todays_format(cfg, kind)
     items = google_news(topic, cfg["trends"].get("region", "US"), limit=15)
-    if not items:
+    if not items and fmt != "big question":
         return None
     try:
-        res = ask(cfg, f"Topic for our next YouTube video: \"{topic}\".\nRecent headlines:\n"
-                  + "\n".join(f"- {n['title']} ({n['source']})" for n in items)
-                  + "\nReturn ONLY JSON {\"facts\": [\"8-20 short factual points in your OWN words, only what the headlines clearly"
-                  " support or well-established background; mark announced/planned/claimed things as such\"], "
-                  "\"keywords\": [\"10 phrases people search for this\"]}", json_mode=True, temperature=0.3)
+        if fmt == "big question":     # evergreen question: well-established knowledge, headlines only as extra context
+            res = ask(cfg, f"Topic for our next evergreen explainer video: \"{topic}\".\n"
+                      + ("Related headlines (context only):\n" + "\n".join(f"- {n['title']} ({n['source']})" for n in items) + "\n"
+                         if items else "")
+                      + "Return ONLY JSON {\"angle\": \"the contradiction at the heart of the question, one line\", "
+                      "\"facts\": [\"12-25 short, well-established facts in your OWN words that answer the question (numbers, how it"
+                      " works); mark estimates as estimates; nothing you are not sure about\"], "
+                      "\"keywords\": [\"10 phrases people search for this\"]}", json_mode=True, temperature=0.3)
+        else:
+            res = ask(cfg, f"Topic for our next YouTube video: \"{topic}\".\nRecent headlines:\n"
+                      + "\n".join(f"- {n['title']} ({n['source']})" for n in items)
+                      + "\nReturn ONLY JSON {\"facts\": [\"8-20 short factual points in your OWN words, only what the headlines clearly"
+                      " support or well-established background; mark announced/planned/claimed things as such\"], "
+                      "\"keywords\": [\"10 phrases people search for this\"]}", json_mode=True, temperature=0.3)
     except Exception as e:  # noqa: BLE001
         log("Fact sheet for queued topic failed:", str(e)[:100])
         return None
@@ -367,7 +398,7 @@ def brief_for(cfg, topic, kind):
     if kind == "long":
         long_fmt = "deep dive"
     log(f"Fact sheet for queued topic: {len(res.get('facts', []))} facts")
-    return {"topic": topic, "angle": "", "why": "Topic chosen by channel owner", "keywords": res.get("keywords", []),
-            "facts": res.get("facts", []), "long_format": long_fmt, "format": todays_format(cfg, kind),
+    return {"topic": topic, "angle": res.get("angle", ""), "why": "Topic chosen by channel owner", "keywords": res.get("keywords", []),
+            "facts": res.get("facts", []), "long_format": long_fmt, "format": fmt,
             "sources": [{"title": n["title"], "source": n["source"], "link": n["link"]} for n in items[:8]],
             "youtube_top": []}
