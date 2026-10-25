@@ -73,6 +73,8 @@ Return ONLY JSON {{"add": [{{"scene": 3, "graphic": {{...}}}}]}}"""
     except Exception as e:  # noqa: BLE001
         log("Gate: graphics editor failed:", str(e)[:100])
         return 0
+    if isinstance(res, list):
+        res = {"add": res}
     added = 0
     for a in res.get("add", []):
         i, g = a.get("scene"), a.get("graphic")
@@ -101,6 +103,8 @@ Return ONLY JSON {{"fixes": [{{"scene": 2, "problem": "...", "new_text": "...", 
     except Exception as e:  # noqa: BLE001
         log("Gate: fact check failed:", str(e)[:100])
         return None
+    if isinstance(res, list):
+        res = {"fixes": res}
     n = 0
     for f in res.get("fixes", []):
         i, t = f.get("scene"), clean_line(f.get("new_text"))

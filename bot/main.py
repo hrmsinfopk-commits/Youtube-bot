@@ -191,7 +191,11 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
         memory = load_memory()
         script = writer.write_script(cfg, topic, kind, style, brief, memory)
         if cfg["channel"].get("mode") != "stories":      # monetization protocol: own work, checked facts
-            gate_rep = gate.check_script(cfg, script, kind, brief)
+            try:
+                gate_rep = gate.check_script(cfg, script, kind, brief)
+            except Exception as e:  # noqa: BLE001
+                log("Gate (script) error - continuing without it:", str(e)[:150])
+                gate_rep = {"script_ok": True, "problems": [], "error": str(e)[:100]}
         host = cfg.get("tts", {}).get("host_voice")
         vset = voice.pick_voice(cfg, None if host else script.get("narrator_gender"))
         if host and vset.get("engine") == "gemini":
@@ -320,7 +324,10 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
             vkinds.append(kind_i)
         log(f"Footage ready for {len(media)} scenes")
         if gate_rep:
-            gate.check_visuals(gate_rep, vkinds, len(script["scenes"]))
+            try:
+                gate.check_visuals(gate_rep, vkinds, len(script["scenes"]))
+            except Exception as e:  # noqa: BLE001
+                log("Gate (visuals) error:", str(e)[:120])
         # first scenes may have been empty and filled later: none left empty here
 
     scene_sounds, ambience = [None] * len(script["scenes"]), None

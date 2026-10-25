@@ -47,7 +47,7 @@ def _text_pick(cfg, scenes, cands, per_scene, idx):
     res = ask(cfg, f"You are the picture editor of a YouTube video about: {scenes[0].get('topic', '')}.\n{RULES}\n"
               f"Choose up to {per_scene} options per scene from the descriptions.\nSCENES:\n{json.dumps(rows, ensure_ascii=False)}\n"
               'Return ONLY JSON: {"picks": {"<scene number>": [option numbers]}}', json_mode=True, temperature=0.2)
-    return res.get("picks", {})
+    return (res.get("picks", {}) if isinstance(res, dict) else {}) or {}
 
 
 def _visual_pick(cfg, scenes, cands, per_scene, idx, thumbs):
@@ -64,7 +64,7 @@ def _visual_pick(cfg, scenes, cands, per_scene, idx, thumbs):
               f"(for videos: one frame). Look at the pictures. Choose up to {per_scene} options per scene.\n"
               'Return ONLY JSON: {"picks": {"<scene number>": [option numbers]}}')
     res = ask(cfg, prompt, json_mode=True, temperature=0.2, extra_parts=parts)
-    return res.get("picks", {})
+    return (res.get("picks", {}) if isinstance(res, dict) else {}) or {}
 
 
 def pick(cfg, scenes, cands, per_scene=2):
