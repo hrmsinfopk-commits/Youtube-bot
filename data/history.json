@@ -501,6 +501,167 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-10-25 08:56",
+   "type": "long",
+   "title": "Why Don't Jet Engines Melt at 2,000°C? The Hidden Trick",
+   "topic": "Why Don't Jet Engines Melt?",
+   "style": "Before vs now: how this used to work vs what just changed",
+   "youtube_id": "CH5p37icZXU",
+   "voice": "Charon",
+   "seconds": 212.8,
+   "scene_times": [
+    [
+     0.0,
+     "At full takeoff thrust, the fire raging inside a modern jet engine reaches nearly two thou"
+    ],
+    [
+     8.6,
+     "Yet the nickel-based superalloy turbine blades spinning right behind that fire melt at aro"
+    ],
+    [
+     15.5,
+     "By basic physics, those blades should liquefy into glowing molten soup mid-flight, so why "
+    ],
+    [
+     23.1,
+     "Decades ago, engine builders hit a brutal wall because standard metals cracked along micro"
+    ],
+    [
+     32.1,
+     "Metallurgists solved that mechanical flaw by growing every modern high-pressure blade as o"
+    ],
+    [
+     39.8,
+     "Eliminating grain joints removed where stress cracks normally begin, but a single crystal "
+    ],
+    [
+     53.0,
+     "The answer is deceptively simple: the metal blade never actually contacts the hottest gas "
+    ],
+    [
+     59.7,
+     "Before any fuel gets injected and ignited in the combustor, engineers divert pressurized a"
+    ],
+    [
+     67.1,
+     "This bleed air is hot, sitting around seven hundred degrees Celsius, but compared to a two"
+    ],
+    [
+     78.1,
+     "Engineers route this cooler air directly into the hollow interior of each blade through in"
+    ],
+    [
+     85.5,
+     "This internal convective flow pulls heat out of the metal from the inside out, exactly lik"
+    ],
+    [
+     93.1,
+     "Then comes the second layer: the air shoots outward through thousands of angled, laser-dri"
+    ],
+    [
+     102.8,
+     "This creates film cooling, forming an ultra-thin gaseous blanket that insulates the outer "
+    ],
+    [
+     111.5,
+     "Finally, the blade receives a thermal barrier coating made of specialized ceramics like yt"
+    ],
+    [
+     121.4,
+     "That ceramic jacket knocks off another one to two hundred degrees, holding structural meta"
+    ],
+    [
+     131.2,
+     "We did the math on what this cooling shield actually costs the airplane."
+    ],
+    [
+     135.3,
+     "Up to twenty percent of the engine's entire core airflow is stolen strictly for cooling an"
+    ],
+    [
+     145.3,
+     "That is one-fifth of the core airflow sacrificed just to keep the turbine from turning int"
+    ],
+    [
+     151.1,
+     "And here is the catch: this entire thermal fortress has one catastrophic weakness."
+    ],
+    [
+     157.7,
+     "Volcanic ash melts at around eleven hundred degrees Celsius, meaning it easily liquefies i"
+    ],
+    [
+     167.0,
+     "That molten glass cakes onto the turbine and instantly clogs the microscopic cooling holes"
+    ],
+    [
+     174.4,
+     "Without that thin sheet of air, raw combustion heat strikes bare metal, and the blades beg"
+    ],
+    [
+     181.6,
+     "To escape this trap, modern engine programs are turning to ceramic matrix composites."
+    ],
+    [
+     187.2,
+     "These advanced ceramics tolerate heat up to thirteen hundred degrees without heavy cooling"
+    ],
+    [
+     196.8,
+     "The next time you fly, remember that your plane stays airborne because of a microscopic cu"
+    ],
+    [
+     205.6,
+     "Would you feel safer flying with proven nickel superalloys, or with lighter heat-tolerant "
+    ]
+   ],
+   "format": "big question",
+   "why": "Topic chosen by channel owner",
+   "facts": [
+    "Peak combustion temperatures inside modern jet engines can reach between 1,700°C and 2,000°C depending on the engine model and throttle setting.",
+    "The nickel-based superalloys used to manufacture high-pressure turbine blades melt at approximately 1,300°C to 1,400°C.",
+    "Turbine blades survive because they never directly contact the full heat of the gas stream, relying on continuous active cooling and insulating barriers.",
+    "Engineers cast modern high-pressure turbine blades as a single crystal of nickel alloy, eliminating microscopic grain boundaries where thermal stress cracks normally begin.",
+    "Cooling air is diverted from the high-pressure compressor stage before fuel is injected and ignited, a mechanism known as bleed air.",
+    "While this bleed air is hot—typically between 600°C and 700°C—it is roughly 1,000°C cooler than the combustion gas, making it an effective cooling medium.",
+    "Turbine blades are hollow and manufactured with complex internal serpentine pathways through which this compressor air circulates.",
+    "Internal convective cooling strips heat away from the metal interior before the gas can conduct through the blade.",
+    "Thousands of laser-drilled micro-holes cover the surface of each blade, angled precisely to eject bleed air along the outer contour.",
+    "This ejected air forms a micro-thin boundary layer called film cooling, which acts as a protective gaseous blanket keeping combustion flames off the metal.",
+    "Blades are coated with a thermal barrier coating (TBC), typically a specialized ceramic such as yttria-stabilized zirconia.",
+    "The ceramic coating provides an estimated temperature drop of 100°C to 200°C between the outer gas flow and the underlying metal structure.",
+    "A metallic bond layer beneath the ceramic prevents oxidation and helps the brittle ceramic stick to the flexing metal blade.",
+    "The combination of internal cooling, film cooling, and thermal barrier coatings keeps actual blade metal temperatures safely below roughly 1,100°C.",
+    "Up to an estimated 20 percent of core airflow in advanced turbofans can be redirected solely for thermal management and sealing rather than thrust production.",
+    "Modern engines increasingly incorporate ceramic matrix composites (CMCs), which tolerate temperatures up to about 1,300°C while weighing roughly one-third as much as nickel alloys.",
+    "Volcanic ash is dangerous to jet engines because it melts around 1,100°C, turning to liquid glass in the combustor and clogging the blade's critical cooling micro-holes."
+   ],
+   "keywords": [
+    "why don't jet engines melt",
+    "turbine blade cooling methods",
+    "how jet engines survive high heat",
+    "single crystal turbine blades",
+    "film cooling jet engine",
+    "thermal barrier coatings aviation",
+    "jet engine combustion temperature vs melting point",
+    "nickel superalloy melting point",
+    "ceramic matrix composites jet engines",
+    "how jet engine turbine cooling works"
+   ],
+   "gate": {
+    "graphics": 6,
+    "own_share": 0.25,
+    "own_math": true,
+    "fact_fixes": 2,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 0.96,
+    "concept_share": 0.19,
+    "fallback_scenes": 1
+   }
   }
  ],
  "used_media": [
@@ -891,6 +1052,30 @@
   "pixabay-v-6973",
   "pixabay-v-7549",
   "pixabay-v-161343",
-  "pixabay-v-1992"
+  "pixabay-v-1992",
+  "pixabay-v-67755",
+  "pixabay-v-14096",
+  "pixabay-v-7103",
+  "pixabay-v-7101",
+  "pixabay-v-342502",
+  "nasa-v-NHQ20200624ARMD002",
+  "pixabay-v-112957",
+  "pixabay-v-159053",
+  "pixabay-v-22728",
+  "pixabay-v-303918",
+  "pixabay-v-6421",
+  "pixabay-v-6422",
+  "pixabay-v-29388",
+  "pixabay-v-265858",
+  "pixabay-v-382760",
+  "pixabay-v-375643",
+  "pixabay-v-383941",
+  "pixabay-v-45",
+  "pixabay-v-6414",
+  "pixabay-v-303918",
+  "pixabay-v-154902",
+  "pixabay-v-373921",
+  "pixabay-v-104378",
+  "pixabay-v-3473"
  ]
 }
