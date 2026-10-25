@@ -355,6 +355,7 @@ Write it like a real, passionate human creator talking to a friend, NOT like an 
 For every scene give 3 stock-footage search keywords in ENGLISH, ordered from most specific to more general,
 each 1-2 words, showing what the viewer should SEE while hearing that line (e.g. for a rocket-landing line: "rocket launch", "rocket", "space").
 Keywords must be literal visual subjects that stock sites have (rocket, robot, astronaut, circuit board, city skyline, laboratory),
+with a qualifier when a word has another meaning ("jet engine turbine" not "turbine", "ceramic engine coating" not "ceramic"),
 NOT abstract words. Every keyword must clearly relate to the topic. No brand names or real people in keywords.
 For real events prefer REAL footage words (launch, satellite, earth from space, control room) over sci-fi words (alien, spaceship).
 For every scene also write "image": one English sentence describing what the viewer should SEE (realistic, accurate to the facts) for an AI

@@ -14,7 +14,9 @@ UA = {"User-Agent": "Mozilla/5.0 (yt-bot)"}
 MAX_IMAGES_PER_CALL = 40
 
 RULES = """Rules: choose options whose PICTURE clearly shows what the viewer should SEE while hearing the line.
-Literal word matches are NOT enough (a car "deadline" must not get a clock). Reject: unrelated places/people, stock actors
+Literal word matches are NOT enough (a car "deadline" must not get a clock). SAME WORD, DIFFERENT THING is WRONG:
+a jet-engine "turbine" is not a wind turbine, a "ceramic coating" is not a coffee mug, a "cell" in biology is not a
+prison cell or a phone, a "chip" is not a potato chip. Military jets only when the line is about military aircraft. Reject: unrelated places/people, stock actors
 posing or reacting (yawning, smiling to camera, business people) unless the line is about people, green/blue screens,
 pictures with text/logos/watermarks, birthdays/holidays, zodiac, anything that contradicts the line, talking heads,
 labelled diagrams about another subject, cartoons/silhouettes when the line is about real hardware.
