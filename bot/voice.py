@@ -137,6 +137,53 @@ def _split_points(total, weights, sil):
     return pts
 
 
+def _norm(w):
+    return re.sub(r"[^a-z0-9]", "", w.lower())
+
+
+def _word_split_points(cfg, wav, texts, total):
+    """Exact scene boundaries: transcribe the whole chunk with word timings, match the words to the script,
+    and cut in the pause between the last word of one scene and the first word of the next.
+    (Estimating by text length sometimes cut mid-sentence, which made captions drift for a while.)"""
+    if len(texts) < 2:
+        return []
+    try:
+        import difflib
+        words = (align_words(cfg, [wav]) or [None])[0]
+        if not words:
+            return None
+        heard = [_norm(t) for _, _, t in words]
+        script, owner = [], []
+        for k, t in enumerate(texts):
+            for w in t.split():
+                if _norm(w):
+                    script.append(_norm(w))
+                    owner.append(k)
+        sm = difflib.SequenceMatcher(None, script, heard, autojunk=False)
+        pos = [None] * len(script)
+        for blk in sm.get_matching_blocks():
+            for j in range(blk.size):
+                pos[blk.a + j] = blk.b + j
+        if sum(p is not None for p in pos) < 0.6 * len(script):
+            log("Voice split: words did not match well enough, using pauses")
+            return None
+        pts = []
+        for k in range(len(texts) - 1):
+            last = max((i for i, o in enumerate(owner) if o == k and pos[i] is not None), default=None)
+            first = min((i for i, o in enumerate(owner) if o == k + 1 and pos[i] is not None), default=None)
+            if last is None or first is None:
+                return None
+            end_t, start_t = words[pos[last]][1], words[pos[first]][0]
+            p = (end_t + start_t) / 2 if start_t > end_t else end_t
+            if pts and p <= pts[-1] + 0.2:
+                return None
+            pts.append(min(p, total - 0.2))
+        return pts
+    except Exception as e:  # noqa: BLE001
+        log("Voice split by words failed:", str(e)[:100])
+        return None
+
+
 def _gemini_scenes(cfg, scenes, workdir, vsettings):
     """Narrate scenes in a few large chunks (fewer API calls, more natural flow), then cut per scene."""
     max_words = cfg["tts"].get("chunk_words", 140)
@@ -159,7 +206,9 @@ def _gemini_scenes(cfg, scenes, workdir, vsettings):
         wav = workdir / f"gtts_{ci:02d}.wav"
         run(["ffmpeg", "-y", "-v", "error", "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", str(raw), str(wav)])
         total = duration(wav)
-        pts = _split_points(total, [max(1, len(scenes[i]["text"])) for i in idxs], _silences(wav))
+        pts = _word_split_points(cfg, wav, [scenes[i]["text"] for i in idxs], total)
+        if not pts:
+            pts = _split_points(total, [max(1, len(scenes[i]["text"])) for i in idxs], _silences(wav))
         bounds = [0.0] + pts + [total]
         for k, i in enumerate(idxs):
             pieces[i] = (wav, bounds[k], bounds[k + 1])
@@ -190,7 +239,7 @@ def align_words(cfg, wavs):
             audio = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
             segs, _ = model.transcribe(audio, language=lang, word_timestamps=True, beam_size=1,
                                        condition_on_previous_text=False)
-            out.append([(float(x.start), float(x.end)) for sg in segs for x in (sg.words or [])])
+            out.append([(float(x.start), float(x.end), x.word) for sg in segs for x in (sg.words or [])])
         log(f"Captions aligned to the voice ({sum(len(x) for x in out)} words)")
         return out
     except Exception as e:  # noqa: BLE001
@@ -217,7 +266,7 @@ def synth_scenes(cfg, scenes, workdir, vsettings):
                 out.append((wav, duration(wav), []))
             aligned = align_words(cfg, [o[0] for o in out])
             if aligned and len(aligned) == len(out):
-                out = [(w, d, wt) for (w, d, _), wt in zip(out, aligned)]
+                out = [(w, d, [(x[0], x[1]) for x in wt]) for (w, d, _), wt in zip(out, aligned)]
             return out
         except Exception as e:  # noqa: BLE001
             log("Gemini voice failed, switching whole video to Microsoft voice:", str(e)[:150])
