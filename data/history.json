@@ -662,6 +662,65 @@
     "concept_share": 0.19,
     "fallback_scenes": 1
    }
+  },
+  {
+   "date": "2026-10-25 17:26",
+   "type": "short",
+   "title": "Why Don't Jet Engines Melt Inside? #shorts",
+   "topic": "Why Don't Jet Engines Melt? - short teaser of our full video",
+   "style": "Countdown: 3-5 surprising facts about it, the most shocking one last",
+   "youtube_id": "-oX0q-L56PM",
+   "voice": "Charon",
+   "seconds": 39.0,
+   "scene_times": [
+    [
+     0.0,
+     "Inside a modern jet engine, fire burns hotter than the melting point of its own metal."
+    ],
+    [
+     6.0,
+     "Combustion gas reaches two thousand degrees Celsius."
+    ],
+    [
+     9.8,
+     "Yet the nickel turbine blades inside melt at fourteen hundred degrees."
+    ],
+    [
+     14.9,
+     "That is like standing inside an oven set way past its absolute destruction limit."
+    ],
+    [
+     21.2,
+     "The catch is, they never actually touch the fire."
+    ],
+    [
+     25.0,
+     "Cool air from the compressor pumps through hollow pathways inside every single blade."
+    ],
+    [
+     30.4,
+     "Thousands of laser micro-holes push that air out, forming a protective invisible blanket."
+    ],
+    [
+     36.4,
+     "The full breakdown is on our channel."
+    ]
+   ],
+   "format": "teaser",
+   "why": "Teaser for our newest long video",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.1,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.12,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -1076,6 +1135,18 @@
   "pixabay-v-154902",
   "pixabay-v-373921",
   "pixabay-v-104378",
-  "pixabay-v-3473"
+  "pixabay-v-3473",
+  "pixabay-v-276550",
+  "pixabay-v-55411",
+  "pixabay-v-2336",
+  "pixabay-v-9049",
+  "pixabay-v-285661",
+  "pixabay-v-336722",
+  "pixabay-v-8064",
+  "pixabay-v-55714",
+  "pixabay-v-3975",
+  "pixabay-v-146319",
+  "pixabay-v-265302",
+  "pixabay-v-124058"
  ]
 }
