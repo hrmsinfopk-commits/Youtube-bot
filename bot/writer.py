@@ -243,7 +243,8 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
                  "- One idea only. Every line must add something new. No intro, no 'subscribe' at the start.")
     else:
         mins = cfg["long"]["target_minutes"]
-        length = f"about {int(mins * 60 * _wps(cfg))} spoken words total ({mins} minutes), 16-24 scenes of 2-3 sentences each"
+        length = (f"about {int(mins * 60 * _wps(cfg))} spoken words total ({mins} minutes) - NOT LESS: each chapter needs "
+                  f"about {int(mins * 60 * _wps(cfg) * 0.2)} words - in 16-24 scenes of 2-3 sentences each")
         extra = (
             "- ONE story, ONE central question, told from start to end. No side-stories, no lists of unrelated facts.\n"
             "- BUILD IT LIKE A CHAIN OF GREAT SHORTS (our Shorts keep 65-79% of viewers, our old long videos only 38%):\n"
@@ -501,7 +502,7 @@ def _ask_script(cfg, prompt, kind, temperature):
     target = _target_words(cfg, kind)
     best = ask(cfg, prompt, json_mode=True, temperature=temperature)
     n = _words(best)
-    if n < 0.75 * target:
+    if n < (0.88 if kind == "long" else 0.75) * target:
         log(f"Script too short ({n} words, target ~{target}) - rewriting longer")
         try:
             again = ask(cfg, prompt + f"\n\nIMPORTANT: your last draft had only {n} words. This script MUST have "
@@ -563,4 +564,7 @@ def _finish(data, topic, style):
     data["topic"] = topic
     data["style"] = style
     log(f"Script ready: {data['title']} ({len(scenes)} scenes)")
+    chs = [sc.get("chapter") for sc in scenes if sc.get("chapter")]
+    if chs:
+        log("Chapters: " + " | ".join(chs))
     return data

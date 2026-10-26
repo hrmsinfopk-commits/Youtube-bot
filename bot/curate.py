@@ -56,13 +56,13 @@ def _visual_pick(cfg, scenes, cands, per_scene, idx, thumbs):
         parts.append({"text": f"\n=== SCENE {i}: \"{scenes[i].get('caption') or scenes[i].get('text', '')}\""})
         for j, c in enumerate(cands[i]):
             t = thumbs.get(c["id"])
-            parts.append({"text": f"[{i}-{j}] {c['kind']}: {c.get('desc', '')[:90]}" + ("" if t else " (no preview)")})
+            parts.append({"text": f"option {j} ({c['kind']}): {c.get('desc', '')[:90]}" + ("" if t else " (no preview)")})
             if t:
                 parts.append({"inline_data": {"mime_type": "image/jpeg", "data": t}})
     prompt = (f"You are the picture editor of a YouTube video about: {scenes[0].get('topic', '')}.\n{RULES}\n"
-              f"Below, every scene's narration line is followed by numbered options [scene-option] with a preview picture "
+              f"Below, every scene's narration line is followed by its numbered options, each with a preview picture "
               f"(for videos: one frame). Look at the pictures. Choose up to {per_scene} options per scene.\n"
-              'Return ONLY JSON: {"picks": {"<scene number>": [option numbers]}}')
+              'Return ONLY valid JSON with plain integers, e.g. {"picks": {"0": [2, 0], "3": [1], "4": []}}')
     res = ask(cfg, prompt, json_mode=True, temperature=0.2, extra_parts=parts)
     return (res.get("picks", {}) if isinstance(res, dict) else {}) or {}
 
