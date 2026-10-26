@@ -1,41 +1,124 @@
 [
  {
+  "id": "w65jbQSq1io",
+  "title": "How Does a Helicopter Pilot Eject Without Hitting the Rotor?",
+  "channel": "OddFrame",
+  "channel_id": "UC87Re_9sXZzkbVJm41Hs_zQ",
+  "views": 26053766,
+  "seconds": 88,
+  "published": "2026-10-13",
+  "analysis": {
+   "first_line": "Eject from a helicopter and you fly straight into the rotor. That's why almost no helicopter has ejection seats.",
+   "seconds_until_topic_is_clear": 3,
+   "hook_type": "contradiction / visual shock",
+   "beats": [
+    "Hook: The fatal problem with helicopter ejection seats",
+    "Introduce the Ka-52 Alligator and its twin rotor setup",
+    "Scale comparison: 24-ft rotor blades spinning right over pilots' heads",
+    "Step-by-step breakdown: Rotor explosive jettison sequence",
+    "Mechanism: Canopy blow-off and rocket extraction seat pull",
+    "Problem solved: Two pilots ejected at diverging angles to avoid parachute collision",
+    "Real-world proof: The March 2022 combat ejection incident in Ukraine",
+    "Looping conclusion: Explaining why pilots never dodge the rotor"
+   ],
+   "length_seconds": 87,
+   "words_per_second": 2.5,
+   "key_number_and_how_it_is_made_feelable": "24 feet rotor blade length, made feelable by visually comparing it side-by-side with a 19-foot pickup truck.",
+   "what_the_viewer_learns": "How the Ka-52 attack helicopter allows pilots to safely eject by explosively detaching its rotor blades and pulling pilots upward with rockets at diverging angles.",
+   "language_level": "simple",
+   "tone": "calm documentary",
+   "ending": "smooth loop back to the hook concept ('By the time they rise, it's already gone')",
+   "visual_style": "High-fidelity 3D CGI animation with X-ray cutaways perfectly synchronized with every spoken line",
+   "cuts_per_10_seconds": 2.8,
+   "captions": "Medium-sized sans-serif font, white text with black outline, centered, animated 1-3 words at a time",
+   "sound": "Ambient mechanical whooshes, muffled explosions, rocket firing SFX, subtle suspenseful drone synth music under clear narration",
+   "why_it_works": [
+    "Addresses a common intuitive engineering paradox ('how do you eject without being chopped up?') immediately",
+    "Stunning X-ray 3D cutaway animation visualizes exact mechanical sequences step-by-step",
+    "Grounds theoretical design in a dramatic real-world historical event (the 2022 combat ejection)"
+   ],
+   "weak_points": [
+    "At 87 seconds, it pushes past typical short attention spans and could tighten the mid-section"
+   ]
+  }
+ },
+ {
   "id": "JJ5wl9zysuw",
   "title": "The entire rocket passes right in front of the camera",
   "channel": "PioTcinematiC",
   "channel_id": "UChoC35Z1nE7NcIRxyke-_8g",
-  "views": 15885071,
+  "views": 16996731,
   "seconds": 15,
   "published": "2026-09-29",
   "analysis": {
-   "first_line": "None (No voiceover; atmospheric audio building into rocket roar)",
+   "first_line": "None (ambient launch pad audio and dramatic music)",
    "seconds_until_topic_is_clear": 1,
    "hook_type": "visual shock",
    "beats": [
-    "Visual hook: Close-up umbilical detachment from NASA SLS capsule",
-    "Tracking camera pans down past emergency evacuation baskets",
-    "Ignition blast creates massive fire and smoke plumes",
-    "Payoff: Enormous thrust and slow-motion liftoff engulfing the launch pad"
+    "Anticipation: umbilicals disconnect from the SLS rocket capsule",
+    "Liftoff begins: slow upward movement past the tower",
+    "Scale comparison: rocket body slides past numbered emergency escape baskets",
+    "Climax: blinding engine plume and exhaust smoke engulf the frame"
    ],
-   "length_seconds": 14.8,
+   "length_seconds": 15,
    "words_per_second": 0.0,
-   "key_number_and_how_it_is_made_feelable": "None (relies entirely on visual scale and raw acoustic power)",
-   "what_the_viewer_learns": "A visceral, close-up perspective of the Artemis SLS launch pad disconnects and booster ignition.",
+   "key_number_and_how_it_is_made_feelable": "Human-sized emergency baskets numbered 1 through 4 visually dwarf in comparison to the massive rocket body",
+   "what_the_viewer_learns": "A high-detail close-up perspective of the SLS Artemis rocket clearing the launch tower and emergency egress baskets",
    "language_level": "simple",
    "tone": "dramatic",
-   "ending": "Booster fire and white exhaust smoke completely engulf the frame as the rocket lifts off.",
-   "visual_style": "Real slow-motion high-definition tracking footage from launch pad cameras.",
+   "ending": "visual climax as exhaust smoke engulfs the screen",
+   "visual_style": "real footage (single continuous cinematic tracking shot)",
    "cuts_per_10_seconds": 0.0,
-   "captions": "No captions used.",
-   "sound": "Low atmospheric drone swelling into intense, bass-heavy rocket engine rumble and roar with no voiceover.",
+   "captions": "None",
+   "sound": "Dramatic orchestral crescendo blending into powerful rocket engine roar and launch pad rumblings",
    "why_it_works": [
-    "Incredible close-up technical details (umbilical release, emergency wire baskets) rarely viewed at this angle.",
-    "Smooth vertical camera motion builds intense anticipation before booster ignition.",
-    "Unfiltered, deafening rocket sound design delivers powerful sensory immersion."
+    "Incredible sense of scale provided by the emergency baskets next to the SLS booster",
+    "Smooth, uninterrupted tracking shot creates cinematic immersion",
+    "High-tension build-up resolving in raw rocket ignition power"
    ],
    "weak_points": [
-    "Lacks text or commentary explaining what the numbered cable cars/baskets are for viewers unfamiliar with launch pad infrastructure.",
-    "No title or hook overlay to retain casual scrollers who need immediate context."
+    "Lacks context or caption explaining what the numbered wire baskets are for viewers unfamiliar with rocket emergency egress systems"
+   ]
+  }
+ },
+ {
+  "id": "8ufgu-ljQk8",
+  "title": "iPhone 18 Pro Max vs Nokia 1100 : Road Roller ने सब कुचल दिया! 🤯🔥 #shorts",
+  "channel": "Tech Master",
+  "channel_id": "UCglXlpWjIi95auM3umWWLdw",
+  "views": 14820151,
+  "seconds": 60,
+  "published": "2026-10-20",
+  "analysis": {
+   "first_line": "Ye hai baba ka 20 saal purana Nokia 1100 aur ye mera do lakh ka iPhone 18 Pro Max",
+   "seconds_until_topic_is_clear": 3,
+   "hook_type": "visual shock",
+   "beats": [
+    "Hook: Introduce classic Nokia 1100 vs ultra-expensive iPhone durability challenge",
+    "Round 1: Throwing both phones from truck height onto rocks",
+    "Round 2: Smashing walnuts using the phone screens",
+    "Round 3: Running over both phones with an MG Cyberster sports car",
+    "CTA insert: Asking to subscribe before the ultimate test",
+    "Round 4 & Payoff: Heavy industrial road roller flattens both phones completely"
+   ],
+   "length_seconds": 60,
+   "words_per_second": 1.8,
+   "key_number_and_how_it_is_made_feelable": "2 Lakh rupee iPhone vs 20-year-old Nokia phone, framed through escalating destruction levels",
+   "what_the_viewer_learns": "Whether a legendary indestructible Nokia 1100 or a modern smartphone can survive a 10-ton road roller",
+   "language_level": "simple",
+   "tone": "energetic",
+   "ending": "comedic cliffhanger / shock reaction to crushed remains",
+   "visual_style": "real footage with gamified HUD icons, fast action cuts, and dramatic slow-motion closeups",
+   "cuts_per_10_seconds": 5.5,
+   "captions": "stylized floating 3D round titles ('Round 1-4'), checkmark overlays, bold centered Hindi/English text",
+   "sound": "deep arcade announcer voice ('Round 1'), dramatic impact sound effects, fast-paced energetic background score",
+   "why_it_works": [
+    "Capitalizes on the universally loved internet trope of Nokia phones being invincible",
+    "Clear 4-tier game structure keeps retention high as stakes escalate to a road roller",
+    "High visual contrast between father-son dynamic and flashy luxury cars vs raw destruction"
+   ],
+   "weak_points": [
+    "Use of obvious dummy mockups in the final roller shot reduces perceived authenticity for attentive viewers"
    ]
   }
  },
@@ -44,124 +127,121 @@
   "title": "The Smart AI Shopping 😱",
   "channel": "FactoHolic",
   "channel_id": "UCS4uc8cHDqcwwro8lGChaQQ",
-  "views": 13464185,
+  "views": 13967734,
   "seconds": 109,
   "published": "2026-10-03",
   "analysis": {
-   "first_line": "कई सारे त्यौहार आने वाले हैं और तुम्हें इस समय केवल एक ही चीज देखने को मिलेगी",
-   "seconds_until_topic_is_clear": 11,
-   "hook_type": "relatable problem + question",
+   "first_line": "Kayi saare tyohar aane wale hain aur tumhe is samay kewal ek hi cheez dekhne ko milegi",
+   "seconds_until_topic_is_clear": 12,
+   "hook_type": "relatable seasonal context + provocative question",
    "beats": [
-    "Hook: Festivals are coming and sales advertisements are everywhere",
-    "Problem: Questioning whether discounts are real or just inflated base prices",
-    "Solution: Introducing an all-in-one shopping tool (Super Browse)",
-    "Feature walkthrough 1: Deal scanner showing real vs fake discounts",
-    "Feature walkthrough 2: Historical price charts and price drop alerts",
-    "Feature walkthrough 3: Extra discounts at checkout & movie ticket savings",
-    "App reveal: Naming BuyHatke at the very end"
+    "Hook: Festivals are coming and e-commerce sales are everywhere, but are discounts real?",
+    "The Scam: How retailers inflate prices before showing fake discounts",
+    "Solution Reveal: All-in-one shopping app with Super Browse feature",
+    "Feature 1: Deal scanner detecting real vs fake discounts via visual cues",
+    "Feature 2 & 3: Historical price chart tracker and price drop alerts",
+    "Feature 4: Auto checkout discount and cross-platform price comparison",
+    "Bonus Perk: Extra movie ticket discounts",
+    "App Name Reveal: Name dropped as BuyHatke"
    ],
-   "length_seconds": 109,
-   "words_per_second": 2.6,
-   "key_number_and_how_it_is_made_feelable": "A ₹500 item marked as ₹1000 and discounted to ₹900, vividly illustrating how fake festive sales work",
-   "what_the_viewer_learns": "How e-commerce platforms manipulate sale prices and how to use price tracking/deal scanners to get genuine discounts",
+   "length_seconds": 108,
+   "words_per_second": 2.8,
+   "key_number_and_how_it_is_made_feelable": "₹500 item marked as ₹1,000 crossed out to ₹900, showing how fake 10% discounts fool buyers on double-priced items",
+   "what_the_viewer_learns": "How to verify genuine sales discounts and track product price histories across platforms using BuyHatke",
    "language_level": "simple",
-   "tone": "energetic / funny / relatable",
-   "ending": "payoff / app reveal",
-   "visual_style": "mixed - expressive talking head with relatable stock footage and clear app screen recordings",
-   "cuts_per_10_seconds": 2.7,
-   "captions": "no full dialogue captions; minimal bold graphic pop-ups for percentages and brand names",
-   "sound": "upbeat, energetic background music under a fast, theatrical voiceover with comic sound effects",
+   "tone": "energetic, comedic, expressive",
+   "ending": "name reveal of the app as punchline",
+   "visual_style": "mixed (expressive talking head, app screen recordings, b-roll footage)",
+   "cuts_per_10_seconds": 2.5,
+   "captions": "no full dialogue captions, only pop-up UI badges and callout text highlights like '20% OFF' and 'BuyHatke'",
+   "sound": "upbeat comedic background music, dramatic whoosh and comedic sound effects matched to gestures",
    "why_it_works": [
-    "Capitalizes on timely festive shopping excitement and widespread skepticism about fake sales",
-    "High-energy creator performance with exaggerated comedic expressions maintains engagement",
-    "Step-by-step UI screen recordings clearly prove the utility before revealing the app name"
+    "Extremely relatable consumer pain point right before major Indian festive shopping seasons (Diwali)",
+    "Highly expressive, animated acting style holds attention through technical app demonstrations",
+    "Clear UI screen recordings prove exactly how each feature functions on real shopping sites"
    ],
    "weak_points": [
-    "No continuous subtitles, which hurts retention for viewers watching on mute",
-    "Over 100 seconds is long for a promotional Short; app reveal comes very late"
+    "Hiding the app name until the very end risks losing viewers who drop off mid-video",
+    "Lack of complete burnt-in captions reduces engagement for sound-off viewers"
    ]
   }
  },
  {
-  "id": "KvOOhdCWRyc",
-  "title": "This Animal Might Be Living On The Moon",
-  "channel": "Facts' Mine",
-  "channel_id": "UCC6gbNO098rkQKCU0ZaLITQ",
-  "views": 5924626,
-  "seconds": 45,
-  "published": "2026-09-28",
+  "id": "OZWsiPoLiYo",
+  "title": "The Fastest Plane Ever Flown Couldn't Take Off | X-15 #shorts",
+  "channel": "OddFrame",
+  "channel_id": "UC87Re_9sXZzkbVJm41Hs_zQ",
+  "views": 6998906,
+  "seconds": 105,
+  "published": "2026-10-05",
   "analysis": {
-   "first_line": "Ek jaanwar galti se chand par reh gaya tha ek mission ke dauran",
-   "seconds_until_topic_is_clear": 3,
-   "hook_type": "contradiction / shocking mystery",
+   "first_line": "The fastest airplane a human has ever flown couldn't even take off by itself.",
+   "seconds_until_topic_is_clear": 2,
+   "hook_type": "contradiction / surprising fact about a famous vehicle",
    "beats": [
-    "Hook: An animal was accidentally left on the Moon during a mission and might still be alive",
-    "Mission context: 2019 Beresheet lunar lander",
-    "Introduce subject: Tardigrade and its extreme survival abilities",
-    "Explain mechanism: Drying out into a cryptobiotic survival state",
-    "The crash: Spacecraft crashed on the Moon with dehydrated tardigrades onboard",
-    "Honest conclusion: They might still be preserved there, but unconfirmed"
+    "Hook: X-15 needs a B-52 bomber to launch and jettisons its tail to land",
+    "Speed and power: Mach 6.7, liquid oxygen and ammonia fuel burned in 80 seconds",
+    "Extreme engineering: Inconel X alloy skin, wedge tail, and rocket thrusters for space steering",
+    "Edge of space: Reached 108 km altitude, hardest part is returning and gliding home on steel skids",
+    "Record attempt: 1967 white heat-shielded X-15 hit Mach 6.7, dummy engine broke off, never flew again"
    ],
-   "length_seconds": 44,
+   "length_seconds": 104,
    "words_per_second": 2.7,
-   "key_number_and_how_it_is_made_feelable": "2019 Beresheet lunar lander mission crash shown with real satellite impact images",
-   "what_the_viewer_learns": "Tardigrades can survive extreme conditions in cryptobiosis and were accidentally deposited on the lunar surface during a crash in 2019.",
-   "language_level": "simple",
-   "tone": "energetic / engaging curiosity",
-   "ending": "honest disclaimer that their survival remains unconfirmed",
-   "visual_style": "mixed - talking head, CGI space renders, microscopic footage, meme pop-in, and satellite crater images closely synced to narration",
-   "cuts_per_10_seconds": 4.5,
-   "captions": "large stylized pop-up text and labels, mixed fonts and colors, minimal full subtitles",
-   "sound": "upbeat curious background music, meme sound bites, crisp foreground narration with occasional comedic sound effects",
+   "key_number_and_how_it_is_made_feelable": "Mach 6.7 / 2 kilometers every second, illustrated with distance markers on a map",
+   "what_the_viewer_learns": "How the X-15 rocket plane was launched, survived extreme aerodynamic heating at Mach 6+, steered in the upper atmosphere with thrusters, and landed without wheels.",
+   "language_level": "medium",
+   "tone": "engaging documentary",
+   "ending": "reflects on how nearly 60 years later no human has flown an airplane faster",
+   "visual_style": "3D animation matching every narrative beat precisely",
+   "cuts_per_10_seconds": 2.5,
+   "captions": "medium size, uppercase/mixed, white text with black outline, 1-4 words at once, key words highlighted in yellow",
+   "sound": "suspenseful documentary background music, balanced well with clear voiceover",
    "why_it_works": [
-    "Instantly captivating premise (living creature abandoned on the Moon)",
-    "Relatable humor and accessible metaphors ('chhuara' / dried date) to explain complex biological dormancy",
-    "Fast visual pacing with high-quality CGI and real lunar crash imagery"
+    "Fascinating historical subject with counterintuitive engineering details",
+    "Crisp 3D animations that visualize abstract concepts like heat resistance and steering in space",
+    "Pacing is fast enough to maintain attention throughout a nearly two-minute short"
    ],
    "weak_points": [
-    "Lacks full synced word-by-word captions throughout, relying mostly on occasional title cards",
-    "Ends abruptly on a disclaimer without a strong final CTA or loop"
+    "Some technical terms like Inconel X and Mach numbers fly by quickly for casual viewers"
    ]
   }
  },
  {
-  "id": "-lytYKi7xn4",
-  "title": "How the WATCHMAN Device Works",
-  "channel": "The Brain Maze",
-  "channel_id": "UC_2XL2lThI85UYxtLSwk18w",
-  "views": 5685604,
-  "seconds": 72,
-  "published": "2026-10-06",
+  "id": "cGUVaoifS88",
+  "title": "How Concrete Mixer Machines Work! 🤯",
+  "channel": "Explorer Hub",
+  "channel_id": "UCBuerVH_NyX0Eq6nwHKWaSw",
+  "views": 6459947,
+  "seconds": 21,
+  "published": "2026-10-17",
   "analysis": {
-   "first_line": "This tiny device is placed inside the heart to help prevent blood clots from entering the bloodstream.",
-   "seconds_until_topic_is_clear": 7,
-   "hook_type": "visual shock + intriguing device introduction",
+   "first_line": "If you get a job cleaning inside a concrete mixer, don't think of it as an ordinary job.",
+   "seconds_until_topic_is_clear": 3,
+   "hook_type": "visual shock + question/premise",
    "beats": [
-    "Visual hook: Shows umbrella-like device opening inside the heart and reveals its name (Watchman)",
-    "Problem setup: Explains atrial fibrillation and how clots form in the left atrial appendage",
-    "Procedure step 1: Catheter insertion via femoral vein into the right and left atrium",
-    "Procedure step 2: Positioning catheter at the left atrial appendage opening",
-    "Deployment: Watchman device advances, expands, and catheter is removed",
-    "Long-term payoff: Tissue grows over device, permanently sealing it and reducing stroke risk"
+    "hook with dangerous-looking worker inside concrete mixer",
+    "explains the hidden danger of dried cement inside mixers",
+    "shows footage of workers entering and breaking dried concrete with hammers",
+    "highlights the extreme noise, dust, and risk of the job"
    ],
-   "length_seconds": 72,
-   "words_per_second": 2.08,
-   "key_number_and_how_it_is_made_feelable": "None (relies purely on visual mechanical explanation rather than statistics)",
-   "what_the_viewer_learns": "How the Watchman implant works to block the left atrial appendage and prevent blood clots from causing strokes in AFib patients.",
-   "language_level": "medium",
-   "tone": "calm documentary",
-   "ending": "summary payoff showing final biological healing and stroke risk reduction",
-   "visual_style": "High-end photorealistic 3D medical animation with perfect word-to-image synchronization",
-   "cuts_per_10_seconds": 1.8,
-   "captions": "Medium bottom subtitles, white text with black border, sentence segments (4-7 words per screen)",
-   "sound": "Gentle, atmospheric ambient pad music under a clear, professional documentary voiceover, paired with subtle mechanical/biological sound effects",
+   "length_seconds": 20,
+   "words_per_second": 4.1,
+   "key_number_and_how_it_is_made_feelable": "None",
+   "what_the_viewer_learns": "Cleaning the inside of concrete mixers is a hazardous job requiring workers to break hardened cement with hammers in tight, dusty, and extremely loud conditions.",
+   "language_level": "simple",
+   "tone": "dramatic",
+   "ending": "abrupt stop after showing the hazardous working conditions",
+   "visual_style": "real footage mixed with first-person angles matching the narration",
+   "cuts_per_10_seconds": 5.0,
+   "captions": "medium size, white text, highlighted keywords, 1-3 words at a time",
+   "sound": "tense background music with loud hammer impact sound effects matching the visuals",
    "why_it_works": [
-    "Extremely satisfying, high-fidelity 3D medical animation that makes complex anatomy easy to visualize",
-    "Clear cause-and-effect storytelling: introduces problem (clot pooling in appendix) then shows the direct mechanical solution",
-    "Fascinating procedural detail showing the journey from groin vein all the way into the specific heart chamber"
+    "strong visual hook of a person inside a rotating drum",
+    "reveals a dangerous hidden job most people know nothing about",
+    "fast pacing with matching sound effects"
    ],
    "weak_points": [
-    "Lacks statistics on how common AFib is or the percentage reduction in stroke risk to heighten stakes"
+    "ends abruptly without a proper conclusion or CTA"
    ]
   }
  },
@@ -170,40 +250,204 @@
   "title": "How Small Is the Planck Length? 💀🔬 #Shorts #Space #Astronomy #Science #QuantumPhysics #Physics",
   "channel": "Science Of Infinity",
   "channel_id": "UCKWe3mXbIf4KtETT2mvUBdg",
-  "views": 5295130,
+  "views": 6152886,
   "seconds": 36,
   "published": "2026-10-15",
   "analysis": {
-   "first_line": "None (instrumental track; text on screen: 'Pov: How Small Is the Planck Length?')",
+   "first_line": "How small is the Planck length?",
    "seconds_until_topic_is_clear": 1,
-   "hook_type": "question / visual shock",
+   "hook_type": "question + visual zoom-in",
    "beats": [
-    "hook: relatable starting point (pen tip) with existential scale question",
-    "macro zoom: diving into pen metal surface and ink textures",
-    "atomic scale transition: Atom (~10^-10 m)",
-    "subatomic scale transition: Nucleus (~10^-15 m) and Quarks Field (~10^-20 m)",
-    "quantum theoretical scale: Quantum Foam (~10^-25 m) and Metric Field (~10^-30 m)",
-    "final payoff: arrival at the Planck Length (~10^-35 m)"
+    "hook: POV question about planck length",
+    "macro zoom from pen tip down to paper texture",
+    "successive scaling zooms through atomic levels",
+    "rapid transitions through nucleus, quarks, and quantum foam",
+    "reaching the final scale: planck length"
    ],
-   "length_seconds": 36,
-   "words_per_second": 0.0,
-   "key_number_and_how_it_is_made_feelable": "~10^-35 m, made feelable through a step-by-step continuous microscopic zoom starting from an everyday ballpoint pen tip down to atoms and subatomic fields",
-   "what_the_viewer_learns": "How absurdly tiny the Planck length is compared to atoms, atomic nuclei, and theoretical quantum foam",
+   "length_seconds": 35,
+   "words_per_second": 0.5,
+   "key_number_and_how_it_is_made_feelable": "Powers of ten scale steps from atom down to 10^-35 m",
+   "what_the_viewer_learns": "The scale hierarchy of the universe from everyday objects down to the Planck length",
    "language_level": "simple",
-   "tone": "dramatic",
-   "ending": "abrupt cutoff at the Planck length grid",
-   "visual_style": "3D animation / simulated infinite zoom with procedural scientific visualization",
-   "cuts_per_10_seconds": 2.2,
-   "captions": "Large bold text centered ('ATOM', 'NUCLEUS', 'PLANCK LENGTH') in yellow/pink with skull emoji, scientific scale markers (~10^-x m) in the upper right",
-   "sound": "Hypnotic, bass-heavy rhythmic phonk/electronic track driving pacing; no voiceover",
+   "tone": "energetic / dramatic",
+   "ending": "fade to black on planck length",
+   "visual_style": "mixed - macro photography zooming into 3D scientific visualizations, perfectly matching the zooming theme",
+   "cuts_per_10_seconds": 3.4,
+   "captions": "large, uppercase, multi-colored text with emojis and highlighted keywords",
+   "sound": "heavy bass electronic beat music with zooming and glitch sound effects",
    "why_it_works": [
-    "Anchors the impossible quantum scale in an instantly recognizable everyday object (pen tip)",
-    "Continuous zoom illusion triggers intense visual curiosity and keeps viewer retention high",
-    "Rhythmic, hypnotic audio track creates an eerie sense of depth and tension"
+    "Hypnotic infinite zoom effect keeps viewers watching",
+    "Clear hierarchical progression from macroscopic to quantum scale",
+    "Punchy beat syncs with visual transitions"
    ],
    "weak_points": [
-    "No educational voiceover explaining the physical significance of the Planck length",
-    "Artistic interpretation of subatomic structures might be mistaken for literal microscopic photographs"
+    "Very little spoken dialogue or explanation of what the scales mean"
+   ]
+  }
+ },
+ {
+  "id": "KvOOhdCWRyc",
+  "title": "This Animal Might Be Living On The Moon",
+  "channel": "Facts' Mine",
+  "channel_id": "UCC6gbNO098rkQKCU0ZaLITQ",
+  "views": 6071414,
+  "seconds": 45,
+  "published": "2026-09-28",
+  "analysis": {
+   "first_line": "An animal accidentally got left on the moon during a mission, and it might still be alive.",
+   "seconds_until_topic_is_clear": 10,
+   "hook_type": "shocking premise + promise of reveal",
+   "beats": [
+    "hook: animal left on moon alive",
+    "introduces Beresheet lunar lander in 2019",
+    "reveals the animal: Tardigrade (water bear)",
+    "explains their survival state (dried out, handles extreme conditions)",
+    "twist: spacecraft crashed on moon, tardigrades survived in container",
+    "conclusion: they might still be there in survival mode"
+   ],
+   "length_seconds": 44,
+   "words_per_second": 3.4,
+   "key_number_and_how_it_is_made_feelable": "2019 year of mission, shown with graphics and lander footage",
+   "what_the_viewer_learns": "Tardigrades can survive extreme environments in a cryptobiosis state and might be surviving on the moon after a crash.",
+   "language_level": "simple",
+   "tone": "energetic / engaging",
+   "ending": "uncertainty / cliffhanger statement",
+   "visual_style": "mixed - talking head, stock space footage, 3D animations, microscopic footage, well-matched with voiceover",
+   "cuts_per_10_seconds": 3.6,
+   "captions": "medium size, mixed case, green and red highlights on key words, 1-3 words at once",
+   "sound": "upbeat background music, sound effects for transitions",
+   "why_it_works": [
+    "strong hook about animals in space",
+    "fast pacing with varied visual styles",
+    "fascinating biology fact explained simply"
+   ],
+   "weak_points": [
+    "speculative ending without definitive proof"
+   ]
+  }
+ },
+ {
+  "id": "axIUhBsuSBk",
+  "title": "We Are So TINY! 💀🤏",
+  "channel": "Zap Facts",
+  "channel_id": "UCTbW_SfiOHpvNyrAa-GYgNQ",
+  "views": 5876446,
+  "seconds": 43,
+  "published": "2026-10-13",
+  "analysis": {
+   "first_line": "Take a look at this photo, this is the sun, but that tiny dot you're looking at is actually a planet known as Mercury",
+   "seconds_until_topic_is_clear": 5,
+   "hook_type": "visual shock + zoom-out scale comparison",
+   "beats": [
+    "Hook: Sun and tiny Mercury dot",
+    "Scale comparison: 40 suns gap between them",
+    "Escalation: Earth vs Stevenson 2-18 star",
+    "Extreme scale: 10 billion suns inside the star",
+    "Climax: TON 618 ultra-massive black hole"
+   ],
+   "length_seconds": 43,
+   "words_per_second": 2.9,
+   "key_number_and_how_it_is_made_feelable": "Nearly 10 billion suns fit inside Stevenson 2-18, visualized with repeated sun icons and skull warning emojis.",
+   "what_the_viewer_learns": "The immense scale of celestial objects from Mercury up to Stevenson 2-18 and TON 618 black hole.",
+   "language_level": "simple",
+   "tone": "dramatic",
+   "ending": "abrupt cut on the black hole visual",
+   "visual_style": "mixed - 3D space animation, zoom-outs, graphics, emojis matching voiceover closely",
+   "cuts_per_10_seconds": 2.3,
+   "captions": "medium size, ALL CAPS, black and red colors, 1-3 words at once, key words highlighted in red",
+   "sound": "epic cinematic mystery music, voiceover loud and clear, sound effects for transitions",
+   "why_it_works": [
+    "Mind-blowing scale comparison keeps retention high",
+    "Fast pacing with continuous visual escalation",
+    "Strong emotional triggers (skull emojis, dramatic voiceover)"
+   ],
+   "weak_points": [
+    "Some size comparisons are so abstract they are hard to truly comprehend"
+   ]
+  }
+ },
+ {
+  "id": "6SvNEYx_Za4",
+  "title": "These Are The 5 Largest Airplanes In The World 😱",
+  "channel": "Mozzam Facts",
+  "channel_id": "UCj-jS1D2r9CoL6MP814C4oQ",
+  "views": 5587244,
+  "seconds": 121,
+  "published": "2026-10-12",
+  "analysis": {
+   "first_line": "These are the 5 biggest airplanes in the world that look like giant monsters.",
+   "seconds_until_topic_is_clear": 3,
+   "hook_type": "visual shock + numerical promise (top 5 biggest airplanes)",
+   "beats": [
+    "hook: weird/massive planes + promise of top 5",
+    "CTA request with alien joke",
+    "1: Stratolaunch - massive wingspan comparison",
+    "2: Antonov An-124 Ruslan - heavy cargo capacity",
+    "3: Airbus A380 - double decker passenger giant",
+    "4: Boeing 747-8 - gigantic cargo space",
+    "5: Airbus Beluga XL - whale-shaped parts transporter",
+    "outro question"
+   ],
+   "length_seconds": 120,
+   "words_per_second": 3.0,
+   "key_number_and_how_it_is_made_feelable": "117 meters wingspan on Stratolaunch, compared to a football field",
+   "what_the_viewer_learns": "5 distinct massive aircraft models, their unique designs, and what cargo or capacity they carry",
+   "language_level": "simple",
+   "tone": "energetic",
+   "ending": "question to viewer about flight experience",
+   "visual_style": "mixed - talking head, stock footage, AI/3D visual effects matching narration closely",
+   "cuts_per_10_seconds": 4.5,
+   "captions": "medium size, mostly uppercase, yellow/white colours, 2-4 words at a time, highlighted key words",
+   "sound": "upbeat background music, sound effects on transitions, clear voiceover",
+   "why_it_works": [
+    "Strong visual shock in the first seconds",
+    "Clever scale comparisons make massive numbers feelable",
+    "Pacing keeps attention across 5 items with distinct visual hooks"
+   ],
+   "weak_points": [
+    "Some AI-generated visual elements blur the line between real and fictional planes"
+   ]
+  }
+ },
+ {
+  "id": "Pc4WsBDJdvo",
+  "title": "Long Flight Mein Pilots Kahan Sote Hain? 😱✈️ Plane Ke Andar Ka Secret Room!",
+  "channel": "MK Faith & Valor",
+  "channel_id": "UCJLEnufBfYnwbKhkaJeGnCA",
+  "views": 4923380,
+  "seconds": 58,
+  "published": "2026-10-11",
+  "analysis": {
+   "first_line": "क्या आप जानते हैं कि लंबी उड़ान के दौरान पायलट कहाँ सोते हैं?",
+   "seconds_until_topic_is_clear": 3,
+   "hook_type": "question + misconception",
+   "beats": [
+    "hook questioning pilot sleeping arrangements during long flights",
+    "addresses common misconception that pilots sit for 10 hours straight",
+    "explains 3-4 pilot system and mid-flight shift rotation",
+    "shows the secret rest cabin hidden from passengers",
+    "reveals how pilots can be called back via intercom",
+    "conclusion on why this rotation keeps flights safe"
+   ],
+   "length_seconds": 58,
+   "words_per_second": 2.4,
+   "key_number_and_how_it_is_made_feelable": "35,000 feet height and 3-4 pilot crew rotation make long-haul logistics feelable",
+   "what_the_viewer_learns": "Airlines use rotating pilot crews and secret rest cabins above/behind the cockpit on long-haul flights.",
+   "language_level": "simple",
+   "tone": "calm documentary",
+   "ending": "explains the safety purpose of pilot rotation and cuts to flying airplane",
+   "visual_style": "mixed - real airplane footage, cockpit shots, pilot rest area tour, perfectly matched to narration",
+   "cuts_per_10_seconds": 2.2,
+   "captions": "medium size, lowercase Hindi, yellow/white highlight words, 2-5 words at once",
+   "sound": "upbeat engaging background music, balanced with clear Hindi voiceover, subtle UI sounds",
+   "why_it_works": [
+    "Strong curiosity hook about behind-the-scenes aviation",
+    "Visually reveals a hidden area passengers never see",
+    "Clear pacing and logical step-by-step explanation"
+   ],
+   "weak_points": [
+    "Music can feel a bit repetitive over 58 seconds",
+    "Some cuts are extremely fast making text hard to fully absorb on first watch"
    ]
   }
  },
@@ -212,290 +456,38 @@
   "title": "Humanoid Robots Are Already Working in Factories 🤖 Elon Musk Visions become true 😱",
   "channel": "ejunky66",
   "channel_id": "UCioMCgNwL0_K0XZR6_2kgrg",
-  "views": 4691147,
+  "views": 4863853,
   "seconds": 60,
   "published": "2026-10-02",
   "analysis": {
-   "first_line": "No spoken words; on-screen text reads: 'This isn't a future concept anymore!'",
-   "seconds_until_topic_is_clear": 1,
-   "hook_type": "visual shock",
+   "first_line": "This isn't a future concept anymore",
+   "seconds_until_topic_is_clear": 2,
+   "hook_type": "visual shock + text contradiction",
    "beats": [
-    "Visual shock hook: Uncanny hyper-realistic android interacting with a human",
-    "Factory proof: Hallway lined with dozens of mass-manufactured humanoid robots",
-    "Labor demo: Humanoid robots independently operating sewing machines in a garment factory",
-    "Domestic chore demo: Dual-arm service robot scrubbing a toilet and cleaning sinks",
-    "Extreme utility demo: Quadruped robot dog deployed with high-pressure fire hose",
-    "Channel CTA and website promotion"
+    "hook: humanoid robot interacting with human",
+    "reveal: factory warehouse full of bipedal robots",
+    "demonstration: robots sewing clothes on sewing machines",
+    "demonstration: robot cleaning a toilet in a bathroom",
+    "application: robotic dog firefighting in a forest"
    ],
    "length_seconds": 59,
-   "words_per_second": 0.7,
-   "key_number_and_how_it_is_made_feelable": "Dozens of mass-produced humanoid robots standing in assembly lines, visually conveying scale without explicit numbers.",
-   "what_the_viewer_learns": "Humanoid and quadruped robots are already capable of factory sewing, bathroom sanitation, and firefighting tasks.",
-   "language_level": "simple",
-   "tone": "futuristic",
-   "ending": "CTA to visit website and subscribe over footage of a robotic firefighting dog",
-   "visual_style": "real footage",
-   "cuts_per_10_seconds": 1.4,
-   "captions": "Minimal bold uppercase titles at top with red/white highlights, plus social CTA overlays",
-   "sound": "Upbeat electronic hip-hop beat throughout, overlaid with standard text-to-speech AI voiceover in the final third",
-   "why_it_works": [
-    "Intensely captivating visual hook with the hyper-realistic android triggers curiosity and re-watches",
-    "Rapid variety of practical use cases keeps viewer attention high from industry to domestic chores",
-    "Satisfying demonstration of automation performing delicate human tasks like sewing and scrubbing"
-   ],
-   "weak_points": [
-    "The voiceover only provides generic channel self-promotion rather than explaining the robots' specs or makers",
-    "No source attribution or verification provided for whether all clips represent working commercial autonomy"
-   ]
-  }
- },
- {
-  "id": "Y9jcDu6dMPA",
-  "title": "500 फीट नीचे से बोरवेल का पानी ऊपर कैसे आता है? 😱 | How Borewell Pumps Water #Shorts",
-  "channel": "DB AAYAM",
-  "channel_id": "UCUJqb6J-HDLQSUoJl_kn8eQ",
-  "views": 3938689,
-  "seconds": 151,
-  "published": "2026-09-24",
-  "analysis": {
-   "first_line": "Zameen ke 500 feet neeche jahan sooraj ki roshni kabhi nahi pahunchi wahan ek gehra raaz chipa hai.",
-   "seconds_until_topic_is_clear": 8,
-   "hook_type": "mystery + question",
-   "beats": [
-    "hook: mysterious groundwater and the paradox of pulling it up",
-    "myth bust: atmospheric pressure limits suction pumps to only 10m (33ft)",
-    "geological context: drilling into rock fissures and aquifers",
-    "solution introduced: submerging the pump directly inside the aquifer",
-    "mechanical breakdown: impellers creating multi-stage centrifugal pressure",
-    "fail-safe mechanism: NRV check valve preventing backflow during power cuts",
-    "philosophical reflection and subscribe CTA"
-   ],
-   "length_seconds": 150,
-   "words_per_second": 2.5,
-   "key_number_and_how_it_is_made_feelable": "10 meters (33 feet) suction limit vs 500-1000 feet borewell depth, visualized with cross-section animated columns showing water stalling.",
-   "what_the_viewer_learns": "Why surface suction pumps physically cannot lift water deeper than 33 feet and how multi-stage submersible pumps push water up from deep underground aquifers.",
-   "language_level": "medium",
-   "tone": "dramatic documentary",
-   "ending": "philosophical summary and subscribe CTA",
-   "visual_style": "Detailed 3D mechanical and geological cross-section animation tightly synced to narration.",
-   "cuts_per_10_seconds": 2.1,
-   "captions": "None (audio only with channel watermark logo and ending animated CTA button).",
-   "sound": "Cinematic suspenseful background score balanced under clear voiceover, accompanied by water and mechanical sound effects.",
-   "why_it_works": [
-    "Disproves a common misconception (suction straw myth) with a clear physics explanation.",
-    "Flawless 3D cutaway animations demystify unseen underground mechanisms.",
-    "Smooth narrative progression from problem to engineering solution maintains curiosity over a long format."
-   ],
-   "weak_points": [
-    "Absence of on-screen animated captions reduces retention for silent viewers.",
-    "At 2.5 minutes, it risks drop-off without mid-video re-hooks."
-   ]
-  }
- },
- {
-  "id": "OXz6qiGahbg",
-  "title": "कसारा घाट का 160 साल पुराना Engineering Secret! 😱 #shorts #viral #youtubeshorts",
-  "channel": "Knowledge_Hub🌎",
-  "channel_id": "UCv39hKuojC3lDJ7Bx5P3Ggw",
-  "views": 3768846,
-  "seconds": 157,
-  "published": "2026-09-28",
-  "analysis": {
-   "first_line": "कसारा घाट का 160 साल पुराना यह पुल आज भी ट्रेनों को गहरी घाटी के ऊपर दौड़ाता है, लेकिन इसे बनाया कैसे गया था?",
-   "seconds_until_topic_is_clear": 5,
-   "hook_type": "shocking number + question + visual awe",
-   "beats": [
-    "Hook: 160-year-old bridge over deep valley + how was it built?",
-    "History: 1851 survey identifying impossible mountain terrain",
-    "Engineering problem: Arches impossible in deep ravine, needing masonry piers + iron girders",
-    "Construction challenge: Erecting 182-foot-tall piers in a remote gorge",
-    "The genius trick: Assembling girders on ground and raising them with jacks as piers rose",
-    "Hoisting logistics: Moving tons of stone with pulleys and temporary tramways",
-    "Modern continuity & conclusion: Bridge still carries trains today, honoring 160-year-old genius"
-   ],
-   "length_seconds": 157,
-   "words_per_second": 2.1,
-   "key_number_and_how_it_is_made_feelable": "182 feet height, visualized by showing workers using screw jacks to incrementally hoist girders alongside rising stone pillars from the valley floor",
-   "what_the_viewer_learns": "How 19th-century engineers constructed the Kasara Ghat viaduct by prefabricating bridge spans on the ground and lifting them via jacks synchronously as masonry pillars were built",
-   "language_level": "medium",
-   "tone": "dramatic documentary",
-   "ending": "summary tribute to 160-year-old engineering marvel as modern trains pass over it",
-   "visual_style": "mixed real 4K drone railway footage and photorealistic historical AI recreations closely synchronized to narrative beats",
-   "cuts_per_10_seconds": 2.6,
-   "captions": "punchy yellow and white text callouts highlighting key phases and numbers, positioned center/top",
-   "sound": "cinematic orchestral background score with immersive Foley sound effects (hammers, pulleys, steam engine, rushing water) beneath clear narration",
-   "why_it_works": [
-    "Step-by-step visual explanation resolves an intriguing historical engineering mystery",
-    "High visual fidelity in historical reconstructions makes 1850s engineering tangible and thrilling",
-    "Strong emotional contrast between 160-year-old manual labor and modern high-speed trains passing overhead"
-   ],
-   "weak_points": [
-    "At over 2.5 minutes, its duration exceeds typical 60-second YouTube Short pacing, risking mid-video viewer drop-off",
-    "Noticeable AI artifacts in background crowds and faces in historical reconstruction scenes"
-   ]
-  }
- },
- {
-  "id": "nfuwtAeaPIU",
-  "title": "The Dead Wheel That Dug a Rover's Grave",
-  "channel": "Past the Blue",
-  "channel_id": "UC3efatI8kxybfYZWC_2pM6w",
-  "views": 3688401,
-  "seconds": 77,
-  "published": "2026-10-07",
-  "analysis": {
-   "first_line": "This dead wheel found a place on Mars where life could have lived.",
-   "seconds_until_topic_is_clear": 3,
-   "hook_type": "contradiction",
-   "beats": [
-    "Hook: Dead wheel found where life existed, then dug rover's grave",
-    "Crisis 1: Wheel locks before winter; rover forced to drive backwards dragging it",
-    "Scientific Discovery: Dragged wheel exposes ~90% silica indicating ancient hot springs",
-    "Crisis 2: Rover breaks through crust into soft sand and gets trapped for months",
-    "Tragic Climax: Revived wheel spins 10 times only to dig deeper; battery drains in winter",
-    "Payoff: Poetic circular ending contrasting the wheel dead vs alive"
-   ],
-   "length_seconds": 77,
-   "words_per_second": 2.7,
-   "key_number_and_how_it_is_made_feelable": "194 days stuck counter ticking upward on screen, visualizing the agonizing, slow loss of hope before winter arrived",
-   "what_the_viewer_learns": "How the Spirit rover's jammed wheel accidentally uncovered evidence of ancient Martian hydrothermal vents before permanently trapping it",
-   "language_level": "simple",
-   "tone": "dramatic",
-   "ending": "summary",
-   "visual_style": "3D animation",
-   "cuts_per_10_seconds": 2.6,
-   "captions": "bold all-caps center text, 1-3 words at a time with highlighted badge pills for key terms",
-   "sound": "somber cinematic orchestral music with realistic gravel, mechanical motor, and ambient wind sound effects",
-   "why_it_works": [
-    "Poetic dramatic irony frames an engineering failure as both the mission's greatest discovery and its death sentence",
-    "Clear 3D cutaways and geological diagrams make complex planetary science instantly understandable",
-    "Strong emotional personification turns a robot's mechanical failure into a tragic narrative arc"
-   ],
-   "weak_points": [
-    "Omits the rover's actual name (Spirit), leaving out key historical context for curious viewers"
-   ]
-  }
- },
- {
-  "id": "ulSEEOag64c",
-  "title": "How Plants Turn Sunlight Into Food. ☀️🌱#Photosynthesis #Plants #Biology #Science #shorts #KurioScope",
-  "channel": "KurioScope",
-  "channel_id": "UCv67dsaVy9w6HeM_anFk8iw",
-  "views": 3400958,
-  "seconds": 38,
-  "published": "2026-09-29",
-  "analysis": {
-   "first_line": "POV: How Plants Turn Sunlight Into Food (on-screen text, no voiceover)",
-   "seconds_until_topic_is_clear": 1,
-   "hook_type": "visual zoom / POV immersion + educational promise",
-   "beats": [
-    "Hook: POV zoom from forest canopy straight into a leaf",
-    "Microscopic entrance: Carbon dioxide entering stomata pores",
-    "Zooming into plant cells and chloroplasts",
-    "Deep dive into thylakoid stacks where sunlight is trapped",
-    "Molecular level: Photosystems absorbing photons to produce ATP",
-    "Payoff: Converting carbon dioxide and water into food (sugars)"
-   ],
-   "length_seconds": 37,
-   "words_per_second": 0.0,
-   "key_number_and_how_it_is_made_feelable": "Millions of living cells, rendered as an immense 3D floating cluster inside the leaf",
-   "what_the_viewer_learns": "The step-by-step biological hierarchy of photosynthesis from leaf exterior down to photosystems generating ATP and plant sugars.",
-   "language_level": "medium",
-   "tone": "mesmerizing scientific / dynamic educational",
-   "ending": "abrupt cutoff at the molecular synthesis payoff without a CTA",
-   "visual_style": "Continuous 3D CGI microscopic zoom-in perfectly synchronized with explanatory labels",
-   "cuts_per_10_seconds": 1.4,
-   "captions": "Top white banner with clean black text and highlighted red keywords; large stylized dripping font pop-ups for major biological structures",
-   "sound": "Punchy rhythmic beatbox/electronic track with subtle whoosh audio effects, zero spoken voiceover",
-   "why_it_works": [
-    "Infinite zoom / powers of ten visual journey creates irresistible visual satisfaction",
-    "Hierarchical scientific breakdown makes a complex textbook topic easy to grasp in 30 seconds",
-    "Brisk musical pacing and bold typography maintain viewer attention without spoken audio"
-   ],
-   "weak_points": [
-    "No spoken voiceover forces the viewer to split attention between reading text and watching detailed animations",
-    "Lacks a concluding summary or channel follow-up call to action"
-   ]
-  }
- },
- {
-  "id": "y7xV8g73n9U",
-  "title": "Jio new device #Jio",
-  "channel": "The Technologist",
-  "channel_id": "UCTi7hp0kqzJ1Ar0pfDSXZ0w",
-  "views": 3304622,
-  "seconds": 25,
-  "published": "2026-09-24",
-  "analysis": {
-   "first_line": "Dosto Jio ka yeh device actually mein bohot kaam ka hai",
-   "seconds_until_topic_is_clear": 2,
-   "hook_type": "named subject + promise",
-   "beats": [
-    "Hook: Jio's compact device is surprisingly useful",
-    "Value add: Comes with free SIM card and 1 year free recharge",
-    "Setup demo: Inserting SIM, turning on LED lights, app pairing via QR",
-    "Core utility: Real-time live location tracking on map",
-    "Honest caveat: Battery-operated, requires periodic recharging"
-   ],
-   "length_seconds": 25,
-   "words_per_second": 3.4,
-   "key_number_and_how_it_is_made_feelable": "1 Year Free Recharge, highlighted on-screen with bold yellow text to emphasize immediate money-saving value",
-   "what_the_viewer_learns": "How Jio's portable GPS tracker works, its bundle with 1-year data, and how to track live location using its companion app",
+   "words_per_second": 1.7,
+   "key_number_and_how_it_is_made_feelable": "none",
+   "what_the_viewer_learns": "Humanoid robots and robotic applications are transitioning from concept to real-world deployment in manufacturing, cleaning, and hazardous environments like firefighting.",
    "language_level": "simple",
    "tone": "energetic",
-   "ending": "honest maintenance caveat showing box features",
-   "visual_style": "mixed hands-on hardware demo, talking head, and phone app screen recordings closely matching spoken points",
-   "cuts_per_10_seconds": 3.6,
-   "captions": "minimal; only key callout graphic ('1 Year Free Recharge') in bold yellow on dark background",
-   "sound": "upbeat tech background music under a crisp, close-mic voiceover",
+   "ending": "CTA to visit website and watch more videos",
+   "visual_style": "mixed real footage, robot exhibition, factory floors, and demonstrations, highly matching the topic",
+   "cuts_per_10_seconds": 1.5,
+   "captions": "medium size, ALL CAPS, white text with highlighted red keywords, 2-4 words at once",
+   "sound": "upbeat electronic music track, moderate loudness below voiceover",
    "why_it_works": [
-    "Leverages Jio's massive brand curiosity coupled with the high-retention promise of '1 year free recharge'",
-    "Fast-paced visual proof showing unboxing, SIM insertion, app setup, and live GPS map in under 20 seconds",
-    "Addresses real practical utility (tracking vehicles/belongings) and ends with honest battery expectations"
+    "Strong visual hook with realistic humanoid robot interaction in the opening seconds",
+    "Fast pacing showcasing diverse real-world use cases from factory work to firefighting",
+    "High production value footage of futuristic technology that commands attention"
    ],
    "weak_points": [
-    "Never verbally states the exact model name or the purchase price of the device"
-   ]
-  }
- },
- {
-  "id": "ytapOSwQZp0",
-  "title": "The Moon Ship With No Radiation Shelter",
-  "channel": "Past the Blue",
-  "channel_id": "UC3efatI8kxybfYZWC_2pM6w",
-  "views": 3035338,
-  "seconds": 67,
-  "published": "2026-10-08",
-  "analysis": {
-   "first_line": "The ship that takes astronauts to the moon has no radiation shelter",
-   "seconds_until_topic_is_clear": 4,
-   "hook_type": "contradiction / shocking statement + visual shock",
-   "beats": [
-    "Hook: moon ship has no radiation shelter and solar storms are deadly",
-    "Problem: lead is too heavy to launch into space",
-    "Comparison: water stops radiation twice as well as lead pound for pound",
-    "Practical solution: space food and clothes are already full of water and act as shields",
-    "Action: astronauts swap places with their cargo when a storm hits",
-    "Payoff: they hide behind lunch instead of lead"
-   ],
-   "length_seconds": 66,
-   "words_per_second": 2.7,
-   "key_number_and_how_it_is_made_feelable": "1.5 tonnes (weight of water around four people compared to the weight of a car)",
-   "what_the_viewer_learns": "How astronauts protect themselves from solar radiation on lunar missions using everyday supplies like food and water instead of heavy lead.",
-   "language_level": "simple",
-   "tone": "dramatic / calm documentary",
-   "ending": "humorous payoff line ('they hide behind lunch') with visual punchline",
-   "visual_style": "3D animation, highly polished, matches the narration perfectly step-by-step",
-   "cuts_per_10_seconds": 2.5,
-   "captions": "medium size, all caps, white text with highlighted yellow or red words for emphasis, 2-5 words at once",
-   "sound": "low mysterious ambient music building tension, clear voiceover, subtle whoosh and alarm sound effects",
-   "why_it_works": [
-    "Strong counter-intuitive revelation (water is better than lead)",
-    "Visually stunning and easy-to-follow 3D graphics",
-    "Clear narrative arc from problem to ingenious solution"
-   ],
-   "weak_points": [
-    "66 seconds is slightly long for a short-form vertical video"
+    "Lacks specific statistics or manufacturer names which would add credibility"
    ]
   }
  }

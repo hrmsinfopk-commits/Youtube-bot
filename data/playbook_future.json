@@ -1,87 +1,87 @@
 {
  "shorts_rules": [
-  "State the central topic or resolve the hook's premise within the first 5 seconds to prevent immediate early drop-off.",
-  "Make abstract numbers or scales feelable by comparing them to everyday objects like ballpoint pens, cars, or food.",
-  "Use a contradiction, hidden mystery, or counter-intuitive fact as the opening line to drive strong initial curiosity.",
-  "Structure scripts with clear cause-and-effect progression: introduce a problem, show the failure, and reveal the physical or mechanical solution.",
-  "Keep our narration pace between 2.4 and 2.8 words per second to ensure clear delivery without feeling rushed.",
-  "Avoid open-ended, overly philosophical questions near the end which kill engagement; use concrete payoffs instead.",
-  "Always conclude the video by immediately transitioning into our mandatory brand sign-off without dragging out the ending.",
-  "Ensure the core subject or device name is explicitly stated early rather than relying purely on vague pronoun hooks."
+  "State the core topic or paradox within the very first sentence without generic introductory fluff.",
+  "Hook the viewer immediately in the first 3 seconds using a stark visual shock, a counterintuitive contradiction, or an urgent question.",
+  "Ground massive or microscopic numbers immediately by comparing them side-by-side with familiar physical objects like cars or football fields.",
+  "Never hide the core product, subject, or app name until the very end; introduce it early to maintain high retention.",
+  "Strictly adhere to our fixed time limits: exactly 20 to 25 seconds for news items, and 30 to 35 seconds for big questions.",
+  "Structure the middle beats around a fast escalation, step-by-step mechanical breakdown, or multi-tier progression.",
+  "Replace abstract philosophical closing questions with concrete statements, visual climaxes, or our mandatory outro line.",
+  "Always conclude every single video with our fixed sign-off line: 'Follow Tomorrowly for tomorrow's tech, today.'"
  ],
  "visual_sound_notes": [
-  "Use high-end 3D animated cutaways or continuous zoom visuals to match complex technical and microscopic explanations.",
-  "Maintain an average cut rate of 2.0 to 2.8 cuts per 10 seconds to keep visual pacing brisk without causing motion fatigue.",
-  "Incorporate bold, dynamic center captions with highlighted keywords and alternating color badges for key scientific terms.",
-  "Layer low atmospheric ambient music with sharp mechanical or spatial Foley effects under a clean, close-mic voice-over."
+  "Use medium-sized sans-serif captions with a high-contrast black outline, animating 1 to 3 words at a time with key terms highlighted in yellow or red.",
+  "Maintain a fast-paced cutting frequency between 2.5 and 5.0 cuts per 10 seconds, perfectly synchronized with visual beats and sound effects.",
+  "Pair high-fidelity 3D CGI cutaways or real-world cinematic tracking shots with ambient mechanical whooshes, muffled impacts, and rising drone synth music.",
+  "Ensure background music remains tightly balanced at a moderate loudness well beneath a clear, punchy voice-over."
  ],
  "typical": {
   "seconds": 32,
   "words_per_second": 2.6,
-  "cuts_per_10_seconds": 2.4
+  "cuts_per_10_seconds": 3.2
  },
- "summary_roman_urdu": "Is mahine ke viral shorts se yeh pata chalta hai ke viewers ko complex science aur tech topics mein ajeeb o ghareeb contradictions aur real-world comparisons bohot pasand aate hain. Hamare apne pichle videos mein log isliye chhod gaye kyunke shuruat mein topic clear hone ke bajaye confuse ho gaye aur aakhir mein sawal bohat philosophical tha. Hamein apni script ki pehli 5 seconds mein subject bilkul clear karna hoga aur ajeeb analogies use karni hongi taake log hook ho jayein. Visuals mein 3D cutaways aur fast pacing rakhni hai aur aakhir mein apna fixed sentence bina kisi lambi philosophy ke bol kar video khatam karni hai.",
- "updated": "2026-10-23",
+ "summary_roman_urdu": "Is mahine wohi shorts zyada viral hui hain jinhon ne shuru ke 3 seconds mein koi hairan kun baat ya visual shock diya hai. Hamari purani videos mein log shuruat mein ya ajeeb aakhri sawal par drop ho rahe hain, is liye humein bekaar intro khatam karke direct topic par aana hoga. Har video ka time fix rakhna zaroori hai (news ke liye 20-25 seconds aur big questions ke liye 30-35 seconds). Aakhri line hamesha 'Follow Tomorrowly for tomorrow's tech, today.' hi honi chahiye aur complex numbers ko aam cheezon ke sath compare karke feelable banana hoga.",
+ "updated": "2026-10-26",
  "studied": [
   {
+   "title": "How Does a Helicopter Pilot Eject Without Hitting the Rotor?",
+   "views": 26053766,
+   "id": "w65jbQSq1io"
+  },
+  {
    "title": "The entire rocket passes right in front of the camera",
-   "views": 15885071,
+   "views": 16996731,
    "id": "JJ5wl9zysuw"
   },
   {
+   "title": "iPhone 18 Pro Max vs Nokia 1100 : Road Roller ने सब कुचल दिया! 🤯🔥 #shorts",
+   "views": 14820151,
+   "id": "8ufgu-ljQk8"
+  },
+  {
    "title": "The Smart AI Shopping 😱",
-   "views": 13464185,
+   "views": 13967734,
    "id": "T3yuix4KqAk"
   },
   {
-   "title": "This Animal Might Be Living On The Moon",
-   "views": 5924626,
-   "id": "KvOOhdCWRyc"
+   "title": "The Fastest Plane Ever Flown Couldn't Take Off | X-15 #shorts",
+   "views": 6998906,
+   "id": "OZWsiPoLiYo"
   },
   {
-   "title": "How the WATCHMAN Device Works",
-   "views": 5685604,
-   "id": "-lytYKi7xn4"
+   "title": "How Concrete Mixer Machines Work! 🤯",
+   "views": 6459947,
+   "id": "cGUVaoifS88"
   },
   {
    "title": "How Small Is the Planck Length? 💀🔬 #Shorts #Space #Astronomy #Science #QuantumPhysics #Physics",
-   "views": 5295130,
+   "views": 6152886,
    "id": "Buh0gX_-5lY"
   },
   {
+   "title": "This Animal Might Be Living On The Moon",
+   "views": 6071414,
+   "id": "KvOOhdCWRyc"
+  },
+  {
+   "title": "We Are So TINY! 💀🤏",
+   "views": 5876446,
+   "id": "axIUhBsuSBk"
+  },
+  {
+   "title": "These Are The 5 Largest Airplanes In The World 😱",
+   "views": 5587244,
+   "id": "6SvNEYx_Za4"
+  },
+  {
+   "title": "Long Flight Mein Pilots Kahan Sote Hain? 😱✈️ Plane Ke Andar Ka Secret Room!",
+   "views": 4923380,
+   "id": "Pc4WsBDJdvo"
+  },
+  {
    "title": "Humanoid Robots Are Already Working in Factories 🤖 Elon Musk Visions become true 😱",
-   "views": 4691147,
+   "views": 4863853,
    "id": "544DDHB4cJU"
-  },
-  {
-   "title": "500 फीट नीचे से बोरवेल का पानी ऊपर कैसे आता है? 😱 | How Borewell Pumps Water #Shorts",
-   "views": 3938689,
-   "id": "Y9jcDu6dMPA"
-  },
-  {
-   "title": "कसारा घाट का 160 साल पुराना Engineering Secret! 😱 #shorts #viral #youtubeshorts",
-   "views": 3768846,
-   "id": "OXz6qiGahbg"
-  },
-  {
-   "title": "The Dead Wheel That Dug a Rover's Grave",
-   "views": 3688401,
-   "id": "nfuwtAeaPIU"
-  },
-  {
-   "title": "How Plants Turn Sunlight Into Food. ☀️🌱#Photosynthesis #Plants #Biology #Science #shorts #KurioScope",
-   "views": 3400958,
-   "id": "ulSEEOag64c"
-  },
-  {
-   "title": "Jio new device #Jio",
-   "views": 3304622,
-   "id": "y7xV8g73n9U"
-  },
-  {
-   "title": "The Moon Ship With No Radiation Shelter",
-   "views": 3035338,
-   "id": "ytapOSwQZp0"
   }
  ]
 }
