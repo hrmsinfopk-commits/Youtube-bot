@@ -1,119 +1,97 @@
-[08:07:30] Channel: Tomorrowly (future, mode=facts)
-[08:07:30] Topic from topics file: Why Don't Jet Engines Melt?
-[08:10:19] Gemini OK (gemini-3.8-flash)
-[08:10:19] Fact sheet for queued topic: 17 facts
-[08:13:07] Gemini OK (gemini-3.8-flash)
-[08:13:07] Script length: 485 words
-[08:13:07] Uniqueness: 100% unique vs previous scripts
-[08:16:07] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[08:16:09] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[08:16:45] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:19:45] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[08:20:13] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:20:19] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[08:20:30] Gemini OK (gemini-flash-lite-latest)
-[08:20:30] Long script edited for flow (485 -> 485 words)
-[08:20:30] Script ready: Why Don't Jet Engines Melt at 2,000°C? The Hidden Trick (26 scenes)
-[08:23:04] Gemini OK (gemini-3.8-flash)
-[08:23:04] Gate fact fix [5]: Claiming that eliminating grain boundaries stopped stress cracking entirely is an exaggeration; the 
-[08:23:04] Gate fact fix [17]: Core airflow was conflated with usable power. Diverting up to 20% of core airflow does not mean sacr
-[08:23:04] Gate (script): {"graphics": 6, "own_share": 0.25, "own_math": true, "fact_fixes": 2, "source_overlap": 0.0, "script_ok": true, "problems": []}
-[08:23:04] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[08:23:27] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[08:23:50] Gemini TTS error: gemini-3.1-flash-tts-preview: no audio (finishReason=SAFETY)
-[08:24:49] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[08:25:11] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[08:25:19] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[08:25:50] Captions aligned to the voice (500 words)
-[08:27:14] Own graphics: 6
-[08:27:31] Picture editor: 175/175 previews loaded
-[08:29:42] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:32:13] Gemini OK (gemini-flash-latest)
-[08:34:03] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:34:06] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[08:34:37] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:34:40] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[08:35:10] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:35:16] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[08:35:20] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 12 (char 26)
-[08:35:51] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:35:51] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[08:35:55] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 12 (char 26)
-[08:35:55] Visual check failed for a batch, using descriptions: Gemini failed: Expecting ',' delimiter: line 3 column 12 (char 26)
-[08:37:52] Gemini OK (gemini-3.8-flash)
-[08:38:19] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:38:19] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[08:38:44] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[08:38:45] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[08:39:10] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[08:39:19] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 4 column 12 (char 39)
-[08:39:59] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:40:04] Gemini OK (gemini-flash-lite-latest)
-[08:40:05] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[08:40:33] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 21 (char 20)
-[08:41:15] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[08:41:49] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[08:41:49] Visual check failed for a batch, using descriptions: Gemini failed: Expecting ',' delimiter: line 3 column 14 (char 28)
-[08:41:54] Gemini OK (gemini-flash-lite-latest)
-[08:41:57] Gemini OK (gemini-flash-lite-latest)
-[08:42:06] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 21 (char 20)
-[08:42:34] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 21 (char 20)
-[08:43:02] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 21 (char 20)
-[08:43:31] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[08:43:31] Visual check failed for a batch, using descriptions: Gemini failed: Expecting ',' delimiter: line 3 column 14 (char 28)
-[08:43:32] Gemini OK (gemini-flash-lite-latest)
-[08:43:35] Gemini OK (gemini-flash-lite-latest)
-[08:43:35] Footage check: kept 10 fitting clips, 13 scenes had nothing fitting
-[08:43:41] Second footage search for 13 scenes
-[08:43:43] Picture editor: 71/71 previews loaded
-[08:43:48] Gemini OK (gemini-flash-lite-latest)
-[08:43:52] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 12 (char 26)
-[08:44:19] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 12 (char 26)
-[08:44:45] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 12 (char 26)
-[08:45:12] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 12 (char 26)
-[08:45:12] Visual check failed for a batch, using descriptions: Gemini failed: Expecting ',' delimiter: line 3 column 12 (char 26)
-[08:45:13] Gemini OK (gemini-flash-lite-latest)
-[08:45:34] Gemini OK (gemini-flash-lite-latest)
-[08:45:40] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 21 (char 20)
-[08:46:09] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[08:46:38] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[08:47:08] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[08:47:08] Visual check failed for a batch, using descriptions: Gemini failed: Expecting ',' delimiter: line 3 column 14 (char 28)
-[08:47:09] Gemini OK (gemini-flash-lite-latest)
-[08:47:13] Gemini OK (gemini-flash-lite-latest)
-[08:47:13] Footage check: kept 10 fitting clips, 6 scenes had nothing fitting
-[08:47:34] Image HTTP 402 (try 1)
-[08:47:49] Image HTTP 402 (try 2)
-[08:48:21] Image HTTP 402 (try 1)
-[08:48:38] Image HTTP 402 (try 2)
-[08:48:56] Image HTTP 503 (try 3)
-[08:49:07] Download failed: file too big (99 MB)
-[08:49:10] Skipping chroma-key (green screen) clip
-[08:49:17] Image HTTP 402 (try 1)
-[08:49:33] Image HTTP 402 (try 2)
-[08:50:04] Skipping chroma-key (green screen) clip
-[08:50:07] Skipping clip with burned-in text: Reduce harmful EMISSIONS ENVIRONMENT EFFICIENCY
-[08:50:10] Image HTTP 402 (try 1)
-[08:50:27] Image HTTP 402 (try 2)
-[08:50:58] Image HTTP 402 (try 1)
-[08:51:14] Image HTTP 402 (try 2)
-[08:51:38] Download failed: file too big (99 MB)
-[08:53:14] Footage ready for 26 scenes
-[08:53:14] Gate (visuals): fit 96%, concept 19%, fallback 1
-[08:53:16] Freesound CC0 sound 'whoosh': Whoosh to HIT 1.wav (id 434874)
-[08:53:17] Freesound CC0 sound 'computer beep': Glitch (id 607406)
-[08:53:19] Freesound CC0 sound 'alarm': cell phone vibrate wood table_loopable.wav (id 384485)
-[08:54:09] 49 clips rendered
-[08:54:09] Final render started
-[08:54:41] Freesound CC0 music: Orchestral Score 1 - NOT mastered.wav (id 621294)
-[08:56:13] Video ready: 20261025_0853_future_long.mp4 (212.8s)
-[08:56:13] Thumbnails for Test & Compare: thumbnails/20261025_0853_future_long/
-[08:56:15] Upload 13%
-[08:56:15] Upload 27%
-[08:56:15] Upload 40%
-[08:56:16] Upload 54%
-[08:56:16] Upload 67%
-[08:56:16] Upload 81%
-[08:56:17] Upload 95%
-[08:56:17] Uploaded: https://youtu.be/CH5p37icZXU
-[08:56:19] Thumbnail set
+[11:08:07] Channel: Tomorrowly (future, mode=facts)
+[11:08:07] Format today: big question
+[11:08:11] YouTube videos analysed: 59
+[11:08:13] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[11:08:13] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[11:08:39] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[11:08:40] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[11:12:05] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[11:12:05] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[11:12:09] Gemini OK (gemini-flash-lite-latest)
+[11:12:10] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[11:15:35] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[11:16:00] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[11:16:03] Gemini OK (gemini-flash-lite-latest)
+[11:16:03] Trend topic: How Do Satellites Stay In Space Without Falling? | why: Explainer videos about orbital mechanics and gravity routinely pull tens of millions of views because they challenge basic intuition. This question is irresistible because everyone looks up at the sky and wonders how heavy metal objects defy gravity without running out of fuel.
+[11:16:03] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[11:16:47] Gemini OK (gemini-flash-lite-latest)
+[11:16:47] Script length: 436 words
+[11:16:47] Uniqueness: 95% unique vs previous scripts
+[11:16:55] Gemini OK (gemini-flash-lite-latest)
+[11:16:55] Long script edited for flow (436 -> 436 words)
+[11:16:55] Script ready: How Satellites Stay In Space Without Falling To Earth (27 scenes)
+[11:16:59] Gemini OK (gemini-flash-lite-latest)
+[11:17:00] Gemini OK (gemini-flash-lite-latest)
+[11:17:00] Gate fact fix [12]: Line 12 states 'The ground is literally falling away faster than the satellite can fall toward it', 
+[11:17:00] Gate (script): {"graphics_added": 2, "graphics": 7, "own_share": 0.3, "own_math": true, "fact_fixes": 1, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[11:17:00] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[11:17:22] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[11:17:26] Captions aligned to the voice (158 words)
+[11:17:54] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[11:17:57] Captions aligned to the voice (156 words)
+[11:18:16] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[11:18:18] Captions aligned to the voice (122 words)
+[11:18:52] Captions aligned to the voice (458 words)
+[11:18:52] Graphics theme: footage
+[11:20:35] Own graphics: 7
+[11:21:32] Picture editor: 246/247 previews loaded
+[11:21:37] Gemini OK (gemini-flash-lite-latest)
+[11:21:44] Gemini OK (gemini-flash-lite-latest)
+[11:21:50] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 19 (char 18)
+[11:22:19] Gemini OK (gemini-flash-lite-latest)
+[11:22:23] Gemini OK (gemini-flash-lite-latest)
+[11:22:46] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
+[11:23:12] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
+[11:23:39] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
+[11:24:05] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
+[11:24:05] Visual check failed for a batch, using descriptions: Gemini failed: Expecting ',' delimiter: line 3 column 14 (char 28)
+[11:24:06] Gemini OK (gemini-flash-lite-latest)
+[11:24:12] Gemini OK (gemini-flash-lite-latest)
+[11:24:18] Gemini OK (gemini-flash-lite-latest)
+[11:24:43] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
+[11:25:12] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
+[11:25:41] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 21 (char 20)
+[11:26:34] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[11:26:34] Visual check failed for a batch, using descriptions: Gemini failed: gemini-flash-lite-latest: HTTP 503 {
+  "error": {
+    "code": 503,
+    "message": "Th
+[11:26:40] Gemini OK (gemini-flash-lite-latest)
+[11:26:48] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 21 (char 20)
+[11:27:19] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 21 (char 20)
+[11:27:50] Gemini OK (gemini-flash-lite-latest)
+[11:27:50] Footage check: kept 12 fitting clips, 13 scenes had nothing fitting
+[11:28:10] Second footage search for 13 scenes
+[11:28:14] Picture editor: 137/137 previews loaded
+[11:28:24] Gemini OK (gemini-flash-lite-latest)
+[11:28:33] Gemini OK (gemini-flash-lite-latest)
+[11:28:44] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 12 (char 26)
+[11:29:17] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 12 (char 26)
+[11:29:50] Gemini OK (gemini-flash-lite-latest)
+[11:30:02] Gemini OK (gemini-flash-lite-latest)
+[11:30:11] Gemini OK (gemini-flash-lite-latest)
+[11:30:35] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
+[11:31:07] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
+[11:31:38] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
+[11:32:10] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
+[11:32:10] Visual check failed for a batch, using descriptions: Gemini failed: Expecting ',' delimiter: line 3 column 14 (char 28)
+[11:32:15] Gemini OK (gemini-flash-lite-latest)
+[11:32:23] Gemini OK (gemini-flash-lite-latest)
+[11:32:23] Footage check: kept 9 fitting clips, 8 scenes had nothing fitting
+[11:35:09] Image error: HTTPSConnectionPool(host='image.pollinations.ai', port=443): Read timed out. (read timeout=150)
+[11:35:35] Image HTTP 402 (try 1)
+[11:38:21] Image error: HTTPSConnectionPool(host='image.pollinations.ai', port=443): Read timed out. (read timeout=150)
+[11:38:40] Download failed: file too big (776 MB)
+[11:39:01] Download failed: file too big (518 MB)
+[11:39:02] Download failed: file too big (888 MB)
+[11:39:22] Download failed: file too big (518 MB)
+[11:40:32] Footage ready for 27 scenes
+[11:41:33] Gate (visuals): fit 93%, concept 11%, fallback 2
+[11:41:35] Freesound CC0 sound 'rocket launch': S18-15a Fireworks rocket launching.wav (id 675773)
+[11:41:36] Freesound CC0 sound 'whoosh': _metalic_flyby_whoosh_ambience_strange_.flac (id 365814)
+[11:41:38] Freesound CC0 sound 'whoosh': ARCHERY flyby 2.wav (id 394181)
+[11:42:18] 39 clips rendered
+[11:42:18] Final render started
+[11:42:54] Freesound CC0 music: Suspense Orchestral Soundtrack - Hurricane (id 608813)
+[11:44:05] Video ready: 20261026_1141_future_long.mp4 (173.1s)
+[11:44:06] Thumbnails for Test & Compare: thumbnails/20261026_1141_future_long/

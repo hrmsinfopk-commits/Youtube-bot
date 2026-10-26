@@ -1,43 +1,40 @@
 {
- "topic": "Why Don't Jet Engines Melt?",
- "angle": "The burning gas inside modern jet engines reaches over 1,700°C, but the metal turbine blades melt at 1,350°C—meaning engines fly for hours hotter than their own melting point without liquefying.",
- "why": "Proven by Veritasium's hit 'The Ridiculous Engineering Of Jet Engines' (16.7M views) and Cleo Abram's aviation explainers (17M views), jet engine engineering draws massive evergreen global viewership. The core contradiction—operating hundreds of degrees above the metal's physical melting point—instantly hooks anyone who has ever looked out an airplane window.",
+ "topic": "How Do Satellites Stay In Space Without Falling?",
+ "angle": "They are actually falling down constantly at 28,000 kilometers per hour, but they never hit the ground because the Earth curves away underneath them.",
+ "why": "Explainer videos about orbital mechanics and gravity routinely pull tens of millions of views because they challenge basic intuition. This question is irresistible because everyone looks up at the sky and wonders how heavy metal objects defy gravity without running out of fuel.",
  "keywords": [
-  "why jet engines don't melt",
-  "how jet engines work",
-  "jet engine turbine blade cooling",
-  "jet engine melting point",
-  "how hot does a jet engine get",
-  "film cooling jet engines",
-  "jet engine engineering explained",
-  "single crystal turbine blades",
-  "thermal barrier coating jet engine",
-  "rolls royce jet engine technology",
-  "airplane turbine blade physics",
-  "high pressure turbine temperature"
+  "how satellites stay in space",
+  "why satellites don't fall to earth",
+  "orbital mechanics explained",
+  "what is orbit",
+  "how gravity works in space",
+  "satellite speed altitude",
+  "why don't satellites crash",
+  "how do things stay in orbit",
+  "iss speed around earth",
+  "space station gravity",
+  "physics of orbits",
+  "how rockets reach orbit"
  ],
  "facts": [
-  "Combustion gas temperatures inside modern high-bypass turbofan engines routinely reach 1,700°C to 2,000°C (3,100°F to 3,600°F).",
-  "The advanced nickel-based superalloys used to forge high-pressure turbine blades have a melting point of approximately 1,300°C to 1,350°C.",
-  "Without active cooling systems, high-pressure turbine blades directly downstream of the combustion chamber would soften and melt within seconds of full takeoff thrust.",
-  "Engineers run engines at these extreme temperatures because the laws of thermodynamics dictate that higher combustion heat yields significantly greater fuel efficiency and thrust.",
-  "To survive, turbine blades use single-crystal casting, meaning an entire blade is grown as one continuous metallic crystal in a vacuum furnace with zero internal grain boundaries.",
-  "Eliminating microscopic grain boundaries prevents the metal from stretching or cracking under centrifugal loads exceeding 10,000 RPM (roughly 10 to 15 tons of outward pulling force per blade).",
-  "Turbine blades are cast completely hollow with intricate internal serpentine labyrinths designed to circulate cooler air throughout the interior of the metal.",
-  "Cooling air is borrowed from the high-pressure compressor stage before combustion occurs and is routed around the combustion chamber directly into the blade roots.",
-  "Although this bypass bleed air is relatively hot (around 600°C to 700°C), it is roughly 1,000°C colder than the burning combustion gas rushing past the outside of the blade.",
-  "Thousands of microscopic holes—each roughly 0.3 to 0.5 millimeters wide—are drilled through the blade walls using precision lasers or electrical discharge machining.",
-  "The internal cooling air pushes out through these micro-holes and spreads across the blade's outer surface, creating an insulating fluid cushion called film cooling.",
-  "This invisible layer of cooler air acts as a physical buffer, preventing the 1,700°C fiery exhaust gases from directly touching the blade's exterior surface.",
-  "Blades are also coated with a micro-thin thermal barrier coating (TBC) made of yttria-stabilized zirconia ceramic, typically between 100 and 300 micrometers thick.",
-  "Because ceramics have very low thermal conductivity, this ultra-thin coating drops the surface temperature by another 100°C to 200°C across a layer thinner than a fingernail.",
-  "Together, internal cooling channels, film-cooling air jackets, and ceramic thermal barriers keep the metallic blade body below 1,050°C, well below its structural melting point.",
-  "An article published by Raksha Anirveda examines how hypersonic missiles avoid melting under extreme heat.",
-  "Hypersonic missiles are subjected to temperatures high enough to raise concerns about structural melting.",
-  "Mount Dukono is an active volcano located in Indonesia.",
-  "Indonesia's Dukono volcano propelled an ash plume reaching an altitude of 7,000 feet.",
-  "The volcanic ash emission from Dukono prompted an official aviation warning.",
-  "Rus Tourism News reported on the 7,000-foot ash cloud and the related warning for aircraft."
+  "Satellites in low Earth orbit travel at approximately 28,000 kilometers per hour, or about 8 kilometers per second.",
+  "At this extreme speed, as the satellite is pulled downward by Earth's gravity, the curvature of the Earth drops away at the exact same rate.",
+  "This continuous falling motion combined with forward momentum is what defines an orbit; it is a state of perpetual free fall.",
+  "There is still gravity in space; at the altitude of the International Space Station, about 400 kilometers up, Earth's gravity is still about 90% as strong as it is on the ground.",
+  "The reason astronauts float is not because there is no gravity, but because they and their spacecraft are falling together at the same acceleration.",
+  "Air resistance in the upper atmosphere, known as atmospheric drag, constantly slows satellites down, requiring periodic thruster burns to maintain their altitude.",
+  "Without correction burns, low Earth orbit satellites would eventually slow down, spiral inward, and burn up in the denser layers of the atmosphere.",
+  "Isaac Newton first conceptualized this exact principle in 1687 with his famous 'Newton's cannonball' thought experiment.",
+  "If a cannonball were fired fast enough from a high mountain, it would never hit the ground and would circle the entire planet.",
+  "Geostationary satellites orbit much higher, at about 35,786 kilometers above the equator, matching the exact rotational speed of the Earth.",
+  "At geostationary altitude, one full orbit takes 24 hours, making the satellite appear to hover stationary over a single point on the ground.",
+  "The energy required to reach orbit is almost entirely spent on gaining horizontal velocity rather than vertical height.",
+  "Modern satellite constellations like SpaceX's Starlink use automated ion propulsion systems to counteract atmospheric drag and adjust their orbits autonomously.",
+  "Britannica explains the mechanism behind Earth maintaining its stable path around the sun.",
+  "The New York Times reported on space debris being discovered twice within a span of days, noting an increasing casualty danger.",
+  "A farmer in Minnesota unexpectedly discovered an eleven-foot object during harvest that probably dropped from orbit.",
+  "A NASA spacecraft is currently monitoring the seasonal changes in leaf colors globally.",
+  "Publications have raised questions regarding the process of rocket remnants descending from orbit back to the ground."
  ],
  "long_format": "big question",
  "format": "big question",
@@ -45,43 +42,43 @@
  "youtube_top": [
   {
    "title": "Bruno Mars - I Just Might [Official Music Video]",
-   "views": 177895103
-  },
-  {
-   "title": "Trapped On An Island Until I Build A Boat",
-   "views": 174941427
+   "views": 178371695
   },
   {
    "title": "This is What Happens When A Hockey Season Ends 🤯",
-   "views": 158910288
+   "views": 160843382
   },
   {
    "title": "Ariana Grande - hate that i made you love me (official music video)",
-   "views": 106282736
+   "views": 107073590
   },
   {
    "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
-   "views": 101261126
+   "views": 101605826
   },
   {
    "title": "WE CAN’T BELIEVE WE JUST HIT 26M FAMILY MEMBERS! 🥹😭🥰",
-   "views": 84472649
+   "views": 84474736
+  },
+  {
+   "title": "How We Build an Alien Pool — Full Process Revealed #poolbuild #luxurypool  #satisfying #poolhacks",
+   "views": 83410119
+  },
+  {
+   "title": "You Can't Order Here Unless You Build With LEGO 🤯",
+   "views": 76140688
   },
   {
    "title": "Why Can't We Print Unlimited Money 😱",
-   "views": 74786766
+   "views": 75015483
   },
   {
    "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
-   "views": 73260907
+   "views": 73406225
   },
   {
    "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
-   "views": 72707774
-  },
-  {
-   "title": "How These Energy Saving Stairs Work 😮",
-   "views": 72331343
+   "views": 73161425
   }
  ]
 }
