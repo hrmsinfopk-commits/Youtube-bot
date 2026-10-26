@@ -1,95 +1,75 @@
 {
- "topic": "How Digit 5 Pulls 20-Hour Shifts on a 9-Minute Charge",
- "angle": "While humanoid robots like Tesla Optimus get hype, Agility Robotics' new Digit 5 quietly solved the industry's biggest nightmare: real-world battery endurance and safety around human workers.",
- "why": "Humanoid robotics is currently capturing millions of views across YouTube Shorts (such as videos on new robot workers earning over 6 to 8 million views), but almost all coverage focuses on flashy demos rather than how warehouse robots actually sustain continuous work. This fresh announcement on Digit 5 highlights an astonishing engineering breakthrough—20-hour shifts with 9-minute rapid recharging—giving us an untapped, highly visual explainer angle without repeating our past topics.",
+ "topic": "How Do Icebergs Float If They Weigh Millions of Tons",
+ "angle": "A massive mountain of solid ice weighing millions of tons floats effortlessly on liquid water, defying what heavy objects should naturally do.",
+ "why": "Massive high-performing explainers like Veritasium and Zack D. Films prove that counterintuitive physics principles pull tens of millions of views. This question is irresistible because it turns an everyday phenomenon into a baffling engineering and physical paradox that everyone sees but nobody truly stops to calculate.",
  "keywords": [
-  "humanoid robot",
-  "Digit 5",
-  "Agility Robotics Digit",
-  "robot worker",
-  "future technology",
-  "humanoid robot warehouse",
-  "robots replacing humans",
-  "AI robots",
-  "new technology 2026",
-  "robot battery life",
-  "autonomous robots",
-  "Tesla Optimus rival",
-  "Digit robot"
+  "how do icebergs float",
+  "why ice floats on water",
+  "iceberg weight science",
+  "density of ice vs water",
+  "how heavy is an iceberg",
+  "physics of floating ice",
+  "why don't icebergs sink",
+  "underwater iceberg mass",
+  "archimedes principle simple",
+  "science explained shorts",
+  "tomorrowly science"
  ],
  "facts": [
-  "Agility Robotics has introduced Digit 5, the latest iteration of its bipedal humanoid warehouse robot.",
-  "Digit 5 is designed to target 20-hour workdays in commercial logistics and manufacturing facilities.",
-  "A key engineering bottleneck for humanoid robotics has always been battery drain caused by constant active balance and limb actuation.",
-  "Digit 5 addresses power limitations through an ultra-fast charging system capable of topping up the battery in just 9 minutes.",
-  "The robot uses an autonomous docking system to perform brief, automated micro-charges during scheduled facility workflow pauses.",
-  "IEEE Spectrum reports that Digit 5 may be the first humanoid robot worker certified as truly safe to operate directly alongside human workers without physical safety cages.",
-  "It features enhanced tactile sensors, integrated LiDAR, and computer-vision safety zones that automatically cut motor power before any potential collision.",
-  "Unlike wheeled automated guided vehicles (AGVs), bipedal robots like Digit can navigate stairs, climb curbs, and operate in spaces originally built exclusively for humans.",
-  "Digit's primary tasks include unstacking tote boxes, moving plastic bins onto conveyor belts, and sorting packages.",
-  "Major logistics companies, including Amazon and GXO Logistics, have previously tested earlier versions of the Digit platform in active distribution hubs.",
-  "Agility Robotics claims continuous multi-shift operations can now be achieved with a small fleet cycling through automated rapid-charge pads.",
-  "Digit 5 is claimed to operate for 20-hour shifts.",
-  "Digit 5 is claimed to recharge in 9 minutes.",
-  "Nyobolt has entered into its second commercial agreement within the robotics sector.",
-  "Nyobolt is planned to supply power for the newest humanoid model from Agility.",
-  "Agility creates humanoid robots.",
-  "The report concerning Nyobolt and Agility was published by The Information."
+  "Icebergs are massive chunks of freshwater ice that break off glaciers and float in saltwater oceans.",
+  "Water is one of the only substances on Earth that expands when it freezes, making solid ice less dense than liquid water.",
+  "Because ice is about 9% less dense than water, it floats rather than sinking to the bottom.",
+  "An iceberg floats with only about 10% of its mass visible above the ocean surface.",
+  "The remaining 90% of the iceberg's massive weight is completely hidden underwater, which inspired the phrase 'tip of the iceberg'.",
+  "A medium-sized iceberg can weigh around 100,000 to 200,000 metric tons.",
+  "Despite weighing hundreds of thousands of tons, the buoyant force exerted by the displaced seawater pushes upward with equal strength.",
+  "Seawater is actually saltier and denser than the freshwater ice of the iceberg, which helps increase its buoyancy slightly compared to freshwater lakes.",
+  "As an iceberg melts, its center of gravity shifts, causing the massive structure to violently roll over or flip completely upside down in the ocean.",
+  "The displacement principle governing icebergs was first mathematically formulated by the ancient Greek mathematician Archimedes around 250 BC."
  ],
  "long_format": null,
- "format": "news",
- "sources": [
-  {
-   "title": "Digit 5 May Be the First Humanoid Robot Worker That’s Truly Safe",
-   "source": "IEEE Spectrum",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9rY1dfSDVTNzBEQmdaNzFLMFREZEZuYW4weTRnbWNGaEhEdF9FZGk5eFd5eGJCejRfNzJEZ1AwUGV4S0I1TUxYMk5CR2JYejYzOEVoczJxRUpSSTA?oc=5"
-  },
-  {
-   "title": "US humanoid robot Digit 5 targets 20-hour workdays with 9-minute charging",
-   "source": "Interesting Engineering",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUzJodUpxY3hidjU4ODk3NWVKQkdQNko0cExDX2kycmZQa0k4VzJhdzBDMElkTTdZMGMtcjhOdWl5MFBuV0Zxc0dIelJod0JKQ1llNnBPMzlRUURJaG9VLUJoU0d5Ui1wdkFXdHROSUJSbDJEa1VINDlZZDFCLTEyLXFheHQ?oc=5"
-  }
- ],
+ "format": "big question",
+ "sources": [],
  "youtube_top": [
   {
-   "title": "HOW TO MAKE A HOMEMADE PROJECTOR 😱😱",
-   "views": 22793511
+   "title": "Bruno Mars - I Just Might [Official Music Video]",
+   "views": 178412535
   },
   {
-   "title": "This Flying Car Mocks Elon Musk's New Tesla Roadster",
-   "views": 22349590
+   "title": "This is What Happens When A Hockey Season Ends 🤯",
+   "views": 161077443
   },
   {
-   "title": "Why Cats Rub Against Your Laptop 🤔",
-   "views": 14259650
+   "title": "Ariana Grande - hate that i made you love me (official music video)",
+   "views": 107154137
   },
   {
-   "title": "Flying Car Real hai 🥲",
-   "views": 11724968
+   "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
+   "views": 101643215
   },
   {
-   "title": "iPhone Duo Review: First Generation Fun!",
-   "views": 10729324
+   "title": "WE CAN’T BELIEVE WE JUST HIT 26M FAMILY MEMBERS! 🥹😭🥰",
+   "views": 84474924
   },
   {
-   "title": "🥶🔥 \"there will never be flying cars\"",
-   "views": 9360979
+   "title": "How We Build an Alien Pool — Full Process Revealed #poolbuild #luxurypool  #satisfying #poolhacks",
+   "views": 83486173
   },
   {
-   "title": "What is the BEST app?!📱🤔",
-   "views": 8895676
+   "title": "You Can't Order Here Unless You Build With LEGO 🤯",
+   "views": 76262152
   },
   {
-   "title": "6 ways iPhone Duo beats Samsung",
-   "views": 8725883
+   "title": "Why Can't We Print Unlimited Money 😱",
+   "views": 75063436
   },
   {
-   "title": "His Old Robot SAVED Him From The MONSTER 😱",
-   "views": 8054808
+   "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
+   "views": 73433698
   },
   {
-   "title": "Flying car...😱😳",
-   "views": 7847449
+   "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
+   "views": 73233562
   }
  ]
 }

@@ -721,6 +721,65 @@
     "concept_share": 0.12,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-10-26 15:48",
+   "type": "short",
+   "title": "How Do Icebergs Float If They Weigh Millions of Tons #shorts",
+   "topic": "How Do Icebergs Float If They Weigh Millions of Tons - A massive mountain of solid ice weighing millions of tons floats effortlessly on liquid water, defying what heavy objects should naturally do.",
+   "style": "Explainer: one big question, answered step by step with a surprise at the end",
+   "youtube_id": "Pcj4yIUFDWs",
+   "voice": "Charon",
+   "seconds": 36.1,
+   "scene_times": [
+    [
+     0.0,
+     "A two hundred thousand ton mountain of solid ice floats effortlessly."
+    ],
+    [
+     5.4,
+     "Common sense says heavy rocks sink right to the bottom."
+    ],
+    [
+     9.1,
+     "Yet this frozen giant stays afloat on saltwater."
+    ],
+    [
+     13.2,
+     "Here is the secret: water actually expands when it freezes into ice."
+    ],
+    [
+     19.4,
+     "Solid ice is about nine percent less dense than liquid water."
+    ],
+    [
+     23.4,
+     "The displaced ocean pushes upward with equal strength."
+    ],
+    [
+     27.3,
+     "That is why ninety percent of its massive weight stays hidden underwater."
+    ],
+    [
+     33.0,
+     "Follow Tomorrowly for tomorrow's tech, today."
+    ]
+   ],
+   "format": "big question",
+   "why": "Massive high-performing explainers like Veritasium and Zack D. Films prove that counterintuitive physics principles pull tens of millions of views. This question is irresistible because it turns an everyday phenomenon into a baffling engineering and physical paradox that everyone sees but nobody truly stops to calculate.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.15,
+    "fact_fixes": 1,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -1147,6 +1206,22 @@
   "pixabay-v-3975",
   "pixabay-v-146319",
   "pixabay-v-265302",
-  "pixabay-v-124058"
+  "pixabay-v-124058",
+  "pixabay-v-213424",
+  "pixabay-v-348904",
+  "pixabay-v-262328",
+  "pixabay-v-276689",
+  "pixabay-v-332240",
+  "pixabay-v-213424",
+  "pixabay-v-21",
+  "pixabay-v-316",
+  "pixabay-v-283533",
+  "pixabay-v-214592",
+  "pixabay-v-368438",
+  "pixabay-v-276685",
+  "pixabay-v-277146",
+  "pixabay-v-27669",
+  "pixabay-v-184489",
+  "pixabay-v-2127"
  ]
 }

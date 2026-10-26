@@ -1,54 +1,45 @@
-[17:16:28] Channel: Tomorrowly (future, mode=facts)
-[17:16:28] Teaser Short for: Why Don't Jet Engines Melt at 2,000°C? The Hidden Trick
-[17:16:28] Short length for 'teaser': 30 s
-[17:16:29] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[17:16:30] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[17:16:55] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[17:16:55] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[17:17:20] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[17:17:20] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[17:17:25] Gemini OK (gemini-flash-lite-latest)
-[17:17:25] Script length: 67 words
-[17:17:25] Uniqueness: 97% unique vs previous scripts (opening too similar)
-[17:17:25] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[17:17:25] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[17:17:55] Gemini OK (gemini-flash-lite-latest)
-[17:17:55] Rewritten for uniqueness
-[17:17:55] Script ready: Why Don't Jet Engines Melt Inside? (8 scenes)
-[17:17:55] Gemini OK (gemini-flash-lite-latest)
-[17:17:55] Gate (script): {"graphics": 1, "own_share": 0.1, "fact_fixes": 0, "source_overlap": 0.0, "script_ok": true, "problems": []}
-[17:17:55] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[17:18:10] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[17:18:14] Captions aligned to the voice (92 words)
-[17:18:21] Captions aligned to the voice (89 words)
-[17:18:27] Own graphics: 1
-[17:18:41] Picture editor: 81/81 previews loaded
-[17:18:47] Gemini OK (gemini-flash-lite-latest)
-[17:18:52] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 12 (char 26)
-[17:19:21] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 12 (char 26)
-[17:19:50] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 12 (char 26)
-[17:20:19] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 12 (char 26)
-[17:20:19] Visual check failed for a batch, using descriptions: Gemini failed: Expecting ',' delimiter: line 3 column 12 (char 26)
-[17:20:20] Gemini OK (gemini-flash-lite-latest)
-[17:20:23] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 19 (char 18)
-[17:20:50] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 19 (char 18)
-[17:21:17] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 19 (char 18)
-[17:21:44] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 19 (char 18)
-[17:21:44] Visual check failed for a batch, using descriptions: Gemini failed: Expecting ',' delimiter: line 1 column 19 (char 18)
-[17:21:44] Gemini OK (gemini-flash-lite-latest)
-[17:21:44] Footage check: kept 12 fitting clips, 1 scenes had nothing fitting
-[17:21:45] Second footage search for 1 scenes
-[17:21:45] Picture editor: 8/8 previews loaded
-[17:21:48] Gemini OK (gemini-flash-lite-latest)
-[17:21:48] Footage check: kept 0 fitting clips, 1 scenes had nothing fitting
-[17:21:59] Skipping chroma-key (green screen) clip
-[17:24:05] Image HTTP 503 (try 1)
-[17:25:02] Skipping clip with burned-in text: THANKS FOR WATCHING
-[17:25:02] Footage ready for 8 scenes
-[17:25:02] Gate (visuals): fit 100%, concept 12%, fallback 0
-[17:25:18] 16 clips rendered
-[17:25:18] Final render started
-[17:25:43] Freesound CC0 music: Orchestral Score - Violas.wav (id 621845)
-[17:26:15] Video ready: 20261025_1725_future_short.mp4 (39.0s)
-[17:26:17] Upload 59%
-[17:26:18] Uploaded: https://youtu.be/-oX0q-L56PM
+[15:34:55] Channel: Tomorrowly (future, mode=facts)
+[15:34:55] Format today: big question
+[15:34:59] YouTube videos analysed: 59
+[15:35:07] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[15:35:08] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:35:33] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:35:33] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:38:58] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[15:38:58] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:39:19] Gemini OK (gemini-flash-lite-latest)
+[15:39:19] Topic 'How Do Satellites Stay in Orbit Without Fuel?' repeats recent video 'Why Don't Jet Engines Melt? - The burning gas inside modern jet engine' - choosing again
+[15:39:19] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:39:20] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:39:45] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:40:34] Gemini OK (gemini-flash-lite-latest)
+[15:40:34] Trend topic: How Do Icebergs Float If They Weigh Millions of Tons | why: Massive high-performing explainers like Veritasium and Zack D. Films prove that counterintuitive physics principles pull tens of millions of views. This question is irresistible because it turns an everyday phenomenon into a baffling engineering and physical paradox that everyone sees but nobody truly stops to calculate.
+[15:40:34] Short length for 'big question': 32 s
+[15:40:58] Gemini OK (gemini-flash-lite-latest)
+[15:40:58] Script length: 82 words
+[15:40:58] Uniqueness: 95% unique vs previous scripts
+[15:40:58] Script ready: How Do Icebergs Float If They Weigh Millions of Tons (8 scenes)
+[15:41:17] Gemini OK (gemini-flash-lite-latest)
+[15:41:17] Gate fact fix [5]: The narrator claims 'We did the math', implying the channel performed the calculation, which is unsu
+[15:41:17] Gate (script): {"graphics": 1, "own_share": 0.15, "fact_fixes": 1, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[15:41:17] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[15:41:32] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[15:41:35] Captions aligned to the voice (78 words)
+[15:41:42] Captions aligned to the voice (78 words)
+[15:41:42] Graphics theme: blueprint
+[15:41:50] Own graphics: 1
+[15:41:56] Picture editor: 75/75 previews loaded
+[15:42:26] Gemini OK (gemini-flash-lite-latest)
+[15:42:53] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[15:43:58] Gemini OK (gemini-flash-lite-latest)
+[15:44:26] Gemini OK (gemini-flash-lite-latest)
+[15:44:26] Footage check: kept 16 fitting clips, 0 scenes had nothing fitting
+[15:46:28] Footage ready for 8 scenes
+[15:46:28] Gate (visuals): fit 100%, concept 0%, fallback 0
+[15:46:46] 14 clips rendered
+[15:46:46] Final render started
+[15:47:25] Freesound CC0 music: Slightly Mysterious Sounding Track (id 683821)
+[15:47:58] Video ready: 20261026_1546_future_short.mp4 (36.1s)
+[15:48:00] Upload 46%
+[15:48:00] Upload 93%
+[15:48:01] Uploaded: https://youtu.be/Pcj4yIUFDWs
