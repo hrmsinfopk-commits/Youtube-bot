@@ -325,8 +325,8 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                             footage_sources.append(src_name)
                     except Exception as e:  # noqa: BLE001
                         log("Download failed:", str(e)[:100])
-            if not got:  # reuse previous scene's footage
-                got = media[-1] if media else []
+            if not got:  # reuse the last real footage (never repeat a graphic on a scene without one)
+                got = next((m for m in reversed(media) if m and m[0][1] != "graphic"), [])
                 kind_i = "continued"
             if not got:
                 raise RuntimeError("Koi footage nahi mili - PEXELS_API_KEY / PIXABAY_API_KEY check karein")
