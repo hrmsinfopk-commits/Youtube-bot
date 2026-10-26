@@ -12,7 +12,7 @@ from .llm import ask
 
 MIN_GRAPHICS = {"short": 1, "long": 4}
 MIN_OWN_SHARE = {"short": 0.10, "long": 0.22}   # share of the narration that runs over our own graphics
-MAX_CONCEPT_SHARE = 0.20                         # AI concept images: at most 20 % of scenes
+MAX_CONCEPT_SHARE = 0.10                         # AI concept images: at most 10 % of scenes (they read as "AI slop")
 MIN_FIT_SHARE = 0.80                             # scenes whose picture really fits the words
 
 GRAPHIC_SCHEMA = (

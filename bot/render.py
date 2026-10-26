@@ -169,6 +169,7 @@ Style: Cap,{font},{size},{_ass_color(white)},&H000000FF,&H00000000,&H64000000,{0
 Style: Card,Anton,{130 if kind == 'short' else 110},&H00FFFFFF,&H000000FF,&H00000000,{_ass_color(hi)},1,0,0,0,100,100,2,0,3,26,0,5,80,80,0,1
 Style: Label,Anton,{34 if kind == 'short' else 30},&H00FFFFFF,&H000000FF,&H00000000,&H80000000,0,0,0,0,100,100,1,0,3,8,0,9,30,30,30,1
 Style: Tag,Anton,{74 if kind == 'short' else 48},&H001C0D09,&H000000FF,{_ass_color((251, 191, 36))},{_ass_color((251, 191, 36))},0,0,0,0,100,100,1,0,3,10,0,7,0,0,0,1
+Style: Chap,Anton,{40 if kind == 'short' else 46},&H00FFFFFF,&H000000FF,&H00000000,&H78000000,0,0,0,0,100,100,2,0,3,12,0,9,0,0,0,1
 Style: TagNote,DejaVu Sans,{40 if kind == 'short' else 28},&H00FFFFFF,&H000000FF,&HB4000000,&HB4000000,1,0,0,0,100,100,0,0,3,8,0,7,0,0,0,1
 
 [Events]
@@ -185,7 +186,14 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             hook_end = 2.3
         lines.append(f"Dialogue: 1,{_ass_time(0)},{_ass_time(hook_end)},Hook,,0,0,0,,{hook_anim}{hook}")
     tagged = set()
+    n_chap = 0
     for i, (sc, (t0, dur)) in enumerate(zip(scenes, timings)):
+        ch = re.sub(r"[{}\\]", "", str(sc.get("chapter") or "")).strip().upper()[:28]
+        if ch and kind == "long":
+            n_chap += 1
+            if i > 0:   # small chapter name in the top-right corner, like a documentary
+                lines.append(f"Dialogue: 4,{_ass_time(t0 + 0.2)},{_ass_time(t0 + min(dur + 0.5, 3.4))},Chap,,0,0,0,,"
+                             f"{{\\pos({int(W * 0.95)},{int(H * 0.06)})\\fad(250,300)}}{{\\c{_ass_color(hi)}}}{n_chap:02d}{{\\c&H00FFFFFF&}}  {ch}")
         card = "" if (sc.get("graphic") or (i == 0 and hook)) else \
             re.sub(r"[{}\\]", "", str(sc.get("on_screen") or "")).strip().upper()
         if card:   # big fact/number on screen for ~2.5 s

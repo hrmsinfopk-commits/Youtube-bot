@@ -17,14 +17,13 @@ shorts:
     news: 22                           # 20-25 second
     big question: 32                   # 30-35 second
     teaser: 30                         # long video ka teaser
-  big_question_days: ["mon", "fri"]    # in dinon ki Short "bara sawal" (sada-bahar)
-  teaser_days: ["thu", "sun"]          # long video (Budh/Hafta) ke agle din: usi ka teaser Short (long video par log bhejne ke liye)
+  big_question_days: ["mon", "thu"]    # in dinon ki Short "bara sawal" (sada-bahar)
+  teaser_days: ["sun"]                 # Hafta ki long video ke agle din: usi ka teaser Short (long video par log bhejne ke liye)
 
 long:
   per_run: 1
-  target_minutes: 3.5                  # 3-4 minute: ek topic, shuru se aakhir tak ek kahani (baad mein data dekh kar barhayenge)
+  target_minutes: 4                    # 4-5 minute: cold open + 4-5 chapters (har chapter ek achhi Short jaisa)
   formats_by_day:                      # din (UTC) ke hisaab se long video ki qisam
-    wed: "news"                        # Budh: trending khabar ki deep dive
     sat: "big question"                # Hafta: sada-bahar "bara sawal" (mahino tak views laati hai)
 
 upload:

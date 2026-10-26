@@ -4,6 +4,8 @@ on:
   schedule:
     # UTC. Roz 7:00 PM Pakistan = 10:00 AM US East (video ~20 min baad upload)
     - cron: "0 14 * * *"
+    # Budh raat 3 baje (PKT) = America ki shaam: hafte ki extra Short (Budh ki long video ki jagah)
+    - cron: "0 22 * * 3"
   workflow_dispatch: {}        # "Run workflow" button se kabhi bhi chala sakte hain
   push:
     paths: [".github/trigger-short.txt"]   # is file ko badalne se bhi bot chalta hai

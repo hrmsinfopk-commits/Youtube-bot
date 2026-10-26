@@ -33,7 +33,10 @@ def save_memory(mem, script, style):
     mem.setdefault("scripts", []).append(writer.script_text(script)[:6000])
     mem.setdefault("recent_signatures", []).append(script.get("signature", ""))
     mem.setdefault("recent_styles", []).append(style)
-    for k, n in (("openings", 80), ("endings", 80), ("scripts", 60), ("recent_signatures", 20), ("recent_styles", 20)):
+    if script.get("theme"):
+        mem.setdefault("recent_themes", []).append(script["theme"])
+    for k, n in (("openings", 80), ("endings", 80), ("scripts", 60), ("recent_signatures", 20), ("recent_styles", 20),
+                 ("recent_themes", 20)):
         mem[k] = mem[k][-n:]
     DATA.mkdir(exist_ok=True)
     (DATA / f"memory_{CHANNEL['id']}.json").write_text(json.dumps(mem, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -218,10 +221,17 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                     made += 1
             log(f"AI images: {made}/{len(script['scenes'])}")
         gw, gh = render.SIZES[kind]
+        # graphics theme for THIS video (never the same as last time): over our footage / blueprint / navy
+        last_theme = (load_memory().get("recent_themes") or [None])[-1]
+        themes = [t for t in (cfg.get("visual", {}).get("graphic_themes") or graphics.THEMES) if t != last_theme] or ["navy"]
+        graphics.THEME = rng.choices(themes, weights=[3 if t == "footage" else 1 for t in themes])[0]
+        script["theme"] = graphics.THEME
+        log(f"Graphics theme: {graphics.THEME}")
         for i, sc in enumerate(script["scenes"]):
             if i not in cache and sc.get("graphic"):
                 gp = work / "media" / f"graphic_{i:03d}.mp4"
-                if graphics.render(sc["graphic"], gw, gh, voices[i][1] + 1.6, gp, kind == "short"):
+                gp = graphics.render(sc["graphic"], gw, gh, voices[i][1] + 1.6, gp, kind == "short")
+                if gp:
                     cache[i] = [(gp, "graphic")]
         if any(v[0][1] == "graphic" for v in cache.values()):
             log(f"Own graphics: {sum(1 for v in cache.values() if v[0][1] == 'graphic')}")
@@ -323,6 +333,21 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
             media.append(got)
             vkinds.append(kind_i)
         log(f"Footage ready for {len(media)} scenes")
+        # transparent graphics: lay them over this video's own footage (nearest real shot, blurred)
+        for i, m in enumerate(media):
+            if m and m[0][1] == "graphic" and str(m[0][0]).endswith(".mov"):
+                bg = None
+                for j in list(range(i - 1, -1, -1)) + list(range(i + 1, len(media))):
+                    if media[j] and media[j][0][1] in ("video", "photo"):
+                        bg = media[j][0]
+                        break
+                out_p = work / "media" / f"graphic_{i:03d}_bg.mp4"
+                try:
+                    graphics.over_footage(m[0][0], bg[0] if bg else None, bg[1] if bg else None, gw, gh,
+                                          voices[i][1] + 1.6, out_p)
+                    media[i] = [(out_p, "graphic")]
+                except Exception as e:  # noqa: BLE001
+                    log("Graphic over footage failed:", str(e)[:120])
         if gate_rep:
             try:
                 gate.check_visuals(gate_rep, vkinds, len(script["scenes"]))

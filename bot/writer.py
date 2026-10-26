@@ -243,26 +243,22 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
                  "- One idea only. Every line must add something new. No intro, no 'subscribe' at the start.")
     else:
         mins = cfg["long"]["target_minutes"]
-        length = f"about {int(mins * 60 * _wps(cfg))} spoken words total ({mins} minutes), 18-30 scenes"
+        length = f"about {int(mins * 60 * _wps(cfg))} spoken words total ({mins} minutes), 16-24 scenes of 2-3 sentences each"
         extra = (
-            "- ONE story, ONE central question, told from start to end. Every scene must move the viewer closer to the answer;\n"
-            "  if a line does not connect to the central question, cut it. No lists of unrelated facts, no side-stories about\n"
-            "  other projects or missions, even if they are interesting.\n"
-            "- OPENING: scene 1 is ONE short punchy sentence (max ~5 seconds) with the most dramatic visual of the whole topic;\n"
-            "  the hook_text must be a bold 2-4 word question or claim. Scene 2 states the central question.\n"
-            "- The HOW IT WORKS part must use at least one 'flow' graphic (step-by-step diagram).\n"
-            "- STORY SPINE (with approximate share of the video):\n"
-            "  1. HOOK (first 10-15 s): the most surprising concrete fact + the central question + why the viewer should care.\n"
-            "  2. CONTEXT (~15%): the problem or situation before this news, in simple everyday terms.\n"
-            "  3. HOW IT WORKS (~25%): explain the key idea with one clear everyday analogy; show, don't lecture.\n"
-            "  4. THE PEOPLE/STAKES (~15%): who is doing it, what they risk, a concrete number or moment.\n"
-            "  5. THE TWIST (~15%): 'but here's the catch...' - the real limitation, doubt, cost or open problem (be honest).\n"
-            "  6. PAYOFF (~20%): answer the central question clearly, then what it means for ordinary people in the next years.\n"
-            "  7. END (last 10 s): one short sentence that calls back to the hook, then ONE opinion question for the comments. No outro, no begging.\n"
-            "- Each part ends with a one-line bridge that makes the viewer want the next part (a small open question).\n"
-            "- Escalate: the most impressive fact goes late, not at the start (except the hook).\n"
-            "- Change rhythm every 30-40 s: a question to the viewer, a big on_screen number, a quick comparison, or a reveal.\n"
-            "- Put a 2-4 word chapter name on the first scene of each of the 7 parts in 'chapter'; other scenes \"\".\n"
+            "- ONE story, ONE central question, told from start to end. No side-stories, no lists of unrelated facts.\n"
+            "- BUILD IT LIKE A CHAIN OF GREAT SHORTS (our Shorts keep 65-79% of viewers, our old long videos only 38%):\n"
+            "  * COLD OPEN (first 10-15 s, 1-2 scenes): scene 1 is ONE punchy sentence that NAMES the subject and states the\n"
+            "    contradiction or the most astonishing fact, over the most dramatic visual. Scene 2 states the central question\n"
+            "    and promises the answer. hook_text = bold 2-4 words.\n"
+            "  * 4-5 CHAPTERS of 35-50 s each. EVERY chapter works like one of our best Shorts: (a) its own hook line that names\n"
+            "    something concrete, (b) one feelable number or comparison, (c) teaches ONE idea in plain words, (d) ends with a\n"
+            "    one-line bridge question that pulls into the next chapter. Put a 2-4 word name in 'chapter' on each chapter's first scene.\n"
+            "  * One chapter is THE CATCH (honest limit / cost / open problem). WE DID THE MATH sits inside one chapter.\n"
+            "  * PAYOFF (last 15-20 s): answer the central question clearly, one line on what it means for ordinary people,\n"
+            "    then the last scene: 'Follow Tomorrowly for tomorrow's tech, today.' No opinion question, no begging.\n"
+            "- The most impressive reveal goes in the last chapter, not the first.\n"
+            "- At least one 'flow' graphic in the HOW part; 3-5 graphics in total - never two graphic scenes in a row.\n"
+            "- Fewer, longer scenes: every scene should be filmable with ONE strong real shot (we hold good shots longer).\n"
             "- Mark the 2-4 biggest reveal moments as reveal: true.")
 
     facts = ""
@@ -450,7 +446,9 @@ Check and fix:
 - Are there boring stretches (more than ~35 s without a question, surprise, number or reveal)? Fix them.
 - Cut every tangent or side-story that does not directly serve the central question - even if it is interesting.
 - Is scene 1 a single punchy sentence with a dramatic visual? Does every technical "how it works" line have a 'flow' graphic?
-- Is the most impressive fact saved for late in the video? Is there an honest "catch"? Is the ending short and does it call back to the hook?
+- Does EVERY chapter have its own hook line, one feelable number, one idea and a bridge question at its end?
+- Is the most impressive fact saved for late in the video? Is there an honest "catch"? Is the ending short, does it answer the
+  central question, and is the last scene exactly "Follow Tomorrowly for tomorrow's tech, today."?
 - Keep facts exactly as true as in the draft (do not invent numbers). Keep spoken words within +-10% of the draft length.
 - Keep the same JSON structure and all fields (text, caption = same as text, keywords, image, sound, subject, on_screen, graphic, pace, reveal, chapter) and hype_score, tomorrow_test.
 Return ONLY the improved JSON."""

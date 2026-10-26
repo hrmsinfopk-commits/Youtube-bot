@@ -8,8 +8,8 @@ Yeh bot GitHub par **khud** chalta hai. Aap ka computer band ho tab bhi. Is guid
 
 | Kya | Kab (Pakistan time) |
 |---|---|
-| **Short** (30–50 sec, vertical) | Roz shaam 7 baje |
-| **Long video** (3–4 min, ek topic ki poori kahani) | Wednesday aur Saturday shaam 6 baje |
+| **Short** (khabar 20–25 sec, bara sawal 30–35 sec, vertical) | Roz shaam 7 baje + Budh raat 3 baje (extra) |
+| **Long video** (4–5 min: cold open + 4–5 chapters) | Sirf Saturday shaam 6 baje (hafte mein 1, lekin behtareen) |
 | **Analytics** (views, retention, engagement) | Roz subah 8 baje |
 | **Haftawar report** (`REPORT.md`) | Har Monday subah |
 
@@ -93,8 +93,8 @@ Saara code aur settings repo mein hain, is liye koi bhi wahin se kaam aage badha
 
 ## 📰 Khabar aur ❓ Bara sawal (do qisam ki videos)
 
-- **Long videos:** Budh = trending khabar, Hafta = "bara sawal" (sada-bahar explainer, jaise "How a Country With Zero Rivers Drinks Water").
-- **Shorts:** Somvaar aur Jumeraat = "bara sawal", baqi din trending khabar.
+- **Long video:** sirf Hafta = "bara sawal" (sada-bahar explainer). Budh ki long video band - us ki jagah ek extra Short.
+- **Shorts:** Somvaar aur Jumeraat = "bara sawal", Itwar = teaser, baqi din trending khabar.
 - Din badalne hon to `config.yaml` mein `long.formats_by_day` aur `shorts.big_question_days` badlein.
 - Titles hamesha ek ulti/hairaan karne wali baat + How/Why par bante hain; thumbnail ke liye writer woh scene chunta hai jo ek nazar mein kahani bata de.
 - Haftawar `REPORT.md` mein "Khabar vs Bara sawal" ka hisaab aata hai - 4 hafte baad jo behtar chale us ke din barha denge.
@@ -121,5 +121,14 @@ Monday ki REPORT.md mein har video ka gate result aata hai.
 - YouTube Studio → video → Thumbnail → **Test & Compare** → teeno upload kar dein. YouTube khud batata hai kaun sa zyada click hota hai.
 
 ## 📣 Teaser Shorts
-- Jumeraat aur Itwar ki Short = Budh/Hafta wali long video ka teaser (aakhir mein "The full breakdown is on our channel").
+- Itwar ki Short = Hafta wali long video ka teaser (aakhir mein "The full breakdown is on our channel").
 - Studio mein us Short par **Related video** = woh long video select kar dein (1 minute) - Short ke neeche clickable link aa jata hai.
+
+## 🎬 Long video ka naya dhaancha (Oct 2026)
+- **Cold open (10-15 sec):** sab se hairaan karne wala shot + markazi sawal.
+- **4-5 chapters (35-50 sec har ek):** har chapter ek achhi Short jaisa - apna hook, ek mehsoos hone wala number, ek baat
+  sikhana, aakhir mein agle chapter ka sawal. Chapter ka naam video ke upar daayein kone mein aata hai aur description mein chapters.
+- **Payoff:** sawal ka saaf jawab + "Follow Tomorrowly for tomorrow's tech, today."
+- **Graphics ka look har video mein badalta hai:** `footage` (video ki apni footage dhundli karke us par), `blueprint`, `navy`.
+  Pichhli video wala look dobara nahi aata. `config.yaml` mein `visual.graphic_themes` se list badal sakte hain.
+- AI concept tasveerein ab zyada se zyada 10% scenes mein ("AI slop" lagti hain).

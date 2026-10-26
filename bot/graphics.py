@@ -35,7 +35,25 @@ def _ease(t):
     return 1 - (1 - t) ** 3
 
 
+THEME = "navy"          # navy | blueprint | footage (set per video by main.py)
+THEMES = ("footage", "blueprint", "navy")
+
+
 def _background(W, H):
+    if THEME == "footage":       # transparent: the graphic is laid over the video's own (blurred) footage later
+        return Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    if THEME == "blueprint":
+        img = Image.new("RGB", (W, H))
+        d = ImageDraw.Draw(img)
+        for y in range(H):
+            k = y / H
+            d.line([(0, y), (W, y)], fill=(int(14 + 8 * k), int(52 + 10 * k), int(112 + 18 * k)))
+        small, big = max(24, W // 48), max(96, W // 12)
+        for x in range(0, W, small):
+            d.line([(x, 0), (x, H)], fill=(36, 82, 150) if x % big else (70, 120, 190))
+        for y in range(0, H, small):
+            d.line([(0, y), (W, y)], fill=(36, 82, 150) if y % big else (70, 120, 190))
+        return img
     img = Image.new("RGB", (W, H))
     d = ImageDraw.Draw(img)
     for y in range(H):
@@ -109,9 +127,12 @@ def _counter(g, W, H, t, short):
     f = _font(int(W * (0.19 if short else 0.13)))
     while d.textlength(txt, font=f) > W * 0.88 and f.size > 40:
         f = _font(f.size - 8)
-    glow = Image.new("RGB", (W, H))
+    glow = Image.new(img.mode, (W, H))
     ImageDraw.Draw(glow).text((W / 2 - d.textlength(txt, font=f) / 2, cy), txt, font=f, fill=ACCENT)
-    img = Image.blend(img, Image.composite(glow, img, glow.convert("L")).filter(ImageFilter.GaussianBlur(18)), 0.5)
+    if img.mode == "RGB":
+        img = Image.blend(img, Image.composite(glow, img, glow.convert("L")).filter(ImageFilter.GaussianBlur(18)), 0.5)
+    else:
+        img.alpha_composite(glow.filter(ImageFilter.GaussianBlur(18)))
     d = ImageDraw.Draw(img)
     _center_text(d, W / 2, cy, txt, f, WHITE)
     lab = str(g.get("label", "")).upper()
@@ -153,7 +174,8 @@ def _bars(g, W, H, t, short):
             d.rounded_rectangle([left, by, left + full * a, by + bh * 0.38], radius=12,
                                 fill=ACCENT if i % 2 == 0 else ACCENT2)
         if a > 0.2:
-            vt = f"{_fmt(values[i] * a)} {g.get('unit', '')}".strip()
+            cur = values[i] * a
+            vt = f"{_fmt(round(cur) if values[i] == int(values[i]) else cur)} {g.get('unit', '')}".strip()
             ty = by + bh * 0.38 * 0.5 - vf.size * 0.6
             if d.textlength(vt, font=vf) + 28 < full * a:      # fits inside the bar
                 d.text((left + 14, ty), vt, font=vf, fill=(9, 13, 28))
@@ -316,14 +338,39 @@ def render(graphic, W, H, seconds, out_path, short):
     tmp = Path(tempfile.mkdtemp(prefix="gfx_"))
     try:
         n = max(2, int(seconds * FPS_DRAW) + 2)
+        alpha = THEME == "footage"
         for i in range(n):   # (the channel logo is added once for the whole video as a watermark)
-            painter(graphic, W, H, i / FPS_DRAW, short).convert("RGB").save(tmp / f"f_{i:04d}.png")
-        run(["ffmpeg", "-y", "-v", "error", "-framerate", str(FPS_DRAW), "-i", str(tmp / "f_%04d.png"),
-             "-vf", "fps=30,format=yuv420p", "-c:v", "libx264", "-preset", "ultrafast", "-crf", "18",
-             "-t", f"{seconds:.3f}", str(out_path)])
+            fr = painter(graphic, W, H, i / FPS_DRAW, short)
+            (fr.convert("RGBA") if alpha else fr.convert("RGB")).save(tmp / f"f_{i:04d}.png")
+        if alpha:
+            out_path = Path(out_path).with_suffix(".mov")
+            run(["ffmpeg", "-y", "-v", "error", "-framerate", str(FPS_DRAW), "-i", str(tmp / "f_%04d.png"),
+                 "-vf", "fps=30", "-c:v", "qtrle", "-pix_fmt", "argb", "-t", f"{seconds:.3f}", str(out_path)])
+        else:
+            run(["ffmpeg", "-y", "-v", "error", "-framerate", str(FPS_DRAW), "-i", str(tmp / "f_%04d.png"),
+                 "-vf", "fps=30,format=yuv420p", "-c:v", "libx264", "-preset", "ultrafast", "-crf", "18",
+                 "-t", f"{seconds:.3f}", str(out_path)])
         return out_path
     except Exception as e:  # noqa: BLE001
         log("Graphic failed:", str(e)[:120])
         return None
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
+
+
+def over_footage(alpha_mov, bg, bg_kind, W, H, seconds, out_path):
+    """Lay a transparent graphic over the video's own footage (blurred and darkened), so each video looks like itself
+    instead of a template. bg=None -> plain dark background."""
+    vf_bg = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},gblur=sigma=22,"
+             "eq=brightness=-0.22:saturation=0.65,drawbox=c=black@0.35:t=fill,fps=30,format=yuv420p")
+    if bg is None:
+        src = ["-f", "lavfi", "-i", f"color=c=0x0b1120:s={W}x{H}:d={seconds:.3f}"]
+    elif bg_kind == "video":
+        src = ["-stream_loop", "-1", "-i", str(bg)]
+    else:
+        src = ["-loop", "1", "-i", str(bg)]
+    run(["ffmpeg", "-y", "-v", "error", *src, "-i", str(alpha_mov), "-filter_complex",
+         f"[0:v]{vf_bg}[b];[1:v]fps=30[g];[b][g]overlay=0:0:format=auto,format=yuv420p[v]",
+         "-map", "[v]", "-t", f"{seconds:.3f}", "-r", "30", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18",
+         "-an", str(out_path)])
+    return out_path
