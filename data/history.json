@@ -780,6 +780,53 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-10-27 15:04",
+   "type": "short",
+   "title": "Tesla Just Started Building Humanoid Robots on Real Production Lines #shorts",
+   "topic": "Tesla Starts Production of Optimus Humanoid Robot - Focus on the sudden shift to actual production lines of humanoid robots and what tasks they are programmed to handle first, capitalizing on massive viral interest in robotics while avoiding stale rumors.",
+   "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
+   "youtube_id": "ID7098rLP6g",
+   "voice": "Charon",
+   "seconds": 26.8,
+   "scene_times": [
+    [
+     0.0,
+     "Tesla just started active manufacturing of its Optimus humanoid robot on real assembly lin"
+    ],
+    [
+     7.3,
+     "The machine uses neural networks built from vehicle research to take over dangerous labor."
+    ],
+    [
+     13.2,
+     "Elon Musk has a stated goal for manufacturing twenty thousand units per week."
+    ],
+    [
+     18.9,
+     "Current hand limitations mean active production doesn't mean public use yet."
+    ],
+    [
+     23.6,
+     "Follow Tomorrowly for tomorrow's tech, today."
+    ]
+   ],
+   "format": "news",
+   "why": "Robotics content is driving tens of millions of views right now (e.g., Zavi & Zoya's robot shorts and Agibot/Unitree videos), and Tesla's actual factory production launch provides a fresh, highly visual hook that beats out dry speculation. There is strong viewer demand for humanoid robot updates with low saturation of concrete manufacturing explainers.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.27,
+    "fact_fixes": 1,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -1222,6 +1269,15 @@
   "pixabay-v-277146",
   "pixabay-v-27669",
   "pixabay-v-184489",
-  "pixabay-v-2127"
+  "pixabay-v-2127",
+  "pixabay-v-160986",
+  "pixabay-v-40054",
+  "pixabay-v-12543",
+  "pixabay-v-203987",
+  "pixabay-v-203986",
+  "pixabay-v-334173",
+  "pixabay-v-124333",
+  "pixabay-v-185631",
+  "pixabay-v-159052"
  ]
 }

@@ -1,45 +1,70 @@
-[15:34:55] Channel: Tomorrowly (future, mode=facts)
-[15:34:55] Format today: big question
-[15:34:59] YouTube videos analysed: 59
-[15:35:07] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[15:35:08] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[15:35:33] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[15:35:33] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[15:38:58] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[15:38:58] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[15:39:19] Gemini OK (gemini-flash-lite-latest)
-[15:39:19] Topic 'How Do Satellites Stay in Orbit Without Fuel?' repeats recent video 'Why Don't Jet Engines Melt? - The burning gas inside modern jet engine' - choosing again
-[15:39:19] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[15:39:20] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[15:39:45] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[15:40:34] Gemini OK (gemini-flash-lite-latest)
-[15:40:34] Trend topic: How Do Icebergs Float If They Weigh Millions of Tons | why: Massive high-performing explainers like Veritasium and Zack D. Films prove that counterintuitive physics principles pull tens of millions of views. This question is irresistible because it turns an everyday phenomenon into a baffling engineering and physical paradox that everyone sees but nobody truly stops to calculate.
-[15:40:34] Short length for 'big question': 32 s
-[15:40:58] Gemini OK (gemini-flash-lite-latest)
-[15:40:58] Script length: 82 words
-[15:40:58] Uniqueness: 95% unique vs previous scripts
-[15:40:58] Script ready: How Do Icebergs Float If They Weigh Millions of Tons (8 scenes)
-[15:41:17] Gemini OK (gemini-flash-lite-latest)
-[15:41:17] Gate fact fix [5]: The narrator claims 'We did the math', implying the channel performed the calculation, which is unsu
-[15:41:17] Gate (script): {"graphics": 1, "own_share": 0.15, "fact_fixes": 1, "source_overlap": 0.0, "script_ok": true, "problems": []}
-[15:41:17] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[15:41:32] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[15:41:35] Captions aligned to the voice (78 words)
-[15:41:42] Captions aligned to the voice (78 words)
-[15:41:42] Graphics theme: blueprint
-[15:41:50] Own graphics: 1
-[15:41:56] Picture editor: 75/75 previews loaded
-[15:42:26] Gemini OK (gemini-flash-lite-latest)
-[15:42:53] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
-[15:43:58] Gemini OK (gemini-flash-lite-latest)
-[15:44:26] Gemini OK (gemini-flash-lite-latest)
-[15:44:26] Footage check: kept 16 fitting clips, 0 scenes had nothing fitting
-[15:46:28] Footage ready for 8 scenes
-[15:46:28] Gate (visuals): fit 100%, concept 0%, fallback 0
-[15:46:46] 14 clips rendered
-[15:46:46] Final render started
-[15:47:25] Freesound CC0 music: Slightly Mysterious Sounding Track (id 683821)
-[15:47:58] Video ready: 20261026_1546_future_short.mp4 (36.1s)
-[15:48:00] Upload 46%
-[15:48:00] Upload 93%
-[15:48:01] Uploaded: https://youtu.be/Pcj4yIUFDWs
+[14:45:14] Channel: Tomorrowly (future, mode=facts)
+[14:45:14] Format today: news
+[14:45:24] News headlines collected: 177
+[14:45:30] YouTube videos analysed: 79
+[14:45:31] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:45:32] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:48:57] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:48:57] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:49:38] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:49:41] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:49:45] Gemini OK (gemini-flash-lite-latest)
+[14:49:45] Topic 'How MIT's Living Muscle Robot Swims Without Electricity' repeats recent video 'Scientists Just Reversed 60 Years of Aging in Human Cells - Explain th' - choosing again
+[14:50:10] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:50:27] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:50:54] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:50:57] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:52:22] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:52:23] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:52:27] Gemini OK (gemini-flash-lite-latest)
+[14:52:30] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:52:31] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:52:59] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:55:59] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:56:29] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:56:29] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:56:33] Gemini OK (gemini-flash-lite-latest)
+[14:56:33] Trend topic: Tesla Starts Production of Optimus Humanoid Robot | why: Robotics content is driving tens of millions of views right now (e.g., Zavi & Zoya's robot shorts and Agibot/Unitree videos), and Tesla's actual factory production launch provides a fresh, highly visual hook that beats out dry speculation. There is strong viewer demand for humanoid robot updates with low saturation of concrete manufacturing explainers.
+[14:56:33] Short length for 'news': 22 s
+[14:58:08] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:58:09] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:58:37] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:58:37] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:59:03] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:59:03] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:59:07] Gemini OK (gemini-flash-lite-latest)
+[14:59:07] Script too long (76 words, target ~51) - tightening
+[14:59:08] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:59:08] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:59:33] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:59:33] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:59:59] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:00:16] Gemini OK (gemini-flash-lite-latest)
+[15:00:16] Script length: 62 words
+[15:00:16] Uniqueness: 95% unique vs previous scripts
+[15:00:16] Script ready: Tesla Just Started Building Humanoid Robots on Real Production Lines (5 scenes)
+[15:00:44] Gemini OK (gemini-flash-lite-latest)
+[15:00:44] Gate fact fix [2]: The claim that twenty thousand units per week is 'twice the output of rival factories' is an unsuppo
+[15:00:44] Gate (script): {"graphics": 1, "own_share": 0.27, "fact_fixes": 1, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[15:00:44] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[15:00:54] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[15:00:56] Captions aligned to the voice (58 words)
+[15:01:01] Captions aligned to the voice (58 words)
+[15:01:01] Graphics theme: footage
+[15:01:18] Own graphics: 1
+[15:01:23] Picture editor: 50/50 previews loaded
+[15:01:39] Gemini OK (gemini-flash-lite-latest)
+[15:01:53] Gemini OK (gemini-flash-lite-latest)
+[15:01:53] Footage check: kept 6 fitting clips, 1 scenes had nothing fitting
+[15:01:53] Second footage search for 1 scenes
+[15:01:54] Picture editor: 14/14 previews loaded
+[15:02:20] Gemini OK (gemini-flash-lite-latest)
+[15:02:20] Footage check: kept 3 fitting clips, 0 scenes had nothing fitting
+[15:03:08] Footage ready for 5 scenes
+[15:03:20] Gate (visuals): fit 100%, concept 0%, fallback 0
+[15:03:31] 10 clips rendered
+[15:03:31] Final render started
+[15:03:41] Freesound CC0 music: Orchestral Score 2 - NOT mastered.wav (id 621293)
+[15:04:09] Video ready: 20261027_1503_future_short.mp4 (26.8s)
+[15:04:10] Upload 56%
+[15:04:10] Uploaded: https://youtu.be/ID7098rLP6g
