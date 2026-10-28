@@ -10,7 +10,8 @@
   "At full takeoff thrust, the fire raging inside a modern jet engine reaches nearly two thousand degrees Celsius.",
   "Inside a modern jet engine, fire burns hotter than the melting point of its own metal.",
   "A two hundred thousand ton mountain of solid ice floats effortlessly.",
-  "Tesla just started active manufacturing of its Optimus humanoid robot on real assembly lines."
+  "Tesla just started active manufacturing of its Optimus humanoid robot on real assembly lines.",
+  "Atlantic City's water plant just caught invisible plastic particles."
  ],
  "endings": [
   "Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -22,6 +23,7 @@
   "Follow Tomorrowly for tomorrow's tech, today.",
   "Would you feel safer flying with proven nickel superalloys, or with lighter heat-tolerant ceramics?",
   "The full breakdown is on our channel.",
+  "Follow Tomorrowly for tomorrow's tech, today.",
   "Follow Tomorrowly for tomorrow's tech, today.",
   "Follow Tomorrowly for tomorrow's tech, today."
  ],
@@ -36,7 +38,8 @@
   "At full takeoff thrust, the fire raging inside a modern jet engine reaches nearly two thousand degrees Celsius. Yet the nickel-based superalloy turbine blades spinning right behind that fire melt at around fourteen hundred degrees. By basic physics, those blades should liquefy into glowing molten soup mid-flight, so why don't they? Decades ago, engine builders hit a brutal wall because standard metals cracked along microscopic grain boundaries whenever thermal stress peaked. Metallurgists solved that mechanical flaw by growing every modern high-pressure blade as one uninterrupted single crystal of nickel alloy. Eliminating grain joints removed where stress cracks normally begin, but a single crystal still melts at fourteen hundred degrees, leaving the heat problem unsolved. The answer is deceptively simple: the metal blade never actually contacts the hottest gas directly. Before any fuel gets injected and ignited in the combustor, engineers divert pressurized air directly from the compressor stage. This bleed air is hot, sitting around seven hundred degrees Celsius, but compared to a two-thousand-degree flame, it is roughly a thousand degrees cooler. Engineers route this cooler air directly into the hollow interior of each blade through intricate serpentine channels. This internal convective flow pulls heat out of the metal from the inside out, exactly like a radiator in reverse. Then comes the second layer: the air shoots outward through thousands of angled, laser-drilled micro-holes perforating the blade's surface. This creates film cooling, forming an ultra-thin gaseous blanket that insulates the outer metal and shields it from the burning stream. Finally, the blade receives a thermal barrier coating made of specialized ceramics like yttria-stabilized zirconia, anchored by a metallic bond layer. That ceramic jacket knocks off another one to two hundred degrees, holding structural metal temperatures safely below eleven hundred degrees Celsius. We did the math on what this cooling shield actually costs the airplane. Up to twenty percent of the engine's entire core airflow is stolen strictly for cooling and sealing instead of pushing the aircraft forward. That is one-fifth of the core airflow sacrificed just to keep the turbine from turning into slag. And here is the catch: this entire thermal fortress has one catastrophic weakness. Volcanic ash melts at around eleven hundred degrees Celsius, meaning it easily liquefies in the combustor into molten glass. That molten glass cakes onto the turbine and instantly clogs the microscopic cooling holes, choking the air blanket. Without that thin sheet of air, raw combustion heat strikes bare metal, and the blades begin melting in seconds. To escape this trap, modern engine programs are turning to ceramic matrix composites. These advanced ceramics tolerate heat up to thirteen hundred degrees without heavy cooling blankets, while weighing only one-third as much as nickel alloys. The next time you fly, remember that your plane stays airborne because of a microscopic cushion of air thinner than a sheet of paper. Would you feel safer flying with proven nickel superalloys, or with lighter heat-tolerant ceramics?",
   "Inside a modern jet engine, fire burns hotter than the melting point of its own metal. Combustion gas reaches two thousand degrees Celsius. Yet the nickel turbine blades inside melt at fourteen hundred degrees. That is like standing inside an oven set way past its absolute destruction limit. The catch is, they never actually touch the fire. Cool air from the compressor pumps through hollow pathways inside every single blade. Thousands of laser micro-holes push that air out, forming a protective invisible blanket. The full breakdown is on our channel.",
   "A two hundred thousand ton mountain of solid ice floats effortlessly. Common sense says heavy rocks sink right to the bottom. Yet this frozen giant stays afloat on saltwater. Here is the secret: water actually expands when it freezes into ice. Solid ice is about nine percent less dense than liquid water. The displaced ocean pushes upward with equal strength. That is why ninety percent of its massive weight stays hidden underwater. Follow Tomorrowly for tomorrow's tech, today.",
-  "Tesla just started active manufacturing of its Optimus humanoid robot on real assembly lines. The machine uses neural networks built from vehicle research to take over dangerous labor. Elon Musk has a stated goal for manufacturing twenty thousand units per week. Current hand limitations mean active production doesn't mean public use yet. Follow Tomorrowly for tomorrow's tech, today."
+  "Tesla just started active manufacturing of its Optimus humanoid robot on real assembly lines. The machine uses neural networks built from vehicle research to take over dangerous labor. Elon Musk has a stated goal for manufacturing twenty thousand units per week. Current hand limitations mean active production doesn't mean public use yet. Follow Tomorrowly for tomorrow's tech, today.",
+  "Atlantic City's water plant just caught invisible plastic particles. Microscopic fragments slip right through normal municipal filters. Princeton alumni installed advanced physical and chemical barriers here. That traps toxins before they ever reach the ocean. Follow Tomorrowly for tomorrow's tech, today."
  ],
  "recent_signatures": [
   "HYPE METER",
@@ -49,7 +52,8 @@
   "ALL",
   "THE CATCH",
   "WE DID THE MATH",
-  "THE CATCH"
+  "THE CATCH",
+  "WE DID THE MATH"
  ],
  "recent_styles": [
   "Countdown: 3-5 surprising facts about it, the most shocking one last",
@@ -62,10 +66,12 @@
   "Before vs now: how this used to work vs what just changed",
   "Countdown: 3-5 surprising facts about it, the most shocking one last",
   "Explainer: one big question, answered step by step with a surprise at the end",
-  "Future scenario: 'It's 2040...' - show how this changes everyday life"
+  "Future scenario: 'It's 2040...' - show how this changes everyday life",
+  "Explainer: one big question, answered step by step with a surprise at the end"
  ],
  "recent_themes": [
   "blueprint",
-  "footage"
+  "footage",
+  "navy"
  ]
 }

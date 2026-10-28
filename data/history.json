@@ -827,6 +827,53 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-10-28 15:09",
+   "type": "short",
+   "title": "How Princeton Cleaned Atlantic City's Water #shorts",
+   "topic": "How Princeton Cleaned Up Atlantic City's Microplastics - Breaking down how alumni at Princeton used breakthrough water treatment tech at an Atlantic City facility to filter out invisible microplastics, solving a massive hidden global threat.",
+   "style": "Explainer: one big question, answered step by step with a surprise at the end",
+   "youtube_id": "G3FJYX7Fjv4",
+   "voice": "Charon",
+   "seconds": 20.5,
+   "scene_times": [
+    [
+     0.0,
+     "Atlantic City's water plant just caught invisible plastic particles."
+    ],
+    [
+     4.9,
+     "Microscopic fragments slip right through normal municipal filters."
+    ],
+    [
+     9.2,
+     "Princeton alumni installed advanced physical and chemical barriers here."
+    ],
+    [
+     14.1,
+     "That traps toxins before they ever reach the ocean."
+    ],
+    [
+     17.3,
+     "Follow Tomorrowly for tomorrow's tech, today."
+    ]
+   ],
+   "format": "news",
+   "why": "Environmental tech and clean-water innovations attract strong high-retention curiosity on science channels, filling a fresh gap that avoids crowded consumer gadget news. This leverages an exclusive, real-world regional breakthrough with clear global relevance.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.22,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -1278,6 +1325,14 @@
   "pixabay-v-334173",
   "pixabay-v-124333",
   "pixabay-v-185631",
-  "pixabay-v-159052"
+  "pixabay-v-159052",
+  "pixabay-v-208788",
+  "pixabay-v-197486",
+  "pixabay-v-5456",
+  "pixabay-v-4006",
+  "pixabay-v-24216",
+  "pixabay-v-174086",
+  "pixabay-v-215500",
+  "pixabay-v-27725"
  ]
 }

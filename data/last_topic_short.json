@@ -1,96 +1,80 @@
 {
- "topic": "Tesla Starts Production of Optimus Humanoid Robot",
- "angle": "Focus on the sudden shift to actual production lines of humanoid robots and what tasks they are programmed to handle first, capitalizing on massive viral interest in robotics while avoiding stale rumors.",
- "why": "Robotics content is driving tens of millions of views right now (e.g., Zavi & Zoya's robot shorts and Agibot/Unitree videos), and Tesla's actual factory production launch provides a fresh, highly visual hook that beats out dry speculation. There is strong viewer demand for humanoid robot updates with low saturation of concrete manufacturing explainers.",
+ "topic": "How Princeton Cleaned Up Atlantic City's Microplastics",
+ "angle": "Breaking down how alumni at Princeton used breakthrough water treatment tech at an Atlantic City facility to filter out invisible microplastics, solving a massive hidden global threat.",
+ "why": "Environmental tech and clean-water innovations attract strong high-retention curiosity on science channels, filling a fresh gap that avoids crowded consumer gadget news. This leverages an exclusive, real-world regional breakthrough with clear global relevance.",
  "keywords": [
-  "Tesla Optimus",
-  "Tesla robot production",
-  "humanoid robot",
-  "Optimus robot",
-  "robot worker",
+  "microplastics",
+  "water treatment",
+  "science news",
+  "Princeton technology",
+  "Atlantic City plant",
+  "cleaning microplastics",
   "future technology",
-  "Tesla manufacturing",
-  "AI robots",
-  "robotics news",
-  "Optimus update",
-  "Tesla bot",
-  "humanoid robot race"
+  "environmental tech",
+  "new science discovery",
+  "how it works",
+  "filtering water"
  ],
  "facts": [
-  "Tesla has officially begun production of its 'Optimus' humanoid robot in California.",
-  "The production milestone comes amidst declining company profits and a strategic shift toward automated labor.",
-  "Competitors like Toyota are also accelerating their entry into the humanoid robot race to challenge market leaders.",
-  "Optimus is designed to eventually take over repetitive, dangerous, or labor-intensive tasks in manufacturing environments.",
-  "The humanoid robot features advanced AI and neural networks derived from Tesla's autonomous vehicle research.",
-  "Factory implementation aims to test the robots in real-world assembly settings before broader commercial availability.",
-  "Mass production timelines and consumer pricing are still being heavily refined by engineering teams.",
-  "Manufacturing of the Optimus humanoid machine has commenced.",
-  "Assembly operations are taking place in California and at Giga Texas, according to reports.",
-  "The start of manufacturing coincided with a forty-three percent decrease in company profits.",
-  "Elon Musk has a stated goal for manufacturing twenty thousand units per week (plan/claim).",
-  "Deliveries are projected to occur in late 2027 (plan/claim).",
-  "Current limitations with the hands remain an issue for the device.",
-  "Media outlets have noted that active manufacturing does not necessarily indicate the machine is fully completed for public use."
+  "Princeton University alumni recently deployed a new technology to tackle microplastics at an Atlantic City wastewater plant.",
+  "Microplastics are microscopic plastic particles that have become a pervasive contaminant in global water systems and aquatic life.",
+  "The innovative treatment process targets particles that traditional wastewater filtering methods typically fail to catch.",
+  "Wastewater treatment facilities serve as a critical frontline defense in preventing industrial and domestic microplastics from entering oceans.",
+  "Advanced filtration techniques leverage specialized chemical and physical barriers to capture fragments invisible to the naked eye.",
+  "The project highlights a growing shift toward applying university-level engineering solutions directly to municipal infrastructure.",
+  "Environmental scientists warn that microplastics can absorb harmful toxins, making their removal from the water supply a top priority for public health.",
+  "Former students of Princeton University implemented a novel technological approach to process microplastic pollution.",
+  "The treatment of these tiny plastic particles took place at a facility managing sewage and wastewater located in Atlantic City."
  ],
  "long_format": null,
  "format": "news",
  "sources": [
   {
-   "title": "Tesla begins production of 'Optimus' humanoid robot",
-   "source": "ABC7 Los Angeles",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNLW9TMDZnOXA1SDU4MWxocjVwQ0FVNThUVFlDOFpoeXBmZW83SUtpOGlIekNHbjU2Vy02SWwtaTYzbnFkdFhIa0NfejBhYWpBaEZ5MTg4TjFFb3ZWOUFNM0RYTXZoNFlaaXRfeHZfUnV5dnVOanhYQTRpUmxCaV9nSlNsdzLSAYoBQVVfeXFMTnJPNThFeU0wc2lQcDVpV0V1TXhCcDNsSE9UTmJndWVVYXdOS2R0YnFTZUpkeElSaFNMb29Mck9RYmc2MTF3UlhNSVZuY2ZpOGNmVzdMZWw1WVFSMWdLenRRTGpZVEdZS0t0Ni1NekM0RzVIZlF2aUhBVlRRYUVTaURuNnhsVHBGdzFn?oc=5"
-  },
-  {
-   "title": "Tesla starts Optimus robot production in California as profit falls 43%",
-   "source": "TechCrunch",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOR3JTc1VMOXpkNFdBam10d21hV2doQmZwNk1LSEU1UjVDQThjY1h0T3BuUGdXSlZTVHZiYVgybWFuS0l2d3RGZERCdUxoREVCazQ2QUdqZ082UWdjcV9xakNxX2ZXX3pHamlNU1Q2blhTTHdHS0xkbjAxX3paQWRqZ3FnMVFKNUU2bGxnQjdleWw3Mlg0Mm4yYzhaWjlsVXBpVE56OWFDMA?oc=5"
-  },
-  {
-   "title": "Toyota takes on Tesla and China in humanoid robot race",
-   "source": "Financial Times",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOay04eC1KWXJvNXZNTTlwaWtmU3F6UmlUU0VZck0zTkhIdmdiQWNhdTBWNDFtelRnemhNTUR6bU1ObE5rMHdJNHEwSzh0WlZaQ1dBM0ZiTUc1MV9iMzE4NXFpQmtUYnJqSlpCMGJiUzk2dXZnSWhzSlJQLUtqRl9KaE5LeHU?oc=5"
+   "title": "Princeton University alumni use new technology to treat microplastics at Atlantic City wastewater plant",
+   "source": "WHYY",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPOEFOMWhncEtJa1k3VHZ0OTZrNVFXcG41dzRENXBxb0lUdHdOQ2w4UGlPYjBiaFdVQWtIdXZSaDBlazl6TFBtZ2U0OFNjaDc1bXdfa1dMb2RlQVRYelpJeU83U3dmZHcxTzJWV0RDX1lDT3RwZXd3MHN5NGNpOVBRaVA4eWxkdndEX054N2sySWZmbkVsVDRnVXZscnhlN1hiNGliS2hR?oc=5"
   }
  ],
  "youtube_top": [
   {
    "title": "Zavi Broke Zoya’s Robot… Then It Came ALIVE! 🤖😱😂 #shorts  #zaviandzoya",
-   "views": 26071355
-  },
-  {
-   "title": "This Flying Car Mocks Elon Musk's New Tesla Roadster",
-   "views": 25231889
+   "views": 32875611
   },
   {
    "title": "Why Cats Rub Against Your Laptop 🤔",
-   "views": 14584928
+   "views": 14616273
   },
   {
    "title": "iPhone Duo Durability: Destroyed",
-   "views": 12566223
+   "views": 13347599
   },
   {
    "title": "iPhone Duo Review: First Generation Fun!",
-   "views": 12520133
+   "views": 12837158
   },
   {
    "title": "6 ways iPhone Duo beats Samsung",
-   "views": 10912959
+   "views": 11185396
   },
   {
    "title": "He Thought His Robot Cleaner Was a Waste of Money!",
-   "views": 9943712
-  },
-  {
-   "title": "iPhone Duo Is Flopping",
-   "views": 7966655
+   "views": 10265696
   },
   {
    "title": "How to fix the IPhone Duo crease…",
-   "views": 7811831
+   "views": 8427352
   },
   {
-   "title": "Elon Musk’s Flying Car Is Insane!🤯",
-   "views": 7745605
+   "title": "iPhone Duo Is Flopping",
+   "views": 8116404
+  },
+  {
+   "title": "Is the flying Tesla Roadster real??",
+   "views": 7538480
+  },
+  {
+   "title": "Robot VS Manusia Part 2 #Rubik #Malaysia #Indonesia #harizazizan #robot",
+   "views": 7500338
   }
  ]
 }
