@@ -874,6 +874,54 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-10-28 22:44",
+   "type": "short",
+   "title": "NASA Stacks the Massive Artemis III Moon Rocket #shorts",
+   "topic": "NASA Stacks the Massive Artemis III Moon Rocket - The mega-rocket meant to return humans to the lunar surface is no longer in pieces: technicians just hoisted the 212-foot Artemis III core stage inside the iconic Vehicle Assembly Building, marking the official countdown to humanity's next Moon landing.",
+   "style": "Myth vs fact: what people assume vs what is actually true",
+   "youtube_id": "OlcO352mcP4",
+   "voice": "Charon",
+   "seconds": 25.9,
+   "scene_times": [
+    [
+     0.0,
+     "The Artemis III moon rocket is finally standing together in one piece."
+    ],
+    [
+     4.9,
+     "Crews just hoisted the 212 foot core stage, taller than a twenty story building, inside Hi"
+    ],
+    [
+     13.0,
+     "Liquid hydrogen and liquid oxygen will feed four RS 25 engines during liftoff."
+    ],
+    [
+     18.4,
+     "This setup is preparing to return astronauts to the lunar South Pole."
+    ],
+    [
+     23.0,
+     "Follow Tomorrowly for tomorrow's tech, today."
+    ]
+   ],
+   "format": "news",
+   "why": "Space exploration and rocket-stacking videos consistently pull multi-million view audiences (e.g., recent NASA and Starship coverage driving 500K to 2M+ views). Breaking the news that Artemis III's actual flight hardware is physically being stacked inside Kennedy Space Center offers timely, high-curiosity appeal with zero royalty visual assets directly from NASA.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics_added": 1,
+    "graphics": 1,
+    "own_share": 0.3,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -1333,6 +1381,15 @@
   "pixabay-v-24216",
   "pixabay-v-174086",
   "pixabay-v-215500",
-  "pixabay-v-27725"
+  "pixabay-v-27725",
+  "nasa-v-MAF_20190613_Artemis 1 Mate",
+  "nasa-v-MAF_20191204_SLSAssembly-B-roll-UHD",
+  "nasa-v-SSC_2018 Stennis Space Center Overview V5",
+  "pixabay-v-140728",
+  "pixabay-v-102250",
+  "pixabay-v-143019",
+  "pixabay-v-204",
+  "pixabay-v-241",
+  "pixabay-v-2"
  ]
 }
