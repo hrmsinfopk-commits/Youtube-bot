@@ -373,15 +373,21 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
     thumb = None
     if kind == "long":
         tag = next((sc.get("subject") for sc in script["scenes"] if sc.get("subject")), "")[:22]
+        first_shots = {str(p) for p, _ in (media[0] if media else [])}
+
+        def _same_shot(k):     # B must show a different picture than A (the opening shot)
+            return bool({str(p) for p, _ in (media[k] or [])} & first_shots)
         at = None
         try:                       # the scene the writer chose as "story in one glance" (real footage only)
             ti = int(script.get("thumbnail_scene"))
-            if 0 < ti < len(timings) and not script["scenes"][ti].get("graphic") and ti not in concept_scenes:
+            if 0 < ti < len(timings) and not script["scenes"][ti].get("graphic") and ti not in concept_scenes \
+                    and not _same_shot(ti):
                 at = timings[ti][0] + min(1.2, max(0.3, timings[ti][1] / 2))
         except (TypeError, ValueError):
             pass
         if at is None:             # otherwise: the first big reveal (or any later real-footage scene)
-            ok = [i for i, sc in enumerate(script["scenes"]) if i > 0 and not sc.get("graphic") and i not in concept_scenes]
+            ok = [i for i, sc in enumerate(script["scenes"]) if i > 0 and not sc.get("graphic") and i not in concept_scenes
+                  and not _same_shot(i)]
             pick_i = next((i for i in ok if script["scenes"][i].get("reveal")), ok[len(ok) // 3] if ok else 0)
             at = timings[pick_i][0] + min(1.2, max(0.3, timings[pick_i][1] / 2)) if pick_i else 4.0
         # A = opening shot (matches what the viewer sees first) - uploaded; B/C = alternatives for "Test & Compare"
