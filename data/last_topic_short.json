@@ -1,34 +1,39 @@
 {
- "topic": "Why Spacecraft Are Blunt Instead of Pointy",
- "angle": "Sharp needles cut air fastest, but at Mach 25 a sharp nose would instantly vaporize—so engineers make spacecraft blunt to deflect 10,000°C plasma with a cushion of air.",
- "why": "Explainer videos breaking down counterintuitive aviation and physics mechanics (like Veritasium's 16.7M jet engine breakdown and Cleo Abram's 17M plane engineering video) prove massive global demand for hidden engineering principles. Everyone intuitively assumes hypersonic vehicles must be razor-sharp, making the discovery that flat shapes actually prevent spacecraft from melting an irresistible visual revelation.",
+ "topic": "How Do Satellites Stay in Space Without Falling Down?",
+ "angle": "Thousands of heavy metal satellites hang hundreds of kilometers above the Earth in a permanent, infinite free-fall without ever crashing back to the ground.",
+ "why": "Explainer videos breaking down complex orbital and physical mechanics consistently pull tens of millions of views because they challenge basic intuition. This question is irresistible because everyone looks up at the sky or uses GPS daily, yet the concept of 'falling sideways fast enough to miss the Earth' creates an immediate lightbulb moment.",
  "keywords": [
-  "why spacecraft are blunt",
-  "blunt body theory",
-  "space capsule re-entry physics",
-  "why space capsules are not sharp",
-  "how heat shields survive reentry",
-  "detached bow shock",
-  "mach 25 atmospheric re-entry",
-  "why rockets are sharp but capsules are blunt",
-  "aerodynamics of reentry",
-  "apollo heat shield engineering",
-  "shockwave compression heat",
-  "blunt body paradox"
+  "how do satellites stay in orbit",
+  "why don't satellites fall to earth",
+  "orbital mechanics explained",
+  "how gravity and speed work in space",
+  "satellite free fall physics",
+  "low earth orbit altitude speed",
+  "how do things stay in space",
+  "space technology basics",
+  "why satellites don't crash",
+  "orbital velocity explained simply"
  ],
  "facts": [
-  "Orbital spacecraft return to Earth traveling at approximately 28,000 km/h (17,500 mph), which is roughly Mach 25.",
-  "The extreme heat during re-entry is primarily caused by rapid compression of atmospheric gases ahead of the vehicle, not surface friction.",
-  "Compressing air at Mach 25 generates a superheated plasma layer reaching temperatures between 7,000°C and 10,000°C, hotter than the surface of the Sun.",
-  "In the early 1950s, rocket scientists originally designed re-entry warheads to be slender, needle-sharp cones to minimize air resistance.",
-  "Testing revealed that sharp cones kept the shockwave attached directly to the vehicle's metal skin, channeling extreme heat straight into the structure and melting it within seconds.",
-  "In 1951, aeronautical engineer H. Julian Allen at NACA (NASA's predecessor) proposed the radically counterintuitive 'Blunt Body Concept'.",
-  "Allen proved mathematically that making the leading face broad and blunt creates a detached bow shock wave that floats several inches ahead of the spacecraft hull.",
-  "This detached shockwave acts as an invisible aerodynamic cushion, deflecting an estimated 90% or more of the compressive thermal energy harmlessly into the trailing slipstream.",
-  "Instead of absorbing the full brunt of the plasma, the spacecraft hull only receives the fraction of heat that radiates across the detached boundary layer.",
-  "The remaining heat load is managed by ablative thermal shields, which slowly vaporize layer by layer to carry heat away, or by insulating ceramic tiles.",
-  "Every crewed orbital spacecraft in history—including Mercury, Gemini, Apollo, Soyuz, Shenzhou, SpaceX Dragon, and NASA's Orion—utilizes Allen's blunt-body geometry.",
-  "Rockets are only sharp at launch because they must efficiently accelerate through thick lower atmosphere, while re-entering capsules intentionally use blunt drag to brake from orbital speeds."
+  "Satellites in Low Earth Orbit fly at an incredible speed of about 28,000 kilometers per hour (17,500 miles per hour).",
+  "At this extreme speed, as gravity pulls the satellite down toward the Earth, the Earth's surface curves away at the exact same rate.",
+  "This continuous balancing act means the satellite is technically in a state of perpetual free-fall around the planet.",
+  "Because there is virtually no air resistance in the vacuum of space above 160 kilometers, the satellite does not slow down naturally.",
+  "If a satellite were to stop moving sideways instantly, gravity would pull it straight down into a fiery crash.",
+  "The higher a satellite is placed, the slower it needs to travel to maintain its orbit because Earth's gravitational pull weakens with distance.",
+  "Geostationary satellites orbit at about 35,786 kilometers above the equator, matching the exact rotational speed of the Earth.",
+  "This matching speed allows a geostationary satellite to hover constantly over the exact same spot on the ground for communications and weather tracking.",
+  "Even in Low Earth Orbit, tiny traces of Earth's upper atmosphere create microscopic drag, requiring satellites to carry small thrusters for periodic course corrections.",
+  "Without these occasional thruster burns, atmospheric drag would slowly decay their orbit and cause them to re-enter and burn up in the atmosphere within years.",
+  "A cornfield in Minnesota possibly contains space debris originating from a Chinese rocket.",
+  "NASA lacks a dedicated replacement system to detect gamma-ray bursts quickly as the Swift spacecraft approaches reentry.",
+  "The Space Force is increasing its focus on cislunar warfare and plans to issue requests for information soon.",
+  "T-Mobile, AT&T, and Verizon experienced stock declines as SpaceX aims to deploy 80,000 cell sites.",
+  "A satellite operated by NASA is currently monitoring autumn leaf colors globally.",
+  "Tomorrow.io plans to launch a satellite fleet intended to revolutionize meteorological forecasting.",
+  "Artificial intelligence is capable of forecasting the timing of satellite debris reentering Earth's atmosphere.",
+  "NASA attempted to preserve a universe-studying satellite that operated for almost 22 years prior to its descent toward Earth.",
+  "The FCC granted Amazon Leo authorization to utilize Globalstar's satellite spectrum for direct-to-phone connectivity."
  ],
  "long_format": null,
  "format": "big question",
@@ -36,43 +41,43 @@
  "youtube_top": [
   {
    "title": "Bruno Mars - I Just Might [Official Music Video]",
-   "views": 179130706
+   "views": 179156051
   },
   {
    "title": "This is What Happens When A Hockey Season Ends 🤯",
-   "views": 162612850
+   "views": 162655019
   },
   {
    "title": "Ariana Grande - hate that i made you love me (official music video)",
-   "views": 108420685
+   "views": 108465037
   },
   {
    "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
-   "views": 102111752
+   "views": 102134480
+  },
+  {
+   "title": "WE CAN’T BELIEVE WE JUST HIT 26M FAMILY MEMBERS! 🥹😭🥰",
+   "views": 84477217
   },
   {
    "title": "How We Build an Alien Pool — Full Process Revealed #poolbuild #luxurypool  #satisfying #poolhacks",
-   "views": 84390195
+   "views": 84425636
   },
   {
    "title": "You Can't Order Here Unless You Build With LEGO 🤯",
-   "views": 78355823
+   "views": 78422720
   },
   {
    "title": "Why Can't We Print Unlimited Money 😱",
-   "views": 75246500
+   "views": 75251428
   },
   {
    "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
-   "views": 74643937
+   "views": 74720568
   },
   {
    "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
-   "views": 73612449
-  },
-  {
-   "title": "The Closest Thing We Have to Alien Technology",
-   "views": 64728183
+   "views": 73622480
   }
  ]
 }

@@ -922,6 +922,61 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-10-29 17:31",
+   "type": "short",
+   "title": "Why Satellites Never Fall to Earth (Orbital Mechanics Explained) #shorts",
+   "topic": "How Do Satellites Stay in Space Without Falling Down? - Thousands of heavy metal satellites hang hundreds of kilometers above the Earth in a permanent, infinite free-fall without ever crashing back to the ground.",
+   "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
+   "youtube_id": "L66lXYqmR7w",
+   "voice": "Charon",
+   "seconds": 38.4,
+   "scene_times": [
+    [
+     0.0,
+     "Thousands of heavy metal satellites hang hundreds of kilometers above us in an infinite fr"
+    ],
+    [
+     6.8,
+     "Yet they never crash down to the ground."
+    ],
+    [
+     10.6,
+     "They fly sideways at an extreme speed of twenty-eight thousand kilometers per hour."
+    ],
+    [
+     16.1,
+     "At this speed, as gravity pulls the satellite down, the Earth curves away at the exact sam"
+    ],
+    [
+     23.2,
+     "Because there is virtually no air resistance in the vacuum of space above 160 kilometers, "
+    ],
+    [
+     30.8,
+     "Stop that sideways motion, and gravity instantly pulls it into a fiery crash."
+    ],
+    [
+     35.7,
+     "Follow Tomorrowly for tomorrow's tech, today."
+    ]
+   ],
+   "format": "big question",
+   "why": "Explainer videos breaking down complex orbital and physical mechanics consistently pull tens of millions of views because they challenge basic intuition. This question is irresistible because everyone looks up at the sky or uses GPS daily, yet the concept of 'falling sideways fast enough to miss the Earth' creates an immediate lightbulb moment.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 2,
+    "own_share": 0.34,
+    "fact_fixes": 1,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -1390,6 +1445,16 @@
   "pixabay-v-143019",
   "pixabay-v-204",
   "pixabay-v-241",
-  "pixabay-v-2"
+  "pixabay-v-2",
+  "pixabay-v-86063",
+  "nasa-v-GSFC_20171031_Landsat_m12754_whiskbroom",
+  "pixabay-v-3636",
+  "pixabay-v-372471",
+  "nasa-v-Earth Views from the International Space Station",
+  "pixabay-v-15299",
+  "pixabay-v-290470",
+  "pixabay-v-283713",
+  "pixabay-v-13232",
+  "pixabay-v-6785"
  ]
 }

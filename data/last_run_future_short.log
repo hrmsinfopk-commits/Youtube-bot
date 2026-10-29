@@ -1,24 +1,54 @@
-[14:51:47] Channel: Tomorrowly (future, mode=facts)
-[14:51:47] Format today: big question
-[14:51:51] YouTube videos analysed: 60
-[14:53:43] Gemini OK (gemini-3.8-flash)
-[14:53:43] Trend topic: Why Spacecraft Are Blunt Instead of Pointy | why: Explainer videos breaking down counterintuitive aviation and physics mechanics (like Veritasium's 16.7M jet engine breakdown and Cleo Abram's 17M plane engineering video) prove massive global demand for hidden engineering principles. Everyone intuitively assumes hypersonic vehicles must be razor-sharp, making the discovery that flat shapes actually prevent spacecraft from melting an irresistible visual revelation.
-[14:53:43] Short length for 'big question': 32 s
-[14:56:43] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[14:59:43] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[15:00:12] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[15:00:13] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[15:00:39] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[15:03:39] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[15:03:41] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
-[15:07:07] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[15:07:39] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[15:08:26] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
-[15:08:26] Video 1 failed: Gemini failed: gemini-flash-lite-latest: HTTP 503 {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
+[16:56:13] Channel: Tomorrowly (future, mode=facts)
+[16:56:13] Format today: big question
+[16:56:17] YouTube videos analysed: 59
+[16:56:19] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[16:56:24] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[16:56:52] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[16:59:52] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[17:03:17] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[17:06:18] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[17:06:57] Gemini OK (gemini-flash-lite-latest)
+[17:09:57] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[17:09:59] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[17:13:24] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[17:16:25] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[17:16:51] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[17:19:51] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[17:20:15] Gemini OK (gemini-flash-lite-latest)
+[17:20:15] Trend topic: How Do Satellites Stay in Space Without Falling Down? | why: Explainer videos breaking down complex orbital and physical mechanics consistently pull tens of millions of views because they challenge basic intuition. This question is irresistible because everyone looks up at the sky or uses GPS daily, yet the concept of 'falling sideways fast enough to miss the Earth' creates an immediate lightbulb moment.
+[17:20:15] Short length for 'big question': 32 s
+[17:20:15] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[17:20:15] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[17:20:40] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[17:20:40] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[17:21:05] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[17:21:05] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[17:21:35] Gemini OK (gemini-flash-lite-latest)
+[17:21:35] Script length: 90 words
+[17:21:35] Uniqueness: 95% unique vs previous scripts
+[17:21:35] Script ready: Why Satellites Never Fall to Earth (Orbital Mechanics Explained) (7 scenes)
+[17:21:52] Gemini OK (gemini-flash-lite-latest)
+[17:21:52] Gate fact fix [4]: The fact sheet states there is virtually no air resistance above 160 kilometers and mentions tiny tr
+[17:21:52] Gate (script): {"graphics": 2, "own_share": 0.34, "fact_fixes": 1, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[17:21:52] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[17:22:08] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[17:22:11] Captions aligned to the voice (94 words)
+[17:22:19] Captions aligned to the voice (94 words)
+[17:22:19] Graphics theme: blueprint
+[17:22:47] Own graphics: 2
+[17:23:10] Picture editor: 66/66 previews loaded
+[17:26:10] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[17:26:52] Gemini OK (gemini-flash-lite-latest)
+[17:28:00] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[17:28:51] Gemini OK (gemini-flash-lite-latest)
+[17:28:51] Footage check: kept 11 fitting clips, 0 scenes had nothing fitting
+[17:29:12] Download failed: file too big (937 MB)
+[17:29:47] Footage ready for 7 scenes
+[17:29:47] Gate (visuals): fit 100%, concept 0%, fallback 0
+[17:29:49] Freesound CC0 sound 'whoosh': Whoosh to HIT 1.wav (id 434874)
+[17:30:00] 14 clips rendered
+[17:30:00] Final render started
+[17:30:31] Freesound CC0 music: Orchestral Score 1 - Mastered WITH Stereo Imaging.wav (id 621289)
+[17:31:00] Video ready: 20261029_1729_future_short.mp4 (38.4s)
+[17:31:02] Upload 58%
+[17:31:02] Uploaded: https://youtu.be/L66lXYqmR7w
