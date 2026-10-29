@@ -1,76 +1,77 @@
 {
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "channel": {
-  "subscribers": 12,
-  "total_views": 7123,
-  "videos": 11,
-  "watch_hours_12m": 19.5
+  "subscribers": 13,
+  "total_views": 7365,
+  "videos": 13,
+  "watch_hours_12m": 21.9
  },
  "style_scores": {
-  "Future scenario: 'It's 2040...' - show how this changes everyday life": 1.04,
-  "Before vs now: how this used to work vs what just changed": 0.95,
-  "": 0.97,
-  "Shocking fact first: open with the most unbelievable detail, then explain why": 0.93,
-  "Countdown: 3-5 surprising facts about it, the most shocking one last": 1.04,
-  "Explainer: one big question, answered step by step with a surprise at the end": 0.66
+  "Future scenario: 'It's 2040...' - show how this changes everyday life": 1.02,
+  "Before vs now: how this used to work vs what just changed": 0.94,
+  "": 1.0,
+  "Shocking fact first: open with the most unbelievable detail, then explain why": 0.95,
+  "Countdown: 3-5 surprising facts about it, the most shocking one last": 1.08,
+  "Explainer: one big question, answered step by step with a surprise at the end": 0.71
  },
  "format_scores": {
   "short: news": {
    "videos": 5,
-   "score": 0.96,
-   "avg_views": 1044,
-   "avg_pct": 57.6
+   "score": 0.99,
+   "avg_views": 1049,
+   "avg_pct": 57.5
   },
   "short: big question": {
-   "videos": 1,
-   "score": 0.93,
-   "avg_views": 46,
-   "avg_pct": 81.0
+   "videos": 2,
+   "score": 0.88,
+   "avg_views": 274,
+   "avg_pct": 59.1
   },
   "short: teaser": {
    "videos": 1,
-   "score": 1.06,
-   "avg_views": 979,
-   "avg_pct": 69.4
+   "score": 1.09,
+   "avg_views": 1037,
+   "avg_pct": 68.9
   },
   "long: deep dive": {
    "videos": 1,
-   "score": 1.1,
-   "avg_views": 41,
-   "avg_pct": 38.4
+   "score": 1.04,
+   "avg_views": 45,
+   "avg_pct": 40.7
   },
   "long: big question": {
    "videos": 2,
-   "score": 0.84,
-   "avg_views": 53,
-   "avg_pct": 27.0
+   "score": 0.79,
+   "avg_views": 207,
+   "avg_pct": 25.8
   }
  },
  "insights": [
-  "Shorts significantly outperform long-form videos on this channel, averaging over 1,000 views compared to double digits for long videos.",
-  "The 'Future scenario: 'It's 2040...'' content style performs well for Shorts, driving high view counts (e.g., Quantinuum at 1,302 views and Aging cells at 1,111 views).",
-  "Shorts with high average view percentages (above 65%) such as the Nuclear Submarines and Jet Engines teaser struggle with low initial reach if the topic or title lacks broad immediate appeal.",
-  "Long-form videos currently suffer from very low views and low retention (under 38%), indicating that the audience format preference leans heavily towards Shorts.",
-  "Audience drop-off in Shorts frequently happens within the first few seconds (e.g., Tesla Roadster drops 6.3% at 4.8s), indicating that hooks need tighter scripting.",
-  "Engagement metrics like comments are consistently zero across almost all videos, suggesting that explicit calls-to-action or end questions are currently ineffective or missing."
+  "Promoting long-form content in Shorts causes severe abandonment: directing viewers to 'The full breakdown is on our channel' triggered a massive 24.1% audience drop-off at 38.6s.",
+  "Shorts reliably drive discovery over long-form: 5 of 8 Shorts crossed 1,000 views (averaging ~850 views), while 2 of the 3 long-form videos struggled below 50 views (note: 3 long-form videos is a very small sample size).",
+  "Subscriber acquisition is heavily concentrated in breakthrough tech/futuristic news: Quantinuum (+4), Tesla Roadster (+4), and Cell Aging (+3) generated 11 of the channel's 12 total subscribers.",
+  "Viewer interaction is critically low across all formats: only 2 comments were generated across all 11 videos combined, confirming end-of-video questions or prompts are failing to trigger replies.",
+  "Retention does not guarantee reach if the Shorts feed algorithm is missed: 'Nuclear Submarines' had the highest retention (78.01% AVP) but only reached 48 views because only 6% came from the Shorts feed.",
+  "Specific, high-stakes numbers in titles dramatically boost long-form clicks: adding 'at 2,000°C' to the Jet Engines title saw views jump from 4 to 410, though view percentage remained low (~24%).",
+  "Countdown and news formats achieve the strongest Shorts retention (64%–69% AVP), whereas question/explainer hooks saw heavy drop-offs within the first 7 seconds (e.g., Icebergs lost 9.0% at 6.9s)."
  ],
  "videos": [
   {
    "title": "Quantinuum Just Shattered the Quantum Computing Record! #shorts",
    "type": "short",
    "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
-   "views": 1302,
-   "averageViewPercentage": 45.97,
+   "views": 1304,
+   "averageViewPercentage": 46.01,
    "likes": 15,
    "comments": 0,
    "shares": 3,
    "subscribersGained": 4,
    "format": null,
-   "score": 0.89,
+   "score": 0.92,
    "notes": [
-    "Log jaldi chhod gaye: hook ya shuru ka hissa kamzor tha.",
+    "Average se kaafi behtar: yeh topic/andaaz dobara try karna chahiye.",
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
-    "Sab se zyada log 42.6s par chhod gaye (5.8% gire) - wahan line thi: \"How will you use a computer that thinks in infinite dimensions?\"."
+    "Sab se zyada log 42.6s par chhod gaye (5.7% gire) - wahan line thi: \"How will you use a computer that thinks in infinite dimensions?\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
@@ -82,23 +83,24 @@
     "PLAYLIST": 1,
     "SHORTS": 88
    },
-   "age_days": 8,
+   "age_days": 9,
    "youtube_id": "J9O4qdiPSgk"
   },
   {
    "title": "Tesla Flying Roadster: Real SpaceX Car Or Total Marketing Hype? #shorts",
    "type": "short",
    "style": "Before vs now: how this used to work vs what just changed",
-   "views": 1309,
+   "views": 1308,
    "averageViewPercentage": 42.65,
    "likes": 30,
    "comments": 0,
    "shares": 0,
    "subscribersGained": 4,
    "format": null,
-   "score": 0.87,
+   "score": 0.89,
    "notes": [
     "Log jaldi chhod gaye: hook ya shuru ka hissa kamzor tha.",
+    "Average se kaafi behtar: yeh topic/andaaz dobara try karna chahiye.",
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
     "Sab se zyada log 4.8s par chhod gaye (6.3% gire) - wahan line thi: \"Tesla just unveiled a brand-new Roadster strapped with actual SpaceX thrusters.\"."
    ],
@@ -112,52 +114,53 @@
     "SHORTS": 95,
     "SOUND_PAGE": 0
    },
-   "age_days": 8,
+   "age_days": 9,
    "youtube_id": "ujBL9LBgPHk"
   },
   {
    "title": "NASA's New Nuclear Spaceship: How SR-1 Freedom Changes Mars Travel",
    "type": "long",
    "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
-   "views": 41,
-   "averageViewPercentage": 38.37,
+   "views": 45,
+   "averageViewPercentage": 40.66,
    "likes": 2,
    "comments": 0,
    "shares": 4,
    "subscribersGained": 1,
    "format": "deep dive",
-   "score": 1.1,
+   "score": 1.04,
    "notes": [
-    "Sab se zyada log 27.3s par chhod gaye (9.1% gire) - wahan line thi: \"NASA recently pulled the curtain back on something we have never flown past Eart\"."
+    "Jo log aaye unhon ne achhi dekhi, lekin bohat kam log aaye: topic/title/thumbnail ne kashish nahi ki.",
+    "Sab se zyada log 40.9s par chhod gaye (8.6% gire) - wahan line thi: \"For seventy years, every deep space mission relied on chemical propellants. Thin\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 7,
-    "SUBSCRIBER": 10,
-    "YT_CHANNEL": 15,
-    "YT_SEARCH": 29,
-    "RELATED_VIDEO": 29,
-    "EXT_URL": 5,
-    "PLAYLIST": 5
+    "SUBSCRIBER": 9,
+    "YT_CHANNEL": 16,
+    "YT_SEARCH": 33,
+    "RELATED_VIDEO": 27,
+    "EXT_URL": 4,
+    "PLAYLIST": 4
    },
-   "age_days": 7,
+   "age_days": 8,
    "youtube_id": "BZuC5VJ6kDM"
   },
   {
    "title": "NASA's First Nuclear Spaceship Built for Mars #shorts",
    "type": "short",
    "style": "",
-   "views": 386,
-   "averageViewPercentage": 66.81,
+   "views": 388,
+   "averageViewPercentage": 66.43,
    "likes": 9,
    "comments": 0,
    "shares": 0,
    "subscribersGained": 0,
    "format": null,
-   "score": 0.97,
+   "score": 1.0,
    "notes": [
     "Jo log aaye unhon ne achhi dekhi, lekin bohat kam log aaye: topic/title/thumbnail ne kashish nahi ki.",
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
-    "Sab se zyada log 0.0s par chhod gaye (7.9% gire) - wahan line thi: \"\"."
+    "Sab se zyada log 0.0s par chhod gaye (7.8% gire) - wahan line thi: \"\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
@@ -167,52 +170,52 @@
     "RELATED_VIDEO": 0,
     "YT_OTHER_PAGE": 3,
     "PLAYLIST": 1,
-    "SHORTS": 92
+    "SHORTS": 91
    },
-   "age_days": 7,
+   "age_days": 8,
    "youtube_id": "sWFi6T_3Kf8"
   },
   {
    "title": "How Nuclear Submarines Make Unlimited Air Underwater #shorts",
    "type": "short",
    "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
-   "views": 46,
-   "averageViewPercentage": 80.99,
+   "views": 48,
+   "averageViewPercentage": 78.01,
    "likes": 3,
    "comments": 0,
    "shares": 3,
    "subscribersGained": 0,
    "format": "big question",
-   "score": 0.93,
+   "score": 0.95,
    "notes": [
     "Jo log aaye unhon ne achhi dekhi, lekin bohat kam log aaye: topic/title/thumbnail ne kashish nahi ki.",
-    "Sab se zyada log 10.3s par chhod gaye (8.7% gire) - wahan line thi: \"Yet they don't carry massive oxygen tanks. Tanks waste precious space and create\"."
+    "Sab se zyada log 12.0s par chhod gaye (8.3% gire) - wahan line thi: \"Yet they don't carry massive oxygen tanks. Tanks waste precious space and create\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 2,
-    "SUBSCRIBER": 9,
-    "YT_CHANNEL": 13,
-    "YT_SEARCH": 52,
+    "SUBSCRIBER": 8,
+    "YT_CHANNEL": 15,
+    "YT_SEARCH": 50,
     "YT_OTHER_PAGE": 2,
     "EXT_URL": 2,
     "PLAYLIST": 15,
-    "SHORTS": 4
+    "SHORTS": 6
    },
-   "age_days": 6,
+   "age_days": 7,
    "youtube_id": "RFzD-PyILsQ"
   },
   {
    "title": "Unitree's Guardian Robot Can Lift Cars and Disarm Attackers #shorts",
    "type": "short",
    "style": "Countdown: 3-5 surprising facts about it, the most shocking one last",
-   "views": 1113,
-   "averageViewPercentage": 64.38,
+   "views": 1111,
+   "averageViewPercentage": 64.41,
    "likes": 10,
    "comments": 0,
    "shares": 0,
    "subscribersGained": 0,
    "format": "news",
-   "score": 1.03,
+   "score": 1.06,
    "notes": [
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
     "Sab se zyada log 6.4s par chhod gaye (3.2% gire) - wahan line thi: \"It packs enough raw torque to actually lift passenger cars.\"."
@@ -226,7 +229,7 @@
     "PLAYLIST": 1,
     "SHORTS": 83
    },
-   "age_days": 5,
+   "age_days": 6,
    "youtube_id": "dck9ttHCJic"
   },
   {
@@ -240,95 +243,124 @@
    "shares": 1,
    "subscribersGained": 0,
    "format": "big question",
-   "score": 0.66,
+   "score": 0.61,
    "notes": [],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 25,
     "YT_CHANNEL": 75
    },
-   "age_days": 4,
+   "age_days": 5,
    "youtube_id": "oGPOL4VkwGI"
   },
   {
    "title": "Scientists Just Reversed 60 Years of Aging in Human Cells #shorts",
    "type": "short",
    "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
-   "views": 1111,
-   "averageViewPercentage": 68,
-   "likes": 15,
+   "views": 1135,
+   "averageViewPercentage": 68.24,
+   "likes": 16,
    "comments": 1,
    "shares": 0,
    "subscribersGained": 3,
    "format": "news",
-   "score": 1.06,
+   "score": 1.1,
    "notes": [
-    "Sab se zyada log 5.3s par chhod gaye (4.6% gire) - wahan line thi: \"Scientists just reversed sixty years of aging in human cells.\"."
+    "Sab se zyada log 5.1s par chhod gaye (4.5% gire) - wahan line thi: \"Scientists just reversed sixty years of aging in human cells.\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 0,
     "YT_CHANNEL": 1,
-    "YT_SEARCH": 5,
+    "YT_SEARCH": 6,
     "YT_OTHER_PAGE": 2,
     "PLAYLIST": 0,
-    "SHORTS": 91
+    "SHORTS": 90
    },
-   "age_days": 4,
+   "age_days": 5,
    "youtube_id": "5yhWmoUjmZY"
   },
   {
    "title": "Why Don't Jet Engines Melt at 2,000°C? The Hidden Trick",
    "type": "long",
    "style": "Before vs now: how this used to work vs what just changed",
-   "views": 103,
-   "averageViewPercentage": 26.179999999999996,
+   "views": 410,
+   "averageViewPercentage": 23.66,
    "likes": 2,
-   "comments": 0,
+   "comments": 1,
    "shares": 1,
    "subscribersGained": 0,
    "format": "big question",
-   "score": 1.02,
+   "score": 0.98,
    "notes": [
     "Average se kaafi behtar: yeh topic/andaaz dobara try karna chahiye.",
-    "Sab se zyada log 36.2s par chhod gaye (11.1% gire) - wahan line thi: \"Metallurgists solved that mechanical flaw by growing every modern high-pressure \"."
+    "Sab se zyada log 17.0s par chhod gaye (11.8% gire) - wahan line thi: \"By basic physics, those blades should liquefy into glowing molten soup mid-fligh\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
-    "SUBSCRIBER": 85,
+    "SUBSCRIBER": 95,
     "YT_CHANNEL": 1,
-    "YT_SEARCH": 1,
-    "RELATED_VIDEO": 13
+    "YT_SEARCH": 0,
+    "RELATED_VIDEO": 3
    },
-   "age_days": 3,
+   "age_days": 4,
    "youtube_id": "CH5p37icZXU"
   },
   {
    "title": "Why Don't Jet Engines Melt Inside? #shorts",
    "type": "short",
    "style": "Countdown: 3-5 surprising facts about it, the most shocking one last",
-   "views": 979,
-   "averageViewPercentage": 69.37,
-   "likes": 19,
+   "views": 1037,
+   "averageViewPercentage": 68.87,
+   "likes": 22,
    "comments": 1,
    "shares": 0,
    "subscribersGained": 0,
    "format": "teaser",
-   "score": 1.06,
+   "score": 1.09,
    "notes": [
-    "Sab se zyada log 38.6s par chhod gaye (25.1% gire) - wahan line thi: \"The full breakdown is on our channel.\"."
+    "Sab se zyada log 38.6s par chhod gaye (24.1% gire) - wahan line thi: \"The full breakdown is on our channel.\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 0,
     "YT_CHANNEL": 1,
-    "YT_SEARCH": 2,
+    "YT_SEARCH": 3,
     "YT_OTHER_PAGE": 0,
     "PLAYLIST": 0,
-    "SHORTS": 97
+    "SHORTS": 96
+   },
+   "age_days": 4,
+   "youtube_id": "-oX0q-L56PM"
+  },
+  {
+   "title": "How Do Icebergs Float If They Weigh Millions of Tons #shorts",
+   "type": "short",
+   "style": "Explainer: one big question, answered step by step with a surprise at the end",
+   "views": 501,
+   "averageViewPercentage": 40.16,
+   "likes": 18,
+   "comments": 0,
+   "shares": 1,
+   "subscribersGained": 0,
+   "format": "big question",
+   "score": 0.8,
+   "notes": [
+    "Log jaldi chhod gaye: hook ya shuru ka hissa kamzor tha.",
+    "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
+    "Sab se zyada log 6.9s par chhod gaye (9.0% gire) - wahan line thi: \"Common sense says heavy rocks sink right to the bottom.\"."
+   ],
+   "traffic": {
+    "NO_LINK_OTHER": 0,
+    "SUBSCRIBER": 1,
+    "YT_SEARCH": 4,
+    "YT_OTHER_PAGE": 1,
+    "EXT_URL": 0,
+    "PLAYLIST": 0,
+    "SHORTS": 94
    },
    "age_days": 3,
-   "youtube_id": "-oX0q-L56PM"
+   "youtube_id": "Pcj4yIUFDWs"
   }
  ]
 }
