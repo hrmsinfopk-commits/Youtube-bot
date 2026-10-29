@@ -465,12 +465,22 @@ def main():
     history = load_history()
     n = cfg["shorts"]["per_run"] if a.type == "short" else cfg["long"]["per_run"]
     fails = 0
+    t_start = time.time()
     for i in range(n):
-        try:
-            make_one(cfg, a.type, history, offline=a.offline_test, do_upload=not a.no_upload)
-        except Exception as e:  # noqa: BLE001
-            fails += 1
-            log(f"Video {i + 1} failed: {e}")
+        for attempt in range(3):
+            try:
+                make_one(cfg, a.type, history, offline=a.offline_test, do_upload=not a.no_upload)
+                break
+            except Exception as e:  # noqa: BLE001
+                log(f"Video {i + 1} failed (attempt {attempt + 1}): {str(e)[:300]}")
+                busy = "Gemini failed" in str(e) or "503" in str(e) or "429" in str(e)
+                # Gemini overloaded/out of quota for a while: wait and try the whole video again (time budget permitting)
+                if attempt < 2 and busy and time.time() - t_start < 40 * 60:
+                    log("Gemini is busy - waiting 10 minutes, then trying again")
+                    time.sleep(600)
+                    continue
+                fails += 1
+                break
     if fails == n:
         raise SystemExit(1)
 
