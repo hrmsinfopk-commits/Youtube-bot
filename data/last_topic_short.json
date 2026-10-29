@@ -1,104 +1,78 @@
 {
- "topic": "NASA Stacks the Massive Artemis III Moon Rocket",
- "angle": "The mega-rocket meant to return humans to the lunar surface is no longer in pieces: technicians just hoisted the 212-foot Artemis III core stage inside the iconic Vehicle Assembly Building, marking the official countdown to humanity's next Moon landing.",
- "why": "Space exploration and rocket-stacking videos consistently pull multi-million view audiences (e.g., recent NASA and Starship coverage driving 500K to 2M+ views). Breaking the news that Artemis III's actual flight hardware is physically being stacked inside Kennedy Space Center offers timely, high-curiosity appeal with zero royalty visual assets directly from NASA.",
+ "topic": "Why Spacecraft Are Blunt Instead of Pointy",
+ "angle": "Sharp needles cut air fastest, but at Mach 25 a sharp nose would instantly vaporize—so engineers make spacecraft blunt to deflect 10,000°C plasma with a cushion of air.",
+ "why": "Explainer videos breaking down counterintuitive aviation and physics mechanics (like Veritasium's 16.7M jet engine breakdown and Cleo Abram's 17M plane engineering video) prove massive global demand for hidden engineering principles. Everyone intuitively assumes hypersonic vehicles must be razor-sharp, making the discovery that flat shapes actually prevent spacecraft from melting an irresistible visual revelation.",
  "keywords": [
-  "NASA Artemis 3",
-  "Artemis III SLS",
-  "Space Launch System stacking",
-  "NASA Moon rocket",
-  "NASA Kennedy Space Center",
-  "Vehicle Assembly Building",
-  "Artemis 3 launch date",
-  "NASA Moon landing mission",
-  "SLS core stage lift",
-  "Artemis Moon mission update",
-  "next humans on the moon",
-  "space news 2026"
+  "why spacecraft are blunt",
+  "blunt body theory",
+  "space capsule re-entry physics",
+  "why space capsules are not sharp",
+  "how heat shields survive reentry",
+  "detached bow shock",
+  "mach 25 atmospheric re-entry",
+  "why rockets are sharp but capsules are blunt",
+  "aerodynamics of reentry",
+  "apollo heat shield engineering",
+  "shockwave compression heat",
+  "blunt body paradox"
  ],
  "facts": [
-  "On October 28, 2026, NASA technicians inside Kennedy Space Center's Vehicle Assembly Building (VAB) officially integrated the Artemis III core stage with its twin solid rocket boosters.",
-  "The operation took place inside High Bay 3 of the VAB in Florida, using massive overhead cranes to lift the gigantic rocket stage vertically.",
-  "The Artemis III Space Launch System (SLS) core stage measures 212 feet (nearly 65 meters) in height.",
-  "The core stage is powered by four RS-25 cryogenic rocket engines fueled by liquid hydrogen and liquid oxygen.",
-  "Two 17-story solid rocket boosters flank the core stage, providing over 75 percent of the total thrust during liftoff.",
-  "Artemis III is designated as the milestone mission to return astronauts, including the first woman and next man, to the lunar surface.",
-  "The mission will dock with a commercial lunar lander (Starship HLS) in lunar orbit to ferry the crew down to the lunar South Pole.",
-  "Stacking the core stage between the solid rocket boosters represents a critical phase milestone, transitioning the vehicle from individual components into a unified moon rocket.",
-  "The core stage for the Artemis III rocket was moved to Florida for assembly.",
-  "The SLS core stage has been combined with the boosters at Kennedy Space Center.",
-  "NASA maintains a summer timeline target for the Artemis III mission.",
-  "The Artemis IV moon landing is currently planned for the year 2028.",
-  "The rocket manufactured in Alabama received positive recognition from NASA.",
-  "NASA planned to broadcast a mission update regarding Artemis III.",
-  "The Crawler-Transporter 2 weighs approximately 6.6 million pounds.",
-  "Crawler-Transporter 2 was originally constructed by NASA in 1965 to transport the Saturn V.",
-  "The Crawler-Transporter 2 is anticipated to transport the Artemis III SLS stack to the launch pad."
+  "Orbital spacecraft return to Earth traveling at approximately 28,000 km/h (17,500 mph), which is roughly Mach 25.",
+  "The extreme heat during re-entry is primarily caused by rapid compression of atmospheric gases ahead of the vehicle, not surface friction.",
+  "Compressing air at Mach 25 generates a superheated plasma layer reaching temperatures between 7,000°C and 10,000°C, hotter than the surface of the Sun.",
+  "In the early 1950s, rocket scientists originally designed re-entry warheads to be slender, needle-sharp cones to minimize air resistance.",
+  "Testing revealed that sharp cones kept the shockwave attached directly to the vehicle's metal skin, channeling extreme heat straight into the structure and melting it within seconds.",
+  "In 1951, aeronautical engineer H. Julian Allen at NACA (NASA's predecessor) proposed the radically counterintuitive 'Blunt Body Concept'.",
+  "Allen proved mathematically that making the leading face broad and blunt creates a detached bow shock wave that floats several inches ahead of the spacecraft hull.",
+  "This detached shockwave acts as an invisible aerodynamic cushion, deflecting an estimated 90% or more of the compressive thermal energy harmlessly into the trailing slipstream.",
+  "Instead of absorbing the full brunt of the plasma, the spacecraft hull only receives the fraction of heat that radiates across the detached boundary layer.",
+  "The remaining heat load is managed by ablative thermal shields, which slowly vaporize layer by layer to carry heat away, or by insulating ceramic tiles.",
+  "Every crewed orbital spacecraft in history—including Mercury, Gemini, Apollo, Soyuz, Shenzhou, SpaceX Dragon, and NASA's Orion—utilizes Allen's blunt-body geometry.",
+  "Rockets are only sharp at launch because they must efficiently accelerate through thick lower atmosphere, while re-entering capsules intentionally use blunt drag to brake from orbital speeds."
  ],
  "long_format": null,
- "format": "news",
- "sources": [
-  {
-   "title": "Artemis III SLS Core Stage Joins Boosters at Kennedy",
-   "source": "NASA",
-   "link": "https://www.nasa.gov/image-article/artemis-iii-sls-core-stage-joins-boosters-at-kennedy/"
-  },
-  {
-   "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
-   "source": "NASA (.gov)",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNT2EzLVNyT2FBeVJRVEJuN1VibVU4V2JXZlRWSHFhT1ctUzczSGoyTDlvamNXU3hMbm1TbTZIS0t1SlV0TWloUDVFOEg4MHlLZEhEaEEtRnVLRXhpMVkxTkVkSk12N0N3d0w2RDhHNTZMcDdzN2lENGFYMFBqT04yZkhXVElRRm1wVGQ2UVBvMEtxMUktNnlkc3ZNOHhXZGZLcjZRM0RhWmU?oc=5"
-  },
-  {
-   "title": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
-   "source": "NASA (.gov)",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQckE2a2ROazlEbHgwOEZFOTJiOXVDUHkxbjlmM2NlMUxzMWJBMnRRWFd5VWRMcjNXc2F4NGpqclBYMW5CMjJ2UGhQaFd0SWpHUGZoeUQtc19zOFg5R3l5dHZnTlVsZXZkMmduUnRJTzA4bWRLejRTZ0hjWTJ1bFQ3X3NVdHJQWmJpbHRxeDIxa1lKd3pYWmlTNDhZVXNtMXV6M0NlRA?oc=5"
-  },
-  {
-   "title": "NASA Shares Artemis Acceleration Plans for Moon Missions",
-   "source": "NASA (.gov)",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZGdZQjVFamx1ZVpyalRybzRtYmZjMjZEdDk2OWlNOFhlb3Y2WVlmeWVuRnJSU2hKc1daZ2VMTlB1SmR3b3FnTHpxOGdxbEhiaEhUOFloYksycWt2aXRDOUloRUcxSHJPNG9RVFZwYV81STJXVGEwYVo4TkN0UmVzSHVsUDF3LWF4cWg1SVlaYnlEaTZkQ2U2UXU3S2Ezbk9qTEVpT0I4RQ?oc=5"
-  }
- ],
+ "format": "big question",
+ "sources": [],
  "youtube_top": [
   {
-   "title": "Zavi Broke Zoya’s Robot… Then It Came ALIVE! 🤖😱😂 #shorts  #zaviandzoya",
-   "views": 34649496
+   "title": "Bruno Mars - I Just Might [Official Music Video]",
+   "views": 179130706
   },
   {
-   "title": "Why Cats Rub Against Your Laptop 🤔",
-   "views": 14626588
+   "title": "This is What Happens When A Hockey Season Ends 🤯",
+   "views": 162612850
   },
   {
-   "title": "iPhone Duo Durability: Destroyed",
-   "views": 13604652
+   "title": "Ariana Grande - hate that i made you love me (official music video)",
+   "views": 108420685
   },
   {
-   "title": "iPhone Duo Review: First Generation Fun!",
-   "views": 12913967
+   "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
+   "views": 102111752
   },
   {
-   "title": "6 ways iPhone Duo beats Samsung",
-   "views": 11252639
+   "title": "How We Build an Alien Pool — Full Process Revealed #poolbuild #luxurypool  #satisfying #poolhacks",
+   "views": 84390195
   },
   {
-   "title": "He Thought His Robot Cleaner Was a Waste of Money!",
-   "views": 10283211
+   "title": "You Can't Order Here Unless You Build With LEGO 🤯",
+   "views": 78355823
   },
   {
-   "title": "How to fix the IPhone Duo crease…",
-   "views": 8524209
+   "title": "Why Can't We Print Unlimited Money 😱",
+   "views": 75246500
   },
   {
-   "title": "iPhone Duo Is Flopping",
-   "views": 8143818
+   "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
+   "views": 74643937
   },
   {
-   "title": "Robot VS Manusia Part 2 #Rubik #Malaysia #Indonesia #harizazizan #robot",
-   "views": 7772001
+   "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
+   "views": 73612449
   },
   {
-   "title": "A Robot Was Our Hero 🤖",
-   "views": 6876526
+   "title": "The Closest Thing We Have to Alien Technology",
+   "views": 64728183
   }
  ]
 }
