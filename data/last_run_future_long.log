@@ -1,97 +1,55 @@
-[11:08:07] Channel: Tomorrowly (future, mode=facts)
-[11:08:07] Format today: big question
-[11:08:11] YouTube videos analysed: 59
-[11:08:13] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[11:08:13] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[11:08:39] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[11:08:40] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[11:12:05] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[11:12:05] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[11:12:09] Gemini OK (gemini-flash-lite-latest)
-[11:12:10] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[11:15:35] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[11:16:00] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[11:16:03] Gemini OK (gemini-flash-lite-latest)
-[11:16:03] Trend topic: How Do Satellites Stay In Space Without Falling? | why: Explainer videos about orbital mechanics and gravity routinely pull tens of millions of views because they challenge basic intuition. This question is irresistible because everyone looks up at the sky and wonders how heavy metal objects defy gravity without running out of fuel.
-[11:16:03] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[11:16:47] Gemini OK (gemini-flash-lite-latest)
-[11:16:47] Script length: 436 words
-[11:16:47] Uniqueness: 95% unique vs previous scripts
-[11:16:55] Gemini OK (gemini-flash-lite-latest)
-[11:16:55] Long script edited for flow (436 -> 436 words)
-[11:16:55] Script ready: How Satellites Stay In Space Without Falling To Earth (27 scenes)
-[11:16:59] Gemini OK (gemini-flash-lite-latest)
-[11:17:00] Gemini OK (gemini-flash-lite-latest)
-[11:17:00] Gate fact fix [12]: Line 12 states 'The ground is literally falling away faster than the satellite can fall toward it', 
-[11:17:00] Gate (script): {"graphics_added": 2, "graphics": 7, "own_share": 0.3, "own_math": true, "fact_fixes": 1, "source_overlap": 0.0, "script_ok": true, "problems": []}
-[11:17:00] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[11:17:22] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[11:17:26] Captions aligned to the voice (158 words)
-[11:17:54] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[11:17:57] Captions aligned to the voice (156 words)
-[11:18:16] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[11:18:18] Captions aligned to the voice (122 words)
-[11:18:52] Captions aligned to the voice (458 words)
-[11:18:52] Graphics theme: footage
-[11:20:35] Own graphics: 7
-[11:21:32] Picture editor: 246/247 previews loaded
-[11:21:37] Gemini OK (gemini-flash-lite-latest)
-[11:21:44] Gemini OK (gemini-flash-lite-latest)
-[11:21:50] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 19 (char 18)
-[11:22:19] Gemini OK (gemini-flash-lite-latest)
-[11:22:23] Gemini OK (gemini-flash-lite-latest)
-[11:22:46] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[11:23:12] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[11:23:39] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[11:24:05] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[11:24:05] Visual check failed for a batch, using descriptions: Gemini failed: Expecting ',' delimiter: line 3 column 14 (char 28)
-[11:24:06] Gemini OK (gemini-flash-lite-latest)
-[11:24:12] Gemini OK (gemini-flash-lite-latest)
-[11:24:18] Gemini OK (gemini-flash-lite-latest)
-[11:24:43] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[11:25:12] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[11:25:41] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 21 (char 20)
-[11:26:34] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
-[11:26:34] Visual check failed for a batch, using descriptions: Gemini failed: gemini-flash-lite-latest: HTTP 503 {
-  "error": {
-    "code": 503,
-    "message": "Th
-[11:26:40] Gemini OK (gemini-flash-lite-latest)
-[11:26:48] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 21 (char 20)
-[11:27:19] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 1 column 21 (char 20)
-[11:27:50] Gemini OK (gemini-flash-lite-latest)
-[11:27:50] Footage check: kept 12 fitting clips, 13 scenes had nothing fitting
-[11:28:10] Second footage search for 13 scenes
-[11:28:14] Picture editor: 137/137 previews loaded
-[11:28:24] Gemini OK (gemini-flash-lite-latest)
-[11:28:33] Gemini OK (gemini-flash-lite-latest)
-[11:28:44] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 12 (char 26)
-[11:29:17] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 12 (char 26)
-[11:29:50] Gemini OK (gemini-flash-lite-latest)
-[11:30:02] Gemini OK (gemini-flash-lite-latest)
-[11:30:11] Gemini OK (gemini-flash-lite-latest)
-[11:30:35] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[11:31:07] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[11:31:38] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[11:32:10] Gemini error (gemini-flash-lite-latest): Expecting ',' delimiter: line 3 column 14 (char 28)
-[11:32:10] Visual check failed for a batch, using descriptions: Gemini failed: Expecting ',' delimiter: line 3 column 14 (char 28)
-[11:32:15] Gemini OK (gemini-flash-lite-latest)
-[11:32:23] Gemini OK (gemini-flash-lite-latest)
-[11:32:23] Footage check: kept 9 fitting clips, 8 scenes had nothing fitting
-[11:35:09] Image error: HTTPSConnectionPool(host='image.pollinations.ai', port=443): Read timed out. (read timeout=150)
-[11:35:35] Image HTTP 402 (try 1)
-[11:38:21] Image error: HTTPSConnectionPool(host='image.pollinations.ai', port=443): Read timed out. (read timeout=150)
-[11:38:40] Download failed: file too big (776 MB)
-[11:39:01] Download failed: file too big (518 MB)
-[11:39:02] Download failed: file too big (888 MB)
-[11:39:22] Download failed: file too big (518 MB)
-[11:40:32] Footage ready for 27 scenes
-[11:41:33] Gate (visuals): fit 93%, concept 11%, fallback 2
-[11:41:35] Freesound CC0 sound 'rocket launch': S18-15a Fireworks rocket launching.wav (id 675773)
-[11:41:36] Freesound CC0 sound 'whoosh': _metalic_flyby_whoosh_ambience_strange_.flac (id 365814)
-[11:41:38] Freesound CC0 sound 'whoosh': ARCHERY flyby 2.wav (id 394181)
-[11:42:18] 39 clips rendered
-[11:42:18] Final render started
-[11:42:54] Freesound CC0 music: Suspense Orchestral Soundtrack - Hurricane (id 608813)
-[11:44:05] Video ready: 20261026_1141_future_long.mp4 (173.1s)
-[11:44:06] Thumbnails for Test & Compare: thumbnails/20261026_1141_future_long/
+[06:03:15] Channel: Tomorrowly (future, mode=facts)
+[06:03:15] Format today: big question
+[06:03:18] YouTube videos analysed: 59
+[06:05:15] Gemini OK (gemini-3.8-flash)
+[06:05:15] Trend topic: How Does an 828-Meter Skyscraper Stand on Loose Sand | why: Proven infrastructure explainers like underwater metro tunnels (19.2M views) and hydrostatic physics breakdowns (36M+ views) prove massive global hunger for 'impossible' civil engineering mysteries. It hooks viewers instantly because almost everyone recognizes Dubai's mega-tower, but almost nobody realizes it has no bedrock beneath it and should theoretically sink like a stone.
+[06:05:15] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[06:07:17] Gemini OK (gemini-flash-latest)
+[06:07:17] Script length: 548 words
+[06:07:17] Uniqueness: 100% unique vs previous scripts
+[06:09:01] Gemini OK (gemini-3.8-flash)
+[06:09:01] Script ready: How Does an 828-Meter Skyscraper Stand on Loose Sand? (19 scenes)
+[06:09:01] Chapters: The Sand Trap | The Underground Forest | The Saltwater Threat | The Two-Inch Test
+[06:09:02] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[06:09:02] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[06:09:27] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[06:09:27] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[06:09:52] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[06:09:53] Gemini OK (gemini-flash-lite-latest)
+[06:09:53] Gate (script): {"graphics": 4, "own_share": 0.27, "own_math": true, "fact_fixes": 0, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[06:09:53] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[06:10:14] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[06:10:18] Captions aligned to the voice (154 words)
+[06:10:41] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[06:10:43] Captions aligned to the voice (144 words)
+[06:11:06] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[06:11:09] Captions aligned to the voice (162 words)
+[06:11:24] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[06:11:25] Captions aligned to the voice (95 words)
+[06:11:46] Captions aligned to the voice (553 words)
+[06:11:46] Graphics theme: navy
+[06:12:52] Own graphics: 4
+[06:13:58] Picture editor: 143/146 previews loaded
+[06:14:43] Gemini OK (gemini-flash-lite-latest)
+[06:14:54] Gemini OK (gemini-flash-lite-latest)
+[06:15:05] Gemini OK (gemini-flash-lite-latest)
+[06:15:16] Gemini OK (gemini-flash-lite-latest)
+[06:15:29] Gemini OK (gemini-flash-lite-latest)
+[06:15:29] Footage check: kept 22 fitting clips, 1 scenes had nothing fitting
+[06:15:30] Second footage search for 1 scenes
+[06:15:30] Picture editor: 12/12 previews loaded
+[06:15:35] Gemini OK (gemini-flash-lite-latest)
+[06:15:35] Footage check: kept 0 fitting clips, 1 scenes had nothing fitting
+[06:17:51] Footage ready for 19 scenes
+[06:17:51] Gate (visuals): fit 100%, concept 5%, fallback 0
+[06:17:53] Freesound CC0 sound 'whoosh': Swoosh sound 4 (id 347549)
+[06:17:55] Freesound CC0 sound 'electric motor': Electric machine engine large air-conditioner hum noise (id 324665)
+[06:17:57] Freesound CC0 sound 'computer beep': as_ab_al_computer_noise_7_16bit.wav (id 543053)
+[06:17:59] Freesound CC0 sound 'electric motor': Drill bit falling 03.wav (id 418488)
+[06:18:01] Freesound CC0 sound 'camera shutter': Camera Manual Click.wav (id 521854)
+[06:18:02] Freesound CC0 sound 'whoosh': whoosh low (id 830856)
+[06:19:04] 51 clips rendered
+[06:19:04] Final render started
+[06:19:35] Freesound CC0 music: Orchestral Score 1 - Mastered NO Stereo Imaging.wav (id 621297)
+[06:20:55] Video ready: 20261029_0618_future_long.mp4 (231.8s)
+[06:20:56] Thumbnails for Test & Compare: thumbnails/20261029_0618_future_long/

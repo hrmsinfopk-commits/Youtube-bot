@@ -1,40 +1,39 @@
 {
- "topic": "How Do Satellites Stay In Space Without Falling?",
- "angle": "They are actually falling down constantly at 28,000 kilometers per hour, but they never hit the ground because the Earth curves away underneath them.",
- "why": "Explainer videos about orbital mechanics and gravity routinely pull tens of millions of views because they challenge basic intuition. This question is irresistible because everyone looks up at the sky and wonders how heavy metal objects defy gravity without running out of fuel.",
+ "topic": "How Does an 828-Meter Skyscraper Stand on Loose Sand",
+ "angle": "The world's tallest structure weighs roughly 500,000 tons and sits on shifting desert sand with zero bedrock, supported entirely by soil friction.",
+ "why": "Proven infrastructure explainers like underwater metro tunnels (19.2M views) and hydrostatic physics breakdowns (36M+ views) prove massive global hunger for 'impossible' civil engineering mysteries. It hooks viewers instantly because almost everyone recognizes Dubai's mega-tower, but almost nobody realizes it has no bedrock beneath it and should theoretically sink like a stone.",
  "keywords": [
-  "how satellites stay in space",
-  "why satellites don't fall to earth",
-  "orbital mechanics explained",
-  "what is orbit",
-  "how gravity works in space",
-  "satellite speed altitude",
-  "why don't satellites crash",
-  "how do things stay in orbit",
-  "iss speed around earth",
-  "space station gravity",
-  "physics of orbits",
-  "how rockets reach orbit"
+  "how does burj khalifa stand on sand",
+  "how do skyscrapers stand on loose sand",
+  "burj khalifa foundation engineering",
+  "how do buildings not sink in sand",
+  "friction pile foundation explained",
+  "how skyscrapers are built on sand",
+  "burj khalifa deep foundation",
+  "engineering behind burj khalifa foundation",
+  "why burj khalifa doesn't fall",
+  "skin friction piles",
+  "how do buildings stand on soft soil",
+  "burj khalifa underground structure"
  ],
  "facts": [
-  "Satellites in low Earth orbit travel at approximately 28,000 kilometers per hour, or about 8 kilometers per second.",
-  "At this extreme speed, as the satellite is pulled downward by Earth's gravity, the curvature of the Earth drops away at the exact same rate.",
-  "This continuous falling motion combined with forward momentum is what defines an orbit; it is a state of perpetual free fall.",
-  "There is still gravity in space; at the altitude of the International Space Station, about 400 kilometers up, Earth's gravity is still about 90% as strong as it is on the ground.",
-  "The reason astronauts float is not because there is no gravity, but because they and their spacecraft are falling together at the same acceleration.",
-  "Air resistance in the upper atmosphere, known as atmospheric drag, constantly slows satellites down, requiring periodic thruster burns to maintain their altitude.",
-  "Without correction burns, low Earth orbit satellites would eventually slow down, spiral inward, and burn up in the denser layers of the atmosphere.",
-  "Isaac Newton first conceptualized this exact principle in 1687 with his famous 'Newton's cannonball' thought experiment.",
-  "If a cannonball were fired fast enough from a high mountain, it would never hit the ground and would circle the entire planet.",
-  "Geostationary satellites orbit much higher, at about 35,786 kilometers above the equator, matching the exact rotational speed of the Earth.",
-  "At geostationary altitude, one full orbit takes 24 hours, making the satellite appear to hover stationary over a single point on the ground.",
-  "The energy required to reach orbit is almost entirely spent on gaining horizontal velocity rather than vertical height.",
-  "Modern satellite constellations like SpaceX's Starlink use automated ion propulsion systems to counteract atmospheric drag and adjust their orbits autonomously.",
-  "Britannica explains the mechanism behind Earth maintaining its stable path around the sun.",
-  "The New York Times reported on space debris being discovered twice within a span of days, noting an increasing casualty danger.",
-  "A farmer in Minnesota unexpectedly discovered an eleven-foot object during harvest that probably dropped from orbit.",
-  "A NASA spacecraft is currently monitoring the seasonal changes in leaf colors globally.",
-  "Publications have raised questions regarding the process of rocket remnants descending from orbit back to the ground."
+  "Dubai has virtually no accessible hard bedrock near the surface, consisting instead of loose windblown sand, gravel, and weak marine siltstone.",
+  "The Burj Khalifa rises 828 meters (2,717 feet) high and exerts an estimated total dead weight of around 500,000 metric tons onto the earth.",
+  "Traditional foundations rest directly on solid bedrock using 'end-bearing' piles, but engineers found no such rock layer within reachable drilling depth.",
+  "Engineers instead used 'skin friction' piles, which support weight through the sheer mechanical grip of soil particles pressing against the rough sides of concrete shafts.",
+  "The tower is anchored by 192 bored cast-in-place concrete piles positioned directly beneath the main superstructure.",
+  "Each individual pile measures 1.5 meters (nearly 5 feet) in diameter and reaches a depth of 50 meters (164 feet) underground.",
+  "A massive 3.7-meter (12-foot) thick concrete slab, called a raft foundation, sits atop all 192 piles to lock them together as a single monolithic base.",
+  "The foundation raft contains approximately 45,000 cubic meters (58,800 cubic yards) of high-strength concrete weighing over 110,000 tons on its own.",
+  "Groundwater under Dubai is exceptionally corrosive, carrying higher concentrations of dissolved chlorides and sulfates than typical ocean water.",
+  "To prevent underground saltwater from destroying the steel reinforcement bars, engineers installed an impressed current cathodic protection (ICCP) system.",
+  "The cathodic protection system continuously passes a tiny electric current through embedded titanium mesh anodes, chemically shielding the steel rebar from rust.",
+  "Pouring concrete during daytime desert temperatures reaching 50°C (122°F) would cause it to cure too quickly and crack from internal thermal shock.",
+  "Construction teams mixed shaved ice and liquid nitrogen into the wet concrete mix and poured exclusively after sunset to keep hydration temperatures below critical thresholds.",
+  "Engineers incorporated industrial fly ash and silica fume into the concrete mix, creating a high-density, low-porosity barrier that physically blocks saltwater intrusion.",
+  "Computer simulations predicted the entire skyscraper would sink between 75 and 80 millimeters into the earth over its lifespan.",
+  "Post-construction laser measurements revealed the tower only settled roughly 50 to 60 millimeters (around 2 inches), proving the friction piles held firmer than expected.",
+  "The building uses a tri-axial 'Y-shaped' buttressed core design, distributing structural weight symmetrically across the foundation while shedding high-altitude wind vortexes."
  ],
  "long_format": "big question",
  "format": "big question",
@@ -42,43 +41,43 @@
  "youtube_top": [
   {
    "title": "Bruno Mars - I Just Might [Official Music Video]",
-   "views": 178371695
+   "views": 179060482
   },
   {
    "title": "This is What Happens When A Hockey Season Ends 🤯",
-   "views": 160843382
+   "views": 162486386
   },
   {
    "title": "Ariana Grande - hate that i made you love me (official music video)",
-   "views": 107073590
+   "views": 108254556
   },
   {
    "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
-   "views": 101605826
-  },
-  {
-   "title": "WE CAN’T BELIEVE WE JUST HIT 26M FAMILY MEMBERS! 🥹😭🥰",
-   "views": 84474736
+   "views": 102035059
   },
   {
    "title": "How We Build an Alien Pool — Full Process Revealed #poolbuild #luxurypool  #satisfying #poolhacks",
-   "views": 83410119
+   "views": 84251847
   },
   {
    "title": "You Can't Order Here Unless You Build With LEGO 🤯",
-   "views": 76140688
+   "views": 78111037
   },
   {
    "title": "Why Can't We Print Unlimited Money 😱",
-   "views": 75015483
-  },
-  {
-   "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
-   "views": 73406225
+   "views": 75225290
   },
   {
    "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
-   "views": 73161425
+   "views": 74433741
+  },
+  {
+   "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
+   "views": 73586345
+  },
+  {
+   "title": "Don't Get Pulled In Roblox!",
+   "views": 68473594
   }
  ]
 }
