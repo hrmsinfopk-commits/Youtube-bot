@@ -977,6 +977,54 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-10-30 15:17",
+   "type": "short",
+   "title": "Can a Colorado River Basin Fuel Clouds to Create Snow? #shorts",
+   "topic": "Can a Colorado River Basin Fuel Clouds to Create Snow? - Explaining the physics and reality of weather modification technology being tested in a Northwest Colorado river basin to artificially fuel clouds and boost snowpack and rainfall.",
+   "style": "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
+   "youtube_id": "yrzcrm1vSLY",
+   "voice": "Charon",
+   "seconds": 28.7,
+   "scene_times": [
+    [
+     0.0,
+     "A new weather modification project in Northwest Colorado aims to artificially fuel clouds "
+    ],
+    [
+     7.1,
+     "Water managers want to boost low snowpack levels by targeting atmospheric moisture directl"
+    ],
+    [
+     13.7,
+     "The Upper Yampa initiative plans to install enhancement systems in the Flat Tops region."
+    ],
+    [
+     19.1,
+     "But success depends entirely on specific wind patterns and moisture density."
+    ],
+    [
+     24.8,
+     "Follow Tomorrowly for tomorrow's tech, today."
+    ]
+   ],
+   "format": "news",
+   "why": "Science and nature experiment shorts consistently pull strong traffic and high viewer retention when they explain hidden environmental interventions. This fresh story fills a gap on weather-altering tech without touching repetitive robotics or space topics.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics_added": 1,
+    "graphics": 1,
+    "own_share": 0.18,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -1455,6 +1503,14 @@
   "pixabay-v-290470",
   "pixabay-v-283713",
   "pixabay-v-13232",
-  "pixabay-v-6785"
+  "pixabay-v-6785",
+  "pixabay-v-278750",
+  "pixabay-v-1154",
+  "pixabay-v-364783",
+  "pixabay-v-134302",
+  "pixabay-v-135181",
+  "pixabay-v-363515",
+  "pixabay-v-82515",
+  "pixabay-v-118214"
  ]
 }
