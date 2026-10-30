@@ -93,11 +93,18 @@ and well-established knowledge. Flag ONLY real problems: an invented or wrong nu
 something only announced/planned/claimed presented as done, or an exaggeration that is not true. Style is not your job.
 For each problem give a corrected line of about the same length (same meaning where possible, honest wording).
 new_text is SPOKEN NARRATION ONLY: never include "(on screen: ...)", "(graphic: ...)", brackets or stage notes.
+Check the TITLE and THUMBNAIL TEXTS too - viewers judge us by them first. Absolute words (never, always, impossible, nothing,
+no one, every, only, first, forever, zero, can't) must be literally true; if not, soften them honestly ("almost never",
+"nearly impossible", "one of the first") while keeping the title curious and under 70 characters.
 FACT SHEET:
 {_facts(brief)}
+TITLE: {script.get("title", "")}
+THUMBNAIL TEXTS: {script.get("thumbnail_text", "")} | {script.get("thumbnail_text_alt", "")}
 SCRIPT:
 {_lines(scenes)}
-Return ONLY JSON {{"fixes": [{{"scene": 2, "problem": "...", "new_text": "...", "new_on_screen": ""}}]}} (empty list if all fine)"""
+Return ONLY JSON {{"fixes": [{{"scene": 2, "problem": "...", "new_text": "...", "new_on_screen": ""}}],
+"title_fix": {{"problem": "...", "new_title": "...", "new_thumbnail_text": "", "new_thumbnail_text_alt": ""}}}}
+(empty fixes list if all fine; "title_fix": null if title and thumbnail texts are true; leave a thumbnail field "" if it is fine)"""
     try:
         res = ask(cfg, prompt, json_mode=True, temperature=0.1)
     except Exception as e:  # noqa: BLE001
@@ -106,6 +113,19 @@ Return ONLY JSON {{"fixes": [{{"scene": 2, "problem": "...", "new_text": "...", 
     if isinstance(res, list):
         res = {"fixes": res}
     n = 0
+    tf = res.get("title_fix") if isinstance(res.get("title_fix"), dict) else None
+    if tf:
+        nt = str(tf.get("new_title") or "").strip().strip('"')
+        if nt and nt != script.get("title") and 15 <= len(nt) <= 90:
+            log(f"Gate title fix: {str(tf.get('problem', ''))[:100]} | {script.get('title')} -> {nt}")
+            script["title"] = nt
+            n += 1
+        for k in ("thumbnail_text", "thumbnail_text_alt"):
+            v = str(tf.get("new_" + k) or "").strip()
+            if v and script.get(k) and v != script[k] and len(v.split()) <= 5:
+                log(f"Gate {k} fix: {script[k]} -> {v}")
+                script[k] = v
+                n += 1
     for f in res.get("fixes", []):
         i, t = f.get("scene"), clean_line(f.get("new_text"))
         if isinstance(i, int) and 0 <= i < len(scenes) and t:

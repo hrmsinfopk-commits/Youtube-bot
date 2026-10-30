@@ -371,7 +371,7 @@ shown as a small name tag under the subject's name the first time real photos of
 
 Return ONLY JSON:
 {{
- "title": "SEO title in {title_lang}, max 70 chars, built on a contradiction, a surprising number or an 'impossible' fact + How/Why/What (e.g. 'How a Country With Zero Rivers Drinks Water', 'Why This Engine Never Stops Firing'); main search phrase early; must be TRUE - no clickbait lies{' (do NOT add #shorts)' if kind == 'short' else ''}",
+ "title": "SEO title in {title_lang}, max 70 chars, built on a contradiction, a surprising number or an 'impossible' fact + How/Why/What (e.g. 'How a Country With Zero Rivers Drinks Water', 'Why This Engine Never Stops Firing'); main search phrase early; must be TRUE - no clickbait lies; absolute words (never/always/impossible/only/first/zero) ONLY when literally true, otherwise 'almost never', 'nearly impossible'{' (do NOT add #shorts)' if kind == 'short' else ''}",
  "thumbnail_text": "2-4 punchy words that ADD to the title (never repeat it): the contradiction or the stakes, e.g. ZERO RIVERS?",
  "thumbnail_text_alt": "a DIFFERENT 2-4 word thumbnail text (another angle: a number, a question or a warning) for A/B testing",
  "thumbnail_scene": "0-based index of the scene whose FOOTAGE tells the whole story in one glance (one clear subject, strong contrast, no graphic) - becomes the thumbnail picture",
