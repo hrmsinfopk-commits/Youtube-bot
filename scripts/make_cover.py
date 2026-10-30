@@ -5,6 +5,7 @@ usage: python scripts/make_cover.py <work dir with song.wav> <out dir> <seed-vc 
 3) Seed-VC singing voice conversion (f0-conditioned: the melody is copied, not re-composed), 4) mix back with the music.
 """
 import asyncio
+import os
 import subprocess
 import sys
 import time
@@ -15,6 +16,9 @@ import soundfile as sf
 
 WORK, OUT, SEEDVC, SEP = (Path(a) for a in sys.argv[1:5])
 OUT.mkdir(parents=True, exist_ok=True)
+ONLY = os.environ.get("COVER_VOICE", "")          # run just one voice (parallel jobs)
+STEPS = os.environ.get("COVER_STEPS", "25")      # fewer diffusion steps = faster on CPU
+REF_SEC = os.environ.get("COVER_REF_SEC", "20")  # shorter reference = longer source chunks = fewer chunks
 VOICES = {   # synthetic voices only (no real singer is imitated)
     "A_urdu_male": ("ur-PK-AsadNeural",
                     "Dil ki baat kehna asaan nahin hota. Kabhi kabhi yaadein itni gehri hoti hain ke raat bhar neend nahin aati. "
@@ -50,15 +54,17 @@ def main():
 
     import edge_tts
     for name, (voice, text) in VOICES.items():
+        if ONLY and name != ONLY:
+            continue
         try:
             mp3 = WORK / f"ref_{name}.mp3"
             asyncio.run(edge_tts.Communicate(text, voice, rate="-8%").save(str(mp3)))
             ref = WORK / f"ref_{name}.wav"
-            run(["ffmpeg", "-v", "error", "-y", "-i", mp3, "-t", "20", "-ac", "1", "-ar", "22050", ref])
+            run(["ffmpeg", "-v", "error", "-y", "-i", mp3, "-t", REF_SEC, "-ac", "1", "-ar", "22050", ref])
             vc_dir = WORK / f"vc_{name}"
             t = time.time()
             run([sys.executable, "inference.py", "--source", voc_mono, "--target", ref, "--output", vc_dir,
-                 "--diffusion-steps", "25", "--inference-cfg-rate", "0.7", "--f0-condition", "True",
+                 "--diffusion-steps", STEPS, "--inference-cfg-rate", "0.7", "--f0-condition", "True",
                  "--auto-f0-adjust", "False", "--semi-tone-shift", "0", "--fp16", "False"], cwd=SEEDVC)
             vc = next(vc_dir.glob("*.wav"))
             print(f"{name}: converted in {time.time() - t:.0f}s", flush=True)
@@ -79,7 +85,8 @@ def main():
                  OUT / f"vocals_only_{name}.mp3"])
         except Exception as e:  # noqa: BLE001
             print(f"{name} failed: {e}", flush=True)
-    run(["ffmpeg", "-v", "error", "-y", "-i", inst, "-c:a", "libmp3lame", "-b:a", "320k", OUT / "music_only.mp3"])
+    if not ONLY or ONLY == "A_urdu_male":
+        run(["ffmpeg", "-v", "error", "-y", "-i", inst, "-c:a", "libmp3lame", "-b:a", "320k", OUT / "music_only.mp3"])
     print(f"done in {time.time() - t0:.0f}s", flush=True)
 
 
