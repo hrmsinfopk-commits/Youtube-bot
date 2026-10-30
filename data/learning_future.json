@@ -1,66 +1,66 @@
 {
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "channel": {
   "subscribers": 13,
-  "total_views": 7365,
-  "videos": 13,
-  "watch_hours_12m": 21.9
+  "total_views": 10121,
+  "videos": 14,
+  "watch_hours_12m": 24.4
  },
  "style_scores": {
   "Future scenario: 'It's 2040...' - show how this changes everyday life": 1.02,
   "Before vs now: how this used to work vs what just changed": 0.94,
   "": 1.0,
-  "Shocking fact first: open with the most unbelievable detail, then explain why": 0.95,
+  "Shocking fact first: open with the most unbelievable detail, then explain why": 0.94,
   "Countdown: 3-5 surprising facts about it, the most shocking one last": 1.08,
   "Explainer: one big question, answered step by step with a surprise at the end": 0.71
  },
  "format_scores": {
   "short: news": {
-   "videos": 5,
-   "score": 0.99,
-   "avg_views": 1049,
-   "avg_pct": 57.5
+   "videos": 6,
+   "score": 1.0,
+   "avg_views": 996,
+   "avg_pct": 58.5
   },
   "short: big question": {
    "videos": 2,
-   "score": 0.88,
-   "avg_views": 274,
-   "avg_pct": 59.1
+   "score": 0.87,
+   "avg_views": 296,
+   "avg_pct": 59.0
   },
   "short: teaser": {
    "videos": 1,
    "score": 1.09,
-   "avg_views": 1037,
-   "avg_pct": 68.9
+   "avg_views": 1057,
+   "avg_pct": 68.1
   },
   "long: deep dive": {
    "videos": 1,
-   "score": 1.04,
+   "score": 1.03,
    "avg_views": 45,
    "avg_pct": 40.7
   },
   "long: big question": {
    "videos": 2,
    "score": 0.79,
-   "avg_views": 207,
-   "avg_pct": 25.8
+   "avg_views": 236,
+   "avg_pct": 25.7
   }
  },
  "insights": [
-  "Promoting long-form content in Shorts causes severe abandonment: directing viewers to 'The full breakdown is on our channel' triggered a massive 24.1% audience drop-off at 38.6s.",
-  "Shorts reliably drive discovery over long-form: 5 of 8 Shorts crossed 1,000 views (averaging ~850 views), while 2 of the 3 long-form videos struggled below 50 views (note: 3 long-form videos is a very small sample size).",
-  "Subscriber acquisition is heavily concentrated in breakthrough tech/futuristic news: Quantinuum (+4), Tesla Roadster (+4), and Cell Aging (+3) generated 11 of the channel's 12 total subscribers.",
-  "Viewer interaction is critically low across all formats: only 2 comments were generated across all 11 videos combined, confirming end-of-video questions or prompts are failing to trigger replies.",
-  "Retention does not guarantee reach if the Shorts feed algorithm is missed: 'Nuclear Submarines' had the highest retention (78.01% AVP) but only reached 48 views because only 6% came from the Shorts feed.",
-  "Specific, high-stakes numbers in titles dramatically boost long-form clicks: adding 'at 2,000°C' to the Jet Engines title saw views jump from 4 to 410, though view percentage remained low (~24%).",
-  "Countdown and news formats achieve the strongest Shorts retention (64%–69% AVP), whereas question/explainer hooks saw heavy drop-offs within the first 7 seconds (e.g., Icebergs lost 9.0% at 6.9s)."
+  "Tech breakthroughs and robotics consistently hit 1,000+ views on Shorts (Tesla Roadster 1,308, Quantinuum 1,305, Aging 1,126, Unitree 1,111), while general science/nature questions saw lower traction (Icebergs 543, Submarines 49).",
+  "Subscriber conversions come almost entirely from 'Future scenario' and high-tech breakthrough Shorts (Quantinuum +4, Tesla Roadster +4, Aging +3), whereas explainers and teasers gained 0 subscribers.",
+  "Telling viewers to check the channel kills Short retention: mentioning 'The full breakdown is on our channel' triggered an immediate 23.6% drop-off at 38.6s.",
+  "Opening hooks between 4s and 7s lose 4% to 10% of viewers when stating background setup instead of delivering fast curiosity triggers (e.g., Icebergs dropped 9.8% at 6.9s).",
+  "Call-to-actions are failing across the board: 10 out of 12 videos got 0 comments, indicating ending questions need to be controversial or directly debatable rather than rhetorical.",
+  "'News' format Shorts paired with countdown or future styles achieve the best retention, consistently averaging 63% to 68% view duration.",
+  "Long-form data is too thin to confirm reach patterns (only 3 videos), but specific numerical titles ('at 2,000°C' with 468 views) vastly outperformed vague conceptual titles ('The Engineering Secret' with 4 views)."
  ],
  "videos": [
   {
    "title": "Quantinuum Just Shattered the Quantum Computing Record! #shorts",
    "type": "short",
    "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
-   "views": 1304,
+   "views": 1305,
    "averageViewPercentage": 46.01,
    "likes": 15,
    "comments": 0,
@@ -83,7 +83,7 @@
     "PLAYLIST": 1,
     "SHORTS": 88
    },
-   "age_days": 9,
+   "age_days": 10,
    "youtube_id": "J9O4qdiPSgk"
   },
   {
@@ -114,7 +114,7 @@
     "SHORTS": 95,
     "SOUND_PAGE": 0
    },
-   "age_days": 9,
+   "age_days": 10,
    "youtube_id": "ujBL9LBgPHk"
   },
   {
@@ -128,7 +128,7 @@
    "shares": 4,
    "subscribersGained": 1,
    "format": "deep dive",
-   "score": 1.04,
+   "score": 1.03,
    "notes": [
     "Jo log aaye unhon ne achhi dekhi, lekin bohat kam log aaye: topic/title/thumbnail ne kashish nahi ki.",
     "Sab se zyada log 40.9s par chhod gaye (8.6% gire) - wahan line thi: \"For seventy years, every deep space mission relied on chemical propellants. Thin\"."
@@ -142,7 +142,7 @@
     "EXT_URL": 4,
     "PLAYLIST": 4
    },
-   "age_days": 8,
+   "age_days": 9,
    "youtube_id": "BZuC5VJ6kDM"
   },
   {
@@ -172,21 +172,21 @@
     "PLAYLIST": 1,
     "SHORTS": 91
    },
-   "age_days": 8,
+   "age_days": 9,
    "youtube_id": "sWFi6T_3Kf8"
   },
   {
    "title": "How Nuclear Submarines Make Unlimited Air Underwater #shorts",
    "type": "short",
    "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
-   "views": 48,
+   "views": 49,
    "averageViewPercentage": 78.01,
    "likes": 3,
    "comments": 0,
    "shares": 3,
    "subscribersGained": 0,
    "format": "big question",
-   "score": 0.95,
+   "score": 0.94,
    "notes": [
     "Jo log aaye unhon ne achhi dekhi, lekin bohat kam log aaye: topic/title/thumbnail ne kashish nahi ki.",
     "Sab se zyada log 12.0s par chhod gaye (8.3% gire) - wahan line thi: \"Yet they don't carry massive oxygen tanks. Tanks waste precious space and create\"."
@@ -194,14 +194,14 @@
    "traffic": {
     "NO_LINK_OTHER": 2,
     "SUBSCRIBER": 8,
-    "YT_CHANNEL": 15,
-    "YT_SEARCH": 50,
+    "YT_CHANNEL": 16,
+    "YT_SEARCH": 49,
     "YT_OTHER_PAGE": 2,
     "EXT_URL": 2,
-    "PLAYLIST": 15,
+    "PLAYLIST": 14,
     "SHORTS": 6
    },
-   "age_days": 7,
+   "age_days": 8,
    "youtube_id": "RFzD-PyILsQ"
   },
   {
@@ -229,7 +229,7 @@
     "PLAYLIST": 1,
     "SHORTS": 83
    },
-   "age_days": 6,
+   "age_days": 7,
    "youtube_id": "dck9ttHCJic"
   },
   {
@@ -250,21 +250,21 @@
     "SUBSCRIBER": 25,
     "YT_CHANNEL": 75
    },
-   "age_days": 5,
+   "age_days": 6,
    "youtube_id": "oGPOL4VkwGI"
   },
   {
    "title": "Scientists Just Reversed 60 Years of Aging in Human Cells #shorts",
    "type": "short",
    "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
-   "views": 1135,
-   "averageViewPercentage": 68.24,
+   "views": 1126,
+   "averageViewPercentage": 68.3,
    "likes": 16,
    "comments": 1,
    "shares": 0,
    "subscribersGained": 3,
    "format": "news",
-   "score": 1.1,
+   "score": 1.09,
    "notes": [
     "Sab se zyada log 5.1s par chhod gaye (4.5% gire) - wahan line thi: \"Scientists just reversed sixty years of aging in human cells.\"."
    ],
@@ -277,15 +277,15 @@
     "PLAYLIST": 0,
     "SHORTS": 90
    },
-   "age_days": 5,
+   "age_days": 6,
    "youtube_id": "5yhWmoUjmZY"
   },
   {
    "title": "Why Don't Jet Engines Melt at 2,000°C? The Hidden Trick",
    "type": "long",
    "style": "Before vs now: how this used to work vs what just changed",
-   "views": 410,
-   "averageViewPercentage": 23.66,
+   "views": 468,
+   "averageViewPercentage": 23.46,
    "likes": 2,
    "comments": 1,
    "shares": 1,
@@ -294,52 +294,52 @@
    "score": 0.98,
    "notes": [
     "Average se kaafi behtar: yeh topic/andaaz dobara try karna chahiye.",
-    "Sab se zyada log 17.0s par chhod gaye (11.8% gire) - wahan line thi: \"By basic physics, those blades should liquefy into glowing molten soup mid-fligh\"."
+    "Sab se zyada log 14.9s par chhod gaye (12.2% gire) - wahan line thi: \"Yet the nickel-based superalloy turbine blades spinning right behind that fire m\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
-    "SUBSCRIBER": 95,
+    "SUBSCRIBER": 96,
     "YT_CHANNEL": 1,
     "YT_SEARCH": 0,
     "RELATED_VIDEO": 3
    },
-   "age_days": 4,
+   "age_days": 5,
    "youtube_id": "CH5p37icZXU"
   },
   {
    "title": "Why Don't Jet Engines Melt Inside? #shorts",
    "type": "short",
    "style": "Countdown: 3-5 surprising facts about it, the most shocking one last",
-   "views": 1037,
-   "averageViewPercentage": 68.87,
-   "likes": 22,
+   "views": 1057,
+   "averageViewPercentage": 68.08,
+   "likes": 23,
    "comments": 1,
    "shares": 0,
    "subscribersGained": 0,
    "format": "teaser",
    "score": 1.09,
    "notes": [
-    "Sab se zyada log 38.6s par chhod gaye (24.1% gire) - wahan line thi: \"The full breakdown is on our channel.\"."
+    "Sab se zyada log 38.6s par chhod gaye (23.6% gire) - wahan line thi: \"The full breakdown is on our channel.\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 0,
     "YT_CHANNEL": 1,
     "YT_SEARCH": 3,
-    "YT_OTHER_PAGE": 0,
+    "YT_OTHER_PAGE": 1,
     "PLAYLIST": 0,
     "SHORTS": 96
    },
-   "age_days": 4,
+   "age_days": 5,
    "youtube_id": "-oX0q-L56PM"
   },
   {
    "title": "How Do Icebergs Float If They Weigh Millions of Tons #shorts",
    "type": "short",
    "style": "Explainer: one big question, answered step by step with a surprise at the end",
-   "views": 501,
-   "averageViewPercentage": 40.16,
-   "likes": 18,
+   "views": 543,
+   "averageViewPercentage": 39.98,
+   "likes": 22,
    "comments": 0,
    "shares": 1,
    "subscribersGained": 0,
@@ -348,19 +348,48 @@
    "notes": [
     "Log jaldi chhod gaye: hook ya shuru ka hissa kamzor tha.",
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
-    "Sab se zyada log 6.9s par chhod gaye (9.0% gire) - wahan line thi: \"Common sense says heavy rocks sink right to the bottom.\"."
+    "Sab se zyada log 6.9s par chhod gaye (9.8% gire) - wahan line thi: \"Common sense says heavy rocks sink right to the bottom.\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 1,
-    "YT_SEARCH": 4,
+    "YT_CHANNEL": 1,
+    "YT_SEARCH": 5,
     "YT_OTHER_PAGE": 1,
     "EXT_URL": 0,
+    "PLAYLIST": 1,
+    "SHORTS": 92
+   },
+   "age_days": 4,
+   "youtube_id": "Pcj4yIUFDWs"
+  },
+  {
+   "title": "Tesla Just Started Building Humanoid Robots on Real Production Lines #shorts",
+   "type": "short",
+   "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
+   "views": 743,
+   "averageViewPercentage": 63,
+   "likes": 13,
+   "comments": 0,
+   "shares": 0,
+   "subscribersGained": 1,
+   "format": "news",
+   "score": 1.02,
+   "notes": [
+    "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
+    "Sab se zyada log 5.4s par chhod gaye (5.6% gire) - wahan line thi: \"Tesla just started active manufacturing of its Optimus humanoid robot on real as\"."
+   ],
+   "traffic": {
+    "NO_LINK_OTHER": 0,
+    "SUBSCRIBER": 0,
+    "YT_CHANNEL": 0,
+    "YT_SEARCH": 2,
+    "YT_OTHER_PAGE": 1,
     "PLAYLIST": 0,
-    "SHORTS": 94
+    "SHORTS": 96
    },
    "age_days": 3,
-   "youtube_id": "Pcj4yIUFDWs"
+   "youtube_id": "ID7098rLP6g"
   }
  ]
 }
