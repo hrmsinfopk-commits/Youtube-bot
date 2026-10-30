@@ -15,7 +15,7 @@ from pathlib import Path
 import requests
 
 API = "https://generativelanguage.googleapis.com/v1beta"
-KEY = os.environ["GEMINI_API_KEY"]
+KEY = os.environ.get("LYRIA_API_KEY") or os.environ["GEMINI_API_KEY"]   # separate paid key keeps the bot's free key free
 H = {"x-goog-api-key": KEY, "Content-Type": "application/json"}
 
 

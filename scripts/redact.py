@@ -2,7 +2,7 @@
 import os
 import sys
 
-NAMES = ["GEMINI_API_KEY", "PEXELS_API_KEY", "PIXABAY_API_KEY",
+NAMES = ["GEMINI_API_KEY", "LYRIA_API_KEY", "PEXELS_API_KEY", "PIXABAY_API_KEY",
          "YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"]
 secrets = [os.environ.get(n, "") for n in NAMES]
 secrets = [s for s in secrets if len(s) >= 6]

@@ -26,6 +26,7 @@ jobs:
       - name: Make the song (outputs are encrypted - only the owner can open them)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LYRIA_API_KEY: ${{ secrets.LYRIA_API_KEY }}
         run: |
           rm -rf song/out
           python scripts/make_song.py song/request.json song/out 2>&1 | python scripts/redact.py song/run.log
