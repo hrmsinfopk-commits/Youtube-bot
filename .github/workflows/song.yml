@@ -1,0 +1,39 @@
+name: Song maker (side tool)
+
+on:
+  workflow_dispatch: {}
+  push:
+    paths: ["song/request.json"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  song:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: pip install -q requests
+      - name: Make the song (outputs are encrypted - only the owner can open them)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          rm -rf song/out
+          python scripts/make_song.py song/request.json song/out 2>&1 | python scripts/redact.py song/run.log
+      - name: Save
+        run: |
+          git config user.name "yt-bot"
+          git config user.email "yt-bot@users.noreply.github.com"
+          git add song/out song/run.log
+          git commit -m "song: new output" || exit 0
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && exit 0; sleep 7; done
+          exit 1
