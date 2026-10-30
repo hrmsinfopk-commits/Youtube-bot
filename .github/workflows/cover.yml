@@ -1,0 +1,77 @@
+name: AI singer cover (side tool)
+
+# Keeps the owner's singing melody, timing and lyrics exactly, and swaps his voice for an AI voice.
+# Privacy: the runner makes a one-time key pair and publishes only the public half; the input is uploaded encrypted to
+# that key (useless after this run), and the outputs are encrypted to song/pubkey.pem (only the owner can open them).
+
+on:
+  workflow_dispatch: {}
+  push:
+    paths: ["song/cover_request.txt"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  cover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: One-time key for this run (publish public half)
+        run: |
+          mkdir -p /tmp/rk song/runner
+          openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:4096 -out /tmp/rk/private.pem 2>/dev/null
+          openssl pkey -in /tmp/rk/private.pem -pubout -out song/runner/${{ github.run_id }}.pem
+          git config user.name "yt-bot"
+          git config user.email "yt-bot@users.noreply.github.com"
+          git add song/runner && git commit -qm "cover: runner key ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 5; done
+      - name: Install separation + voice conversion
+        run: |
+          sudo apt-get install -y -qq ffmpeg > /dev/null || true
+          python -m venv /tmp/sep && /tmp/sep/bin/pip install -q "audio-separator[cpu]"
+          git clone -q --depth 1 https://github.com/Plachtaa/seed-vc.git /tmp/seedvc
+          pip install -q torch==2.4.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cpu
+          grep -viE "torch|gradio|FreeSimpleGUI|sounddevice|--pre" /tmp/seedvc/requirements.txt > /tmp/req.txt
+          pip install -q -r /tmp/req.txt
+          pip install -q edge-tts soundfile
+      - name: Wait for the encrypted input
+        run: |
+          for i in $(seq 1 80); do
+            git fetch -q origin main
+            if git cat-file -e FETCH_HEAD:song/in/${{ github.run_id }}.key.enc 2>/dev/null; then
+              git show FETCH_HEAD:song/in/${{ github.run_id }}.key.enc > /tmp/in.key.enc
+              git show FETCH_HEAD:song/in/${{ github.run_id }}.tar.enc > /tmp/in.tar.enc
+              openssl pkeyutl -decrypt -inkey /tmp/rk/private.pem -in /tmp/in.key.enc -out /tmp/in.key
+              mkdir -p /tmp/work && openssl enc -d -aes-256-cbc -pbkdf2 -in /tmp/in.tar.enc -pass file:/tmp/in.key | tar -x -C /tmp/work
+              ls -la /tmp/work; exit 0
+            fi
+            sleep 15
+          done
+          echo "input never arrived"; exit 1
+      - name: Make the AI cover
+        run: python scripts/make_cover.py /tmp/work /tmp/out /tmp/seedvc /tmp/sep/bin/audio-separator 2>&1 | tee /tmp/cover.log
+      - name: Save (encrypted for the owner)
+        if: always()
+        run: |
+          git fetch -q origin main && git reset -q --hard FETCH_HEAD
+          mkdir -p song/cover_out && rm -f song/cover_out/*
+          cp /tmp/cover.log song/cover_out/log.txt 2>/dev/null || true
+          for f in /tmp/out/*; do
+            [ -f "$f" ] || continue
+            k=$(openssl rand -hex 32); echo -n "$k" > /tmp/k
+            n=$(basename "$f")
+            openssl enc -aes-256-cbc -pbkdf2 -salt -in "$f" -out "song/cover_out/$n.enc" -pass file:/tmp/k
+            openssl pkeyutl -encrypt -pubin -inkey song/pubkey.pem -in /tmp/k -out "song/cover_out/$n.key.enc"
+          done
+          rm -f /tmp/k song/in/${{ github.run_id }}.* song/runner/${{ github.run_id }}.pem
+          git add -A song && git commit -qm "cover: output ${{ github.run_id }}" || exit 0
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && exit 0; sleep 7; done
