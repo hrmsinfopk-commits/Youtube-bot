@@ -1,0 +1,57 @@
+$ ffmpeg -v error -y -i /tmp/work/song.wav -ar 44100 -ac 2 /tmp/work/full44.wav
+$ /tmp/sep/bin/audio-separator /tmp/work/full44.wav --model_filename Kim_Vocal_2.onnx --output_dir /tmp/work/sep --output_format WAV
+2026-10-30 06:59:25.277 - INFO - cli - Separator version 0.48.0 beginning with input path(s): /tmp/work/full44.wav
+2026-10-30 06:59:26.698 - INFO - separator - Separator version 0.48.0 instantiating with output_dir: /tmp/work/sep, output_format: WAV
+2026-10-30 06:59:26.698 - INFO - separator - Using model directory from model_file_dir parameter: /tmp/audio-separator-models/
+2026-10-30 06:59:26.698 - INFO - separator - Operating System: Linux #17-Ubuntu SMP PREEMPT Thu Sep 24 15:54:51 UTC 2026
+2026-10-30 06:59:26.698 - INFO - separator - System: Linux Node: runnervmnwato Release: 7.0.0-1017-azure Machine: x86_64 Proc: 
+2026-10-30 06:59:26.698 - INFO - separator - Python Version: 3.10.22
+2026-10-30 06:59:26.698 - INFO - separator - PyTorch Version: 2.14.1+cu130
+2026-10-30 06:59:26.726 - INFO - separator - FFmpeg installed: ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers
+2026-10-30 06:59:26.726 - INFO - separator - ONNX Runtime CPU package installed with version: 1.23.2
+2026-10-30 06:59:26.727 - INFO - separator - No hardware acceleration could be configured, running in CPU mode
+2026-10-30 06:59:26.727 - INFO - separator - Loading model Kim_Vocal_2.onnx...
+[33mWARNING: onnxruntime is not built with CUDA 12.x support. Please install a version that supports CUDA 12.x, or call preload_dlls with cuda=False and cudnn=False.[0m
+  0%|          | 0.00/3.54k [00:00<?, ?iB/s]28.3kiB [00:00, 93.9MiB/s]                  
+  0%|          | 0.00/66.8M [00:00<?, ?iB/s] 10%|█         | 6.92M/66.8M [00:00<00:00, 69.2MiB/s] 31%|███▏      | 21.0M/66.8M [00:00<00:00, 105MiB/s]  63%|██████▎   | 42.0M/66.8M [00:00<00:00, 151MiB/s] 94%|█████████▍| 62.9M/66.8M [00:00<00:00, 160MiB/s]100%|██████████| 66.8M/66.8M [00:00<00:00, 147MiB/s]
+2026-10-30 06:59:27.610 - INFO - separator - Hash of model file /tmp/audio-separator-models/Kim_Vocal_2.onnx is 970b3f9492014d18fefeedfe4773cb42
+  0%|          | 0.00/1.00k [00:00<?, ?iB/s]4.38kiB [00:00, 15.8MiB/s]                  
+  0%|          | 0.00/2.77k [00:00<?, ?iB/s]15.4kiB [00:00, 12.3MiB/s]                  
+2026-10-30 06:59:28.941 - INFO - separator - Load model duration: 00:00:02
+2026-10-30 06:59:28.941 - INFO - separator - Processing file: /tmp/work/full44.wav
+2026-10-30 06:59:28.941 - INFO - separator - Starting separation process for audio_file_path: /tmp/work/full44.wav
+2026-10-30 06:59:28.941 - INFO - common_separator - Input audio subtype: PCM_16
+2026-10-30 06:59:28.941 - INFO - common_separator - Detected input bit depth: 16-bit
+  0%|          | 0/35 [00:00<?, ?it/s]  3%|▎         | 1/35 [00:02<01:27,  2.59s/it]  6%|▌         | 2/35 [00:05<01:25,  2.58s/it]  9%|▊         | 3/35 [00:07<01:19,  2.48s/it] 11%|█▏        | 4/35 [00:09<01:15,  2.43s/it] 14%|█▍        | 5/35 [00:12<01:10,  2.36s/it] 17%|█▋        | 6/35 [00:14<01:07,  2.32s/it] 20%|██        | 7/35 [00:16<01:04,  2.29s/it] 23%|██▎       | 8/35 [00:18<01:00,  2.26s/it] 26%|██▌       | 9/35 [00:20<00:58,  2.24s/it] 29%|██▊       | 10/35 [00:23<00:55,  2.24s/it] 31%|███▏      | 11/35 [00:25<00:53,  2.22s/it] 34%|███▍      | 12/35 [00:27<00:50,  2.21s/it] 37%|███▋      | 13/35 [00:29<00:48,  2.21s/it] 40%|████      | 14/35 [00:31<00:46,  2.21s/it] 43%|████▎     | 15/35 [00:34<00:43,  2.19s/it] 46%|████▌     | 16/35 [00:36<00:41,  2.19s/it] 49%|████▊     | 17/35 [00:38<00:39,  2.19s/it] 51%|█████▏    | 18/35 [00:40<00:37,  2.22s/it] 54%|█████▍    | 19/35 [00:43<00:35,  2.22s/it] 57%|█████▋    | 20/35 [00:45<00:33,  2.21s/it] 60%|██████    | 21/35 [00:47<00:31,  2.23s/it] 63%|██████▎   | 22/35 [00:49<00:29,  2.24s/it] 66%|██████▌   | 23/35 [00:52<00:26,  2.25s/it] 69%|██████▊   | 24/35 [00:54<00:24,  2.25s/it] 71%|███████▏  | 25/35 [00:56<00:22,  2.25s/it] 74%|███████▍  | 26/35 [00:58<00:20,  2.26s/it] 77%|███████▋  | 27/35 [01:01<00:18,  2.26s/it] 80%|████████  | 28/35 [01:03<00:15,  2.27s/it] 83%|████████▎ | 29/35 [01:05<00:13,  2.26s/it] 86%|████████▌ | 30/35 [01:07<00:11,  2.28s/it] 89%|████████▊ | 31/35 [01:10<00:09,  2.27s/it] 91%|█████████▏| 32/35 [01:12<00:06,  2.26s/it] 94%|█████████▍| 33/35 [01:14<00:04,  2.27s/it] 97%|█████████▋| 34/35 [01:17<00:02,  2.30s/it]100%|██████████| 35/35 [01:19<00:00,  2.28s/it]100%|██████████| 35/35 [01:19<00:00,  2.27s/it]
+  0%|          | 0/27 [00:00<?, ?it/s]  7%|▋         | 2/27 [00:00<00:02, 12.06it/s] 15%|█▍        | 4/27 [00:00<00:01, 11.93it/s] 22%|██▏       | 6/27 [00:00<00:01, 11.91it/s] 30%|██▉       | 8/27 [00:00<00:01, 11.85it/s] 37%|███▋      | 10/27 [00:00<00:01, 11.85it/s] 44%|████▍     | 12/27 [00:01<00:01, 11.89it/s] 52%|█████▏    | 14/27 [00:01<00:01, 11.92it/s] 59%|█████▉    | 16/27 [00:01<00:00, 11.80it/s] 67%|██████▋   | 18/27 [00:01<00:00, 11.69it/s] 74%|███████▍  | 20/27 [00:01<00:00, 11.67it/s] 81%|████████▏ | 22/27 [00:01<00:00, 11.72it/s] 89%|████████▉ | 24/27 [00:02<00:00, 11.69it/s] 96%|█████████▋| 26/27 [00:02<00:00, 11.55it/s]100%|██████████| 27/27 [00:02<00:00, 11.73it/s]
+2026-10-30 07:01:01.786 - INFO - mdx_separator - Saving Instrumental stem to full44_(Instrumental)_Kim_Vocal_2.wav...
+2026-10-30 07:01:01.786 - INFO - common_separator - Audio duration is 0.04 hours (155.13 seconds).
+2026-10-30 07:01:01.786 - INFO - common_separator - Using pydub for writing.
+2026-10-30 07:01:01.792 - INFO - common_separator - Writing output with 16-bit depth
+2026-10-30 07:01:02.207 - INFO - mdx_separator - Saving Vocals stem to full44_(Vocals)_Kim_Vocal_2.wav...
+2026-10-30 07:01:02.208 - INFO - common_separator - Audio duration is 0.04 hours (155.13 seconds).
+2026-10-30 07:01:02.208 - INFO - common_separator - Using pydub for writing.
+2026-10-30 07:01:02.214 - INFO - common_separator - Writing output with 16-bit depth
+2026-10-30 07:01:02.852 - INFO - common_separator - Clearing input audio file paths, sources and stems...
+2026-10-30 07:01:02.853 - INFO - separator - Separation duration: 00:01:33
+2026-10-30 07:01:02.853 - INFO - cli - Separation complete! Output file(s): full44_(Instrumental)_Kim_Vocal_2.wav full44_(Vocals)_Kim_Vocal_2.wav
+separated in 99s: full44_(Vocals)_Kim_Vocal_2.wav / full44_(Instrumental)_Kim_Vocal_2.wav
+$ ffmpeg -v error -y -i /tmp/work/sep/full44_(Vocals)_Kim_Vocal_2.wav -ac 1 -ar 44100 /tmp/work/vocals_mono.wav
+$ ffmpeg -v error -y -i /tmp/work/ref_A_urdu_male.mp3 -t 9 -ac 1 -ar 22050 /tmp/work/ref_A_urdu_male.wav
+$ /opt/hostedtoolcache/Python/3.10.22/x64/bin/python inference.py --source /tmp/work/vocals_mono.wav --target /tmp/work/ref_A_urdu_male.wav --output /tmp/work/vc_A_urdu_male --diffusion-steps 15 --inference-cfg-rate 0.7 --f0-condition True --auto-f0-adjust False --semi-tone-shift 0 --fp16 False
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+Warning: Skipped loading some keys due to shape mismatch: {'estimator.t_embedder2.mlp.2.bias', 'estimator.t_embedder2.mlp.0.weight', 'estimator.conv1.weight', 'estimator.res_projection.weight', 'estimator.t_embedder2.mlp.0.bias', 'estimator.conv2.weight', 'estimator.conv1.bias', 'estimator.res_projection.bias', 'estimator.conv2.bias', 'estimator.t_embedder2.mlp.2.weight', 'estimator.input_pos'}
+cfm loaded
+length_regulator loaded
+Loading weights from nvidia/bigvgan_v2_44khz_128band_512x
+Removing weight norm...
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 0/15 [00:00<?, ?it/s]  7%|▋         | 1/15 [00:11<02:35, 11.09s/it] 13%|█▎        | 2/15 [00:22<02:23, 11.07s/it] 20%|██        | 3/15 [00:33<02:13, 11.11s/it] 27%|██▋       | 4/15 [00:44<02:02, 11.11s/it] 33%|███▎      | 5/15 [00:55<01:50, 11.07s/it] 40%|████      | 6/15 [01:06<01:39, 11.08s/it] 47%|████▋     | 7/15 [01:17<01:28, 11.06s/it] 53%|█████▎    | 8/15 [01:28<01:17, 11.12s/it] 60%|██████    | 9/15 [01:39<01:06, 11.15s/it] 67%|██████▋   | 10/15 [01:51<00:55, 11.14s/it] 73%|███████▎  | 11/15 [02:02<00:44, 11.11s/it] 80%|████████  | 12/15 [02:13<00:33, 11.19s/it] 87%|████████▋ | 13/15 [02:24<00:22, 11.13s/it] 93%|█████████▎| 14/15 [02:35<00:11, 11.19s/it]100%|██████████| 15/15 [02:47<00:00, 11.20s/it]100%|██████████| 15/15 [02:47<00:00, 11.14s/it]
