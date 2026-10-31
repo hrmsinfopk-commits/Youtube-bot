@@ -1,4 +1,6 @@
 """YouTube upload via the official Data API (OAuth refresh token stored as GitHub secret)."""
+import re
+
 from .common import log, secret, yt_secret_suffix
 
 SCOPES = ["https://www.googleapis.com/auth/youtube.upload",
@@ -23,6 +25,23 @@ def ready():
     return all(secret(k) for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN" + yt_secret_suffix()))
 
 
+def clean_tags(tags, budget=450):
+    """YouTube rejects the whole upload ("invalidTags") if tags contain < or >, or all tags together pass 500
+    characters (a tag with a space counts 2 extra for its quotes, plus 1 per comma). Keep it safely under."""
+    out, seen, used = [], set(), 0
+    for t in tags or []:
+        t = " ".join(re.sub(r"<[^>]*>", " ", str(t)).replace("<", " ").replace(">", " ").replace(",", " ").replace('"', "").lstrip("#").split())[:60]
+        if len(t) < 2 or t.lower() in seen:
+            continue
+        cost = len(t) + (2 if " " in t else 0) + (1 if out else 0)
+        if used + cost > budget:
+            break
+        out.append(t)
+        seen.add(t.lower())
+        used += cost
+    return out
+
+
 def upload(cfg, video, meta, thumb=None):
     from googleapiclient.http import MediaFileUpload
     yt = _service()
@@ -32,7 +51,7 @@ def upload(cfg, video, meta, thumb=None):
         "snippet": {
             "title": meta["title"][:100],
             "description": meta["description"][:4900],
-            "tags": meta.get("tags", [])[:30],
+            "tags": clean_tags(meta.get("tags", []))[:30],
             "categoryId": str(cfg["upload"]["category_id"]),
             "defaultLanguage": lang,
             "defaultAudioLanguage": lang,
@@ -42,14 +61,23 @@ def upload(cfg, video, meta, thumb=None):
                    # honest label when realistic AI images are used (YouTube's altered/synthetic content disclosure)
                    "containsSyntheticMedia": bool(meta.get("synthetic"))},
     }
-    req = yt.videos().insert(part="snippet,status", body=body,
-                             media_body=MediaFileUpload(str(video), chunksize=8 * 1024 * 1024,
-                                                        resumable=True, mimetype="video/mp4"))
-    resp = None
-    while resp is None:
-        status, resp = req.next_chunk()
-        if status:
-            log(f"Upload {int(status.progress() * 100)}%")
+    for attempt in range(2):
+        req = yt.videos().insert(part="snippet,status", body=body,
+                                 media_body=MediaFileUpload(str(video), chunksize=8 * 1024 * 1024,
+                                                            resumable=True, mimetype="video/mp4"))
+        resp = None
+        try:
+            while resp is None:
+                status, resp = req.next_chunk()
+                if status:
+                    log(f"Upload {int(status.progress() * 100)}%")
+            break
+        except Exception as e:  # noqa: BLE001
+            if attempt == 0 and "invalidTags" in str(e):   # never lose a finished video over its tags
+                log("YouTube rejected the tags - uploading again without tags:", body["snippet"]["tags"])
+                body["snippet"]["tags"] = []
+                continue
+            raise
     vid = resp["id"]
     log(f"Uploaded: https://youtu.be/{vid}")
     got = resp.get("status", {}).get("privacyStatus")
