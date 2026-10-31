@@ -434,6 +434,18 @@ def _uniqueness_check(cfg, draft, prompt, kind, memory):
     return draft
 
 
+def _as_script(res, draft):
+    """Editors sometimes return just the scenes list, or the script wrapped in a list: turn it back into a full script."""
+    if isinstance(res, list):
+        if res and isinstance(res[0], dict) and "scenes" in res[0]:
+            res = res[0]
+        elif res and all(isinstance(x, dict) for x in res):
+            res = {"scenes": res}
+        else:
+            return {}
+    return {**draft, **res} if isinstance(res, dict) else {}
+
+
 def _edit_long(cfg, draft, topic):
     """Second pass by a strict editor: one clear thread from hook to payoff, no random lines, no boring stretches."""
     import json as _json
@@ -454,7 +466,7 @@ Check and fix:
 - Keep the same JSON structure and all fields (text, caption = same as text, keywords, image, sound, subject, on_screen, graphic, pace, reveal, chapter) and hype_score, tomorrow_test.
 Return ONLY the improved JSON."""
     try:
-        better = ask(cfg, prompt, json_mode=True, temperature=0.7)
+        better = _as_script(ask(cfg, prompt, json_mode=True, temperature=0.7), draft)
         if len([sc for sc in better.get("scenes", []) if sc.get("text")]) >= 8 and _words(better) >= 0.75 * _words(draft):
             log(f"Long script edited for flow ({_words(draft)} -> {_words(better)} words)")
             return better
@@ -479,7 +491,7 @@ Rewrite it to be genuinely creepy and gripping:
 - 100% original, fictional names and places, no real people, no gore.
 Return ONLY the improved JSON."""
     try:
-        better = ask(cfg, prompt, json_mode=True, temperature=0.9)
+        better = _as_script(ask(cfg, prompt, json_mode=True, temperature=0.9), draft)
         if len([sc for sc in better.get("scenes", []) if sc.get("text")]) >= 3 and _words(better) >= 0.7 * _words(draft):
             log(f"Story edited ({_words(draft)} -> {_words(better)} words)")
             return better
