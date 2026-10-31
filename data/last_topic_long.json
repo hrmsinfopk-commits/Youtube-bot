@@ -1,83 +1,89 @@
 {
- "topic": "How Does an 828-Meter Skyscraper Stand on Loose Sand",
- "angle": "The world's tallest structure weighs roughly 500,000 tons and sits on shifting desert sand with zero bedrock, supported entirely by soil friction.",
- "why": "Proven infrastructure explainers like underwater metro tunnels (19.2M views) and hydrostatic physics breakdowns (36M+ views) prove massive global hunger for 'impossible' civil engineering mysteries. It hooks viewers instantly because almost everyone recognizes Dubai's mega-tower, but almost nobody realizes it has no bedrock beneath it and should theoretically sink like a stone.",
+ "topic": "How Does the Internet Cross the Ocean?",
+ "angle": "Over 99% of global internet traffic doesn't travel through space satellites, but through fragile glass strands no thicker than a garden hose resting on the ocean floor under miles of crushing pressure.",
+ "why": "Explainer videos breaking down hidden infrastructure like Veritasium's fiber optics explainer (14.2M views) and underwater engineering marvels (19.6M views) prove massive global curiosity for unseen megastructures. The question is irresistible because almost everyone assumes internet data beams through wireless satellites, making the physical reality of cables under the ocean shocking yet tangible.",
  "keywords": [
-  "how does burj khalifa stand on sand",
-  "how do skyscrapers stand on loose sand",
-  "burj khalifa foundation engineering",
-  "how do buildings not sink in sand",
-  "friction pile foundation explained",
-  "how skyscrapers are built on sand",
-  "burj khalifa deep foundation",
-  "engineering behind burj khalifa foundation",
-  "why burj khalifa doesn't fall",
-  "skin friction piles",
-  "how do buildings stand on soft soil",
-  "burj khalifa underground structure"
+  "how does the internet cross the ocean",
+  "undersea internet cables explained",
+  "submarine fiber optic cables",
+  "how undersea cables work",
+  "transatlantic communications cable",
+  "how do fiber optic cables work underwater",
+  "how are ocean cables laid",
+  "submarine cable repair ship",
+  "how deep are internet cables in the ocean",
+  "global internet map cables",
+  "ocean floor fiber optic network",
+  "how internet travels across the world"
  ],
  "facts": [
-  "Dubai has virtually no accessible hard bedrock near the surface, consisting instead of loose windblown sand, gravel, and weak marine siltstone.",
-  "The Burj Khalifa rises 828 meters (2,717 feet) high and exerts an estimated total dead weight of around 500,000 metric tons onto the earth.",
-  "Traditional foundations rest directly on solid bedrock using 'end-bearing' piles, but engineers found no such rock layer within reachable drilling depth.",
-  "Engineers instead used 'skin friction' piles, which support weight through the sheer mechanical grip of soil particles pressing against the rough sides of concrete shafts.",
-  "The tower is anchored by 192 bored cast-in-place concrete piles positioned directly beneath the main superstructure.",
-  "Each individual pile measures 1.5 meters (nearly 5 feet) in diameter and reaches a depth of 50 meters (164 feet) underground.",
-  "A massive 3.7-meter (12-foot) thick concrete slab, called a raft foundation, sits atop all 192 piles to lock them together as a single monolithic base.",
-  "The foundation raft contains approximately 45,000 cubic meters (58,800 cubic yards) of high-strength concrete weighing over 110,000 tons on its own.",
-  "Groundwater under Dubai is exceptionally corrosive, carrying higher concentrations of dissolved chlorides and sulfates than typical ocean water.",
-  "To prevent underground saltwater from destroying the steel reinforcement bars, engineers installed an impressed current cathodic protection (ICCP) system.",
-  "The cathodic protection system continuously passes a tiny electric current through embedded titanium mesh anodes, chemically shielding the steel rebar from rust.",
-  "Pouring concrete during daytime desert temperatures reaching 50°C (122°F) would cause it to cure too quickly and crack from internal thermal shock.",
-  "Construction teams mixed shaved ice and liquid nitrogen into the wet concrete mix and poured exclusively after sunset to keep hydration temperatures below critical thresholds.",
-  "Engineers incorporated industrial fly ash and silica fume into the concrete mix, creating a high-density, low-porosity barrier that physically blocks saltwater intrusion.",
-  "Computer simulations predicted the entire skyscraper would sink between 75 and 80 millimeters into the earth over its lifespan.",
-  "Post-construction laser measurements revealed the tower only settled roughly 50 to 60 millimeters (around 2 inches), proving the friction piles held firmer than expected.",
-  "The building uses a tri-axial 'Y-shaped' buttressed core design, distributing structural weight symmetrically across the foundation while shedding high-altitude wind vortexes."
+  "Over 95% to 99% of all intercontinental internet traffic travels through underwater submarine cables, not satellites.",
+  "There are over 550 active and planned commercial undersea fiber-optic cables worldwide, spanning approximately 1.4 million kilometers.",
+  "The core of an undersea cable contains optical fibers made of ultrapure silica glass, each scarcely thicker than a single human hair (about 125 to 250 microns).",
+  "Data travels through these glass strands as pulses of infrared light, bouncing internally without escaping through a physics principle called total internal reflection.",
+  "In deep open ocean (down to 8,000 meters), the cable is remarkably thin—typically only 17 to 20 millimeters in diameter, roughly the width of a standard garden hose.",
+  "Thick armored layers are only added near shorelines (shallow waters under 1,500 meters) to protect against commercial fishing trawlers and ship anchors.",
+  "The cross-section of a deep-sea cable consists of central glass fibers, petroleum jelly to block water penetration, a copper or aluminum power conductor, steel strength wires, and an outer protective polyethylene jacket.",
+  "Because light pulses degrade and lose intensity after roughly 60 to 100 kilometers, engineers splice in underwater repeaters (amplifiers) at regular intervals along the seafloor.",
+  "Underwater repeaters use Erbium-Doped Fiber Amplifiers (EDFA) to boost optical signals directly without converting light back into electrical data.",
+  "The copper tube inside the cable carries up to 10,000 volts of direct current (DC) across thousands of kilometers to power these submerged repeaters.",
+  "Specialized cable-laying ships carry thousands of miles of cable coiled in massive onboard tanks and slowly feed it into the ocean over voyages lasting weeks.",
+  "Near shorelines, unmanned underwater plows and remotely operated vehicles (ROVs) jet high-pressure water to dig trenches 1 to 3 meters into the seabed to bury the cable.",
+  "In the deep ocean abyss, the cable is not buried; it simply rests directly on the ocean floor, guided carefully to avoid underwater mountains, trenches, and volcanic rifts.",
+  "Shark bites account for less than 1% of recorded cable damage; roughly 70% of cable cuts are caused by commercial fishing gear and dragged ship anchors.",
+  "When a cable snaps, monitoring stations pinpoint the break location within meters by firing light pulses and timing the optical reflection (Optical Time-Domain Reflectometry).",
+  "To fix a broken cable, repair ships lower specialized grapnel hooks to grab and sever the damaged section, winch both ends to a sterile cleanroom on deck, fusion-splice the glass fibers under microscopes, and lower the sealed joint back into the sea.",
+  "Underwater communications cables run through the Hormuz area.",
+  "Questions or concerns exist regarding who would face internet disruption if the undersea cables in Hormuz were severed.",
+  "Infrastructure situated on the ocean floor facilitates internet operation.",
+  "Zimbabwe relies on imported data for its connectivity.",
+  "Zimbabwe experiences steep or exorbitant costs for data.",
+  "A figure named Ms. Mavetera has been addressed regarding the country's imported data and rates.",
+  "It is claimed that the high data fees in Zimbabwe are internally caused rather than the fault of outside factors."
  ],
  "long_format": "big question",
  "format": "big question",
  "sources": [],
  "youtube_top": [
   {
+   "title": "Dave - Raindance (ft. Tems)",
+   "views": 298627826
+  },
+  {
    "title": "Bruno Mars - I Just Might [Official Music Video]",
-   "views": 179060482
+   "views": 179657297
   },
   {
    "title": "This is What Happens When A Hockey Season Ends 🤯",
-   "views": 162486386
+   "views": 163395326
+  },
+  {
+   "title": "She & Him - I Thought I Saw Your Face Today (Official Lyric Video)",
+   "views": 112712193
   },
   {
    "title": "Ariana Grande - hate that i made you love me (official music video)",
-   "views": 108254556
+   "views": 109332513
   },
   {
    "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
-   "views": 102035059
+   "views": 102465279
   },
   {
    "title": "How We Build an Alien Pool — Full Process Revealed #poolbuild #luxurypool  #satisfying #poolhacks",
-   "views": 84251847
+   "views": 85286249
   },
   {
    "title": "You Can't Order Here Unless You Build With LEGO 🤯",
-   "views": 78111037
-  },
-  {
-   "title": "Why Can't We Print Unlimited Money 😱",
-   "views": 75225290
+   "views": 80534543
   },
   {
    "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
-   "views": 74433741
+   "views": 75346310
   },
   {
-   "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
-   "views": 73586345
-  },
-  {
-   "title": "Don't Get Pulled In Roblox!",
-   "views": 68473594
+   "title": "Why Can't We Print Unlimited Money 😱",
+   "views": 75337776
   }
  ]
 }
