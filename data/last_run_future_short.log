@@ -1,64 +1,44 @@
-[14:51:28] Channel: Tomorrowly (future, mode=facts)
-[14:51:28] Format today: news
-[14:51:39] News headlines collected: 167
-[14:51:42] YouTube videos analysed: 77
-[14:51:55] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:51:57] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:55:22] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[14:58:22] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[14:58:50] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:58:52] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:58:56] Gemini OK (gemini-flash-lite-latest)
-[14:58:56] Topic 'US Army’s New Target-Hunting AI Robots' repeats recent video 'Unitree Unveils 'Guardian' Robot That Lifts Cars and Disarms Attackers' - choosing again
-[14:59:01] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[15:02:01] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[15:02:28] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[15:03:09] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[15:05:08] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[15:05:13] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[15:05:18] Gemini OK (gemini-flash-lite-latest)
-[15:05:18] Topic 'An AI Just Broke 30 Years of Computer Science' repeats recent video 'Scientists Just Reversed 60 Years of Aging in Human Cells - Explain th' - choosing again
-[15:05:20] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[15:05:24] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[15:08:49] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[15:09:05] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[15:10:06] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[15:10:25] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[15:10:31] Gemini OK (gemini-flash-lite-latest)
-[15:13:31] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[15:13:32] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[15:13:57] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[15:13:57] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[15:14:23] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[15:14:23] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[15:14:32] Gemini OK (gemini-flash-lite-latest)
-[15:14:32] Trend topic: Can a Colorado River Basin Fuel Clouds to Create Snow? | why: Science and nature experiment shorts consistently pull strong traffic and high viewer retention when they explain hidden environmental interventions. This fresh story fills a gap on weather-altering tech without touching repetitive robotics or space topics.
-[15:14:32] Short length for 'news': 22 s
-[15:14:32] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[15:14:32] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[15:15:08] Gemini OK (gemini-flash-lite-latest)
-[15:15:08] Script length: 60 words
-[15:15:08] Uniqueness: 95% unique vs previous scripts
-[15:15:08] Script ready: Can a Colorado River Basin Fuel Clouds to Create Snow? (5 scenes)
-[15:15:18] Gemini OK (gemini-flash-lite-latest)
-[15:15:28] Gemini OK (gemini-flash-lite-latest)
-[15:15:28] Gate (script): {"graphics_added": 1, "graphics": 1, "own_share": 0.18, "fact_fixes": 0, "source_overlap": 0.0, "script_ok": true, "problems": []}
-[15:15:28] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[15:15:40] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[15:15:41] Captions aligned to the voice (60 words)
-[15:15:44] Captions aligned to the voice (60 words)
-[15:15:44] Graphics theme: footage
-[15:15:48] Own graphics: 1
-[15:15:53] Picture editor: 45/45 previews loaded
-[15:16:01] Gemini OK (gemini-flash-lite-latest)
-[15:16:10] Gemini OK (gemini-flash-lite-latest)
-[15:16:10] Footage check: kept 8 fitting clips, 0 scenes had nothing fitting
-[15:16:49] Footage ready for 5 scenes
-[15:16:54] Gate (visuals): fit 100%, concept 0%, fallback 0
-[15:17:05] 12 clips rendered
-[15:17:05] Final render started
-[15:17:35] Freesound CC0 music: Orchestral Score 1 - NOT mastered.wav (id 621294)
-[15:17:52] Video ready: 20261030_1516_future_short.mp4 (28.7s)
-[15:17:53] Upload 47%
-[15:17:53] Upload 95%
-[15:17:54] Uploaded: https://youtu.be/yrzcrm1vSLY
+[14:31:18] Channel: Tomorrowly (future, mode=facts)
+[14:31:18] Format today: news
+[14:31:29] News headlines collected: 171
+[14:31:33] YouTube videos analysed: 77
+[14:31:33] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:31:34] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:31:59] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:31:59] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:32:24] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:32:24] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:32:26] Gemini OK (gemini-flash-lite-latest)
+[14:32:27] Gemini OK (gemini-flash-lite-latest)
+[14:32:27] Trend topic: US Army’s New Target-Hunting Combat Robots | why: Military and robot tech videos are pulling millions of views right now (e.g., Unitree/robot shorts averaging 1.1M+ views and defense tech gaining high traction). This covers brand-new trials from Military.com within the last 7 days with minimal oversaturation on clean tech explanation channels.
+[14:32:27] Short length for 'news': 22 s
+[14:32:31] Gemini OK (gemini-flash-lite-latest)
+[14:32:31] Script too long (82 words, target ~51) - tightening
+[14:32:33] Gemini OK (gemini-flash-lite-latest)
+[14:32:33] Script length: 64 words
+[14:32:33] Uniqueness: 95% unique vs previous scripts
+[14:32:33] Script ready: US Army Combat Robots Can Now Hunt Targets Autonomously (5 scenes)
+[14:32:34] Gemini OK (gemini-flash-lite-latest)
+[14:32:34] Gate title fix: The title uses absolute phrasing 'Can Now Hunt' while the fact sheet and script note they are tested | US Army Combat Robots Can Now Hunt Targets Autonomously -> US Army Tests Autonomous Combat Robots That Hunt Targets
+[14:32:34] Gate fact fix [2]: The claim about tracking hundreds of threats per second and power equal to thousands of laptops is a
+[14:32:34] Gate (script): {"graphics": 1, "own_share": 0.19, "fact_fixes": 2, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[14:32:34] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[14:32:45] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[14:32:47] Captions aligned to the voice (62 words)
+[14:32:52] Captions aligned to the voice (63 words)
+[14:32:52] Graphics theme: blueprint
+[14:32:57] Own graphics: 1
+[14:33:09] Picture editor: 50/50 previews loaded
+[14:33:24] Gemini OK (gemini-flash-lite-latest)
+[14:33:35] Gemini OK (gemini-flash-lite-latest)
+[14:33:35] Footage check: kept 9 fitting clips, 0 scenes had nothing fitting
+[14:33:35] Download failed: file too big (106 MB)
+[14:34:13] Footage ready for 5 scenes
+[14:34:13] Gate (visuals): fit 100%, concept 0%, fallback 0
+[14:34:15] Freesound CC0 sound 'computer beep': as_ab_al_computer_noise_1_16bit.wav (id 543045)
+[14:34:24] 11 clips rendered
+[14:34:24] Final render started
+[14:34:54] Freesound CC0 music: Orchestral Score 1 - NOT mastered.wav (id 621294)
+[14:35:14] Video ready: 20261031_1434_future_short.mp4 (29.8s)
+[14:35:15] Upload 62%
+[14:35:16] Uploaded: https://youtu.be/1anbm_UHR-w

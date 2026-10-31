@@ -1025,6 +1025,53 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-10-31 14:35",
+   "type": "short",
+   "title": "US Army Tests Autonomous Combat Robots That Hunt Targets #shorts",
+   "topic": "US Army’s New Target-Hunting Combat Robots - Breaking down how autonomous military robots can now hunt and lock onto targets without human intervention, exploring the tech stack behind battlefield AI.",
+   "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
+   "youtube_id": "1anbm_UHR-w",
+   "voice": "Charon",
+   "seconds": 29.8,
+   "scene_times": [
+    [
+     0.0,
+     "The US Army just tested combat robots that hunt targets completely on their own."
+    ],
+    [
+     6.3,
+     "Inside, artificial intelligence processes live sensor feeds to lock onto hostile objective"
+    ],
+    [
+     12.8,
+     "Engineers designed these systems to process complex sensor data rapidly to locate and trac"
+    ],
+    [
+     19.6,
+     "But these autonomous systems are still only tested in controlled trials, not chaotic real "
+    ],
+    [
+     26.7,
+     "Follow Tomorrowly for tomorrow's tech, today."
+    ]
+   ],
+   "format": "news",
+   "why": "Military and robot tech videos are pulling millions of views right now (e.g., Unitree/robot shorts averaging 1.1M+ views and defense tech gaining high traction). This covers brand-new trials from Military.com within the last 7 days with minimal oversaturation on clean tech explanation channels.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.19,
+    "fact_fixes": 2,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -1511,6 +1558,14 @@
   "pixabay-v-135181",
   "pixabay-v-363515",
   "pixabay-v-82515",
-  "pixabay-v-118214"
+  "pixabay-v-118214",
+  "pixabay-v-263398",
+  "pixabay-v-281547",
+  "pixabay-v-117804",
+  "pixabay-v-130273",
+  "pixabay-v-16393",
+  "pixabay-v-4788",
+  "pixabay-v-1175",
+  "pixabay-v-143641"
  ]
 }

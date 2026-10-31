@@ -1,80 +1,82 @@
 {
- "topic": "Can a Colorado River Basin Fuel Clouds to Create Snow?",
- "angle": "Explaining the physics and reality of weather modification technology being tested in a Northwest Colorado river basin to artificially fuel clouds and boost snowpack and rainfall.",
- "why": "Science and nature experiment shorts consistently pull strong traffic and high viewer retention when they explain hidden environmental interventions. This fresh story fills a gap on weather-altering tech without touching repetitive robotics or space topics.",
+ "topic": "US Army’s New Target-Hunting Combat Robots",
+ "angle": "Breaking down how autonomous military robots can now hunt and lock onto targets without human intervention, exploring the tech stack behind battlefield AI.",
+ "why": "Military and robot tech videos are pulling millions of views right now (e.g., Unitree/robot shorts averaging 1.1M+ views and defense tech gaining high traction). This covers brand-new trials from Military.com within the last 7 days with minimal oversaturation on clean tech explanation channels.",
  "keywords": [
-  "weather modification",
-  "fuel clouds",
-  "snowmaking technology",
-  "Colorado river basin",
-  "cloud seeding",
-  "increase snowfall",
-  "artificial rain",
-  "science breakthroughs",
-  "future technology",
-  "weather control",
-  "water management",
-  "environmental tech"
+  "military robots",
+  "US Army robots",
+  "combat robots",
+  "AI target hunting",
+  "defense technology",
+  "autonomous weapons",
+  "future warfare",
+  "robot soldiers",
+  "military tech explained",
+  "tomorrowly"
  ],
  "facts": [
-  "A new technology project is being tested in a Northwest Colorado river basin.",
-  "The explicit goal of the technology is to 'fuel' clouds to artificially increase snow and rainfall in the region.",
-  "Water resource managers are looking for innovative technological solutions to combat regional drought and low snowpack levels.",
-  "The project involves specialized interventions aimed at atmospheric moisture to enhance precipitation output.",
-  "Weather modification techniques have a long history, but modern deployments use advanced data and targeted deployment methods.",
-  "The success of these projects depends heavily on specific wind patterns, cloud types, and moisture density in the basin.",
-  "Local authorities and researchers are monitoring the environmental and hydrological impacts of the tests closely.",
-  "A pilot project focused on weather modification is moving closer to final permit approval following a public hearing in Colorado.",
-  "The technology aims to stimulate clouds in order to boost precipitation levels like rain and snow.",
-  "Proponents plan to install the system in the Flat Tops region of Colorado by November, pending the final permit.",
-  "The Upper Yampa weather enhancement initiative is the specific project advancing through the approval stages.",
-  "Western Slope governments, local ranchers, and the ski industry are closely monitoring an ongoing climate lawsuit involving Boulder at the U.S. Supreme Court.",
-  "Upcoming storm systems around Halloween are forecasted to produce rain and snow across the Western Slope of Colorado.",
-  "The proposed cloud-fueling technology is being considered for deployment in a Northwest Colorado river basin."
+  "The US Army has recently tested advanced robots capable of hunting enemy targets autonomously.",
+  "These robotic systems demonstrated unprecedented tactical capabilities during recent military evaluations.",
+  "The technology integrates modern artificial intelligence with mechanical targeting systems to locate and track threats.",
+  "Engineers and military officials emphasized that these trials showcased what is currently possible in automated defense.",
+  "Such systems are designed to operate in high-risk environments to minimize human soldier exposure [claimed/tested].",
+  "Military.com and Task & Purpose reported on recent military evaluations involving advanced ground machines.",
+  "DARPA designed the experimental unmanned systems used in the trials.",
+  "A stated military objective for these autonomous platforms is tracking hostile objectives.",
+  "DARPA stated the technology brings remote-directed combat capability.",
+  "Vietnam.vn reported that the American military is creating advanced artificial intelligence for identifying objectives.",
+  "The American armed forces are working on new concealment methods alongside the AI technology, per Vietnam.vn.",
+  "Military.com noted that the demonstration aimed to display achievable capabilities."
  ],
  "long_format": null,
  "format": "news",
- "sources": [],
+ "sources": [
+  {
+   "title": "US Army Tests Robots that Hunt Enemy Targets: 'We Showed What's Possible'",
+   "source": "Military.com",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdlRVZ3p4QmJ0X25PTWlHd0tpVVVyT0dDMmJwcGN1X3hWMXhpUFJGWTVTMkIyNXY0WEhsRU4tZWpDa05oV1FPZnFDak5ieW5UN2JTVVJVSjRVZkxMQ2o2TjczSy1yMmtjaE1PZDNVTzFhVUhmbWJtUVUySjMza211TFI0MGU2anlrUHZOaUREYlM5aTVubWVjZWRR?oc=5"
+  }
+ ],
  "youtube_top": [
   {
-   "title": "iPhone Duo Durability: Destroyed",
-   "views": 14441054
+   "title": "Can A Robot Do My Chores?",
+   "views": 29145659
   },
   {
-   "title": "I love my sweet pea but is she serious?😭💕 #robot #momlife #longdistance",
-   "views": 11120541
+   "title": "iPhone Duo Teardown – APPLE SHOULD APOLOGIZE",
+   "views": 11953743
   },
   {
    "title": "He Thought His Robot Cleaner Was a Waste of Money!",
-   "views": 10316231
+   "views": 10346285
   },
   {
    "title": "Macbook PROLED XDR Impressions: They Said They Wouldn't!",
-   "views": 8686986
-  },
-  {
-   "title": "iPhone Duo Is Flopping",
-   "views": 8262434
+   "views": 9816809
   },
   {
    "title": "I tried Apple’s new touchscreen MacBook Pro..",
-   "views": 8076048
+   "views": 8627556
   },
   {
    "title": "Robot Pembersih Ini Ternyata Punya Kejutan!",
-   "views": 7254526
+   "views": 8610353
   },
   {
-   "title": "Robot Cleaner 🤖",
-   "views": 6429047
+   "title": "iPhone Duo Is Flopping",
+   "views": 8275764
   },
   {
-   "title": "🏗️⚙️ Automated Wall Plastering Machine: Compact Tracked Robotic Screed on Brick Masonry",
-   "views": 6005492
+   "title": "Robot VS Yiheng Wang! #harizazizan #rubik #malaysia #indonesia #yiheng",
+   "views": 7390109
   },
   {
    "title": "Drone Uses A Moth Antenna To Track Scents 😮",
-   "views": 5964046
+   "views": 7168590
+  },
+  {
+   "title": "Robot Cleaner 🤖",
+   "views": 6788302
   }
  ]
 }
