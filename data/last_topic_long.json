@@ -1,45 +1,38 @@
 {
- "topic": "How Does the Internet Cross the Ocean?",
- "angle": "Over 99% of global internet traffic doesn't travel through space satellites, but through fragile glass strands no thicker than a garden hose resting on the ocean floor under miles of crushing pressure.",
- "why": "Explainer videos breaking down hidden infrastructure like Veritasium's fiber optics explainer (14.2M views) and underwater engineering marvels (19.6M views) prove massive global curiosity for unseen megastructures. The question is irresistible because almost everyone assumes internet data beams through wireless satellites, making the physical reality of cables under the ocean shocking yet tangible.",
+ "topic": "How Do Maglev Trains Float Without Touching the Tracks",
+ "angle": "A 50-ton train travels at 600 kilometers per hour while hovering completely in mid-air with zero physical friction.",
+ "why": "Similar engineering explainers like 'The Ridiculous Engineering Of Jet Engines' pulled over 16 million views. This question works because it forces a counterintuitive realization: traveling at insane speeds while suspended strictly by invisible magnetic fields rather than wheels.",
  "keywords": [
-  "how does the internet cross the ocean",
-  "undersea internet cables explained",
-  "submarine fiber optic cables",
-  "how undersea cables work",
-  "transatlantic communications cable",
-  "how do fiber optic cables work underwater",
-  "how are ocean cables laid",
-  "submarine cable repair ship",
-  "how deep are internet cables in the ocean",
-  "global internet map cables",
-  "ocean floor fiber optic network",
-  "how internet travels across the world"
+  "how maglev trains work",
+  "maglev train technology",
+  "magnetic levitation explained",
+  "fastest trains in the world",
+  "how do trains float",
+  "electromagnetic suspension",
+  "superconducting magnets",
+  "future high speed transport",
+  "shanghai maglev speed",
+  "japan l0 series maglev",
+  "how maglev propulsion works",
+  "frictionless trains",
+  "linear synchronous motor"
  ],
  "facts": [
-  "Over 95% to 99% of all intercontinental internet traffic travels through underwater submarine cables, not satellites.",
-  "There are over 550 active and planned commercial undersea fiber-optic cables worldwide, spanning approximately 1.4 million kilometers.",
-  "The core of an undersea cable contains optical fibers made of ultrapure silica glass, each scarcely thicker than a single human hair (about 125 to 250 microns).",
-  "Data travels through these glass strands as pulses of infrared light, bouncing internally without escaping through a physics principle called total internal reflection.",
-  "In deep open ocean (down to 8,000 meters), the cable is remarkably thin—typically only 17 to 20 millimeters in diameter, roughly the width of a standard garden hose.",
-  "Thick armored layers are only added near shorelines (shallow waters under 1,500 meters) to protect against commercial fishing trawlers and ship anchors.",
-  "The cross-section of a deep-sea cable consists of central glass fibers, petroleum jelly to block water penetration, a copper or aluminum power conductor, steel strength wires, and an outer protective polyethylene jacket.",
-  "Because light pulses degrade and lose intensity after roughly 60 to 100 kilometers, engineers splice in underwater repeaters (amplifiers) at regular intervals along the seafloor.",
-  "Underwater repeaters use Erbium-Doped Fiber Amplifiers (EDFA) to boost optical signals directly without converting light back into electrical data.",
-  "The copper tube inside the cable carries up to 10,000 volts of direct current (DC) across thousands of kilometers to power these submerged repeaters.",
-  "Specialized cable-laying ships carry thousands of miles of cable coiled in massive onboard tanks and slowly feed it into the ocean over voyages lasting weeks.",
-  "Near shorelines, unmanned underwater plows and remotely operated vehicles (ROVs) jet high-pressure water to dig trenches 1 to 3 meters into the seabed to bury the cable.",
-  "In the deep ocean abyss, the cable is not buried; it simply rests directly on the ocean floor, guided carefully to avoid underwater mountains, trenches, and volcanic rifts.",
-  "Shark bites account for less than 1% of recorded cable damage; roughly 70% of cable cuts are caused by commercial fishing gear and dragged ship anchors.",
-  "When a cable snaps, monitoring stations pinpoint the break location within meters by firing light pulses and timing the optical reflection (Optical Time-Domain Reflectometry).",
-  "To fix a broken cable, repair ships lower specialized grapnel hooks to grab and sever the damaged section, winch both ends to a sterile cleanroom on deck, fusion-splice the glass fibers under microscopes, and lower the sealed joint back into the sea.",
-  "Underwater communications cables run through the Hormuz area.",
-  "Questions or concerns exist regarding who would face internet disruption if the undersea cables in Hormuz were severed.",
-  "Infrastructure situated on the ocean floor facilitates internet operation.",
-  "Zimbabwe relies on imported data for its connectivity.",
-  "Zimbabwe experiences steep or exorbitant costs for data.",
-  "A figure named Ms. Mavetera has been addressed regarding the country's imported data and rates.",
-  "It is claimed that the high data fees in Zimbabwe are internally caused rather than the fault of outside factors."
+  "Maglev is short for magnetic levitation, a system where trains float above a guide-way without touching it.",
+  "By eliminating physical contact with tracks, maglev trains remove mechanical friction entirely.",
+  "They rely on powerful electromagnets to both lift the train and propel it forward at extreme speeds.",
+  "There are two primary types of magnetic levitation systems: electromagnetic suspension (EMS) and electrodynamic suspension (EDS).",
+  "In EMS systems, electromagnets on the underside of the train are attracted upward to a steel guide-way.",
+  "In EDS systems, superconducting magnets on the train interact with loops in the track to push the train upward.",
+  "Superconducting magnets are cooled with liquid helium or nitrogen to near absolute zero to eliminate electrical resistance.",
+  "As the train moves faster, the magnetic repulsion naturally increases, making the levitation extremely stable.",
+  "Propulsion is achieved using a linear synchronous motor, which essentially turns the entire track into a giant electric motor.",
+  "Alternating magnetic fields in the track pull and push the train along precisely like a wave moving through water.",
+  "The Shanghai Maglev routinely operates at commercial speeds of up to 431 kilometers per hour (268 mph).",
+  "Test trains in Japan, such as the L0 Series, have reached record speeds of 603 kilometers per hour (375 mph).",
+  "Because there are no wheels or gears grinding against rails, mechanical wear and tear is reduced to almost zero.",
+  "Maglev trains are significantly quieter than traditional high-speed trains because there is no wheel-on-rail screeching.",
+  "The primary obstacle preventing widespread global adoption is the extremely high cost of building dedicated, specialized infrastructure tracks."
  ],
  "long_format": "big question",
  "format": "big question",
@@ -47,43 +40,43 @@
  "youtube_top": [
   {
    "title": "Dave - Raindance (ft. Tems)",
-   "views": 298627826
+   "views": 298887970
   },
   {
    "title": "Bruno Mars - I Just Might [Official Music Video]",
-   "views": 179657297
+   "views": 179724191
   },
   {
    "title": "This is What Happens When A Hockey Season Ends 🤯",
-   "views": 163395326
+   "views": 163494545
   },
   {
    "title": "She & Him - I Thought I Saw Your Face Today (Official Lyric Video)",
-   "views": 112712193
+   "views": 112803502
   },
   {
    "title": "Ariana Grande - hate that i made you love me (official music video)",
-   "views": 109332513
+   "views": 109445231
   },
   {
    "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
-   "views": 102465279
-  },
-  {
-   "title": "How We Build an Alien Pool — Full Process Revealed #poolbuild #luxurypool  #satisfying #poolhacks",
-   "views": 85286249
+   "views": 102528328
   },
   {
    "title": "You Can't Order Here Unless You Build With LEGO 🤯",
-   "views": 80534543
+   "views": 81024359
   },
   {
    "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
-   "views": 75346310
+   "views": 75547230
   },
   {
    "title": "Why Can't We Print Unlimited Money 😱",
-   "views": 75337776
+   "views": 75353333
+  },
+  {
+   "title": "How Electrical Outlets Work 🤔",
+   "views": 64924046
   }
  ]
 }

@@ -1072,6 +1072,160 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-10-31 18:35",
+   "type": "long",
+   "title": "How Maglev Trains Float Without Touching the Tracks",
+   "topic": "How Do Maglev Trains Float Without Touching the Tracks - A 50-ton train travels at 600 kilometers per hour while hovering completely in mid-air with zero physical friction.",
+   "style": "Before vs now: how this used to work vs what just changed",
+   "youtube_id": "xw8THeae5Ek",
+   "voice": "Charon",
+   "seconds": 191.3,
+   "scene_times": [
+    [
+     0.0,
+     "A fifty-ton train travels at six hundred kilometers per hour while hovering completely in "
+    ],
+    [
+     9.6,
+     "We assume every train needs heavy steel wheels grinding against metal rails, but this mach"
+    ],
+    [
+     17.5,
+     "How do maglev trains float without touching the tracks, and can this system ever scale glo"
+    ],
+    [
+     24.0,
+     "Maglev is short for magnetic levitation, a system where trains float above a guideway with"
+    ],
+    [
+     31.0,
+     "By eliminating physical contact with tracks, maglev trains remove mechanical friction enti"
+    ],
+    [
+     37.2,
+     "They rely on powerful electromagnets to both lift the train and propel it forward at extre"
+    ],
+    [
+     43.5,
+     "What makes this possible is how engineers split the physics into two primary types of magn"
+    ],
+    [
+     50.3,
+     "In electromagnetic suspension, electromagnets on the underside of the train are attracted "
+    ],
+    [
+     57.5,
+     "In electrodynamic suspension, superconducting magnets on the train interact with loops in "
+    ],
+    [
+     64.6,
+     "Superconducting magnets are cooled with liquid helium or nitrogen to near absolute zero to"
+    ],
+    [
+     73.7,
+     "As the train moves faster, the magnetic repulsion naturally increases, making the levitati"
+    ],
+    [
+     81.7,
+     "Propulsion is achieved using a linear synchronous motor, which essentially turns the entir"
+    ],
+    [
+     91.0,
+     "Alternating magnetic fields in the track pull and push the train along precisely like a wa"
+    ],
+    [
+     98.7,
+     "The Shanghai Maglev routinely operates at commercial speeds of up to four hundred thirty-o"
+    ],
+    [
+     107.1,
+     "Test trains in Japan, such as the L0 Series, have reached record speeds of six hundred thr"
+    ],
+    [
+     115.0,
+     "Because there are no wheels or gears grinding against rails, mechanical wear and tear is r"
+    ],
+    [
+     122.4,
+     "Maglev trains are significantly quieter than traditional high-speed trains because there i"
+    ],
+    [
+     130.0,
+     "Here is the catch: the primary obstacle preventing widespread global adoption is the extre"
+    ],
+    [
+     140.1,
+     "Unlike standard trains that run on existing national railways, maglevs require entirely ne"
+    ],
+    [
+     150.0,
+     "Let us do the math on that cost barrier. Building a single kilometer of high-speed maglev "
+    ],
+    [
+     160.5,
+     "Connecting two major cities five hundred kilometers apart requires a multi-billion dollar "
+    ],
+    [
+     171.1,
+     "Magnetic levitation proves that traveling without touching the ground is entirely possible"
+    ],
+    [
+     178.6,
+     "Until track construction costs drop, these floating giants will remain architectural marve"
+    ],
+    [
+     187.8,
+     "Follow Tomorrowly for tomorrow's tech, today."
+    ]
+   ],
+   "format": "big question",
+   "why": "Similar engineering explainers like 'The Ridiculous Engineering Of Jet Engines' pulled over 16 million views. This question works because it forces a counterintuitive realization: traveling at insane speeds while suspended strictly by invisible magnetic fields rather than wheels.",
+   "facts": [
+    "Maglev is short for magnetic levitation, a system where trains float above a guide-way without touching it.",
+    "By eliminating physical contact with tracks, maglev trains remove mechanical friction entirely.",
+    "They rely on powerful electromagnets to both lift the train and propel it forward at extreme speeds.",
+    "There are two primary types of magnetic levitation systems: electromagnetic suspension (EMS) and electrodynamic suspension (EDS).",
+    "In EMS systems, electromagnets on the underside of the train are attracted upward to a steel guide-way.",
+    "In EDS systems, superconducting magnets on the train interact with loops in the track to push the train upward.",
+    "Superconducting magnets are cooled with liquid helium or nitrogen to near absolute zero to eliminate electrical resistance.",
+    "As the train moves faster, the magnetic repulsion naturally increases, making the levitation extremely stable.",
+    "Propulsion is achieved using a linear synchronous motor, which essentially turns the entire track into a giant electric motor.",
+    "Alternating magnetic fields in the track pull and push the train along precisely like a wave moving through water.",
+    "The Shanghai Maglev routinely operates at commercial speeds of up to 431 kilometers per hour (268 mph).",
+    "Test trains in Japan, such as the L0 Series, have reached record speeds of 603 kilometers per hour (375 mph).",
+    "Because there are no wheels or gears grinding against rails, mechanical wear and tear is reduced to almost zero.",
+    "Maglev trains are significantly quieter than traditional high-speed trains because there is no wheel-on-rail screeching.",
+    "The primary obstacle preventing widespread global adoption is the extremely high cost of building dedicated, specialized infrastructure tracks."
+   ],
+   "keywords": [
+    "how maglev trains work",
+    "maglev train technology",
+    "magnetic levitation explained",
+    "fastest trains in the world",
+    "how do trains float",
+    "electromagnetic suspension",
+    "superconducting magnets",
+    "future high speed transport",
+    "shanghai maglev speed",
+    "japan l0 series maglev",
+    "how maglev propulsion works",
+    "frictionless trains"
+   ],
+   "gate": {
+    "graphics_added": 0,
+    "graphics": 4,
+    "own_share": 0.19,
+    "own_math": true,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -1566,6 +1720,34 @@
   "pixabay-v-16393",
   "pixabay-v-4788",
   "pixabay-v-1175",
-  "pixabay-v-143641"
+  "pixabay-v-143641",
+  "pixabay-v-205346",
+  "pixabay-v-3639",
+  "pixabay-v-353898",
+  "pixabay-v-143740",
+  "pixabay-v-209494",
+  "pixabay-v-239829",
+  "pixabay-v-355092",
+  "pixabay-v-192779",
+  "pixabay-v-296570",
+  "pixabay-v-276090",
+  "pixabay-v-92666",
+  "pixabay-v-11578",
+  "pixabay-v-1085",
+  "pixabay-v-11066",
+  "pixabay-v-22686",
+  "pixabay-v-2213",
+  "pixabay-v-11578",
+  "pixabay-v-239829",
+  "pixabay-v-212404",
+  "pixabay-v-177032",
+  "pixabay-v-4728",
+  "pixabay-v-366688",
+  "pixabay-v-3992",
+  "pixabay-v-3639",
+  "pixabay-v-80724",
+  "pixabay-v-209494",
+  "pixabay-v-9005",
+  "pixabay-v-200281"
  ]
 }

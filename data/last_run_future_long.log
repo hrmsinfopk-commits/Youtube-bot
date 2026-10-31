@@ -1,73 +1,74 @@
-[13:42:17] Channel: Tomorrowly (future, mode=facts)
-[13:42:17] Format today: big question
-[13:42:20] YouTube videos analysed: 59
-[13:43:44] Gemini OK (gemini-3.8-flash)
-[13:44:15] Gemini OK (gemini-3.8-flash)
-[13:44:15] Trend topic: How Does the Internet Cross the Ocean? | why: Explainer videos breaking down hidden infrastructure like Veritasium's fiber optics explainer (14.2M views) and underwater engineering marvels (19.6M views) prove massive global curiosity for unseen megastructures. The question is irresistible because almost everyone assumes internet data beams through wireless satellites, making the physical reality of cables under the ocean shocking yet tangible.
-[13:47:15] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[13:49:39] Gemini OK (gemini-flash-latest)
-[13:49:39] Script length: 622 words
-[13:49:39] Uniqueness: 100% unique vs previous scripts
-[13:49:39] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[13:52:39] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[13:53:58] Gemini OK (gemini-3.8-flash)
-[13:53:58] Long script edited for flow (622 -> 562 words)
-[13:53:58] Script ready: How Does the Internet Cross the Ocean? The Hidden Undersea Cable Network (17 scenes)
-[13:53:58] Chapters: Number 4: The Garden Hose | Number 3: 10,000-Volt Boosters | Number 2: The Human Hazard | Number 1: High-Sea Cleanroom Surgery | Conclusion
-[13:55:48] Gemini OK (gemini-3.8-flash)
-[13:55:48] Gate fact fix [0]: The script claims over 99% of traffic travels via cables, but the fact sheet states it is over 95% t
-[13:55:48] Gate fact fix [4]: The script claims deep-sea cables leave unarmored glass resting unprotected, but the fact sheet stat
-[13:55:48] Gate fact fix [9]: Claiming that a single dragged anchor can instantly isolate entire continents is an exaggeration tha
-[13:55:48] Gate (script): {"graphics": 6, "own_share": 0.37, "own_math": true, "fact_fixes": 3, "source_overlap": 0.0, "script_ok": true, "problems": []}
-[13:55:48] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[13:56:13] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[13:56:18] Captions aligned to the voice (124 words)
-[13:56:39] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[13:56:43] Captions aligned to the voice (148 words)
-[13:57:05] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[13:57:08] Captions aligned to the voice (153 words)
-[13:57:30] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[13:57:33] Captions aligned to the voice (155 words)
-[13:57:59] Captions aligned to the voice (578 words)
-[13:57:59] Graphics theme: blueprint
-[14:00:13] Own graphics: 6
-[14:00:29] Picture editor: 101/101 previews loaded
-[14:00:57] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:01:16] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:03:48] Gemini OK (gemini-3.8-flash)
-[14:04:01] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:07:01] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[14:07:27] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:07:29] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:08:11] Gemini OK (gemini-3.8-flash)
-[14:09:02] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:09:04] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:09:30] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:09:31] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:09:56] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:09:57] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:10:06] Gemini OK (gemini-flash-lite-latest)
-[14:10:06] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:10:06] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:10:35] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:10:35] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:11:01] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:11:05] Gemini OK (gemini-flash-lite-latest)
-[14:11:05] Footage check: kept 15 fitting clips, 2 scenes had nothing fitting
-[14:11:06] Second footage search for 2 scenes
-[14:11:07] Picture editor: 20/20 previews loaded
-[14:11:12] Gemini OK (gemini-flash-lite-latest)
-[14:11:12] Footage check: kept 3 fitting clips, 0 scenes had nothing fitting
-[14:12:40] Download failed: file too big (100 MB)
-[14:12:58] Footage ready for 17 scenes
-[14:12:58] Gate (visuals): fit 100%, concept 0%, fallback 0
-[14:13:00] Freesound CC0 sound 'whoosh': Whoosh to HIT 1.wav (id 434874)
-[14:13:03] Freesound CC0 sound 'electric motor': DeWalt Drill_1.wav (id 566206)
-[14:13:05] Freesound CC0 sound 'computer beep': Glitch (id 607406)
-[14:13:07] Freesound CC0 sound 'whoosh': whoosh low (id 830856)
-[14:14:16] 46 clips rendered
-[14:14:16] Final render started
-[14:14:47] Freesound CC0 music: Orchestral Score 1 - Mastered WITH Stereo Imaging.wav (id 621289)
-[14:16:27] Video ready: 20261031_1413_future_long.mp4 (249.7s)
-[14:16:27] Thumbnails for Test & Compare: thumbnails/20261031_1413_future_long/
-[14:16:28] Video 1 failed (attempt 1): <HttpError 400 when requesting None returned "The request metadata specifies invalid video keywords.". Details: "[{'message': 'The request metadata specifies invalid video keywords.', 'domain': 'youtube.video', 'reason': 'invalidTags', 'location': 'body.snippet.tags', 'locationType': 'other'}]">
+[18:19:58] Channel: Tomorrowly (future, mode=facts)
+[18:19:58] Format today: big question
+[18:20:01] YouTube videos analysed: 60
+[18:20:07] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[18:20:12] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[18:20:41] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[18:20:41] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[18:21:06] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[18:21:07] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[18:21:09] Gemini OK (gemini-flash-lite-latest)
+[18:21:09] Trend topic: How Do Maglev Trains Float Without Touching the Tracks | why: Similar engineering explainers like 'The Ridiculous Engineering Of Jet Engines' pulled over 16 million views. This question works because it forces a counterintuitive realization: traveling at insane speeds while suspended strictly by invisible magnetic fields rather than wheels.
+[18:21:09] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[18:21:09] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[18:21:34] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[18:22:10] Gemini OK (gemini-flash-lite-latest)
+[18:22:10] Script too short (412 words, target ~564) - rewriting longer
+[18:22:19] Gemini OK (gemini-flash-lite-latest)
+[18:22:19] Script length: 412 words
+[18:22:19] Uniqueness: 95% unique vs previous scripts
+[18:22:27] Gemini OK (gemini-flash-lite-latest)
+[18:22:27] Long-script editor failed, using draft: 'list' object has no attribute 'get'
+[18:22:27] Script ready: How Maglev Trains Float Without Touching the Tracks (24 scenes)
+[18:22:27] Chapters: The Floating Train | Magnetic Levitation | Suspension Systems | Propulsion Power | Speed Records | The Catch | The Payoff
+[18:22:29] Gemini OK (gemini-flash-lite-latest)
+[18:22:30] Gemini OK (gemini-flash-lite-latest)
+[18:22:30] Gate (script): {"graphics_added": 0, "graphics": 4, "own_share": 0.19, "own_math": true, "fact_fixes": 0, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[18:22:30] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[18:22:51] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[18:22:56] Captions aligned to the voice (157 words)
+[18:23:17] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[18:23:21] Captions aligned to the voice (142 words)
+[18:23:42] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[18:23:45] Captions aligned to the voice (117 words)
+[18:24:13] Captions aligned to the voice (418 words)
+[18:24:13] Graphics theme: footage
+[18:25:11] Own graphics: 4
+[18:25:32] Picture editor: 173/173 previews loaded
+[18:26:12] Gemini OK (gemini-flash-lite-latest)
+[18:26:23] Gemini OK (gemini-flash-lite-latest)
+[18:26:47] Gemini OK (gemini-flash-lite-latest)
+[18:27:02] Gemini OK (gemini-flash-lite-latest)
+[18:27:09] Gemini OK (gemini-flash-lite-latest)
+[18:27:17] Gemini OK (gemini-flash-lite-latest)
+[18:27:36] Gemini OK (gemini-flash-lite-latest)
+[18:27:36] Footage check: kept 25 fitting clips, 3 scenes had nothing fitting
+[18:27:36] Second footage search for 3 scenes
+[18:27:37] Picture editor: 27/27 previews loaded
+[18:28:00] Gemini OK (gemini-flash-lite-latest)
+[18:28:00] Footage check: kept 3 fitting clips, 0 scenes had nothing fitting
+[18:31:05] Footage ready for 24 scenes
+[18:31:53] Gate (visuals): fit 100%, concept 0%, fallback 0
+[18:31:56] Freesound CC0 sound 'whoosh': Swoosh sound 4 (id 347549)
+[18:31:58] Freesound CC0 sound 'electric motor': DeWalt Drill_1.wav (id 566206)
+[18:32:01] Freesound CC0 sound 'electric motor': Electric machine engine large air-conditioner hum noise (id 324665)
+[18:33:10] 47 clips rendered
+[18:33:10] Final render started
+[18:33:42] Freesound CC0 music: Uplifting Dramatic Soundtrack - War Around Us (id 608811)
+[18:35:29] Video ready: 20261031_1832_future_long.mp4 (191.3s)
+[18:35:30] Thumbnails for Test & Compare: thumbnails/20261031_1832_future_long/
+[18:35:32] Upload 7%
+[18:35:33] Upload 14%
+[18:35:34] Upload 21%
+[18:35:34] Upload 28%
+[18:35:35] Upload 35%
+[18:35:36] Upload 42%
+[18:35:36] Upload 50%
+[18:35:37] Upload 57%
+[18:35:38] Upload 64%
+[18:35:38] Upload 71%
+[18:35:39] Upload 78%
+[18:35:40] Upload 85%
+[18:35:40] Upload 93%
+[18:35:41] Uploaded: https://youtu.be/xw8THeae5Ek
+[18:35:44] Thumbnail set
