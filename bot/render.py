@@ -85,7 +85,13 @@ def make_clip(src, kind, seg, W, H, out, rng, grade=None):
     else:
         pre = ["-stream_loop", "-1"]
     run(["ffmpeg", "-y", "-v", "error"] + pre + ["-i", str(src), "-t", f"{seg:.3f}",
-         "-vf", _clip_filter(W, H, seg, rng, grade)] + enc)
+         "-vf", _clip_filter(W, H, seg, rng, grade) + f",tpad=stop_mode=clone:stop_duration={seg + 1:.2f}"] + enc)
+    try:   # some downloads report a wrong length: if the clip still came out short, loop the source instead
+        if duration(out) < seg - 0.15:
+            run(["ffmpeg", "-y", "-v", "error", "-stream_loop", "-1", "-i", str(src), "-t", f"{seg:.3f}",
+                 "-vf", _clip_filter(W, H, seg, rng, grade) + f",tpad=stop_mode=clone:stop_duration={seg + 1:.2f}"] + enc)
+    except Exception:  # noqa: BLE001
+        pass
 
 
 # ---------------------------------------------------------------- captions (ASS)
@@ -207,12 +213,14 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             name = re.sub(r"[{}\\]", "", str(name)).upper()[:26]
             note = re.sub(r"[{}\\]", "", str(note or ""))[:34]
             x, y = int(W * 0.07), int(H * (0.15 if kind == "short" else 0.10))
-            end = t0 + min(dur, 2.8)
-            lines.append(f"Dialogue: 4,{_ass_time(t0 + 0.15)},{_ass_time(end)},Tag,,0,0,0,,"
+            start, end = t0 + 0.15, t0 + min(dur, 2.8)
+            if i == 0 and hook:          # the hook owns the top of the screen first: tag comes after it
+                start, end = hook_end + 0.1, max(t0 + dur, hook_end + 1.6)
+            lines.append(f"Dialogue: 4,{_ass_time(start)},{_ass_time(end)},Tag,,0,0,0,,"
                          f"{{\\pos({x},{y})\\fad(150,200)}}{name}")
             if note:
                 ny = y + (104 if kind == "short" else 72)
-                lines.append(f"Dialogue: 4,{_ass_time(t0 + 0.3)},{_ass_time(end)},TagNote,,0,0,0,,"
+                lines.append(f"Dialogue: 4,{_ass_time(start + 0.15)},{_ass_time(end)},TagNote,,0,0,0,,"
                              f"{{\\pos({x},{ny})\\fad(150,200)}}{note}")
         if i in set(concept_scenes or ()):
             lines.append(f"Dialogue: 3,{_ass_time(t0)},{_ass_time(t0 + dur + 0.3)},Label,,0,0,0,,Concept illustration")
@@ -368,7 +376,13 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
     hi = build_ass(kind, cfg, scenes, timings, ass, rng, hook_text, [v[2] if len(v) > 2 else [] for v in voice],
                    concept_scenes, labels)
 
-    chain = []
+    chain = ["tpad=stop_mode=clone:stop_duration=8"]   # never let the picture end before the voice
+    try:
+        vd = duration(silent)
+        if vd < total - 0.2:
+            log(f"WARNING: picture {vd:.1f}s shorter than sound {total:.1f}s - holding the last frame")
+    except Exception:  # noqa: BLE001
+        pass
     if punches and kind == "short":   # zoompan over a whole long video is far too slow
         z = "+".join(f"between(it\\,{p:.2f}\\,{p + 0.4:.2f})*(1-(it-{p:.2f})/0.4)" for p in punches[:12])
         chain.append(f"zoompan=z='1+{0.05 if story else 0.08}*({z})':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"

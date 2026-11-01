@@ -268,7 +268,9 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
         t = brief.get("teaser_of", {})
         extra += ("\n- FORMAT: TEASER for our full video \"" + str(t.get("title", "")) + "\". Give the ONE most surprising"
                   " moment of that story with a different hook than the long video, leave the full explanation open, and make"
-                  " the LAST scene exactly: 'The full breakdown is on our channel.' (instead of the usual follow line).")
+                  " (this REPLACES the ENDING rule above) the LAST scene a short open question that makes people want the answer (max 8 words). NO call to action at all:"
+                  " never say 'full breakdown', 'on our channel', 'link', 'subscribe' or 'follow' - our data shows viewers"
+                  " leave the moment we say it. The full video is linked under the Short.")
     if evergreen:
         extra += ("\n- FORMAT: EVERGREEN BIG QUESTION (not news). The whole video answers ONE question built on a contradiction"
                   " (see the angle). Never say 'just announced', 'this week', 'recently' - it must still be true in 3 years.\n"

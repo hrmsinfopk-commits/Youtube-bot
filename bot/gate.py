@@ -93,6 +93,7 @@ and well-established knowledge. Flag ONLY real problems: an invented or wrong nu
 something only announced/planned/claimed presented as done, or an exaggeration that is not true. Style is not your job.
 For each problem give a corrected line of about the same length (same meaning where possible, honest wording).
 new_text is SPOKEN NARRATION ONLY: never include "(on screen: ...)", "(graphic: ...)", brackets or stage notes.
+An on-screen text must say the same number as its spoken line (not "0.6 SECONDS" while the voice says "half a second").
 Check the TITLE and THUMBNAIL TEXTS too - viewers judge us by them first. Absolute words (never, always, impossible, nothing,
 no one, every, only, first, forever, zero, can't) must be literally true; if not, soften them honestly ("almost never",
 "nearly impossible", "one of the first") while keeping the title curious and under 70 characters.
