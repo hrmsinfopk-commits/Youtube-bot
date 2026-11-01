@@ -1,0 +1,29 @@
+name: Inspect a finished video (side tool)
+
+# Copies the output/ artifact of a run (id in .github/trigger-inspect.txt) to the branch "inspect", so it can be reviewed.
+on:
+  push:
+    paths: [".github/trigger-inspect.txt"]
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and publish to branch "inspect"
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RID=$(grep -oE '[0-9]{6,}' .github/trigger-inspect.txt | head -1)
+          gh run download "$RID" -R "$GITHUB_REPOSITORY" -D /tmp/a
+          mkdir /tmp/b && cd /tmp/b && git init -q && git checkout -q -b inspect
+          find /tmp/a -type f \( -name "*.mp4" -o -name "*.jpg" -o -name "*.png" -o -name "*.json" -o -name "*.txt" \) -size -90M -exec cp {} . \;
+          ls -la
+          git config user.name "yt-bot"; git config user.email "yt-bot@users.noreply.github.com"
+          git add -A && git commit -qm "inspect $RID"
+          git push -qf "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" inspect
