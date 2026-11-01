@@ -1,44 +1,46 @@
-[14:31:18] Channel: Tomorrowly (future, mode=facts)
-[14:31:18] Format today: news
-[14:31:29] News headlines collected: 171
-[14:31:33] YouTube videos analysed: 77
-[14:31:33] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:31:34] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:31:59] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:31:59] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:32:24] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[14:32:24] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[14:32:26] Gemini OK (gemini-flash-lite-latest)
-[14:32:27] Gemini OK (gemini-flash-lite-latest)
-[14:32:27] Trend topic: US Army’s New Target-Hunting Combat Robots | why: Military and robot tech videos are pulling millions of views right now (e.g., Unitree/robot shorts averaging 1.1M+ views and defense tech gaining high traction). This covers brand-new trials from Military.com within the last 7 days with minimal oversaturation on clean tech explanation channels.
-[14:32:27] Short length for 'news': 22 s
-[14:32:31] Gemini OK (gemini-flash-lite-latest)
-[14:32:31] Script too long (82 words, target ~51) - tightening
-[14:32:33] Gemini OK (gemini-flash-lite-latest)
-[14:32:33] Script length: 64 words
-[14:32:33] Uniqueness: 95% unique vs previous scripts
-[14:32:33] Script ready: US Army Combat Robots Can Now Hunt Targets Autonomously (5 scenes)
-[14:32:34] Gemini OK (gemini-flash-lite-latest)
-[14:32:34] Gate title fix: The title uses absolute phrasing 'Can Now Hunt' while the fact sheet and script note they are tested | US Army Combat Robots Can Now Hunt Targets Autonomously -> US Army Tests Autonomous Combat Robots That Hunt Targets
-[14:32:34] Gate fact fix [2]: The claim about tracking hundreds of threats per second and power equal to thousands of laptops is a
-[14:32:34] Gate (script): {"graphics": 1, "own_share": 0.19, "fact_fixes": 2, "source_overlap": 0.0, "script_ok": true, "problems": []}
-[14:32:34] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[14:32:45] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[14:32:47] Captions aligned to the voice (62 words)
-[14:32:52] Captions aligned to the voice (63 words)
-[14:32:52] Graphics theme: blueprint
-[14:32:57] Own graphics: 1
-[14:33:09] Picture editor: 50/50 previews loaded
-[14:33:24] Gemini OK (gemini-flash-lite-latest)
-[14:33:35] Gemini OK (gemini-flash-lite-latest)
-[14:33:35] Footage check: kept 9 fitting clips, 0 scenes had nothing fitting
-[14:33:35] Download failed: file too big (106 MB)
-[14:34:13] Footage ready for 5 scenes
-[14:34:13] Gate (visuals): fit 100%, concept 0%, fallback 0
-[14:34:15] Freesound CC0 sound 'computer beep': as_ab_al_computer_noise_1_16bit.wav (id 543045)
-[14:34:24] 11 clips rendered
-[14:34:24] Final render started
-[14:34:54] Freesound CC0 music: Orchestral Score 1 - NOT mastered.wav (id 621294)
-[14:35:14] Video ready: 20261031_1434_future_short.mp4 (29.8s)
-[14:35:15] Upload 62%
-[14:35:16] Uploaded: https://youtu.be/1anbm_UHR-w
+[14:33:06] Channel: Tomorrowly (future, mode=facts)
+[14:33:06] Teaser Short for: How Maglev Trains Float Without Touching the Tracks
+[14:33:06] Short length for 'teaser': 30 s
+[14:35:33] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:37:48] Gemini OK (gemini-flash-latest)
+[14:37:48] Script length: 78 words
+[14:37:48] Uniqueness: 96% unique vs previous scripts
+[14:37:48] Script ready: How Maglev Trains Float at 600 km/h Without Wheels (7 scenes)
+[14:37:48] Chapters: The Myth | Common Belief | Superconductors | Propulsion | We Did The Math | The Reality | Teaser Outro
+[14:37:49] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:40:49] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:43:15] Gemini OK (gemini-3.8-flash)
+[14:43:15] Gate (script): {"graphics": 1, "own_share": 0.15, "fact_fixes": 0, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[14:43:15] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
+[14:44:13] Gemini TTS error: gemini-3.1-flash-tts-preview: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are us
+[14:44:36] Gemini TTS OK (gemini-2.5-flash-preview-tts, Charon)
+[14:44:38] Captions aligned to the voice (78 words)
+[14:44:45] Captions aligned to the voice (79 words)
+[14:44:45] Graphics theme: blueprint
+[14:44:50] Own graphics: 1
+[14:45:46] Picture editor: 58/64 previews loaded
+[14:46:25] Gemini OK (gemini-3.8-flash)
+[14:47:56] Gemini OK (gemini-3.8-flash)
+[14:47:56] Footage check: kept 11 fitting clips, 1 scenes had nothing fitting
+[14:47:56] Second footage search for 1 scenes
+[14:47:57] Picture editor: 12/12 previews loaded
+[14:50:02] Gemini OK (gemini-3.8-flash)
+[14:50:02] Footage check: kept 0 fitting clips, 1 scenes had nothing fitting
+[14:50:14] Download failed: 429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/common
+[14:50:14] Download failed: 429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/common
+[14:50:14] Download failed: 429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/common
+[14:50:28] Download failed: file too big (86 MB)
+[14:50:44] Image HTTP 503 (try 1)
+[14:50:58] Image HTTP 402 (try 2)
+[14:51:14] Image HTTP 402 (try 3)
+[14:51:24] Footage ready for 7 scenes
+[14:51:24] Gate (visuals): fit 100%, concept 0%, fallback 0
+[14:51:26] Freesound CC0 sound 'whoosh': ARCHERY flyby 2.wav (id 394181)
+[14:51:28] Freesound CC0 sound 'electric motor': Electric Train Motor Idle - Loop (New Generation Rollingstock).wav (id 647663)
+[14:51:46] 13 clips rendered
+[14:51:46] Final render started
+[14:52:16] Freesound CC0 music: Orchestral Score 1 - NOT mastered.wav (id 621294)
+[14:52:44] Video ready: 20261101_1451_future_short.mp4 (34.2s)
+[14:52:46] Upload 37%
+[14:52:47] Upload 74%
+[14:52:48] Uploaded: https://youtu.be/-Rl6KWl7ygg

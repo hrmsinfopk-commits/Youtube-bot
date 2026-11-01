@@ -1226,6 +1226,61 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-01 14:52",
+   "type": "short",
+   "title": "How Maglev Trains Float at 600 km/h Without Wheels #shorts",
+   "topic": "How Do Maglev Trains Float Without Touching the Tracks - A 50-ton train travels at 600 kilometers per hour while hovering completely in mid-air with zero physical friction. - short teaser of our full video",
+   "style": "Myth vs fact: what people assume vs what is actually true",
+   "youtube_id": "-Rl6KWl7ygg",
+   "voice": "Charon",
+   "seconds": 34.2,
+   "scene_times": [
+    [
+     0.0,
+     "Maglev trains do not float on simple magnets."
+    ],
+    [
+     3.6,
+     "People assume tracks just push upward like fridge magnets."
+    ],
+    [
+     7.4,
+     "Actually, Japan's test train uses superconductors cooled near absolute zero."
+    ],
+    [
+     13.6,
+     "The track turns into a giant electric motor, surfing on magnetic waves."
+    ],
+    [
+     18.9,
+     "We did the math: at six hundred kilometers per hour, it clears a football field in roughly"
+    ],
+    [
+     25.9,
+     "Zero wheel contact means zero rail friction, but specialized tracks cost billions."
+    ],
+    [
+     31.5,
+     "The full breakdown is on our channel."
+    ]
+   ],
+   "format": "teaser",
+   "why": "Teaser for our newest long video",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.15,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -1748,6 +1803,13 @@
   "pixabay-v-80724",
   "pixabay-v-209494",
   "pixabay-v-9005",
-  "pixabay-v-200281"
+  "pixabay-v-200281",
+  "wm-1005964",
+  "wm-152623239",
+  "wm-152623241",
+  "pixabay-v-188724",
+  "pixabay-v-342756",
+  "pixabay-v-342184",
+  "pixabay-v-213430"
  ]
 }
