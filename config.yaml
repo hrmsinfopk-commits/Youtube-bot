@@ -72,7 +72,7 @@ tts:
     female: ["Kore", "Aoede", "Zephyr", "Sulafat"]
   style: >-
     Read this like a curious, knowledgeable friend explaining something cool: natural American English, warm and
-    confident, conversational medium pace, real (not forced) surprise only on the big reveal, clear emphasis on
+    confident, lively medium-fast pace (these are short videos), real (not forced) surprise only on the big reveal, clear emphasis on
     numbers, short natural breaths, never salesy or hyped, never robotic, never like a news anchor
 
 voice_rate: [0, 8]                     # sirf Microsoft backup awaaz ke liye
