@@ -303,6 +303,35 @@ def build_audio(voice, gaps, work, total, cfg, rng, mood="suspense", sfx_events=
 
 
 # ---------------------------------------------------------------- main assembly
+def frames(path):
+    """Real number of video frames (container durations can lie)."""
+    out = run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-count_packets", "-show_entries",
+               "stream=nb_read_packets", "-of", "csv=p=0", str(path)])
+    return int(out.strip().split(",")[0])
+
+
+def join_exact(clips, segs, work, out_path, W, H, batch=16):
+    """Join clips so that each one lasts EXACTLY its planned length (pads/trims every clip) - a plain copy-concat
+    trusted the clips' own length info, and one bad download once made the picture stop seconds before the voice."""
+    parts = []
+    for b in range(0, len(clips), batch):
+        cl, sg = clips[b:b + batch], segs[b:b + batch]
+        inputs, fc = [], ""
+        for k, (c, d) in enumerate(zip(cl, sg)):
+            inputs += ["-i", str(c)]
+            fc += (f"[{k}:v]setpts=PTS-STARTPTS,fps={FPS},scale={W}:{H},setsar=1,format=yuv420p,"
+                   f"tpad=stop_mode=clone:stop_duration={d + 1:.2f},trim=duration={d:.3f},setpts=PTS-STARTPTS[v{k}];")
+        fc += "".join(f"[v{k}]" for k in range(len(cl))) + f"concat=n={len(cl)}:v=1:a=0[v]"
+        part = work / f"part_{b // batch:03d}.mp4"
+        run(["ffmpeg", "-y", "-v", "error"] + inputs + ["-filter_complex", fc, "-map", "[v]", "-an", "-c:v", "libx264",
+             "-preset", "ultrafast", "-crf", "18", "-r", str(FPS), "-pix_fmt", "yuv420p", str(part)])
+        parts.append(part)
+    if len(parts) == 1:
+        parts[0].replace(out_path)
+        return
+    lst = work / "parts.txt"
+    lst.write_text("".join(f"file '{p.resolve()}'\n" for p in parts))
+    run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(out_path)])
 def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspense", hook_text="",
              scene_sounds=None, ambience=None, concept_scenes=(), labels=None):
     """scenes: list; voice: [(wav, secs, word_times)]; media: per-scene list of (path, kind)."""
@@ -322,7 +351,7 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
     total = t
     seg_range = vis.get("shot_seconds") or ((1.8, 3.2) if kind == "short" else (3.0, 5.5))
 
-    clips = []
+    clips, segs = [], []
     for si, ((t0, d), g) in enumerate(zip(timings, gaps)):
         items = media[si]
         remaining, k = d + g, 0
@@ -334,15 +363,14 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
             out = work / f"clip_{len(clips):04d}.mp4"
             make_clip(src, mkind, seg, W, H, out, rng, vis.get("grade"))
             clips.append(out)
+            segs.append(seg)
             remaining -= seg
             k += 1
     log(f"{len(clips)} clips rendered")
     log("Final render started")
 
-    lst = work / "clips.txt"
-    lst.write_text("".join(f"file '{c.resolve()}'\n" for c in clips))
     silent = work / "video_noaudio.mp4"
-    run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(silent)])
+    join_exact(clips, segs, work, silent, W, H)
 
     # sound effects + zoom punches
     punches = []
@@ -378,7 +406,7 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
 
     chain = ["tpad=stop_mode=clone:stop_duration=8"]   # never let the picture end before the voice
     try:
-        vd = duration(silent)
+        vd = frames(silent) / FPS
         if vd < total - 0.2:
             log(f"WARNING: picture {vd:.1f}s shorter than sound {total:.1f}s - holding the last frame")
     except Exception:  # noqa: BLE001

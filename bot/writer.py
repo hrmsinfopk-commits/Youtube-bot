@@ -220,7 +220,8 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
     en = lang == "english"
     if kind == "short":
         secs = cfg["shorts"]["target_seconds"]
-        length = f"about {int(secs * _wps(cfg))} spoken words total ({secs} seconds), 6-9 scenes"
+        length = (f"about {_target_words(cfg, 'short')} spoken words total - NOT MORE, the pauses between scenes"
+                  f" fill the rest of the {secs} seconds - 6-8 scenes")
         extra = ("- FIRST 2 SECONDS: scene 1 is ONE sentence of max 10 words that NAMES the real subject and makes a promise or"
                  " states the contradiction (e.g. 'Google's quantum computer Sycamore just did something impossible.',"
                  " 'The biggest rocket ever built has no landing legs.'); its keywords must show EXACTLY that thing."
@@ -507,7 +508,8 @@ Return ONLY the improved JSON."""
 
 def _target_words(cfg, kind):
     w = _wps(cfg)
-    return int(cfg["shorts"]["target_seconds"] * w) if kind == "short" else int(cfg["long"]["target_minutes"] * 60 * w)
+    # Shorts: the pauses between scenes take ~2.5 s of the fixed length, so fewer words than seconds * speed
+    return int((cfg["shorts"]["target_seconds"] - 2.5) * w) if kind == "short" else int(cfg["long"]["target_minutes"] * 60 * w)
 
 
 def _words(data):
@@ -530,7 +532,7 @@ def _ask_script(cfg, prompt, kind, temperature):
         except Exception as e:  # noqa: BLE001
             log("Rewrite failed, keeping first draft:", str(e)[:120])
     n = _words(best)
-    if kind == "short" and n > 1.3 * target:
+    if kind == "short" and n > 1.12 * target:
         # Shorts have a fixed length (news 20-25 s, big question 30-35 s): cut the weakest lines, keep the structure
         log(f"Script too long ({n} words, target ~{target}) - tightening")
         try:
