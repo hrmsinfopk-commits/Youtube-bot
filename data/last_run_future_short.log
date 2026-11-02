@@ -1,46 +1,57 @@
-[14:33:06] Channel: Tomorrowly (future, mode=facts)
-[14:33:06] Teaser Short for: How Maglev Trains Float Without Touching the Tracks
-[14:33:06] Short length for 'teaser': 30 s
-[14:35:33] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:37:48] Gemini OK (gemini-flash-latest)
-[14:37:48] Script length: 78 words
-[14:37:48] Uniqueness: 96% unique vs previous scripts
-[14:37:48] Script ready: How Maglev Trains Float at 600 km/h Without Wheels (7 scenes)
-[14:37:48] Chapters: The Myth | Common Belief | Superconductors | Propulsion | We Did The Math | The Reality | Teaser Outro
-[14:37:49] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:40:49] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[14:43:15] Gemini OK (gemini-3.8-flash)
-[14:43:15] Gate (script): {"graphics": 1, "own_share": 0.15, "fact_fixes": 0, "source_overlap": 0.0, "script_ok": true, "problems": []}
-[14:43:15] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English, curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers, short natural breaths, never robotic, never like a news anchor'}
-[14:44:13] Gemini TTS error: gemini-3.1-flash-tts-preview: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are us
-[14:44:36] Gemini TTS OK (gemini-2.5-flash-preview-tts, Charon)
-[14:44:38] Captions aligned to the voice (78 words)
-[14:44:45] Captions aligned to the voice (79 words)
-[14:44:45] Graphics theme: blueprint
-[14:44:50] Own graphics: 1
-[14:45:46] Picture editor: 58/64 previews loaded
-[14:46:25] Gemini OK (gemini-3.8-flash)
-[14:47:56] Gemini OK (gemini-3.8-flash)
-[14:47:56] Footage check: kept 11 fitting clips, 1 scenes had nothing fitting
-[14:47:56] Second footage search for 1 scenes
-[14:47:57] Picture editor: 12/12 previews loaded
-[14:50:02] Gemini OK (gemini-3.8-flash)
-[14:50:02] Footage check: kept 0 fitting clips, 1 scenes had nothing fitting
-[14:50:14] Download failed: 429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/common
-[14:50:14] Download failed: 429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/common
-[14:50:14] Download failed: 429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/common
-[14:50:28] Download failed: file too big (86 MB)
-[14:50:44] Image HTTP 503 (try 1)
-[14:50:58] Image HTTP 402 (try 2)
-[14:51:14] Image HTTP 402 (try 3)
-[14:51:24] Footage ready for 7 scenes
-[14:51:24] Gate (visuals): fit 100%, concept 0%, fallback 0
-[14:51:26] Freesound CC0 sound 'whoosh': ARCHERY flyby 2.wav (id 394181)
-[14:51:28] Freesound CC0 sound 'electric motor': Electric Train Motor Idle - Loop (New Generation Rollingstock).wav (id 647663)
-[14:51:46] 13 clips rendered
-[14:51:46] Final render started
-[14:52:16] Freesound CC0 music: Orchestral Score 1 - NOT mastered.wav (id 621294)
-[14:52:44] Video ready: 20261101_1451_future_short.mp4 (34.2s)
-[14:52:46] Upload 37%
-[14:52:47] Upload 74%
-[14:52:48] Uploaded: https://youtu.be/-Rl6KWl7ygg
+[06:52:29] Channel: Tomorrowly (future, mode=facts)
+[06:52:29] Format today: big question
+[06:52:32] YouTube videos analysed: 59
+[06:52:38] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[06:55:38] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[06:56:56] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[06:59:56] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[07:02:48] Gemini OK (gemini-3.8-flash)
+[07:02:48] Trend topic: How 99% of the Internet Crosses the Ocean Floor | why: Proven by massive demand for physical infrastructure explainers like Veritasium's 14.5M views on fiber optics and Mr Decode's 19.7M views on sub-aquatic engineering. It shatters the universal misconception that modern internet runs through space satellites, revealing the astonishing physical machinery sitting under our oceans.
+[07:02:48] Short length for 'big question': 32 s
+[07:02:49] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[07:04:43] Gemini OK (gemini-flash-latest)
+[07:04:43] Script length: 85 words
+[07:04:43] Uniqueness: 100% unique vs previous scripts
+[07:04:43] Script ready: How 99% of Internet Crosses the Ocean Floor on Garden Hoses (7 scenes)
+[07:04:43] Chapters: The Reality | The Size | Speed of Light | Powering Signals | The Catch | Repairs | Outro
+[07:04:47] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[07:07:47] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[07:08:13] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[07:11:13] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[07:14:38] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[07:14:40] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[07:14:42] Gemini OK (gemini-flash-lite-latest)
+[07:14:42] Gate title fix: Using a garden hose for the entire ocean crossing is slightly inaccurate as they swell near shorelin | How 99% of Internet Crosses the Ocean Floor on Garden Hoses -> How Most Internet Crosses the Ocean on Thin Cables
+[07:14:42] Gate thumbnail_text_alt fix: 99% UNDERWATER -> MOST UNDERWATER
+[07:14:42] Gate fact fix [4]: Anchors do not snap cables 'thousands of meters down' since deep water avoids human disturbance; anc
+[07:14:42] Gate (script): {"graphics": 2, "own_share": 0.28, "fact_fixes": 3, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[07:14:42] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a curious, knowledgeable friend explaining something cool: natural American English, warm and confident, conversational medium pace, real (not forced) surprise only on the big reveal, clear emphasis on numbers, short natural breaths, never salesy or hyped, never robotic, never like a news anchor'}
+[07:14:58] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[07:15:00] Captions aligned to the voice (87 words)
+[07:15:06] Captions aligned to the voice (90 words)
+[07:15:06] Graphics theme: navy
+[07:15:28] Own graphics: 2
+[07:15:33] Picture editor: 49/49 previews loaded
+[07:15:33] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[07:18:33] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[07:18:59] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[07:18:59] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[07:19:24] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[07:19:24] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[07:19:43] Gemini OK (gemini-flash-lite-latest)
+[07:19:44] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[07:20:14] Gemini OK (gemini-flash-lite-latest)
+[07:20:14] Footage check: kept 11 fitting clips, 1 scenes had nothing fitting
+[07:20:15] Second footage search for 1 scenes
+[07:20:15] Picture editor: 12/12 previews loaded
+[07:20:19] Gemini OK (gemini-flash-lite-latest)
+[07:20:19] Footage check: kept 0 fitting clips, 1 scenes had nothing fitting
+[07:20:41] Skipping clip with burned-in text: ONE OPDR cma
+[07:21:07] Footage ready for 7 scenes
+[07:21:07] Gate (visuals): fit 100%, concept 14%, fallback 0
+[07:21:10] Freesound CC0 sound 'whoosh': ESE - WHOOSH - EPIC - Sword Smith.wav (id 475893)
+[07:21:12] Freesound CC0 sound 'electric motor': Electric Train Motor Idle - Loop (New Generation Rollingstock).wav (id 647663)
+[07:21:22] 13 clips rendered
+[07:21:22] Final render started
+[07:22:01] Freesound CC0 music: Slightly Mysterious Sounding Track (id 683821)
+[07:22:23] Video ready: 20261102_0721_future_short.mp4 (40.2s)
