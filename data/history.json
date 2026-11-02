@@ -1281,6 +1281,52 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-02 15:03",
+   "type": "short",
+   "title": "How Glass Skyscrapers Stay Cool Without Melting #shorts",
+   "topic": "How Do Glass Skyscrapers Cool Themselves Without Melting? - A massive glass building traps heat like a greenhouse, yet uses less energy than a home AC unit to stay freezing cold inside.",
+   "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
+   "youtube_id": null,
+   "voice": "Charon",
+   "seconds": 33.8,
+   "scene_times": [
+    [
+     0.0,
+     "Modern glass skyscrapers trap solar heat like giant greenhouses, easily hitting fifty degr"
+    ],
+    [
+     9.7,
+     "Instead, they rely on massive chillers and water loops connected to cooling towers, combin"
+    ],
+    [
+     19.1,
+     "At night, thermal storage systems freeze water when power is cheap, using that ice to help"
+    ],
+    [
+     27.5,
+     "If skyscraper engineering amazed you, Tomorrowly has plenty more like it."
+    ]
+   ],
+   "format": "big question",
+   "why": "Zack D. Films style engineering explainers pull tens of millions of views because everyone experiences office buildings and wonders how they work. This question leverages a striking contradiction about modern architecture that everyday commuters never think about.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics_added": 0,
+    "graphics": 0,
+    "own_share": 0.0,
+    "fact_fixes": 1,
+    "source_overlap": 0.0,
+    "script_ok": false,
+    "problems": [
+     "too few own graphics"
+    ],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -1810,6 +1856,14 @@
   "pixabay-v-188724",
   "pixabay-v-342756",
   "pixabay-v-342184",
-  "pixabay-v-213430"
+  "pixabay-v-213430",
+  "pixabay-v-272516",
+  "pixabay-v-272519",
+  "pixabay-v-29413",
+  "pixabay-v-45462",
+  "pixabay-v-1409",
+  "pixabay-v-31956",
+  "pixabay-v-91744",
+  "pixabay-v-126802"
  ]
 }

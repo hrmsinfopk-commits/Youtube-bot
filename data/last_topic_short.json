@@ -1,34 +1,34 @@
 {
- "topic": "How Do Glass Skyscrapers Stay Up in Earthquakes?",
- "angle": "A massive tower made entirely of fragile glass and brittle concrete sways through violent earthquakes without shattering.",
- "why": "Backed by massive viral hit videos like Zack D. Films' 'How Electrical Outlets Work' (66M views) and physical engineering explainers which consistently pull tens of millions of views. This question creates an instant paradox between a fragile material and violent natural forces that viewers feel compelled to understand.",
+ "topic": "How Do Glass Skyscrapers Cool Themselves Without Melting?",
+ "angle": "A massive glass building traps heat like a greenhouse, yet uses less energy than a home AC unit to stay freezing cold inside.",
+ "why": "Zack D. Films style engineering explainers pull tens of millions of views because everyone experiences office buildings and wonders how they work. This question leverages a striking contradiction about modern architecture that everyday commuters never think about.",
  "keywords": [
-  "how skyscrapers survive earthquakes",
-  "earthquake proof buildings",
-  "skyscraper engineering",
-  "tuned mass damper",
-  "how tall buildings don't fall",
-  "civil engineering explained",
-  "tallest skyscrapers tech",
-  "base isolation earthquake",
-  "how do glass buildings sway",
-  "building design science",
-  "architecture engineering marvels",
-  "tomorrowly tech"
+  "how skyscrapers stay cool",
+  "skyscraper cooling systems",
+  "how glass buildings work",
+  "building engineering explained",
+  "skyscraper HVAC systems",
+  "modern architecture cooling",
+  "how do tall buildings air conditioning",
+  "why skyscrapers are made of glass",
+  "skyscraper thermal mass",
+  "greenhouse effect in buildings",
+  "glass facade engineering",
+  "tallest building cooling technology"
  ],
  "facts": [
-  "Modern skyscrapers are designed to sway and bend rather than remain completely rigid during an earthquake.",
-  "Engineers use high-strength reinforced concrete and structural steel frames to give towers flexibility.",
-  "Many skyscrapers utilize base isolation systems, which are massive rubber and steel pads placed underneath the building foundation.",
-  "Base isolators absorb and decouple the ground's violent lateral motion from the actual structure above.",
-  "A heavy mechanical device called a tuned mass damper is often installed near the very top of supertall towers.",
-  "The tuned mass damper is typically a massive multi-ton steel weight suspended by thick cables or hydraulic actuators.",
-  "When an earthquake or strong wind pushes the building in one direction, the suspended mass swings in the opposite direction.",
-  "This counter-swinging motion dramatically reduces the building's overall sway and prevents structural failure.",
-  "Glass panels on modern skyscrapers are mounted using specialized framing systems with silicone gaskets.",
-  "These flexible joints allow individual glass panes to shift, rotate, and float within their frames without cracking.",
-  "Wind tunnel testing and computer simulations are performed on every major skyscraper design before actual construction begins.",
-  "Building codes require skyscrapers to withstand seismic activity significantly stronger than any earthquake recorded in that region's history."
+  "Modern skyscrapers are built almost entirely of glass, which creates a powerful greenhouse effect by trapping solar heat inside the structure.",
+  "Without active cooling systems, the interior temperature of a glass skyscraper can easily exceed 50 degrees Celsius within hours.",
+  "Skyscrapers do not use standard household air conditioning units; instead, they rely on massive centralized HVAC systems located in the basement or roof.",
+  "Chillers use water loops to absorb heat from the upper floors and pump it down to cooling towers.",
+  "Cooling towers reject heat into the outside atmosphere through evaporation, releasing huge plumes of steam often mistaken for smoke.",
+  "Many modern towers use double-skin facades, which are two layers of glass with a ventilated air cavity in between to vent hot air before it enters the room.",
+  "Automated motorized blinds track the position of the sun to block direct solar radiation before it hits the interior glass.",
+  "Some skyscrapers pump ice-cold water through chilled beams integrated into the ceilings, cooling the air directly around people rather than chilling entire rooms.",
+  "Thermal energy storage systems freeze water at night when electricity is cheap, then use that ice to help cool the building during hot daytime peak hours.",
+  "Variable air volume boxes regulate airflow to different zones of the building dynamically based on how many people are in a specific room.",
+  "Exhaust air from office spaces is often passed through heat exchangers to pre-cool or pre-heat incoming fresh outdoor air, saving massive amounts of energy.",
+  "Tall buildings must also manage high internal air pressure differences caused by the stack effect, where warm air rises and rushes out of upper floors."
  ],
  "long_format": null,
  "format": "big question",
@@ -36,43 +36,43 @@
  "youtube_top": [
   {
    "title": "Dave - Raindance (ft. Tems)",
-   "views": 300197197
+   "views": 300416229
   },
   {
    "title": "Bruno Mars - I Just Might [Official Music Video]",
-   "views": 180120988
+   "views": 180175306
   },
   {
    "title": "This is What Happens When A Hockey Season Ends 🤯",
-   "views": 164028293
+   "views": 164138996
   },
   {
    "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
-   "views": 102811265
-  },
-  {
-   "title": "Why Pluto is Not a Planet 😱",
-   "views": 86522900
+   "views": 102876531
   },
   {
    "title": "How We Build an Alien Pool — Full Process Revealed #poolbuild #luxurypool  #satisfying #poolhacks",
-   "views": 86131500
+   "views": 86234304
   },
   {
    "title": "WE CAN’T BELIEVE WE JUST HIT 26M FAMILY MEMBERS! 🥹😭🥰",
-   "views": 84481027
+   "views": 84481236
   },
   {
    "title": "You Can't Order Here Unless You Build With LEGO 🤯",
-   "views": 82796991
+   "views": 83119303
   },
   {
    "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
-   "views": 76600744
+   "views": 76718440
   },
   {
    "title": "How Electrical Outlets Work 🤔",
-   "views": 66804438
+   "views": 67145772
+  },
+  {
+   "title": "The Closest Thing We Have to Alien Technology",
+   "views": 65044829
   }
  ]
 }

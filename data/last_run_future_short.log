@@ -1,41 +1,58 @@
-[07:27:06] Channel: Tomorrowly (future, mode=facts)
-[07:27:06] Format today: big question
-[07:27:09] YouTube videos analysed: 58
-[07:30:10] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[07:33:10] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[07:33:35] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[07:33:36] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[07:34:01] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[07:34:01] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[07:34:04] Gemini OK (gemini-flash-lite-latest)
-[07:34:04] Trend topic: How Do Glass Skyscrapers Stay Up in Earthquakes? | why: Backed by massive viral hit videos like Zack D. Films' 'How Electrical Outlets Work' (66M views) and physical engineering explainers which consistently pull tens of millions of views. This question creates an instant paradox between a fragile material and violent natural forces that viewers feel compelled to understand.
-[07:34:04] Short length for 'big question': 32 s
-[07:34:04] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[07:34:04] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[07:35:00] Gemini OK (gemini-flash-latest)
-[07:35:00] Script length: 69 words
-[07:35:00] Uniqueness: 100% unique vs previous scripts
-[07:35:00] Script ready: How Glass Skyscrapers Survive Violent Earthquakes Without Shattering (7 scenes)
-[07:35:00] Chapters: The Paradox | Base Isolation | The Damper | Flexible Glass | The Trade-off | Testing Limits | Outro
-[07:35:00] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[07:35:26] Gemini OK (gemini-flash-lite-latest)
-[07:35:26] Gate (script): {"graphics": 1, "own_share": 0.14, "fact_fixes": 0, "source_overlap": 0.0, "script_ok": true, "problems": []}
-[07:35:26] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a curious, knowledgeable friend explaining something cool: natural American English, warm and confident, conversational medium pace, real (not forced) surprise only on the big reveal, clear emphasis on numbers, short natural breaths, never salesy or hyped, never robotic, never like a news anchor'}
-[07:35:41] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[07:35:44] Captions aligned to the voice (71 words)
-[07:35:51] Captions aligned to the voice (71 words)
-[07:35:51] Graphics theme: footage
-[07:35:58] Own graphics: 1
-[07:36:02] Picture editor: 67/67 previews loaded
-[07:36:10] Gemini OK (gemini-flash-lite-latest)
-[07:36:16] Gemini OK (gemini-flash-lite-latest)
-[07:36:16] Footage check: kept 13 fitting clips, 0 scenes had nothing fitting
-[07:36:58] Download failed: file too big (77 MB)
-[07:37:38] Footage ready for 7 scenes
-[07:37:46] Gate (visuals): fit 100%, concept 0%, fallback 0
-[07:37:47] Freesound CC0 sound 'thunder': 192kHz Slowed Balloon Pop (id 800740)
-[07:37:49] Freesound CC0 sound 'whoosh': whoosh low (id 830856)
-[07:38:08] 14 clips rendered
-[07:38:08] Final render started
-[07:38:46] Freesound CC0 music: Orchestral Score 1 - NOT mastered.wav (id 621294)
-[07:39:26] Video ready: 20261102_0737_future_short.mp4 (37.1s)
+[14:56:20] Channel: Tomorrowly (future, mode=facts)
+[14:56:20] Format today: big question
+[14:56:24] YouTube videos analysed: 59
+[14:56:24] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:56:25] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:56:51] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:56:51] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:57:17] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:57:17] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:57:20] Gemini OK (gemini-flash-lite-latest)
+[14:57:20] Trend topic: How Do Glass Skyscrapers Cool Themselves Without Melting? | why: Zack D. Films style engineering explainers pull tens of millions of views because everyone experiences office buildings and wonders how they work. This question leverages a striking contradiction about modern architecture that everyday commuters never think about.
+[14:57:20] Short length for 'big question': 32 s
+[14:57:21] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:57:21] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:57:47] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:57:47] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:58:13] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:58:13] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:58:18] Gemini OK (gemini-flash-lite-latest)
+[14:58:18] Script too long (107 words, target ~69) - tightening
+[14:58:18] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:58:19] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:58:44] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:58:45] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:59:10] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:59:10] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:59:13] Gemini OK (gemini-flash-lite-latest)
+[14:59:13] Script length: 72 words
+[14:59:13] Uniqueness: 100% unique vs previous scripts
+[14:59:13] Script ready: How Glass Skyscrapers Stay Cool Without Melting (4 scenes)
+[14:59:14] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:59:14] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:59:42] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:59:42] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:00:07] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:00:07] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:00:08] Gemini OK (gemini-flash-lite-latest)
+[15:00:08] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:00:08] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:00:34] Gemini OK (gemini-flash-lite-latest)
+[15:00:34] Gate fact fix [1]: The fact sheet states chillers absorb heat from the upper floors and pump it down to cooling towers,
+[15:00:34] Gate (script): {"graphics_added": 0, "graphics": 0, "own_share": 0.0, "fact_fixes": 1, "source_overlap": 0.0, "script_ok": false, "problems": ["too few own graphics"]}
+[15:00:34] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a curious, knowledgeable friend explaining something cool: natural American English, warm and confident, lively medium-fast pace (these are short videos), real (not forced) surprise only on the big reveal, clear emphasis on numbers, short natural breaths, never salesy or hyped, never robotic, never like a news anchor'}
+[15:00:47] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[15:00:50] Captions aligned to the voice (74 words)
+[15:00:55] Captions aligned to the voice (74 words)
+[15:00:55] Graphics theme: footage
+[15:00:58] Picture editor: 48/48 previews loaded
+[15:01:28] Gemini OK (gemini-flash-lite-latest)
+[15:01:31] Gemini OK (gemini-flash-lite-latest)
+[15:01:31] Footage check: kept 8 fitting clips, 0 scenes had nothing fitting
+[15:02:17] Footage ready for 4 scenes
+[15:02:17] Gate (visuals): fit 100%, concept 0%, fallback 0
+[15:02:35] 15 clips rendered
+[15:02:35] Final render started
+[15:03:06] Freesound CC0 music: Orchestral Score - Violas.wav (id 621845)
+[15:03:39] Video ready: 20261102_1502_future_short.mp4 (33.8s)
+[15:03:39] GATE BLOCKED UPLOAD: too few own graphics - video saved as GitHub artifact only
