@@ -364,8 +364,8 @@ def assemble(kind, cfg, scenes, voice, media, work, out_path, rng, mood="suspens
             if sc.get("reveal"):
                 events += [(max(0, t0 - 1.6), "riser"), (t0, "boom")]
                 punches.append(t0)
-            elif kind == "short" or sc.get("chapter"):
-                events.append((max(0, t0 - 0.2), "whoosh"))
+            elif (kind == "short" and i % 3 == 0) or (kind == "long" and sc.get("chapter")):
+                events.append((max(0, t0 - 0.2), "whoosh"))   # a whoosh on every cut sounds like a template
     for i, ((t0, _), snd) in enumerate(zip(timings, scene_sounds or [])):
         if snd:
             events.append((t0 + 0.15, "file", snd, 0.55))

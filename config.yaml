@@ -71,9 +71,9 @@ tts:
     male: ["Charon", "Orus", "Puck", "Iapetus"]
     female: ["Kore", "Aoede", "Zephyr", "Sulafat"]
   style: >-
-    Read this like a popular, energetic YouTube science and tech creator talking to a friend: natural American English,
-    curious and genuinely amazed, confident, conversational, medium-fast pace, clear emphasis on surprising facts and numbers,
-    short natural breaths, never robotic, never like a news anchor
+    Read this like a curious, knowledgeable friend explaining something cool: natural American English, warm and
+    confident, conversational medium pace, real (not forced) surprise only on the big reveal, clear emphasis on
+    numbers, short natural breaths, never salesy or hyped, never robotic, never like a news anchor
 
 voice_rate: [0, 8]                     # sirf Microsoft backup awaaz ke liye
 words_per_second: 2.35                 # English awaaz ki asal raftaar (test se naapi gayi)

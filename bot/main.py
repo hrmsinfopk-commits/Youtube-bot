@@ -285,11 +285,15 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
                     concept_scenes.append(i)
                     vkinds.append("concept")
                     continue
-            if not items and media and vkinds and vkinds[-1] in ("curated", "continued"):
-                # nothing fits -> stay on the previous scene's subject a little longer (better than random footage)
-                media.append(media[-1])
-                vkinds.append("continued")
-                continue
+            if not items:
+                # nothing fits -> go back to the most recent footage that DID fit (another part of that clip is
+                # used); a wrong-looking random clip is what makes viewers call a channel "AI slop"
+                j = next((j for j in range(len(media) - 1, -1, -1) if vkinds[j] in ("curated", "continued")
+                          and media[j] and media[j][0][1] in ("video", "photo")), None)
+                if j is not None:
+                    media.append(media[j])
+                    vkinds.append("continued")
+                    continue
             if not items:
                 kind_i = "fallback"
                 items = footage.search(cfg, gk + cfg["channel"].get("fallback_keywords", ["futuristic technology"]),

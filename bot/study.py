@@ -122,8 +122,8 @@ Find the PATTERNS that the successful ones share and turn them into concrete rul
 Rules must be about structure, hooks, pacing, language, visuals and sound - NEVER copy anyone's sentences,
 titles or catchphrases. Only rules supported by several videos. If something differs a lot between videos, say what works when.
 OUR FIXED FORMAT (rules must fit it, don't contradict it): narrated Shorts (always a voice-over) built from real/stock/NASA
-footage plus our own animated graphics; length is fixed (news 20-25 s, big question 30-35 s); every Short ends with our line
-"Follow Tomorrowly for tomorrow's tech, today."; facts must be true.
+footage plus our own animated graphics; length is fixed (news 20-25 s, big question 30-35 s); every Short ends with a short natural
+sign-off mentioning Tomorrowly (fresh words each time); facts must be true; no repeated catchphrases.
 
 VIRAL SHORTS: {table}
 OUR RECENT VIDEOS: {ours or '(no data yet)'}

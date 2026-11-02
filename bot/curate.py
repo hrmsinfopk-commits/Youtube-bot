@@ -20,7 +20,11 @@ prison cell or a phone, a "chip" is not a potato chip. Military jets only when t
 posing or reacting (yawning, smiling to camera, business people) unless the line is about people, green/blue screens,
 pictures with text/logos/watermarks, birthdays/holidays, zodiac, anything that contradicts the line, talking heads,
 labelled diagrams about another subject, cartoons/silhouettes when the line is about real hardware.
-A generic but fitting shot is fine (a jet engine for a jet-engine line). For scene 0 pick the most dramatic fitting option.
+LOOKALIKES ARE WRONG: when the line is about a specific kind of thing, the picture must show THAT kind - a normal
+bullet train with wheels is not a maglev, a random bridge or landscape is not the track/factory/lab in the line, a
+different rocket/car/robot model is wrong when the line names one. Scenery, cities and nature only when the line is
+about that place. A generic but fitting shot is fine (a jet engine for a jet-engine line). When in doubt, leave it out.
+For scene 0 pick the most dramatic fitting option.
 If nothing fits, return an empty list for that scene - our own graphics or a still shot will be used instead."""
 
 

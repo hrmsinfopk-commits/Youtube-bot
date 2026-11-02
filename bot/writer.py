@@ -237,9 +237,9 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
                  " each scene is the exact object/place named in that line.\n"
                  "- STRUCTURE: (1) the contradiction / headline hook above (not a question), "
                  "(2) an open loop in the first 5 seconds that promises a payoff at the end, (3) fast build-up of 2-3 lines, "
-                 "(4) a twist ('but here's the thing...'), (5) the REVEAL near the end, (6) final line.\n"
-                 "- ENDING: one short payoff sentence (what it means for us), then the LAST scene is exactly:"
-                 " 'Follow Tomorrowly for tomorrow's tech, today.' No 'send this to a friend', no hype meter, no questions.\n"
+                 "(4) a twist (in fresh words - not 'but here's the thing'), (5) the REVEAL near the end, (6) final line.\n"
+                 "- ENDING: one short payoff sentence (what it means for us), then the LAST scene is a short NATURAL sign-off (max 14 words) in your own words that mentions Tomorrowly and connects to THIS video's topic, e.g. 'If maglev surprised you, Tomorrowly has plenty more like it.' Never a fixed slogan, never the same wording as our previous endings."
+                 " No 'send this to a friend', no hype meter, no questions.\n"
                  "- One idea only. Every line must add something new. No intro, no 'subscribe' at the start.")
     else:
         mins = cfg["long"]["target_minutes"]
@@ -256,7 +256,7 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
             "    one-line bridge question that pulls into the next chapter. Put a 2-4 word name in 'chapter' on each chapter's first scene.\n"
             "  * One chapter is THE CATCH (honest limit / cost / open problem). WE DID THE MATH sits inside one chapter.\n"
             "  * PAYOFF (last 15-20 s): answer the central question clearly, one line on what it means for ordinary people,\n"
-            "    then the last scene: 'Follow Tomorrowly for tomorrow's tech, today.' No opinion question, no begging.\n"
+            "    then the last scene: a short NATURAL sign-off (max 14 words) in your own words that mentions Tomorrowly and connects to THIS video's topic, e.g. 'If maglev surprised you, Tomorrowly has plenty more like it.' Never a fixed slogan, never the same wording as our previous endings. No opinion question, no begging.\n"
             "- The most impressive reveal goes in the last chapter, not the first.\n"
             "- At least one 'flow' graphic in the HOW part; 3-5 graphics in total - never two graphic scenes in a row.\n"
             "- Fewer, longer scenes: every scene should be filmable with ONE strong real shot (we hold good shots longer).\n"
@@ -297,7 +297,8 @@ def write_script(cfg, topic, kind, style, brief=None, memory=None):
         options = [x for x in SHORT_SIGNATURES if x not in recent[-1:]] or SHORT_SIGNATURES
         signature = __import__("random").choice(options)
         sig_rule = (f"- SIGNATURE for this Short: use exactly one - {signature} - woven in naturally "
-                    f"(THE CATCH = the honest line; WE DID THE MATH = the feelable comparison). No HYPE METER or TOMORROW TEST in Shorts.")
+                    f"(THE CATCH = the honest line; WE DID THE MATH = the feelable comparison). These are INTERNAL names: never say"
+                    " 'we did the math' or 'the catch' out loud - say it in fresh, natural words each time. No HYPE METER or TOMORROW TEST in Shorts.")
     else:
         signature = "ALL"
         if brief and brief.get("format") == "big question":
@@ -343,8 +344,10 @@ Narration language: {LANG_RULES[lang]}
 Write it like a real, passionate human creator talking to a friend, NOT like an AI:
 - First sentence = a scroll-stopping hook. No greetings, no "today we're going to talk about".
 - Short punchy sentences, varied rhythm, everyday words, occasional casual reactions.
+- Sound like a person with a point of view, not a template: one small honest opinion or observation of your own is good.
 - Never use AI-sounding phrases: "in this video", "let's dive in", "delve", "buckle up", "in conclusion", "fascinating world of",
-  "did you know" as an opener{', "is video mein", "aaiye jaante hain", "dilchasp baat yeh hai"' if not en else ''}.
+  "did you know" as an opener, "actually," as a line opener, "but here's the thing", "we did the math",
+  "here's the catch", "mind-blowing", "game-changer"{', "is video mein", "aaiye jaante hain", "dilchasp baat yeh hai"' if not en else ''}.
 - Only true, verifiable facts. If unsure, frame as possibility. No fake statistics.
 - No fear-mongering: never claim or hint at wars, attacks, cover-ups or conspiracies that are not established fact.
 - Weapons/military tech: explain the technology and why it matters, neutral tone, no glorifying violence, no how-to.
@@ -463,7 +466,7 @@ Check and fix:
 - Is scene 1 a single punchy sentence with a dramatic visual? Does every technical "how it works" line have a 'flow' graphic?
 - Does EVERY chapter have its own hook line, one feelable number, one idea and a bridge question at its end?
 - Is the most impressive fact saved for late in the video? Is there an honest "catch"? Is the ending short, does it answer the
-  central question, and is the last scene exactly "Follow Tomorrowly for tomorrow's tech, today."?
+  central question, and is the last scene a short natural sign-off that mentions Tomorrowly in fresh words (not a slogan)?
 - Keep facts exactly as true as in the draft (do not invent numbers). Keep spoken words within +-10% of the draft length.
 - Keep the same JSON structure and all fields (text, caption = same as text, keywords, image, sound, subject, on_screen, graphic, pace, reveal, chapter) and hype_score, tomorrow_test.
 Return ONLY the improved JSON."""
