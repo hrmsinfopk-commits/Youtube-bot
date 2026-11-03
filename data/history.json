@@ -1327,6 +1327,49 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-03 15:09",
+   "type": "short",
+   "title": "Japan's Single-Atom Quantum Computer Without Freezers? #shorts",
+   "topic": "Japan's Single-Atom Quantum Computer That Doesn't Need a Giant Freezer - Explain the radical physics of how single-atom quantum computing works without cryogenic mega-coolers, turning a complex quantum breakthrough into a punchy visual explainer.",
+   "style": "Explainer: one big question, answered step by step with a surprise at the end",
+   "youtube_id": "4nHakSyIjVQ",
+   "voice": "Charon",
+   "seconds": 21.5,
+   "scene_times": [
+    [
+     0.0,
+     "Japan just activated a quantum computer built from single atoms."
+    ],
+    [
+     5.3,
+     "Traditional quantum systems need giant room-sized freezers to function properly."
+    ],
+    [
+     11.4,
+     "By controlling individual atoms, researchers may bypass the need for massive cooling."
+    ],
+    [
+     16.9,
+     "If atomic computing amazed you, Tomorrowly has plenty more like it."
+    ]
+   ],
+   "format": "news",
+   "why": "Quantum computing tech explainers have massive viral demand as seen from recent tech and science hits. This story is fresh from the last 7 days and offers a distinct visual angle compared to traditional massive-freezer quantum computers.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.26,
+    "fact_fixes": 2,
+    "source_overlap": 0.051,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.25,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -1864,6 +1907,7 @@
   "pixabay-v-1409",
   "pixabay-v-31956",
   "pixabay-v-91744",
-  "pixabay-v-126802"
+  "pixabay-v-126802",
+  "pixabay-v-245930"
  ]
 }
