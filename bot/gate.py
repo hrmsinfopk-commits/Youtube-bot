@@ -72,9 +72,11 @@ Return ONLY JSON {{"add": [{{"scene": 3, "graphic": {{...}}}}]}}"""
         res = ask(cfg, prompt, json_mode=True, temperature=0.3)
     except Exception as e:  # noqa: BLE001
         log("Gate: graphics editor failed:", str(e)[:100])
-        return 0
+        res = {}
     if isinstance(res, list):
         res = {"add": res}
+    if not isinstance(res, dict):
+        res = {}
     added = 0
     for a in res.get("add", []):
         i, g = a.get("scene"), a.get("graphic")
@@ -83,7 +85,45 @@ Return ONLY JSON {{"add": [{{"scene": 3, "graphic": {{...}}}}]}}"""
             scenes[i]["graphic"] = g
             scenes[i]["on_screen"] = ""
             added += 1
+    if not added and sum(1 for s in scenes if s.get("graphic")) < MIN_GRAPHICS[kind]:
+        added = _fallback_graphic(script, kind)
     return added
+
+
+def _fallback_graphic(script, kind):
+    """The graphics editor gave nothing usable (busy model, bad reply): build one simple graphic from the script itself,
+    so a finished video is never blocked just for that. A real number -> counter; otherwise a flow of the parts shown."""
+    scenes = script["scenes"]
+    last = len(scenes) - (1 if kind == "short" else 0)
+    cand = [i for i in range(1, last) if not scenes[i].get("graphic")]
+    if not cand:
+        return 0
+    for i in cand:
+        m = re.search(r"(\$)?(\d[\d,]*(?:\.\d+)?)\s*(%|percent|km/h|mph|km|meters|metres|degrees|°C|tons|years|times)?",
+                      str(scenes[i].get("text", "")))
+        if m and m.group(2).replace(",", "").replace(".", "").isdigit():
+            v = float(m.group(2).replace(",", ""))
+            if v >= 2:
+                unit = {"percent": "%"}.get(m.group(3) or "", m.group(3) or "")
+                label = " ".join(str((scenes[i].get("keywords") or [""])[0]).split()[:4])
+                scenes[i]["graphic"] = {"type": "counter", "value": int(v) if v == int(v) else v,
+                                        "prefix": "$" if m.group(1) else "", "suffix": (" " + unit) if unit and unit != "%" else unit,
+                                        "label": label}
+                scenes[i]["on_screen"] = ""
+                log(f"Gate: fallback counter graphic on scene {i}: {m.group(0).strip()}")
+                return 1
+    steps = []
+    for sc in scenes[1:last]:
+        k = " ".join(str((sc.get("keywords") or [""])[0]).split()[:3]).strip().title()
+        if k and k.lower() not in {x.lower() for x in steps}:
+            steps.append(k)
+    if len(steps) < 3:
+        return 0
+    i = max(cand, key=lambda j: len(str(scenes[j].get("text", "")).split()))
+    scenes[i]["graphic"] = {"type": "flow", "title": "How it works", "steps": steps[:4]}
+    scenes[i]["on_screen"] = ""
+    log(f"Gate: fallback flow graphic on scene {i}: {' > '.join(steps[:4])}")
+    return 1
 
 
 def _fact_check(cfg, script, brief):

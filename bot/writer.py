@@ -537,7 +537,7 @@ def _ask_script(cfg, prompt, kind, temperature):
         log(f"Script too long ({n} words, target ~{target}) - tightening")
         try:
             tight = ask(cfg, "Here is a YouTube Short script as JSON. It is too long: " + str(n) + " spoken words, but it must be "
-                        f"about {target} words (max {int(target * 1.15)}). Cut the weakest lines and merge scenes so it fits - keep the "
+                        f"about {target} words (max {int(target * 1.15)}). Cut the weakest lines and shorten sentences so it fits - keep at least 5 scenes - keep the "
                         "named-subject hook as the first line, the single most surprising number with its comparison, the one thing it "
                         "teaches, and the final line exactly as it is. Keep every JSON field and the same format for every scene. "
                         "Return ONLY the full JSON.\n\n" + json.dumps(best, ensure_ascii=False), json_mode=True, temperature=0.3)
