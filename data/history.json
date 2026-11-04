@@ -1417,6 +1417,57 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-04 23:05",
+   "type": "short",
+   "title": "How a Robot Dog is Controlled By Real Human Brain Cells #shorts",
+   "topic": "How Scientists Built a Robot Dog Powered by Real Brain Cells - A visual explainer focusing on the bizarre intersection of neuroscience and robotics, showing how living biological tissue is integrated into machine control systems.",
+   "style": "Before vs now: how this used to work vs what just changed",
+   "youtube_id": "8465fDr77aU",
+   "voice": "Charon",
+   "seconds": 26.6,
+   "scene_times": [
+    [
+     0.0,
+     "This robotic canine operates using living human brain cells combined with traditional hard"
+    ],
+    [
+     6.9,
+     "Tissue acts as the processor."
+    ],
+    [
+     9.5,
+     "Neural networks guide movement."
+    ],
+    [
+     12.7,
+     "These quadrupeds walked independently."
+    ],
+    [
+     15.4,
+     "If brain tissue ran your smartphone, you would need roughly eight watts of power."
+    ],
+    [
+     20.7,
+     "If cyborg tech amazed you, Tomorrowly has plenty more like it."
+    ]
+   ],
+   "format": "news",
+   "why": "Robotics content consistently hits tens of millions of views globally, as proven by MrBeast and viral robot shorts. This fresh science breakthrough offers a striking visual concept that stands out from standard mechanical robot videos with zero heavy competition on this exact biological angle.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.1,
+    "fact_fixes": 1,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.17,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -1959,6 +2010,13 @@
   "pixabay-v-47221",
   "pixabay-v-258439",
   "pixabay-v-14900",
-  "pixabay-v-12716"
+  "pixabay-v-12716",
+  "pixabay-v-114431",
+  "pixabay-v-208674",
+  "pixabay-v-120848",
+  "pixabay-v-201906",
+  "pixabay-v-3166",
+  "pixabay-v-333588",
+  "pixabay-v-266876"
  ]
 }

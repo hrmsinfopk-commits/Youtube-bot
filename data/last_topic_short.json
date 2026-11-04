@@ -1,81 +1,75 @@
 {
- "topic": "How Ukraine Turns Enemy Drones Against Them",
- "angle": "A punchy, physics-backed explainer on the pocket-sized military gadget that repurposes hostile drone cameras in real-time battlefield scenarios.",
- "why": "Videos featuring advanced military and combat robotics technology consistently pull hundreds of thousands to nearly a million views (e.g., DetailFuse's military tech shorts with 900k+ views). This fresh news story from the last 7 days provides a unique tactical hardware angle that has low saturation among major creators.",
+ "topic": "How Scientists Built a Robot Dog Powered by Real Brain Cells",
+ "angle": "A visual explainer focusing on the bizarre intersection of neuroscience and robotics, showing how living biological tissue is integrated into machine control systems.",
+ "why": "Robotics content consistently hits tens of millions of views globally, as proven by MrBeast and viral robot shorts. This fresh science breakthrough offers a striking visual concept that stands out from standard mechanical robot videos with zero heavy competition on this exact biological angle.",
  "keywords": [
-  "Ukraine drone gadget",
-  "drone warfare technology",
-  "military technology",
-  "anti-drone tech",
-  "pocket-sized tech",
-  "battlefield AI",
-  "combat robots",
-  "smart weapons",
-  "defense technology",
-  "tech explained",
-  "tomorrowly",
-  "future technology"
+  "robot dog",
+  "human brain cells",
+  "robot with brain cells",
+  "science breakthrough",
+  "future technology",
+  "robotics",
+  "biology and tech",
+  "artificial intelligence",
+  "lab grown brain",
+  "cyborg tech",
+  "future robots",
+  "science news"
  ],
  "facts": [
-  "A new pocket-sized military gadget developed in Ukraine turns hostile drone cameras against their own operators.",
-  "The device is designed to intercept and manipulate the video feeds of approaching combat drones on the battlefield.",
-  "By hijacking the onboard camera feed, defensive units can visualize what the drone's automated targeting systems are tracking.",
-  "The technology operates as a portable field tool for front-line military teams.",
-  "This represents a shift toward low-cost, highly portable electronic warfare countermeasures rather than heavy missile defense systems.",
-  "Ukrainian troops have used empty subterranean gas infrastructure to access frontline areas.",
-  "France is transitioning personnel who operate tank guns into operators of first-person view drones.",
-  "Special operations forces from Ukraine are creating ambush areas within Russian borders, according to video evidence.",
-  "An attack on Ukraine involved 81 unmanned aerial vehicles, the majority of which were powered by jet engines alongside Gerbera models."
+  "Scientists have successfully constructed a functional robot dog that operates using living human brain cells.",
+  "The biological component acts as a processing unit, bridging the gap between biological tissue and traditional robotics hardware.",
+  "This development explores neuromorphic engineering, where living cells are interfaced with electronic sensors and actuators.",
+  "Researchers utilize cultured neural networks to control movement and respond to environmental stimuli.",
+  "The project highlights the rapidly evolving frontier where biology and machine intelligence intersect.",
+  "Researchers developed a robotic canine controlled by actual biological neurons.",
+  "The neural tissue utilized to operate the machine originates from human cells.",
+  "During testing, the autonomous quadrupeds successfully located a designated destination independently.",
+  "The living brain matter integrated into the system was capable of processing information to guide movement."
  ],
  "long_format": null,
  "format": "news",
- "sources": [
-  {
-   "title": "Ukraine’s new pocket-sized gadget turns Russian drones’ cameras against them",
-   "source": "TechCrunch",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPREtMcHpIbGF1dUExM2JDYjZ1QWduMExjZ09GcUQwWEJTbTlnNldJdUpSbmlvZGJwYTBLc0lFVmtobS1kMjIzZTZEaGFrRjA3QTFzeDd6TnQ0YVh3ZlZjNmowbzhrejVSanNJMWVKallzZGh5MGxBYU1LX1IzM1RzWUlIS2F0US1wYUR0QU4ybDJpZjBmcTBVRklpZjZsdDc4bEhyRlp2VFpXT1dPTVE?oc=5"
-  }
- ],
+ "sources": [],
  "youtube_top": [
   {
    "title": "Can A Robot Do My Chores?",
-   "views": 58363824
+   "views": 60188580
   },
   {
    "title": "Robot VS Yiheng Wang! #harizazizan #rubik #malaysia #indonesia #yiheng",
-   "views": 14564539
+   "views": 15254037
+  },
+  {
+   "title": "She proved her worth to the team#shorts  #movieclips",
+   "views": 12959617
   },
   {
    "title": "NO SEAS UN ROBOT 😭",
-   "views": 11629874
+   "views": 11870087
+  },
+  {
+   "title": "Macbook PROLED XDR Impressions: They Said They Wouldn't!",
+   "views": 11743916
   },
   {
    "title": "Sam Altman is mad your PC is wasting RAM..",
-   "views": 10351703
-  },
-  {
-   "title": "I tried Apple’s new touchscreen MacBook Pro..",
-   "views": 9330865
+   "views": 10424478
   },
   {
    "title": "o7 To This Little Robot",
-   "views": 9217426
+   "views": 9706170
   },
   {
    "title": "Drone Uses A Moth Antenna To Track Scents 😮",
-   "views": 8388001
+   "views": 8406550
   },
   {
    "title": "iPhone Duo Is Flopping",
-   "views": 8281361
+   "views": 8281511
   },
   {
    "title": "OLED iPad Mini is The Most Apple Product They've Ever Appled",
-   "views": 6420969
-  },
-  {
-   "title": "Unboxing NEW AGIBOT A3! 📦✨ Meet the next generation of human #technology  #humanoidrobot",
-   "views": 6220659
+   "views": 7535209
   }
  ]
 }

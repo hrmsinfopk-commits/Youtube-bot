@@ -20,7 +20,8 @@
   "Maglev trains do not float on simple magnets.",
   "Modern glass skyscrapers trap solar heat like giant greenhouses, easily hitting fifty degrees Celsius inside without active cooling.",
   "Japan just activated a quantum computer built from single atoms.",
-  "A pocket-sized military gadget in Ukraine now turns hostile drone cameras against their own operators."
+  "A pocket-sized military gadget in Ukraine now turns hostile drone cameras against their own operators.",
+  "This robotic canine operates using living human brain cells combined with traditional hardware."
  ],
  "endings": [
   "Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -43,7 +44,8 @@
   "The full breakdown is on our channel.",
   "If skyscraper engineering amazed you, Tomorrowly has plenty more like it.",
   "If atomic computing amazed you, Tomorrowly has plenty more like it.",
-  "If portable electronic countermeasures interest you, Tomorrowly has plenty more like it."
+  "If portable electronic countermeasures interest you, Tomorrowly has plenty more like it.",
+  "If cyborg tech amazed you, Tomorrowly has plenty more like it."
  ],
  "scripts": [
   "Firing a multi-thousand-dollar missile at a cheap consumer drone is a financial trap. That is why modern defense forces are shifting toward directed-energy systems. KBR has introduced a novel base defense technology to fix this exact problem. The solution relies on weaponized light, deploying concentrated laser beams directly against aerial targets. It is designed to instantly neutralize incoming unmanned aerial vehicles before they reach the perimeter. Send this to the friend who loves tracking future military tech. Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -66,10 +68,10 @@
   "Maglev trains do not float on simple magnets. People assume tracks just push upward like fridge magnets. Actually, Japan's test train uses superconductors cooled near absolute zero. The track turns into a giant electric motor, surfing on magnetic waves. We did the math: at six hundred kilometers per hour, it clears a football field in roughly half a second. Zero wheel contact means zero rail friction, but specialized tracks cost billions. The full breakdown is on our channel.",
   "Modern glass skyscrapers trap solar heat like giant greenhouses, easily hitting fifty degrees Celsius inside without active cooling. Instead, they rely on massive chillers and water loops connected to cooling towers, combined with double-skin facades to vent hot air. At night, thermal storage systems freeze water when power is cheap, using that ice to help cool the building during peak hours. If skyscraper engineering amazed you, Tomorrowly has plenty more like it.",
   "Japan just activated a quantum computer built from single atoms. Traditional quantum systems need giant room-sized freezers to function properly. By controlling individual atoms, researchers may bypass the need for massive cooling. If atomic computing amazed you, Tomorrowly has plenty more like it.",
-  "A pocket-sized military gadget in Ukraine now turns hostile drone cameras against their own operators. The portable tool intercepts approaching drone feeds. Defensive units see automated targeting streams live. This replaces heavy missile defense with low-cost electronic warfare. If portable electronic countermeasures interest you, Tomorrowly has plenty more like it."
+  "A pocket-sized military gadget in Ukraine now turns hostile drone cameras against their own operators. The portable tool intercepts approaching drone feeds. Defensive units see automated targeting streams live. This replaces heavy missile defense with low-cost electronic warfare. If portable electronic countermeasures interest you, Tomorrowly has plenty more like it.",
+  "This robotic canine operates using living human brain cells combined with traditional hardware. Tissue acts as the processor. Neural networks guide movement. These quadrupeds walked independently. If brain tissue ran your smartphone, you would need roughly eight watts of power. If cyborg tech amazed you, Tomorrowly has plenty more like it."
  ],
  "recent_signatures": [
-  "ALL",
   "ALL",
   "HYPE METER",
   "THE CATCH",
@@ -88,10 +90,10 @@
   "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
-  "THE CATCH"
+  "THE CATCH",
+  "WE DID THE MATH"
  ],
  "recent_styles": [
-  "Future scenario: 'It's 2040...' - show how this changes everyday life",
   "Myth vs fact: what people assume vs what is actually true",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Countdown: 3-5 surprising facts about it, the most shocking one last",
@@ -110,7 +112,8 @@
   "Myth vs fact: what people assume vs what is actually true",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Explainer: one big question, answered step by step with a surprise at the end",
-  "Shocking fact first: open with the most unbelievable detail, then explain why"
+  "Shocking fact first: open with the most unbelievable detail, then explain why",
+  "Before vs now: how this used to work vs what just changed"
  ],
  "recent_themes": [
   "blueprint",
@@ -124,6 +127,7 @@
   "blueprint",
   "footage",
   "navy",
-  "footage"
+  "footage",
+  "navy"
  ]
 }
