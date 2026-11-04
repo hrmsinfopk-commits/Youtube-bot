@@ -1370,6 +1370,53 @@
     "concept_share": 0.25,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-04 15:13",
+   "type": "short",
+   "title": "How Ukraine Turns Enemy Drones Against Them #shorts",
+   "topic": "How Ukraine Turns Enemy Drones Against Them - A punchy, physics-backed explainer on the pocket-sized military gadget that repurposes hostile drone cameras in real-time battlefield scenarios.",
+   "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
+   "youtube_id": "H14KvU2GdL0",
+   "voice": "Charon",
+   "seconds": 25.7,
+   "scene_times": [
+    [
+     0.0,
+     "A pocket-sized military gadget in Ukraine now turns hostile drone cameras against their ow"
+    ],
+    [
+     7.3,
+     "The portable tool intercepts approaching drone feeds."
+    ],
+    [
+     11.4,
+     "Defensive units see automated targeting streams live."
+    ],
+    [
+     15.1,
+     "This replaces heavy missile defense with low-cost electronic warfare."
+    ],
+    [
+     20.1,
+     "If portable electronic countermeasures interest you, Tomorrowly has plenty more like it."
+    ]
+   ],
+   "format": "news",
+   "why": "Videos featuring advanced military and combat robotics technology consistently pull hundreds of thousands to nearly a million views (e.g., DetailFuse's military tech shorts with 900k+ views). This fresh news story from the last 7 days provides a unique tactical hardware angle that has low saturation among major creators.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.14,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -1908,6 +1955,10 @@
   "pixabay-v-31956",
   "pixabay-v-91744",
   "pixabay-v-126802",
-  "pixabay-v-245930"
+  "pixabay-v-245930",
+  "pixabay-v-47221",
+  "pixabay-v-258439",
+  "pixabay-v-14900",
+  "pixabay-v-12716"
  ]
 }

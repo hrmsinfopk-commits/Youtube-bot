@@ -1,82 +1,81 @@
 {
- "topic": "Japan's Single-Atom Quantum Computer That Doesn't Need a Giant Freezer",
- "angle": "Explain the radical physics of how single-atom quantum computing works without cryogenic mega-coolers, turning a complex quantum breakthrough into a punchy visual explainer.",
- "why": "Quantum computing tech explainers have massive viral demand as seen from recent tech and science hits. This story is fresh from the last 7 days and offers a distinct visual angle compared to traditional massive-freezer quantum computers.",
+ "topic": "How Ukraine Turns Enemy Drones Against Them",
+ "angle": "A punchy, physics-backed explainer on the pocket-sized military gadget that repurposes hostile drone cameras in real-time battlefield scenarios.",
+ "why": "Videos featuring advanced military and combat robotics technology consistently pull hundreds of thousands to nearly a million views (e.g., DetailFuse's military tech shorts with 900k+ views). This fresh news story from the last 7 days provides a unique tactical hardware angle that has low saturation among major creators.",
  "keywords": [
-  "quantum computer",
-  "quantum computing",
-  "quantum technology",
-  "single atom quantum computer",
-  "quantum physics",
-  "future tech",
-  "future technology",
-  "tech news",
-  "science news",
-  "how it works",
-  "quantum cooling",
-  "japan quantum computer"
+  "Ukraine drone gadget",
+  "drone warfare technology",
+  "military technology",
+  "anti-drone tech",
+  "pocket-sized tech",
+  "battlefield AI",
+  "combat robots",
+  "smart weapons",
+  "defense technology",
+  "tech explained",
+  "tomorrowly",
+  "future technology"
  ],
  "facts": [
-  "Japan has successfully powered up a novel quantum computer built entirely from single atoms.",
-  "Unlike traditional quantum systems that require giant, room-sized cryogenic freezers to function, this new architecture may operate without them.",
-  "Quantum computers utilize qubits instead of standard computer bits to process complex calculations exponentially faster.",
-  "Managing heat and decoherence has historically been one of the biggest engineering bottlenecks in scaling quantum computers.",
-  "Single-atom control allows researchers to manipulate quantum states with extreme precision.",
-  "This breakthrough could dramatically reduce the physical footprint and infrastructure cost of deploying advanced quantum computers.",
-  "A quantum computer has been activated in Japan.",
-  "The system is constructed using individual atoms.",
-  "Claim: This quantum machine might operate without massive cooling systems.",
-  "Source report originating from Popular Mechanics covers the development."
+  "A new pocket-sized military gadget developed in Ukraine turns hostile drone cameras against their own operators.",
+  "The device is designed to intercept and manipulate the video feeds of approaching combat drones on the battlefield.",
+  "By hijacking the onboard camera feed, defensive units can visualize what the drone's automated targeting systems are tracking.",
+  "The technology operates as a portable field tool for front-line military teams.",
+  "This represents a shift toward low-cost, highly portable electronic warfare countermeasures rather than heavy missile defense systems.",
+  "Ukrainian troops have used empty subterranean gas infrastructure to access frontline areas.",
+  "France is transitioning personnel who operate tank guns into operators of first-person view drones.",
+  "Special operations forces from Ukraine are creating ambush areas within Russian borders, according to video evidence.",
+  "An attack on Ukraine involved 81 unmanned aerial vehicles, the majority of which were powered by jet engines alongside Gerbera models."
  ],
  "long_format": null,
  "format": "news",
  "sources": [
   {
-   "title": "Japan Just Powered Up a Quantum Computer Built From Single Atoms—and It May Not Need a Giant Freezer to Run",
-   "source": "Popular Mechanics",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWF9VWHBaUmp6YnFQdVlVQUUzdVJEQVg2SzdaczFYdGNfQVYteDEzU21yWHF6Rzg5UHNocmZucHh1TU1Gb1hNT2lQTzFUNGxOdV9FZzExR0h1WElvbWdCY3YxaW5LQXNaV2EzNHlXZmgzZWtvTHctRU9MQUl6eWZTenRLZkxLWHRuUHc?oc=5"
+   "title": "Ukraine’s new pocket-sized gadget turns Russian drones’ cameras against them",
+   "source": "TechCrunch",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPREtMcHpIbGF1dUExM2JDYjZ1QWduMExjZ09GcUQwWEJTbTlnNldJdUpSbmlvZGJwYTBLc0lFVmtobS1kMjIzZTZEaGFrRjA3QTFzeDd6TnQ0YVh3ZlZjNmowbzhrejVSanNJMWVKallzZGh5MGxBYU1LX1IzM1RzWUlIS2F0US1wYUR0QU4ybDJpZjBmcTBVRklpZjZsdDc4bEhyRlp2VFpXT1dPTVE?oc=5"
   }
  ],
  "youtube_top": [
   {
    "title": "Can A Robot Do My Chores?",
-   "views": 54618376
-  },
-  {
-   "title": "New MacBook Pro with PROLED XDR Display: The first-ever Mac with Touch",
-   "views": 43645633
+   "views": 58363824
   },
   {
    "title": "Robot VS Yiheng Wang! #harizazizan #rubik #malaysia #indonesia #yiheng",
-   "views": 13256465
+   "views": 14564539
   },
   {
-   "title": "Uncle robot🤖90s childhood memory #shorts #90s #village #childhood #memories #relatable #friends",
-   "views": 11243310
-  },
-  {
-   "title": "And here we begin our new journey!🚀. Do Subscribe to @bmb.overtech Exciting stuff coming your way❤️",
-   "views": 10744676
+   "title": "NO SEAS UN ROBOT 😭",
+   "views": 11629874
   },
   {
    "title": "Sam Altman is mad your PC is wasting RAM..",
-   "views": 10026660
+   "views": 10351703
   },
   {
    "title": "I tried Apple’s new touchscreen MacBook Pro..",
-   "views": 9235089
+   "views": 9330865
+  },
+  {
+   "title": "o7 To This Little Robot",
+   "views": 9217426
   },
   {
    "title": "Drone Uses A Moth Antenna To Track Scents 😮",
-   "views": 8336399
+   "views": 8388001
   },
   {
    "title": "iPhone Duo Is Flopping",
-   "views": 8280994
+   "views": 8281361
   },
   {
-   "title": "The Black Hole That Makes Stars",
-   "views": 7058328
+   "title": "OLED iPad Mini is The Most Apple Product They've Ever Appled",
+   "views": 6420969
+  },
+  {
+   "title": "Unboxing NEW AGIBOT A3! 📦✨ Meet the next generation of human #technology  #humanoidrobot",
+   "views": 6220659
   }
  ]
 }
