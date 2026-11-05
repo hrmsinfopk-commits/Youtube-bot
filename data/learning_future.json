@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "channel": {
-  "subscribers": 18,
-  "total_views": 15770,
-  "videos": 19,
-  "watch_hours_12m": 49.7
+  "subscribers": 20,
+  "total_views": 16910,
+  "videos": 21,
+  "watch_hours_12m": 50.8
  },
  "style_scores": {
-  "Future scenario: 'It's 2040...' - show how this changes everyday life": 0.97,
+  "Future scenario: 'It's 2040...' - show how this changes everyday life": 0.98,
   "Before vs now: how this used to work vs what just changed": 0.9,
   "": 0.93,
   "Shocking fact first: open with the most unbelievable detail, then explain why": 0.97,
@@ -20,55 +20,54 @@
   "short: news": {
    "videos": 10,
    "score": 0.98,
-   "avg_views": 1057,
-   "avg_pct": 65.2
+   "avg_views": 1070,
+   "avg_pct": 65.1
   },
   "short: big question": {
    "videos": 3,
    "score": 0.89,
-   "avg_views": 706,
-   "avg_pct": 62.7
+   "avg_views": 714,
+   "avg_pct": 62.6
   },
   "short: teaser": {
    "videos": 2,
    "score": 1.1,
-   "avg_views": 1078,
-   "avg_pct": 80.1
+   "avg_views": 1159,
+   "avg_pct": 79.2
   },
   "long: deep dive": {
    "videos": 1,
-   "score": 1.0,
-   "avg_views": 58,
-   "avg_pct": 36.4
+   "score": 1.01,
+   "avg_views": 59,
+   "avg_pct": 35.7
   },
   "long: big question": {
    "videos": 3,
    "score": 0.85,
-   "avg_views": 184,
-   "avg_pct": 28.5
+   "avg_views": 186,
+   "avg_pct": 27.6
   }
  },
  "insights": [
-  "Shorts significantly outperform long-form videos, averaging over 1,000 views compared to under 60 views for long-form content.",
-  "Shorts utilizing the 'Myth vs fact' style achieved the highest performance, exemplified by the Artemis III and Maglev train shorts scoring above 1.2 with over 90% average view percentage.",
-  "Opening hooks in shorts need tighter pacing, as drop-off spikes frequently occur within the first 5 to 8 seconds of playback.",
-  "Long-form videos suffer from low initial click-through and reach, despite decent retention rates among viewers who actually start watching.",
-  "Ending calls-to-action in shorts underperform for engagement, as nearly all videos across the dataset recorded zero comments.",
-  "Space and aerospace topics (such as Artemis III and satellites) yield high viewer retention and strong engagement relative to other technological categories."
+  "Shorts significantly outperform long-form videos, averaging over 1,000 views compared to under 100 views for long videos.",
+  "The 'Myth vs fact' content style yields exceptional viewer retention, demonstrated by the highest average view percentages on videos like the Artemis III Moon Rocket (113.9%) and Maglev Trains (90.5%).",
+  "Hook drop-offs frequently occur between 4.8 and 8.3 seconds into shorts, indicating that early script pacing in this window needs tightening.",
+  "Promotional call-outs at the end of shorts (e.g., pointing to the main channel or asking open-ended questions) cause noticeable audience drop-offs, suggesting end-screens and CTAs should be streamlined.",
+  "Data for long-form videos is currently too thin to draw firm structural conclusions, though they consistently suffer from low initial click-through and low view counts."
  ],
  "videos": [
   {
    "title": "Quantinuum Just Shattered the Quantum Computing Record! #shorts",
    "type": "short",
    "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
-   "views": 1305,
+   "views": 1306,
    "averageViewPercentage": 46.01,
    "likes": 15,
    "comments": 0,
    "shares": 3,
    "subscribersGained": 4,
    "format": null,
-   "score": 0.87,
+   "score": 0.86,
    "notes": [
     "Log jaldi chhod gaye: hook ya shuru ka hissa kamzor tha.",
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
@@ -78,13 +77,13 @@
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 0,
     "YT_CHANNEL": 2,
-    "YT_SEARCH": 6,
+    "YT_SEARCH": 7,
     "YT_OTHER_PAGE": 2,
     "EXT_URL": 0,
     "PLAYLIST": 1,
     "SHORTS": 88
    },
-   "age_days": 15,
+   "age_days": 16,
    "youtube_id": "J9O4qdiPSgk"
   },
   {
@@ -114,35 +113,35 @@
     "SHORTS": 95,
     "SOUND_PAGE": 0
    },
-   "age_days": 15,
+   "age_days": 16,
    "youtube_id": "ujBL9LBgPHk"
   },
   {
    "title": "NASA's New Nuclear Spaceship: How SR-1 Freedom Changes Mars Travel",
    "type": "long",
    "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
-   "views": 58,
-   "averageViewPercentage": 36.41,
+   "views": 59,
+   "averageViewPercentage": 35.7,
    "likes": 2,
    "comments": 0,
    "shares": 4,
    "subscribersGained": 1,
    "format": "deep dive",
-   "score": 1.0,
+   "score": 1.01,
    "notes": [
     "Jo log aaye unhon ne achhi dekhi, lekin bohat kam log aaye: topic/title/thumbnail ne kashish nahi ki.",
-    "Sab se zyada log 29.5s par chhod gaye (6.7% gire) - wahan line thi: \"NASA recently pulled the curtain back on something we have never flown past Eart\"."
+    "Sab se zyada log 40.9s par chhod gaye (6.5% gire) - wahan line thi: \"For seventy years, every deep space mission relied on chemical propellants. Thin\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 5,
-    "SUBSCRIBER": 9,
+    "SUBSCRIBER": 8,
     "YT_CHANNEL": 14,
-    "YT_SEARCH": 38,
-    "RELATED_VIDEO": 28,
+    "YT_SEARCH": 37,
+    "RELATED_VIDEO": 29,
     "EXT_URL": 3,
     "PLAYLIST": 3
    },
-   "age_days": 14,
+   "age_days": 15,
    "youtube_id": "BZuC5VJ6kDM"
   },
   {
@@ -171,7 +170,7 @@
     "PLAYLIST": 1,
     "SHORTS": 91
    },
-   "age_days": 14,
+   "age_days": 15,
    "youtube_id": "sWFi6T_3Kf8"
   },
   {
@@ -200,7 +199,7 @@
     "PLAYLIST": 14,
     "SHORTS": 6
    },
-   "age_days": 13,
+   "age_days": 14,
    "youtube_id": "RFzD-PyILsQ"
   },
   {
@@ -228,7 +227,7 @@
     "PLAYLIST": 1,
     "SHORTS": 83
    },
-   "age_days": 12,
+   "age_days": 13,
    "youtube_id": "dck9ttHCJic"
   },
   {
@@ -242,14 +241,14 @@
    "shares": 1,
    "subscribersGained": 0,
    "format": "big question",
-   "score": 0.62,
+   "score": 0.63,
    "notes": [],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 25,
     "YT_CHANNEL": 75
    },
-   "age_days": 11,
+   "age_days": 12,
    "youtube_id": "oGPOL4VkwGI"
   },
   {
@@ -276,7 +275,7 @@
     "PLAYLIST": 0,
     "SHORTS": 87
    },
-   "age_days": 11,
+   "age_days": 12,
    "youtube_id": "5yhWmoUjmZY"
   },
   {
@@ -290,7 +289,7 @@
    "shares": 1,
    "subscribersGained": 0,
    "format": "big question",
-   "score": 1.03,
+   "score": 1.04,
    "notes": [
     "Average se kaafi behtar: yeh topic/andaaz dobara try karna chahiye.",
     "Sab se zyada log 14.9s par chhod gaye (12.0% gire) - wahan line thi: \"Yet the nickel-based superalloy turbine blades spinning right behind that fire m\"."
@@ -302,7 +301,7 @@
     "YT_SEARCH": 0,
     "RELATED_VIDEO": 3
    },
-   "age_days": 10,
+   "age_days": 11,
    "youtube_id": "CH5p37icZXU"
   },
   {
@@ -329,7 +328,7 @@
     "PLAYLIST": 0,
     "SHORTS": 95
    },
-   "age_days": 10,
+   "age_days": 11,
    "youtube_id": "-oX0q-L56PM"
   },
   {
@@ -359,14 +358,14 @@
     "PLAYLIST": 1,
     "SHORTS": 90
    },
-   "age_days": 9,
+   "age_days": 10,
    "youtube_id": "Pcj4yIUFDWs"
   },
   {
    "title": "Tesla Just Started Building Humanoid Robots on Real Production Lines #shorts",
    "type": "short",
    "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
-   "views": 1046,
+   "views": 1048,
    "averageViewPercentage": 59.07,
    "likes": 18,
    "comments": 0,
@@ -382,20 +381,20 @@
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 0,
     "YT_CHANNEL": 1,
-    "YT_SEARCH": 3,
+    "YT_SEARCH": 4,
     "YT_OTHER_PAGE": 1,
     "PLAYLIST": 0,
     "SHORTS": 94
    },
-   "age_days": 8,
+   "age_days": 9,
    "youtube_id": "ID7098rLP6g"
   },
   {
    "title": "How Princeton Cleaned Atlantic City's Water #shorts",
    "type": "short",
    "style": "Explainer: one big question, answered step by step with a surprise at the end",
-   "views": 1488,
-   "averageViewPercentage": 64.41,
+   "views": 1489,
+   "averageViewPercentage": 64.39,
    "likes": 15,
    "comments": 0,
    "shares": 0,
@@ -403,7 +402,6 @@
    "format": "news",
    "score": 1.01,
    "notes": [
-    "Average se kaafi behtar: yeh topic/andaaz dobara try karna chahiye.",
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
     "Sab se zyada log 18.7s par chhod gaye (4.0% gire) - wahan line thi: \"Follow Tomorrowly for tomorrow's tech, today.\"."
    ],
@@ -416,15 +414,15 @@
     "PLAYLIST": 0,
     "SHORTS": 93
    },
-   "age_days": 7,
+   "age_days": 8,
    "youtube_id": "G3FJYX7Fjv4"
   },
   {
    "title": "NASA Stacks the Massive Artemis III Moon Rocket #shorts",
    "type": "short",
    "style": "Myth vs fact: what people assume vs what is actually true",
-   "views": 854,
-   "averageViewPercentage": 113.79999999999998,
+   "views": 855,
+   "averageViewPercentage": 113.92999999999999,
    "likes": 12,
    "comments": 1,
    "shares": 0,
@@ -444,15 +442,15 @@
     "NOTIFICATION": 0,
     "SHORTS": 84
    },
-   "age_days": 7,
+   "age_days": 8,
    "youtube_id": "OlcO352mcP4"
   },
   {
    "title": "Why Satellites Never Fall to Earth (Orbital Mechanics Explained) #shorts",
    "type": "short",
    "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
-   "views": 1489,
-   "averageViewPercentage": 71.28,
+   "views": 1513,
+   "averageViewPercentage": 71.06,
    "likes": 43,
    "comments": 1,
    "shares": 0,
@@ -460,28 +458,27 @@
    "format": "big question",
    "score": 1.06,
    "notes": [
-    "Average se kaafi behtar: yeh topic/andaaz dobara try karna chahiye.",
     "Sab se zyada log 5.4s par chhod gaye (6.0% gire) - wahan line thi: \"Thousands of heavy metal satellites hang hundreds of kilometers above us in an i\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 0,
     "YT_CHANNEL": 0,
-    "YT_SEARCH": 11,
+    "YT_SEARCH": 12,
     "YT_OTHER_PAGE": 2,
     "PLAYLIST": 0,
     "NOTIFICATION": 0,
     "SHORTS": 86
    },
-   "age_days": 6,
+   "age_days": 7,
    "youtube_id": "L66lXYqmR7w"
   },
   {
    "title": "Can a Colorado River Basin Fuel Clouds to Create Snow? #shorts",
    "type": "short",
    "style": "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
-   "views": 232,
-   "averageViewPercentage": 62.32,
+   "views": 233,
+   "averageViewPercentage": 61.78,
    "likes": 9,
    "comments": 1,
    "shares": 0,
@@ -494,22 +491,22 @@
    "traffic": {
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 1,
-    "YT_CHANNEL": 0,
+    "YT_CHANNEL": 1,
     "YT_SEARCH": 6,
     "YT_OTHER_PAGE": 4,
     "PLAYLIST": 0,
-    "SHORTS": 88
+    "SHORTS": 87
    },
-   "age_days": 5,
+   "age_days": 6,
    "youtube_id": "yrzcrm1vSLY"
   },
   {
    "title": "US Army Tests Autonomous Combat Robots That Hunt Targets #shorts",
    "type": "short",
    "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
-   "views": 1682,
-   "averageViewPercentage": 62.46000000000001,
-   "likes": 35,
+   "views": 1806,
+   "averageViewPercentage": 61.96,
+   "likes": 41,
    "comments": 1,
    "shares": 1,
    "subscribersGained": 0,
@@ -517,7 +514,7 @@
    "score": 1.01,
    "notes": [
     "Average se kaafi behtar: yeh topic/andaaz dobara try karna chahiye.",
-    "Sab se zyada log 8.3s par chhod gaye (3.7% gire) - wahan line thi: \"Inside, artificial intelligence processes live sensor feeds to lock onto hostile\"."
+    "Sab se zyada log 8.3s par chhod gaye (3.8% gire) - wahan line thi: \"Inside, artificial intelligence processes live sensor feeds to lock onto hostile\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
@@ -528,61 +525,61 @@
     "PLAYLIST": 0,
     "SHORTS": 85
    },
-   "age_days": 4,
+   "age_days": 5,
    "youtube_id": "1anbm_UHR-w"
   },
   {
    "title": "How Maglev Trains Float Without Touching the Tracks",
    "type": "long",
    "style": "Before vs now: how this used to work vs what just changed",
-   "views": 38,
-   "averageViewPercentage": 32.29,
+   "views": 46,
+   "averageViewPercentage": 29.62,
    "likes": 2,
    "comments": 0,
    "shares": 0,
    "subscribersGained": 0,
    "format": "big question",
-   "score": 0.89,
+   "score": 0.88,
    "notes": [
     "Jo log aaye unhon ne achhi dekhi, lekin bohat kam log aaye: topic/title/thumbnail ne kashish nahi ki.",
-    "Sab se zyada log 24.9s par chhod gaye (19.0% gire) - wahan line thi: \"Maglev is short for magnetic levitation, a system where trains float above a gui\"."
+    "Sab se zyada log 24.9s par chhod gaye (17.4% gire) - wahan line thi: \"Maglev is short for magnetic levitation, a system where trains float above a gui\"."
    ],
    "traffic": {
-    "NO_LINK_OTHER": 3,
-    "SUBSCRIBER": 24,
-    "YT_CHANNEL": 5,
-    "YT_SEARCH": 16,
-    "RELATED_VIDEO": 50,
-    "YT_OTHER_PAGE": 3
+    "NO_LINK_OTHER": 2,
+    "SUBSCRIBER": 33,
+    "YT_CHANNEL": 7,
+    "YT_SEARCH": 15,
+    "RELATED_VIDEO": 41,
+    "YT_OTHER_PAGE": 2
    },
-   "age_days": 4,
+   "age_days": 5,
    "youtube_id": "xw8THeae5Ek"
   },
   {
    "title": "How Maglev Trains Float at 600 km/h Without Wheels #shorts",
    "type": "short",
    "style": "Myth vs fact: what people assume vs what is actually true",
-   "views": 1091,
-   "averageViewPercentage": 92.41,
-   "likes": 21,
+   "views": 1252,
+   "averageViewPercentage": 90.54,
+   "likes": 23,
    "comments": 1,
    "shares": 1,
    "subscribersGained": 3,
    "format": "teaser",
    "score": 1.2,
    "notes": [
-    "Sab se zyada log 5.1s par chhod gaye (6.3% gire) - wahan line thi: \"People assume tracks just push upward like fridge magnets.\"."
+    "Sab se zyada log 5.1s par chhod gaye (5.9% gire) - wahan line thi: \"People assume tracks just push upward like fridge magnets.\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 0,
     "YT_CHANNEL": 0,
-    "YT_SEARCH": 14,
+    "YT_SEARCH": 17,
     "YT_OTHER_PAGE": 1,
     "PLAYLIST": 0,
-    "SHORTS": 85
+    "SHORTS": 81
    },
-   "age_days": 3,
+   "age_days": 4,
    "youtube_id": "-Rl6KWl7ygg"
   }
  ]
