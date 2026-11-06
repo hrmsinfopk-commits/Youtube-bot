@@ -1516,6 +1516,54 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-06 15:11",
+   "type": "short",
+   "title": "How an Asteroid Carried All 5 DNA and RNA Letters to Earth #shorts",
+   "topic": "How an Asteroid Carried All 5 DNA and RNA Letters to Earth - Explaining the profound discovery of all five genetic building blocks of life inside an ancient 4.5-billion-year-old space rock, and what it means for the origins of life in the universe.",
+   "style": "Myth vs fact: what people assume vs what is actually true",
+   "youtube_id": "NLQTQQ15ct8",
+   "voice": "Charon",
+   "seconds": 27.8,
+   "scene_times": [
+    [
+     0.0,
+     "All five primary letters of our genetic code were just found inside a space rock."
+    ],
+    [
+     5.6,
+     "That rock holds all five primary building blocks that make up DNA and RNA."
+    ],
+    [
+     11.7,
+     "Think of it as finding all five recipe ingredients for life inside a cosmic time capsule."
+    ],
+    [
+     17.4,
+     "If space rocks delivered these components, life's origins started way beyond Earth."
+    ],
+    [
+     23.4,
+     "If space origins interest you, Tomorrowly has plenty more like it."
+    ]
+   ],
+   "format": "news",
+   "why": "Space and astronomy shorts consistently pull millions of views (e.g., One Speck's solar system video with 3.4M views). This fresh space science discovery has strong visual appeal with asteroid and cosmic footage while avoiding crowded tech or military topics.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics_added": 1,
+    "graphics": 1,
+    "own_share": 0.21,
+    "fact_fixes": 1,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -2071,6 +2119,13 @@
   "pixabay-v-276927",
   "pixabay-v-53906",
   "nasa-v-ARC-20191007-AAV3225-LCROSS-10thAnniv-MisisonAnimation-NASAWeb",
-  "pixabay-v-84589"
+  "pixabay-v-84589",
+  "pixabay-v-141783",
+  "pixabay-v-5169",
+  "nasa-v-GSFC_20201016_M13733_BennuIn360",
+  "pixabay-v-377096",
+  "pixabay-v-333527",
+  "pixabay-v-153813",
+  "pixabay-v-170480"
  ]
 }

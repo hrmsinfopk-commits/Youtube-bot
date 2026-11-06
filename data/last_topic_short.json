@@ -1,75 +1,80 @@
 {
- "topic": "How Scientists Built a Robot Dog Powered by Real Brain Cells",
- "angle": "A visual explainer focusing on the bizarre intersection of neuroscience and robotics, showing how living biological tissue is integrated into machine control systems.",
- "why": "Robotics content consistently hits tens of millions of views globally, as proven by MrBeast and viral robot shorts. This fresh science breakthrough offers a striking visual concept that stands out from standard mechanical robot videos with zero heavy competition on this exact biological angle.",
+ "topic": "How an Asteroid Carried All 5 DNA and RNA Letters to Earth",
+ "angle": "Explaining the profound discovery of all five genetic building blocks of life inside an ancient 4.5-billion-year-old space rock, and what it means for the origins of life in the universe.",
+ "why": "Space and astronomy shorts consistently pull millions of views (e.g., One Speck's solar system video with 3.4M views). This fresh space science discovery has strong visual appeal with asteroid and cosmic footage while avoiding crowded tech or military topics.",
  "keywords": [
-  "robot dog",
-  "human brain cells",
-  "robot with brain cells",
-  "science breakthrough",
-  "future technology",
-  "robotics",
-  "biology and tech",
-  "artificial intelligence",
-  "lab grown brain",
-  "cyborg tech",
-  "future robots",
-  "science news"
+  "space",
+  "astronomy",
+  "asteroid",
+  "DNA and RNA",
+  "origins of life",
+  "space rocks",
+  "science news",
+  "universe",
+  "NASA",
+  "space facts",
+  "genetic building blocks",
+  "ancient asteroid"
  ],
  "facts": [
-  "Scientists have successfully constructed a functional robot dog that operates using living human brain cells.",
-  "The biological component acts as a processing unit, bridging the gap between biological tissue and traditional robotics hardware.",
-  "This development explores neuromorphic engineering, where living cells are interfaced with electronic sensors and actuators.",
-  "Researchers utilize cultured neural networks to control movement and respond to environmental stimuli.",
-  "The project highlights the rapidly evolving frontier where biology and machine intelligence intersect.",
-  "Researchers developed a robotic canine controlled by actual biological neurons.",
-  "The neural tissue utilized to operate the machine originates from human cells.",
-  "During testing, the autonomous quadrupeds successfully located a designated destination independently.",
-  "The living brain matter integrated into the system was capable of processing information to guide movement."
+  "Scientists have discovered all five genetic letters of DNA and RNA inside an ancient space rock.",
+  "The analyzed asteroid is estimated to be 4.5 billion years old, dating back to the very formation of our solar system.",
+  "DNA and RNA use five primary nucleobases: adenine, guanine, cytosine, thymine, and uracil.",
+  "Finding all five essential organic building blocks in an extraterrestrial body supports the theory that life's ingredients were delivered to early Earth from space.",
+  "This breakthrough provides concrete chemical evidence regarding how the fundamental components of life could form and survive in harsh cosmic environments.",
+  "An ancient space rock was discovered to hold all five genetic components necessary for DNA and RNA.",
+  "The meteorite in question is estimated to be approximately 4.5 billion years old.",
+  "One hypothesis suggested by the findings is that the building blocks of genetics may have started beyond our planet."
  ],
  "long_format": null,
  "format": "news",
- "sources": [],
+ "sources": [
+  {
+   "title": "All 5 genetic “letters” of DNA and RNA discovered in a 4.5-billion-year-old asteroid",
+   "source": "Science Daily",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5WU2FVT3lpVXI0eUFiSG9kNng3LXpYVjhHUkhMNk9zUkxEdk83a3VxUXlVSm1rc2ZZWUhfWGI3ZWYzOHBJN2RhQXd1NWRDSVdUby1zZHBlemh2Y1ozb2stRUxTS1pLMW9fSHpUcnFiWQ?oc=5"
+  }
+ ],
  "youtube_top": [
   {
    "title": "Can A Robot Do My Chores?",
-   "views": 60188580
+   "views": 66183657
   },
   {
-   "title": "Robot VS Yiheng Wang! #harizazizan #rubik #malaysia #indonesia #yiheng",
-   "views": 15254037
-  },
-  {
-   "title": "She proved her worth to the team#shorts  #movieclips",
-   "views": 12959617
+   "title": "Aamu & Aalu Underwater Robot Chase! 🌊🤖 | Funny Adventure #Shorts",
+   "views": 15950669
   },
   {
    "title": "NO SEAS UN ROBOT 😭",
-   "views": 11870087
-  },
-  {
-   "title": "Macbook PROLED XDR Impressions: They Said They Wouldn't!",
-   "views": 11743916
-  },
-  {
-   "title": "Sam Altman is mad your PC is wasting RAM..",
-   "views": 10424478
+   "views": 12718181
   },
   {
    "title": "o7 To This Little Robot",
-   "views": 9706170
-  },
-  {
-   "title": "Drone Uses A Moth Antenna To Track Scents 😮",
-   "views": 8406550
-  },
-  {
-   "title": "iPhone Duo Is Flopping",
-   "views": 8281511
+   "views": 9939747
   },
   {
    "title": "OLED iPad Mini is The Most Apple Product They've Ever Appled",
-   "views": 7535209
+   "views": 9775143
+  },
+  {
+   "title": "Drone Uses A Moth Antenna To Track Scents 😮",
+   "views": 8453926
+  },
+  {
+   "title": "Parvati Song(8K HD Video) | Jab Zid Pe Aa Gayi Parvati🔥| Hanuman Ansh | Parvati Parvati #hanumanansh",
+   "views": 6238655
+  },
+  {
+   "title": "MI NIÑERA ES UNA MUÑECA ROBOT!!!",
+   "views": 6051847
+  },
+  {
+   "title": "A phone that fixes brainrot?",
+   "views": 5847269
+  },
+  {
+   "title": "What is sticky keys?? And how to turn off the popup?",
+   "views": 5424830
   }
  ]
 }

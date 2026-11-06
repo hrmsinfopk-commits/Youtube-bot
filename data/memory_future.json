@@ -22,7 +22,8 @@
   "Japan just activated a quantum computer built from single atoms.",
   "A pocket-sized military gadget in Ukraine now turns hostile drone cameras against their own operators.",
   "This robotic canine operates using living human brain cells combined with traditional hardware.",
-  "NASA's Europa Clipper just launched toward an ocean with twice Earth's water."
+  "NASA's Europa Clipper just launched toward an ocean with twice Earth's water.",
+  "All five primary letters of our genetic code were just found inside a space rock."
  ],
  "endings": [
   "Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -47,7 +48,8 @@
   "If atomic computing amazed you, Tomorrowly has plenty more like it.",
   "If portable electronic countermeasures interest you, Tomorrowly has plenty more like it.",
   "If cyborg tech amazed you, Tomorrowly has plenty more like it.",
-  "If ocean worlds fascinate you, Tomorrowly has plenty more like it."
+  "If ocean worlds fascinate you, Tomorrowly has plenty more like it.",
+  "If space origins interest you, Tomorrowly has plenty more like it."
  ],
  "scripts": [
   "Firing a multi-thousand-dollar missile at a cheap consumer drone is a financial trap. That is why modern defense forces are shifting toward directed-energy systems. KBR has introduced a novel base defense technology to fix this exact problem. The solution relies on weaponized light, deploying concentrated laser beams directly against aerial targets. It is designed to instantly neutralize incoming unmanned aerial vehicles before they reach the perimeter. Send this to the friend who loves tracking future military tech. Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -72,10 +74,10 @@
   "Japan just activated a quantum computer built from single atoms. Traditional quantum systems need giant room-sized freezers to function properly. By controlling individual atoms, researchers may bypass the need for massive cooling. If atomic computing amazed you, Tomorrowly has plenty more like it.",
   "A pocket-sized military gadget in Ukraine now turns hostile drone cameras against their own operators. The portable tool intercepts approaching drone feeds. Defensive units see automated targeting streams live. This replaces heavy missile defense with low-cost electronic warfare. If portable electronic countermeasures interest you, Tomorrowly has plenty more like it.",
   "This robotic canine operates using living human brain cells combined with traditional hardware. Tissue acts as the processor. Neural networks guide movement. These quadrupeds walked independently. If brain tissue ran your smartphone, you would need roughly eight watts of power. If cyborg tech amazed you, Tomorrowly has plenty more like it.",
-  "NASA's Europa Clipper just launched toward an ocean with twice Earth's water. That water sits buried beneath solid ice. To look for life, the probe will use radar and instruments during dozens of close flybys. Radiation will destroy the spacecraft after fifty orbits. If ocean worlds fascinate you, Tomorrowly has plenty more like it."
+  "NASA's Europa Clipper just launched toward an ocean with twice Earth's water. That water sits buried beneath solid ice. To look for life, the probe will use radar and instruments during dozens of close flybys. Radiation will destroy the spacecraft after fifty orbits. If ocean worlds fascinate you, Tomorrowly has plenty more like it.",
+  "All five primary letters of our genetic code were just found inside a space rock. That rock holds all five primary building blocks that make up DNA and RNA. Think of it as finding all five recipe ingredients for life inside a cosmic time capsule. If space rocks delivered these components, life's origins started way beyond Earth. If space origins interest you, Tomorrowly has plenty more like it."
  ],
  "recent_signatures": [
-  "HYPE METER",
   "THE CATCH",
   "ALL",
   "WE DID THE MATH",
@@ -94,10 +96,10 @@
   "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
-  "THE CATCH"
+  "THE CATCH",
+  "WE DID THE MATH"
  ],
  "recent_styles": [
-  "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Countdown: 3-5 surprising facts about it, the most shocking one last",
   "Explainer: one big question, answered step by step with a surprise at the end",
   "Future scenario: 'It's 2040...' - show how this changes everyday life",
@@ -116,7 +118,8 @@
   "Explainer: one big question, answered step by step with a surprise at the end",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Before vs now: how this used to work vs what just changed",
-  "Shocking fact first: open with the most unbelievable detail, then explain why"
+  "Shocking fact first: open with the most unbelievable detail, then explain why",
+  "Myth vs fact: what people assume vs what is actually true"
  ],
  "recent_themes": [
   "blueprint",
@@ -132,6 +135,7 @@
   "navy",
   "footage",
   "navy",
-  "blueprint"
+  "blueprint",
+  "footage"
  ]
 }
