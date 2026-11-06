@@ -6,6 +6,9 @@ on:
     - cron: "0 14 * * *"
     # Budh raat 3 baje (PKT) = America ki shaam: hafte ki extra Short (Budh ki long video ki jagah)
     - cron: "0 22 * * 3"
+    # Back-up runs (10 PM aur 1 AM PKT): sirf tab video banti hai jab us din ki Short Gemini ki kharabi se reh gayi ho
+    - cron: "0 17 * * *"
+    - cron: "0 20 * * *"
   workflow_dispatch: {}        # "Run workflow" button se kabhi bhi chala sakte hain
   push:
     paths: [".github/trigger-short.txt"]   # is file ko badalne se bhi bot chalta hai
@@ -54,6 +57,7 @@ jobs:
           YT_REFRESH_TOKEN_KAHANI: ${{ secrets.YT_REFRESH_TOKEN_KAHANI }}
         run: |
           ARGS=""
+          case "${{ github.event.schedule }}" in "0 17 * * *"|"0 20 * * *") ARGS="--catchup";; esac
           # trigger file mein 'test' likha ho to video banegi magar upload nahi hogi
           if [ "${{ github.event_name }}" = "push" ] && grep -qi test .github/trigger-short.txt; then ARGS="--no-upload"; fi
           # trigger file mein "big question" ya "news" likha ho to us din ka format badal jata hai

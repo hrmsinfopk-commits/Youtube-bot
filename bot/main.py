@@ -1,4 +1,5 @@
 """Entry point.  python -m bot.main --type short|long [--no-upload] [--offline-test]"""
+import datetime
 import argparse
 import json
 import random
@@ -457,16 +458,33 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
     return video
 
 
+def _age_hours(date_str, now):
+    try:
+        return (now - datetime.datetime.strptime(str(date_str)[:16], "%Y-%m-%d %H:%M")).total_seconds() / 3600
+    except Exception:  # noqa: BLE001
+        return 1e9
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--type", choices=["short", "long"], default="short")
     ap.add_argument("--no-upload", action="store_true")
     ap.add_argument("--offline-test", action="store_true")
+    ap.add_argument("--catchup", action="store_true",
+                    help="back-up run: only make a video if none was uploaded in the last 10 hours")
     ap.add_argument("--channel", default="future", help="future | kahani (channels/<name>.yaml)")
     a = ap.parse_args()
     cfg = load_config(a.channel)
     log(f"Channel: {cfg['channel']['name']} ({a.channel}, mode={cfg['channel']['mode']})")
     history = load_history()
+    if a.catchup:
+        now = datetime.datetime.utcnow()
+        recent = [v for v in history.get("videos", []) if v.get("type") == a.type and v.get("youtube_id")
+                  and _age_hours(v.get("date"), now) < 10]
+        if recent:
+            log(f"Back-up run: today's {a.type} is already up ({recent[-1].get('title')}) - nothing to do")
+            return
+        log(f"Back-up run: no {a.type} uploaded in the last 10 hours - making it now")
     n = cfg["shorts"]["per_run"] if a.type == "short" else cfg["long"]["per_run"]
     fails = 0
     t_start = time.time()
