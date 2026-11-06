@@ -1468,6 +1468,54 @@
     "concept_share": 0.17,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-06 01:32",
+   "type": "short",
+   "title": "NASA Sent a Probe to Investigate Europa's Ocean #shorts",
+   "topic": "NASA's Europa Clipper Successfully Launches to Search for Alien Life",
+   "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
+   "youtube_id": "ZEOAv5rj1Nk",
+   "voice": "Charon",
+   "seconds": 23.2,
+   "scene_times": [
+    [
+     0.0,
+     "NASA's Europa Clipper just launched toward an ocean with twice Earth's water."
+    ],
+    [
+     5.6,
+     "That water sits buried beneath solid ice."
+    ],
+    [
+     9.2,
+     "To look for life, the probe will use radar and instruments during dozens of close flybys."
+    ],
+    [
+     14.4,
+     "Radiation will destroy the spacecraft after fifty orbits."
+    ],
+    [
+     18.6,
+     "If ocean worlds fascinate you, Tomorrowly has plenty more like it."
+    ]
+   ],
+   "format": "news",
+   "why": "",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics_added": 1,
+    "graphics": 1,
+    "own_share": 0.15,
+    "fact_fixes": 3,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -2017,6 +2065,12 @@
   "pixabay-v-201906",
   "pixabay-v-3166",
   "pixabay-v-333588",
-  "pixabay-v-266876"
+  "pixabay-v-266876",
+  "pixabay-v-232",
+  "pixabay-v-233",
+  "pixabay-v-276927",
+  "pixabay-v-53906",
+  "nasa-v-ARC-20191007-AAV3225-LCROSS-10thAnniv-MisisonAnimation-NASAWeb",
+  "pixabay-v-84589"
  ]
 }
