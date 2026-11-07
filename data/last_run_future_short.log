@@ -1,4 +1,4 @@
-[17:27:39] Channel: Tomorrowly (future, mode=facts)
+[20:28:59] Channel: Tomorrowly (future, mode=facts)
 /home/runner/work/Youtube-bot/Youtube-bot/bot/main.py:481: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   now = datetime.datetime.utcnow()
-[17:27:39] Back-up run: today's short is already up (How Utah’s Goosenecks Carved Deep Loops Through the Desert #shorts) - nothing to do
+[20:28:59] Back-up run: today's short is already up (How Utah’s Goosenecks Carved Deep Loops Through the Desert #shorts) - nothing to do
