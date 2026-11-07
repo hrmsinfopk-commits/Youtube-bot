@@ -1,80 +1,81 @@
 {
- "topic": "How an Asteroid Carried All 5 DNA and RNA Letters to Earth",
- "angle": "Explaining the profound discovery of all five genetic building blocks of life inside an ancient 4.5-billion-year-old space rock, and what it means for the origins of life in the universe.",
- "why": "Space and astronomy shorts consistently pull millions of views (e.g., One Speck's solar system video with 3.4M views). This fresh space science discovery has strong visual appeal with asteroid and cosmic footage while avoiding crowded tech or military topics.",
+ "topic": "How Utah’s Goosenecks Carved Deep Loops Through the Desert",
+ "angle": "A visual breakdown of how the San Juan River carved deep, impossibly curvy meanders into flat desert rock, explaining the rare geological mechanics of entrenched river meanders.",
+ "why": "Space and Earth visualization shorts like 'Our ENTIRE Solar System Is Racing Through the Galaxy' pull millions of views, and NASA's newly released Earth imagery provides stunning visual assets. This geology explainer avoids saturated product hype and offers a captivating visual mystery.",
  "keywords": [
-  "space",
-  "astronomy",
-  "asteroid",
-  "DNA and RNA",
-  "origins of life",
-  "space rocks",
-  "science news",
-  "universe",
-  "NASA",
-  "space facts",
-  "genetic building blocks",
-  "ancient asteroid"
+  "Utah Goosenecks",
+  "San Juan River",
+  "river meanders",
+  "geology explained",
+  "earth from space",
+  "desert landscape",
+  "NASA Earth",
+  "canyon formation",
+  "how rivers carve canyons",
+  "geological wonders",
+  "Earth science shorts",
+  "natural formations"
  ],
  "facts": [
-  "Scientists have discovered all five genetic letters of DNA and RNA inside an ancient space rock.",
-  "The analyzed asteroid is estimated to be 4.5 billion years old, dating back to the very formation of our solar system.",
-  "DNA and RNA use five primary nucleobases: adenine, guanine, cytosine, thymine, and uracil.",
-  "Finding all five essential organic building blocks in an extraterrestrial body supports the theory that life's ingredients were delivered to early Earth from space.",
-  "This breakthrough provides concrete chemical evidence regarding how the fundamental components of life could form and survive in harsh cosmic environments.",
-  "An ancient space rock was discovered to hold all five genetic components necessary for DNA and RNA.",
-  "The meteorite in question is estimated to be approximately 4.5 billion years old.",
-  "One hypothesis suggested by the findings is that the building blocks of genetics may have started beyond our planet."
+  "The San Juan River has carved deep, improbably curvy meanders known as the Goosenecks into the desert landscape of Utah.",
+  "These formations are classic examples of entrenched meanders, where a river maintains its winding path as the surrounding land is uplifted over millions of years.",
+  "The loops at Goosenecks State Park plunge over 1,000 feet down to the riverbed below.",
+  "The river travels approximately five miles through the sweeping curves while advancing only about one mile in a straight line.",
+  "This slow geological process exposes hundreds of millions of years of geological history in the surrounding canyon walls.",
+  "The geological formation known as Goosenecks is located in Utah.",
+  "A winding river formed deep loop patterns in the desert terrain.",
+  "The surrounding rock layers date back 300 million years.",
+  "NASA successfully photographed the dramatic winding river landscape."
  ],
  "long_format": null,
  "format": "news",
  "sources": [
   {
-   "title": "All 5 genetic “letters” of DNA and RNA discovered in a 4.5-billion-year-old asteroid",
-   "source": "Science Daily",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5WU2FVT3lpVXI0eUFiSG9kNng3LXpYVjhHUkhMNk9zUkxEdk83a3VxUXlVSm1rc2ZZWUhfWGI3ZWYzOHBJN2RhQXd1NWRDSVdUby1zZHBlemh2Y1ozb2stRUxTS1pLMW9fSHpUcnFiWQ?oc=5"
+   "title": "Taking a Gander at Utah’s Goosenecks",
+   "source": "NASA",
+   "link": "https://science.nasa.gov/earth/earth-observatory/taking-a-gander-at-utahs-goosenecks/"
   }
  ],
  "youtube_top": [
   {
-   "title": "Can A Robot Do My Chores?",
-   "views": 66183657
-  },
-  {
    "title": "Aamu & Aalu Underwater Robot Chase! 🌊🤖 | Funny Adventure #Shorts",
-   "views": 15950669
-  },
-  {
-   "title": "NO SEAS UN ROBOT 😭",
-   "views": 12718181
-  },
-  {
-   "title": "o7 To This Little Robot",
-   "views": 9939747
+   "views": 21178460
   },
   {
    "title": "OLED iPad Mini is The Most Apple Product They've Ever Appled",
-   "views": 9775143
-  },
-  {
-   "title": "Drone Uses A Moth Antenna To Track Scents 😮",
-   "views": 8453926
-  },
-  {
-   "title": "Parvati Song(8K HD Video) | Jab Zid Pe Aa Gayi Parvati🔥| Hanuman Ansh | Parvati Parvati #hanumanansh",
-   "views": 6238655
-  },
-  {
-   "title": "MI NIÑERA ES UNA MUÑECA ROBOT!!!",
-   "views": 6051847
+   "views": 10461166
   },
   {
    "title": "A phone that fixes brainrot?",
-   "views": 5847269
+   "views": 6386198
   },
   {
    "title": "What is sticky keys?? And how to turn off the popup?",
-   "views": 5424830
+   "views": 6062092
+  },
+  {
+   "title": "This Robot Was Built To Replace The GOAT Of MotoGP",
+   "views": 5515001
+  },
+  {
+   "title": "NVIDIA's 50-Pound GPU Monster Is Mind-Blowing 🤯 #nvidia #shorts",
+   "views": 5214721
+  },
+  {
+   "title": "Our ENTIRE Solar System Is Racing Through the Galaxy #space #astronomy #solarsystem",
+   "views": 5163617
+  },
+  {
+   "title": "A Real Day of Flying the YIVTOL S-ZERO | Personal eVTOL in Action #tesla #evtol #drone #fyp",
+   "views": 4756258
+  },
+  {
+   "title": "He Sent a ROBOT RAT to Get Her Phone… Then MORE Appeared! 🐀📱😂",
+   "views": 4746906
+  },
+  {
+   "title": "Teasing tesla robot 😳",
+   "views": 4641017
   }
  ]
 }

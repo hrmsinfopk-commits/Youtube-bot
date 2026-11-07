@@ -1702,6 +1702,53 @@
     "concept_share": 0.11,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-07 14:45",
+   "type": "short",
+   "title": "How Utah’s Goosenecks Carved Deep Loops Through the Desert #shorts",
+   "topic": "How Utah’s Goosenecks Carved Deep Loops Through the Desert - A visual breakdown of how the San Juan River carved deep, impossibly curvy meanders into flat desert rock, explaining the rare geological mechanics of entrenched river meanders.",
+   "style": "Before vs now: how this used to work vs what just changed",
+   "youtube_id": "iGO1RErj8eE",
+   "voice": "Charon",
+   "seconds": 27.0,
+   "scene_times": [
+    [
+     0.0,
+     "The San Juan River carved curvy loops through the Utah desert."
+    ],
+    [
+     4.9,
+     "These loops plunge one thousand feet down to the river."
+    ],
+    [
+     9.7,
+     "The river travels five miles while advancing just one."
+    ],
+    [
+     15.0,
+     "The secret is entrenched meanders formed as land slowly rose."
+    ],
+    [
+     20.5,
+     "If geology amazes you, Tomorrowly has plenty more earth science wonders like this."
+    ]
+   ],
+   "format": "news",
+   "why": "Space and Earth visualization shorts like 'Our ENTIRE Solar System Is Racing Through the Galaxy' pull millions of views, and NASA's newly released Earth imagery provides stunning visual assets. This geology explainer avoids saturated product hype and offers a captivating visual mystery.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.19,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -2274,6 +2321,13 @@
   "pixabay-v-62377",
   "pixabay-v-141057",
   "pixabay-v-321165",
-  "pixabay-v-735"
+  "pixabay-v-735",
+  "pixabay-v-292918",
+  "pixabay-v-307130",
+  "pixabay-v-186516",
+  "pixabay-v-118526",
+  "pixabay-v-35737",
+  "pixabay-v-88660",
+  "pixabay-v-108420"
  ]
 }
