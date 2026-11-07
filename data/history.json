@@ -1564,6 +1564,144 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-07 14:26",
+   "type": "long",
+   "title": "How Internet Crosses the Ocean Floor on Fragile Glass",
+   "topic": "How Does the Internet Travel Across the Ocean Floor? - Nearly 99% of all global data runs not through the 'cloud' or satellites, but through fragile glass strands thinner than a pencil resting on the bottom of the ocean.",
+   "style": "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
+   "youtube_id": "P0BubbItsl0",
+   "voice": "Charon",
+   "seconds": 241.6,
+   "scene_times": [
+    [
+     0.0,
+     "Nearly every time you load an overseas webpage, your data doesn't bounce off satellites—it"
+    ],
+    [
+     11.4,
+     "Undersea fiber optic cables carry ninety-nine percent of all intercontinental data traffic"
+    ],
+    [
+     25.5,
+     "How can hair-thin strands of fragile glass survive thousands of meters under crushing ocea"
+    ],
+    [
+     35.6,
+     "Down in the crushing depths at eight thousand meters, the cable keeping the global interne"
+    ],
+    [
+     49.3,
+     "Because deep-sea water pressure is completely uniform, the line needs no bulky steel armor"
+    ],
+    [
+     63.7,
+     "Inside each nine-micron glass strand, infrared laser pulses bounce along the core at two h"
+    ],
+    [
+     81.7,
+     "Yet even through the purest glass, light beams naturally scatter and dim over distance—so "
+    ],
+    [
+     94.8,
+     "To keep the signal alive across ocean basins, marine engineers splice heavy cylindrical re"
+    ],
+    [
+     104.6,
+     "These titanium cylinders house erbium-doped fiber amplifiers that pump fresh laser photons"
+    ],
+    [
+     117.9,
+     "To energize hundreds of these deep-sea amplifiers, shore stations pump up to eighteen thou"
+    ],
+    [
+     135.0,
+     "The honest catch is that the ocean abyss is the safest part of the journey—two-thirds of a"
+    ],
+    [
+     143.7,
+     "Near coastlines shallower than fifteen hundred meters, dragging commercial fishing nets an"
+    ],
+    [
+     158.7,
+     "Specialized cable ships drag thirty-ton subsea plows across the continental shelf, carving"
+    ],
+    [
+     169.5,
+     "Even with heavy armor, underwater cables snap roughly two hundred times every year worldwi"
+    ],
+    [
+     181.5,
+     "Repair vessels pinpoint the break by firing light pulses from shore to measure the exact n"
+    ],
+    [
+     196.0,
+     "Robots grapple the severed ends and haul them onto the ship deck, where technicians spend "
+    ],
+    [
+     210.1,
+     "Once resealed in waterproof steel joints, the line sinks back to the seabed silt. That is "
+    ],
+    [
+     228.0,
+     "Next time you stream across an ocean, picture your data racing through garden-hose glass o"
+    ]
+   ],
+   "format": "big question",
+   "why": "Explainer videos on subsea infrastructure and hidden technology consistently cross tens of millions of views because audiences assume the modern internet is entirely wireless. The sheer absurdity of modern civilization depending on physical cables lying unprotected in deep-sea mud next to ship anchors and sharks makes the mechanism instantly compelling.",
+   "facts": [
+    "Undersea fiber-optic cables transmit approximately 95% to 99% of all transoceanic internet traffic, while satellites carry only a tiny fraction of global data.",
+    "There are over 550 active and planned commercial undersea fiber cables worldwide, spanning roughly 1.4 million kilometers of the Earth's seabed.",
+    "The data is transmitted through strands of ultrapure silica glass, each core measuring roughly 9 to 10 microns in diameter—about one-tenth the width of a human hair.",
+    "Information travels through the glass strands as pulses of laser light at roughly 200,000 kilometers per second, using continuous total internal reflection.",
+    "In the deepest parts of the ocean down to 8,000 meters, cables are only about 17 to 20 millimeters thick—roughly the diameter of a standard garden hose.",
+    "In deep water, human interference is virtually nonexistent, so the cable only needs a steel wire strength member, a copper power conductor, and water-blocking polyethylene insulation.",
+    "In shallow water near coastlines (depths under 1,500 meters), the cable is reinforced with multiple spiral layers of galvanized steel wire and tar-coated nylon yarn, expanding to 50 millimeters thick.",
+    "Commercial fishing trawlers and dragging ship anchors cause approximately two-thirds of all underwater cable cuts worldwide.",
+    "To protect cables near shores, specialized ships pull a 30-ton underwater plow that carves a trench 1 to 3 meters into the seabed, laying the cable inside before ocean sediment buries it.",
+    "Laser light naturally loses strength over long distances inside glass due to light scattering and microscopic material absorption.",
+    "To keep signals intact across ocean basins, optical amplifiers called repeaters are spliced into the cable every 50 to 80 kilometers.",
+    "Repeaters use erbium-doped fiber amplifiers to boost the optical signal directly using laser energy, without ever converting light back into electronic data.",
+    "To power hundreds of repeaters along a 6,000-kilometer ocean crossing, a central copper sheath carries up to 10,000 to 18,000 volts of direct current (DC).",
+    "The electric circuit is completed by the ocean itself: power stations on opposite coastlines inject power into the copper conductor, and the return path flows naturally through seawater grounding beds.",
+    "Specialized cable-laying ships, often over 140 meters long, carry thousands of kilometers of cable coiled inside massive climate-controlled cylindrical tanks below deck.",
+    "These ships utilize GPS-linked dynamic positioning thrusters to lay cable at a steady crawl of 1 to 2 knots, adjusting spool tension precisely to prevent the line from snapping or bunching.",
+    "When a deep-sea cable breaks, repair ships deploy underwater Remotely Operated Vehicles (ROVs) or grappling hooks to lift the severed ends to the surface.",
+    "Onboard the repair ship, engineers must splice each microscopic glass fiber individually by hand inside an airtight cleanroom before sealing the joint in a waterproof housing and lowering it back down.",
+    "Modern high-capacity transatlantic cables can carry over 250 to 350 terabits of data per second on a single line, enough to stream millions of ultra-HD video feeds at the exact same moment.",
+    "An opinion piece in the Brantford Expositor argues that the majority of data is transmitted via the ocean rather than through the sky.",
+    "A publication by War on the Rocks addresses the question of who handles internet repairs during periods of armed conflict.",
+    "A journalism program titled Coastal Connections Fellowship is planned for Sri Lanka across 2026–2027.",
+    "The Coastal Connections Journalism Fellowship in Sri Lanka is planned to be fully funded.",
+    "The announced deadline to submit applications for the Sri Lanka journalism fellowship is November 15."
+   ],
+   "keywords": [
+    "how undersea internet cables work",
+    "how internet crosses the ocean",
+    "undersea fiber optic cables explained",
+    "submarine communications cable",
+    "how transatlantic cables are laid",
+    "subsea cable laying ship",
+    "how ocean cables survive pressure",
+    "internet under the ocean",
+    "fiber optic cable ocean floor",
+    "how do undersea cables get power",
+    "transatlantic internet cable map",
+    "what happens if undersea cable breaks"
+   ],
+   "gate": {
+    "graphics": 7,
+    "own_share": 0.39,
+    "own_math": true,
+    "fact_fixes": 3,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.11,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -2126,6 +2264,16 @@
   "pixabay-v-377096",
   "pixabay-v-333527",
   "pixabay-v-153813",
-  "pixabay-v-170480"
+  "pixabay-v-170480",
+  "pixabay-v-384401",
+  "pixabay-v-1081",
+  "pixabay-v-336239",
+  "pixabay-v-190319",
+  "pixabay-v-343932",
+  "pixabay-v-205625",
+  "pixabay-v-62377",
+  "pixabay-v-141057",
+  "pixabay-v-321165",
+  "pixabay-v-735"
  ]
 }

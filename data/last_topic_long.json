@@ -1,38 +1,46 @@
 {
- "topic": "How Do Maglev Trains Float Without Touching the Tracks",
- "angle": "A 50-ton train travels at 600 kilometers per hour while hovering completely in mid-air with zero physical friction.",
- "why": "Similar engineering explainers like 'The Ridiculous Engineering Of Jet Engines' pulled over 16 million views. This question works because it forces a counterintuitive realization: traveling at insane speeds while suspended strictly by invisible magnetic fields rather than wheels.",
+ "topic": "How Does the Internet Travel Across the Ocean Floor?",
+ "angle": "Nearly 99% of all global data runs not through the 'cloud' or satellites, but through fragile glass strands thinner than a pencil resting on the bottom of the ocean.",
+ "why": "Explainer videos on subsea infrastructure and hidden technology consistently cross tens of millions of views because audiences assume the modern internet is entirely wireless. The sheer absurdity of modern civilization depending on physical cables lying unprotected in deep-sea mud next to ship anchors and sharks makes the mechanism instantly compelling.",
  "keywords": [
-  "how maglev trains work",
-  "maglev train technology",
-  "magnetic levitation explained",
-  "fastest trains in the world",
-  "how do trains float",
-  "electromagnetic suspension",
-  "superconducting magnets",
-  "future high speed transport",
-  "shanghai maglev speed",
-  "japan l0 series maglev",
-  "how maglev propulsion works",
-  "frictionless trains",
-  "linear synchronous motor"
+  "how undersea internet cables work",
+  "how internet crosses the ocean",
+  "undersea fiber optic cables explained",
+  "submarine communications cable",
+  "how transatlantic cables are laid",
+  "subsea cable laying ship",
+  "how ocean cables survive pressure",
+  "internet under the ocean",
+  "fiber optic cable ocean floor",
+  "how do undersea cables get power",
+  "transatlantic internet cable map",
+  "what happens if undersea cable breaks"
  ],
  "facts": [
-  "Maglev is short for magnetic levitation, a system where trains float above a guide-way without touching it.",
-  "By eliminating physical contact with tracks, maglev trains remove mechanical friction entirely.",
-  "They rely on powerful electromagnets to both lift the train and propel it forward at extreme speeds.",
-  "There are two primary types of magnetic levitation systems: electromagnetic suspension (EMS) and electrodynamic suspension (EDS).",
-  "In EMS systems, electromagnets on the underside of the train are attracted upward to a steel guide-way.",
-  "In EDS systems, superconducting magnets on the train interact with loops in the track to push the train upward.",
-  "Superconducting magnets are cooled with liquid helium or nitrogen to near absolute zero to eliminate electrical resistance.",
-  "As the train moves faster, the magnetic repulsion naturally increases, making the levitation extremely stable.",
-  "Propulsion is achieved using a linear synchronous motor, which essentially turns the entire track into a giant electric motor.",
-  "Alternating magnetic fields in the track pull and push the train along precisely like a wave moving through water.",
-  "The Shanghai Maglev routinely operates at commercial speeds of up to 431 kilometers per hour (268 mph).",
-  "Test trains in Japan, such as the L0 Series, have reached record speeds of 603 kilometers per hour (375 mph).",
-  "Because there are no wheels or gears grinding against rails, mechanical wear and tear is reduced to almost zero.",
-  "Maglev trains are significantly quieter than traditional high-speed trains because there is no wheel-on-rail screeching.",
-  "The primary obstacle preventing widespread global adoption is the extremely high cost of building dedicated, specialized infrastructure tracks."
+  "Undersea fiber-optic cables transmit approximately 95% to 99% of all transoceanic internet traffic, while satellites carry only a tiny fraction of global data.",
+  "There are over 550 active and planned commercial undersea fiber cables worldwide, spanning roughly 1.4 million kilometers of the Earth's seabed.",
+  "The data is transmitted through strands of ultrapure silica glass, each core measuring roughly 9 to 10 microns in diameter—about one-tenth the width of a human hair.",
+  "Information travels through the glass strands as pulses of laser light at roughly 200,000 kilometers per second, using continuous total internal reflection.",
+  "In the deepest parts of the ocean down to 8,000 meters, cables are only about 17 to 20 millimeters thick—roughly the diameter of a standard garden hose.",
+  "In deep water, human interference is virtually nonexistent, so the cable only needs a steel wire strength member, a copper power conductor, and water-blocking polyethylene insulation.",
+  "In shallow water near coastlines (depths under 1,500 meters), the cable is reinforced with multiple spiral layers of galvanized steel wire and tar-coated nylon yarn, expanding to 50 millimeters thick.",
+  "Commercial fishing trawlers and dragging ship anchors cause approximately two-thirds of all underwater cable cuts worldwide.",
+  "To protect cables near shores, specialized ships pull a 30-ton underwater plow that carves a trench 1 to 3 meters into the seabed, laying the cable inside before ocean sediment buries it.",
+  "Laser light naturally loses strength over long distances inside glass due to light scattering and microscopic material absorption.",
+  "To keep signals intact across ocean basins, optical amplifiers called repeaters are spliced into the cable every 50 to 80 kilometers.",
+  "Repeaters use erbium-doped fiber amplifiers to boost the optical signal directly using laser energy, without ever converting light back into electronic data.",
+  "To power hundreds of repeaters along a 6,000-kilometer ocean crossing, a central copper sheath carries up to 10,000 to 18,000 volts of direct current (DC).",
+  "The electric circuit is completed by the ocean itself: power stations on opposite coastlines inject power into the copper conductor, and the return path flows naturally through seawater grounding beds.",
+  "Specialized cable-laying ships, often over 140 meters long, carry thousands of kilometers of cable coiled inside massive climate-controlled cylindrical tanks below deck.",
+  "These ships utilize GPS-linked dynamic positioning thrusters to lay cable at a steady crawl of 1 to 2 knots, adjusting spool tension precisely to prevent the line from snapping or bunching.",
+  "When a deep-sea cable breaks, repair ships deploy underwater Remotely Operated Vehicles (ROVs) or grappling hooks to lift the severed ends to the surface.",
+  "Onboard the repair ship, engineers must splice each microscopic glass fiber individually by hand inside an airtight cleanroom before sealing the joint in a waterproof housing and lowering it back down.",
+  "Modern high-capacity transatlantic cables can carry over 250 to 350 terabits of data per second on a single line, enough to stream millions of ultra-HD video feeds at the exact same moment.",
+  "An opinion piece in the Brantford Expositor argues that the majority of data is transmitted via the ocean rather than through the sky.",
+  "A publication by War on the Rocks addresses the question of who handles internet repairs during periods of armed conflict.",
+  "A journalism program titled Coastal Connections Fellowship is planned for Sri Lanka across 2026–2027.",
+  "The Coastal Connections Journalism Fellowship in Sri Lanka is planned to be fully funded.",
+  "The announced deadline to submit applications for the Sri Lanka journalism fellowship is November 15."
  ],
  "long_format": "big question",
  "format": "big question",
@@ -40,43 +48,43 @@
  "youtube_top": [
   {
    "title": "Dave - Raindance (ft. Tems)",
-   "views": 298887970
+   "views": 304317915
   },
   {
    "title": "Bruno Mars - I Just Might [Official Music Video]",
-   "views": 179724191
+   "views": 181504310
   },
   {
    "title": "This is What Happens When A Hockey Season Ends 🤯",
-   "views": 163494545
-  },
-  {
-   "title": "She & Him - I Thought I Saw Your Face Today (Official Lyric Video)",
-   "views": 112803502
+   "views": 165424356
   },
   {
    "title": "Ariana Grande - hate that i made you love me (official music video)",
-   "views": 109445231
+   "views": 112252762
   },
   {
-   "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
-   "views": 102528328
+   "title": "What happens when you don't pay attention #bear #wildanimals #animalencounters #scare #shorts",
+   "views": 88113090
+  },
+  {
+   "title": "How We Build an Alien Pool — Full Process Revealed #poolbuild #luxurypool  #satisfying #poolhacks",
+   "views": 87590608
   },
   {
    "title": "You Can't Order Here Unless You Build With LEGO 🤯",
-   "views": 81024359
+   "views": 87180354
+  },
+  {
+   "title": "WE CAN’T BELIEVE WE JUST HIT 26M FAMILY MEMBERS! 🥹😭🥰",
+   "views": 84483803
   },
   {
    "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
-   "views": 75547230
+   "views": 77731410
   },
   {
-   "title": "Why Can't We Print Unlimited Money 😱",
-   "views": 75353333
-  },
-  {
-   "title": "How Electrical Outlets Work 🤔",
-   "views": 64924046
+   "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
+   "views": 74691899
   }
  ]
 }
