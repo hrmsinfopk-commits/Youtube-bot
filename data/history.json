@@ -1749,6 +1749,61 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-08 15:12",
+   "type": "short",
+   "title": "How Undersea Internet Cables Work Across the Ocean Floor #shorts",
+   "topic": "How Does the Internet Travel Across the Ocean Floor? - Nearly 99% of all global data runs not through the 'cloud' or satellites, but through fragile glass strands thinner than a pencil resting on the bottom of the ocean. - short teaser of our full video",
+   "style": "Explainer: one big question, answered step by step with a surprise at the end",
+   "youtube_id": "bKNYiG4DQPA",
+   "voice": "Charon",
+   "seconds": 34.7,
+   "scene_times": [
+    [
+     0.0,
+     "Undersea fiber cables carry ninety-nine percent of all internet traffic."
+    ],
+    [
+     5.6,
+     "Data travels through glass strands thinner than a human hair."
+    ],
+    [
+     10.0,
+     "Miles deep, each line is barely garden-hose thick."
+    ],
+    [
+     14.1,
+     "Repeaters use up to eighteen thousand volts across the seabed."
+    ],
+    [
+     19.1,
+     "Amazingly, the ocean's seawater completes the return electrical circuit."
+    ],
+    [
+     24.5,
+     "Yet dragging ship anchors cause two-thirds of all cuts."
+    ],
+    [
+     30.4,
+     "How do engineers fix glass miles underwater?"
+    ]
+   ],
+   "format": "teaser",
+   "why": "Teaser for our newest long video",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 2,
+    "own_share": 0.3,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.14,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -2328,6 +2383,9 @@
   "pixabay-v-118526",
   "pixabay-v-35737",
   "pixabay-v-88660",
-  "pixabay-v-108420"
+  "pixabay-v-108420",
+  "pixabay-v-355291",
+  "pixabay-v-23008",
+  "pixabay-v-23759"
  ]
 }
