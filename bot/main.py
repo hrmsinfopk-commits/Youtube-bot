@@ -333,10 +333,18 @@ def make_one(cfg, kind, history, offline=False, do_upload=True):
             if not got:  # reuse the last real footage (never repeat a graphic on a scene without one)
                 got = next((m for m in reversed(media) if m and m[0][1] != "graphic"), [])
                 kind_i = "continued"
-            if not got:
-                raise RuntimeError("Koi footage nahi mili - PEXELS_API_KEY / PIXABAY_API_KEY check karein")
+            if not got:          # nothing yet (e.g. the FIRST scene): borrow footage from a later scene below
+                kind_i = "pending"
             media.append(got)
             vkinds.append(kind_i)
+        for i in range(len(media)):
+            if vkinds[i] == "pending":
+                j = next((j for j in list(range(i + 1, len(media))) + list(range(i - 1, -1, -1))
+                          if media[j] and media[j][0][1] != "graphic" and vkinds[j] != "pending"), None)
+                if j is None:
+                    raise RuntimeError("Koi footage nahi mili - PEXELS_API_KEY / PIXABAY_API_KEY check karein")
+                media[i], vkinds[i] = media[j], "continued"
+                log(f"Scene {i}: no footage of its own - using scene {j}'s footage")
         log(f"Footage ready for {len(media)} scenes")
         # transparent graphics: lay them over this video's own footage (nearest real shot, blurred)
         for i, m in enumerate(media):
