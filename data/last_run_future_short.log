@@ -1,4 +1,45 @@
-[20:29:08] Channel: Tomorrowly (future, mode=facts)
-/home/runner/work/Youtube-bot/Youtube-bot/bot/main.py:481: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  now = datetime.datetime.utcnow()
-[20:29:08] Back-up run: today's short is already up (How Undersea Internet Cables Work Across the Ocean Floor #shorts) - nothing to do
+[14:52:05] Channel: Tomorrowly (future, mode=facts)
+[14:52:05] Format today: big question
+[14:52:08] YouTube videos analysed: 61
+[14:55:09] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:58:09] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:58:34] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:58:34] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:58:59] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:58:59] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:59:36] Gemini OK (gemini-flash-lite-latest)
+[14:59:36] Topic 'How Do Massive Cargo Ships Float Despite Weighing 200,000 Tons?' repeats recent video 'How Do Glass Skyscrapers Cool Themselves Without Melting? - A massive ' - choosing again
+[14:59:36] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:59:37] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:00:10] Gemini OK (gemini-flash-lite-latest)
+[15:00:10] Topic 'How Do Hyperloop Pods Move Without Touching the Track?' repeats recent video 'How Do Maglev Trains Float Without Touching the Tracks - A 50-ton trai' - choosing again
+[15:00:13] Gemini OK (gemini-flash-lite-latest)
+[15:00:14] Gemini OK (gemini-flash-lite-latest)
+[15:00:14] Trend topic: How Do Massive Nuclear Submarines Create Their Own Oxygen Underwater? | why: Explainer videos about extreme closed-environment engineering consistently attract millions of views due to high-stakes curiosity. This question triggers instant wonder by highlighting an impossible-sounding survival mechanism that relies on actual, proven naval technology.
+[15:00:14] Short length for 'big question': 32 s
+[15:00:17] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[15:00:45] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[15:01:14] Gemini OK (gemini-flash-lite-latest)
+[15:01:14] Script too long (105 words, target ~69) - tightening
+[15:01:17] Gemini OK (gemini-flash-lite-latest)
+[15:01:17] Script length: 59 words
+[15:01:17] Uniqueness: 90% unique vs previous scripts
+[15:01:17] Script ready: How Massive Nuclear Submarines Create Their Own Oxygen Underwater (5 scenes)
+[15:01:18] Gemini OK (gemini-flash-lite-latest)
+[15:01:18] Gate (script): {"graphics": 1, "own_share": 0.24, "fact_fixes": 0, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[15:01:18] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a curious, knowledgeable friend explaining something cool: natural American English, warm and confident, lively medium-fast pace (these are short videos), real (not forced) surprise only on the big reveal, clear emphasis on numbers, short natural breaths, never salesy or hyped, never robotic, never like a news anchor'}
+[15:01:30] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[15:01:34] Captions aligned to the voice (61 words)
+[15:01:39] Captions aligned to the voice (61 words)
+[15:01:39] Graphics theme: footage
+[15:01:45] Own graphics: 1
+[15:01:50] Picture editor: 46/46 previews loaded
+[15:01:56] Gemini OK (gemini-flash-lite-latest)
+[15:01:59] Gemini OK (gemini-flash-lite-latest)
+[15:01:59] Footage check: kept 3 fitting clips, 1 scenes had nothing fitting
+[15:01:59] Second footage search for 1 scenes
+[15:02:00] Picture editor: 12/12 previews loaded
+[15:02:04] Gemini OK (gemini-flash-lite-latest)
+[15:02:04] Footage check: kept 0 fitting clips, 1 scenes had nothing fitting
+[15:02:04] Download failed: file too big (94 MB)
+[15:02:04] Video 1 failed (attempt 1): Koi footage nahi mili - PEXELS_API_KEY / PIXABAY_API_KEY check karein
