@@ -1,87 +1,87 @@
 {
  "shorts_rules": [
-  "State the topic clearly within the first 3 seconds to avoid early drop-off.",
-  "Keep total video length strictly between 20-25 seconds for news updates and 30-35 seconds for big questions.",
-  "Make numbers feelable by linking them immediately to a concrete, visual scale instead of just quoting raw statistics.",
-  "Use a counter-intuitive hook or striking visual question in the opening line to drive initial engagement.",
-  "Structure the narrative as a clear step-by-step evolution from a problem to an unexpected technical solution.",
-  "End every Short with a fresh, natural sign-off mentioning Tomorrowly instead of repetitive catchphrases.",
-  "Avoid complex multi-clause sentences in the first 7 seconds where drop-off rates are historically highest.",
-  "Prompt viewer interaction with a targeted, specific question at the end rather than a generic subscribe plea."
+  "Name the core subject or state the primary paradox within the first 3 seconds to clear up any ambiguity immediately.",
+  "Keep script pacing between 2.5 to 3.0 words per second to match the viewer's natural digestion speed for complex science topics.",
+  "Make abstract numbers tangible by comparing them to everyday objects like pickup trucks, football fields, or transit times.",
+  "Maintain our fixed duration limits strictly: keep news shorts between 20 to 25 seconds, and big question shorts between 30 to 35 seconds.",
+  "End every script with a fresh, natural sign-off that mentions Tomorrowly without repeating previous catchphrases.",
+  "Ensure all technical and scientific claims are 100% factual while explaining them using simple, everyday language.",
+  "Structure the mid-section as a step-by-step breakdown or progressive scaling sequence to maintain high dopamine and retention.",
+  "Design the final sentence to either loop seamlessly back into the opening hook or leave a powerful lingering paradox."
  ],
  "visual_sound_notes": [
-  "Synchronize 3D animations and stock footage precisely word-for-word with the voice-over narration.",
-  "Use medium-sized captions with 2-5 words at a time, highlighting critical keywords in yellow or red.",
-  "Maintain an average cut rate of 2.0 to 3.5 cuts per 10 seconds to sustain visual momentum without inducing fatigue.",
-  "Mix cinematic or upbeat background music moderately below the clear voice-over, punctuated by subtle sound effects."
+  "Use high-end 3D cutaway animations synchronized 1:1 with narration to instantly clarify invisible or complex mechanisms.",
+  "Keep cuts frequent (2.5 to 3.5 cuts per 10 seconds) to sustain visual momentum without inducing motion sickness.",
+  "Display large, bold captions (1-3 words at a time, centered lower-third) with distinct color highlights on critical keywords.",
+  "Layer a subtle, tense cinematic ambient synth bed beneath a front-and-center crisp voiceover, punctuated by crisp mechanical sound effects."
  ],
  "typical": {
-  "seconds": 30,
-  "words_per_second": 2.6,
-  "cuts_per_10_seconds": 2.5
+  "seconds": 32,
+  "words_per_second": 2.8,
+  "cuts_per_10_seconds": 2.8
  },
- "summary_roman_urdu": "Is mahine viral hone wali videos mein strong visual shocks, counter-intuitive hooks, aur clear step-by-step explanations ka pattern sab se zyada chal raha hai. Hamare apne analytics yeh dikhate hain ki viewers shuru ke 5 se 8 seconds mein drop ho rahe hain agar topic ya hook mein thodi bhi confusion ho. Humein apni shuruat ki lines ko aur zyada sharp aur simple rakhna hoga bina lambe complex sentences ke. Is ke ilawa, aakhri sign-off mein Tomorrowly ka naam alag aur fresh andaz mein use karna zaroori hai taake audience bore na ho. Visuals aur 3D animations ki synchronization ko mazeed behtar banakar hum apne watch percentage ko aur upar le ja sakte hain.",
- "updated": "2026-11-02",
+ "summary_roman_urdu": "Is mahine viral hone wali shorts mein yeh baat samne aayi hai ke shuru ke 3 sehon mein hi asal topic ya hairat-angez sawal wazeh kar dena sab se zaroori hai. Hamari apni videos mein 5 se 8 seconds ke darmiyan log drop ho rahe hain, is liye hamein apni opening lines ko mazeed taiz aur dilchasp banana hoga. 3D cutaways aur real-world comparisons (jaise cheezon ko aam cheezon se compare karna) viewers ko aakhir tak bandh kar rakhte hain. Hamein apni fixed timing (news ke liye 20-25 seconds aur big questions ke liye 30-35 seconds) par sakhti se amal karna chahiye. Aakhir mein ek behtar aur naya sign-off istemal karen jo Tomorrowly ka zikr kare aur comments ko barha sake.",
+ "updated": "2026-11-09",
  "studied": [
   {
-   "title": "iPhone DUO से पूरी Team को दिया Surprise! 😱🔥#shorts",
-   "views": 20621065,
-   "id": "eNu2AbeOpos"
+   "title": "How Does a Helicopter Pilot Eject Without Hitting the Rotor?",
+   "views": 32570811,
+   "id": "w65jbQSq1io"
   },
   {
-   "title": "How the WATCHMAN Device Works",
-   "views": 8177972,
-   "id": "-lytYKi7xn4"
+   "title": "The whole rocket flies right past the camera 🚀",
+   "views": 13008523,
+   "id": "d1BscKfgSAE"
   },
   {
-   "title": "The Fastest Plane Ever Flown Couldn't Take Off | X-15 #shorts",
-   "views": 7244753,
-   "id": "OZWsiPoLiYo"
-  },
-  {
-   "title": "How Long Does Each Planet Take to Orbit the Sun?  | Solar System #solarsystem #space #nasa #usa",
-   "views": 6128021,
-   "id": "SijzUBTSv2c"
+   "title": "We Are So TINY! 💀🤏",
+   "views": 10696310,
+   "id": "axIUhBsuSBk"
   },
   {
    "title": "Diwali Rocket Real Range !!",
-   "views": 5862029,
+   "views": 9811218,
    "id": "ZINUrTy0fP0"
   },
   {
-   "title": "Why NASA Is Paying to Destroy the ISS",
-   "views": 5660124,
-   "id": "p0EqvHzr_X4"
+   "title": "The Black Hole That Makes Stars",
+   "views": 8542694,
+   "id": "INmLPyGjsMI"
   },
   {
-   "title": "Long Flight Mein Pilots Kahan Sote Hain? 😱✈️ Plane Ke Andar Ka Secret Room!",
-   "views": 5252606,
-   "id": "Pc4WsBDJdvo"
-  },
-  {
-   "title": "How Does a Torpedo Sink a Ship Without Touching It?",
-   "views": 5237934,
-   "id": "mrpntIZgNeQ"
+   "title": "How the Javelin Missile Really Works (3D)",
+   "views": 8371129,
+   "id": "Tj787XhoT88"
   },
   {
    "title": "😱 1400 साल पुराना ये पुल आज भी कैसे खड़ा है? 🌉🔥 #short #shorts #youtubeshorts",
-   "views": 5147869,
+   "views": 8308539,
    "id": "LlKYh94zq1w"
   },
   {
-   "title": "WORLD’S FASTEST ANIMAL! 💀⚡#shorts #animals #speed #earth",
-   "views": 5078586,
-   "id": "D1IOZS6E55U"
+   "title": "How a USB-C Cable Really Works 🔌 #shorts",
+   "views": 7823408,
+   "id": "1Ug_sjO1zrA"
   },
   {
-   "title": "నది పైనుండి ప్రవహించే మరో నది! 😱 Telugu Engineering Marvels #shorts #telugufacts",
-   "views": 4708119,
-   "id": "qeQMCyckWak"
+   "title": "Why NASA Is Paying to Destroy the ISS",
+   "views": 7642488,
+   "id": "p0EqvHzr_X4"
   },
   {
-   "title": "The Dead Wheel That Dug a Rover's Grave",
-   "views": 4168547,
-   "id": "nfuwtAeaPIU"
+   "title": "How Small Is the Planck Length? 💀🔬 #Shorts #Space #Astronomy #Science #QuantumPhysics #Physics",
+   "views": 6826703,
+   "id": "Buh0gX_-5lY"
+  },
+  {
+   "title": "These Are The 5 Largest Airplanes In The World 😱",
+   "views": 6719631,
+   "id": "6SvNEYx_Za4"
+  },
+  {
+   "title": "குட்டி முட்டையின் ரகசியம் 😲",
+   "views": 5121399,
+   "id": "JyVxRIwS9O0"
   }
  ]
 }

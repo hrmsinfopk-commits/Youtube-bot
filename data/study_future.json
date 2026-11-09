@@ -1,163 +1,123 @@
 [
  {
-  "id": "eNu2AbeOpos",
-  "title": "iPhone DUO से पूरी Team को दिया Surprise! 😱🔥#shorts",
-  "channel": "Tech Master",
-  "channel_id": "UCglXlpWjIi95auM3umWWLdw",
-  "views": 20621065,
-  "seconds": 66,
-  "published": "2026-10-27",
-  "analysis": {
-   "first_line": "Today on my wedding I am going to gift iPhone Duos to my entire team.",
-   "seconds_until_topic_is_clear": 2,
-   "hook_type": "visual shock + wedding attire + stack of iPhones + promise",
-   "beats": [
-    "hook: wedding outfit and massive stack of iPhone boxes, promising gifts for the team",
-    "surprise editors at their desks with new phones",
-    "give phones to writers/creators in the conference room",
-    "call to action and ask viewers to comment/subscribe"
-   ],
-   "length_seconds": 66,
-   "words_per_second": 3.0,
-   "key_number_and_how_it_is_mean_feelable": "A tall stack of iPhone boxes held by team members to show massive scale",
-   "what_the_viewer_learns": "A popular creator celebrating his wedding by giving expensive Apple products to his employees",
-   "language_level": "simple",
-   "tone": "energetic / funny",
-   "ending": "CTA to comment and subscribe for remaining boxes",
-   "visual_style": "real footage inside modern office, fast-paced and well synchronized with action",
-   "cuts_per_10_seconds": 5.0,
-   "captions": "medium size, white/yellow, 1-3 words at once with highlights",
-   "sound": "upbeat background music, clear dialogue, sound effects for unpacking",
-   "why_it_works": [
-    "high stakes and generosity hook viewers instantly",
-    "fast pacing and humor keep retention high",
-    "relatable office dynamics and genuine reactions"
-   ],
-   "weak_points": [
-    "sometimes dialogue overlaps making it hard to catch jokes"
-   ]
-  }
- },
- {
-  "id": "-lytYKi7xn4",
-  "title": "How the WATCHMAN Device Works",
-  "channel": "The Brain Maze",
-  "channel_id": "UC_2XL2lThI85UYxtLSwk18w",
-  "views": 8177972,
-  "seconds": 72,
-  "published": "2026-10-06",
-  "analysis": {
-   "first_line": "This tiny device is placed inside the heart to help prevent blood clots.",
-   "seconds_until_topic_is_clear": 7,
-   "hook_type": "visual shock",
-   "beats": [
-    "Shows tiny heart device insertion",
-    "Names device Watchman",
-    "Explains atrial fibrillation and blood pooling",
-    "Shows catheter path from groin to heart",
-    "Deploys Watchman in left atrial appendage",
-    "Shows tissue growth sealing the appendage over time"
-   ],
-   "length_seconds": 71,
-   "words_per_second": 2.2,
-   "key_number_and_how_it_is_made_feelable": "",
-   "what_the_viewer_learns": "How the Watchman device is inserted via catheter into the left atrial appendage to prevent stroke in AFib patients.",
-   "language_level": "medium",
-   "tone": "calm documentary",
-   "ending": "summary",
-   "visual_style": "3D animation, perfectly matches the voiceover",
-   "cuts_per_10_seconds": 1.5,
-   "captions": "medium size, lowercase white text with black outline, 2-5 words at once, key words highlighted in yellow",
-   "sound": "soft ambient background music, subtle sound effects for medical actions",
-   "why_it_works": [
-    "Incredible 3D animation makes complex heart surgery easy to understand",
-    "Clear step-by-step narrative from groin entry to permanent seal",
-    "Professional documentary-style voiceover"
-   ],
-   "weak_points": [
-    "A bit slow in the middle sections"
-   ]
-  }
- },
- {
-  "id": "OZWsiPoLiYo",
-  "title": "The Fastest Plane Ever Flown Couldn't Take Off | X-15 #shorts",
+  "id": "w65jbQSq1io",
+  "title": "How Does a Helicopter Pilot Eject Without Hitting the Rotor?",
   "channel": "OddFrame",
   "channel_id": "UC87Re_9sXZzkbVJm41Hs_zQ",
-  "views": 7244753,
-  "seconds": 105,
-  "published": "2026-10-05",
+  "views": 32570811,
+  "seconds": 88,
+  "published": "2026-10-13",
   "analysis": {
-   "first_line": "The fastest airplane a human has ever flown couldn't even take off by itself.",
-   "seconds_until_topic_is_clear": 8,
-   "hook_type": "named subject + contradiction",
+   "first_line": "Eject from a helicopter and you fly straight into the rotor. That's why almost no helicopter has ejection seats.",
+   "seconds_until_topic_is_clear": 3,
+   "hook_type": "contradiction / visual shock",
    "beats": [
-    "Hook about the fastest plane that cannot take off or land normally",
-    "Explains the B-52 drop launch and huge liquid fuel tanks",
-    "Describes extreme heat at Mach 6 and nickel alloy construction",
-    "Shows spacecraft steering in thin air at the edge of space",
-    "Details the landing process using skids and a dropped lower fin",
-    "Mentions the Mach 6.7 heat-shielded test in 1967 and damage",
-    "Final reminder that no human has flown faster in nearly 60 years"
+    "Hook: Why helicopter ejection seems impossible (hitting the rotor)",
+    "Introduction: Ka-52 Alligator features ejection seats by blowing its own blades off",
+    "Anatomy: Massive rotor dimensions and proximity to the cockpit",
+    "Mechanism: Explosive blade separation, roof blow-off, and rocket extraction system",
+    "Dual-pilot challenge: Angled rockets to avoid parachute entanglement",
+    "Real-world proof: March 2022 Ukraine combat ejection incident",
+    "Payoff & Loop: Pilots never dodge the rotor because it's already gone"
    ],
-   "length_seconds": 105,
-   "words_per_second": 2.4,
-   "key_number_and_how_it_is_made_feelable": "Mach 6.7 / 7,274 km/h / 2 kilometers every second, shown with vertical distance markers and speed comparisons.",
-   "what_the_viewer_learns": "How the X-15 rocket plane reached edge of space and Mach 6+ speeds, and the engineering challenges of extreme heat and thin air control.",
+   "length_seconds": 88,
+   "words_per_second": 2.5,
+   "key_number_and_how_it_is_made_feelable": "24 feet rotor blades, made feelable by visually comparing them to being longer than a 19-foot pickup truck",
+   "what_the_viewer_learns": "How the Ka-52 attack helicopter solves the lethal problem of ejecting into rotating blades through explosive jettison and rocket extraction.",
    "language_level": "simple",
-   "tone": "dramatic documentary",
-   "ending": "factual milestone statement about 60 years of the record standing",
-   "visual_style": "3D animation with clear diagrams, excellent synchronization with narration",
-   "cuts_per_10_seconds": 1.2,
-   "captions": "medium size, uppercase, white text with black outline, 3-5 words at once, key words highlighted in yellow or red",
-   "sound": "epic cinematic background music mixed well below clear voiceover, subtle jet and rocket sound effects",
+   "tone": "calm documentary",
+   "ending": "seamless loop back to the hook concept",
+   "visual_style": "3D military flight simulation and custom transparent CAD-style cutaway animations matching narration 1:1",
+   "cuts_per_10_seconds": 2.8,
+   "captions": "large bold font, centered, 1-3 words per beat, clean white with occasional black drop shadow",
+   "sound": "tense ambient cinematic soundtrack beneath a crisp, calm voiceover, supported by immersive mechanical and explosion sound effects",
    "why_it_works": [
-    "Strong counter-intuitive hook about a plane that cannot take off",
-    "High-quality 3D animations that clearly visualize heat maps and internal tanks",
-    "Pace keeps the viewer engaged with fascinating engineering quirks (like dropping the tail fin)"
+    "Immediately tackles a common engineering curiosity that feels like common sense (ejecting into blades)",
+    "Step-by-step x-ray cutaway animation makes a complex mechanical sequence effortless to follow",
+    "Validates technical claims with a real, documented historical combat event"
    ],
    "weak_points": [
-    "Some numbers flash by quickly without enough time to digest"
+    "At nearly 90 seconds, viewer retention could dip slightly during the mid-video technical breakdown without dynamic pacing changes"
    ]
   }
  },
  {
-  "id": "SijzUBTSv2c",
-  "title": "How Long Does Each Planet Take to Orbit the Sun?  | Solar System #solarsystem #space #nasa #usa",
-  "channel": "Galaxy Sabid",
-  "channel_id": "UCKiOvq8mOYGXk5A7AiFAWFQ",
-  "views": 6128021,
-  "seconds": 22,
-  "published": "2026-10-21",
+  "id": "d1BscKfgSAE",
+  "title": "The whole rocket flies right past the camera 🚀",
+  "channel": "Spaceflightpedia",
+  "channel_id": "UCFDkPCGP4I44wjj561xPX-Q",
+  "views": 13008523,
+  "seconds": 15,
+  "published": "2026-10-22",
   "analysis": {
-   "first_line": "Showing the solar system and planets orbiting around the sun.",
-   "seconds_until_topic_is_clear": 1,
-   "hook_type": "named subject + visual simulation of planet orbits",
+   "first_line": "3, 2, 1, booster ignition and liftoff...",
+   "seconds_until_topic_is_clear": 2,
+   "hook_type": "visual shock",
    "beats": [
-    "Shows all planets aligned in the solar system",
-    "Mercury completes its orbit in 88 days",
-    "Venus completes its orbit in 225 days",
-    "Earth completes its orbit in 365 days",
-    "Continues through outer planets up to Uranus and Neptune"
+    "Visual hook: Emergency egress baskets slide down wires right as the massive SLS rocket fires",
+    "Tension builds as baskets travel past the rocket core stage",
+    "Climax: Rocket engines ignite with full blast directly engulfing the path of the escape baskets",
+    "Payoff: Baskets swing wildly through the fiery smoke and blast cloud"
    ],
-   "length_seconds": 22,
-   "words_per_second": 0.9,
-   "key_number_and_how_it_is_made_feelable": "Orbital periods ranging from 88 days to 84.0 years, shown visually through relative speed differences.",
-   "what_the_viewer_learns": "The relative time each planet takes to complete one orbit around the Sun.",
+   "length_seconds": 15,
+   "words_per_second": 0.8,
+   "key_number_and_how_it_is_made_feelable": "Baskets numbered 1 to 4 highlighting the extreme danger of emergency evacuation during ignition",
+   "what_the_viewer_learns": "How harrowing and surreal an emergency pad egress zip-line evacuation would look during a rocket launch sequence",
    "language_level": "simple",
-   "tone": "calm documentary",
-   "ending": "Fades out after showing Uranus orbit completion.",
-   "visual_style": "2D animated orbits with planet icons, matching the narration directly.",
+   "tone": "dramatic",
+   "ending": "abrupt cutoff inside the billowing smoke cloud",
+   "visual_style": "CGI / mixed real launch footage with simulated evacuation gondolas, seamlessly blended into the launch exhaust",
    "cuts_per_10_seconds": 0.0,
-   "captions": "Medium size, uppercase and lowercase, white text with red highlight for key numbers, 3-5 words at once.",
-   "sound": "Ambient electronic music, no voiceover, sound effects for planetary movement.",
+   "captions": "none",
+   "sound": "Authentic NASA countdown radio comms with deep, rumbling rocket engine blast sound effects; no music",
    "why_it_works": [
-    "Clear visual representation of abstract time periods",
-    "Clean, distraction-free minimalist design",
-    "Progressive ordering from inner to outer planets"
+    "Unreal, terrifying scenario that triggers instant morbid curiosity and awe",
+    "Hyper-realistic rendering and physics blend convincing visual effects with iconic Artemis launch footage",
+    "Single continuous tracking shot builds relentless tension toward the engine blast"
    ],
    "weak_points": [
-    "Lack of voiceover makes it slightly dry"
+    "Lack of clarifying text or context leaves some viewers confused whether it is real footage or CGI simulation"
+   ]
+  }
+ },
+ {
+  "id": "axIUhBsuSBk",
+  "title": "We Are So TINY! 💀🤏",
+  "channel": "Zap Facts",
+  "channel_id": "UCTbW_SfiOHpvNyrAa-GYgNQ",
+  "views": 10696310,
+  "seconds": 43,
+  "published": "2026-10-13",
+  "analysis": {
+   "first_line": "Take a look at this photo. This is the Sun, but that tiny dot you're looking at...",
+   "seconds_until_topic_is_clear": 3,
+   "hook_type": "visual shock",
+   "beats": [
+    "Visual hook: tiny dot on the Sun revealed as Mercury",
+    "Scale step 1: 40 Suns fit in the empty space between Sun and Mercury",
+    "Scale step 2: Earth compared to giant star Stephenson 2-18",
+    "Escalation: Sun looks microscopic compared to Stephenson 2-18 (holds 10 billion Suns)",
+    "Final payoff: TON 618 black hole dwarfs even Stephenson 2-18 into insignificance"
+   ],
+   "length_seconds": 42,
+   "words_per_second": 2.5,
+   "key_number_and_how_it_is_made_feelable": "10 billion Suns fitting inside Stephenson 2-18, visualized by repeatedly zooming out until massive celestial bodies become invisible specks",
+   "what_the_viewer_learns": "The incomprehensible scale of the universe, from Mercury's distance to hypergiant stars and ultramassive black holes",
+   "language_level": "simple",
+   "tone": "dramatic",
+   "ending": "abrupt cliffhanger/dramatic fade showing TON 618 dwarfing everything into nothingness",
+   "visual_style": "3D space animation / astronomical CGI, precisely timed to match the scaling narrative",
+   "cuts_per_10_seconds": 3.1,
+   "captions": "Center banner, uppercase, 2-3 words at a time, white text with red highlight on keywords",
+   "sound": "Dramatic atmospheric space drone/synth with deep bass rumbles and impact whooshes",
+   "why_it_works": [
+    "Progressive zoom-out structure continuously resets the viewer's sense of scale, delivering repeated dopamine hits of awe",
+    "Uses relatable anchors (Earth and Sun) before comparing them to incomprehensibly large cosmic entities",
+    "Fast pacing and smooth 3D visuals keep retention high without getting bogged down in complex astrophysics"
+   ],
+   "weak_points": [
+    "Ends abruptly without a clear loop point or concluding thought",
+    "Glitch overlay transitions occasionally distract from the high-quality 3D render aesthetics"
    ]
   }
  },
@@ -166,159 +126,124 @@
   "title": "Diwali Rocket Real Range !!",
   "channel": "FWS",
   "channel_id": "UCJRQS48aF9UTBwLIAidT2uQ",
-  "views": 5862029,
+  "views": 9811218,
   "seconds": 57,
   "published": "2026-10-22",
   "analysis": {
-   "first_line": "Today using thread we will find out the range of Diwali rocket...",
-   "seconds_until_topic_is_clear": 3,
-   "hook_type": "question + experiment promise",
+   "first_line": "आज धागे से पता करेंगे कि दिवाली रॉकेट की रेंज कितनी होती है, यानी ये कितनी हाइट तक जाता है",
+   "seconds_until_topic_is_clear": 2,
+   "hook_type": "named subject + promise",
    "beats": [
-    "hook: question about diwali rocket range with thread experiment",
-    "shows rocket and thread preparation",
-    "ties thread to rocket and lays it out across roof",
-    "tests first launch (fails/snaps thread)",
-    "second attempt launches high, recovers thread and measures length",
-    "reveals final range: 36.5 meters (120 feet)"
+    "Hook: Promising to measure a Diwali rocket's true flight height using kite thread",
+    "Setup: Attaching thread to the rocket stick and spreading it out to prevent tangling",
+    "Safety modification: Snipping off the explosive head with pliers so it safely glides back down",
+    "Trial 1 (Failure): Rocket veers sideways and snaps the thread, adding stakes",
+    "Trial 2 (Success): Rocket flies straight up and lands nearby, allowing thread retrieval",
+    "Measurement & Payoff: Looping thread between pillars to calculate the exact height: 36.5 meters (120 feet)"
    ],
    "length_seconds": 57,
-   "words_per_second": 2.8,
-   "key_number_and_how_it_is_made_feelable": "120 feet (36.5 meters) measured by counting thread segments between pillars",
-   "what_the_viewer_learns": "How to measure the altitude range of a diwali rocket using a tied thread",
+   "words_per_second": 2.5,
+   "key_number_and_how_it_is_made_feelable": "36.5 meters (120 feet), made feelable by visually looping and counting the full length of kite thread between two rooftop pillars",
+   "what_the_viewer_learns": "How high a standard consumer Diwali rocket travels and a clever DIY method to measure firework altitude",
    "language_level": "simple",
-   "tone": "energetic / experimental",
-   "ending": "reveals the final measurement with graphic overlay and summary",
-   "visual_style": "real footage of hands-on experiment, good picture-to-word match",
-   "cuts_per_10_seconds": 2.3,
-   "captions": "medium size, Hindi text, dynamic style with highlighted keywords",
-   "sound": "upbeat background music with clear voiceover and rocket sound effects",
-   "why_in_works": [
-    "satisfies curiosity about everyday objects",
-    "clever DIY measurement method",
-    "good pacing from setup to test to result"
+   "tone": "energetic",
+   "ending": "summary",
+   "visual_style": "real footage rooftop experiment perfectly synced to step-by-step voiceover narration",
+   "cuts_per_10_seconds": 3.7,
+   "captions": "none",
+   "sound": "upbeat curious background music under an energetic, clear Hindi voiceover with atmospheric launch sounds",
+   "why_it_works": [
+    "Taps into a universal festive curiosity that almost every viewer has wondered about",
+    "Shows a failed first attempt, creating genuine suspense and boosting credibility",
+    "Uses a simple, tangible measuring technique (counting thread loops) that anyone can understand visually"
    ],
    "weak_points": [
-    "first thread snap trial could be skipped to keep momentum higher"
+    "No auto-captions or subtitles, hurting engagement for silent scrollers",
+    "Doesn't acknowledge that string drag and friction may slightly lower the rocket's actual peak height"
    ]
   }
  },
  {
-  "id": "p0EqvHzr_X4",
-  "title": "Why NASA Is Paying to Destroy the ISS",
+  "id": "INmLPyGjsMI",
+  "title": "The Black Hole That Makes Stars",
   "channel": "Past the Blue",
   "channel_id": "UC3efatI8kxybfYZWC_2pM6w",
-  "views": 5660124,
-  "seconds": 91,
-  "published": "2026-10-23",
+  "views": 8542694,
+  "seconds": 63,
+  "published": "2026-10-28",
   "analysis": {
-   "first_line": "NASA is paying SpaceX 843 million dollars to destroy the International Space Station.",
+   "first_line": "Astronomers almost deleted this line of light as a glitch.",
    "seconds_until_topic_is_clear": 3,
-   "hook_type": "shocking number + bold claim",
+   "hook_type": "visual shock",
    "beats": [
-    "Hook with NASA paying SpaceX to destroy the ISS",
-    "Explains why crashing it is the only option (compared to alternatives)",
-    "Details the planned controlled crash into Point Nemo",
-    "Outlines the visual spectacle of the descent and spacecraft graveyard payoff"
+    "Hook: streak thought to be a camera glitch was real",
+    "Scale & nature: 200,000 light-year trail of newborn stars",
+    "The mystery: JWST discovers a supersonic shockwave at the tip",
+    "The identity: runaway black hole travelling at extreme speed",
+    "The origin: three-galaxy merger slingshots supermassive black hole",
+    "Payoff & paradox: instead of devouring stars, this black hole creates them"
    ],
-   "length_seconds": 90,
-   "words_per_second": 3.1,
-   "key_number_and_how_it_is_made_feelable": "843 million dollars presented upfront in a custom graphic badge to signal massive scale",
-   "what_the_viewer_learns": "How and why NASA plans to dispose of the International Space Station at Point Nemo via a SpaceX ship",
+   "length_seconds": 64,
+   "words_per_second": 2.9,
+   "key_number_and_how_it_is_made_feelable": "Nearly 1,000 km/s, visualized with a 7-minute timer racing from Earth to the Moon.",
+   "what_the_viewer_learns": "A supermassive black hole was ejected from its galaxy by a three-body merger and leaves behind a trail of newly formed stars compressed by its shockwave.",
    "language_level": "simple",
-   "tone": "dramatic documentary",
-   "ending": "atmospheric poetic thought about the nearest humans being the astronauts on board",
-   "visual_style": "3D animation matching the script word-for-word with high precision",
-   "cuts_per_10_seconds": 3.5,
-   "captions": "large, lowercase, white with yellow/orange highlights on key terms, 2-5 words at a time",
-   "sound": "cinematic dramatic music, rich sound design (thrusters, explosions, splash)",
+   "tone": "dramatic",
+   "ending": "payoff",
+   "visual_style": "3D animation",
+   "cuts_per_10_seconds": 2.8,
+   "captions": "Large bold white text, centered lower third, 2-4 words per burst, clean sans-serif.",
+   "sound": "Dramatic ambient cinematic synth score with subtle whooshes and booms beneath a clear, warm voiceover.",
    "why_it_works": [
-    "Strong hook combining high stakes, money, and space",
-    "Excellent 3D visual illustrations for every abstract concept",
-    "Clear narrative arc exploring alternatives before revealing the final solution"
+    "Brilliant use of intuitive real-world metaphors (airplane contrail, sonic boom, Moon transit time) to make incomprehensible cosmic scales graspable.",
+    "Flawless 1:1 synchronization between spoken narration and custom 3D animations.",
+    "Strong final paradox hook ('Black holes usually swallow stars. This one is making them.') leaves a lasting punchline."
    ],
    "weak_points": [
-    "A few text graphics flash quickly relative to speech speed"
+    "Omits specific scientific identifiers (like the discovery year or dwarf galaxy name) for viewers who want to look up the research."
    ]
   }
  },
  {
-  "id": "Pc4WsBDJdvo",
-  "title": "Long Flight Mein Pilots Kahan Sote Hain? 😱✈️ Plane Ke Andar Ka Secret Room!",
-  "channel": "MK Faith & Valor",
-  "channel_id": "UCJLEnufBfYnwbKhkaJeGnCA",
-  "views": 5252606,
-  "seconds": 58,
-  "published": "2026-10-11",
-  "analysis": {
-   "first_line": "क्या आप जानते हैं कि लंबी उड़ान के दौरान पायलट कहाँ सोते हैं?",
-   "seconds_until_topic_is_clear": 8,
-   "hook_type": "question",
-   "beats": [
-    "hook with question about where pilots sleep on long flights",
-    "addresses common misconception of pilots sitting for 10 hours straight",
-    "explains airline strategy of 3-4 pilots per long-haul flight",
-    "shows where and how resting pilots sleep in hidden bunks",
-    "explains rotation system and safety measures",
-    "conclusion on how this keeps flights safe"
-   ],
-   "length_seconds": 58,
-   "words_per_second": 3.1,
-   "key_number_and_how_it_is_made_feelable": "35000 feet altitude and 10 hours flight duration, visualized with cockpit and in-flight footage",
-   "what_the_viewer_learns": "How commercial airline pilots rest and rotate duties on ultra-long-haul flights using hidden crew rest compartments",
-   "language_level": "simple",
-   "tone": "calm documentary",
-   "ending": "summary of why rotation is done for safety",
-   "visual_style": "mixed - real aviation footage, cockpit views, and crew resting areas, matching words very well",
-   "cuts_per_10_seconds": 2.2,
-   "captions": "medium size, lowercase/mixed, white text with black outline on yellow and white background boxes, 3-5 words at a time",
-   "sound": "upbeat documentary background music with clear voiceover and subtle ambient sound effects",
-   "why_it_works": [
-    "Satisfies curiosity about a hidden, exclusive part of commercial aviation",
-    "Strong visual proof showing actual crew rest compartments",
-    "Fast pacing with smooth transitions between cockpit, takeoff, and sleeping quarters"
-   ],
-   "weak_points": [
-    "The misconception part takes a bit long before getting to the actual reveal",
-    "Some cuts between different aircraft models might confuse casual viewers"
-   ]
-  }
- },
- {
-  "id": "mrpntIZgNeQ",
-  "title": "How Does a Torpedo Sink a Ship Without Touching It?",
+  "id": "Tj787XhoT88",
+  "title": "How the Javelin Missile Really Works (3D)",
   "channel": "OddFrame",
   "channel_id": "UC87Re_9sXZzkbVJm41Hs_zQ",
-  "views": 5237934,
-  "seconds": 84,
-  "published": "2026-10-12",
+  "views": 8371129,
+  "seconds": 78,
+  "published": "2026-10-13",
   "analysis": {
-   "first_line": "This torpedo isn't meant to hit the ship, it explodes in the water underneath.",
-   "seconds_until_topic_is_clear": 3,
-   "hook_type": "visual shock + counter-intuitive statement",
+   "first_line": "This anti-tank missile climbs high into the sky before it strikes.",
+   "seconds_until_topic_is_clear": 11,
+   "hook_type": "contradiction",
    "beats": [
-    "hooks with torpedo exploding underneath instead of hitting the ship",
-    "introduces the MK 48 heavyweight torpedo and its explosive payload",
-    "explains the science of the under-keel blast and the gas bubble in slow motion",
-    "shows historical footage of HMAS Torrens being split in two by a Mark 48 in 1999"
+    "Hook: lists 3 counter-intuitive quirks (climbs high, motor off, eye frozen)",
+    "Subject reveal: introduces Javelin and its portable weight",
+    "Launch mechanism: explains soft-launch eject motor for indoor firing",
+    "Guidance sensor: explains infrared camera and argon gas cooling necessity",
+    "Target tracking: explains fire-and-forget image lock and tail fin steering",
+    "Tandem warhead: explains precursor charge defeating explosive reactive armor",
+    "Top-attack logic: explains roof armor vulnerability looping back to the start"
    ],
-   "length_seconds": 84,
-   "words_per_second": 2.4,
-   "key_number_and_how_it_is_made_feelable": "650 lbs of explosive and 60-foot wide bubble compared to ship dimensions and slow-motion breakdown of milliseconds",
-   "what_the_viewer_learns": "How under-keel torpedo explosions create a gas bubble that breaks the keel of a warship rather than direct impact damage",
+   "length_seconds": 78,
+   "words_per_second": 3.0,
+   "key_number_and_how_it_is_made_feelable": "49 lb (22.3 kg) framed as light enough for a single soldier to carry and fire alone.",
+   "what_the_viewer_learns": "How the Javelin missile safely launches indoors, chills its thermal seeker with argon, locks targets autonomously, and defeats reactive armor by striking the roof.",
    "language_level": "simple",
    "tone": "calm documentary",
-   "ending": "explanatory wrap-up with historical reference",
-   "visual_style": "high quality 3D animation combined with historical archival footage",
-   "cuts_per_10_seconds": 1.2,
-   "captions": "medium size, lowercase, white text, 2-4 words at once with occasional highlighted words",
-   "sound": "dramatic documentary background music with clear voiceover and sound effects for explosions",
+   "ending": "seamless loop",
+   "visual_style": "3D animation",
+   "cuts_per_10_seconds": 2.3,
+   "captions": "medium size, bold white text with black drop shadow, lower-third, 2-5 words displayed at once without color highlighting",
+   "sound": "low suspenseful ambient synth bed, crisp mechanical and gas-discharge sound effects, voiceover front and center",
    "why_it_works": [
-    "strong counter-intuitive hook about torpedo mechanics",
-    "crystal clear 3D animation explaining complex physics",
-    "historical validation at the end with real footage"
+    "Opening mystery stack poses three paradoxical facts before revealing the subject.",
+    "3D cutaway graphics visually unpack complex engineering (argon cooling, tandem warheads, armor thickness) instantly.",
+    "Flawless narrative and visual loop connects the final sentence directly back into the opening hook."
    ],
    "weak_points": [
-    "pacing in the middle physics breakdown feels slightly repetitive"
+    "Relies purely on 3D game-engine style animation rather than mixing in real military testing footage.",
+    "Very high information density with rapid topic transitions that may require a second watch."
    ]
   }
  },
@@ -327,165 +252,238 @@
   "title": "😱 1400 साल पुराना ये पुल आज भी कैसे खड़ा है? 🌉🔥 #short #shorts #youtubeshorts",
   "channel": "STORY BY GAYAJI",
   "channel_id": "UCMOMdbuxwUow3eZYlCMqO7g",
-  "views": 5147869,
+  "views": 8308539,
   "seconds": 91,
   "published": "2026-10-21",
   "analysis": {
-   "first_line": "If you put three stone strips across a river and stand pillars under them, people can cross easily.",
-   "seconds_until_topic_is_clear": 3,
-   "hook_type": "question + visual animation of bridge building",
+   "first_line": "If you put 3 stone slabs over a river and stand pillars underneath, people can cross easily.",
+   "seconds_until_topic_is_clear": 5,
+   "hook_type": "question",
    "beats": [
-    "Shows simple flat stone bridge over river",
-    "Widens river, shows how flat bridge breaks and pillars block boats",
-    "Introduces arch shape (Mehraab) and how it distributes weight",
-    "Adds side arches to handle flood water and reduce weight",
-    "Reveals this is the famous Zhaozhou Bridge from China"
+    "Shows simple flat stone bridge and problem when river gets wider",
+    "Adds pillars, then realizes boats can't pass through easily",
+    "Invents the arch shape (Mehraab) with special stones tied with metal strips",
+    "Builds Zhaozhou bridge with extra small arches for flood water and weight reduction"
    ],
-   "length_seconds": 91,
-   "words_per_second": 3.2,
-   "key_number_and_how_it_is_made_feelable": "Thousands of years old (historical endurance)",
-   "what_the_viewer_learns": "How ancient engineers evolved bridge design from flat stones to arches with side relief arches for flood water.",
+   "length_seconds": 90,
+   "words_per_second": 3.1,
+   "key_number_and_how_it_is_made_feelable": "Thousands of years old Zhaozhou bridge known worldwide.",
+   "what_the_viewer_learns": "How ancient Chinese engineers evolved bridge design from flat stones with pillars to arch bridges and finally multi-arch Zhaozhou bridge to handle floods and navigation.",
+   "language_level": "simple",
+   "tone": "energetic",
+   "ending": "question asking if viewer has seen such a bridge before",
+   "visual_style": "3D animation matching words extremely well",
+   "cuts_per_10_seconds": 0.5,
+   "captions": "medium size, mixed case, white with red highlight box for the title, 3-6 words at once",
+   "sound": "upbeat documentary background music, clear Hindi voiceover, sound effects for water and construction",
+   "why_it_works": [
+    "Visual problem-solving progression keeps viewers hooked",
+    "Clear 3D animations demonstrate engineering principles simply",
+    "Smooth transition from primitive designs to historical masterwork"
+   ],
+   "weak_points": [
+    "A bit long for a short at 90 seconds"
+   ]
+  }
+ },
+ {
+  "id": "1Ug_sjO1zrA",
+  "title": "How a USB-C Cable Really Works 🔌 #shorts",
+  "channel": "Things Opened",
+  "channel_id": "UCIF5FWPogXDvzpKAInS2eLA",
+  "views": 7823408,
+  "seconds": 73,
+  "published": "2026-10-21",
+  "analysis": {
+   "first_line": "Both these cables fit your phone, but one costs a few dollars and the other costs 70.",
+   "seconds_until_topic_is_clear": 5,
+   "hook_type": "named subject + contrast between cheap and expensive",
+   "beats": [
+    "intro: two identical-looking cables with massive price difference",
+    "cheap cable breakdown: bare wires, slow data, no shielding",
+    "upgrades: adding twist, foil, chip, collar, and braided jacket",
+    "long cable problem & fix: signal fade and repeater chips",
+    "conclusion: cheap cable isn't fake, just basic and 80x slower"
+   ],
+   "length_seconds": 72,
+   "words_per_second": 3.0,
+   "key_number_and_how_it_is_made_feelable": "$70 vs a few dollars; 80x slower speed",
+   "what_the_viewer_learns": "Why USB cables differ so much in price, what shielding, twisting, and chips actually do inside a cable.",
    "language_level": "simple",
    "tone": "educational documentary",
-   "ending": "question asking if viewer has seen such a bridge before",
-   "visual_style": "3D animation matching the voiceover narration step by step",
-   "cuts_per_10_seconds": 0.5,
-   "captions": "medium size, white with red highlight box for title, 3-5 words at a time",
-   "sound": "upbeat documentary music with clear voiceover and subtle sound effects",
+   "ending": "subtle ending after building the high-speed cable, fading out on the final shot",
+   "visual_style": "3D animation with x-ray/cutaway views of cables, perfectly matching the narration",
+   "cuts_per_10_seconds": 1.5,
+   "captions": "medium size, lowercase, white text, 1-3 words at a time with contextual words highlighted",
+   "sound": "upbeat electronic backing track, clear voiceover, subtle mechanical/tech sound effects",
    "why_it_works": [
-    "Clear visual progression of engineering problems and solutions",
-    "Engaging 3D animation makes abstract concepts easy to grasp",
-    "Relatable progression from simple to complex"
+    "fantastic 3D cutaway visualization makes invisible tech extremely clear",
+    "relatable daily problem (cables breaking or being slow)",
+    "fast pacing with constant visual progress keeps attention high"
    ],
    "weak_points": [
-    "A bit long for a short-form video (over 90 seconds)",
-    "Pacing feels slightly slow in the middle sections"
+    "audio feels slightly rushed in a few places to fit the visual timing"
    ]
   }
  },
  {
-  "id": "D1IOZS6E55U",
-  "title": "WORLD’S FASTEST ANIMAL! 💀⚡#shorts #animals #speed #earth",
-  "channel": "Dark Explain",
-  "channel_id": "UCw31Tt8NAmnyzuqrUWrAlDQ",
-  "views": 5078586,
-  "seconds": 24,
-  "published": "2026-10-27",
-  "analysis": {
-   "first_line": "Fastest animal on earth POV",
-   "seconds_until_topic_is_clear": 10,
-   "hook_type": "visual shock + text hook (fastest animal on earth)",
-   "beats": [
-    "introductory fast animal footage",
-    "greyhound speed reveal",
-    "quarter horse speed reveal",
-    "lion speed reveal",
-    "pronghorn speed reveal",
-    "cheetah speed reveal",
-    "peregrine falcon final reveal"
-   ],
-   "length_seconds": 24,
-   "words_per_second": 0.5,
-   "key_number_and_how_it_is_made_feelable": "320+ km/h for the peregrine falcon, shown with high-speed dive footage",
-   "what_the_viewer_learns": "Speeds of various animals and the actual fastest animal on earth",
-   "language_level": "simple",
-   "tone": "energetic / dramatic",
-   "ending": "abrupt finish on the fastest animal",
-   "visual_style": "real footage stock clips, perfectly matching the speed subject",
-   "cuts_per_10_seconds": 2.5,
-   "captions": "medium size, ALL CAPS, black/yellow highlights, 1-3 words at once",
-   "sound": "heavy bass phonk music, loud compared to no voiceover",
-   "why_it_works": [
-    "trending aggressive phonk music",
-    "gradual escalation of speed and animals",
-    "satisfying final twist with the falcon"
-   ],
-   "weak_points": [
-    "no voiceover makes it purely visual",
-    "some animal speed ordering could be debated"
-   ]
-  }
- },
- {
-  "id": "qeQMCyckWak",
-  "title": "నది పైనుండి ప్రవహించే మరో నది! 😱 Telugu Engineering Marvels #shorts #telugufacts",
-  "channel": "Arohitha Facts",
-  "channel_id": "UCO-Xjqp65w-fnzfB2yMFVXA",
-  "views": 4708119,
-  "seconds": 71,
-  "published": "2026-10-17",
-  "analysis": {
-   "first_line": "Have you ever seen a river flowing over another river on a bridge?",
-   "seconds_until_topic_is_clear": 7,
-   "hook_type": "question + visual shock",
-   "beats": [
-    "hooks with rhetorical question about rivers over bridges",
-    "introduces Indian example (Andhra Pradesh, Gannavaram)",
-    "reveals 160-year-old British engineering (Andnadata Dokka Seetamma)",
-    "shows further engineering marvels (Telangana Kakatiya canal)",
-    "explains the science: pure gravity, no motors or electricity",
-    "gives technical term: navigable aqueduct",
-    "CTA to like, subscribe and share"
-   ],
-   "length_seconds": 71,
-   "words_per_second": 2.2,
-   "key_number_and_how_it_is_made_feelable": "160 years old - showing historical British colonial bridge still working perfectly today",
-   "what_the_viewer_learns": "What a navigable aqueduct is and how rivers can flow over other rivers or highways using only gravity.",
-   "language_level": "simple",
-   "tone": "energetic documentary",
-   "ending": "CTA to like and subscribe",
-   "visual_style": "real drone and ground footage, extremely well matched with the narration",
-   "cuts_per_10_seconds": 2.1,
-   "captions": "large, ALL CAPS, mostly white/yellow/red, 1-3 words at a time, dynamic highlighting",
-   "sound": "epic cinematic music mixed moderately below clear voiceover, natural water sound effects",
-   "why_it_works": [
-    "stunning and counter-intuitive visual proof immediately captures attention",
-    "relatable and pride-inducing local examples (Andhra/Telangana)",
-    "clear explanation of the physics involved (gravity vs motors)"
-   ],
-   "weak_points": [
-    "slightly too long for a standard short (71 seconds)",
-    "some clips repeat similar river/bridge angles"
-   ]
-  }
- },
- {
-  "id": "nfuwtAeaPIU",
-  "title": "The Dead Wheel That Dug a Rover's Grave",
+  "id": "p0EqvHzr_X4",
+  "title": "Why NASA Is Paying to Destroy the ISS",
   "channel": "Past the Blue",
   "channel_id": "UC3efatI8kxybfYZWC_2pM6w",
-  "views": 4168547,
-  "seconds": 77,
-  "published": "2026-10-07",
+  "views": 7642488,
+  "seconds": 91,
+  "published": "2026-10-23",
   "analysis": {
-   "first_line": "This dead wheel found a place on Mars where life could have lived.",
-   "seconds_until_topic_is_clear": 5,
-   "hook_type": "named subject + promise + visual shock",
+   "first_line": "NASA is paying SpaceX $843 million to destroy the International Space Station.",
+   "seconds_until_topic_is_clear": 3,
+   "hook_type": "shocking number + named subject + high stakes destruction",
    "beats": [
-    "hook: dead rover wheel on Mars and life promise",
-    "explains how winter forced risky slope parking and a locked wheel dug trenches",
-    "discovery: white silica trench indicating ancient hot springs and microbes",
-    "conflict: soft sand traps rover, dead wheel spins again futilely",
-    "payoff: power dies, final philosophical reflection on digging its own grave"
+    "hook: NASA paying SpaceX $843M to destroy the ISS",
+    "explains why: ISS is old and leaking, and why other options (bringing home, leaving up, pushing higher, blowing up) fail",
+    "the solution: a custom SpaceX ship to push it precisely into Point Nemo",
+    "the finale: dramatic re-entry animation ending at the spacecraft graveyard"
    ],
-   "length_seconds": 76,
-   "words_per_second": 2.4,
-   "key_number_and_how_it_is_made_feelable": "3+ years dead wheel turning, 56/125/194 days stuck counted out visually",
-   "what_the_viewer_learns": "How a stuck Mars rover wheel serendipitously uncovered ancient hydrothermal silica deposits",
+   "length_seconds": 90,
+   "words_per_second": 3.1,
+   "key_number_and_how_it_is_made_feelable": "$843 million price tag, compared to size of a football field and 27 shuttle flights",
+   "what_the_viewer_learns": "How and why the ISS will be de-orbited into Point Nemo",
    "language_level": "simple",
    "tone": "dramatic documentary",
-   "ending": "poetic summary line about digging its own grave deeper",
-   "visual_style": "3D animation matching the voiceover narration precisely",
-   "cuts_per_10_seconds": 1.5,
-   "captions": "medium size, ALL CAPS, white text, 1-3 words at a time, keywords highlighted in red or yellow",
-   "sound": "cinematic dramatic music, clear voiceover, subtle mechanical SFX",
+   "ending": "atmospheric cinematic final shot with lingering fact about nearest humans being onboard",
+   "visual_style": "high-end 3D space animation perfectly matching the narration",
+   "cuts_per_10_seconds": 2.5,
+   "captions": "medium size, lower-case style with highlighted key words in yellow",
+   "sound": "epic cinematic background score with subtle ambient space sound effects",
    "why_it_works": [
-    "compelling narrative arc from discovery to tragedy",
-    "high-quality 3D animations that clearly illustrate invisible mechanics",
-    "emotional storytelling personifying the rover"
+    "High stakes narrative about a beloved global monument",
+    "Clear visual explanations of complex orbital mechanics",
+    "Polished 3D animation keeping viewer retention high"
    ],
    "weak_points": [
-    "pacing feels slightly slow in the middle stuck phase"
+    "Some hypothetical scenarios felt a bit rushed"
+   ]
+  }
+ },
+ {
+  "id": "Buh0gX_-5lY",
+  "title": "How Small Is the Planck Length? 💀🔬 #Shorts #Space #Astronomy #Science #QuantumPhysics #Physics",
+  "channel": "Science Of Infinity",
+  "channel_id": "UCKWe3mXbIf4KtETT2mvUBdg",
+  "views": 6826703,
+  "seconds": 36,
+  "published": "2026-10-15",
+  "analysis": {
+   "first_line": "Pov: How Small Is the Planck Length?",
+   "seconds_until_topic_is_clear": 3,
+   "hook_type": "question + visual zoom-in shock",
+   "beats": [
+    "zooming into a pen tip on paper",
+    "diving down through microscopic and subatomic scales",
+    "introducing Atom, Nucleus, and Quarks Field with size estimates",
+    "descending further into Quantum Foam and Metric Field",
+    "reaching the Planck Length at the absolute bottom scale"
+   ],
+   "length_seconds": 36,
+   "words_per_second": 0.5,
+   "key_number_and_how_it_is_made_feelable": "scale levels from pen tip down to 10^-35 meters, visualised as continuous zoom",
+   "what_the_viewer_learns": "the relative scale steps from everyday objects down to the smallest theoretically possible measurement in physics",
+   "language_level": "technical",
+   "tone": "dramatic",
+   "ending": "abrupt cut to black after reaching Planck Length",
+   "visual_style": "mixed - 3D fractal-like zooms and macro footage, perfectly synchronized with depth scale",
+   "cuts_per_10_seconds": 2.5,
+   "captions": "medium size, ALL CAPS, white text with colored highlights on scale names",
+   "sound": "heavy electronic bass drop music with rhythmic zoom impacts, no voiceover",
+   "why_it_works": [
+    "endless hypnotic zoom effect keeps eyes glued",
+    "massive scale contrast from pen tip to quantum foam",
+    "satisfying rhythmic sync between beat drops and zoom steps"
+   ],
+   "weak_points": [
+    "lack of voiceover makes complex physics terms harder to digest for casual viewers"
+   ]
+  }
+ },
+ {
+  "id": "6SvNEYx_Za4",
+  "title": "These Are The 5 Largest Airplanes In The World 😱",
+  "channel": "Mozzam Facts",
+  "channel_id": "UCj-jS1D2r9CoL6MP814C4oQ",
+  "views": 6719631,
+  "seconds": 121,
+  "published": "2026-10-12",
+  "analysis": {
+   "first_line": "These are the five largest airplanes in the world that look like giants.",
+   "seconds_until_topic_is_clear": 10,
+   "hook_type": "visual shock + number promise",
+   "beats": [
+    "Visual shock with weird/huge planes",
+    "Talking head asks if plane or flying whale",
+    "Asks to subscribe if viewer is an alien",
+    "Counts down 5 massive planes with size comparisons and humor",
+    "Closing question about how many times viewer flew"
+   ],
+   "length_seconds": 120,
+   "words_per_second": 2.8,
+   "key_number_and_how_it_is_made_feelable": "117 meter wingspan, compared to a football field",
+   "what_the_viewer_learns": "5 largest or most unusual giant aircraft and their purposes",
+   "language_level": "simple",
+   "tone": "energetic / funny",
+   "ending": "Question asking how many times viewer has flown",
+   "visual_style": "mixed talking head and stock footage, good match to script",
+   "cuts_per_10_seconds": 3.5,
+   "captions": "large, uppercase, yellow/white, 1-3 words at once, key words highlighted",
+   "sound": "upbeat meme music, moderate volume, sound effects on transitions",
+   "why_it_works": [
+    "Strong visual hook with unusual planes",
+    "Relatable and funny comparisons",
+    "Fast pacing with varied visuals"
+   ],
+   "weak_points": [
+    "Intro hook drags slightly before getting to the list"
+   ]
+  }
+ },
+ {
+  "id": "JyVxRIwS9O0",
+  "title": "குட்டி முட்டையின் ரகசியம் 😲",
+  "channel": "Buying Facts",
+  "channel_id": "UCKLXFXgvJ665OFySSDbbRaw",
+  "views": 5121399,
+  "seconds": 101,
+  "published": "2026-10-11",
+  "analysis": {
+   "first_line": "Friends, I bought something and came home, this is the secret egg.",
+   "seconds_until_topic_is_clear": 3,
+   "hook_type": "named subject + secret promise",
+   "beats": [
+    "Shows bag of 'secret eggs' bought cheaply from street vendor",
+    "Compares size and weight of normal egg vs secret egg (56g vs 41g)",
+    "Explains source: young hen's first eggs, rejected by standard grading",
+    "Cooks and tests them (boil, fry) - confirms they are good quality",
+    "Cost comparison per gram proving normal eggs are actually a better deal per weight",
+    "Final verdict: only buy small eggs if price is significantly lower"
+   ],
+   "length_seconds": 102,
+   "words_per_second": 3.0,
+   "key_number_and_how_it_is_made_feelable": "150 rupees for 30 eggs (5 rs per egg), weighed on kitchen scale against normal eggs.",
+   "what_the_viewer_learns": "What small, cheap market eggs actually are (young hen eggs), whether they are safe to eat, and if they are a good financial deal.",
+   "language_level": "simple",
+   "tone": "informative and conversational",
+   "ending": "practical advice on when it makes sense to buy them.",
+   "visual_style": "talking head mixed with street footage, factory egg sorting, scale weigh-ins, and cooking shots matching the narration closely.",
+   "cuts_per_10_seconds": 1.2,
+   "captions": "large bold Tamil text with highlighted key words in red/yellow for emphasis.",
+   "sound": "upbeat background music at low volume, clear vocal narration with occasional sound effects.",
+   "why_it_works": [
+    "Investigates a common street mystery (cheap eggs)",
+    "Uses tangible proof with kitchen scale measurements",
+    "Delivers a surprising financial conclusion (price per gram math)"
+   ],
+   "weak_points": [
+    "Slightly repetitive in the middle weight comparisons",
+    "Video length is a bit long for a short-form experiment"
    ]
   }
  }

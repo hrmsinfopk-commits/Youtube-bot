@@ -1,42 +1,57 @@
-[08:29:22] Viral Shorts found: 40, studying 12
-[08:29:25] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[08:29:25] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[08:29:50] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[08:29:51] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[08:29:58] Gemini OK (gemini-flash-lite-latest)
-[08:29:58] Studied: iPhone DUO से पूरी Team को दिया Surprise! 😱🔥#shorts (20,621,065 views) - hook: visual shock + wedding attire + stack of iPhones + promise
-[08:29:59] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[08:29:59] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
-[08:30:24] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
-[08:30:34] Gemini OK (gemini-flash-lite-latest)
-[08:30:34] Studied: How the WATCHMAN Device Works (8,177,972 views) - hook: visual shock
-[08:30:44] Gemini OK (gemini-flash-lite-latest)
-[08:30:44] Studied: The Fastest Plane Ever Flown Couldn't Take Off | X-15 #short (7,244,753 views) - hook: named subject + contradiction
-[08:30:47] Gemini OK (gemini-flash-lite-latest)
-[08:30:47] Studied: How Long Does Each Planet Take to Orbit the Sun?  | Solar Sy (6,128,021 views) - hook: named subject + visual simulation of planet orbits
-[08:30:51] Gemini OK (gemini-flash-lite-latest)
-[08:30:51] Studied: Diwali Rocket Real Range !! (5,862,029 views) - hook: question + experiment promise
-[08:30:56] Gemini OK (gemini-flash-lite-latest)
-[08:30:56] Studied: Why NASA Is Paying to Destroy the ISS (5,660,124 views) - hook: shocking number + bold claim
-[08:31:00] Gemini OK (gemini-flash-lite-latest)
-[08:31:00] Studied: Long Flight Mein Pilots Kahan Sote Hain? 😱✈️ Plane Ke Andar  (5,252,606 views) - hook: question
-[08:31:44] Gemini OK (gemini-flash-lite-latest)
-[08:31:44] Studied: How Does a Torpedo Sink a Ship Without Touching It? (5,237,934 views) - hook: visual shock + counter-intuitive statement
-[08:31:56] Gemini OK (gemini-flash-lite-latest)
-[08:31:56] Studied: 😱 1400 साल पुराना ये पुल आज भी कैसे खड़ा है? 🌉🔥 #short #shor (5,147,869 views) - hook: question + visual animation of bridge building
-[08:31:59] Gemini OK (gemini-flash-lite-latest)
-[08:31:59] Studied: WORLD’S FASTEST ANIMAL! 💀⚡#shorts #animals #speed #earth (5,078,586 views) - hook: visual shock + text hook (fastest animal on earth)
-[08:32:03] Gemini OK (gemini-flash-lite-latest)
-[08:32:03] Studied: నది పైనుండి ప్రవహించే మరో నది! 😱 Telugu Engineering Marvels  (4,708,119 views) - hook: question + visual shock
-[08:32:07] Gemini OK (gemini-flash-lite-latest)
-[08:32:07] Studied: The Dead Wheel That Dug a Rover's Grave (4,168,547 views) - hook: named subject + promise + visual shock
-[08:32:10] Gemini OK (gemini-flash-lite-latest)
-[08:32:10] Playbook updated from 12 viral Shorts:
-[08:32:10]   - State the topic clearly within the first 3 seconds to avoid early drop-off.
-[08:32:10]   - Keep total video length strictly between 20-25 seconds for news updates and 30-35 seconds for big questions.
-[08:32:10]   - Make numbers feelable by linking them immediately to a concrete, visual scale instead of just quoting raw statistics.
-[08:32:10]   - Use a counter-intuitive hook or striking visual question in the opening line to drive initial engagement.
-[08:32:10]   - Structure the narrative as a clear step-by-step evolution from a problem to an unexpected technical solution.
-[08:32:10]   - End every Short with a fresh, natural sign-off mentioning Tomorrowly instead of repetitive catchphrases.
-[08:32:10]   - Avoid complex multi-clause sentences in the first 7 seconds where drop-off rates are historically highest.
-[08:32:10]   - Prompt viewer interaction with a targeted, specific question at the end rather than a generic subscribe plea.
+[08:33:55] Viral Shorts found: 35, studying 12
+[08:38:43] Gemini OK (gemini-3.8-flash)
+[08:38:43] Studied: How Does a Helicopter Pilot Eject Without Hitting the Rotor? (32,570,811 views) - hook: contradiction / visual shock
+[08:40:27] Gemini OK (gemini-3.8-flash)
+[08:40:27] Studied: The whole rocket flies right past the camera 🚀 (13,008,523 views) - hook: visual shock
+[08:45:28] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=300)
+[08:45:36] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[08:46:08] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:50:06] Gemini OK (gemini-flash-latest)
+[08:50:06] Studied: We Are So TINY! 💀🤏 (10,696,310 views) - hook: visual shock
+[08:54:36] Gemini OK (gemini-3.8-flash)
+[08:54:36] Studied: Diwali Rocket Real Range !! (9,811,218 views) - hook: named subject + promise
+[08:54:41] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[08:54:45] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[08:59:54] Gemini OK (gemini-3.8-flash)
+[08:59:54] Studied: The Black Hole That Makes Stars (8,542,694 views) - hook: visual shock
+[09:03:33] Gemini OK (gemini-3.8-flash)
+[09:03:33] Studied: How the Javelin Missile Really Works (3D) (8,371,129 views) - hook: contradiction
+[09:03:36] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[09:03:38] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[09:04:05] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[09:04:06] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[09:04:33] Gemini OK (gemini-flash-lite-latest)
+[09:04:33] Studied: 😱 1400 साल पुराना ये पुल आज भी कैसे खड़ा है? 🌉🔥 #short #shor (8,308,539 views) - hook: question
+[09:04:36] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[09:04:40] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[09:05:08] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[09:05:13] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[09:05:28] Gemini OK (gemini-flash-lite-latest)
+[09:05:28] Studied: How a USB-C Cable Really Works 🔌 #shorts (7,823,408 views) - hook: named subject + contrast between cheap and expensive
+[09:05:30] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[09:05:31] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[09:05:57] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:05:57] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:06:08] Gemini OK (gemini-flash-lite-latest)
+[09:06:08] Studied: Why NASA Is Paying to Destroy the ISS (7,642,488 views) - hook: shocking number + named subject + high stakes destruction
+[09:06:10] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[09:06:10] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:06:35] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:06:35] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[09:07:10] Gemini OK (gemini-flash-lite-latest)
+[09:07:10] Studied: How Small Is the Planck Length? 💀🔬 #Shorts #Space #Astronomy (6,826,703 views) - hook: question + visual zoom-in shock
+[09:07:10] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[09:07:47] Gemini OK (gemini-flash-lite-latest)
+[09:07:47] Studied: These Are The 5 Largest Airplanes In The World 😱 (6,719,631 views) - hook: visual shock + number promise
+[09:07:52] Gemini OK (gemini-flash-lite-latest)
+[09:07:52] Studied: குட்டி முட்டையின் ரகசியம் 😲 (5,121,399 views) - hook: named subject + secret promise
+[09:07:55] Gemini OK (gemini-flash-lite-latest)
+[09:07:55] Playbook updated from 12 viral Shorts:
+[09:07:55]   - Name the core subject or state the primary paradox within the first 3 seconds to clear up any ambiguity immediately.
+[09:07:55]   - Keep script pacing between 2.5 to 3.0 words per second to match the viewer's natural digestion speed for complex science topics.
+[09:07:55]   - Make abstract numbers tangible by comparing them to everyday objects like pickup trucks, football fields, or transit times.
+[09:07:55]   - Maintain our fixed duration limits strictly: keep news shorts between 20 to 25 seconds, and big question shorts between 30 to 35 seconds.
+[09:07:55]   - End every script with a fresh, natural sign-off that mentions Tomorrowly without repeating previous catchphrases.
+[09:07:55]   - Ensure all technical and scientific claims are 100% factual while explaining them using simple, everyday language.
+[09:07:55]   - Structure the mid-section as a step-by-step breakdown or progressive scaling sequence to maintain high dopamine and retention.
+[09:07:55]   - Design the final sentence to either loop seamlessly back into the opening hook or leave a powerful lingering paradox.
