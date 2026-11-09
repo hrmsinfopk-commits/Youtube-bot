@@ -1,37 +1,34 @@
 {
- "topic": "How Do Massive Nuclear Submarines Create Their Own Oxygen Underwater?",
- "angle": "A hundred sailors breathe inside a sealed metal tube for months without surfacing, because the air they breathe is chemically manufactured from the ocean itself.",
- "why": "Explainer videos about extreme closed-environment engineering consistently attract millions of views due to high-stakes curiosity. This question triggers instant wonder by highlighting an impossible-sounding survival mechanism that relies on actual, proven naval technology.",
+ "topic": "How Do James Webb Space Telescope Mirrors Stay Gold in Space?",
+ "angle": "A multi-billion dollar space telescope uses a coating of pure gold that is 1,000 times thinner than a human hair to survive the harsh vacuum of space.",
+ "why": "Space exploration and hardware explainers consistently draw massive viral engagement (e.g., Veritasium and Zack D. Films style shorts surpass tens of millions of views). This topic is irresistible because using actual precious gold on the most advanced telescope in history sounds like a billionaire gimmick, but is actually an essential piece of space engineering physics.",
  "keywords": [
-  "how do submarines make oxygen",
-  "submarine air generation",
-  "electrolysis oxygen generator",
-  "nuclear submarine life support",
-  "how sailors breathe underwater",
-  "submarine oxygen candles",
-  "closed environment air systems",
-  "naval engineering explained",
-  "how long can submarines stay underwater",
-  "nuclear sub technology",
-  "oxygen generation from seawater",
+  "james webb space telescope",
+  "jwst mirrors",
+  "why are jwst mirrors gold",
+  "space telescope engineering",
+  "nasa james webb",
+  "gold coating space",
+  "infrared astronomy",
+  "beryllium mirrors",
+  "how james webb works",
+  "space telescope technology",
+  "nasa technology explained",
   "tomorrowly science"
  ],
  "facts": [
-  "Modern nuclear-powered submarines can remain submerged for months at a time, limited only by food supplies rather than air.",
-  "They generate their primary oxygen supply through a process called electrolytic oxygen generation, splitting seawater molecules.",
-  "Seawater is pumped into an electrolysis unit where an electrical current separates water into hydrogen and oxygen.",
-  "The hydrogen gas is safely vented overboard into the ocean, while the pure oxygen is pumped directly into the submarine's atmosphere.",
-  "Carbon dioxide exhaled by the crew is scrubbed from the air using amine-based chemical absorption systems to prevent toxicity.",
-  "Submarines also carry backup chemical oxygen generators, often called oxygen candles, which release oxygen rapidly through a high-temperature chemical reaction.",
-  "Electrolytic generators require massive amounts of electrical power, which is easily provided by the submarine's onboard nuclear reactor.",
-  "The air pressure inside the hull is continuously monitored and maintained to match normal sea-level atmospheric conditions on land.",
-  "Air quality sensors test for over a dozen toxic gases and trace contaminants 24 hours a day to protect the crew.",
-  "Water used in the electrolysis system is produced onboard through high-efficiency desalination and reverse osmosis of seawater.",
-  "Submarines recycle moisture from the air and wastewater through advanced filtration systems to minimize water waste.",
-  "The entire life support system is fully redundant, meaning critical air-making components have backup duplicates installed parallel to them.",
-  "The provided headline references Air Independent Propulsion Systems for the submarine market.",
-  "A market forecast for these propulsion systems extends out to the year 2036.",
-  "Market data and share estimates regarding these systems are analyzed by Fact.MR."
+  "The James Webb Space Telescope relies on 18 hexagonal primary mirror segments to capture light from the early universe.",
+  "Each mirror segment is made of beryllium, a metal chosen because it is extremely strong, lightweight, and holds its shape at extreme sub-zero temperatures.",
+  "Beryllium alone does not reflect infrared light efficiently, so the mirrors are coated with a microscopically thin layer of pure gold.",
+  "The gold coating is only 100 nanometers thick, which is roughly 1,000 times thinner than a single human hair.",
+  "Despite being so thin, the gold layer used on all 18 segments weighs a mere 48.2 grams (about 1.7 ounces) in total.",
+  "Gold is selected because it is the ultimate reflector of infrared light, reflecting roughly 98 percent of the infrared photons that hit it.",
+  "Because gold is a soft metal and prone to damage, a microscopic layer of silicon dioxide (glass) and amorphous carbon is applied right over it to protect it from space dust and debris.",
+  "The mirrors operate at a bone-chilling minus 388 degrees Fahrenheit (minus 233 degrees Celsius) while shielded by a tennis-court-sized sunshield.",
+  "If the mirrors were made of standard glass like the Hubble Space Telescope, they would warp and crack under the intense thermal shifts of deep space.",
+  "The gold is vaporized in a vacuum chamber and applied atom by atom onto the polished beryllium substrates.",
+  "Without this specific gold coating, the telescope would be blind to the oldest, most distant galaxies in the universe because older light shifts into the infrared spectrum.",
+  "The total cost of the gold used on the mirrors is valued at hundreds of thousands of dollars, making it a tiny fraction of the telescope's 10-billion-dollar price tag."
  ],
  "long_format": null,
  "format": "big question",
@@ -39,43 +36,43 @@
  "youtube_top": [
   {
    "title": "Dave - Raindance (ft. Tems)",
-   "views": 305979294
+   "views": 306101514
   },
   {
    "title": "Bruno Mars - I Just Might [Official Music Video]",
-   "views": 182070242
+   "views": 182106002
   },
   {
    "title": "This is What Happens When A Hockey Season Ends 🤯",
-   "views": 166047543
+   "views": 166073072
+  },
+  {
+   "title": "do you think he’s tired of me 🙂‍↕️ #hair #singing",
+   "views": 116478308
   },
   {
    "title": "Ariana Grande - hate that i made you love me (official music video)",
-   "views": 113094508
+   "views": 113150470
   },
   {
    "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
-   "views": 104443907
+   "views": 104487224
+  },
+  {
+   "title": "What happens when you don't pay attention #bear #wildanimals #animalencounters #scare #shorts",
+   "views": 93280578
   },
   {
    "title": "You Can't Order Here Unless You Build With LEGO 🤯",
-   "views": 89069043
+   "views": 89172136
   },
   {
    "title": "Why Pluto is Not a Planet 😱",
-   "views": 88928862
+   "views": 88978499
   },
   {
    "title": "How We Build an Alien Pool — Full Process Revealed #poolbuild #luxurypool  #satisfying #poolhacks",
-   "views": 88433116
-  },
-  {
-   "title": "WE CAN’T BELIEVE WE JUST HIT 26M FAMILY MEMBERS! 🥹😭🥰",
-   "views": 84484986
-  },
-  {
-   "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
-   "views": 78347964
+   "views": 88478193
   }
  ]
 }

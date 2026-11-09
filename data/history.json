@@ -1804,6 +1804,53 @@
     "concept_share": 0.14,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-09 18:01",
+   "type": "short",
+   "title": "Why James Webb Space Telescope Mirrors Are Pure Gold #shorts",
+   "topic": "How Do James Webb Space Telescope Mirrors Stay Gold in Space? - A multi-billion dollar space telescope uses a coating of pure gold that is 1,000 times thinner than a human hair to survive the harsh vacuum of space.",
+   "style": "Before vs now: how this used to work vs what just changed",
+   "youtube_id": "NqQpUszWLWY",
+   "voice": "Charon",
+   "seconds": 24.3,
+   "scene_times": [
+    [
+     0.0,
+     "The James Webb Space Telescope uses gold mirrors to see across the universe."
+    ],
+    [
+     6.1,
+     "Standard glass cracks under freezing minus three hundred eighty-eight degree temperatures."
+    ],
+    [
+     11.9,
+     "Engineers built eighteen segments from beryllium metal."
+    ],
+    [
+     16.0,
+     "Each plate wears a coating of pure gold just one hundred nanometers thick."
+    ],
+    [
+     21.1,
+     "Follow Tomorrowly for tomorrow's tech, today."
+    ]
+   ],
+   "format": "big question",
+   "why": "Space exploration and hardware explainers consistently draw massive viral engagement (e.g., Veritasium and Zack D. Films style shorts surpass tens of millions of views). This topic is irresistible because using actual precious gold on the most advanced telescope in history sounds like a billionaire gimmick, but is actually an essential piece of space engineering physics.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.14,
+    "fact_fixes": 1,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.2,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -2386,6 +2433,15 @@
   "pixabay-v-108420",
   "pixabay-v-355291",
   "pixabay-v-23008",
-  "pixabay-v-23759"
+  "pixabay-v-23759",
+  "nasa-v-Webb Mirrors Glamour Trailer-h264",
+  "nasa-v-Webb_Telescope_Mirror_Beauty_Shot_Resource_Reel",
+  "wm-54070562",
+  "pixabay-v-368124",
+  "pixabay-v-7105",
+  "pixabay-v-7141",
+  "pixabay-v-190039",
+  "pixabay-v-188713",
+  "pixabay-v-9192"
  ]
 }
