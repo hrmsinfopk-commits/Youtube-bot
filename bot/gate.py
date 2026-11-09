@@ -135,7 +135,8 @@ For each problem give a corrected line of about the same length (same meaning wh
 new_text is SPOKEN NARRATION ONLY: never include "(on screen: ...)", "(graphic: ...)", brackets or stage notes.
 An on-screen text must say the same number as its spoken line (not "0.6 SECONDS" while the voice says "half a second").
 Check the TITLE and THUMBNAIL TEXTS too - viewers judge us by them first. Absolute words (never, always, impossible, nothing,
-no one, every, only, first, forever, zero, can't) must be literally true; if not, soften them honestly ("almost never",
+no one, every, only, first, forever, zero, can't, pure, solid, entirely, made of) must be literally true - e.g. a thin
+gold COATING is not "pure gold"; if not, soften them honestly ("almost never",
 "nearly impossible", "one of the first") while keeping the title curious and under 70 characters.
 FACT SHEET:
 {_facts(brief)}
