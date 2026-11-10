@@ -1851,6 +1851,57 @@
     "concept_share": 0.2,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-10 15:18",
+   "type": "short",
+   "title": "Why DARPA's Silent Supersonic Jet Aims to Stop the Boom #shorts",
+   "topic": "DARPA's Silent Supersonic X-Plane That Defies the Sonic Boom Ban",
+   "style": "Explainer: one big question, answered step by step with a surprise at the end",
+   "youtube_id": "7Fx6pMX3658",
+   "voice": "Charon",
+   "seconds": 37.1,
+   "scene_times": [
+    [
+     0.0,
+     "DARPA's new experimental aircraft is designed to fly faster than sound without leaving a l"
+    ],
+    [
+     7.7,
+     "Regular jets make a massive crack because shockwaves stack up into a wall of compressed ai"
+    ],
+    [
+     14.1,
+     "This design spreads those shockwaves out so they reach the ground as a soft thump."
+    ],
+    [
+     19.9,
+     "That turns a window-rattling explosion into roughly the sound of a car door closing two st"
+    ],
+    [
+     25.9,
+     "If supersonic over land returns, London to New York drops to under four hours."
+    ],
+    [
+     32.8,
+     "If quiet aviation excites you, Tomorrowly has plenty more like it."
+    ]
+   ],
+   "format": "news",
+   "why": "",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.17,
+    "fact_fixes": 3,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -2442,6 +2493,15 @@
   "pixabay-v-7141",
   "pixabay-v-190039",
   "pixabay-v-188713",
-  "pixabay-v-9192"
+  "pixabay-v-9192",
+  "pixabay-v-381550",
+  "pixabay-v-46241",
+  "nasa-v-Getting Ready to Image Faraway Planets on This Week @NASA – May 24, 2024",
+  "nasa-v-NASA Minute May 8, 2026",
+  "pixabay-v-321164",
+  "pixabay-v-321758",
+  "pixabay-v-31890",
+  "pixabay-v-265640",
+  "pixabay-v-308799"
  ]
 }

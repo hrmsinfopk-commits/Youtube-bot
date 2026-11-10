@@ -1,4 +1,88 @@
-[20:53:52] Channel: Tomorrowly (future, mode=facts)
-/home/runner/work/Youtube-bot/Youtube-bot/bot/main.py:489: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  now = datetime.datetime.utcnow()
-[20:53:52] Back-up run: today's short is already up (Why James Webb Space Telescope Mirrors Are Pure Gold #shorts) - nothing to do
+[14:59:13] Channel: Tomorrowly (future, mode=facts)
+[14:59:13] Format today: news
+[14:59:21] News headlines collected: 167
+[14:59:25] YouTube videos analysed: 76
+[14:59:28] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:59:29] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:01:56] Gemini OK (gemini-3.8-flash)
+[15:01:56] Topic 'How SpaceX Plans to Catch Starship Out of Mid-Air' repeats recent video 'Japan's Single-Atom Quantum Computer That Doesn't Need a Giant Freezer' - choosing again
+[15:01:57] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[15:02:27] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:02:53] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[15:02:54] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:03:20] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[15:03:22] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:03:24] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[15:03:49] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[15:03:51] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:03:54] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[15:03:54] Topic selection failed: Gemini failed: gemini-flash-lite-latest: HTTP 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currentl
+[15:03:56] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[15:03:57] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:07:22] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[15:07:56] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:08:26] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[15:09:03] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:09:27] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[15:10:04] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[15:10:11] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:10:16] Gemini OK (gemini-flash-lite-latest)
+[15:10:16] Topic chosen: DARPA's Silent Supersonic X-Plane That Defies the Sonic Boom Ban
+[15:10:16] Short length for 'news': 22 s
+[15:10:17] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[15:10:21] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:10:46] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:11:15] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:11:40] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:11:44] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:11:50] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[15:12:15] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:12:15] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:12:24] Gemini OK (gemini-flash-lite-latest)
+[15:12:24] Script too long (88 words, target ~45) - tightening
+[15:12:27] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:12:53] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:13:18] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:13:26] Gemini OK (gemini-flash-lite-latest)
+[15:13:26] Tightening failed, keeping draft: 'list' object has no attribute 'get'
+[15:13:26] Script length: 88 words
+[15:13:26] Uniqueness: 92% unique vs previous scripts
+[15:13:26] Script ready: Why DARPA's Silent Supersonic Jet Won't Make a Boom (6 scenes)
+[15:13:26] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:13:52] Gemini OK (gemini-flash-lite-latest)
+[15:13:52] Gate title fix: The title states the jet 'won't' make a boom as a certainty, but it is an experimental aircraft desi | Why DARPA's Silent Supersonic Jet Won't Make a Boom -> Why DARPA's Silent Supersonic Jet Aims to Stop the Boom
+[15:13:52] Gate thumbnail_text fix: NO SONIC BOOM -> REDUCED BOOM
+[15:13:52] Gate fact fix [0]: DARPA's experimental aircraft is designed to reduce the boom, but it is not proven to fly supersonic
+[15:13:52] Gate (script): {"graphics": 1, "own_share": 0.17, "fact_fixes": 3, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[15:13:52] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a curious, knowledgeable friend explaining something cool: natural American English, warm and confident, lively medium-fast pace (these are short videos), real (not forced) surprise only on the big reveal, clear emphasis on numbers, short natural breaths, never salesy or hyped, never robotic, never like a news anchor'}
+[15:14:07] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[15:14:11] Captions aligned to the voice (91 words)
+[15:14:19] Captions aligned to the voice (94 words)
+[15:14:19] Graphics theme: footage
+[15:14:26] Own graphics: 1
+[15:14:34] Picture editor: 62/62 previews loaded
+[15:14:58] Gemini OK (gemini-flash-lite-latest)
+[15:15:17] Gemini OK (gemini-flash-lite-latest)
+[15:15:17] Footage check: kept 6 fitting clips, 1 scenes had nothing fitting
+[15:15:17] Second footage search for 1 scenes
+[15:15:18] Picture editor: 12/12 previews loaded
+[15:15:23] Gemini OK (gemini-flash-lite-latest)
+[15:15:23] Footage check: kept 0 fitting clips, 1 scenes had nothing fitting
+[15:15:30] Skipping chroma-key (green screen) clip
+[15:15:37] Skipping clip with burned-in text: NASA Artificial Intelligence Current Projects ECOSTRESS Efficient Task
+[15:15:39] Skipping clip with burned-in text: direction for wholeofgovernment
+[15:16:29] Image HTTP 503 (try 1)
+[15:16:41] Image HTTP 402 (try 2)
+[15:16:57] Image HTTP 402 (try 3)
+[15:17:07] Footage ready for 6 scenes
+[15:17:15] Gate (visuals): fit 100%, concept 0%, fallback 0
+[15:17:33] 13 clips rendered
+[15:17:33] Final render started
+[15:18:09] Freesound CC0 music: Orchestral Score 1 - Mastered WITH Stereo Imaging.wav (id 621289)
+[15:18:43] Video ready: 20261110_1517_future_short.mp4 (37.1s)
+[15:18:45] Upload 44%
+[15:18:45] Upload 88%
+[15:18:46] Uploaded: https://youtu.be/7Fx6pMX3658
