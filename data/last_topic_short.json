@@ -1,78 +1,92 @@
 {
- "topic": "How Do James Webb Space Telescope Mirrors Stay Gold in Space?",
- "angle": "A multi-billion dollar space telescope uses a coating of pure gold that is 1,000 times thinner than a human hair to survive the harsh vacuum of space.",
- "why": "Space exploration and hardware explainers consistently draw massive viral engagement (e.g., Veritasium and Zack D. Films style shorts surpass tens of millions of views). This topic is irresistible because using actual precious gold on the most advanced telescope in history sounds like a billionaire gimmick, but is actually an essential piece of space engineering physics.",
+ "topic": "How a Robot Just Built a Structure in Space Automatically",
+ "angle": "Breaking down the autonomous space-construction breakthrough where a robotic system successfully assembled a structure in orbit for the first time in history.",
+ "why": "Space robotics and autonomous tech are pulling massive view counts (over 1.2M views on similar space automation topics), and this fresh breakthrough from Caltech offers striking visual potential for a zero-g build. There is low market saturation for this specific milestone, making it a prime hit for our audience.",
  "keywords": [
-  "james webb space telescope",
-  "jwst mirrors",
-  "why are jwst mirrors gold",
-  "space telescope engineering",
-  "nasa james webb",
-  "gold coating space",
-  "infrared astronomy",
-  "beryllium mirrors",
-  "how james webb works",
-  "space telescope technology",
-  "nasa technology explained",
-  "tomorrowly science"
+  "space robot",
+  "robot builds in space",
+  "Caltech space robot",
+  "autonomous space construction",
+  "space technology",
+  "future space missions",
+  "robotics in space",
+  "NASA space tech",
+  "space exploration",
+  "orbital manufacturing"
  ],
  "facts": [
-  "The James Webb Space Telescope relies on 18 hexagonal primary mirror segments to capture light from the early universe.",
-  "Each mirror segment is made of beryllium, a metal chosen because it is extremely strong, lightweight, and holds its shape at extreme sub-zero temperatures.",
-  "Beryllium alone does not reflect infrared light efficiently, so the mirrors are coated with a microscopically thin layer of pure gold.",
-  "The gold coating is only 100 nanometers thick, which is roughly 1,000 times thinner than a single human hair.",
-  "Despite being so thin, the gold layer used on all 18 segments weighs a mere 48.2 grams (about 1.7 ounces) in total.",
-  "Gold is selected because it is the ultimate reflector of infrared light, reflecting roughly 98 percent of the infrared photons that hit it.",
-  "Because gold is a soft metal and prone to damage, a microscopic layer of silicon dioxide (glass) and amorphous carbon is applied right over it to protect it from space dust and debris.",
-  "The mirrors operate at a bone-chilling minus 388 degrees Fahrenheit (minus 233 degrees Celsius) while shielded by a tennis-court-sized sunshield.",
-  "If the mirrors were made of standard glass like the Hubble Space Telescope, they would warp and crack under the intense thermal shifts of deep space.",
-  "The gold is vaporized in a vacuum chamber and applied atom by atom onto the polished beryllium substrates.",
-  "Without this specific gold coating, the telescope would be blind to the oldest, most distant galaxies in the universe because older light shifts into the infrared spectrum.",
-  "The total cost of the gold used on the mirrors is valued at hundreds of thousands of dollars, making it a tiny fraction of the telescope's 10-billion-dollar price tag."
+  "Caltech robotic space technology successfully built a structure autonomously in space for the first time ever.",
+  "The milestone demonstration proves that autonomous machines can assemble complex infrastructure directly in orbit without human intervention.",
+  "This technology aims to eliminate the massive payload constraints of launching pre-built structures on rockets from Earth.",
+  "Autonomous space manufacturing is considered a vital stepping stone for future large-scale space stations and lunar bases.",
+  "The robotic system relies on precise mechanical programming to execute construction tasks in a zero-gravity environment.",
+  "A robotic system constructed an object in orbit by itself for the initial time.",
+  "The automated orbital construction occurred without any human crew involvement.",
+  "Researchers at Caltech are credited with achieving this historical space assembly.",
+  "AST SpaceMobile has revealed plans for a new rocket named 'Blacklift'. (Claim/Plan)",
+  "The debut launch of the 'Blacklift' rocket is targeted for the year 2028. (Claim/Plan)",
+  "A satellite ran the video game 'Doom' during what is described as the first orbital voice control demonstration.",
+  "Ring has introduced a division called Ring Robotics, associated with Amazon."
  ],
  "long_format": null,
- "format": "big question",
- "sources": [],
+ "format": "news",
+ "sources": [
+  {
+   "title": "Caltech Robotic Space Demo Successfully Builds in Space",
+   "source": "Caltech",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQY1JCOTNUUHVhX0RhVk5kOVRKeFNfV0FuYlRUdWJVVDJtOU1UUkRsS0xJdk5yNTJmSE9UaWR2UWhWYjVfNHVKNExsa0plTVhlc0xQVi1IV2Q3ZmhjQVpCZ3k2VE9TekNyTldELXBJbDduWkdUUWtBcDNWWUM3cnREMWdSSlhvd2NXcVJ3c25vT0E4S0t2?oc=5"
+  },
+  {
+   "title": "Caltech robot makes history by building a structure in space",
+   "source": "Science Daily",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5zR1RueDFQRFpQNnlqTWM2T0FDUS1MYXZaWllFTkRLQ0tUTGxtcUlzS2M2UlJRamQ0TDVXdlAwbEw2OV9icWE5elJveEFHY3lGQTgxZk4xMGc1NF91SEdqMlRJZXlIdzBBTWp4bGNqdw?oc=5"
+  },
+  {
+   "title": "A robot just built a structure autonomously in space for the 1st time ever",
+   "source": "Space",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNODFKdWFXamw2SE5oZnJGSW1KYnBFZTY5eEktN0ZjNllHb013LU1FRUh1QlNRR3FIaGx1eFU0R1pSRzBZdlczV3E2XzdzekZEd05WaGZFQ0VRWUNnX1BIZ2RRZW5rVGJXUEROWlBBMHdUS3Rfbm9DajlDYURqbWZ4M0xaZTdfbF9IU29SR1NTdm9nNVFVaklXZTFiaElOSWtSLXJ1UWMxRXJrdVU?oc=5"
+  }
+ ],
  "youtube_top": [
   {
-   "title": "Dave - Raindance (ft. Tems)",
-   "views": 306101514
+   "title": "Samsung Galaxy S27 Ultra Cobalt Violet 📱🔥 #noads #tiktok #usa",
+   "views": 12037525
   },
   {
-   "title": "Bruno Mars - I Just Might [Official Music Video]",
-   "views": 182106002
+   "title": "Last Words Of Lady Pilot",
+   "views": 11101783
   },
   {
-   "title": "This is What Happens When A Hockey Season Ends 🤯",
-   "views": 166073072
+   "title": "A C-17 lands right next to the road and swallows the car in a wall of dust",
+   "views": 11028602
   },
   {
-   "title": "do you think he’s tired of me 🙂‍↕️ #hair #singing",
-   "views": 116478308
+   "title": "🤖 The Future of Islamic Robots in Makkah! Amazing Features#shorts #islam #islamicvideo #trending",
+   "views": 8398069
   },
   {
-   "title": "Ariana Grande - hate that i made you love me (official music video)",
-   "views": 113150470
+   "title": "The Rarest GPU Ever Made 🤯 #nvidia #shorts",
+   "views": 7873595
   },
   {
-   "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
-   "views": 104487224
+   "title": "Meta VR Glasses: What Vision Pro 2 COULD Have Been!",
+   "views": 6749814
   },
   {
-   "title": "What happens when you don't pay attention #bear #wildanimals #animalencounters #scare #shorts",
-   "views": 93280578
+   "title": "Phones Now VS Phones In 2050.",
+   "views": 6304817
   },
   {
-   "title": "You Can't Order Here Unless You Build With LEGO 🤯",
-   "views": 89172136
+   "title": "Samsung Galaxy S29 Ultra Silver Titanium Gaming IQ🎮🔥#noads #tiktok #usa",
+   "views": 6202220
   },
   {
-   "title": "Why Pluto is Not a Planet 😱",
-   "views": 88978499
+   "title": "🤔 o COTONETE da NASA?",
+   "views": 5965077
   },
   {
-   "title": "How We Build an Alien Pool — Full Process Revealed #poolbuild #luxurypool  #satisfying #poolhacks",
-   "views": 88478193
+   "title": "Flexible Lenses You Can Use Whenever You Need",
+   "views": 5746056
   }
  ]
 }

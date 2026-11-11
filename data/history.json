@@ -1950,6 +1950,58 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-11 23:09",
+   "type": "short",
+   "title": "Boston Dynamics Atlas Robot Starts Real Factory Jobs #shorts",
+   "topic": "Boston Dynamics Unveils Fully Electric Atlas Robot Working Real Factory Jobs",
+   "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
+   "youtube_id": "826O8qnJi5Y",
+   "voice": "Charon",
+   "seconds": 32.8,
+   "scene_times": [
+    [
+     0.0,
+     "Boston Dynamics just deployed its fully electric Atlas robot to real factory assembly line"
+    ],
+    [
+     7.0,
+     "Gone are messy hydraulic lines, replaced by quiet electric actuators."
+    ],
+    [
+     12.5,
+     "It rotates its flexible joints to maneuver and lift heavy auto parts."
+    ],
+    [
+     18.6,
+     "That is like turning your spine in full circles while carrying heavy boxes."
+    ],
+    [
+     24.2,
+     "Battery limits mean short shifts before recharging."
+    ],
+    [
+     27.5,
+     "If industrial robots amazed you, Tomorrowly has plenty more like it."
+    ]
+   ],
+   "format": "news",
+   "why": "",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics_added": 1,
+    "graphics": 1,
+    "own_share": 0.19,
+    "fact_fixes": 1,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -2554,6 +2606,13 @@
   "nasa-v-GSFC_20171018_ICON_m12699_Overview",
   "pixabay-v-3520",
   "pixabay-v-29483",
-  "pixabay-v-25569"
+  "pixabay-v-25569",
+  "wm-27287286",
+  "pixabay-v-41477",
+  "pixabay-v-298898",
+  "pixabay-v-200682",
+  "pixabay-v-344231",
+  "pixabay-v-183107",
+  "pixabay-v-7813"
  ]
 }

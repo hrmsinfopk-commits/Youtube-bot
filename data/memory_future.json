@@ -29,7 +29,8 @@
   "Undersea fiber cables carry ninety-nine percent of all internet traffic.",
   "The James Webb Space Telescope uses gold mirrors to see across the universe.",
   "DARPA's new experimental aircraft is designed to fly faster than sound without leaving a loud sonic boom behind.",
-  "DARPA's experimental glider skips across Earth's atmosphere like a stone on water."
+  "DARPA's experimental glider skips across Earth's atmosphere like a stone on water.",
+  "Boston Dynamics just deployed its fully electric Atlas robot to real factory assembly lines."
  ],
  "endings": [
   "Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -61,7 +62,8 @@
   "How do engineers fix glass miles underwater?",
   "Follow Tomorrowly for tomorrow's tech, today.",
   "If quiet aviation excites you, Tomorrowly has plenty more like it.",
-  "If atmospheric skipping mastered navigation, Tomorrowly has plenty more like it."
+  "If atmospheric skipping mastered navigation, Tomorrowly has plenty more like it.",
+  "If industrial robots amazed you, Tomorrowly has plenty more like it."
  ],
  "scripts": [
   "Firing a multi-thousand-dollar missile at a cheap consumer drone is a financial trap. That is why modern defense forces are shifting toward directed-energy systems. KBR has introduced a novel base defense technology to fix this exact problem. The solution relies on weaponized light, deploying concentrated laser beams directly against aerial targets. It is designed to instantly neutralize incoming unmanned aerial vehicles before they reach the perimeter. Send this to the friend who loves tracking future military tech. Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -93,10 +95,10 @@
   "Undersea fiber cables carry ninety-nine percent of all internet traffic. Data travels through glass strands thinner than a human hair. Miles deep, each line is barely garden-hose thick. Repeaters use up to eighteen thousand volts across the seabed. Amazingly, the ocean's seawater completes the return electrical circuit. Yet dragging ship anchors cause two-thirds of all cuts. How do engineers fix glass miles underwater?",
   "The James Webb Space Telescope uses gold mirrors to see across the universe. Standard glass cracks under freezing minus three hundred eighty-eight degree temperatures. Engineers built eighteen segments from beryllium metal. Each plate wears a coating of pure gold just one hundred nanometers thick. Follow Tomorrowly for tomorrow's tech, today.",
   "DARPA's new experimental aircraft is designed to fly faster than sound without leaving a loud sonic boom behind. Regular jets make a massive crack because shockwaves stack up into a wall of compressed air. This design spreads those shockwaves out so they reach the ground as a soft thump. That turns a window-rattling explosion into roughly the sound of a car door closing two streets away. If supersonic over land returns, London to New York drops to under four hours. If quiet aviation excites you, Tomorrowly has plenty more like it.",
-  "DARPA's experimental glider skips across Earth's atmosphere like a stone on water. It dips down, gains speed, and bounces back up. This lets it travel five times the speed of sound while shedding extreme heat. The tricky part is maintaining control during radio blackouts. If atmospheric skipping mastered navigation, Tomorrowly has plenty more like it."
+  "DARPA's experimental glider skips across Earth's atmosphere like a stone on water. It dips down, gains speed, and bounces back up. This lets it travel five times the speed of sound while shedding extreme heat. The tricky part is maintaining control during radio blackouts. If atmospheric skipping mastered navigation, Tomorrowly has plenty more like it.",
+  "Boston Dynamics just deployed its fully electric Atlas robot to real factory assembly lines. Gone are messy hydraulic lines, replaced by quiet electric actuators. It rotates its flexible joints to maneuver and lift heavy auto parts. That is like turning your spine in full circles while carrying heavy boxes. Battery limits mean short shifts before recharging. If industrial robots amazed you, Tomorrowly has plenty more like it."
  ],
  "recent_signatures": [
-  "THE CATCH",
   "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
@@ -115,10 +117,10 @@
   "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
-  "THE CATCH"
+  "THE CATCH",
+  "WE DID THE MATH"
  ],
  "recent_styles": [
-  "Future scenario: 'It's 2040...' - show how this changes everyday life",
   "Explainer: one big question, answered step by step with a surprise at the end",
   "Myth vs fact: what people assume vs what is actually true",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
@@ -137,10 +139,10 @@
   "Explainer: one big question, answered step by step with a surprise at the end",
   "Before vs now: how this used to work vs what just changed",
   "Explainer: one big question, answered step by step with a surprise at the end",
-  "Myth vs fact: what people assume vs what is actually true"
+  "Myth vs fact: what people assume vs what is actually true",
+  "Shocking fact first: open with the most unbelievable detail, then explain why"
  ],
  "recent_themes": [
-  "footage",
   "navy",
   "footage",
   "blueprint",
@@ -159,6 +161,7 @@
   "blueprint",
   "navy",
   "footage",
-  "blueprint"
+  "blueprint",
+  "footage"
  ]
 }
