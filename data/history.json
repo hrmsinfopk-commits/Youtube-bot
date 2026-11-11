@@ -1902,6 +1902,54 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-11 18:17",
+   "type": "short",
+   "title": "DARPA's Hypersonic Glider Bounces on Air #shorts",
+   "topic": "DARPA's New Hypersonic Glider Can Skip Across the Upper Atmosphere",
+   "style": "Myth vs fact: what people assume vs what is actually true",
+   "youtube_id": "BVkvUKGWCnA",
+   "voice": "Charon",
+   "seconds": 26.9,
+   "scene_times": [
+    [
+     0.0,
+     "DARPA's experimental glider skips across Earth's atmosphere like a stone on water."
+    ],
+    [
+     6.3,
+     "It dips down, gains speed, and bounces back up."
+    ],
+    [
+     10.6,
+     "This lets it travel five times the speed of sound while shedding extreme heat."
+    ],
+    [
+     16.2,
+     "The tricky part is maintaining control during radio blackouts."
+    ],
+    [
+     20.1,
+     "If atmospheric skipping mastered navigation, Tomorrowly has plenty more like it."
+    ]
+   ],
+   "format": "news",
+   "why": "",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics_added": 1,
+    "graphics": 1,
+    "own_share": 0.25,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -2502,6 +2550,10 @@
   "pixabay-v-321758",
   "pixabay-v-31890",
   "pixabay-v-265640",
-  "pixabay-v-308799"
+  "pixabay-v-308799",
+  "nasa-v-GSFC_20171018_ICON_m12699_Overview",
+  "pixabay-v-3520",
+  "pixabay-v-29483",
+  "pixabay-v-25569"
  ]
 }
