@@ -2002,6 +2002,53 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-12 17:58",
+   "type": "short",
+   "title": "DARPA's New X-Plane Has No Moving Flaps #shorts",
+   "topic": "DARPA's New X-Plane Uses Active Flow Control Instead of Traditional Flaps",
+   "style": "Myth vs fact: what people assume vs what is actually true",
+   "youtube_id": "yxnz4y441t4",
+   "voice": "Charon",
+   "seconds": 25.2,
+   "scene_times": [
+    [
+     0.0,
+     "DARPA's new X-plane steers entirely without moving flaps."
+    ],
+    [
+     4.8,
+     "Instead of metal hinges, it uses sudden blasts of compressed air to push against the wind."
+    ],
+    [
+     10.8,
+     "That removes hundreds of fragile moving parts that add heavy weight."
+    ],
+    [
+     15.8,
+     "The catch is that bleeding air from the main jet engine robs power from the overall thrust"
+    ],
+    [
+     21.9,
+     "Follow Tomorrowly for tomorrow's tech, today."
+    ]
+   ],
+   "format": "news",
+   "why": "",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.28,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.2,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -2613,6 +2660,10 @@
   "pixabay-v-200682",
   "pixabay-v-344231",
   "pixabay-v-183107",
-  "pixabay-v-7813"
+  "pixabay-v-7813",
+  "pixabay-v-166385",
+  "pixabay-v-5352",
+  "pixabay-v-31392",
+  "pixabay-v-232538"
  ]
 }
