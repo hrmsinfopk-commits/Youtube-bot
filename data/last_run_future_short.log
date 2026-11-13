@@ -1,4 +1,4 @@
-[17:42:52] Channel: Tomorrowly (future, mode=facts)
+[20:45:49] Channel: Tomorrowly (future, mode=facts)
 /home/runner/work/Youtube-bot/Youtube-bot/bot/main.py:489: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   now = datetime.datetime.utcnow()
-[17:42:52] Back-up run: today's short is already up (Voyager 1 Is Officially One Light-Day Away #shorts) - nothing to do
+[20:45:49] Back-up run: today's short is already up (Voyager 1 Is Officially One Light-Day Away #shorts) - nothing to do
