@@ -2049,6 +2049,54 @@
     "concept_share": 0.2,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-13 15:08",
+   "type": "short",
+   "title": "Voyager 1 Is Officially One Light-Day Away #shorts",
+   "topic": "Voyager 1 Is Officially One Light-Day Away - Shocking scale hook: Voyager 1 has crossed a historic cosmic boundary where light itself takes an entire 24-hour day to reach it, meaning any message NASA sends faces an agonizing 48-hour round-trip delay.",
+   "style": "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
+   "youtube_id": "bciNKzWrsHk",
+   "voice": "Charon",
+   "seconds": 24.0,
+   "scene_times": [
+    [
+     0.0,
+     "Voyager 1 is officially one light-day away."
+    ],
+    [
+     3.9,
+     "That means commands face a roughly forty-eight-hour round-trip delay."
+    ],
+    [
+     8.4,
+     "Its transmitter emits just twenty-two watts, like a refrigerator bulb."
+    ],
+    [
+     13.4,
+     "By Earth, the signal drops to a fraction of a microwatt."
+    ],
+    [
+     17.2,
+     "If distant robotic explorers amaze you, Tomorrowly has plenty more space discoveries like "
+    ]
+   ],
+   "format": "news",
+   "why": "Space exploration shorts regularly deliver over 100% average view duration on Tomorrowly, and recent viral clips on Voyager 1 and deep-space missions have pulled 1.1M to 1.2M views in the last 7 days. NASA's official celebration of the one-light-day milestone offers fresh news hook with abundant public domain NASA/DSN visuals and zero direct channel repetition.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics_added": 1,
+    "graphics": 1,
+    "own_share": 0.16,
+    "fact_fixes": 1,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.2,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -2664,6 +2712,13 @@
   "pixabay-v-166385",
   "pixabay-v-5352",
   "pixabay-v-31392",
-  "pixabay-v-232538"
+  "pixabay-v-232538",
+  "pixabay-v-27770",
+  "pixabay-v-6",
+  "pixabay-v-37169",
+  "pixabay-v-104631",
+  "nasa-v-Evolution_of_Galaxies_H264",
+  "nasa-v-GSFC_20100722_Hubble_m10619_Galaxies",
+  "pixabay-v-215018"
  ]
 }

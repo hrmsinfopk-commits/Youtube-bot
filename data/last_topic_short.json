@@ -1,92 +1,96 @@
 {
- "topic": "How a Robot Just Built a Structure in Space Automatically",
- "angle": "Breaking down the autonomous space-construction breakthrough where a robotic system successfully assembled a structure in orbit for the first time in history.",
- "why": "Space robotics and autonomous tech are pulling massive view counts (over 1.2M views on similar space automation topics), and this fresh breakthrough from Caltech offers striking visual potential for a zero-g build. There is low market saturation for this specific milestone, making it a prime hit for our audience.",
+ "topic": "Voyager 1 Is Officially One Light-Day Away",
+ "angle": "Shocking scale hook: Voyager 1 has crossed a historic cosmic boundary where light itself takes an entire 24-hour day to reach it, meaning any message NASA sends faces an agonizing 48-hour round-trip delay.",
+ "why": "Space exploration shorts regularly deliver over 100% average view duration on Tomorrowly, and recent viral clips on Voyager 1 and deep-space missions have pulled 1.1M to 1.2M views in the last 7 days. NASA's official celebration of the one-light-day milestone offers fresh news hook with abundant public domain NASA/DSN visuals and zero direct channel repetition.",
  "keywords": [
-  "space robot",
-  "robot builds in space",
-  "Caltech space robot",
-  "autonomous space construction",
-  "space technology",
-  "future space missions",
-  "robotics in space",
-  "NASA space tech",
+  "Voyager 1",
+  "Voyager 1 light day",
+  "NASA space news",
+  "interstellar space",
+  "deep space network",
+  "speed of light",
+  "Voyager 1 signal delay",
   "space exploration",
-  "orbital manufacturing"
+  "NASA Voyager",
+  "furthest human made object",
+  "astronomy shorts",
+  "space news"
  ],
  "facts": [
-  "Caltech robotic space technology successfully built a structure autonomously in space for the first time ever.",
-  "The milestone demonstration proves that autonomous machines can assemble complex infrastructure directly in orbit without human intervention.",
-  "This technology aims to eliminate the massive payload constraints of launching pre-built structures on rockets from Earth.",
-  "Autonomous space manufacturing is considered a vital stepping stone for future large-scale space stations and lunar bases.",
-  "The robotic system relies on precise mechanical programming to execute construction tasks in a zero-gravity environment.",
-  "A robotic system constructed an object in orbit by itself for the initial time.",
-  "The automated orbital construction occurred without any human crew involvement.",
-  "Researchers at Caltech are credited with achieving this historical space assembly.",
-  "AST SpaceMobile has revealed plans for a new rocket named 'Blacklift'. (Claim/Plan)",
-  "The debut launch of the 'Blacklift' rocket is targeted for the year 2028. (Claim/Plan)",
-  "A satellite ran the video game 'Doom' during what is described as the first orbital voice control demonstration.",
-  "Ring has introduced a division called Ring Robotics, associated with Amazon."
+  "Voyager 1 was launched on September 5, 1977, initially designed for a 5-year flyby mission of Jupiter and Saturn.",
+  "After nearly 50 years of travel, Voyager 1 has reached a historic distance milestone of one light-day from Earth.",
+  "A light-day is the exact distance light travels in a vacuum over 24 hours, equaling approximately 25.9 billion kilometers (16.1 billion miles or about 173 Astronomical Units).",
+  "Because radio signals travel at the speed of light (approximately 300,000 km/s), sending a single command to Voyager 1 now takes 24 hours.",
+  "A round-trip communication exchange—sending an instruction and waiting to receive telemetry confirmation—takes roughly 48 hours.",
+  "Voyager 1 is traveling outward at approximately 38,000 miles per hour (17 kilometers per second or roughly 61,000 km/h) relative to the Sun.",
+  "It officially crossed the heliopause into interstellar space in August 2012, becoming the first human-made object to do so.",
+  "NASA communicates with Voyager 1 through the Deep Space Network (DSN) using giant 70-meter (230-foot) radio antennas in Goldstone, Madrid, and Canberra.",
+  "The spacecraft's radio transmitter emits only about 22 watts of power—roughly equivalent to a refrigerator light bulb.",
+  "By the time Voyager's signal reaches Earth antennas across one light-day of space, its power is measured in fractions of a billionth of a microwatt.",
+  "The probe is powered by radioisotope thermoelectric generators (RTGs) running on decaying plutonium-238, losing about 4 watts of electrical power each year.",
+  "To stretch operational life, NASA engineers have progressively shut down heaters and non-essential science instruments to prioritize core flight computers and transmitters.",
+  "Voyager 1 carries the Golden Record, a gold-plated copper phonograph record encoded with sounds, greetings, and images depicting humanity and Earth.",
+  "Voyager 1 holds the title of the most distant human-created object in the universe.",
+  "The spacecraft is on the verge of being a light-day distant from our planet.",
+  "Voyager 1 carries a Golden Record on its journey.",
+  "The probe briefly went quiet in the deep cosmos prior to hitting this distance milestone.",
+  "CLAIM/PLAN: NASA has scheduled a worldwide event for Tuesday, November 17, to mark the occasion.",
+  "CLAIM/PLAN: AccuWeather reported that NASA intends to hold a global celebration for this event."
  ],
  "long_format": null,
  "format": "news",
  "sources": [
   {
-   "title": "Caltech Robotic Space Demo Successfully Builds in Space",
-   "source": "Caltech",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQY1JCOTNUUHVhX0RhVk5kOVRKeFNfV0FuYlRUdWJVVDJtOU1UUkRsS0xJdk5yNTJmSE9UaWR2UWhWYjVfNHVKNExsa0plTVhlc0xQVi1IV2Q3ZmhjQVpCZ3k2VE9TekNyTldELXBJbDduWkdUUWtBcDNWWUM3cnREMWdSSlhvd2NXcVJ3c25vT0E4S0t2?oc=5"
+   "title": "Voyager 1: What Is a Light-Day",
+   "source": "NASA Science (.gov)",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQa0Y3c0k1angzWDAtZ2F4TU1tUWF4dGFUZnpuVkpkYS1tcEFKSWp5TEhadTF5YVdycGJVZ3pNc1J0Y0lFN0N4OXh2V29ldHptdlE4UzhxRTFjclgxOFppdXNGV091bXZ6ZlB0OTkzWjdGb1BKaG1DelJkMm9GcTNyVEFNSlU2SUVz?oc=5"
   },
   {
-   "title": "Caltech robot makes history by building a structure in space",
-   "source": "Science Daily",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5zR1RueDFQRFpQNnlqTWM2T0FDUS1MYXZaWllFTkRLQ0tUTGxtcUlzS2M2UlJRamQ0TDVXdlAwbEw2OV9icWE5elJveEFHY3lGQTgxZk4xMGc1NF91SEdqMlRJZXlIdzBBTWp4bGNqdw?oc=5"
-  },
-  {
-   "title": "A robot just built a structure autonomously in space for the 1st time ever",
-   "source": "Space",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNODFKdWFXamw2SE5oZnJGSW1KYnBFZTY5eEktN0ZjNllHb013LU1FRUh1QlNRR3FIaGx1eFU0R1pSRzBZdlczV3E2XzdzekZEd05WaGZFQ0VRWUNnX1BIZ2RRZW5rVGJXUEROWlBBMHdUS3Rfbm9DajlDYURqbWZ4M0xaZTdfbF9IU29SR1NTdm9nNVFVaklXZTFiaElOSWtSLXJ1UWMxRXJrdVU?oc=5"
+   "title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities",
+   "source": "NASA (.gov)",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQXzVYdjEyMWllNkhsb1F5TlY5bEY0WmY3RjN5ZmF3ZjQ4eWdPX0I0SXE3VEs1cEYzQ0I5TGlfYkNhd2U5b1AtWU90WHoxZE5vMEtzYmo5QUg1RVc3TklwNWdVR3BQbFl5bXItcUpTMk9PQU0yUXhmMC1sUlljd0tkYXlyWUpuZFFWZkVPcUp3amphMzd4dGwxUGxkU1VGT0VWcTRjMDRB?oc=5"
   }
  ],
  "youtube_top": [
   {
    "title": "Samsung Galaxy S27 Ultra Cobalt Violet 📱🔥 #noads #tiktok #usa",
-   "views": 12037525
-  },
-  {
-   "title": "Last Words Of Lady Pilot",
-   "views": 11101783
-  },
-  {
-   "title": "A C-17 lands right next to the road and swallows the car in a wall of dust",
-   "views": 11028602
-  },
-  {
-   "title": "🤖 The Future of Islamic Robots in Makkah! Amazing Features#shorts #islam #islamicvideo #trending",
-   "views": 8398069
+   "views": 18064830
   },
   {
    "title": "The Rarest GPU Ever Made 🤯 #nvidia #shorts",
-   "views": 7873595
+   "views": 10515924
+  },
+  {
+   "title": "Robot🤖￼cake😂90s childhoods memory #shorts #90s #village #childhood #memories #relatable #friends",
+   "views": 7416938
   },
   {
    "title": "Meta VR Glasses: What Vision Pro 2 COULD Have Been!",
-   "views": 6749814
+   "views": 7167236
   },
   {
-   "title": "Phones Now VS Phones In 2050.",
-   "views": 6304817
-  },
-  {
-   "title": "Samsung Galaxy S29 Ultra Silver Titanium Gaming IQ🎮🔥#noads #tiktok #usa",
-   "views": 6202220
+   "title": "My RAM stick microphone..",
+   "views": 6713296
   },
   {
    "title": "🤔 o COTONETE da NASA?",
-   "views": 5965077
+   "views": 6517861
   },
   {
-   "title": "Flexible Lenses You Can Use Whenever You Need",
-   "views": 5746056
+   "title": "WALL·E (2008) | 🤖This Robot Shows What True Love Means! 🥹💕#shorts #movierecap",
+   "views": 6295023
+  },
+  {
+   "title": "🤖 IShowSpeed Asked a Humanoid Robot a Question… Its Response Was INSANE! 😳🔥 #Shorts",
+   "views": 5970429
+  },
+  {
+   "title": "GTA 6 ON PS5 PRO VS PS5 #shorts",
+   "views": 4887456
+  },
+  {
+   "title": "Macbook PROLED Review: It's Not About That",
+   "views": 4807735
   }
  ]
 }

@@ -1,4 +1,70 @@
-[20:43:46] Channel: Tomorrowly (future, mode=facts)
-/home/runner/work/Youtube-bot/Youtube-bot/bot/main.py:489: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  now = datetime.datetime.utcnow()
-[20:43:46] Back-up run: today's short is already up (DARPA's New X-Plane Has No Moving Flaps #shorts) - nothing to do
+[14:51:03] Channel: Tomorrowly (future, mode=facts)
+[14:51:03] Format today: news
+[14:51:13] News headlines collected: 178
+[14:51:17] YouTube videos analysed: 77
+[14:51:33] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:51:58] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:52:25] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:52:27] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:52:53] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:52:57] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:53:09] Gemini OK (gemini-flash-lite-latest)
+[14:53:09] Topic 'How Webb Discovered the Oldest Black Hole Quasars in the Universe' repeats recent video 'How Do James Webb Space Telescope Mirrors Stay Gold in Space? - A mult' - choosing again
+[14:55:22] Gemini OK (gemini-3.8-flash)
+[14:55:25] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:55:41] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:59:06] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[15:00:00] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:00:28] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[15:00:29] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:00:35] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[15:01:02] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[15:01:13] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:01:23] Gemini OK (gemini-flash-lite-latest)
+[15:01:23] Trend topic: Voyager 1 Is Officially One Light-Day Away | why: Space exploration shorts regularly deliver over 100% average view duration on Tomorrowly, and recent viral clips on Voyager 1 and deep-space missions have pulled 1.1M to 1.2M views in the last 7 days. NASA's official celebration of the one-light-day milestone offers fresh news hook with abundant public domain NASA/DSN visuals and zero direct channel repetition.
+[15:01:23] Short length for 'news': 22 s
+[15:01:25] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[15:01:26] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:01:52] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[15:02:19] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:02:44] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:02:48] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:02:59] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[15:03:24] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:03:25] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:03:33] Gemini OK (gemini-flash-lite-latest)
+[15:03:33] Script too long (94 words, target ~45) - tightening
+[15:03:33] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[15:04:18] Gemini OK (gemini-flash-latest)
+[15:04:18] Script length: 50 words
+[15:04:18] Uniqueness: 98% unique vs previous scripts
+[15:04:18] Script ready: Voyager 1 Is Officially One Light-Day Away (5 scenes)
+[15:04:18] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[15:04:43] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:05:08] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[15:05:19] Gemini OK (gemini-flash-lite-latest)
+[15:05:22] Gemini OK (gemini-flash-lite-latest)
+[15:05:22] Gate fact fix [1]: Commands face a round-trip delay of roughly 48 hours, not definitively forty-eight hours.
+[15:05:22] Gate (script): {"graphics_added": 1, "graphics": 1, "own_share": 0.16, "fact_fixes": 1, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[15:05:22] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a curious, knowledgeable friend explaining something cool: natural American English, warm and confident, lively medium-fast pace (these are short videos), real (not forced) surprise only on the big reveal, clear emphasis on numbers, short natural breaths, never salesy or hyped, never robotic, never like a news anchor'}
+[15:05:31] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[15:05:35] Captions aligned to the voice (57 words)
+[15:05:38] Captions aligned to the voice (56 words)
+[15:05:38] Graphics theme: navy
+[15:05:47] Own graphics: 1
+[15:06:27] Picture editor: 48/50 previews loaded
+[15:06:39] Gemini OK (gemini-flash-lite-latest)
+[15:06:50] Gemini OK (gemini-flash-lite-latest)
+[15:06:50] Footage check: kept 7 fitting clips, 1 scenes had nothing fitting
+[15:06:53] Second footage search for 1 scenes
+[15:06:54] Picture editor: 14/14 previews loaded
+[15:07:05] Gemini OK (gemini-flash-lite-latest)
+[15:07:05] Footage check: kept 0 fitting clips, 1 scenes had nothing fitting
+[15:07:29] Skipping clip with burned-in text: HARRY USON stit Space
+[15:07:33] Footage ready for 5 scenes
+[15:07:33] Gate (visuals): fit 100%, concept 20%, fallback 0
+[15:07:37] 9 clips rendered
+[15:07:37] Final render started
+[15:08:10] Freesound CC0 music: Orchestral Score 1 - Mastered WITH Stereo Imaging.wav (id 621289)
+[15:08:24] Video ready: 20261113_1507_future_short.mp4 (24.0s)
+[15:08:26] Uploaded: https://youtu.be/bciNKzWrsHk
