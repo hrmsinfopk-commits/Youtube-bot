@@ -1,4 +1,69 @@
-[20:45:49] Channel: Tomorrowly (future, mode=facts)
-/home/runner/work/Youtube-bot/Youtube-bot/bot/main.py:489: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  now = datetime.datetime.utcnow()
-[20:45:49] Back-up run: today's short is already up (Voyager 1 Is Officially One Light-Day Away #shorts) - nothing to do
+[14:38:34] Channel: Tomorrowly (future, mode=facts)
+[14:38:34] Format today: news
+[14:38:42] News headlines collected: 171
+[14:38:45] YouTube videos analysed: 77
+[14:41:45] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:44:45] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:45:10] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:48:11] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:48:36] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:48:37] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:48:39] Gemini OK (gemini-flash-lite-latest)
+[14:48:39] Topic 'How Quantum Light Behaves Like a Solid and a Liquid' repeats recent video 'Japan's Single-Atom Quantum Computer That Doesn't Need a Giant Freezer' - choosing again
+[14:48:40] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:51:03] Gemini OK (gemini-flash-latest)
+[14:54:03] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:54:28] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:54:53] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:54:54] Gemini OK (gemini-flash-lite-latest)
+[14:54:54] Trend topic: The First Robot to Build a Structure in Space | why: Space and robotics are Tomorrowly's top-performing topics, and recent viral hits show multi-million view demand for autonomous robots and orbital tech. While major channels focus narrowly on SpaceX launch aborts, this fresh Caltech milestone provides a unique, visual explainer on how zero-gravity autonomous construction will replace cramped rocket launches.
+[14:54:54] Short length for 'news': 22 s
+[14:57:12] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:57:37] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:58:05] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[14:58:31] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[14:58:31] Video 1 failed (attempt 1): Gemini failed: gemini-flash-lite-latest: HTTP 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[14:58:31] Gemini is busy - waiting 10 minutes, then trying again
+[15:08:31] Format today: news
+[15:08:39] News headlines collected: 170
+[15:08:43] YouTube videos analysed: 77
+[15:08:45] Gemini OK (gemini-flash-lite-latest)
+[15:08:45] Trend topic: How Parker Solar Probe Survives the Sun's Atmosphere | why: Space and NASA missions consistently drive high traffic on our channel and across YouTube shorts (similar space videos pulling over 1M+ views). This leverages brand-new findings from the Parker Solar Probe while offering incredible visual potential.
+[15:08:45] Short length for 'news': 22 s
+[15:08:49] Gemini OK (gemini-flash-lite-latest)
+[15:08:49] Script too long (67 words, target ~45) - tightening
+[15:08:52] Gemini OK (gemini-flash-lite-latest)
+[15:08:52] Tightening failed, keeping draft: 'list' object has no attribute 'get'
+[15:08:52] Script length: 67 words
+[15:08:52] Uniqueness: 90% unique vs previous scripts
+[15:08:52] Script ready: How NASA's Parker Solar Probe Survives the Sun's Atmosphere (6 scenes)
+[15:08:53] Gemini OK (gemini-flash-lite-latest)
+[15:08:53] Gate (script): {"graphics": 1, "own_share": 0.1, "fact_fixes": 0, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[15:08:53] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a curious, knowledgeable friend explaining something cool: natural American English, warm and confident, lively medium-fast pace (these are short videos), real (not forced) surprise only on the big reveal, clear emphasis on numbers, short natural breaths, never salesy or hyped, never robotic, never like a news anchor'}
+[15:09:19] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[15:09:23] Captions aligned to the voice (67 words)
+[15:09:30] Captions aligned to the voice (66 words)
+[15:09:30] Graphics theme: footage
+[15:09:35] Own graphics: 1
+[15:10:05] Picture editor: 65/68 previews loaded
+[15:10:14] Gemini OK (gemini-flash-lite-latest)
+[15:10:20] Gemini OK (gemini-flash-lite-latest)
+[15:10:20] Footage check: kept 5 fitting clips, 0 scenes had nothing fitting
+[15:10:37] Skipping clip with burned-in text: Spitzer Space Telescope
+[15:10:40] Skipping clip with burned-in text: Guisard ESO Hubble
+[15:10:47] Footage ready for 6 scenes
+[15:10:54] Gate (visuals): fit 100%, concept 0%, fallback 0
+[15:11:04] 13 clips rendered
+[15:11:04] Final render started
+[15:11:23] Freesound CC0 music: Slow building synth - Riser Uplifter.wav (id 621849)
+[15:11:59] Video ready: 20261114_1510_future_short.mp4 (32.7s)
+[15:12:01] Upload 38%
+[15:12:01] Upload 76%
+[15:12:01] Uploaded: https://youtu.be/0U0O-P43MNQ

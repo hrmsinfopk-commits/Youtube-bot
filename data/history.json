@@ -2227,6 +2227,57 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-14 15:12",
+   "type": "short",
+   "title": "How NASA's Parker Solar Probe Survives the Sun's Atmosphere #shorts",
+   "topic": "How Parker Solar Probe Survives the Sun's Atmosphere - A shocking scale breakdown of how a spacecraft can plunge directly into the Sun's chaotic magnetic fields and survive temperatures exceeding millions of degrees using revolutionary heat-shield technology.",
+   "style": "Explainer: one big question, answered step by step with a surprise at the end",
+   "youtube_id": "0U0O-P43MNQ",
+   "voice": "Charon",
+   "seconds": 32.7,
+   "scene_times": [
+    [
+     0.0,
+     "The Parker Solar Probe touches the Sun while enduring temperatures exceeding one thousand "
+    ],
+    [
+     7.9,
+     "That exterior heat would instantly melt steel."
+    ],
+    [
+     11.9,
+     "Yet, a carbon-composite shield blocks the blast."
+    ],
+    [
+     16.0,
+     "Behind that barrier, internal instruments stay near room temperature."
+    ],
+    [
+     20.8,
+     "It maps hidden magnetic patterns to help guard Earth's power grids from solar storms."
+    ],
+    [
+     26.6,
+     "If solar physics amazed you, Tomorrowly has plenty more space discoveries like this."
+    ]
+   ],
+   "format": "news",
+   "why": "Space and NASA missions consistently drive high traffic on our channel and across YouTube shorts (similar space videos pulling over 1M+ views). This leverages brand-new findings from the Parker Solar Probe while offering incredible visual potential.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.1,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -2862,6 +2913,14 @@
   "pixabay-v-142647",
   "pixabay-v-2712",
   "pixabay-v-11016",
-  "pixabay-v-995"
+  "pixabay-v-995",
+  "nasa-v-GSFC_20180720_Parker_m12911_trailer.en_US",
+  "pixabay-v-120734",
+  "pixabay-v-266949",
+  "nasa-v-GSFC_20160129_Dynamic_m12104_Magnetic",
+  "nasa-v-JPL-20231222-SOLSYSf-0001-NASA Telescopes Reveal Hidden Universe",
+  "nasa-v-ARC-20200103-AAV3244-SOFIA-GalacticCenter-RptrPkg-NASAWeb",
+  "nasa-v-GSFC_20100126_Nova_m10547_SuperNova",
+  "nasa-v-GSFC_20130405_SEXTANT_m10857_B_Roll"
  ]
 }

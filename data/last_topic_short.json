@@ -1,96 +1,83 @@
 {
- "topic": "Voyager 1 Is Officially One Light-Day Away",
- "angle": "Shocking scale hook: Voyager 1 has crossed a historic cosmic boundary where light itself takes an entire 24-hour day to reach it, meaning any message NASA sends faces an agonizing 48-hour round-trip delay.",
- "why": "Space exploration shorts regularly deliver over 100% average view duration on Tomorrowly, and recent viral clips on Voyager 1 and deep-space missions have pulled 1.1M to 1.2M views in the last 7 days. NASA's official celebration of the one-light-day milestone offers fresh news hook with abundant public domain NASA/DSN visuals and zero direct channel repetition.",
+ "topic": "How Parker Solar Probe Survives the Sun's Atmosphere",
+ "angle": "A shocking scale breakdown of how a spacecraft can plunge directly into the Sun's chaotic magnetic fields and survive temperatures exceeding millions of degrees using revolutionary heat-shield technology.",
+ "why": "Space and NASA missions consistently drive high traffic on our channel and across YouTube shorts (similar space videos pulling over 1M+ views). This leverages brand-new findings from the Parker Solar Probe while offering incredible visual potential.",
  "keywords": [
-  "Voyager 1",
-  "Voyager 1 light day",
-  "NASA space news",
-  "interstellar space",
-  "deep space network",
-  "speed of light",
-  "Voyager 1 signal delay",
+  "NASA",
+  "Parker Solar Probe",
+  "Sun magnetic field",
+  "space mission",
+  "astronomy",
+  "space news",
+  "solar probe heat shield",
+  "sun atmosphere",
+  "science news",
   "space exploration",
-  "NASA Voyager",
-  "furthest human made object",
-  "astronomy shorts",
-  "space news"
+  "NASA discoveries",
+  "solar wind"
  ],
  "facts": [
-  "Voyager 1 was launched on September 5, 1977, initially designed for a 5-year flyby mission of Jupiter and Saturn.",
-  "After nearly 50 years of travel, Voyager 1 has reached a historic distance milestone of one light-day from Earth.",
-  "A light-day is the exact distance light travels in a vacuum over 24 hours, equaling approximately 25.9 billion kilometers (16.1 billion miles or about 173 Astronomical Units).",
-  "Because radio signals travel at the speed of light (approximately 300,000 km/s), sending a single command to Voyager 1 now takes 24 hours.",
-  "A round-trip communication exchange—sending an instruction and waiting to receive telemetry confirmation—takes roughly 48 hours.",
-  "Voyager 1 is traveling outward at approximately 38,000 miles per hour (17 kilometers per second or roughly 61,000 km/h) relative to the Sun.",
-  "It officially crossed the heliopause into interstellar space in August 2012, becoming the first human-made object to do so.",
-  "NASA communicates with Voyager 1 through the Deep Space Network (DSN) using giant 70-meter (230-foot) radio antennas in Goldstone, Madrid, and Canberra.",
-  "The spacecraft's radio transmitter emits only about 22 watts of power—roughly equivalent to a refrigerator light bulb.",
-  "By the time Voyager's signal reaches Earth antennas across one light-day of space, its power is measured in fractions of a billionth of a microwatt.",
-  "The probe is powered by radioisotope thermoelectric generators (RTGs) running on decaying plutonium-238, losing about 4 watts of electrical power each year.",
-  "To stretch operational life, NASA engineers have progressively shut down heaters and non-essential science instruments to prioritize core flight computers and transmitters.",
-  "Voyager 1 carries the Golden Record, a gold-plated copper phonograph record encoded with sounds, greetings, and images depicting humanity and Earth.",
-  "Voyager 1 holds the title of the most distant human-created object in the universe.",
-  "The spacecraft is on the verge of being a light-day distant from our planet.",
-  "Voyager 1 carries a Golden Record on its journey.",
-  "The probe briefly went quiet in the deep cosmos prior to hitting this distance milestone.",
-  "CLAIM/PLAN: NASA has scheduled a worldwide event for Tuesday, November 17, to mark the occasion.",
-  "CLAIM/PLAN: AccuWeather reported that NASA intends to hold a global celebration for this event."
+  "NASA's Parker Solar Probe recently discovered a hidden, complex pattern embedded directly within the Sun's chaotic magnetic fields.",
+  "The spacecraft is engineered to plunge directly into the Sun's corona, coming closer to our star than any human-made object in history.",
+  "It relies on an advanced carbon-composite heat shield designed to withstand extreme thermal environments exceeding 1,300 degrees Celsius on its exterior.",
+  "Despite the blistering exterior heat, internal instruments are maintained at near room temperature to keep systems fully operational.",
+  "The probe studies solar wind acceleration and the coronal heating problem, aiming to solve decades-old mysteries of stellar physics.",
+  "Data sent back from these close passes helps scientists better understand space weather that can directly impact Earth's power grids and satellite networks."
  ],
  "long_format": null,
  "format": "news",
  "sources": [
   {
-   "title": "Voyager 1: What Is a Light-Day",
-   "source": "NASA Science (.gov)",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQa0Y3c0k1angzWDAtZ2F4TU1tUWF4dGFUZnpuVkpkYS1tcEFKSWp5TEhadTF5YVdycGJVZ3pNc1J0Y0lFN0N4OXh2V29ldHptdlE4UzhxRTFjclgxOFppdXNGV091bXZ6ZlB0OTkzWjdGb1BKaG1DelJkMm9GcTNyVEFNSlU2SUVz?oc=5"
+   "title": "NASA’s Parker Solar Probe discovers a hidden pattern in the Sun’s chaotic magnetic fields",
+   "source": "Science Daily",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1JaFJGYXNiazJWWWo5NW5ZX0FLc3NxVHc2OHVfb25La1RxcDJYRjlJSm5qMEk4OVJyTTlDMFJEeFUzOE5GVFprYXZNenhwb05aTTZYYjlFSGRVeGtXSFFQVGtEdDVHNkNBYmt2cmc2TQ?oc=5"
   },
   {
-   "title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities",
-   "source": "NASA (.gov)",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQXzVYdjEyMWllNkhsb1F5TlY5bEY0WmY3RjN5ZmF3ZjQ4eWdPX0I0SXE3VEs1cEYzQ0I5TGlfYkNhd2U5b1AtWU90WHoxZE5vMEtzYmo5QUg1RVc3TklwNWdVR3BQbFl5bXItcUpTMk9PQU0yUXhmMC1sUlljd0tkYXlyWUpuZFFWZkVPcUp3amphMzd4dGwxUGxkU1VGT0VWcTRjMDRB?oc=5"
+   "title": "Is the Sun causing global warming?",
+   "source": "NASA Science (.gov)",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTWZmZ3NYZ3lidmxiSG5kcHRqajQ4WlAyZUVYcGMyaGRKenROclE4MkNFd3lVN2FibkpSUEZDS0w0ZTFIS3JuQmNXckFIQ1pPZHo4bXNmUDZMSkFjUGJzcmU1ZDBYLVByRnk1MkFPVjQxQ1dYMkQwd1puTHpEaWRoTG05d1Y?oc=5"
   }
  ],
  "youtube_top": [
   {
    "title": "Samsung Galaxy S27 Ultra Cobalt Violet 📱🔥 #noads #tiktok #usa",
-   "views": 18064830
+   "views": 17205184
   },
   {
    "title": "The Rarest GPU Ever Made 🤯 #nvidia #shorts",
-   "views": 10515924
+   "views": 11678685
   },
   {
    "title": "Robot🤖￼cake😂90s childhoods memory #shorts #90s #village #childhood #memories #relatable #friends",
-   "views": 7416938
-  },
-  {
-   "title": "Meta VR Glasses: What Vision Pro 2 COULD Have Been!",
-   "views": 7167236
-  },
-  {
-   "title": "My RAM stick microphone..",
-   "views": 6713296
-  },
-  {
-   "title": "🤔 o COTONETE da NASA?",
-   "views": 6517861
+   "views": 8908460
   },
   {
    "title": "WALL·E (2008) | 🤖This Robot Shows What True Love Means! 🥹💕#shorts #movierecap",
-   "views": 6295023
+   "views": 7631954
   },
   {
-   "title": "🤖 IShowSpeed Asked a Humanoid Robot a Question… Its Response Was INSANE! 😳🔥 #Shorts",
-   "views": 5970429
+   "title": "My RAM stick microphone..",
+   "views": 7198503
+  },
+  {
+   "title": "🤔 o COTONETE da NASA?",
+   "views": 6916556
+  },
+  {
+   "title": "China Just Revived CD Players! The Unexpected Comeback of a Forgotten Technology",
+   "views": 5447665
   },
   {
    "title": "GTA 6 ON PS5 PRO VS PS5 #shorts",
-   "views": 4887456
+   "views": 4927160
   },
   {
-   "title": "Macbook PROLED Review: It's Not About That",
-   "views": 4807735
+   "title": "Smart Islamic Robot Helps Pilgrims at the Holy Kaaba 🕋❤️ #shorts",
+   "views": 4537225
+  },
+  {
+   "title": "Stop doing this to your PS5 #usa",
+   "views": 4499089
   }
  ]
 }
