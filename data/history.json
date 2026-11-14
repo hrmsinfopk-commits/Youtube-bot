@@ -2097,6 +2097,136 @@
     "concept_share": 0.2,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-14 14:41",
+   "type": "long",
+   "title": "Why Plane Wings Don't Freeze at Minus 50 Degrees",
+   "topic": "How Do De-icing Fluids Stop Planes From Freezing Mid-Air - Planes fly through minus 50-degree clouds, yet ice never forms on their wings to drag them down.",
+   "style": "Before vs now: how this used to work vs what just changed",
+   "youtube_id": "74vcxIbIMTk",
+   "voice": "Charon",
+   "seconds": 161.9,
+   "scene_times": [
+    [
+     0.0,
+     "Cruising altitude temperatures at 35,000 feet regularly drop to minus 50 degrees Celsius o"
+    ],
+    [
+     10.2,
+     "Every pilot knows that ice accumulation on an aircraft wing is a serious hazard that disru"
+    ],
+    [
+     19.7,
+     "So how do planes manage to stay ice-free in such brutal weather? The secret relies on a tw"
+    ],
+    [
+     29.4,
+     "Before leaving the ground, maintenance crews spray heated mixtures of water and propylene "
+    ],
+    [
+     38.4,
+     "To keep clean surfaces from freezing prior to departure, crews apply Type IV anti-icing fl"
+    ],
+    [
+     47.7,
+     "What happens when chemical sprays cannot be used once airborne, and how do planes keep fro"
+    ],
+    [
+     54.6,
+     "Once airborne, chemical sprays cannot be replenished, so commercial aircraft must switch t"
+    ],
+    [
+     64.6,
+     "Where does all that heat come from at minus 50 degrees? The jet engines themselves provide"
+    ],
+    [
+     75.5,
+     "This hot compressed air is piped through internal ducts along the leading edges of the win"
+    ],
+    [
+     85.1,
+     "Engine cowlings feature their own dedicated bleed-air rings as well, preventing chunks of "
+    ],
+    [
+     93.6,
+     "Windshield glass on commercial airliners uses a different trick for visibility, using tran"
+    ],
+    [
+     102.8,
+     "How do alternative aircraft handle anti-icing without heavy jet engines, and what are pneu"
+    ],
+    [
+     109.1,
+     "Some smaller aircraft rely on mechanical pneumatic boots instead of bleed air, using flexi"
+    ],
+    [
+     117.9,
+     "Newer aircraft sometimes use electro-thermal systems with electric heating elements runnin"
+    ],
+    [
+     128.1,
+     "Bleeding hot air directly from the compressor stages steals power from the engines and bur"
+    ],
+    [
+     139.2,
+     "Diverting compressed air from the engines across long flights imposes a measurable energy "
+    ],
+    [
+     146.1,
+     "Next time you look out your window at minus fifty degrees, you will know the hidden engine"
+    ]
+   ],
+   "format": "big question",
+   "why": "Inspired by massive viral explainers like Veritasium's 'The Ridiculous Engineering Of Jet Engines' (17M+ views) and Cleo Abram's aviation pieces, this question hits an everyday fear with a brilliant engineering reality. It is an irresistible physical contradiction that grips curious minds worldwide.",
+   "facts": [
+    "Cruising altitude temperatures at 35,000 feet regularly drop to minus 50 degrees Celsius or lower.",
+    "Ice accumulation on an aircraft's wings disrupts airflow, ruins lift, and can cause catastrophic stalls.",
+    "Commercial aircraft use two main defense systems against ice: ground de-icing before takeoff and inflight anti-icing.",
+    "Ground de-icing relies on spraying heated mixtures of water and propylene glycol onto the aircraft surfaces.",
+    "Type I de-icing fluids have a low viscosity and melt existing ice and snow quickly through chemical freezing-point depression.",
+    "Type IV anti-icing fluids are thicker and designed to cling to aircraft wings during the ground roll, shearing off safely during takeoff once the plane reaches rotation speed.",
+    "Once airborne, planes switch to internal thermal anti-icing systems to prevent ice from forming mid-flight.",
+    "Hot bleed air is continuously bled directly from the compressor stages of the jet engines.",
+    "This ultra-hot compressed air is piped through internal ducts along the leading edges of the wings.",
+    "The heat warms the metal wing surface just enough to evaporate or melt any supercooled water droplets on contact before ice crystals can nucleate.",
+    "Some smaller aircraft use mechanical pneumatic boots, which are rubber sleeves on the wing edges that periodically inflate and deflate to crack off accumulated ice.",
+    "Electro-thermal systems are also used on newer aircraft, running electric heating elements underneath composite wing panels to melt ice instantly.",
+    "Windshield glass on commercial airliners contains transparent conductive metallic coatings that heat up electrically to maintain total visibility.",
+    "Engine cowlings feature their own dedicated bleed-air rings to prevent chunks of ice from breaking off and destroying the turbine blades inside.",
+    "These multi-layered active systems allow commercial fleets to operate safely through sub-zero winter weather across global aviation hubs.",
+    "Type I de-icing liquid appears orange and is utilized to eliminate existing ice buildup from aircraft wings.",
+    "Type IV anti-icing liquid is green and functions to shield clean surfaces from freezing prior to departure.",
+    "Aircraft icing represents a dangerous condition for flights as explained by meteorologists.",
+    "Liquid magnesium chloride was tested on roadways across 21 Oregon locations between 1993 and 1995 prior to freezing precipitation (claim/plan)."
+   ],
+   "keywords": [
+    "how do planes stay ice free",
+    "aircraft de-icing fluid explained",
+    "how do airplanes prevent icing",
+    "aviation deicing technology",
+    "how jet wings melt ice",
+    "plane wing anti icing systems",
+    "how do planes fly in freezing weather",
+    "why don't airplanes freeze in the air",
+    "bleed air anti-icing system",
+    "glycol deicing fluid science",
+    "how do commercial planes handle cold",
+    "aerospace engineering explained"
+   ],
+   "gate": {
+    "graphics_added": 1,
+    "graphics": 4,
+    "own_share": 0.23,
+    "own_math": true,
+    "fact_fixes": 7,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -2719,6 +2849,19 @@
   "pixabay-v-104631",
   "nasa-v-Evolution_of_Galaxies_H264",
   "nasa-v-GSFC_20100722_Hubble_m10619_Galaxies",
-  "pixabay-v-215018"
+  "pixabay-v-215018",
+  "pixabay-v-142647",
+  "pixabay-v-47332",
+  "pixabay-v-1384",
+  "pixabay-v-347258",
+  "pixabay-v-27386",
+  "pixabay-v-32975",
+  "pixabay-v-352641",
+  "pixabay-v-47338",
+  "pixabay-v-47338",
+  "pixabay-v-142647",
+  "pixabay-v-2712",
+  "pixabay-v-11016",
+  "pixabay-v-995"
  ]
 }

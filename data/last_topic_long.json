@@ -1,46 +1,41 @@
 {
- "topic": "How Does the Internet Travel Across the Ocean Floor?",
- "angle": "Nearly 99% of all global data runs not through the 'cloud' or satellites, but through fragile glass strands thinner than a pencil resting on the bottom of the ocean.",
- "why": "Explainer videos on subsea infrastructure and hidden technology consistently cross tens of millions of views because audiences assume the modern internet is entirely wireless. The sheer absurdity of modern civilization depending on physical cables lying unprotected in deep-sea mud next to ship anchors and sharks makes the mechanism instantly compelling.",
+ "topic": "How Do De-icing Fluids Stop Planes From Freezing Mid-Air",
+ "angle": "Planes fly through minus 50-degree clouds, yet ice never forms on their wings to drag them down.",
+ "why": "Inspired by massive viral explainers like Veritasium's 'The Ridiculous Engineering Of Jet Engines' (17M+ views) and Cleo Abram's aviation pieces, this question hits an everyday fear with a brilliant engineering reality. It is an irresistible physical contradiction that grips curious minds worldwide.",
  "keywords": [
-  "how undersea internet cables work",
-  "how internet crosses the ocean",
-  "undersea fiber optic cables explained",
-  "submarine communications cable",
-  "how transatlantic cables are laid",
-  "subsea cable laying ship",
-  "how ocean cables survive pressure",
-  "internet under the ocean",
-  "fiber optic cable ocean floor",
-  "how do undersea cables get power",
-  "transatlantic internet cable map",
-  "what happens if undersea cable breaks"
+  "how do planes stay ice free",
+  "aircraft de-icing fluid explained",
+  "how do airplanes prevent icing",
+  "aviation deicing technology",
+  "how jet wings melt ice",
+  "plane wing anti icing systems",
+  "how do planes fly in freezing weather",
+  "why don't airplanes freeze in the air",
+  "bleed air anti-icing system",
+  "glycol deicing fluid science",
+  "how do commercial planes handle cold",
+  "aerospace engineering explained"
  ],
  "facts": [
-  "Undersea fiber-optic cables transmit approximately 95% to 99% of all transoceanic internet traffic, while satellites carry only a tiny fraction of global data.",
-  "There are over 550 active and planned commercial undersea fiber cables worldwide, spanning roughly 1.4 million kilometers of the Earth's seabed.",
-  "The data is transmitted through strands of ultrapure silica glass, each core measuring roughly 9 to 10 microns in diameter—about one-tenth the width of a human hair.",
-  "Information travels through the glass strands as pulses of laser light at roughly 200,000 kilometers per second, using continuous total internal reflection.",
-  "In the deepest parts of the ocean down to 8,000 meters, cables are only about 17 to 20 millimeters thick—roughly the diameter of a standard garden hose.",
-  "In deep water, human interference is virtually nonexistent, so the cable only needs a steel wire strength member, a copper power conductor, and water-blocking polyethylene insulation.",
-  "In shallow water near coastlines (depths under 1,500 meters), the cable is reinforced with multiple spiral layers of galvanized steel wire and tar-coated nylon yarn, expanding to 50 millimeters thick.",
-  "Commercial fishing trawlers and dragging ship anchors cause approximately two-thirds of all underwater cable cuts worldwide.",
-  "To protect cables near shores, specialized ships pull a 30-ton underwater plow that carves a trench 1 to 3 meters into the seabed, laying the cable inside before ocean sediment buries it.",
-  "Laser light naturally loses strength over long distances inside glass due to light scattering and microscopic material absorption.",
-  "To keep signals intact across ocean basins, optical amplifiers called repeaters are spliced into the cable every 50 to 80 kilometers.",
-  "Repeaters use erbium-doped fiber amplifiers to boost the optical signal directly using laser energy, without ever converting light back into electronic data.",
-  "To power hundreds of repeaters along a 6,000-kilometer ocean crossing, a central copper sheath carries up to 10,000 to 18,000 volts of direct current (DC).",
-  "The electric circuit is completed by the ocean itself: power stations on opposite coastlines inject power into the copper conductor, and the return path flows naturally through seawater grounding beds.",
-  "Specialized cable-laying ships, often over 140 meters long, carry thousands of kilometers of cable coiled inside massive climate-controlled cylindrical tanks below deck.",
-  "These ships utilize GPS-linked dynamic positioning thrusters to lay cable at a steady crawl of 1 to 2 knots, adjusting spool tension precisely to prevent the line from snapping or bunching.",
-  "When a deep-sea cable breaks, repair ships deploy underwater Remotely Operated Vehicles (ROVs) or grappling hooks to lift the severed ends to the surface.",
-  "Onboard the repair ship, engineers must splice each microscopic glass fiber individually by hand inside an airtight cleanroom before sealing the joint in a waterproof housing and lowering it back down.",
-  "Modern high-capacity transatlantic cables can carry over 250 to 350 terabits of data per second on a single line, enough to stream millions of ultra-HD video feeds at the exact same moment.",
-  "An opinion piece in the Brantford Expositor argues that the majority of data is transmitted via the ocean rather than through the sky.",
-  "A publication by War on the Rocks addresses the question of who handles internet repairs during periods of armed conflict.",
-  "A journalism program titled Coastal Connections Fellowship is planned for Sri Lanka across 2026–2027.",
-  "The Coastal Connections Journalism Fellowship in Sri Lanka is planned to be fully funded.",
-  "The announced deadline to submit applications for the Sri Lanka journalism fellowship is November 15."
+  "Cruising altitude temperatures at 35,000 feet regularly drop to minus 50 degrees Celsius or lower.",
+  "Ice accumulation on an aircraft's wings disrupts airflow, ruins lift, and can cause catastrophic stalls.",
+  "Commercial aircraft use two main defense systems against ice: ground de-icing before takeoff and inflight anti-icing.",
+  "Ground de-icing relies on spraying heated mixtures of water and propylene glycol onto the aircraft surfaces.",
+  "Type I de-icing fluids have a low viscosity and melt existing ice and snow quickly through chemical freezing-point depression.",
+  "Type IV anti-icing fluids are thicker and designed to cling to aircraft wings during the ground roll, shearing off safely during takeoff once the plane reaches rotation speed.",
+  "Once airborne, planes switch to internal thermal anti-icing systems to prevent ice from forming mid-flight.",
+  "Hot bleed air is continuously bled directly from the compressor stages of the jet engines.",
+  "This ultra-hot compressed air is piped through internal ducts along the leading edges of the wings.",
+  "The heat warms the metal wing surface just enough to evaporate or melt any supercooled water droplets on contact before ice crystals can nucleate.",
+  "Some smaller aircraft use mechanical pneumatic boots, which are rubber sleeves on the wing edges that periodically inflate and deflate to crack off accumulated ice.",
+  "Electro-thermal systems are also used on newer aircraft, running electric heating elements underneath composite wing panels to melt ice instantly.",
+  "Windshield glass on commercial airliners contains transparent conductive metallic coatings that heat up electrically to maintain total visibility.",
+  "Engine cowlings feature their own dedicated bleed-air rings to prevent chunks of ice from breaking off and destroying the turbine blades inside.",
+  "These multi-layered active systems allow commercial fleets to operate safely through sub-zero winter weather across global aviation hubs.",
+  "Type I de-icing liquid appears orange and is utilized to eliminate existing ice buildup from aircraft wings.",
+  "Type IV anti-icing liquid is green and functions to shield clean surfaces from freezing prior to departure.",
+  "Aircraft icing represents a dangerous condition for flights as explained by meteorologists.",
+  "Liquid magnesium chloride was tested on roadways across 21 Oregon locations between 1993 and 1995 prior to freezing precipitation (claim/plan)."
  ],
  "long_format": "big question",
  "format": "big question",
@@ -48,43 +43,43 @@
  "youtube_top": [
   {
    "title": "Dave - Raindance (ft. Tems)",
-   "views": 304317915
-  },
-  {
-   "title": "Bruno Mars - I Just Might [Official Music Video]",
-   "views": 181504310
-  },
-  {
-   "title": "This is What Happens When A Hockey Season Ends 🤯",
-   "views": 165424356
+   "views": 309974419
   },
   {
    "title": "Ariana Grande - hate that i made you love me (official music video)",
-   "views": 112252762
+   "views": 115066058
+  },
+  {
+   "title": "Naal Nachna | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Afsana Khan, Reble, Irshad",
+   "views": 105578430
   },
   {
    "title": "What happens when you don't pay attention #bear #wildanimals #animalencounters #scare #shorts",
-   "views": 88113090
-  },
-  {
-   "title": "How We Build an Alien Pool — Full Process Revealed #poolbuild #luxurypool  #satisfying #poolhacks",
-   "views": 87590608
+   "views": 95350925
   },
   {
    "title": "You Can't Order Here Unless You Build With LEGO 🤯",
-   "views": 87180354
+   "views": 94243055
+  },
+  {
+   "title": "How We Build an Alien Pool — Full Process Revealed #poolbuild #luxurypool  #satisfying #poolhacks",
+   "views": 89889984
   },
   {
    "title": "WE CAN’T BELIEVE WE JUST HIT 26M FAMILY MEMBERS! 🥹😭🥰",
-   "views": 84483803
+   "views": 84486724
   },
   {
    "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
-   "views": 77731410
+   "views": 81349905
+  },
+  {
+   "title": "How Electrical Outlets Work 🤔",
+   "views": 76158363
   },
   {
    "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
-   "views": 74691899
+   "views": 75301219
   }
  ]
 }

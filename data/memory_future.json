@@ -32,7 +32,8 @@
   "DARPA's experimental glider skips across Earth's atmosphere like a stone on water.",
   "Boston Dynamics just deployed its fully electric Atlas robot to real factory assembly lines.",
   "DARPA's new X-plane steers entirely without moving flaps.",
-  "Voyager 1 is officially one light-day away."
+  "Voyager 1 is officially one light-day away.",
+  "Cruising altitude temperatures at 35,000 feet regularly drop to minus 50 degrees Celsius or lower, so how do airplane wings stay ice-free?"
  ],
  "endings": [
   "Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -67,7 +68,8 @@
   "If atmospheric skipping mastered navigation, Tomorrowly has plenty more like it.",
   "If industrial robots amazed you, Tomorrowly has plenty more like it.",
   "Follow Tomorrowly for tomorrow's tech, today.",
-  "If distant robotic explorers amaze you, Tomorrowly has plenty more space discoveries like this."
+  "If distant robotic explorers amaze you, Tomorrowly has plenty more space discoveries like this.",
+  "Next time you look out your window at minus fifty degrees, you will know the hidden engineering keeping you safe. If aviation technology fascinates you, explori"
  ],
  "scripts": [
   "Firing a multi-thousand-dollar missile at a cheap consumer drone is a financial trap. That is why modern defense forces are shifting toward directed-energy systems. KBR has introduced a novel base defense technology to fix this exact problem. The solution relies on weaponized light, deploying concentrated laser beams directly against aerial targets. It is designed to instantly neutralize incoming unmanned aerial vehicles before they reach the perimeter. Send this to the friend who loves tracking future military tech. Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -102,10 +104,10 @@
   "DARPA's experimental glider skips across Earth's atmosphere like a stone on water. It dips down, gains speed, and bounces back up. This lets it travel five times the speed of sound while shedding extreme heat. The tricky part is maintaining control during radio blackouts. If atmospheric skipping mastered navigation, Tomorrowly has plenty more like it.",
   "Boston Dynamics just deployed its fully electric Atlas robot to real factory assembly lines. Gone are messy hydraulic lines, replaced by quiet electric actuators. It rotates its flexible joints to maneuver and lift heavy auto parts. That is like turning your spine in full circles while carrying heavy boxes. Battery limits mean short shifts before recharging. If industrial robots amazed you, Tomorrowly has plenty more like it.",
   "DARPA's new X-plane steers entirely without moving flaps. Instead of metal hinges, it uses sudden blasts of compressed air to push against the wind. That removes hundreds of fragile moving parts that add heavy weight. The catch is that bleeding air from the main jet engine robs power from the overall thrust. Follow Tomorrowly for tomorrow's tech, today.",
-  "Voyager 1 is officially one light-day away. That means commands face a roughly forty-eight-hour round-trip delay. Its transmitter emits just twenty-two watts, like a refrigerator bulb. By Earth, the signal drops to a fraction of a microwatt. If distant robotic explorers amaze you, Tomorrowly has plenty more space discoveries like this."
+  "Voyager 1 is officially one light-day away. That means commands face a roughly forty-eight-hour round-trip delay. Its transmitter emits just twenty-two watts, like a refrigerator bulb. By Earth, the signal drops to a fraction of a microwatt. If distant robotic explorers amaze you, Tomorrowly has plenty more space discoveries like this.",
+  "Cruising altitude temperatures at 35,000 feet regularly drop to minus 50 degrees Celsius or lower, so how do airplane wings stay ice-free? Every pilot knows that ice accumulation on an aircraft wing is a serious hazard that disrupts smooth airflow and can cause a sudden stall. So how do planes manage to stay ice-free in such brutal weather? The secret relies on a two-step defense system before takeoff and mid-flight. Before leaving the ground, maintenance crews spray heated mixtures of water and propylene glycol onto the aircraft surfaces to melt existing ice. To keep clean surfaces from freezing prior to departure, crews apply Type IV anti-icing fluid, which is a thicker liquid that clings to the wings during the ground roll. What happens when chemical sprays cannot be used once airborne, and how do planes keep from freezing at high altitudes? Once airborne, chemical sprays cannot be replenished, so commercial aircraft must switch to internal thermal anti-icing systems to prevent ice from forming. Where does all that heat come from at minus 50 degrees? The jet engines themselves provide a continuous supply of ultra-hot air directly from their compressor stages. This hot compressed air is piped through internal ducts along the leading edges of the wings to evaporate supercooled water droplets on contact. Engine cowlings feature their own dedicated bleed-air rings as well, preventing chunks of ice from damaging the spinning turbine blades inside. Windshield glass on commercial airliners uses a different trick for visibility, using transparent conductive metallic coatings embedded in the glass to heat up electrically. How do alternative aircraft handle anti-icing without heavy jet engines, and what are pneumatic boots? Some smaller aircraft rely on mechanical pneumatic boots instead of bleed air, using flexible rubber sleeves on the wing edges that inflate to crack off ice. Newer aircraft sometimes use electro-thermal systems with electric heating elements running underneath composite wing panels to melt ice rapidly. Bleeding hot air directly from the compressor stages steals power from the engines and burns extra fuel during long international flights. What is the actual energy cost? Diverting compressed air from the engines across long flights imposes a measurable energy penalty on commercial aircraft. Next time you look out your window at minus fifty degrees, you will know the hidden engineering keeping you safe. If aviation technology fascinates you, exploring how modern aircraft protect themselves is just the beginning of what Tomorrowly uncovers."
  ],
  "recent_signatures": [
-  "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
   "ALL",
@@ -124,10 +126,10 @@
   "THE CATCH",
   "WE DID THE MATH",
   "THE CATCH",
-  "WE DID THE MATH"
+  "WE DID THE MATH",
+  "ALL"
  ],
  "recent_styles": [
-  "Shocking fact first: open with the most unbelievable detail, then explain why",
   "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Before vs now: how this used to work vs what just changed",
@@ -146,10 +148,10 @@
   "Myth vs fact: what people assume vs what is actually true",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Myth vs fact: what people assume vs what is actually true",
-  "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news"
+  "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
+  "Before vs now: how this used to work vs what just changed"
  ],
  "recent_themes": [
-  "blueprint",
   "footage",
   "blueprint",
   "footage",
@@ -168,6 +170,7 @@
   "blueprint",
   "footage",
   "blueprint",
-  "navy"
+  "navy",
+  "footage"
  ]
 }

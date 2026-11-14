@@ -1,74 +1,88 @@
-[13:45:35] Channel: Tomorrowly (future, mode=facts)
-[13:45:35] Format today: big question
-[13:45:38] YouTube videos analysed: 60
-[13:47:09] Gemini OK (gemini-3.8-flash)
-[13:48:06] Gemini OK (gemini-3.8-flash)
-[13:48:06] Trend topic: How Does the Internet Travel Across the Ocean Floor? | why: Explainer videos on subsea infrastructure and hidden technology consistently cross tens of millions of views because audiences assume the modern internet is entirely wireless. The sheer absurdity of modern civilization depending on physical cables lying unprotected in deep-sea mud next to ship anchors and sharks makes the mechanism instantly compelling.
-[13:49:35] Gemini OK (gemini-3.8-flash)
-[13:49:35] Script length: 535 words
-[13:49:35] Uniqueness: 92% unique vs previous scripts
-[13:49:38] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[13:49:41] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[13:53:06] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[13:54:44] Gemini OK (gemini-flash-latest)
-[13:54:44] Long script edited for flow (535 -> 531 words)
-[13:54:44] Script ready: How Internet Crosses the Ocean Floor on Fragile Glass (18 scenes)
-[13:54:44] Chapters: The Ocean Web | Garden Hose | The Ocean Battery | The Shore Hazard | Fixing the Abyss
-[13:54:46] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[13:57:46] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[14:01:11] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[14:01:14] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:04:29] Gemini OK (gemini-3.8-flash)
-[14:04:29] Gate fact fix [0]: The absolute word 'Every' is not literally true, as satellites still carry roughly 1% to 5% of trans
-[14:04:29] Gate fact fix [1]: The script states there are 550 active routes, but the fact sheet specifies over 550 'active and pla
-[14:04:29] Gate fact fix [5]: The script claims each individual nine-micron strand transmits 350 terabits per second, whereas that
-[14:04:29] Gate (script): {"graphics": 7, "own_share": 0.39, "own_math": true, "fact_fixes": 3, "source_overlap": 0.0, "script_ok": true, "problems": []}
-[14:04:29] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a curious, knowledgeable friend explaining something cool: natural American English, warm and confident, lively medium-fast pace (these are short videos), real (not forced) surprise only on the big reveal, clear emphasis on numbers, short natural breaths, never salesy or hyped, never robotic, never like a news anchor'}
-[14:04:50] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[14:04:53] Captions aligned to the voice (146 words)
-[14:05:12] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[14:05:20] Captions aligned to the voice (129 words)
-[14:05:55] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[14:05:58] Captions aligned to the voice (164 words)
-[14:06:31] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
-[14:06:34] Captions aligned to the voice (133 words)
-[14:07:01] Captions aligned to the voice (563 words)
-[14:07:01] Graphics theme: blueprint
-[14:08:20] Own graphics: 7
-[14:08:26] Picture editor: 112/112 previews loaded
-[14:10:04] Gemini OK (gemini-3.8-flash)
-[14:12:44] Gemini OK (gemini-3.8-flash)
-[14:14:05] Gemini OK (gemini-3.8-flash)
-[14:14:22] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:14:27] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:15:48] Gemini OK (gemini-3.8-flash)
-[14:15:48] Footage check: kept 10 fitting clips, 5 scenes had nothing fitting
-[14:15:50] Second footage search for 5 scenes
-[14:15:51] Picture editor: 44/44 previews loaded
-[14:15:56] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[14:16:02] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[14:19:03] Gemini OK (gemini-3.8-flash)
-[14:20:52] Gemini OK (gemini-3.8-flash)
-[14:20:52] Footage check: kept 0 fitting clips, 5 scenes had nothing fitting
-[14:21:15] Image HTTP 402 (try 1)
-[14:21:31] Image HTTP 402 (try 2)
-[14:22:25] Footage ready for 18 scenes
-[14:22:25] Gate (visuals): fit 100%, concept 11%, fallback 0
-[14:22:26] Freesound CC0 sound 'whoosh': _metalic_flyby_whoosh_ambience_strange_.flac (id 365814)
-[14:22:28] Freesound CC0 sound 'electric motor': Electric Train Motor Idle - Loop (Queensland Rail InterCity Express).wav (id 700034)
-[14:22:29] Freesound CC0 sound 'notification': Ding Station Annoucement Notification.wav (id 651590)
-[14:23:20] 42 clips rendered
-[14:23:20] Final render started
-[14:24:33] Freesound CC0 music: Slightly Mysterious Sounding Track (id 683821)
-[14:25:55] Video ready: 20261107_1422_future_long.mp4 (241.6s)
-[14:25:56] Thumbnails for Test & Compare: thumbnails/20261107_1422_future_long/
-[14:25:57] Upload 11%
-[14:25:58] Upload 23%
-[14:25:58] Upload 35%
-[14:25:58] Upload 46%
-[14:25:58] Upload 58%
-[14:25:59] Upload 70%
-[14:25:59] Upload 81%
-[14:25:59] Upload 93%
-[14:26:00] Uploaded: https://youtu.be/P0BubbItsl0
-[14:26:02] Thumbnail set
+[13:46:52] Channel: Tomorrowly (future, mode=facts)
+[13:46:52] Format today: big question
+[13:46:55] YouTube videos analysed: 59
+[13:49:55] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[13:52:55] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[13:56:20] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[13:59:20] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[13:59:51] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:00:29] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:00:31] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[14:01:01] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:01:02] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:01:06] Gemini OK (gemini-flash-lite-latest)
+[14:04:06] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:04:47] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:08:12] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:11:12] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:14:38] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:17:38] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:17:39] Gemini OK (gemini-flash-lite-latest)
+[14:17:39] Trend topic: How Do De-icing Fluids Stop Planes From Freezing Mid-Air | why: Inspired by massive viral explainers like Veritasium's 'The Ridiculous Engineering Of Jet Engines' (17M+ views) and Cleo Abram's aviation pieces, this question hits an everyday fear with a brilliant engineering reality. It is an irresistible physical contradiction that grips curious minds worldwide.
+[14:20:39] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:20:42] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:24:07] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:27:08] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:27:34] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:27:36] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[14:27:44] Gemini OK (gemini-flash-lite-latest)
+[14:27:44] Script too short (375 words, target ~564) - rewriting longer
+[14:27:48] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[14:27:48] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:28:13] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:28:13] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:28:38] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:28:39] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[14:28:50] Gemini OK (gemini-flash-lite-latest)
+[14:28:50] Script length: 487 words
+[14:28:50] Uniqueness: 92% unique vs previous scripts
+[14:31:50] Gemini error (gemini-3.8-flash): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
+[14:32:15] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[14:32:46] Gemini OK (gemini-flash-lite-latest)
+[14:32:46] Long script edited for flow (487 -> 407 words)
+[14:32:46] Script ready: Why Plane Wings Never Freeze at Minus 50 Degrees (17 scenes)
+[14:32:46] Chapters: THE COLD REALITY | GROUND DEFENSE | AIRBORNE HEAT | ALTERNATIVE SYSTEMS | THE CATCH | THE PAYOFF
+[14:32:47] Gemini OK (gemini-flash-lite-latest)
+[14:32:47] Gate: fallback counter graphic on scene 7: 50 degrees
+[14:32:50] Gemini OK (gemini-flash-lite-latest)
+[14:32:50] Gate title fix: The title uses 'Never Freeze', which is absolute; wings would freeze without active systems. | Why Plane Wings Never Freeze at Minus 50 Degrees -> Why Plane Wings Don't Freeze at Minus 50 Degrees
+[14:32:50] Gate fact fix [0]: Title and line claim wings never freeze, but the text and reality are about active defense systems p
+[14:32:50] Gate fact fix [2]: Planes do not stay 'completely' ice-free without systems; they use active defenses.
+[14:32:50] Gate fact fix [6]: Planes do not rely 'entirely' on internal thermal systems; bleed air is the main method, but other s
+[14:32:50] Gate fact fix [9]: Chunks of ice would not 'destroy' turbine blades instantly, just potentially damage them.
+[14:32:50] Gate fact fix [13]: Electro-thermal systems melt ice effectively, but 'instantly' is an exaggeration.
+[14:32:50] Gate fact fix [15]: Exact fuel consumption of 3 tons for bleed air anti-icing is not supported by the fact sheet.
+[14:32:50] Gate (script): {"graphics_added": 1, "graphics": 4, "own_share": 0.23, "own_math": true, "fact_fixes": 7, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[14:32:50] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a curious, knowledgeable friend explaining something cool: natural American English, warm and confident, lively medium-fast pace (these are short videos), real (not forced) surprise only on the big reveal, clear emphasis on numbers, short natural breaths, never salesy or hyped, never robotic, never like a news anchor'}
+[14:33:09] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[14:33:12] Captions aligned to the voice (148 words)
+[14:33:35] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[14:33:38] Captions aligned to the voice (162 words)
+[14:33:54] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[14:33:56] Captions aligned to the voice (104 words)
+[14:34:12] Captions aligned to the voice (412 words)
+[14:34:12] Graphics theme: footage
+[14:35:11] Own graphics: 4
+[14:35:24] Picture editor: 113/113 previews loaded
+[14:35:32] Gemini OK (gemini-flash-lite-latest)
+[14:35:39] Gemini OK (gemini-flash-lite-latest)
+[14:36:08] Gemini OK (gemini-flash-lite-latest)
+[14:36:16] Gemini OK (gemini-flash-lite-latest)
+[14:36:19] Gemini OK (gemini-flash-lite-latest)
+[14:36:19] Footage check: kept 13 fitting clips, 0 scenes had nothing fitting
+[14:37:14] Footage ready for 17 scenes
+[14:37:43] Gate (visuals): fit 100%, concept 0%, fallback 0
+[14:38:20] 39 clips rendered
+[14:38:20] Final render started
+[14:40:13] Freesound CC0 music: YEAH! (id 411081)
+[14:41:13] Video ready: 20261114_1437_future_long.mp4 (161.9s)
+[14:41:14] Thumbnails for Test & Compare: thumbnails/20261114_1437_future_long/
+[14:41:15] Upload 13%
+[14:41:15] Upload 26%
+[14:41:15] Upload 39%
+[14:41:16] Upload 53%
+[14:41:16] Upload 66%
+[14:41:16] Upload 79%
+[14:41:16] Upload 93%
+[14:41:17] Uploaded: https://youtu.be/74vcxIbIMTk
+[14:41:19] Thumbnail set
