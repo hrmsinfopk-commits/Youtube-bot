@@ -2278,6 +2278,61 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-15 15:23",
+   "type": "short",
+   "title": "Why De-Icing Fluid Rarely Protects Airplanes in the Air #shorts",
+   "topic": "How Do De-icing Fluids Stop Planes From Freezing Mid-Air - Planes fly through minus 50-degree clouds, yet ice never forms on their wings to drag them down. - short teaser of our full video",
+   "style": "Myth vs fact: what people assume vs what is actually true",
+   "youtube_id": "ReBCD46L--8",
+   "voice": "Charon",
+   "seconds": 33.5,
+   "scene_times": [
+    [
+     0.0,
+     "Airport de-icing fluid almost never protects airplanes mid-flight."
+    ],
+    [
+     4.8,
+     "Most travelers assume bright green fluid shields wings all journey."
+    ],
+    [
+     10.5,
+     "Truth is, that protective layer shears off during takeoff."
+    ],
+    [
+     14.5,
+     "Cruising at minus fifty degrees, wings rely on internal heating systems instead."
+    ],
+    [
+     20.6,
+     "Instead, engines pump scorching bleed air inside the wings."
+    ],
+    [
+     24.9,
+     "The heat evaporates freezing water droplets on contact."
+    ],
+    [
+     30.2,
+     "So what happens if engine heat fails?"
+    ]
+   ],
+   "format": "teaser",
+   "why": "Teaser for our newest long video",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.15,
+    "fact_fixes": 3,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.14,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -2921,6 +2976,16 @@
   "nasa-v-JPL-20231222-SOLSYSf-0001-NASA Telescopes Reveal Hidden Universe",
   "nasa-v-ARC-20200103-AAV3244-SOFIA-GalacticCenter-RptrPkg-NASAWeb",
   "nasa-v-GSFC_20100126_Nova_m10547_SuperNova",
-  "nasa-v-GSFC_20130405_SEXTANT_m10857_B_Roll"
+  "nasa-v-GSFC_20130405_SEXTANT_m10857_B_Roll",
+  "pixabay-v-22245",
+  "pixabay-v-9761",
+  "pixabay-v-26569",
+  "pixabay-v-205873",
+  "pixabay-v-176930",
+  "pixabay-v-160",
+  "pixabay-v-22245",
+  "pixabay-v-4193",
+  "pixabay-v-346439",
+  "pixabay-v-83156"
  ]
 }
