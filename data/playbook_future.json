@@ -1,87 +1,86 @@
 {
  "shorts_rules": [
-  "Name the core subject or state the primary paradox within the first 3 seconds to clear up any ambiguity immediately.",
-  "Keep script pacing between 2.5 to 3.0 words per second to match the viewer's natural digestion speed for complex science topics.",
-  "Make abstract numbers tangible by comparing them to everyday objects like pickup trucks, football fields, or transit times.",
-  "Maintain our fixed duration limits strictly: keep news shorts between 20 to 25 seconds, and big question shorts between 30 to 35 seconds.",
-  "End every script with a fresh, natural sign-off that mentions Tomorrowly without repeating previous catchphrases.",
-  "Ensure all technical and scientific claims are 100% factual while explaining them using simple, everyday language.",
-  "Structure the mid-section as a step-by-step breakdown or progressive scaling sequence to maintain high dopamine and retention.",
-  "Design the final sentence to either loop seamlessly back into the opening hook or leave a powerful lingering paradox."
+  "Name the core subject and make the central topic clear within the first 3 seconds to prevent early drop-off.",
+  "Avoid dropping heavy technical jargon or data points in the first 5 seconds; establish the premise before introducing statistics.",
+  "Use a narrative problem-solution arc, systematically disproving or explaining alternatives before reaching the final engineering payoff.",
+  "Make abstract figures feelable by converting them into physical scales, everyday distances, or direct material comparisons.",
+  "Structure the sign-off with fresh, unique wording every time that naturally prompts a comment or response rather than relying on generic CTAs.",
+  "Keep the script tightly paced between 2.5 and 3.5 words per second to ensure clear articulation without dragging.",
+  "Build tension in the opening beats by combining visual shocks, surprising contradictions, or counter-intuitive premises."
  ],
  "visual_sound_notes": [
-  "Use high-end 3D cutaway animations synchronized 1:1 with narration to instantly clarify invisible or complex mechanisms.",
-  "Keep cuts frequent (2.5 to 3.5 cuts per 10 seconds) to sustain visual momentum without inducing motion sickness.",
-  "Display large, bold captions (1-3 words at a time, centered lower-third) with distinct color highlights on critical keywords.",
-  "Layer a subtle, tense cinematic ambient synth bed beneath a front-and-center crisp voiceover, punctuated by crisp mechanical sound effects."
+  "Pair voice-over narration with synchronized 3D animations or real tracking footage that matches every script beat instantly.",
+  "Use dynamic captions featuring mixed-case fonts, high-contrast keyword highlights, and minimal words per frame to sustain attention.",
+  "Maintain an active cut rate averaging between 1.5 and 3.5 cuts per 10 seconds to keep visual momentum steady without inducing fatigue.",
+  "Layer tense or curious ambient electronic background tracks underneath crisp, authoritative voiceovers paired with realistic mechanical and environmental sound effects."
  ],
  "typical": {
   "seconds": 32,
-  "words_per_second": 2.8,
-  "cuts_per_10_seconds": 2.8
+  "words_per_second": 3.0,
+  "cuts_per_10_seconds": 2.2
  },
- "summary_roman_urdu": "Is mahine viral hone wali shorts mein yeh baat samne aayi hai ke shuru ke 3 sehon mein hi asal topic ya hairat-angez sawal wazeh kar dena sab se zaroori hai. Hamari apni videos mein 5 se 8 seconds ke darmiyan log drop ho rahe hain, is liye hamein apni opening lines ko mazeed taiz aur dilchasp banana hoga. 3D cutaways aur real-world comparisons (jaise cheezon ko aam cheezon se compare karna) viewers ko aakhir tak bandh kar rakhte hain. Hamein apni fixed timing (news ke liye 20-25 seconds aur big questions ke liye 30-35 seconds) par sakhti se amal karna chahiye. Aakhir mein ek behtar aur naya sign-off istemal karen jo Tomorrowly ka zikr kare aur comments ko barha sake.",
- "updated": "2026-11-09",
+ "summary_roman_urdu": "Is mahine viral Shorts mein yeh baat samne aayi hai ke log high-stakes engineering, weird scientific anomalies, aur visual shocks ko sab se zyada pasand karte hain. Hamari pichhli videos mein ghalti yeh ho rahi thi ke hum shuru ke kuch seconds mein hi bohat zyaada technical ya heavy terms bol dete hain, jis ki wajah se 5 se 9 seconds ke darmiyan log video chhod kar chalay jaate hain. Hamein shuruat mein topic ko aasan aur hook-based rakhna hoga taake viewer ka interest ban jaye. Aakhri sign-off mein generic baatein karne ke bajaye koi aisa sawal ya fresh wording use karni chahiye jo comment section ko engage kare. Saath hi, titles aur topics ko aur zyada relatable aur catchy banana hoga taake impression se log click karne par majboor ho jayein.",
+ "updated": "2026-11-16",
  "studied": [
   {
-   "title": "How Does a Helicopter Pilot Eject Without Hitting the Rotor?",
-   "views": 32570811,
-   "id": "w65jbQSq1io"
-  },
-  {
    "title": "The whole rocket flies right past the camera 🚀",
-   "views": 13008523,
+   "views": 21825904,
    "id": "d1BscKfgSAE"
   },
   {
-   "title": "We Are So TINY! 💀🤏",
-   "views": 10696310,
-   "id": "axIUhBsuSBk"
-  },
-  {
    "title": "Diwali Rocket Real Range !!",
-   "views": 9811218,
+   "views": 13006647,
    "id": "ZINUrTy0fP0"
   },
   {
-   "title": "The Black Hole That Makes Stars",
-   "views": 8542694,
-   "id": "INmLPyGjsMI"
-  },
-  {
-   "title": "How the Javelin Missile Really Works (3D)",
-   "views": 8371129,
-   "id": "Tj787XhoT88"
+   "title": "WHY Does This Lightning Look ALIVE ?⚡          #Shorts #Physics #Science #Electricity #Plasma #viral",
+   "views": 12006413,
+   "id": "ZLmikC4kP1c"
   },
   {
    "title": "😱 1400 साल पुराना ये पुल आज भी कैसे खड़ा है? 🌉🔥 #short #shorts #youtubeshorts",
-   "views": 8308539,
+   "views": 10091719,
    "id": "LlKYh94zq1w"
   },
   {
+   "title": "The Black Hole That Makes Stars",
+   "views": 9178276,
+   "id": "INmLPyGjsMI"
+  },
+  {
    "title": "How a USB-C Cable Really Works 🔌 #shorts",
-   "views": 7823408,
+   "views": 8052952,
    "id": "1Ug_sjO1zrA"
   },
   {
    "title": "Why NASA Is Paying to Destroy the ISS",
-   "views": 7642488,
+   "views": 7857364,
    "id": "p0EqvHzr_X4"
   },
   {
-   "title": "How Small Is the Planck Length? 💀🔬 #Shorts #Space #Astronomy #Science #QuantumPhysics #Physics",
-   "views": 6826703,
-   "id": "Buh0gX_-5lY"
+   "title": "Ancient Engineering Bridge",
+   "views": 6644296,
+   "id": "EQbHrm9Z2Zw"
   },
   {
-   "title": "These Are The 5 Largest Airplanes In The World 😱",
-   "views": 6719631,
-   "id": "6SvNEYx_Za4"
+   "title": "NVIDIA's 50-Pound GPU Monster Is Mind-Blowing 🤯 #nvidia #shorts",
+   "views": 6629850,
+   "id": "xTZolWPAXcE"
   },
   {
-   "title": "குட்டி முட்டையின் ரகசியம் 😲",
-   "views": 5121399,
-   "id": "JyVxRIwS9O0"
+   "title": "100 Floor Wali Vishaal Building Ko Kaise Bachaya Gaya? 😱 | Engineering Secrets #shorts",
+   "views": 6335573,
+   "id": "x9syArZ2gJk"
+  },
+  {
+   "title": "They Built a Road Around His House! 😱 #shorts #engineering #highway #house #construction #facts",
+   "views": 6046495,
+   "id": "Kzw77xWSF3Q"
+  },
+  {
+   "title": "मक्का-मदीना की Bullet Train रेत के पहाड़ को कैसे चीरती है? 😱 #shorts #shortsfeed",
+   "views": 5975968,
+   "id": "qtyjN3qWmDQ"
   }
  ]
 }
