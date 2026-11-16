@@ -2333,6 +2333,61 @@
     "concept_share": 0.14,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-16 16:16",
+   "type": "short",
+   "title": "How SpaceX's Tower Catches Starship Boosters Mid-Air #shorts",
+   "topic": "How SpaceX's Starship Catches Itself Mid-Air Using Giant Mechanical Chopsticks",
+   "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
+   "youtube_id": "wdrn65HCe8w",
+   "voice": "Charon",
+   "seconds": 44.0,
+   "scene_times": [
+    [
+     0.0,
+     "The massive Starship Super Heavy booster has no landing legs."
+    ],
+    [
+     5.8,
+     "Instead, two giant steel arms on the launch tower grab it out of the sky."
+    ],
+    [
+     11.4,
+     "As the towering booster plunges downward, hot grid fins steer it between the metal chopsti"
+    ],
+    [
+     18.3,
+     "That's like catching a falling telephone pole with a pair of kitchen tongs in a hurricane."
+    ],
+    [
+     24.3,
+     "By dropping the heavy landing hardware, the rocket saves tons of weight for carrying cargo"
+    ],
+    [
+     31.4,
+     "If critical guidance systems fail, the multi-million dollar vehicle could crash straight i"
+    ],
+    [
+     38.7,
+     "If mid-air rocket catches amaze you, Tomorrowly has plenty more like it."
+    ]
+   ],
+   "format": "news",
+   "why": "",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.17,
+    "fact_fixes": 5,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 0.86,
+    "concept_share": 0.0,
+    "fallback_scenes": 1
+   }
   }
  ],
  "used_media": [
@@ -2986,6 +3041,16 @@
   "pixabay-v-22245",
   "pixabay-v-4193",
   "pixabay-v-346439",
-  "pixabay-v-83156"
+  "pixabay-v-83156",
+  "nasa-v-KSC-20240525-MH-RKL01-0001-Rocket_Lab_PREFIRE_1_Launch_1080p-M6988",
+  "nasa-v-KSC-20220628-VP-MMS01-0001-RocketLab_Capstone_Live_Launch_Coverage_ROCKET_VIEWS_ONLY-3306978",
+  "nasa-v-KSC-20240605-MH-RKL01-0001-Rocket_Lab_PREFIRE_and_Ice_Launch_1080p-M6988",
+  "pixabay-v-82049",
+  "nasa-v-GSFC_20171004_m12738_RapidIntensification",
+  "pixabay-v-305",
+  "pixabay-v-304",
+  "pixabay-v-14214",
+  "pixabay-v-175336",
+  "pixabay-v-175331"
  ]
 }
