@@ -2388,6 +2388,54 @@
     "concept_share": 0.0,
     "fallback_scenes": 1
    }
+  },
+  {
+   "date": "2026-11-17 15:11",
+   "type": "short",
+   "title": "How the EU Pancreatic Cancer Breakthrough Works #shorts",
+   "topic": "How the EU’s New Pancreatic Cancer Breakthrough Works - A visual, simplified explainer of the newly EU-approved medical breakthrough giving new hope to pancreatic cancer patients, focusing on the biological mechanism without dense medical jargon.",
+   "style": "Explainer: one big question, answered step by step with a surprise at the end",
+   "youtube_id": "EE1rIW98gto",
+   "voice": "Charon",
+   "seconds": 18.3,
+   "scene_times": [
+    [
+     0.0,
+     "Pancreatic cancer is notoriously difficult to treat."
+    ],
+    [
+     3.8,
+     "Now, the European Union approved a brand-new approach."
+    ],
+    [
+     8.6,
+     "Researchers call this a major breakthrough."
+    ],
+    [
+     11.2,
+     "The therapy extends survival where older options fail."
+    ],
+    [
+     15.0,
+     "Follow Tomorrowly for tomorrow's tech, today."
+    ]
+   ],
+   "format": "news",
+   "why": "Medical and health breakthroughs in biotechnology drive immense global search volume and high retention when explained simply. Fresh news from the last 7 days provides an exclusive hook that sets it apart from generic medical overviews.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics_added": 1,
+    "graphics": 1,
+    "own_share": 0.23,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -3051,6 +3099,12 @@
   "pixabay-v-304",
   "pixabay-v-14214",
   "pixabay-v-175336",
-  "pixabay-v-175331"
+  "pixabay-v-175331",
+  "pixabay-v-22315",
+  "pixabay-v-262188",
+  "pixabay-v-262187",
+  "pixabay-v-5458",
+  "pixabay-v-84938",
+  "pixabay-v-106340"
  ]
 }

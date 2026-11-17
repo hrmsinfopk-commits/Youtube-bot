@@ -36,7 +36,8 @@
   "Cruising altitude temperatures at 35,000 feet regularly drop to minus 50 degrees Celsius or lower, so how do airplane wings stay ice-free?",
   "The Parker Solar Probe touches the Sun while enduring temperatures exceeding one thousand three hundred degrees Celsius.",
   "Airport de-icing fluid almost never protects airplanes mid-flight.",
-  "The massive Starship Super Heavy booster has no landing legs."
+  "The massive Starship Super Heavy booster has no landing legs.",
+  "Pancreatic cancer is notoriously difficult to treat."
  ],
  "endings": [
   "Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -75,7 +76,8 @@
   "Next time you look out your window at minus fifty degrees, you will know the hidden engineering keeping you safe. If aviation technology fascinates you, explori",
   "If solar physics amazed you, Tomorrowly has plenty more space discoveries like this.",
   "So what happens if engine heat fails?",
-  "If mid-air rocket catches amaze you, Tomorrowly has plenty more like it."
+  "If mid-air rocket catches amaze you, Tomorrowly has plenty more like it.",
+  "Follow Tomorrowly for tomorrow's tech, today."
  ],
  "scripts": [
   "Firing a multi-thousand-dollar missile at a cheap consumer drone is a financial trap. That is why modern defense forces are shifting toward directed-energy systems. KBR has introduced a novel base defense technology to fix this exact problem. The solution relies on weaponized light, deploying concentrated laser beams directly against aerial targets. It is designed to instantly neutralize incoming unmanned aerial vehicles before they reach the perimeter. Send this to the friend who loves tracking future military tech. Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -114,10 +116,10 @@
   "Cruising altitude temperatures at 35,000 feet regularly drop to minus 50 degrees Celsius or lower, so how do airplane wings stay ice-free? Every pilot knows that ice accumulation on an aircraft wing is a serious hazard that disrupts smooth airflow and can cause a sudden stall. So how do planes manage to stay ice-free in such brutal weather? The secret relies on a two-step defense system before takeoff and mid-flight. Before leaving the ground, maintenance crews spray heated mixtures of water and propylene glycol onto the aircraft surfaces to melt existing ice. To keep clean surfaces from freezing prior to departure, crews apply Type IV anti-icing fluid, which is a thicker liquid that clings to the wings during the ground roll. What happens when chemical sprays cannot be used once airborne, and how do planes keep from freezing at high altitudes? Once airborne, chemical sprays cannot be replenished, so commercial aircraft must switch to internal thermal anti-icing systems to prevent ice from forming. Where does all that heat come from at minus 50 degrees? The jet engines themselves provide a continuous supply of ultra-hot air directly from their compressor stages. This hot compressed air is piped through internal ducts along the leading edges of the wings to evaporate supercooled water droplets on contact. Engine cowlings feature their own dedicated bleed-air rings as well, preventing chunks of ice from damaging the spinning turbine blades inside. Windshield glass on commercial airliners uses a different trick for visibility, using transparent conductive metallic coatings embedded in the glass to heat up electrically. How do alternative aircraft handle anti-icing without heavy jet engines, and what are pneumatic boots? Some smaller aircraft rely on mechanical pneumatic boots instead of bleed air, using flexible rubber sleeves on the wing edges that inflate to crack off ice. Newer aircraft sometimes use electro-thermal systems with electric heating elements running underneath composite wing panels to melt ice rapidly. Bleeding hot air directly from the compressor stages steals power from the engines and burns extra fuel during long international flights. What is the actual energy cost? Diverting compressed air from the engines across long flights imposes a measurable energy penalty on commercial aircraft. Next time you look out your window at minus fifty degrees, you will know the hidden engineering keeping you safe. If aviation technology fascinates you, exploring how modern aircraft protect themselves is just the beginning of what Tomorrowly uncovers.",
   "The Parker Solar Probe touches the Sun while enduring temperatures exceeding one thousand three hundred degrees Celsius. That exterior heat would instantly melt steel. Yet, a carbon-composite shield blocks the blast. Behind that barrier, internal instruments stay near room temperature. It maps hidden magnetic patterns to help guard Earth's power grids from solar storms. If solar physics amazed you, Tomorrowly has plenty more space discoveries like this.",
   "Airport de-icing fluid almost never protects airplanes mid-flight. Most travelers assume bright green fluid shields wings all journey. Truth is, that protective layer shears off during takeoff. Cruising at minus fifty degrees, wings rely on internal heating systems instead. Instead, engines pump scorching bleed air inside the wings. The heat evaporates freezing water droplets on contact. So what happens if engine heat fails?",
-  "The massive Starship Super Heavy booster has no landing legs. Instead, two giant steel arms on the launch tower grab it out of the sky. As the towering booster plunges downward, hot grid fins steer it between the metal chopsticks. That's like catching a falling telephone pole with a pair of kitchen tongs in a hurricane. By dropping the heavy landing hardware, the rocket saves tons of weight for carrying cargo to Mars. If critical guidance systems fail, the multi-million dollar vehicle could crash straight into the ground. If mid-air rocket catches amaze you, Tomorrowly has plenty more like it."
+  "The massive Starship Super Heavy booster has no landing legs. Instead, two giant steel arms on the launch tower grab it out of the sky. As the towering booster plunges downward, hot grid fins steer it between the metal chopsticks. That's like catching a falling telephone pole with a pair of kitchen tongs in a hurricane. By dropping the heavy landing hardware, the rocket saves tons of weight for carrying cargo to Mars. If critical guidance systems fail, the multi-million dollar vehicle could crash straight into the ground. If mid-air rocket catches amaze you, Tomorrowly has plenty more like it.",
+  "Pancreatic cancer is notoriously difficult to treat. Now, the European Union approved a brand-new approach. Researchers call this a major breakthrough. The therapy extends survival where older options fail. Follow Tomorrowly for tomorrow's tech, today."
  ],
  "recent_signatures": [
-  "ALL",
   "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
@@ -136,10 +138,10 @@
   "WE DID THE MATH",
   "ALL",
   "THE CATCH",
-  "WE DID THE MATH"
+  "WE DID THE MATH",
+  "THE CATCH"
  ],
  "recent_styles": [
-  "Before vs now: how this used to work vs what just changed",
   "Myth vs fact: what people assume vs what is actually true",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Explainer: one big question, answered step by step with a surprise at the end",
@@ -158,10 +160,10 @@
   "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
   "Before vs now: how this used to work vs what just changed",
   "Myth vs fact: what people assume vs what is actually true",
-  "Future scenario: 'It's 2040...' - show how this changes everyday life"
+  "Future scenario: 'It's 2040...' - show how this changes everyday life",
+  "Explainer: one big question, answered step by step with a surprise at the end"
  ],
  "recent_themes": [
-  "footage",
   "blueprint",
   "footage",
   "navy",
@@ -180,6 +182,7 @@
   "navy",
   "footage",
   "navy",
-  "footage"
+  "footage",
+  "blueprint"
  ]
 }
