@@ -2436,6 +2436,61 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-18 15:25",
+   "type": "short",
+   "title": "How Starlink Direct-to-Cell Tech Bypasses Dead Zones #shorts",
+   "topic": "How Starlink Direct-to-Cell Tech Bypasses Dead Zones Everywhere",
+   "style": "Myth vs fact: what people assume vs what is actually true",
+   "youtube_id": "n-STASASC2k",
+   "voice": "Charon",
+   "seconds": 37.3,
+   "scene_times": [
+    [
+     0.0,
+     "Starlink satellites now connect standard mobile phones straight from orbit."
+    ],
+    [
+     5.4,
+     "People assume you need a bulky satellite dish or special hardware."
+    ],
+    [
+     9.2,
+     "Yet standard pocket phones communicate directly with these flying towers."
+    ],
+    [
+     14.7,
+     "Each spacecraft acts as a floating cell tower traveling at twenty-seven thousand kilometer"
+    ],
+    [
+     21.1,
+     "That is fast enough to cross the entire United States in less than ten minutes."
+    ],
+    [
+     26.8,
+     "Cellular dead zones shrink because signals can bypass ground towers."
+    ],
+    [
+     31.7,
+     "If satellite speeds amaze you, Tomorrowly has plenty more space discoveries like this."
+    ]
+   ],
+   "format": "news",
+   "why": "",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.18,
+    "fact_fixes": 3,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.14,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -3105,6 +3160,16 @@
   "pixabay-v-262187",
   "pixabay-v-5458",
   "pixabay-v-84938",
-  "pixabay-v-106340"
+  "pixabay-v-106340",
+  "pixabay-v-121650",
+  "pixabay-v-5349",
+  "pixabay-v-387303",
+  "pixabay-v-132644",
+  "pixabay-v-30095",
+  "pixabay-v-12487",
+  "pixabay-v-12486",
+  "pixabay-v-56208",
+  "pixabay-v-1211",
+  "pixabay-v-20763"
  ]
 }

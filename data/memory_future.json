@@ -37,7 +37,8 @@
   "The Parker Solar Probe touches the Sun while enduring temperatures exceeding one thousand three hundred degrees Celsius.",
   "Airport de-icing fluid almost never protects airplanes mid-flight.",
   "The massive Starship Super Heavy booster has no landing legs.",
-  "Pancreatic cancer is notoriously difficult to treat."
+  "Pancreatic cancer is notoriously difficult to treat.",
+  "Starlink satellites now connect standard mobile phones straight from orbit."
  ],
  "endings": [
   "Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -77,7 +78,8 @@
   "If solar physics amazed you, Tomorrowly has plenty more space discoveries like this.",
   "So what happens if engine heat fails?",
   "If mid-air rocket catches amaze you, Tomorrowly has plenty more like it.",
-  "Follow Tomorrowly for tomorrow's tech, today."
+  "Follow Tomorrowly for tomorrow's tech, today.",
+  "If satellite speeds amaze you, Tomorrowly has plenty more space discoveries like this."
  ],
  "scripts": [
   "Firing a multi-thousand-dollar missile at a cheap consumer drone is a financial trap. That is why modern defense forces are shifting toward directed-energy systems. KBR has introduced a novel base defense technology to fix this exact problem. The solution relies on weaponized light, deploying concentrated laser beams directly against aerial targets. It is designed to instantly neutralize incoming unmanned aerial vehicles before they reach the perimeter. Send this to the friend who loves tracking future military tech. Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -117,10 +119,10 @@
   "The Parker Solar Probe touches the Sun while enduring temperatures exceeding one thousand three hundred degrees Celsius. That exterior heat would instantly melt steel. Yet, a carbon-composite shield blocks the blast. Behind that barrier, internal instruments stay near room temperature. It maps hidden magnetic patterns to help guard Earth's power grids from solar storms. If solar physics amazed you, Tomorrowly has plenty more space discoveries like this.",
   "Airport de-icing fluid almost never protects airplanes mid-flight. Most travelers assume bright green fluid shields wings all journey. Truth is, that protective layer shears off during takeoff. Cruising at minus fifty degrees, wings rely on internal heating systems instead. Instead, engines pump scorching bleed air inside the wings. The heat evaporates freezing water droplets on contact. So what happens if engine heat fails?",
   "The massive Starship Super Heavy booster has no landing legs. Instead, two giant steel arms on the launch tower grab it out of the sky. As the towering booster plunges downward, hot grid fins steer it between the metal chopsticks. That's like catching a falling telephone pole with a pair of kitchen tongs in a hurricane. By dropping the heavy landing hardware, the rocket saves tons of weight for carrying cargo to Mars. If critical guidance systems fail, the multi-million dollar vehicle could crash straight into the ground. If mid-air rocket catches amaze you, Tomorrowly has plenty more like it.",
-  "Pancreatic cancer is notoriously difficult to treat. Now, the European Union approved a brand-new approach. Researchers call this a major breakthrough. The therapy extends survival where older options fail. Follow Tomorrowly for tomorrow's tech, today."
+  "Pancreatic cancer is notoriously difficult to treat. Now, the European Union approved a brand-new approach. Researchers call this a major breakthrough. The therapy extends survival where older options fail. Follow Tomorrowly for tomorrow's tech, today.",
+  "Starlink satellites now connect standard mobile phones straight from orbit. People assume you need a bulky satellite dish or special hardware. Yet standard pocket phones communicate directly with these flying towers. Each spacecraft acts as a floating cell tower traveling at twenty-seven thousand kilometers per hour. That is fast enough to cross the entire United States in less than ten minutes. Cellular dead zones shrink because signals can bypass ground towers. If satellite speeds amaze you, Tomorrowly has plenty more space discoveries like this."
  ],
  "recent_signatures": [
-  "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
   "THE CATCH",
@@ -139,10 +141,10 @@
   "ALL",
   "THE CATCH",
   "WE DID THE MATH",
-  "THE CATCH"
+  "THE CATCH",
+  "WE DID THE MATH"
  ],
  "recent_styles": [
-  "Myth vs fact: what people assume vs what is actually true",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Explainer: one big question, answered step by step with a surprise at the end",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
@@ -161,10 +163,10 @@
   "Before vs now: how this used to work vs what just changed",
   "Myth vs fact: what people assume vs what is actually true",
   "Future scenario: 'It's 2040...' - show how this changes everyday life",
-  "Explainer: one big question, answered step by step with a surprise at the end"
+  "Explainer: one big question, answered step by step with a surprise at the end",
+  "Myth vs fact: what people assume vs what is actually true"
  ],
  "recent_themes": [
-  "blueprint",
   "footage",
   "navy",
   "footage",
@@ -183,6 +185,7 @@
   "footage",
   "navy",
   "footage",
-  "blueprint"
+  "blueprint",
+  "footage"
  ]
 }
