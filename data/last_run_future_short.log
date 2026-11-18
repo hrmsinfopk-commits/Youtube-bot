@@ -1,4 +1,48 @@
-[21:14:14] Channel: Tomorrowly (future, mode=facts)
-/home/runner/work/Youtube-bot/Youtube-bot/bot/main.py:489: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  now = datetime.datetime.utcnow()
-[21:14:14] Back-up run: today's short is already up (How Starlink Direct-to-Cell Tech Bypasses Dead Zones #shorts) - nothing to do
+[22:44:06] Channel: Tomorrowly (future, mode=facts)
+[22:44:06] Format today: news
+[22:44:15] News headlines collected: 167
+[22:44:18] YouTube videos analysed: 75
+[22:44:25] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[22:44:25] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[22:44:50] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[22:44:51] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[22:45:16] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[22:45:20] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[22:45:21] Gemini OK (gemini-flash-lite-latest)
+[22:45:21] Topic 'How Quantum Detectors Count Over 9,000 Photons at Once' repeats recent video 'How the EU’s New Pancreatic Cancer Breakthrough Works - A visual, simp' - choosing again
+[22:45:22] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[22:45:22] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[22:46:19] Gemini OK (gemini-flash-lite-latest)
+[22:46:19] Trend topic: How Electric Car Batteries Defy Their Expected Lifespan | why: Videos about EV technology and everyday science are pulling millions of views right now (e.g., Goosh's charging cost video with 3.5M+ views). EV longevity addresses a major consumer curiosity gap with fresh chemistry data from November 2026, while avoiding oversaturated space topics.
+[22:46:19] Short length for 'news': 22 s
+[22:46:23] Gemini OK (gemini-flash-lite-latest)
+[22:46:23] Script too long (57 words, target ~45) - tightening
+[22:46:25] Gemini OK (gemini-flash-lite-latest)
+[22:46:25] Script length: 43 words
+[22:46:25] Uniqueness: 92% unique vs previous scripts
+[22:46:25] Script ready: Why Electric Vehicle Batteries Refuse to Die (5 scenes)
+[22:46:26] Gemini OK (gemini-flash-lite-latest)
+[22:46:26] Gate title fix: Title uses 'Refuse to Die' which is an absolute/exaggerated claim. | Why Electric Vehicle Batteries Refuse to Die -> Why Electric Vehicle Batteries Last So Long
+[22:46:26] Gate fact fix [0]: The phrase 'consistently outlive the vehicles' uses an absolute framing that may be too definitive c
+[22:46:26] Gate (script): {"graphics": 1, "own_share": 0.14, "fact_fixes": 2, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[22:46:26] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a curious, knowledgeable friend explaining something cool: natural American English, warm and confident, lively medium-fast pace (these are short videos), real (not forced) surprise only on the big reveal, clear emphasis on numbers, short natural breaths, never salesy or hyped, never robotic, never like a news anchor'}
+[22:46:45] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[22:46:48] Captions aligned to the voice (46 words)
+[22:46:52] Captions aligned to the voice (46 words)
+[22:46:52] Graphics theme: navy
+[22:46:55] Own graphics: 1
+[22:46:59] Picture editor: 47/47 previews loaded
+[22:47:07] Gemini OK (gemini-flash-lite-latest)
+[22:47:10] Gemini OK (gemini-flash-lite-latest)
+[22:47:10] Footage check: kept 2 fitting clips, 2 scenes had nothing fitting
+[22:47:10] Second footage search for 2 scenes
+[22:47:11] Picture editor: 20/20 previews loaded
+[22:47:16] Gemini OK (gemini-flash-lite-latest)
+[22:47:16] Footage check: kept 2 fitting clips, 0 scenes had nothing fitting
+[22:47:32] Footage ready for 5 scenes
+[22:47:32] Gate (visuals): fit 100%, concept 0%, fallback 0
+[22:47:38] 8 clips rendered
+[22:47:38] Final render started
+[22:48:31] Freesound CC0 music: Free Uplifting Music (id 670819)
+[22:48:43] Video ready: 20261118_2247_future_short.mp4 (21.5s)
+[22:48:45] Uploaded: https://youtu.be/7w9fmOy9IXQ
