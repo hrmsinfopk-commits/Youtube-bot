@@ -39,7 +39,8 @@
   "The massive Starship Super Heavy booster has no landing legs.",
   "Pancreatic cancer is notoriously difficult to treat.",
   "Starlink satellites now connect standard mobile phones straight from orbit.",
-  "Modern electric car batteries are projected to outlive the vehicles they power."
+  "Modern electric car batteries are projected to outlive the vehicles they power.",
+  "Nuclear submarines stay submerged for months without ever surfacing for fresh air."
  ],
  "endings": [
   "Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -81,7 +82,8 @@
   "If mid-air rocket catches amaze you, Tomorrowly has plenty more like it.",
   "Follow Tomorrowly for tomorrow's tech, today.",
   "If satellite speeds amaze you, Tomorrowly has plenty more space discoveries like this.",
-  "If battery chemistry surprises you, Tomorrowly has plenty more like it."
+  "If battery chemistry surprises you, Tomorrowly has plenty more like it.",
+  "If you love hidden technology, Tomorrowly has plenty more like this."
  ],
  "scripts": [
   "Firing a multi-thousand-dollar missile at a cheap consumer drone is a financial trap. That is why modern defense forces are shifting toward directed-energy systems. KBR has introduced a novel base defense technology to fix this exact problem. The solution relies on weaponized light, deploying concentrated laser beams directly against aerial targets. It is designed to instantly neutralize incoming unmanned aerial vehicles before they reach the perimeter. Send this to the friend who loves tracking future military tech. Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -123,10 +125,10 @@
   "The massive Starship Super Heavy booster has no landing legs. Instead, two giant steel arms on the launch tower grab it out of the sky. As the towering booster plunges downward, hot grid fins steer it between the metal chopsticks. That's like catching a falling telephone pole with a pair of kitchen tongs in a hurricane. By dropping the heavy landing hardware, the rocket saves tons of weight for carrying cargo to Mars. If critical guidance systems fail, the multi-million dollar vehicle could crash straight into the ground. If mid-air rocket catches amaze you, Tomorrowly has plenty more like it.",
   "Pancreatic cancer is notoriously difficult to treat. Now, the European Union approved a brand-new approach. Researchers call this a major breakthrough. The therapy extends survival where older options fail. Follow Tomorrowly for tomorrow's tech, today.",
   "Starlink satellites now connect standard mobile phones straight from orbit. People assume you need a bulky satellite dish or special hardware. Yet standard pocket phones communicate directly with these flying towers. Each spacecraft acts as a floating cell tower traveling at twenty-seven thousand kilometers per hour. That is fast enough to cross the entire United States in less than ten minutes. Cellular dead zones shrink because signals can bypass ground towers. If satellite speeds amaze you, Tomorrowly has plenty more space discoveries like this.",
-  "Modern electric car batteries are projected to outlive the vehicles they power. Engineers once expected rapid cell decay. Chemical structures stabilize during fast charging. Better formulas mean your next vehicle chassis wears out first. If battery chemistry surprises you, Tomorrowly has plenty more like it."
+  "Modern electric car batteries are projected to outlive the vehicles they power. Engineers once expected rapid cell decay. Chemical structures stabilize during fast charging. Better formulas mean your next vehicle chassis wears out first. If battery chemistry surprises you, Tomorrowly has plenty more like it.",
+  "Nuclear submarines stay submerged for months without ever surfacing for fresh air. The main limit isn't food or fuel, but making enough breathable oxygen for the crew. Instead of carrying tanks, the ship builds its own air from the ocean itself. Electricity from the nuclear reactor splits sea water molecules apart through electrolysis. That breaks water into hydrogen and pure oxygen gas for the crew. Special chemical scrubbers catch exhaled carbon dioxide so the air stays clean. If you love hidden technology, Tomorrowly has plenty more like this."
  ],
  "recent_signatures": [
-  "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
   "THE CATCH",
@@ -145,10 +147,10 @@
   "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
-  "THE CATCH"
+  "THE CATCH",
+  "WE DID THE MATH"
  ],
  "recent_styles": [
-  "Explainer: one big question, answered step by step with a surprise at the end",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Before vs now: how this used to work vs what just changed",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
@@ -167,10 +169,10 @@
   "Future scenario: 'It's 2040...' - show how this changes everyday life",
   "Explainer: one big question, answered step by step with a surprise at the end",
   "Myth vs fact: what people assume vs what is actually true",
-  "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news"
+  "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
+  "Myth vs fact: what people assume vs what is actually true"
  ],
  "recent_themes": [
-  "navy",
   "footage",
   "navy",
   "blueprint",
@@ -189,6 +191,7 @@
   "footage",
   "blueprint",
   "footage",
-  "navy"
+  "navy",
+  "blueprint"
  ]
 }

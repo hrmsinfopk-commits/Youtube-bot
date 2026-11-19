@@ -2538,6 +2538,61 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-19 15:31",
+   "type": "short",
+   "title": "How Do Nuclear Submarines Create Oxygen Underwater? #shorts",
+   "topic": "How Do Nuclear Submarines Create Oxygen Underwater? - A hundred sailors breathe the exact same air for months without suffocating, because the ship continuously splits sea water into breathable air.",
+   "style": "Myth vs fact: what people assume vs what is actually true",
+   "youtube_id": "YZo2-LOkvr8",
+   "voice": "Charon",
+   "seconds": 36.6,
+   "scene_times": [
+    [
+     0.0,
+     "Nuclear submarines stay submerged for months without ever surfacing for fresh air."
+    ],
+    [
+     5.7,
+     "The main limit isn't food or fuel, but making enough breathable oxygen for the crew."
+    ],
+    [
+     11.2,
+     "Instead of carrying tanks, the ship builds its own air from the ocean itself."
+    ],
+    [
+     17.1,
+     "Electricity from the nuclear reactor splits sea water molecules apart through electrolysis"
+    ],
+    [
+     22.6,
+     "That breaks water into hydrogen and pure oxygen gas for the crew."
+    ],
+    [
+     27.0,
+     "Special chemical scrubbers catch exhaled carbon dioxide so the air stays clean."
+    ],
+    [
+     31.9,
+     "If you love hidden technology, Tomorrowly has plenty more like this."
+    ]
+   ],
+   "format": "big question",
+   "why": "Builds directly on the massive success of our previous submarine oxygen explainer style, tapping into high-demand technical engineering curiosity. This question presents an immediate life-or-death contradiction that universal audiences find impossible to scroll past.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.14,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.14,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -3221,6 +3276,16 @@
   "pixabay-v-372065",
   "pixabay-v-139973",
   "pixabay-v-106722",
-  "pixabay-v-10847"
+  "pixabay-v-10847",
+  "pixabay-v-286278",
+  "pixabay-v-216232",
+  "pixabay-v-136687",
+  "pixabay-v-37712",
+  "pixabay-v-1219",
+  "pixabay-v-192281",
+  "pixabay-v-197483",
+  "pixabay-v-262464",
+  "pixabay-v-171362",
+  "pixabay-v-345428"
  ]
 }

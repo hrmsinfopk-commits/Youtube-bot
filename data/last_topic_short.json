@@ -1,78 +1,76 @@
 {
- "topic": "How Electric Car Batteries Defy Their Expected Lifespan",
- "angle": "Explain the surprising chemical breakthrough that makes modern EV batteries outlast the cars themselves, breaking down the chemistry simply with high visual retention.",
- "why": "Videos about EV technology and everyday science are pulling millions of views right now (e.g., Goosh's charging cost video with 3.5M+ views). EV longevity addresses a major consumer curiosity gap with fresh chemistry data from November 2026, while avoiding oversaturated space topics.",
+ "topic": "How Do Nuclear Submarines Create Oxygen Underwater?",
+ "angle": "A hundred sailors breathe the exact same air for months without suffocating, because the ship continuously splits sea water into breathable air.",
+ "why": "Builds directly on the massive success of our previous submarine oxygen explainer style, tapping into high-demand technical engineering curiosity. This question presents an immediate life-or-death contradiction that universal audiences find impossible to scroll past.",
  "keywords": [
-  "electric vehicle batteries",
-  "EV battery lifespan",
-  "EV battery chemistry",
-  "battery degradation myth",
-  "new EV technology",
-  "how EV batteries work",
-  "electric car battery life",
-  "science news",
-  "future technology",
-  "battery breakthrough",
-  "tomorrowly",
-  "EV battery longevity"
+  "how submarines make oxygen",
+  "nuclear submarine life support",
+  "submarine electrolysis air",
+  "how do submariners breathe underwater",
+  "submarine oxygen generation",
+  "electrolysis of seawater",
+  "how long can submarines stay underwater",
+  "submarine air purification",
+  "oxygen candles submarine",
+  "nuclear submarine technology"
  ],
  "facts": [
-  "Electric vehicle battery lifespans are consistently outstripping initial expectations in real-world testing.",
-  "Recent studies in battery chemistry are revealing the microscopic reasons why modern cells degrade much slower than predicted.",
-  "Advanced chemical formulations inside the cells help stabilize internal structures during high-speed charging and discharging cycles.",
-  "Better thermal management and chemical composition prevent the formation of dendrites that historically shortened battery life.",
-  "Most modern EV batteries are now projected to easily outlive the operational lifespan of the vehicle chassis itself.",
-  "Researchers emphasize that understanding these chemical mechanisms will allow engineers to design even denser and longer-lasting energy storage."
+  "Nuclear submarines can stay submerged for months at a time without ever surfacing for fresh air.",
+  "The primary constraint for long underwater missions is not food or fuel, but maintaining a safe supply of breathable oxygen for the crew.",
+  "Submarines generate their own oxygen on demand using a machine called an electrolytic oxygen generator.",
+  "This system uses electricity from the submarine's nuclear reactor to split seawater molecules through a process called electrolysis.",
+  "Electrolysis breaks seawater (H2O) apart into its two base elements: hydrogen gas and oxygen gas.",
+  "The generated oxygen gas is pumped directly into the submarine's living quarters and workspaces for the crew to breathe.",
+  "The leftover hydrogen gas is safely pumped out into the surrounding ocean so it does not build up inside the hull.",
+  "Submarines also carry chemical backup systems known as oxygen candles as an emergency fail-safe.",
+  "Oxygen candles burn chemically to release pure oxygen if the primary electrical electrolysis system ever fails.",
+  "Crew members exhale carbon dioxide, which must be continuously scrubbed out of the air to prevent toxic buildup.",
+  "Submarines use amine scrubbers to capture carbon dioxide from the air and expel it safely outside.",
+  "Specialized sensors constantly monitor air pressure, oxygen purity, and carbon dioxide levels every second of the mission."
  ],
  "long_format": null,
- "format": "news",
- "sources": [
-  {
-   "title": "Electric vehicle batteries’ lifespans are outstripping expectations – chemistry is revealing why",
-   "source": "Chemistry World",
-   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOVjFhU2VlS3BxS3BBMXZIOV9uNjhQOWdiLUhTXzE5OS1EazNLdjRSbkZVTC0xZ2JlQlViU1lkNklRb2Y4bUE0SU1wUF9YNC1UeWQzeC1pRDdfOHdNUVZOdU1za3czSXFLTnlkcldxSkE5ZHlJNTNiYXE0NEJLZHEtVjNTUkxfTXdrMENRV2h6bmM5YTZvM2ZqWk5kdXR3a2xUTzVsRGE3VXZBdUkzcTdGaEFiR1dtdm9WX2VLMUM1dV9NNlJkcHVuZ3pzeEtaTDdmY1hSV3lBMjVwN21oT0E?oc=5"
-  }
- ],
+ "format": "big question",
+ "sources": [],
  "youtube_top": [
   {
-   "title": "Samsung Galaxy S27 Ultra Cobalt Violet 📱🔥 #noads #tiktok #usa",
-   "views": 30806303
+   "title": "Dave - Raindance (ft. Tems)",
+   "views": 314151704
   },
   {
-   "title": "123Go Amazing Tubewell Technology For Modern Farming 💧🌾.#farming #technology #tech #tubewell #asmr",
-   "views": 16046060
+   "title": "do you think he’s tired of me 🙂‍↕️ #hair #singing",
+   "views": 120598021
   },
   {
-   "title": "Ranking FUNNIEST ROBOT MOMENTS 💀🗿",
-   "views": 11617840
+   "title": "Ariana Grande - hate that i made you love me (official music video)",
+   "views": 117000951
   },
   {
-   "title": "Your Flashlight vs. Voyager 1",
-   "views": 9644177
+   "title": "The Science of WOW | What is HP Complex? Hydrogen Peroxide Explained | Colgate Optic White",
+   "views": 98806249
   },
   {
-   "title": "My favorite Smartphone of 2026 (wait to see the insides)",
-   "views": 8399413
+   "title": "What happens when you don't pay attention #bear #wildanimals #animalencounters #scare #shorts",
+   "views": 97852221
   },
   {
-   "title": "Ronaldo & IShowSpeed VS Robot...🤯😂",
-   "views": 7680536
+   "title": "You Can't Order Here Unless You Build With LEGO 🤯",
+   "views": 97349765
   },
   {
-   "title": "The Rise and Reckoning of Jensen Huang | The Circuit with Emily Chang",
-   "views": 6349128
+   "title": "WE CAN’T BELIEVE WE JUST HIT 26M FAMILY MEMBERS! 🥹😭🥰",
+   "views": 84488597
   },
   {
-   "title": "7,000 Kmph Speed! The 'Scary Dance' Missile of India - PRALAY - Indian Army & DRDO #shorts",
-   "views": 4895238
+   "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
+   "views": 83423578
   },
   {
-   "title": "I’m going to break my iPhone Duo..",
-   "views": 4700628
+   "title": "How Electrical Outlets Work 🤔",
+   "views": 77511424
   },
   {
-   "title": "I entered my DAD in the school robot fight!",
-   "views": 4042508
+   "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
+   "views": 75933838
   }
  ]
 }
