@@ -2593,6 +2593,53 @@
     "concept_share": 0.14,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-20 21:59",
+   "type": "short",
+   "title": "Fastest Soft Robot Moves Without Electronics - How Fluid Dynamics Replaced Batteries #shorts",
+   "topic": "How the Fastest Soft Robot Ever Built Moves Without Electronics - Explain the radical engineering of a soft robot that achieves record-breaking speed using only fluid dynamics and elastic instability instead of batteries, motors, or wires.",
+   "style": "Before vs now: how this used to work vs what just changed",
+   "youtube_id": "kSZEC4J9GxE",
+   "voice": "Charon",
+   "seconds": 24.3,
+   "scene_times": [
+    [
+     0.0,
+     "UC San Diego engineers just built the fastest soft robot ever created."
+    ],
+    [
+     5.6,
+     "It travels at five yards per second with zero batteries."
+    ],
+    [
+     10.4,
+     "Compressed air pushes through internal channels to drive movement."
+    ],
+    [
+     14.2,
+     "Elastic instability stores mechanical energy for rapid propulsion."
+    ],
+    [
+     18.9,
+     "If fluid-powered robotics amaze you, Tomorrowly has plenty more like it."
+    ]
+   ],
+   "format": "news",
+   "why": "Robotics content consistently pulls millions of views in the current YouTube landscape (e.g., Honor robot and robot fight shorts exceeding 4M+ views). This covers a fresh UC San Diego breakthrough from the last 7 days with virtually zero crowded mainstream competition.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.18,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.2,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -3286,6 +3333,9 @@
   "pixabay-v-197483",
   "pixabay-v-262464",
   "pixabay-v-171362",
-  "pixabay-v-345428"
+  "pixabay-v-345428",
+  "pixabay-v-178127",
+  "pixabay-v-121537",
+  "pixabay-v-173486"
  ]
 }

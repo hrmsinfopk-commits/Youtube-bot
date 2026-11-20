@@ -40,7 +40,8 @@
   "Pancreatic cancer is notoriously difficult to treat.",
   "Starlink satellites now connect standard mobile phones straight from orbit.",
   "Modern electric car batteries are projected to outlive the vehicles they power.",
-  "Nuclear submarines stay submerged for months without ever surfacing for fresh air."
+  "Nuclear submarines stay submerged for months without ever surfacing for fresh air.",
+  "UC San Diego engineers just built the fastest soft robot ever created."
  ],
  "endings": [
   "Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -83,7 +84,8 @@
   "Follow Tomorrowly for tomorrow's tech, today.",
   "If satellite speeds amaze you, Tomorrowly has plenty more space discoveries like this.",
   "If battery chemistry surprises you, Tomorrowly has plenty more like it.",
-  "If you love hidden technology, Tomorrowly has plenty more like this."
+  "If you love hidden technology, Tomorrowly has plenty more like this.",
+  "If fluid-powered robotics amaze you, Tomorrowly has plenty more like it."
  ],
  "scripts": [
   "Firing a multi-thousand-dollar missile at a cheap consumer drone is a financial trap. That is why modern defense forces are shifting toward directed-energy systems. KBR has introduced a novel base defense technology to fix this exact problem. The solution relies on weaponized light, deploying concentrated laser beams directly against aerial targets. It is designed to instantly neutralize incoming unmanned aerial vehicles before they reach the perimeter. Send this to the friend who loves tracking future military tech. Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -126,10 +128,10 @@
   "Pancreatic cancer is notoriously difficult to treat. Now, the European Union approved a brand-new approach. Researchers call this a major breakthrough. The therapy extends survival where older options fail. Follow Tomorrowly for tomorrow's tech, today.",
   "Starlink satellites now connect standard mobile phones straight from orbit. People assume you need a bulky satellite dish or special hardware. Yet standard pocket phones communicate directly with these flying towers. Each spacecraft acts as a floating cell tower traveling at twenty-seven thousand kilometers per hour. That is fast enough to cross the entire United States in less than ten minutes. Cellular dead zones shrink because signals can bypass ground towers. If satellite speeds amaze you, Tomorrowly has plenty more space discoveries like this.",
   "Modern electric car batteries are projected to outlive the vehicles they power. Engineers once expected rapid cell decay. Chemical structures stabilize during fast charging. Better formulas mean your next vehicle chassis wears out first. If battery chemistry surprises you, Tomorrowly has plenty more like it.",
-  "Nuclear submarines stay submerged for months without ever surfacing for fresh air. The main limit isn't food or fuel, but making enough breathable oxygen for the crew. Instead of carrying tanks, the ship builds its own air from the ocean itself. Electricity from the nuclear reactor splits sea water molecules apart through electrolysis. That breaks water into hydrogen and pure oxygen gas for the crew. Special chemical scrubbers catch exhaled carbon dioxide so the air stays clean. If you love hidden technology, Tomorrowly has plenty more like this."
+  "Nuclear submarines stay submerged for months without ever surfacing for fresh air. The main limit isn't food or fuel, but making enough breathable oxygen for the crew. Instead of carrying tanks, the ship builds its own air from the ocean itself. Electricity from the nuclear reactor splits sea water molecules apart through electrolysis. That breaks water into hydrogen and pure oxygen gas for the crew. Special chemical scrubbers catch exhaled carbon dioxide so the air stays clean. If you love hidden technology, Tomorrowly has plenty more like this.",
+  "UC San Diego engineers just built the fastest soft robot ever created. It travels at five yards per second with zero batteries. Compressed air pushes through internal channels to drive movement. Elastic instability stores mechanical energy for rapid propulsion. If fluid-powered robotics amaze you, Tomorrowly has plenty more like it."
  ],
  "recent_signatures": [
-  "THE CATCH",
   "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
@@ -148,10 +150,10 @@
   "THE CATCH",
   "WE DID THE MATH",
   "THE CATCH",
-  "WE DID THE MATH"
+  "WE DID THE MATH",
+  "THE CATCH"
  ],
  "recent_styles": [
-  "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Before vs now: how this used to work vs what just changed",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Myth vs fact: what people assume vs what is actually true",
@@ -170,10 +172,10 @@
   "Explainer: one big question, answered step by step with a surprise at the end",
   "Myth vs fact: what people assume vs what is actually true",
   "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
-  "Myth vs fact: what people assume vs what is actually true"
+  "Myth vs fact: what people assume vs what is actually true",
+  "Before vs now: how this used to work vs what just changed"
  ],
  "recent_themes": [
-  "footage",
   "navy",
   "blueprint",
   "footage",
@@ -192,6 +194,7 @@
   "blueprint",
   "footage",
   "navy",
-  "blueprint"
+  "blueprint",
+  "navy"
  ]
 }
