@@ -2744,6 +2744,57 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-21 20:44",
+   "type": "short",
+   "title": "How China's Modular Flying Car Solved a Nearly Impossible Dilemma #shorts",
+   "topic": "How China's Modular Flying Car Actually Works - Engineers finally solved the 'flying car' paradox not by building a car with clumsy folding wings, but by creating a two-part modular system: a 6-wheeled electric mothership that carries, charges, and launches an autonomous eVTOL straight out of its trunk.",
+   "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
+   "youtube_id": "KU0Xa9nSKuw",
+   "voice": "Charon",
+   "seconds": 24.9,
+   "scene_times": [
+    [
+     0.0,
+     "China's modular flying car docks inside a trunk."
+    ],
+    [
+     3.8,
+     "Highway crash armor makes dual-purpose vehicles too heavy."
+    ],
+    [
+     8.4,
+     "So engineers built a rolling supercharger mothership instead."
+    ],
+    [
+     13.2,
+     "It hauls the weight, launching a lightweight autonomous drone."
+    ],
+    [
+     17.4,
+     "Deliveries are planned by 2027."
+    ],
+    [
+     20.4,
+     "If modular flight surprises you, Tomorrowly has more ahead."
+    ]
+   ],
+   "format": "news",
+   "why": "Flying car content is exploding on YouTube right now, with related videos pulling between 1M and 10M views in the past week alone. Fresh reports confirm XPeng AeroHT's modular vehicle is slated for mass delivery by 2027, giving us a timely engineering explainer that avoids generic sci-fi hype.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.17,
+    "fact_fixes": 1,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.17,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -3455,6 +3506,11 @@
   "nasa-v-Space-247365",
   "nasa-v-ARC-20230712-AAV3483-StarlingMission-Overview-NASAWeb-1080p",
   "pixabay-v-6044",
-  "pixabay-v-25168"
+  "pixabay-v-25168",
+  "pixabay-v-167659",
+  "pixabay-v-149878",
+  "pixabay-v-337459",
+  "pixabay-v-336755",
+  "pixabay-v-144920"
  ]
 }

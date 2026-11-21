@@ -1,86 +1,90 @@
 {
- "topic": "How the Fastest Soft Robot Ever Built Moves Without Electronics",
- "angle": "Explain the radical engineering of a soft robot that achieves record-breaking speed using only fluid dynamics and elastic instability instead of batteries, motors, or wires.",
- "why": "Robotics content consistently pulls millions of views in the current YouTube landscape (e.g., Honor robot and robot fight shorts exceeding 4M+ views). This covers a fresh UC San Diego breakthrough from the last 7 days with virtually zero crowded mainstream competition.",
+ "topic": "How China's Modular Flying Car Actually Works",
+ "angle": "Engineers finally solved the 'flying car' paradox not by building a car with clumsy folding wings, but by creating a two-part modular system: a 6-wheeled electric mothership that carries, charges, and launches an autonomous eVTOL straight out of its trunk.",
+ "why": "Flying car content is exploding on YouTube right now, with related videos pulling between 1M and 10M views in the past week alone. Fresh reports confirm XPeng AeroHT's modular vehicle is slated for mass delivery by 2027, giving us a timely engineering explainer that avoids generic sci-fi hype.",
  "keywords": [
-  "soft robot",
-  "fastest soft robot",
-  "robot without electronics",
-  "fluid powered robot",
+  "flying car",
+  "XPeng flying car",
+  "eVTOL aircraft",
+  "modular flying car",
+  "future transport",
+  "XPeng AeroHT",
+  "Land Aircraft Carrier",
+  "electric flying car",
+  "flying car 2027",
+  "autonomous aircraft",
   "future technology",
-  "robotics explained",
-  "soft robotics breakthrough",
-  "engineering marvels",
-  "UC San Diego robot",
-  "autonomous soft robot",
-  "science news 2026",
-  "tomorrowly",
-  "new technology explained"
+  "new transport technology"
  ],
  "facts": [
-  "Researchers at UC San Diego recently built the fastest soft robot ever created.",
-  "Unlike conventional robots, this machine operates entirely without electronics, batteries, or motors.",
-  "It does not require any internal or external electronic circuit boards to function.",
-  "The robot achieves its high-speed movement entirely through the clever manipulation of fluid flow.",
-  "It harnesses elastic instability to store and suddenly release mechanical energy for rapid propulsion.",
-  "By avoiding heavy electronic hardware, the design dramatically reduces weight and mechanical complexity.",
-  "Researchers at UC San Diego engineered a soft robot using 3D printing techniques.",
-  "The soft robot operates entirely without the use of electronics.",
-  "Movement of the robot is driven by compressed air rather than electricity.",
-  "The device features a six-legged design.",
-  "It is capable of traveling at a rate of 5 yards per second, achieving record-breaking speeds.",
-  "Special fibers allow the robot to glow green and illuminate itself during operation.",
-  "The illumination system functions without the need for batteries or intricate electronic wiring."
+  "Traditional flying car designs failed for decades because making a machine safe enough for highway crashes makes it too heavy to fly efficiently.",
+  "Chinese mobility firm XPeng AeroHT designed a modular vehicle dubbed the 'Land Aircraft Carrier' to bypass this fundamental engineering dilemma.",
+  "The system splits into two distinct parts: a 6x6 ground vehicle mothership and a detachable electric vertical takeoff and landing (eVTOL) air craft.",
+  "The ground vehicle uses an extended-range electric powertrain with all-wheel drive and rear-wheel steering to handle highway driving.",
+  "The air module is a fully electric two-seater multicopter equipped with six foldable rotor arms and dual-ducted propellers.",
+  "The drone-like air module automatically folds its arms and docks entirely inside the trunk of the ground van.",
+  "While docked, the ground mothership acts as a mobile supercharger, recharging the aircraft's high-voltage battery pack between flights.",
+  "The aircraft features both manual cockpit controls and single-button autonomous flight modes designed for automated route planning, takeoff, and landing.",
+  "XPeng plans to begin mass deliveries and commercial operations of the vehicle by 2027 (claimed/planned).",
+  "By decoupling road certification regulations from aviation airworthiness standards, the modular design allows each vehicle to meet safety rules independently.",
+  "The worldwide flying car industry is projected to experience swift expansion (market forecast).",
+  "A flying vehicle associated with China is claimed to offer a solution for avoiding traffic jams (manufacturer/media claim).",
+  "Escaping road congestion is promoted as a primary benefit of the Chinese flying car (promotional claim)."
  ],
  "long_format": null,
  "format": "news",
  "sources": [
   {
-   "title": "The Fastest Soft Robot Ever Built Doesn’t Need Electronics to Function",
-   "source": "UC San Diego Today",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQc0RYMVdwSFdFcThNdWNTZVFqZGJaeks2N3YxRHhxXzlnakUyUWR6SGVjbGxtNGZBaGpXMEtwXzZHaVV6TVpOcTR1cUhHeVZKc2VvQVA4UUJwZDBRbkpWV0IyRmpZNUNPNHE2RkdzQ3d5Tmh3RTBJb3RCek5iWElnVGNTa3FvekttV1duUzRDR1lXbE9Hc0hGWjJNTUktVGM?oc=5"
+   "title": "China’s flying car could be in the sky by 2027",
+   "source": "Interesting Engineering",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWGZidGdndXU3ZGd2N2h3Qy1TZTFjV2U2Z05uSnhKRWxVenNBSVMzcDR4ZmFYa0RESExKR3dwd3hla18xblZaVEplazY0bmwyaGNhVktXdllZTWRNWUxMRERSUkdrbGFadkRCSWFTX1JDV2ViLWtTWENzS25CTi1qRlFiU2czMTdHRHRXSmpydUg?oc=5"
+  },
+  {
+   "title": "XPeng’s flying car set to take off in China by summer 2027",
+   "source": "Travel Tomorrow",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUGNGMmt0VFpBeUZRU2xoXzl0MUY4d2pqb0loZURlZmtMT3dCMGNkSzlMQzBQNmctd3gzSm1ZdVExenZJYW9mYjE0SVZZeU5WSVNjRHNHN3RzNXlRNHltMm96djV0Ny1USXVTTVd5RHlGSmU0S29Xak9uQlZQY0hETm81Rjg3eWt6Z0JUVUdR?oc=5"
   }
  ],
  "youtube_top": [
   {
    "title": "Samsung Galaxy S27 Ultra Cobalt Violet 📱🔥 #noads #tiktok #usa",
-   "views": 30983261
-  },
-  {
-   "title": "Your Flashlight vs. Voyager 1",
-   "views": 12696418
-  },
-  {
-   "title": "My favorite Smartphone of 2026 (wait to see the insides)",
-   "views": 9477178
-  },
-  {
-   "title": "How This Device Copies Keys In Seconds",
-   "views": 8769657
+   "views": 31049840
   },
   {
    "title": "iPhone Duo Survives 500,000 Folds in Ongoing CNET Lab Test",
-   "views": 7785551
+   "views": 13329663
+  },
+  {
+   "title": "Your Flashlight vs. Voyager 1",
+   "views": 13008404
+  },
+  {
+   "title": "Its Just A Flight Radar Glitch Police Cars School Bus and Marshaller near the Airplane",
+   "views": 10485396
+  },
+  {
+   "title": "How This Device Copies Keys In Seconds",
+   "views": 10380898
+  },
+  {
+   "title": "My favorite Smartphone of 2026 (wait to see the insides)",
+   "views": 9760267
   },
   {
    "title": "CIA Meeting Cold Open - SNL",
-   "views": 6962059
+   "views": 7202803
   },
   {
    "title": "The FAA Crashes Out Over a Router & Why Is Trump Protecting AI and Jensen Huang? | The Daily Show",
-   "views": 6717541
+   "views": 6914500
   },
   {
    "title": "Aagya GTA VI वाला Wifi 🥹🤩 #viral #trending #gta6 #new #gaming #streaming #gta6gameplay #gta #tech",
-   "views": 5915031
+   "views": 6357968
   },
   {
-   "title": "Honor robot phone camera test..",
-   "views": 5004533
-  },
-  {
-   "title": "How much does it cost to charge a phone to 100%?",
-   "views": 4498061
+   "title": "#dbsono #bass #headphones #automobile #tech #speaker",
+   "views": 6199049
   }
  ]
 }
