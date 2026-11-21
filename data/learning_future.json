@@ -1,61 +1,60 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "channel": {
   "subscribers": 36,
-  "total_views": 30565,
-  "videos": 40,
-  "watch_hours_12m": 99.9
+  "total_views": 32224,
+  "videos": 41,
+  "watch_hours_12m": 100.7
  },
  "style_scores": {
-  "Future scenario: 'It's 2040...' - show how this changes everyday life": 1.0,
+  "Future scenario: 'It's 2040...' - show how this changes everyday life": 1.01,
   "Before vs now: how this used to work vs what just changed": 0.95,
   "": 0.91,
-  "Shocking fact first: open with the most unbelievable detail, then explain why": 1.09,
+  "Shocking fact first: open with the most unbelievable detail, then explain why": 1.1,
   "Countdown: 3-5 surprising facts about it, the most shocking one last": 0.99,
-  "Explainer: one big question, answered step by step with a surprise at the end": 0.72,
-  "Myth vs fact: what people assume vs what is actually true": 1.03,
+  "Explainer: one big question, answered step by step with a surprise at the end": 0.73,
+  "Myth vs fact: what people assume vs what is actually true": 0.97,
   "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news": 0.93
  },
  "format_scores": {
   "short: news": {
-   "videos": 24,
+   "videos": 26,
    "score": 0.98,
-   "avg_views": 953,
-   "avg_pct": 70.2
+   "avg_views": 889,
+   "avg_pct": 70.1
   },
   "short: big question": {
    "videos": 4,
-   "score": 0.94,
+   "score": 0.95,
    "avg_views": 753,
-   "avg_pct": 68.9
+   "avg_pct": 69.0
   },
   "short: teaser": {
    "videos": 4,
    "score": 0.99,
    "avg_views": 965,
-   "avg_pct": 69.4
+   "avg_pct": 69.3
   },
   "long: deep dive": {
    "videos": 1,
-   "score": 1.09,
-   "avg_views": 147,
-   "avg_pct": 40.5
+   "score": 1.1,
+   "avg_views": 153,
+   "avg_pct": 41.0
   },
   "long: big question": {
    "videos": 5,
    "score": 0.83,
-   "avg_views": 123,
-   "avg_pct": 34.4
+   "avg_views": 125,
+   "avg_pct": 34.2
   }
  },
  "insights": [
-  "Space exploration topics deliver the highest retention on the channel, with Europa Clipper (155%), Artemis III (114%), and Voyager 1 (106%) all exceeding 100% average view percentage.",
-  "Autonomous weapons and robotics drive peak reach, led by US Army Combat Robots (1,984 views) and Unitree (1,126 views), while niche medicine and geology (e.g., EU Cancer at 19 views) struggle to enter the Shorts feed.",
-  "End-screen channel plugs ('Follow Tomorrowly...') between 22s and 26s consistently trigger 4% to 6.3% retention drops; replace spoken outro CTAs with abrupt loops.",
-  "'Shocking fact first' and 'Myth vs fact' are the top-performing styles, yielding the highest average view percentages and scores (up to 1.63).",
-  "Viewer drop-offs between 5s and 8s hit 5% to 8% whenever the script delivers slow exposition or technical setup rather than immediate visual or conceptual payoff.",
-  "Audience engagement is virtually nonexistent across all videos (0 to 2 comments total); scripts urgently need polarizing prompts or direct questions before the loop point.",
-  "Long-form content is currently unviable for discovery (median 49 views across 6 videos vs. ~1,100 for Shorts), though with only 6 long videos, data on long-form optimization remains thin."
+  "Shorts significantly outperform long-form videos, averaging over 1,000 views compared to under 150 views for long videos.",
+  "Space and planetary exploration topics (e.g., NASA, Europa, Artemis) consistently drive high view counts and engagement, such as the Europa Clipper short achieving 1,292 views and a 154.95% average view percentage.",
+  "Early drop-offs frequently occur within the first 4 to 8 seconds, indicating that hook execution needs tighter pacing and stronger opening lines.",
+  "Videos consistently lack comments across the board, pointing to a need for a stronger, more engaging call-to-action or closing question at the end of each script.",
+  "Several videos suffered from low total views despite high retention percentages (e.g., nuclear submarines and Voyager 1), showing that packaging, titles, or thumbnails need broader appeal to drive initial clicks.",
+  "Myth vs fact and shocking fact styles perform strongly on shorts, frequently yielding high retention and above-average score metrics when paired with space or engineering topics."
  ],
  "videos": [
   {
@@ -69,13 +68,13 @@
    "shares": 3,
    "subscribersGained": 4,
    "format": null,
-   "score": 0.85,
+   "score": 0.86,
    "notes": [
     "Log jaldi chhod gaye: hook ya shuru ka hissa kamzor tha.",
     "Comments nahi aaye: aakhri sawal behtar hona chahiye."
    ],
    "traffic": null,
-   "age_days": 31,
+   "age_days": 32,
    "youtube_id": "J9O4qdiPSgk"
   },
   {
@@ -95,24 +94,24 @@
     "Comments nahi aaye: aakhri sawal behtar hona chahiye."
    ],
    "traffic": null,
-   "age_days": 31,
+   "age_days": 32,
    "youtube_id": "ujBL9LBgPHk"
   },
   {
    "title": "NASA's New Nuclear Spaceship: How SR-1 Freedom Changes Mars Travel",
    "type": "long",
    "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
-   "views": 147,
-   "averageViewPercentage": 40.49,
+   "views": 153,
+   "averageViewPercentage": 41.04,
    "likes": 2,
    "comments": 0,
    "shares": 5,
    "subscribersGained": 2,
    "format": "deep dive",
-   "score": 1.09,
+   "score": 1.1,
    "notes": [],
    "traffic": null,
-   "age_days": 30,
+   "age_days": 31,
    "youtube_id": "BZuC5VJ6kDM"
   },
   {
@@ -131,7 +130,7 @@
     "Comments nahi aaye: aakhri sawal behtar hona chahiye."
    ],
    "traffic": null,
-   "age_days": 30,
+   "age_days": 31,
    "youtube_id": "sWFi6T_3Kf8"
   },
   {
@@ -150,7 +149,7 @@
     "Jo log aaye unhon ne achhi dekhi, lekin bohat kam log aaye: topic/title/thumbnail ne kashish nahi ki."
    ],
    "traffic": null,
-   "age_days": 29,
+   "age_days": 30,
    "youtube_id": "RFzD-PyILsQ"
   },
   {
@@ -169,7 +168,7 @@
     "Comments nahi aaye: aakhri sawal behtar hona chahiye."
    ],
    "traffic": null,
-   "age_days": 28,
+   "age_days": 29,
    "youtube_id": "dck9ttHCJic"
   },
   {
@@ -186,7 +185,7 @@
    "score": 0.56,
    "notes": [],
    "traffic": null,
-   "age_days": 27,
+   "age_days": 28,
    "youtube_id": "oGPOL4VkwGI"
   },
   {
@@ -203,7 +202,7 @@
    "score": 1.02,
    "notes": [],
    "traffic": null,
-   "age_days": 27,
+   "age_days": 28,
    "youtube_id": "5yhWmoUjmZY"
   },
   {
@@ -223,7 +222,7 @@
     "Average se kaafi behtar: yeh topic/andaaz dobara try karna chahiye."
    ],
    "traffic": null,
-   "age_days": 26,
+   "age_days": 27,
    "youtube_id": "CH5p37icZXU"
   },
   {
@@ -240,7 +239,7 @@
    "score": 1.0,
    "notes": [],
    "traffic": null,
-   "age_days": 26,
+   "age_days": 27,
    "youtube_id": "-oX0q-L56PM"
   },
   {
@@ -254,13 +253,13 @@
    "shares": 1,
    "subscribersGained": 0,
    "format": "big question",
-   "score": 0.76,
+   "score": 0.77,
    "notes": [
     "Log jaldi chhod gaye: hook ya shuru ka hissa kamzor tha.",
     "Comments nahi aaye: aakhri sawal behtar hona chahiye."
    ],
    "traffic": null,
-   "age_days": 25,
+   "age_days": 26,
    "youtube_id": "Pcj4yIUFDWs"
   },
   {
@@ -274,12 +273,12 @@
    "shares": 0,
    "subscribersGained": 1,
    "format": "news",
-   "score": 0.93,
+   "score": 0.94,
    "notes": [
     "Comments nahi aaye: aakhri sawal behtar hona chahiye."
    ],
    "traffic": null,
-   "age_days": 24,
+   "age_days": 25,
    "youtube_id": "ID7098rLP6g"
   },
   {
@@ -299,7 +298,7 @@
     "Comments nahi aaye: aakhri sawal behtar hona chahiye."
    ],
    "traffic": null,
-   "age_days": 23,
+   "age_days": 24,
    "youtube_id": "G3FJYX7Fjv4"
   },
   {
@@ -316,26 +315,26 @@
    "score": 1.31,
    "notes": [],
    "traffic": null,
-   "age_days": 23,
+   "age_days": 24,
    "youtube_id": "OlcO352mcP4"
   },
   {
    "title": "Why Satellites Never Fall to Earth (Orbital Mechanics Explained) #shorts",
    "type": "short",
    "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
-   "views": 1528,
-   "averageViewPercentage": 70.9,
-   "likes": 44,
+   "views": 1530,
+   "averageViewPercentage": 70.94,
+   "likes": 43,
    "comments": 1,
    "shares": 0,
    "subscribersGained": 1,
    "format": "big question",
-   "score": 1.04,
+   "score": 1.05,
    "notes": [
     "Average se kaafi behtar: yeh topic/andaaz dobara try karna chahiye."
    ],
    "traffic": null,
-   "age_days": 22,
+   "age_days": 23,
    "youtube_id": "L66lXYqmR7w"
   },
   {
@@ -349,28 +348,18 @@
    "shares": 0,
    "subscribersGained": 1,
    "format": "news",
-   "score": 0.83,
-   "notes": [
-    "Sab se zyada log 8.0s par chhod gaye (5.7% gire) - wahan line thi: \"Water managers want to boost low snowpack levels by targeting atmospheric moistu\"."
-   ],
-   "traffic": {
-    "NO_LINK_OTHER": 0,
-    "SUBSCRIBER": 1,
-    "YT_CHANNEL": 2,
-    "YT_SEARCH": 9,
-    "YT_OTHER_PAGE": 3,
-    "PLAYLIST": 0,
-    "SHORTS": 85
-   },
-   "age_days": 21,
+   "score": 0.84,
+   "notes": [],
+   "traffic": null,
+   "age_days": 22,
    "youtube_id": "yrzcrm1vSLY"
   },
   {
    "title": "US Army Tests Autonomous Combat Robots That Hunt Targets #shorts",
    "type": "short",
    "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
-   "views": 1984,
-   "averageViewPercentage": 61.919999999999995,
+   "views": 1986,
+   "averageViewPercentage": 61.94,
    "likes": 44,
    "comments": 2,
    "shares": 1,
@@ -392,33 +381,33 @@
     "SHORTS": 82,
     "HASHTAGS": 0
    },
-   "age_days": 20,
+   "age_days": 21,
    "youtube_id": "1anbm_UHR-w"
   },
   {
    "title": "How Maglev Trains Float Without Touching the Tracks",
    "type": "long",
    "style": "Before vs now: how this used to work vs what just changed",
-   "views": 88,
-   "averageViewPercentage": 29.09,
+   "views": 94,
+   "averageViewPercentage": 28.01,
    "likes": 2,
    "comments": 0,
-   "shares": 0,
+   "shares": 1,
    "subscribersGained": 0,
    "format": "big question",
-   "score": 0.87,
+   "score": 0.86,
    "notes": [
-    "Sab se zyada log 23.0s par chhod gaye (8.8% gire) - wahan line thi: \"How do maglev trains float without touching the tracks, and can this system ever\"."
+    "Sab se zyada log 36.3s par chhod gaye (8.3% gire) - wahan line thi: \"By eliminating physical contact with tracks, maglev trains remove mechanical fri\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 1,
-    "SUBSCRIBER": 48,
+    "SUBSCRIBER": 45,
     "YT_CHANNEL": 3,
-    "YT_SEARCH": 19,
-    "RELATED_VIDEO": 27,
+    "YT_SEARCH": 24,
+    "RELATED_VIDEO": 26,
     "YT_OTHER_PAGE": 1
    },
-   "age_days": 20,
+   "age_days": 21,
    "youtube_id": "xw8THeae5Ek"
   },
   {
@@ -432,7 +421,7 @@
    "shares": 1,
    "subscribersGained": 3,
    "format": "teaser",
-   "score": 1.16,
+   "score": 1.17,
    "notes": [
     "Sab se zyada log 5.1s par chhod gaye (6.1% gire) - wahan line thi: \"People assume tracks just push upward like fridge magnets.\"."
    ],
@@ -446,19 +435,19 @@
     "PLAYLIST": 0,
     "SHORTS": 79
    },
-   "age_days": 19,
+   "age_days": 20,
    "youtube_id": "-Rl6KWl7ygg"
   },
   {
    "title": "Japan's Single-Atom Quantum Computer Without Freezers? #shorts",
    "type": "short",
    "style": "Explainer: one big question, answered step by step with a surprise at the end",
-   "views": 1172,
-   "averageViewPercentage": 64.54,
+   "views": 1175,
+   "averageViewPercentage": 64.72,
    "likes": 21,
    "comments": 1,
    "shares": 1,
-   "subscribersGained": 0,
+   "subscribersGained": 1,
    "format": "news",
    "score": 0.98,
    "notes": [
@@ -473,7 +462,7 @@
     "SHORTS": 83,
     "IMMERSIVE_LIVE": 0
    },
-   "age_days": 17,
+   "age_days": 18,
    "youtube_id": "4nHakSyIjVQ"
   },
   {
@@ -501,7 +490,7 @@
     "NOTIFICATION": 0,
     "SHORTS": 95
    },
-   "age_days": 16,
+   "age_days": 17,
    "youtube_id": "H14KvU2GdL0"
   },
   {
@@ -528,7 +517,7 @@
     "NOTIFICATION": 0,
     "SHORTS": 95
    },
-   "age_days": 16,
+   "age_days": 17,
    "youtube_id": "8465fDr77aU"
   },
   {
@@ -542,7 +531,7 @@
    "shares": 0,
    "subscribersGained": 1,
    "format": "news",
-   "score": 1.63,
+   "score": 1.64,
    "notes": [
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
     "Sab se zyada log 5.1s par chhod gaye (5.7% gire) - wahan line thi: \"NASA's Europa Clipper just launched toward an ocean with twice Earth's water.\"."
@@ -555,7 +544,7 @@
     "YT_OTHER_PAGE": 2,
     "SHORTS": 84
    },
-   "age_days": 14,
+   "age_days": 15,
    "youtube_id": "ZEOAv5rj1Nk"
   },
   {
@@ -563,13 +552,13 @@
    "type": "short",
    "style": "Myth vs fact: what people assume vs what is actually true",
    "views": 1117,
-   "averageViewPercentage": 60.199999999999996,
+   "averageViewPercentage": 59.85,
    "likes": 20,
    "comments": 0,
    "shares": 2,
    "subscribersGained": 2,
    "format": "news",
-   "score": 0.94,
+   "score": 0.95,
    "notes": [
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
     "Sab se zyada log 5.3s par chhod gaye (4.1% gire) - wahan line thi: \"All five primary letters of our genetic code were just found inside a space rock\"."
@@ -583,7 +572,7 @@
     "PLAYLIST": 0,
     "SHORTS": 89
    },
-   "age_days": 14,
+   "age_days": 15,
    "youtube_id": "NLQTQQ15ct8"
   },
   {
@@ -607,21 +596,21 @@
     "YT_SEARCH": 17,
     "RELATED_VIDEO": 50
    },
-   "age_days": 13,
+   "age_days": 14,
    "youtube_id": "P0BubbItsl0"
   },
   {
    "title": "How Utah’s Goosenecks Carved Deep Loops Through the Desert #shorts",
    "type": "short",
    "style": "Before vs now: how this used to work vs what just changed",
-   "views": 1310,
-   "averageViewPercentage": 101.10999999999999,
+   "views": 1311,
+   "averageViewPercentage": 101.42999999999999,
    "likes": 21,
    "comments": 0,
    "shares": 0,
    "subscribersGained": 2,
    "format": "news",
-   "score": 1.25,
+   "score": 1.26,
    "notes": [
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
     "Sab se zyada log 26.5s par chhod gaye (6.3% gire) - wahan line thi: \"If geology amazes you, Tomorrowly has plenty more earth science wonders like thi\"."
@@ -634,7 +623,7 @@
     "YT_OTHER_PAGE": 1,
     "SHORTS": 96
    },
-   "age_days": 13,
+   "age_days": 14,
    "youtube_id": "iGO1RErj8eE"
   },
   {
@@ -642,13 +631,13 @@
    "type": "short",
    "style": "Explainer: one big question, answered step by step with a surprise at the end",
    "views": 361,
-   "averageViewPercentage": 57.8,
+   "averageViewPercentage": 57.43000000000001,
    "likes": 9,
    "comments": 0,
    "shares": 0,
    "subscribersGained": 0,
    "format": "teaser",
-   "score": 0.84,
+   "score": 0.85,
    "notes": [
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
     "Sab se zyada log 6.9s par chhod gaye (7.8% gire) - wahan line thi: \"Data travels through glass strands thinner than a human hair.\"."
@@ -661,7 +650,7 @@
     "YT_OTHER_PAGE": 2,
     "SHORTS": 88
    },
-   "age_days": 12,
+   "age_days": 13,
    "youtube_id": "bKNYiG4DQPA"
   },
   {
@@ -669,7 +658,7 @@
    "type": "short",
    "style": "Before vs now: how this used to work vs what just changed",
    "views": 844,
-   "averageViewPercentage": 68.09,
+   "averageViewPercentage": 68.22,
    "likes": 14,
    "comments": 0,
    "shares": 1,
@@ -688,7 +677,7 @@
     "YT_OTHER_PAGE": 2,
     "SHORTS": 91
    },
-   "age_days": 11,
+   "age_days": 12,
    "youtube_id": "NqQpUszWLWY"
   },
   {
@@ -702,7 +691,7 @@
    "shares": 0,
    "subscribersGained": 0,
    "format": "news",
-   "score": 0.78,
+   "score": 0.79,
    "notes": [
     "Sab se zyada log 8.9s par chhod gaye (5.6% gire) - wahan line thi: \"Regular jets make a massive crack because shockwaves stack up into a wall of com\"."
    ],
@@ -715,24 +704,24 @@
     "PLAYLIST": 1,
     "SHORTS": 56
    },
-   "age_days": 10,
+   "age_days": 11,
    "youtube_id": "7Fx6pMX3658"
   },
   {
    "title": "DARPA's Hypersonic Glider Bounces on Air #shorts",
    "type": "short",
    "style": "Myth vs fact: what people assume vs what is actually true",
-   "views": 489,
-   "averageViewPercentage": 64.55,
+   "views": 491,
+   "averageViewPercentage": 64.8,
    "likes": 5,
    "comments": 0,
    "shares": 0,
    "subscribersGained": 3,
    "format": "news",
-   "score": 0.91,
+   "score": 0.92,
    "notes": [
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
-    "Sab se zyada log 5.1s par chhod gaye (6.2% gire) - wahan line thi: \"DARPA's experimental glider skips across Earth's atmosphere like a stone on wate\"."
+    "Sab se zyada log 5.1s par chhod gaye (6.1% gire) - wahan line thi: \"DARPA's experimental glider skips across Earth's atmosphere like a stone on wate\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
@@ -740,17 +729,17 @@
     "YT_CHANNEL": 0,
     "YT_SEARCH": 10,
     "YT_OTHER_PAGE": 1,
-    "SHORTS": 88
+    "SHORTS": 87
    },
-   "age_days": 9,
+   "age_days": 10,
    "youtube_id": "BVkvUKGWCnA"
   },
   {
    "title": "Boston Dynamics Atlas Robot Starts Real Factory Jobs #shorts",
    "type": "short",
    "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
-   "views": 1017,
-   "averageViewPercentage": 58.84,
+   "views": 1019,
+   "averageViewPercentage": 58.86,
    "likes": 17,
    "comments": 0,
    "shares": 0,
@@ -770,35 +759,35 @@
     "EXT_URL": 0,
     "SHORTS": 92
    },
-   "age_days": 9,
+   "age_days": 10,
    "youtube_id": "826O8qnJi5Y"
   },
   {
    "title": "DARPA's New X-Plane Has No Moving Flaps #shorts",
    "type": "short",
    "style": "Myth vs fact: what people assume vs what is actually true",
-   "views": 1030,
-   "averageViewPercentage": 53.76,
+   "views": 1035,
+   "averageViewPercentage": 53.71,
    "likes": 14,
    "comments": 0,
    "shares": 0,
    "subscribersGained": 0,
    "format": "news",
-   "score": 0.89,
+   "score": 0.9,
    "notes": [
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
-    "Sab se zyada log 23.4s par chhod gaye (4.4% gire) - wahan line thi: \"Follow Tomorrowly for tomorrow's tech, today.\"."
+    "Sab se zyada log 23.4s par chhod gaye (4.3% gire) - wahan line thi: \"Follow Tomorrowly for tomorrow's tech, today.\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 0,
     "YT_CHANNEL": 0,
-    "YT_SEARCH": 7,
+    "YT_SEARCH": 8,
     "YT_OTHER_PAGE": 2,
     "EXT_URL": 0,
-    "SHORTS": 91
+    "SHORTS": 90
    },
-   "age_days": 8,
+   "age_days": 9,
    "youtube_id": "yxnz4y441t4"
   },
   {
@@ -826,57 +815,58 @@
     "YT_OTHER_PAGE": 2,
     "SHORTS": 91
    },
-   "age_days": 7,
+   "age_days": 8,
    "youtube_id": "bciNKzWrsHk"
   },
   {
    "title": "Why Plane Wings Don't Freeze at Minus 50 Degrees",
    "type": "long",
    "style": "Before vs now: how this used to work vs what just changed",
-   "views": 10,
+   "views": 11,
    "averageViewPercentage": 43.43,
    "likes": 1,
    "comments": 0,
    "shares": 0,
    "subscribersGained": 0,
    "format": "big question",
-   "score": 0.86,
+   "score": 0.87,
    "notes": [
     "Jo log aaye unhon ne achhi dekhi, lekin bohat kam log aaye: topic/title/thumbnail ne kashish nahi ki."
    ],
    "traffic": {
-    "NO_LINK_OTHER": 10,
-    "YT_CHANNEL": 30,
-    "YT_SEARCH": 30,
-    "RELATED_VIDEO": 30
+    "NO_LINK_OTHER": 9,
+    "YT_CHANNEL": 27,
+    "YT_SEARCH": 36,
+    "RELATED_VIDEO": 27
    },
-   "age_days": 6,
+   "age_days": 7,
    "youtube_id": "74vcxIbIMTk"
   },
   {
    "title": "How NASA's Parker Solar Probe Survives the Sun's Atmosphere #shorts",
    "type": "short",
    "style": "Explainer: one big question, answered step by step with a surprise at the end",
-   "views": 1245,
-   "averageViewPercentage": 68.44,
-   "likes": 29,
+   "views": 1258,
+   "averageViewPercentage": 68.62,
+   "likes": 30,
    "comments": 0,
    "shares": 0,
    "subscribersGained": 3,
    "format": "news",
-   "score": 1.01,
+   "score": 1.02,
    "notes": [
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
-    "Sab se zyada log 5.2s par chhod gaye (5.2% gire) - wahan line thi: \"The Parker Solar Probe touches the Sun while enduring temperatures exceeding one\"."
+    "Sab se zyada log 5.2s par chhod gaye (5.1% gire) - wahan line thi: \"The Parker Solar Probe touches the Sun while enduring temperatures exceeding one\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "YT_CHANNEL": 0,
-    "YT_SEARCH": 6,
+    "YT_SEARCH": 7,
+    "RELATED_VIDEO": 0,
     "YT_OTHER_PAGE": 1,
-    "SHORTS": 93
+    "SHORTS": 92
    },
-   "age_days": 6,
+   "age_days": 7,
    "youtube_id": "0U0O-P43MNQ"
   },
   {
@@ -884,7 +874,7 @@
    "type": "short",
    "style": "Myth vs fact: what people assume vs what is actually true",
    "views": 1114,
-   "averageViewPercentage": 62.480000000000004,
+   "averageViewPercentage": 62.32,
    "likes": 9,
    "comments": 1,
    "shares": 0,
@@ -902,15 +892,15 @@
     "YT_OTHER_PAGE": 1,
     "SHORTS": 95
    },
-   "age_days": 5,
+   "age_days": 6,
    "youtube_id": "ReBCD46L--8"
   },
   {
    "title": "How SpaceX's Tower Catches Starship Boosters Mid-Air #shorts",
    "type": "short",
    "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
-   "views": 575,
-   "averageViewPercentage": 52.7,
+   "views": 583,
+   "averageViewPercentage": 52.23,
    "likes": 17,
    "comments": 0,
    "shares": 0,
@@ -918,8 +908,9 @@
    "format": "news",
    "score": 0.84,
    "notes": [
+    "Log jaldi chhod gaye: hook ya shuru ka hissa kamzor tha.",
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
-    "Sab se zyada log 6.2s par chhod gaye (7.8% gire) - wahan line thi: \"Instead, two giant steel arms on the launch tower grab it out of the sky.\"."
+    "Sab se zyada log 6.2s par chhod gaye (7.7% gire) - wahan line thi: \"Instead, two giant steel arms on the launch tower grab it out of the sky.\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
@@ -927,36 +918,85 @@
     "YT_CHANNEL": 0,
     "YT_SEARCH": 4,
     "YT_OTHER_PAGE": 2,
-    "SHORTS": 94
+    "SHORTS": 93
    },
-   "age_days": 4,
+   "age_days": 5,
    "youtube_id": "wdrn65HCe8w"
   },
   {
    "title": "How the EU Pancreatic Cancer Breakthrough Works #shorts",
    "type": "short",
    "style": "Explainer: one big question, answered step by step with a surprise at the end",
-   "views": 19,
-   "averageViewPercentage": 71,
+   "views": 34,
+   "averageViewPercentage": 81.6,
    "likes": 1,
    "comments": 0,
    "shares": 0,
    "subscribersGained": 0,
    "format": "news",
-   "score": 0.73,
+   "score": 0.85,
    "notes": [
     "Jo log aaye unhon ne achhi dekhi, lekin bohat kam log aaye: topic/title/thumbnail ne kashish nahi ki.",
-    "Sab se zyada log 6.0s par chhod gaye (30.0% gire) - wahan line thi: \"Now, the European Union approved a brand-new approach.\"."
+    "Sab se zyada log 6.0s par chhod gaye (16.7% gire) - wahan line thi: \"Now, the European Union approved a brand-new approach.\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
-    "YT_CHANNEL": 5,
-    "YT_SEARCH": 53,
-    "YT_OTHER_PAGE": 11,
+    "YT_CHANNEL": 3,
+    "YT_SEARCH": 50,
+    "YT_OTHER_PAGE": 15,
     "SHORTS": 32
    },
-   "age_days": 3,
+   "age_days": 4,
    "youtube_id": "EE1rIW98gto"
+  },
+  {
+   "title": "How Starlink Direct-to-Cell Tech Bypasses Dead Zones #shorts",
+   "type": "short",
+   "style": "Myth vs fact: what people assume vs what is actually true",
+   "views": 53,
+   "averageViewPercentage": 44.17,
+   "likes": 1,
+   "comments": 0,
+   "shares": 0,
+   "subscribersGained": 0,
+   "format": "news",
+   "score": 0.61,
+   "notes": [
+    "Log jaldi chhod gaye: hook ya shuru ka hissa kamzor tha.",
+    "Sab se zyada log 4.8s par chhod gaye (8.3% gire) - wahan line thi: \"Starlink satellites now connect standard mobile phones straight from orbit.\"."
+   ],
+   "traffic": {
+    "NO_LINK_OTHER": 0,
+    "YT_SEARCH": 21,
+    "YT_OTHER_PAGE": 6,
+    "SHORTS": 74
+   },
+   "age_days": 3,
+   "youtube_id": "n-STASASC2k"
+  },
+  {
+   "title": "Why Electric Vehicle Batteries Last So Long #shorts",
+   "type": "short",
+   "style": "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
+   "views": 142,
+   "averageViewPercentage": 83.32,
+   "likes": 1,
+   "comments": 0,
+   "shares": 1,
+   "subscribersGained": 0,
+   "format": "news",
+   "score": 0.96,
+   "notes": [
+    "Jo log aaye unhon ne achhi dekhi, lekin bohat kam log aaye: topic/title/thumbnail ne kashish nahi ki.",
+    "Sab se zyada log 20.2s par chhod gaye (3.0% gire) - wahan line thi: \"If battery chemistry surprises you, Tomorrowly has plenty more like it.\"."
+   ],
+   "traffic": {
+    "NO_LINK_OTHER": 1,
+    "YT_SEARCH": 6,
+    "SHORTS": 94
+   },
+   "age_days": 3,
+   "youtube_id": "7w9fmOy9IXQ"
   }
  ]
 }
