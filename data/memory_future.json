@@ -41,7 +41,8 @@
   "Starlink satellites now connect standard mobile phones straight from orbit.",
   "Modern electric car batteries are projected to outlive the vehicles they power.",
   "Nuclear submarines stay submerged for months without ever surfacing for fresh air.",
-  "UC San Diego engineers just built the fastest soft robot ever created."
+  "UC San Diego engineers just built the fastest soft robot ever created.",
+  "How will SpaceX build massive rockets in zero-G without gravity pulling them out of shape?"
  ],
  "endings": [
   "Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -85,7 +86,8 @@
   "If satellite speeds amaze you, Tomorrowly has plenty more space discoveries like this.",
   "If battery chemistry surprises you, Tomorrowly has plenty more like it.",
   "If you love hidden technology, Tomorrowly has plenty more like this.",
-  "If fluid-powered robotics amaze you, Tomorrowly has plenty more like it."
+  "If fluid-powered robotics amaze you, Tomorrowly has plenty more like it.",
+  "If exploring futuristic space factories excites you, be sure to subscribe to Tomorrowly for more deep dives into the technologies shaping our cosmos."
  ],
  "scripts": [
   "Firing a multi-thousand-dollar missile at a cheap consumer drone is a financial trap. That is why modern defense forces are shifting toward directed-energy systems. KBR has introduced a novel base defense technology to fix this exact problem. The solution relies on weaponized light, deploying concentrated laser beams directly against aerial targets. It is designed to instantly neutralize incoming unmanned aerial vehicles before they reach the perimeter. Send this to the friend who loves tracking future military tech. Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -129,10 +131,10 @@
   "Starlink satellites now connect standard mobile phones straight from orbit. People assume you need a bulky satellite dish or special hardware. Yet standard pocket phones communicate directly with these flying towers. Each spacecraft acts as a floating cell tower traveling at twenty-seven thousand kilometers per hour. That is fast enough to cross the entire United States in less than ten minutes. Cellular dead zones shrink because signals can bypass ground towers. If satellite speeds amaze you, Tomorrowly has plenty more space discoveries like this.",
   "Modern electric car batteries are projected to outlive the vehicles they power. Engineers once expected rapid cell decay. Chemical structures stabilize during fast charging. Better formulas mean your next vehicle chassis wears out first. If battery chemistry surprises you, Tomorrowly has plenty more like it.",
   "Nuclear submarines stay submerged for months without ever surfacing for fresh air. The main limit isn't food or fuel, but making enough breathable oxygen for the crew. Instead of carrying tanks, the ship builds its own air from the ocean itself. Electricity from the nuclear reactor splits sea water molecules apart through electrolysis. That breaks water into hydrogen and pure oxygen gas for the crew. Special chemical scrubbers catch exhaled carbon dioxide so the air stays clean. If you love hidden technology, Tomorrowly has plenty more like this.",
-  "UC San Diego engineers just built the fastest soft robot ever created. It travels at five yards per second with zero batteries. Compressed air pushes through internal channels to drive movement. Elastic instability stores mechanical energy for rapid propulsion. If fluid-powered robotics amaze you, Tomorrowly has plenty more like it."
+  "UC San Diego engineers just built the fastest soft robot ever created. It travels at five yards per second with zero batteries. Compressed air pushes through internal channels to drive movement. Elastic instability stores mechanical energy for rapid propulsion. If fluid-powered robotics amaze you, Tomorrowly has plenty more like it.",
+  "How will SpaceX build massive rockets in zero-G without gravity pulling them out of shape? When you build massive propellant tanks on the ground, gravity pulls them out of shape before they even leave the factory floor. Without gravity forcing metals to sag, engineers can cast flawless structures that are miles wide and impossibly thin. Can we actually lift an entire factory into orbit? How do you actually lift a factory into orbit without spending a billion dollars on fuel? Let's break down the mechanics. The secret lies in the cargo capacity of fully reusable launch systems currently being tested in Texas and Florida. Let's do the math on this payload shift. A single heavy launch delivers roughly 150 metric tons to low Earth orbit. That is the equivalent weight of about thirty five adult elephants hauled into the cosmos in one single flight. How do these modules come together in space? Once modular factory units arrive in orbit, autonomous robotic arms assemble them into a continuous production line. Inside these orbital stations, raw metal stock delivered from Earth or recycled components would be melted down using concentrated solar thermal energy. Without air currents or convection mixing up impurities, metal alloys can solidify with significantly fewer internal defects or microscopic bubbles. But what can go wrong? Here is the catch that the optimistic press releases tend to leave out. Solar radiation destroys sensitive electronics in orbit within months. Shielding a large-scale manufacturing plant from cosmic rays requires thick lead or water barriers that add massive weight penalties. Maintenance crews cannot simply walk outside to fix a jammed valve when micrometeorites punch holes through the hull. When do we test this? Despite these severe engineering hurdles, prototype automated casting chambers are scheduled for initial orbital tests by the late decade. Building rockets in space means humanity is finally stepping off its planetary cradle to build a true interplanetary industrial base. Our estimated outlook for orbital heavy manufacturing sits at around a six out of ten for realistic near-term deployment. The physics are proven, but the economic and radiation hurdles in low Earth orbit remain fiercely difficult to solve. Will this change your everyday life in the next five years? Not yet, because heavy orbital production stays out of consumer reach. If exploring futuristic space factories excites you, be sure to subscribe to Tomorrowly for more deep dives into the technologies shaping our cosmos."
  ],
  "recent_signatures": [
-  "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
   "ALL",
@@ -151,10 +153,10 @@
   "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
-  "THE CATCH"
+  "THE CATCH",
+  "ALL"
  ],
  "recent_styles": [
-  "Before vs now: how this used to work vs what just changed",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Myth vs fact: what people assume vs what is actually true",
   "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
@@ -173,10 +175,10 @@
   "Myth vs fact: what people assume vs what is actually true",
   "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
   "Myth vs fact: what people assume vs what is actually true",
-  "Before vs now: how this used to work vs what just changed"
+  "Before vs now: how this used to work vs what just changed",
+  "Countdown: 3-5 surprising facts about it, the most shocking one last"
  ],
  "recent_themes": [
-  "navy",
   "blueprint",
   "footage",
   "blueprint",
@@ -195,6 +197,7 @@
   "footage",
   "navy",
   "blueprint",
-  "navy"
+  "navy",
+  "blueprint"
  ]
 }

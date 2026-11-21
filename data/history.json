@@ -2640,6 +2640,110 @@
     "concept_share": 0.2,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-21 14:25",
+   "type": "long",
+   "title": "How We Might Someday Build Heavy Rocket Parts in Zero-G",
+   "topic": "How SpaceX Plans to Manufacture Heavy Rocket Parts in Zero-G Orbital Factories",
+   "style": "Countdown: 3-5 surprising facts about it, the most shocking one last",
+   "youtube_id": "3mZqe5gm-0U",
+   "voice": "Charon",
+   "seconds": 169.1,
+   "scene_times": [
+    [
+     0.0,
+     "How will SpaceX build massive rockets in zero-G without gravity pulling them out of shape?"
+    ],
+    [
+     6.0,
+     "When you build massive propellant tanks on the ground, gravity pulls them out of shape bef"
+    ],
+    [
+     13.3,
+     "Without gravity forcing metals to sag, engineers can cast flawless structures that are mil"
+    ],
+    [
+     25.9,
+     "How do you actually lift a factory into orbit without spending a billion dollars on fuel? "
+    ],
+    [
+     33.9,
+     "The secret lies in the cargo capacity of fully reusable launch systems currently being tes"
+    ],
+    [
+     40.9,
+     "Let's do the math on this payload shift. A single heavy launch delivers roughly 150 metric"
+    ],
+    [
+     49.1,
+     "That is the equivalent weight of about thirty five adult elephants hauled into the cosmos "
+    ],
+    [
+     59.7,
+     "Once modular factory units arrive in orbit, autonomous robotic arms assemble them into a c"
+    ],
+    [
+     68.5,
+     "Inside these orbital stations, raw metal stock delivered from Earth or recycled components"
+    ],
+    [
+     78.6,
+     "Without air currents or convection mixing up impurities, metal alloys can solidify with si"
+    ],
+    [
+     92.1,
+     "Here is the catch that the optimistic press releases tend to leave out. Solar radiation de"
+    ],
+    [
+     101.4,
+     "Shielding a large-scale manufacturing plant from cosmic rays requires thick lead or water "
+    ],
+    [
+     110.0,
+     "Maintenance crews cannot simply walk outside to fix a jammed valve when micrometeorites pu"
+    ],
+    [
+     118.7,
+     "Despite these severe engineering hurdles, prototype automated casting chambers are schedul"
+    ],
+    [
+     127.1,
+     "Building rockets in space means humanity is finally stepping off its planetary cradle to b"
+    ],
+    [
+     137.1,
+     "Our estimated outlook for orbital heavy manufacturing sits at around a six out of ten for "
+    ],
+    [
+     144.6,
+     "The physics are proven, but the economic and radiation hurdles in low Earth orbit remain f"
+    ],
+    [
+     151.5,
+     "Will this change your everyday life in the next five years? Not yet, because heavy orbital"
+    ],
+    [
+     159.4,
+     "If exploring futuristic space factories excites you, be sure to subscribe to Tomorrowly fo"
+    ]
+   ],
+   "format": "news",
+   "why": "",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 5,
+    "own_share": 0.25,
+    "own_math": true,
+    "fact_fixes": 4,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -3336,6 +3440,21 @@
   "pixabay-v-345428",
   "pixabay-v-178127",
   "pixabay-v-121537",
-  "pixabay-v-173486"
+  "pixabay-v-173486",
+  "pixabay-v-181515",
+  "nasa-v-MAF_20231218_CS3_LOX AftDome_VAC-Load-TL",
+  "pixabay-v-8349",
+  "pixabay-v-324351",
+  "nasa-v-GSFC_20171206_Parker_m12795_LaserTesting_BROLL",
+  "pixabay-v-72837",
+  "pixabay-v-60195",
+  "pixabay-v-188306",
+  "pixabay-v-5108",
+  "nasa-v-jsc2026m000932_Spacewalk_101_AVAIL1080p",
+  "pixabay-v-1176",
+  "nasa-v-Space-247365",
+  "nasa-v-ARC-20230712-AAV3483-StarlingMission-Overview-NASAWeb-1080p",
+  "pixabay-v-6044",
+  "pixabay-v-25168"
  ]
 }
