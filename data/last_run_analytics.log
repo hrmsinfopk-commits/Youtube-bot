@@ -1,41 +1,42 @@
-[10:30:41] Logged in as YouTube channel: Tomorrowly (subscribers: 36)
-[10:30:42] SEO AUDIT -------------------------------------------
-[10:30:42]   Video: https://youtu.be/n-STASASC2k | public | PT38S
-[10:30:42]   Title (60 chars): How Starlink Direct-to-Cell Tech Bypasses Dead Zones #shorts
-[10:30:42]   Tags (15): SpaceX cellular, Starlink direct to cell, Starlink mobile, Tomorrowly, dead zones eliminated, future technology, global coverage, mobile connectivity, satellite communication, satellite internet, satellite phone technology, space innovation, tech explained, telecom news, wireless tech
-[10:30:42]   Category: 28 | Language: en / en
-[10:30:42]   Description (728 chars), first lines: 'Starlink direct-to-cell technology connects standard mobile phones straight to satellites orbiting Earth, eliminating dead zones without needing a special handset or extra hardware attachments.\n\nBy turning orbiting spacecraft into standard cellular towers in the sky, mobile carriers can finally prov'
-[10:30:42]   Hashtags: #Starlink #Technology #SpaceX #FutureTech | Chapters: no | Credits line: no
-[10:30:42]   Description end: "\nOur latest deep dive: Why Plane Wings Don't Freeze at Minus 50 Degrees\nhttps://youtu.be/74vcxIbIMTk\n\n#Starlink #Technology #SpaceX #FutureTech\n\nFootage: Pixabay\nSome images are AI concept illustrations, not real photos."
-[10:30:42] SEO AUDIT -------------------------------------------
-[10:30:42]   Video: https://youtu.be/7w9fmOy9IXQ | public | PT22S
-[10:30:42]   Title (51 chars): Why Electric Vehicle Batteries Last So Long #shorts
-[10:30:42]   Tags (12): EV battery chemistry, EV battery lifespan, EV battery longevity, battery breakthrough, battery degradation myth, electric car battery life, electric vehicle batteries, future technology, how EV batteries work, new EV technology, science news, tomorrowly
-[10:30:42]   Category: 28 | Language: en / en
-[10:30:42]   Description (804 chars), first lines: 'Electric vehicle batteries are surprising researchers by lasting far longer than the cars themselves. Recent studies in EV battery chemistry reveal that advanced cell designs and better thermal management prevent internal damage during high-speed charging. Understanding these microscopic mechanisms '
-[10:30:42]   Hashtags: #electricvehicles #batteries #futuretech #sciencenews #tomorrowly | Chapters: no | Credits line: yes
-[10:30:42]   Description end: "test deep dive: Why Plane Wings Don't Freeze at Minus 50 Degrees\nhttps://youtu.be/74vcxIbIMTk\n\n#electricvehicles #batteries #futuretech #sciencenews #tomorrowly\n\nFootage: Pixabay\n\nBased on reporting from: Chemistry World"
-[10:30:42] SEO AUDIT -------------------------------------------
-[10:30:42]   Video: https://youtu.be/YZo2-LOkvr8 | public | PT37S
-[10:30:42]   Title (59 chars): How Do Nuclear Submarines Create Oxygen Underwater? #shorts
-[10:30:42]   Tags (15): electrolysis of seawater, how do submariners breathe underwater, how long can submarines stay underwater, how submarines make oxygen, how submarines work, naval engineering, nuclear submarine life support, nuclear submarine technology, nuclear tech, oxygen candles submarine, submarine air purification, submarine electrolysis air, submarine life, submarine oxygen generation, underwater survival
-[10:30:42]   Category: 28 | Language: en / en
-[10:30:42]   Description (765 chars), first lines: 'Nuclear submarines stay submerged for months at a time, but how do submariners breathe underwater without ever surfacing for fresh air? This video explains submarine electrolysis air systems, nuclear submarine life support, and how ships convert sea water into breathable oxygen.\n\nUsing specialized s'
-[10:30:42]   Hashtags: #submarine #tech #science #engineering | Chapters: no | Credits line: no
-[10:30:42]   Description end: "e?\n\nOur latest deep dive: Why Plane Wings Don't Freeze at Minus 50 Degrees\nhttps://youtu.be/74vcxIbIMTk\n\n#submarine #tech #science #engineering\n\nFootage: Pixabay\nSome images are AI concept illustrations, not real photos."
-[10:30:42] SEO AUDIT -------------------------------------------
-[10:30:42]   Video: https://youtu.be/kSZEC4J9GxE | public | PT25S
-[10:30:42]   Title (92 chars): Fastest Soft Robot Moves Without Electronics - How Fluid Dynamics Replaced Batteries #shorts
-[10:30:42]   Tags (15): UC San Diego robot, autonomous soft robot, engineering marvels, fastest soft robot, fluid powered robot, future technology, new technology explained, robot without electronics, robotics explained, robotics news, science news 2026, soft robot, soft robotics, soft robotics breakthrough, tomorrowly
-[10:30:42]   Category: 28 | Language: en / en
-[10:30:42]   Description (880 chars), first lines: 'Engineers at UC San Diego just built the fastest soft robot ever created, achieving record-breaking speed entirely without electronics, batteries, or motors. Discover how fluid dynamics and elastic instability replace traditional wiring in modern soft robotics. What everyday task would you trust a b'
-[10:30:42]   Hashtags: #SoftRobot #Robotics #FutureTech #ScienceNews #Tomorrowly | Chapters: no | Credits line: yes
-[10:30:42]   Description end: '50 Degrees\nhttps://youtu.be/74vcxIbIMTk\n\n#SoftRobot #Robotics #FutureTech #ScienceNews #Tomorrowly\n\nFootage: Pixabay\nSome images are AI concept illustrations, not real photos.\n\nBased on reporting from: UC San Diego Today'
-[10:30:57] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[10:31:12] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[10:31:56] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[10:31:57] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
-[10:33:40] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
-[10:36:40] Gemini error (gemini-flash-latest): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)
-[10:36:46] Gemini OK (gemini-flash-lite-latest)
-[10:36:46] Analytics updated: 40 videos, subs=36, watch_hours_12m=100.7
+[10:35:46] Logged in as YouTube channel: Tomorrowly (subscribers: 37)
+[10:35:46] SEO AUDIT -------------------------------------------
+[10:35:46]   Video: https://youtu.be/YZo2-LOkvr8 | public | PT37S
+[10:35:46]   Title (59 chars): How Do Nuclear Submarines Create Oxygen Underwater? #shorts
+[10:35:46]   Tags (15): electrolysis of seawater, how do submariners breathe underwater, how long can submarines stay underwater, how submarines make oxygen, how submarines work, naval engineering, nuclear submarine life support, nuclear submarine technology, nuclear tech, oxygen candles submarine, submarine air purification, submarine electrolysis air, submarine life, submarine oxygen generation, underwater survival
+[10:35:46]   Category: 28 | Language: en / en
+[10:35:46]   Description (765 chars), first lines: 'Nuclear submarines stay submerged for months at a time, but how do submariners breathe underwater without ever surfacing for fresh air? This video explains submarine electrolysis air systems, nuclear submarine life support, and how ships convert sea water into breathable oxygen.\n\nUsing specialized s'
+[10:35:46]   Hashtags: #submarine #tech #science #engineering | Chapters: no | Credits line: no
+[10:35:46]   Description end: "e?\n\nOur latest deep dive: Why Plane Wings Don't Freeze at Minus 50 Degrees\nhttps://youtu.be/74vcxIbIMTk\n\n#submarine #tech #science #engineering\n\nFootage: Pixabay\nSome images are AI concept illustrations, not real photos."
+[10:35:46] SEO AUDIT -------------------------------------------
+[10:35:46]   Video: https://youtu.be/kSZEC4J9GxE | public | PT25S
+[10:35:46]   Title (92 chars): Fastest Soft Robot Moves Without Electronics - How Fluid Dynamics Replaced Batteries #shorts
+[10:35:46]   Tags (15): UC San Diego robot, autonomous soft robot, engineering marvels, fastest soft robot, fluid powered robot, future technology, new technology explained, robot without electronics, robotics explained, robotics news, science news 2026, soft robot, soft robotics, soft robotics breakthrough, tomorrowly
+[10:35:46]   Category: 28 | Language: en / en
+[10:35:46]   Description (880 chars), first lines: 'Engineers at UC San Diego just built the fastest soft robot ever created, achieving record-breaking speed entirely without electronics, batteries, or motors. Discover how fluid dynamics and elastic instability replace traditional wiring in modern soft robotics. What everyday task would you trust a b'
+[10:35:46]   Hashtags: #SoftRobot #Robotics #FutureTech #ScienceNews #Tomorrowly | Chapters: no | Credits line: yes
+[10:35:46]   Description end: '50 Degrees\nhttps://youtu.be/74vcxIbIMTk\n\n#SoftRobot #Robotics #FutureTech #ScienceNews #Tomorrowly\n\nFootage: Pixabay\nSome images are AI concept illustrations, not real photos.\n\nBased on reporting from: UC San Diego Today'
+[10:35:46] SEO AUDIT -------------------------------------------
+[10:35:46]   Video: https://youtu.be/3mZqe5gm-0U | public | PT2M50S
+[10:35:46]   Title (55 chars): How We Might Someday Build Heavy Rocket Parts in Zero-G
+[10:35:46]   Tags (15): NASA, SpaceX, Starship, aerospace, future manufacturing, heavy rockets, orbit production, orbital assembly, orbital manufacturing, rocket parts, space economy, space factory, space station, space technology, zero gravity
+[10:35:46]   Category: 28 | Language: en / en
+[10:35:46]   Description (774 chars), first lines: "SpaceX is developing methods to manufacture heavy rocket parts directly in zero gravity using orbital factories. This approach could change how we build large spacecraft and heavy launchers in the coming decades.\n\nTraditional rocket manufacturing is limited by Earth's gravity, which warps large meta"
+[10:35:46]   Hashtags: #SpaceX #SpaceTech #OrbitalManufacturing #Starship | Chapters: yes | Credits line: no
+[10:35:46]   Description end: 'ents below.\n\nChapters:\n00:00 The Orbital Shift\n00:25 Heavy Lifting\n00:59 The Zero-G Assembly Line\n01:32 The Radiation Problem\n01:58 The Timeline\n\n#SpaceX #SpaceTech #OrbitalManufacturing #Starship\n\nFootage: Pixabay, NASA'
+[10:35:46] SEO AUDIT -------------------------------------------
+[10:35:46]   Video: https://youtu.be/KU0Xa9nSKuw | public | PT25S
+[10:35:46]   Title (73 chars): How China's Modular Flying Car Solved a Nearly Impossible Dilemma #shorts
+[10:35:46]   Tags (15): Land Aircraft Carrier, XPeng AeroHT, XPeng flying car, autonomous aircraft, aviation tech, drone car, eVTOL aircraft, electric flying car, flying car, flying car 2027, future technology, future transport, modular flying car, new transport technology, urban air mobility
+[10:35:46]   Category: 28 | Language: en / en
+[10:35:46]   Description (643 chars), first lines: "China's new modular flying car bypasses decades of failed aviation experiments by splitting flight and road travel into two distinct vehicles.\n\nThe XPeng AeroHT Land Aircraft Carrier pairs a six-wheeled electric mothership with a detachable autonomous eVTOL aircraft.\n\nWould you ride an autonomous tw"
+[10:35:46]   Hashtags: #flyingcar #eVTOL #futuretech #transportation | Chapters: no | Credits line: yes
+[10:35:46]   Description end: '\nhttps://youtu.be/3mZqe5gm-0U\n\n#flyingcar #eVTOL #futuretech #transportation\n\nFootage: Pixabay\nSome images are AI concept illustrations, not real photos.\n\nBased on reporting from: Interesting Engineering, Travel Tomorrow'
+[10:35:47] Analytics query failed: <HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-10-20&endDate=2026-11-22&metric
+[10:35:57] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[10:35:59] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[10:36:26] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[10:37:59] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[10:38:28] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[10:38:30] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[10:38:32] Gemini OK (gemini-flash-lite-latest)
+[10:38:32] Analytics updated: 40 videos, subs=37, watch_hours_12m=105.0
