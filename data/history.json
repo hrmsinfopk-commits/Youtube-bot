@@ -2795,6 +2795,58 @@
     "concept_share": 0.17,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-22 20:49",
+   "type": "short",
+   "title": "Why SpaceX Wants to Build Rocket Parts in Space #shorts",
+   "topic": "How SpaceX Plans to Manufacture Heavy Rocket Parts in Zero-G Orbital Factories - short teaser of our full video",
+   "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
+   "youtube_id": "8DjpiDivwq8",
+   "voice": "Charon",
+   "seconds": 34.3,
+   "scene_times": [
+    [
+     0.0,
+     "SpaceX is designing zero-gravity orbital factories to build massive rocket parts."
+    ],
+    [
+     6.3,
+     "Building in space means no heavy metal molds."
+    ],
+    [
+     10.1,
+     "Without gravity, liquid metal behaves differently, which can help shape certain structures"
+    ],
+    [
+     15.6,
+     "This could help reduce internal flaws that normally crack rockets under pressure."
+    ],
+    [
+     21.0,
+     "The catch is launching raw materials costs thousands of dollars per kilo."
+    ],
+    [
+     27.0,
+     "If orbital factories become reality, manufacturing in space may change forever."
+    ]
+   ],
+   "format": "teaser",
+   "why": "Teaser for our newest long video",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics_added": 1,
+    "graphics": 1,
+    "own_share": 0.14,
+    "fact_fixes": 3,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -3511,6 +3563,13 @@
   "pixabay-v-149878",
   "pixabay-v-337459",
   "pixabay-v-336755",
-  "pixabay-v-144920"
+  "pixabay-v-144920",
+  "nasa-v-MAF_20200108_CS1 rollout-1min Cut-FINAL-UHD",
+  "pixabay-v-240",
+  "pixabay-v-146301",
+  "pixabay-v-337950",
+  "nasa-v-MSFC_2020_XP_SLS_V_0130_PD002-Test-Case-TTF-4697 LOX Tank Test-to-Failure color-1_06242020_timelapse",
+  "pixabay-v-189457",
+  "pixabay-v-210886"
  ]
 }
