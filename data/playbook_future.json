@@ -1,86 +1,76 @@
 {
  "shorts_rules": [
-  "Name the core subject and make the central topic clear within the first 3 seconds to prevent early drop-off.",
-  "Avoid dropping heavy technical jargon or data points in the first 5 seconds; establish the premise before introducing statistics.",
-  "Use a narrative problem-solution arc, systematically disproving or explaining alternatives before reaching the final engineering payoff.",
-  "Make abstract figures feelable by converting them into physical scales, everyday distances, or direct material comparisons.",
-  "Structure the sign-off with fresh, unique wording every time that naturally prompts a comment or response rather than relying on generic CTAs.",
-  "Keep the script tightly paced between 2.5 and 3.5 words per second to ensure clear articulation without dragging.",
-  "Build tension in the opening beats by combining visual shocks, surprising contradictions, or counter-intuitive premises."
+  "State the core conflict, mystery, or shocking scale immediately in the first sentence without filler or slow setup.",
+  "Make any technical numbers or scales feelable by comparing them instantly to familiar objects or everyday distances.",
+  "Keep narration pacing brisk between 2.8 and 3.5 words per second to maintain high viewer retention.",
+  "Break down complex engineering or scientific concepts into simple, chronological step-by-step problem-solving beats.",
+  "Avoid technical jargon or dry engineering specs in early sentences, substituting them with tangible physical stakes.",
+  "Never use recycled catchphrases or generic channel sign-offs; write a fresh, specific question or observation mentioning Tomorrowly every time.",
+  "Transition from the hook to the clear topic within the first 3 to 7 seconds to prevent early viewer drop-off."
  ],
  "visual_sound_notes": [
-  "Pair voice-over narration with synchronized 3D animations or real tracking footage that matches every script beat instantly.",
-  "Use dynamic captions featuring mixed-case fonts, high-contrast keyword highlights, and minimal words per frame to sustain attention.",
-  "Maintain an active cut rate averaging between 1.5 and 3.5 cuts per 10 seconds to keep visual momentum steady without inducing fatigue.",
-  "Layer tense or curious ambient electronic background tracks underneath crisp, authoritative voiceovers paired with realistic mechanical and environmental sound effects."
+  "Use large, uppercase, multi-colored captions with 2 to 4 words per frame and highlight key words in red or yellow.",
+  "Maintain an average of 2.5 to 3.5 cuts per 10 seconds to keep visual momentum synchronized with the voice-over narration.",
+  "Pair high-impact moments, impacts, and transitions with distinct mechanical or cinematic sound effects.",
+  "Layer tense or upbeat cinematic documentary background music cleanly underneath upfront, crisp voice-over tracks."
  ],
  "typical": {
-  "seconds": 32,
-  "words_per_second": 3.0,
-  "cuts_per_10_seconds": 2.2
+  "seconds": 30,
+  "words_per_second": 3.1,
+  "cuts_per_10_seconds": 3.0
  },
- "summary_roman_urdu": "Is mahine viral Shorts mein yeh baat samne aayi hai ke log high-stakes engineering, weird scientific anomalies, aur visual shocks ko sab se zyada pasand karte hain. Hamari pichhli videos mein ghalti yeh ho rahi thi ke hum shuru ke kuch seconds mein hi bohat zyaada technical ya heavy terms bol dete hain, jis ki wajah se 5 se 9 seconds ke darmiyan log video chhod kar chalay jaate hain. Hamein shuruat mein topic ko aasan aur hook-based rakhna hoga taake viewer ka interest ban jaye. Aakhri sign-off mein generic baatein karne ke bajaye koi aisa sawal ya fresh wording use karni chahiye jo comment section ko engage kare. Saath hi, titles aur topics ko aur zyada relatable aur catchy banana hoga taake impression se log click karne par majboor ho jayein.",
- "updated": "2026-11-16",
+ "summary_roman_urdu": "Is mahine viral hone wali shorts mein visual shock, immediate conflict, aur scale ki zabardast kashish dekhi gayi hai jo shuru ke kuch seconds mein viewer ko baandh leti hai. Humari pichhli videos mein drop-off aksar shuruati lines ya dry technical specs (jaise hydraulic lines ya batteries) ki wajah se huya, jisse log jaldi chhod gaye. Hamein titles aur topics ko zyada kashish-daar (attractive) banana hoga taake CTR behtar ho. Aakhri sign-off mein generic sentences ki jagah hamesha ek naya, fresh sawal ya observation rakhna zaroori hai taake comments barh sakein.",
+ "updated": "2026-11-23",
  "studied": [
   {
-   "title": "The whole rocket flies right past the camera 🚀",
-   "views": 21825904,
-   "id": "d1BscKfgSAE"
+   "title": "Last Words Of Lady Pilot",
+   "views": 13639174,
+   "id": "wQZPZCY30hQ"
   },
   {
-   "title": "Diwali Rocket Real Range !!",
-   "views": 13006647,
-   "id": "ZINUrTy0fP0"
+   "title": "Your Flashlight vs. Voyager 1",
+   "views": 13466077,
+   "id": "CWiJcimMA4Q"
   },
   {
-   "title": "WHY Does This Lightning Look ALIVE ?⚡          #Shorts #Physics #Science #Electricity #Plasma #viral",
-   "views": 12006413,
-   "id": "ZLmikC4kP1c"
-  },
-  {
-   "title": "😱 1400 साल पुराना ये पुल आज भी कैसे खड़ा है? 🌉🔥 #short #shorts #youtubeshorts",
-   "views": 10091719,
-   "id": "LlKYh94zq1w"
+   "title": "How a Sky Rocket Works!",
+   "views": 10611890,
+   "id": "ccuLAcaY4V4"
   },
   {
    "title": "The Black Hole That Makes Stars",
-   "views": 9178276,
+   "views": 9647310,
    "id": "INmLPyGjsMI"
   },
   {
-   "title": "How a USB-C Cable Really Works 🔌 #shorts",
-   "views": 8052952,
-   "id": "1Ug_sjO1zrA"
-  },
-  {
-   "title": "Why NASA Is Paying to Destroy the ISS",
-   "views": 7857364,
-   "id": "p0EqvHzr_X4"
-  },
-  {
-   "title": "Ancient Engineering Bridge",
-   "views": 6644296,
-   "id": "EQbHrm9Z2Zw"
-  },
-  {
-   "title": "NVIDIA's 50-Pound GPU Monster Is Mind-Blowing 🤯 #nvidia #shorts",
-   "views": 6629850,
-   "id": "xTZolWPAXcE"
-  },
-  {
-   "title": "100 Floor Wali Vishaal Building Ko Kaise Bachaya Gaya? 😱 | Engineering Secrets #shorts",
-   "views": 6335573,
-   "id": "x9syArZ2gJk"
-  },
-  {
-   "title": "They Built a Road Around His House! 😱 #shorts #engineering #highway #house #construction #facts",
-   "views": 6046495,
-   "id": "Kzw77xWSF3Q"
-  },
-  {
    "title": "मक्का-मदीना की Bullet Train रेत के पहाड़ को कैसे चीरती है? 😱 #shorts #shortsfeed",
-   "views": 5975968,
+   "views": 6822761,
    "id": "qtyjN3qWmDQ"
+  },
+  {
+   "title": "Aagya GTA VI वाला Wifi 🥹🤩 #viral #trending #gta6 #new #gaming #streaming #gta6gameplay #gta #tech",
+   "views": 6666881,
+   "id": "C1uW8UalRCI"
+  },
+  {
+   "title": "Train coupling #science #fun #shorts #entertainment",
+   "views": 6404537,
+   "id": "MYhRPbloqkE"
+  },
+  {
+   "title": "Does This ₹10,000 Robot Actually Work?",
+   "views": 6364366,
+   "id": "BNAreEtYseM"
+  },
+  {
+   "title": "The World's Biggest Sky Shot! #science #shorts",
+   "views": 5861195,
+   "id": "qrySSk5aO28"
+  },
+  {
+   "title": "How submarine works #science #fun #shorts #entertainment",
+   "views": 5386495,
+   "id": "NFsLFx0I264"
   }
  ]
 }

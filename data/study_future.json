@@ -1,165 +1,120 @@
 [
  {
-  "id": "d1BscKfgSAE",
-  "title": "The whole rocket flies right past the camera 🚀",
-  "channel": "Spaceflightpedia",
-  "channel_id": "UCFDkPCGP4I44wjj561xPX-Q",
-  "views": 21825904,
-  "seconds": 15,
-  "published": "2026-10-22",
+  "id": "wQZPZCY30hQ",
+  "title": "Last Words Of Lady Pilot",
+  "channel": "Facts' Mine",
+  "channel_id": "UCC6gbNO098rkQKCU0ZaLITQ",
+  "views": 13639174,
+  "seconds": 63,
+  "published": "2026-11-05",
   "analysis": {
-   "first_line": "[Countdown audio] 10, 9, 8, 7, 6, 5, 4, 3, 2, 1... liftoff!",
-   "seconds_until_topic_is_clear": 2,
-   "hook_type": "visual shock",
+   "first_line": "A plane crashed straight into the ground from 1000km/h speed",
+   "seconds_until_topic_is_clear": 3,
+   "hook_type": "shocking number + visual shock",
    "beats": [
-    "Visual hook: Emergency egress baskets slide down cables right next to the Artemis rocket",
-    "Tension builds as launch countdown syncs with the baskets descending",
-    "Engine ignition erupts directly adjacent to the sliding baskets",
-    "Payoff: Gondola speeds through the billowing smoke and fireball as rocket clears pad"
+    "hook with high speed crash claim",
+    "introduces the 9 passengers and the tragic incident",
+    "shows flight route from Texas to Florida with duration",
+    "audio replay of pilot calling Mayday and rapid descent",
+    "climax with final scream and dramatic crash footage"
    ],
-   "length_seconds": 15,
-   "words_per_second": 0.0,
-   "key_number_and_how_it_is_made_feelable": "A 10-second countdown felt through real-time descending gondolas rushing away from an impending rocket blast",
-   "what_the_viewer_learns": "A dramatic conceptual visualization of the launchpad Emergency Egress System (EES) zipline baskets during an abort scenario",
+   "length_seconds": 63,
+   "words_per_second": 3.1,
+   "key_number_and_how_it_is_made_feelable": "10,000 to 20,000 feet per minute descent rate visualized with graphics and audio logs",
+   "what_the_viewer_learns": "Details of the Learjet 60 crash in Florida on November 1st",
    "language_level": "simple",
    "tone": "dramatic",
-   "ending": "gondola basket zips through dense smoke past camera",
-   "visual_style": "Photorealistic 3D CGI simulation using a single continuous tracking shot",
-   "cuts_per_10_seconds": 0.0,
-   "captions": "None",
-   "sound": "NASA countdown radio transmission, heavy rocket engine rumble, and screaming passenger SFX",
+   "ending": "shows aftermath of the crash and explosion",
+   "visual_style": "mixed - talking head, stock graphics, map animations, and real crash/aftermath footage",
+   "cuts_per_10_seconds": 3.2,
+   "captions": "large, uppercase, multi-colored (red and white), 2-4 words at once, key words highlighted",
+   "sound": "tense background music, air traffic control audio logs, explosion sound effects",
    "why_it_works": [
-    "Wild visual spectacle combining extreme thrill-ride dynamics with authentic space hardware",
-    "Seamless photorealistic rendering that makes a surreal scenario look shockingly plausible",
-    "Built-in tension from the synchronized countdown leading directly into engine ignition"
+    "Strong emotional hook with rapid escalation",
+    "Integration of real ATC audio makes it very immersive",
+    "Fast pacing keeps attention high throughout"
    ],
    "weak_points": [
-    "Lacks text or commentary clarifying that this is a 3D animation of the pad abort concept rather than real footage"
+    "Initial speed claim of 1000km/h is exaggerated for a Learjet 60"
    ]
   }
  },
  {
-  "id": "ZINUrTy0fP0",
-  "title": "Diwali Rocket Real Range !!",
-  "channel": "FWS",
-  "channel_id": "UCJRQS48aF9UTBwLIAidT2uQ",
-  "views": 13006647,
-  "seconds": 57,
-  "published": "2026-10-22",
+  "id": "CWiJcimMA4Q",
+  "title": "Your Flashlight vs. Voyager 1",
+  "channel": "Past the Blue",
+  "channel_id": "UC3efatI8kxybfYZWC_2pM6w",
+  "views": 13466077,
+  "seconds": 66,
+  "published": "2026-11-16",
   "analysis": {
-   "first_line": "आज धागे से पता करेंगे कि दिवाली रॉकेट की रेंज कितनी होती है",
-   "seconds_until_topic_is_clear": 2,
-   "hook_type": "named subject + promise",
+   "first_line": "On November 17, NASA wants you to aim a flashlight at the sky",
+   "seconds_until_topic_is_clear": 5,
+   "hook_type": "named subject + call to action / mystery",
    "beats": [
-    "Hook: Promising to measure a Diwali rocket's true height using kite string",
-    "Setup: Tying string to the rocket stick and spreading it out on the terrace",
-    "Safety prep: Snapping off explosive tip so it doesn't burst",
-    "Attempt 1: Rocket veers off course and string snaps",
-    "Attempt 2: Rocket launches straight up successfully trailing the thread",
-    "Retrieval & measurement: Gathering the thread and looping it between pillars to calculate length",
-    "Payoff: Exact height revealed with graphics (36.5 meters / 120 feet)"
+    "hook: NASA invites public to flash light towards Voyager 1",
+    "establishes incredible scale: light takes a day to reach Voyager 1",
+    "explains 2023 glitch: 70s computer memory chip died, engineers worked around it",
+    "puts distance in perspective: 1 light-day away, farther than anything humans built",
+    "payoff: your flashlight beam would cover the distance in one day"
    ],
-   "length_seconds": 56,
-   "words_per_second": 2.7,
-   "key_number_and_how_it_is_made_feelable": "36.5 meters (120 feet), made feelable by visually counting looped thread spans between rooftop pillars and a final flight path graphic diagram",
-   "what_the_viewer_learns": "How high a standard consumer Diwali rocket actually flies, and a clever low-tech method to measure projectile height",
-   "language_level": "simple",
-   "tone": "energetic",
-   "ending": "summary",
-   "visual_style": "real footage",
-   "cuts_per_10_seconds": 4.1,
-   "captions": "none during speech; clear bold graphical callout and text at the final reveal",
-   "sound": "Energetic upbeat background track, realistic rocket launch sound effects, enthusiastic narration mixed cleanly over audio",
-   "why_it_works": [
-    "Answers an extremely relatable, untapped childhood curiosity about everyday fireworks",
-    "Including the failed first attempt builds anticipation and establishes authenticity",
-    "Satisfying DIY methodology makes the final answer feel earned rather than arbitrary"
-   ],
-   "weak_points": [
-    "No auto-captions during speech reduces engagement for viewers watching on mute",
-    "Removing the explosive head changes rocket weight/aerodynamics, which isn't acknowledged in the final calculation"
-   ]
-  }
- },
- {
-  "id": "ZLmikC4kP1c",
-  "title": "WHY Does This Lightning Look ALIVE ?⚡          #Shorts #Physics #Science #Electricity #Plasma #viral",
-  "channel": "Cosmic Thrust ",
-  "channel_id": "UChxidSpJ3ENEwRBRO9rw5jw",
-  "views": 12006413,
-  "seconds": 6,
-  "published": "2026-10-22",
-  "analysis": {
-   "first_line": "If you think lightning only strikes down, think again.",
-   "seconds_until_topic_is_clear": 2,
-   "hook_type": "contradiction / visual shock",
-   "beats": [
-    "hooks with surprising lightning direction",
-    "defines phenomenon as ultra-rare plasma discharge",
-    "gives temperature with comparison",
-    "states scientific challenge",
-    "concludes with quick disappearance"
-   ],
-   "length_seconds": 6,
-   "words_per_second": 7.3,
-   "key_number_and_how_it_is_made_feelable": "50,000°F (-28,000°C), five times hotter than the Sun",
-   "what_the_viewer_learns": "that rare plasma discharges can look humanoid and reach extreme temperatures",
+   "length_seconds": 65,
+   "words_per_second": 3.1,
+   "key_number_and_how_it_is_made_feelable": "1 light-day distance compared step-by-step through Moon, Jupiter, Neptune to Voyager",
+   "what_the_viewer_learns": "Voyager 1 is so far away its signal takes a full day, and a clever engineer fix saved it in 2023",
    "language_level": "simple",
    "tone": "dramatic documentary",
-   "ending": "abrupt finish on visual",
-   "visual_style": "real footage matching the spoken text directly",
-   "cuts_per_10_seconds": 0.0,
-   "captions": "medium size, mixed case, white text with highlighted yellow keywords",
-   "sound": "dramatic storm sound effects combined with loud thunder matching the visual sparks",
+   "ending": "sense of awe about Voyager's 49-year journey",
+   "visual_style": "3D animation matching the script perfectly",
+   "cuts_per_10_seconds": 2.3,
+   "captions": "medium size, uppercase, white with highlighted words in yellow",
+   "sound": "cinematic atmospheric space music with clear narration",
    "why_it_works": [
-    "striking unusual visual right at the start",
-    "fast pacing matching spoken text to visual action",
-    "compelling science fact with solar comparison"
+    "strong emotional hook involving the viewer directly",
+    "mind-blowing scale comparisons",
+    "satisfying storytelling about human ingenuity"
    ],
    "weak_points": [
-    "very short duration makes it feel rushed"
+    "the call to action date (November 17) might confuse viewers if video is watched at another time"
    ]
   }
  },
  {
-  "id": "LlKYh94zq1w",
-  "title": "😱 1400 साल पुराना ये पुल आज भी कैसे खड़ा है? 🌉🔥 #short #shorts #youtubeshorts",
-  "channel": "STORY BY GAYAJI",
-  "channel_id": "UCMOMdbuxwUow3eZYlCMqO7g",
-  "views": 10091719,
-  "seconds": 91,
-  "published": "2026-10-21",
+  "id": "ccuLAcaY4V4",
+  "title": "How a Sky Rocket Works!",
+  "channel": "The Fact Baaz",
+  "channel_id": "UCB0-JDvUG9NaCJnRmKQ_FQA",
+  "views": 10611890,
+  "seconds": 22,
+  "published": "2026-11-05",
   "analysis": {
-   "first_line": "If you put 3 stone slabs over a river and stand pillars underneath them...",
-   "seconds_until_topic_is_clear": 10,
-   "hook_type": "question + visual animation of bridge building",
+   "first_line": "Jaise hi rocket ka fuse jalaya jata hai...",
+   "seconds_until_topic_is_clear": 2,
+   "hook_type": "visual shock + question/process reveal",
    "beats": [
-    "Simple flat stone bridge over a canal",
-    "Wider canal makes flat bridge weak, needs pillars",
-    "Too many pillars block boats, solution: arch bridge",
-    "Arch bridge is steep for carts, solution: flat deck with railings",
-    "Flood threatens bridge, solution: adding side arches to relieve pressure",
-    "Final Zhaozhou bridge revealed as the ancient engineering masterpiece"
+    "fuse gets lit and spark travels to the base of the rocket",
+    "powder explodes, creating pressure that launches the rocket up",
+    "second fuse continues burning while ascending",
+    "fire reaches the center of the sphere, triggering the final colorful explosion"
    ],
-   "length_seconds": 91,
-   "words_per_second": 3.0,
-   "key_number_and_how_it_is_made_feelable": "Thousand years old (thousands of years of history and engineering evolution)",
-   "what_the_viewer_learns": "How ancient Chinese engineers solved the problems of span, boat clearance, steepness, and flood pressure in bridge building, culminating in the Zhaozhou Bridge design.",
+   "length_seconds": 21,
+   "words_per_second": 3.7,
+   "key_number_and_how_it_is_made_feelable": "none",
+   "what_the_viewer_learns": "how a firework rocket works internally step-by-step from fuse to final explosion",
    "language_level": "simple",
-   "tone": "engaging educational documentary",
-   "ending": "question to the viewer",
-   "visual_style": "3D animation matching the narration step by step, with real bridge photo comparisons",
-   "cuts_per_10_seconds": 0.5,
-   "captions": "large, mixed case, white with red highlight box on title, few words at a time",
-   "sound": "upbeat documentary background music, clear Hindi voiceover",
+   "tone": "calm documentary",
+   "ending": "abrupt finish after the final explosion",
+   "visual_style": "3D animation matching the voiceover narration precisely",
+   "cuts_per_10_seconds": 0.0,
+   "captions": "small, lowercase, white with blurred background bar, one short phrase at a time, no specific word highlighting",
+   "sound": "gentle background music with clear voiceover and sound effects like sparks and explosions",
    "why_it_works": [
-    "Clear progression from problem to solution",
-    "High-quality 3D animations make engineering concepts easy to grasp",
-    "Relatable human and animal elements in the animation"
+    "satisfying 3D cutaway animation of a familiar object",
+    "clear step-by-step chronological explanation",
+    "smooth pacing that keeps attention throughout"
    ],
    "weak_points": [
-    "A bit long for a short at 91 seconds",
-    "Pacing could be tighter in the middle sections"
+    "captions are slightly blurry and hard to read"
    ]
   }
  },
@@ -168,284 +123,39 @@
   "title": "The Black Hole That Makes Stars",
   "channel": "Past the Blue",
   "channel_id": "UC3efatI8kxybfYZWC_2pM6w",
-  "views": 9178276,
+  "views": 9647310,
   "seconds": 63,
   "published": "2026-10-28",
   "analysis": {
    "first_line": "Astronomers almost deleted this line of light as a glitch.",
-   "seconds_until_topic_is_clear": 3,
-   "hook_type": "visual shock + curiosity hook",
+   "seconds_until_topic_is_clear": 7,
+   "hook_type": "mystery / visual shock",
    "beats": [
-    "Hook: Mysterious line of light almost discarded as camera glitch",
-    "Scale reveal: 200,000 light-year long trail of newborn stars",
-    "Analogy: Like an airplane contrail trailing an invisible object",
-    "Investigation: JWST detects a sonic-boom shock wave at 1,000 km/s",
-    "Identity reveal: A runaway supermassive black hole thrown out of its galaxy",
-    "Physics explanation: 3-body galactic merger slingshot mechanism",
-    "Poetic punchline: Black holes usually devour stars; this one gives birth to them"
+    "hook: mysterious light line initially dismissed as glitch",
+    "scale: 200,000 light-years long, made of stars",
+    "investigation: James Webb telescope finds shock wave (sonic boom)",
+    "explanation: runaway supermassive black hole created by 3-galaxy collision",
+    "twist: black hole is not swallowing stars, it's creating them",
+    "ending: punchline and sound effect"
    ],
    "length_seconds": 63,
-   "words_per_second": 3.3,
-   "key_number_and_how_it_is_made_feelable": "1,000 km/s made relatable as 'Earth to the Moon in seven minutes' and 'twice the width of the Milky Way'",
-   "what_the_viewer_learns": "A runaway supermassive black hole ejected by a three-galaxy collision is compressing gas and triggering star formation in its wake.",
+   "words_per_second": 2.7,
+   "key_number_and_how_it_is_made_feelable": "200,000 light-years long, twice the width of the Milky Way, traveling from Earth to Moon in 7 minutes",
+   "what_the_viewer_learns": "A runaway supermassive black hole can leave a trail of newborn stars behind it like a jet contrail.",
    "language_level": "simple",
    "tone": "dramatic documentary",
-   "ending": "poetic contrast punchline ('Black holes are supposed to swallow stars. This one is making them.')",
-   "visual_style": "High-end 3D space animations and visualizations closely matched with real astronomical imagery and quick real-world analogies",
-   "cuts_per_10_seconds": 2.5,
-   "captions": "Center-bottom, bold white sans-serif, 2-4 words per beat, dynamic word replacement",
-   "sound": "Subtle deep atmospheric synth track building wonder, cinematic whoosh sound effects, clear authoritative voiceover",
-   "why_it_works": [
-    "Starts with an intriguing behind-the-scenes mystery of a discovery almost erased as an error",
-    "Translates astronomical scales into intuitive everyday concepts like jet contrails and travel time to the Moon",
-    "Concludes with an unforgettable conceptual inversion (a black hole creating stars rather than eating them)"
-   ],
-   "weak_points": [
-    "Takes over 30 seconds to reveal the central protagonist (the black hole), which may lose impatient viewers looking for immediate answers"
-   ]
-  }
- },
- {
-  "id": "1Ug_sjO1zrA",
-  "title": "How a USB-C Cable Really Works 🔌 #shorts",
-  "channel": "Things Opened",
-  "channel_id": "UCIF5FWPogXDvzpKAInS2eLA",
-  "views": 8052952,
-  "seconds": 73,
-  "published": "2026-10-21",
-  "analysis": {
-   "first_line": "Both of these cables fit your phone, but one costs a few dollars and the other costs 70.",
-   "seconds_until_topic_is_clear": 3,
-   "hook_type": "contradiction / shocking number",
-   "beats": [
-    "Shows two identical-looking cables with a huge price difference",
-    "Explains the internal difference: cheap cable only has basic power/photo wires",
-    "Demonstrates flaws of cheap cable (slow data, interference)",
-    "Shows improvements (shielding, twisting pairs, e-marker chip)",
-    "Explains why long cables need signal boosters",
-    "Summarizes that cheap cable is just the basic first step, leading to the expensive high-speed cable"
-   ],
-   "length_seconds": 72,
-   "words_per_second": 3.1,
-   "key_number_and_how_it_is_made_feelable": "$70 vs a few dollars - stark visual contrast of inside wires",
-   "what_the_viewer_learns": "Why expensive USB-C cables cost more internally (shielding, data pairs, chips)",
-   "language_level": "simple",
-   "tone": "calm documentary",
-   "ending": "congratulations, you built a high-speed cable",
-   "visual_style": "3D animation, exceptionally well matched to audio explanation",
+   "ending": "punchline sound effect and final image of the star-making trail",
+   "visual_style": "high-quality 3D space animation perfectly matching the narration",
    "cuts_per_10_seconds": 1.5,
-   "captions": "medium size, lowercase, white background blocks with black text, 1-3 words at once, dynamically highlighted words",
-   "sound": "upbeat curious tech background music, clear voiceover, subtle mechanical/electric SFX",
+   "captions": "medium size, lowercase/uppercase mix, white text, 1-4 words at once, key words highlighted in red or yellow",
+   "sound": "epic cinematic space music, voice clear and upfront, sound effects for sonic boom and chime at the end",
    "why_it_works": [
-    "X-ray animation instantly demystifies a common everyday mystery",
-    "Pacing is quick and engaging with continuous visual movement",
-    "Simple analogy and step-by-step upgrade path"
+    "strong visual hook of an unexplained line in space",
+    "slow unspooling of a cosmic mystery from glitch to black hole",
+    "great comparisons making astronomical scales graspable"
    ],
    "weak_points": [
-    "A bit fast in technical terminology for casual viewers"
-   ]
-  }
- },
- {
-  "id": "p0EqvHzr_X4",
-  "title": "Why NASA Is Paying to Destroy the ISS",
-  "channel": "Past the Blue",
-  "channel_id": "UC3efatI8kxybfYZWC_2pM6w",
-  "views": 7857364,
-  "seconds": 91,
-  "published": "2026-10-23",
-  "analysis": {
-   "first_line": "NASA is paying SpaceX eight forty-three million dollars to destroy the International Space Station.",
-   "seconds_until_topic_is_clear": 4,
-   "hook_type": "named subject + shocking number + counter-intuitive premise",
-   "beats": [
-    "hook: NASA paying SpaceX $843M to destroy the ISS",
-    "context: size, age, and why it must be retired",
-    "systematic elimination of all alternative options (disassemble, leave it, boost it, blow it up)",
-    "historical parallel: Skylab's uncontrolled crash and litter fine",
-    "the plan: SpaceX vehicle forcing a steep targeted dive",
-    "atmospheric entry and disintegration sequence",
-    "payoff: Point Nemo resting place and mind-bending closing perspective"
-   ],
-   "length_seconds": 90,
-   "words_per_second": 2.6,
-   "key_number_and_how_it_is_made_feelable": "Point Nemo's remoteness: 2,688 km to the nearest land, contrasted with astronauts on the ISS orbiting just 415 km directly overhead.",
-   "what_the_viewer_learns": "Why the ISS cannot simply be pushed away or blown up, and how SpaceX will safely deorbit it into the oceanic spacecraft cemetery Point Nemo.",
-   "language_level": "simple",
-   "tone": "calm documentary",
-   "ending": "poetic trivia / perspective shift",
-   "visual_style": "photorealistic 3D CGI animation perfectly synchronized to every statement",
-   "cuts_per_10_seconds": 2.4,
-   "captions": "bottom-center, bold font with black outline, 2-4 words per beat, yellow highlight on keywords, clean infographic stat badges",
-   "sound": "tense cinematic ambient music bed, subtle space and impact sound effects, crisp and clear narrator voiceover",
-   "why_it_works": [
-    "Methodically answers every intuitive question viewers have ('why not just leave it there or blow it up?').",
-    "High-end custom 3D renders visualize complex orbital mechanics and destructive scenarios clearly.",
-    "Ends with an unforgettable closing fact about astronauts being the closest humans to Point Nemo."
-   ],
-   "weak_points": [
-    "At 90 seconds, the pacing can feel slightly slow for typical high-tempo Shorts audiences."
-   ]
-  }
- },
- {
-  "id": "EQbHrm9Z2Zw",
-  "title": "Ancient Engineering Bridge",
-  "channel": "Fact sheeter 2.0",
-  "channel_id": "UC80wdWhA3p4Ar4gXiblZLYA",
-  "views": 6644296,
-  "seconds": 18,
-  "published": "2026-11-10",
-  "analysis": {
-   "first_line": "If anyone shows the power of ancient engineering, it's this bridge.",
-   "seconds_until_topic_is_clear": 2,
-   "hook_type": "question + visual shock",
-   "beats": [
-    "Hook: Introduce ancient engineering bridge built with wood without nails.",
-    "Demonstration: Small wooden model holding a heavy concrete block.",
-    "Real-world test: Man walking across a larger version over a ditch.",
-    "Construction tutorial: Man assembling the wooden structure piece by piece in a water channel.",
-    "Payoff: Man successfully crossing the self-supporting bridge he just built."
-   ],
-   "length_seconds": 18,
-   "words_per_second": 3.8,
-   "key_number_and_how_it_is_made_feelable": "500 years ago, made feelable by connecting it to Leonardo da Vinci and a dramatic bridge-building demonstration.",
-   "what_the_viewer_learns": "How a self-supporting wooden bridge can be constructed without nails or screws using tension and balance.",
-   "language_level": "simple",
-   "tone": "dramatic",
-   "ending": "summary",
-   "visual_style": "real footage matching the spoken narrative very closely",
-   "cuts_per_10_seconds": 3.3,
-   "captions": "medium size, multi-case, standard video formatting with keyword highlights",
-   "sound": "upbeat background music with clear voiceover and environmental sound effects",
-   "why_it_works": [
-    "Strong visual hook with miniature and full-scale demonstrations.",
-    "Fascinating historical connection to Leonardo da Vinci.",
-    "Clear step-by-step assembly process that satisfies curiosity."
-   ],
-   "weak_points": [
-    "The claim about Leonardo da Vinci inventing this specific bridge is historically debated.",
-    "Rapid cutting in the middle makes the assembly steps slightly rushed."
-   ]
-  }
- },
- {
-  "id": "xTZolWPAXcE",
-  "title": "NVIDIA's 50-Pound GPU Monster Is Mind-Blowing 🤯 #nvidia #shorts",
-  "channel": "VisionX Lab",
-  "channel_id": "UCVCa-_J1CLBzpT52EwuZ3yQ",
-  "views": 6629850,
-  "seconds": 51,
-  "published": "2026-10-31",
-  "analysis": {
-   "first_line": "This NVIDIA GPU is mind blowing",
-   "seconds_until_topic_is_clear": 3,
-   "hook_type": "shocking number + celebrity appearance",
-   "beats": [
-    "hooks with Jensen Huang shaking hands with Elon Musk and 'mind-blowing' claim",
-    "reveals the giant 50-pound A100 processor board on a kitchen counter",
-    "breaks down specs: 8 GPUs, NV links, drill holes, traces, components",
-    "explains airflow and transistor scale",
-    "concludes with bold claim about the world's most powerful computer"
-   ],
-   "length_seconds": 51,
-   "words_per_second": 2.2,
-   "key_number_and_how_it_is_made_feelable": "50 pounds and placed on a kitchen counter to show massive physical scale compared to normal hardware.",
-   "what_the_viewer_learns": "Specs and physical scale of NVIDIA's A100 DGX processor board / supercomputer.",
-   "language_level": "technical",
-   "tone": "dramatic / enthusiastic presentation",
-   "ending": "statement on the most transistors on one computer ever made",
-   "visual_style": "mixed - real footage of Jensen Huang with Elon Musk and kitchen reveal, combined with 3D/rendered manufacturing close-ups that match the narration closely",
-   "cuts_per_10_seconds": 1.8,
-   "captions": "medium size, ALL CAPS, white text with green highlights on key terms like NVIDIA and 50-POUND, 3-5 words at a time",
-   "sound": "dramatic futuristic synth background music, balanced well under a clear, confident voiceover",
-   "why_it_works": [
-    "Uses recognizable figures like Elon Musk and Jensen Huang in the hook",
-    "Unusual physical framing (putting a massive server board on a kitchen counter)",
-    "Rapid-fire impressive specs and manufacturing stats keep attention high"
-   ],
-   "weak_points": [
-    "A100 is an older architecture by now, making the 'just revealed' framing slightly misleading",
-    "Some technical specs go by too fast to digest"
-   ]
-  }
- },
- {
-  "id": "x9syArZ2gJk",
-  "title": "100 Floor Wali Vishaal Building Ko Kaise Bachaya Gaya? 😱 | Engineering Secrets #shorts",
-  "channel": "Undekhi Cheezein",
-  "channel_id": "UCgpD90_m4KkECNMhQ-zzWFw",
-  "views": 6335573,
-  "seconds": 139,
-  "published": "2026-11-03",
-  "analysis": {
-   "first_line": "Imagine if a huge skyscraper leaned to one side – how would you save it from falling?",
-   "seconds_until_topic_is_clear": 5,
-   "hook_type": "question + visual shock",
-   "beats": [
-    "Hook with leaning skyscraper and survival question",
-    "Explain cause: uneven soil and sinking foundation leading to 1.72° tilt",
-    "Engineering investigation and plan: micropiles and concrete injection",
-    "Hydraulic jack lifting and weight transfer",
-    "Permanent steel support installation and payoff: building secured at same angle"
-   ],
-   "length_seconds": 139,
-   "words_per_second": 2.2,
-   "key_number_and_how_it_is_made_feelable": "1.72 degrees tilt, illustrated with diagrams and comparative angles",
-   "what_the_viewer_learns": "How engineers stabilize leaning skyscrapers using micropiles, hydraulic jacks, and permanent steel supports",
-   "language_level": "simple",
-   "tone": "dramatic documentary",
-   "ending": "channel CTA with subscribe button",
-   "visual_style": "mixed real footage and 3D architectural animations, perfectly matching the narration",
-   "cuts_per_10_seconds": 0.4,
-   "captions": "none in video",
-   "sound": "tense dramatic orchestral background music, balanced voiceover, subtle construction sound effects",
-   "why_it_works": [
-    "High-stakes engineering problem with clear dramatic narrative arc",
-    "Strong visual aids combining real footage with clear 3D cutaway diagrams",
-    "Step-by-step breakdown of a complex solution makes engineering accessible"
-   ],
-   "weak_points": [
-    "No burned-in captions for silent viewing"
-   ]
-  }
- },
- {
-  "id": "Kzw77xWSF3Q",
-  "title": "They Built a Road Around His House! 😱 #shorts #engineering #highway #house #construction #facts",
-  "channel": "Annu Facts 3D",
-  "channel_id": "UCBWx1z-MUF1nr9sbAcKOzOA",
-  "views": 6046495,
-  "seconds": 22,
-  "published": "2026-10-23",
-  "analysis": {
-   "first_line": "ek admi ke ghar ke raste mein nayi sadak ban rahi thi, use hatane ke liye company ne 2 crore rupaye ka offer diya lekin usne mana kar diya",
-   "seconds_until_topic_is_clear": 3,
-   "hook_type": "visual shock + named subject/conflict (refused 2 crores offer)",
-   "beats": [
-    "Hook: A man refuses a 2 crore offer to sell his house for a new road.",
-    "Conflict: Engineers build a multi-lane elevated road entirely around his house without destroying it.",
-    "Problem: The only access left is a cement tunnel, but heavy traffic and trucks cause constant shaking, cracks, and sleepless nights.",
-    "Resolution: The man finally leaves the house, regretting his refusal of the money."
-   ],
-   "length_seconds": 21,
-   "words_per_second": 4.1,
-   "key_number_and_how_it_is_made_feelable": "2 crore rupees offered by the company, contrasted with getting zero in the end due to stubbornness.",
-   "what_the_viewer_learns": "A storytelling parable about stubbornness and the hidden dangers of refusing buyouts for urban development projects.",
-   "language_level": "simple",
-   "tone": "dramatic",
-   "ending": "emotional climax where the man leaves empty-handed, leaving the viewer with a moral takeaway.",
-   "visual_style": "mixed (talking head + custom 3D animation matching the story beats)",
-   "cuts_per_10_seconds": 4.8,
-   "captions": "medium size, white text with black outline, capitalized words, 3-5 words at a time",
-   "sound": "dramatic background music with sound effects matching the car traffic and house shaking",
-   "why_it_works": [
-    "Strong 3D animation makes the impossible-sounding scenario instantly understandable.",
-    "High emotional stakes with a relatable conflict between a stubborn individual and massive infrastructure.",
-    "Fast pacing and clear narrative arc from conflict to regret."
-   ],
-   "weak_points": [
-    "The 21-second duration rushes through the middle phase of living inside the surrounded house."
+    "some viewers might want to know the actual name of the galaxy/object"
    ]
   }
  },
@@ -454,40 +164,242 @@
   "title": "मक्का-मदीना की Bullet Train रेत के पहाड़ को कैसे चीरती है? 😱 #shorts #shortsfeed",
   "channel": "FACT RADAR",
   "channel_id": "UCwJIZwjvkGdns6XfZVktS6g",
-  "views": 5975968,
+  "views": 6822761,
   "seconds": 179,
   "published": "2026-10-29",
   "analysis": {
-   "first_line": "Imagine sitting in a bullet train at 300 km/h, and suddenly a 25-story sand dune appears on the tracks.",
-   "seconds_until_topic_is_clear": 8,
-   "hook_type": "question + shocking visual/scenario",
+   "first_line": "Imagine sitting in a high-speed bullet train running at 300 km/h, and suddenly a massive sand dune appears right in front of you.",
+   "seconds_until_topic_is_clear": 10,
+   "hook_type": "visual shock + question",
    "beats": [
-    "hook: bullet train vs sand dune scenario",
-    "introduces the villain: Arabian desert windstorms and extreme heat",
-    "explains why traditional track maintenance fails",
-    "reveals engineering solutions: elevated tracks, walls, and aerodynamic nose",
-    "details engine protection and window coatings",
-    "payoff: successful high-speed desert travel and channel CTA"
+    "Hook: visual of bullet train racing through desert sandstorms",
+    "Problem: Arabian desert sandstorms and heat warp tracks and bury trains",
+    "Solution: concrete slab track, bridges, aerodynamic nose, cyclone filters",
+    "Result: bullet train safely running at 300 km/h across the desert",
+    "Outro: engineering mystery CTA"
    ],
-   "length_seconds": 178,
-   "words_per_second": 3.5,
-   "key_number_and_how_it_is_made_feelable": "300 km/h speed and 50°C heat, contrasted with instant destruction of train parts by fine sand.",
-   "what_the_viewer_learns": "How Haramain high-speed rail in Saudi Arabia overcomes extreme desert sandstorms using advanced civil engineering and aerodynamics.",
+   "length_seconds": 180,
+   "words_per_second": 2.8,
+   "key_number_and_how_it_is_made_feelable": "300 km/h speed and 50 degree heat, felt through dramatic comparisons to buildings and danger levels",
+   "what_the_viewer_learns": "How Saudi Arabia's Haramain high-speed rail overcomes extreme desert conditions.",
    "language_level": "simple",
-   "tone": "dramatic documentary",
-   "ending": "channel CTA to subscribe",
-   "visual_style": "mixed AI-generated/3D animation and dramatic cinematic footage matching the narration very well",
+   "tone": "dramatic",
+   "ending": "channel CTA",
+   "visual_style": "mixed - 3D animations and realistic cinematic footage closely matching the narration",
    "cuts_per_10_seconds": 3.2,
-   "captions": "no open-text captions visible in this clean AI-generated short format",
-   "sound": "dramatic cinematic music, high voiceover volume, rich sound effects for train, wind, and machinery",
-   "why_to_works": [
-    "high stakes extreme environment narrative",
-    "incredible 3D visuals of sandstorms and engineering solutions",
-    "clear problem-solution structure"
+   "captions": "medium size, uppercase, yellow/white colours, 3-5 words at once, key words highlighted",
+   "sound": "epic cinematic background music, loud and clear voiceover, rich sound effects for trains and wind",
+   "why_it_works": [
+    "Strong visual spectacle right from the start",
+    "Clear conflict between nature and technology",
+    "Step-by-step breakdown of engineering solutions"
    ],
    "weak_points": [
-    "video is quite long for a standard Short (nearly 3 minutes)",
-    "heavy reliance on AI visuals might feel repetitive over extended duration"
+    "Video is quite long for a short format",
+    "Some CGI sequences repeat across different points"
+   ]
+  }
+ },
+ {
+  "id": "C1uW8UalRCI",
+  "title": "Aagya GTA VI वाला Wifi 🥹🤩 #viral #trending #gta6 #new #gaming #streaming #gta6gameplay #gta #tech",
+  "channel": "Mahadev Tyagi",
+  "channel_id": "UC8SFy66JbVwPcYhvplWPm1g",
+  "views": 6666881,
+  "seconds": 57,
+  "published": "2026-11-17",
+  "analysis": {
+   "first_line": "Before GTA 6 launched, my Jio box told me I needed to go because Jio's policies made streaming GTA very expensive.",
+   "seconds_until_topic_is_clear": 8,
+   "hook_type": "named subject + relatable fear of high costs / anticipation of GTA 6",
+   "beats": [
+    "Hook about Jio and GTA 6 streaming costs",
+    "Explains old 100 Mbps Jio connection cost vs problem with black fiber",
+    "Switches provider for better speed and white fiber at lower price",
+    "Shows installation process and promotional Spotify offer",
+    "Speed test showing over 300 Mbps download and upload"
+   ],
+   "length_seconds": 57,
+   "words_per_second": 3.2,
+   "key_number_and_how_it_is_made_feelable": "300 Mbps plan delivering actual 340 Mbps download speed shown live on phone screen test.",
+   "what_the_viewer_learns": "How switching internet providers can sometimes give more speed and perks (like Spotify) for less money than major incumbent plans.",
+   "language_level": "simple",
+   "tone": "funny / casual storytelling",
+   "ending": "shows actual speed test results exceeding the promised plan",
+   "visual_style": "real footage mixed with screen recording, matches narration well",
+   "cuts_per_10_seconds": 4.5,
+   "captions": "medium size, all caps, white text with highlight colors on key words, 2-4 words at once",
+   "sound": "upbeat background music nicely balanced with clear voiceover",
+   "why_it_works": [
+    "Relatable tech upgrade narrative tied to a huge gaming event (GTA 6)",
+    "Fast-paced visual changes keeping viewer engaged",
+    "Concrete proof at the end with the speed test results"
+   ],
+   "weak_points": [
+    "Audio could be cleaner during installation scenes",
+    "Some cuts feel slightly abrupt"
+   ]
+  }
+ },
+ {
+  "id": "MYhRPbloqkE",
+  "title": "Train coupling #science #fun #shorts #entertainment",
+  "channel": "Vigyan Recharge",
+  "channel_id": "UCLverqV6G5MER0YXM4LienQ",
+  "views": 6404537,
+  "seconds": 48,
+  "published": "2026-11-10",
+  "analysis": {
+   "first_line": "duniya ke sabse pehle train ke dibbo ko aaps me chain ki mard se joda jata tha",
+   "seconds_until_topic_is_clear": 5,
+   "hook_type": "historical evolution story with visual shock",
+   "beats": [
+    "shows historical chain coupling of train compartments",
+    "explains flaws with chains and sudden stops",
+    "shows transition to buffer and screw coupler",
+    "introduces automatic coupler eliminating manual human risk",
+    "explains final upgrade to tight lock / auto locking mechanisms"
+   ],
+   "length_seconds": 47,
+   "words_per_second": 2.8,
+   "key_number_and_how_it_is_made_feelable": "no big numbers used, evolution timeline implied (1971 shown via archive footage)",
+   "what_the_viewer_learns": "how train carriage coupling systems evolved from manual chains to modern auto-locking systems for safety",
+   "language_level": "simple",
+   "tone": "energetic educational",
+   "ending": "observation challenge to the viewer about modern trains",
+   "visual_style": "mixed 3D animation and historical archive footage matched very well with narrative",
+   "cuts_per_10_seconds": 3.4,
+   "captions": "large, yellow highlights on key words, 3-6 words at once",
+   "sound": "upbeat engaging music, clear voiceover with sound effects on impacts",
+   "why_it_works": [
+    "smooth transitions between 3D simulations and real historical video",
+    "clear progression from problem to solution",
+    "strong visual stakes emphasizing human danger in early tech"
+   ],
+   "weak_points": [
+    "audio balancing could make voice slightly crisper over background music"
+   ]
+  }
+ },
+ {
+  "id": "BNAreEtYseM",
+  "title": "Does This ₹10,000 Robot Actually Work?",
+  "channel": "TECH-iELA Shorts",
+  "channel_id": "UCOTGVctbHD4UJK3R6Evfx9Q",
+  "views": 6364366,
+  "seconds": 54,
+  "published": "2026-11-05",
+  "analysis": {
+   "first_line": "Market mein ek naya robot aaya hai, mummy ko gift karne ke liye",
+   "seconds_until_topic_is_clear": 3,
+   "hook_type": "visual shock + gift angle for a mundane chore",
+   "beats": [
+    "Shows robot and introduces gift idea",
+    "Deliberately makes window dirty to test it",
+    "Preps robot with water and shampoo, plugs in safety rope",
+    "Demonstrates auto-cleaning and remote control",
+    "Shows before-after comparison and explains anti-fall UPS backup",
+    "Discusses pricing (T9 vs T10) and final verdict with funny dog cameo"
+   ],
+   "length_seconds": 54,
+   "words_per_second": 3.1,
+   "key_number_and_how_it_is_made_feelable": "20 minutes anti-fall UPS backup shown visually when hanging on high glass",
+   "what_the_viewer_learns": "How window cleaning robots work, their safety features, and price comparison between T9 and T10 models",
+   "language_level": "simple",
+   "tone": "energetic",
+   "ending": "humorous pet interaction and purchase link drop",
+   "visual_style": "mixed - talking head, hands-on product demo, and screen overlays, high picture-word match",
+   "cuts_per_10_seconds": 3.2,
+   "captions": "medium size, mostly uppercase, white text with highlight colors, 2-5 words at once",
+   "sound": "upbeat background music, well-balanced with clear voiceover, subtle mechanical SFX",
+   "why_it_works": [
+    "Relatable household pain point solved with a cool gadget",
+    "Extreme before-and-after visual proof",
+    "Honest breakdown of pricing options adds credibility"
+   ],
+   "weak_points": [
+    "Electricity cord might be cumbersome in real daily use"
+   ]
+  }
+ },
+ {
+  "id": "qrySSk5aO28",
+  "title": "The World's Biggest Sky Shot! #science #shorts",
+  "channel": "Astro Quest",
+  "channel_id": "UCKwRP-HdqxUml3vY8zWNefA",
+  "views": 5861195,
+  "seconds": 45,
+  "published": "2026-11-07",
+  "analysis": {
+   "first_line": "duniya ka sabse bada sky shot taiyar karne ke liye...",
+   "seconds_until_topic_is_clear": 2,
+   "hook_type": "named subject + visual shock",
+   "beats": [
+    "hook: introduces the world's biggest sky shot (Yonshakudama)",
+    "step-by-step assembly: packing small magic balls inside a giant pot",
+    "layering with paper and charcoal",
+    "sealing the giant shell and weight check (450 kg)",
+    "launch and massive fireworks payoff"
+   ],
+   "length_seconds": 44,
+   "words_per_second": 3.1,
+   "key_number_and_how_it_is_made_feelable": "450 kg weight, shown visually compared to human size and lifted by a crane",
+   "what_the_viewer_learns": "how gigantic Japanese Yonshakudama fireworks shells are constructed layer by layer",
+   "language_level": "simple",
+   "tone": "energetic documentary",
+   "ending": "visual payoff of the giant explosion filling the night sky",
+   "visual_style": "real process footage mixed with final launch video, perfect match with voiceover",
+   "cuts_per_10_seconds": 3.4,
+   "captions": "large, uppercase, yellow and white, 2-4 words at once, key words highlighted",
+   "sound": "upbeat background music balanced with narration and sound effects of hammering and launching",
+   "why_it_works": [
+    "satisfying step-by-step creation process",
+    "extreme scale creates natural curiosity",
+    "spectacular visual payoff at the end"
+   ],
+   "weak_points": [
+    "audio gets slightly muffled during fast music beats"
+   ]
+  }
+ },
+ {
+  "id": "NFsLFx0I264",
+  "title": "How submarine works #science #fun #shorts #entertainment",
+  "channel": "Vigyan Recharge",
+  "channel_id": "UCLverqV6G5MER0YXM4LienQ",
+  "views": 5386495,
+  "seconds": 43,
+  "published": "2026-11-18",
+  "analysis": {
+   "first_line": "ek lohe ka drum lekar aap pani me kood gaye...",
+   "seconds_until_topic_is_clear": 3,
+   "hook_type": "visual shock + direct action challenge",
+   "beats": [
+    "hook: throwing a metal drum into water with a man inside to make a submarine",
+    "shows failure: enemy ship blows it up, water pressure crushes it",
+    "iteration: adds tanks, then redesigns into a capsule shape",
+    "introduces core submarine engineering challenge: engine needs oxygen, but oxygen runs out",
+    "solution development: batteries, then AIP (Air Independent Propulsion)",
+    "payoff: final modern stealth submarine design"
+   ],
+   "length_seconds": 42,
+   "words_per_second": 3.8,
+   "key_number_and_how_it_is_made_feelable": "113 m depth shown on screen with a pressure collapse animation making the danger tangible",
+   "what_the_viewer_learns": "how basic submarine physics work, why pressure crushes crude vessels, and how AIP systems allow underwater engines to run without fresh air",
+   "language_level": "simple",
+   "tone": "energetic",
+   "ending": "reveals the final modern submarine model",
+   "visual_style": "3D animation with step-by-step assembly and cutaway views, perfectly matching the narration",
+   "cuts_per_10_seconds": 1.4,
+   "captions": "medium size, all caps, white text with highlight accents, 3-5 words at a time",
+   "sound": "upbeat curious background music well balanced with voiceover, featuring punchy sound effects for explosions and bubbling",
+   "why_it_works": [
+    "engaging build-up from a silly makeshift idea to real engineering",
+    "clear visual progression with animated problem-solving",
+    "fast pacing that maintains attention"
+   ],
+   "weak_points": [
+    "enemy ship attack feels slightly random and cartoonish compared to the engineering focus"
    ]
   }
  }
