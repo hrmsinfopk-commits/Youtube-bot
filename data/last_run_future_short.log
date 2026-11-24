@@ -1,4 +1,57 @@
-[00:37:03] Channel: Tomorrowly (future, mode=facts)
-/home/runner/work/Youtube-bot/Youtube-bot/bot/main.py:489: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  now = datetime.datetime.utcnow()
-[00:37:03] Back-up run: today's short is already up (Why SpaceX Wants to Build Rocket Parts in Space #shorts) - nothing to do
+[01:34:03] Channel: Tomorrowly (future, mode=facts)
+[01:34:03] Format today: news
+[01:34:12] News headlines collected: 167
+[01:34:15] YouTube videos analysed: 75
+[01:34:38] Gemini OK (gemini-3.8-flash)
+[01:34:42] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[01:34:42] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[01:35:11] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[01:35:16] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tem
+[01:35:41] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[01:35:54] Gemini OK (gemini-flash-latest)
+[01:35:54] Trend topic: Why NASA is Building a Nuclear Reactor on the Moon | why: Space and NASA missions consistently drive the highest views and 150%+ retention rates on Tomorrowly, with space-related Shorts regularly pulling millions of views across YouTube right now. This fresh announcement from NASA offers an irresistible physics paradox with abundant public-domain visuals that no major tech channel has yet tackled as a standalone Short.
+[01:35:54] Short length for 'news': 22 s
+[01:35:54] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[01:35:54] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[01:36:21] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually tempor
+[01:36:21] Gemini error (gemini-flash-latest): gemini-flash-latest: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For m
+[01:36:46] Gemini error (gemini-3.8-flash): gemini-3.8-flash: HTTP 429 {   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more
+[01:36:51] Gemini OK (gemini-flash-lite-latest)
+[01:36:51] Script too long (115 words, target ~45) - tightening
+[01:36:53] Gemini OK (gemini-flash-lite-latest)
+[01:36:53] Script length: 59 words
+[01:36:53] Uniqueness: 96% unique vs previous scripts
+[01:36:53] Script ready: Why NASA is Building a Nuclear Reactor on the Moon (5 scenes)
+[01:36:54] Gemini OK (gemini-flash-lite-latest)
+[01:36:55] Gemini error (gemini-flash-lite-latest): gemini-flash-lite-latest: HTTP 503 {   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usuall
+[01:37:21] Gemini OK (gemini-flash-lite-latest)
+[01:37:21] Gate title fix: Title says 'is building', but the reactor is currently in the planned/partnership phase. | Why NASA is Building a Nuclear Reactor on the Moon -> Why NASA Plans to Build a Nuclear Reactor on the Moon
+[01:37:21] Gate fact fix [0]: Absolute word 'cannot' is not literally true; solar can power temporary or small setups, just not a 
+[01:37:21] Gate fact fix [1]: Absolute word 'Every' is not literally true for a single cycle described.
+[01:37:21] Gate fact fix [3]: Presents planned/partnered reactor construction as currently finished ('is building').
+[01:37:22] Gate (script): {"graphics_added": 1, "graphics": 1, "own_share": 0.19, "fact_fixes": 4, "source_overlap": 0.0, "script_ok": true, "problems": []}
+[01:37:22] Voice: {'engine': 'gemini', 'voice': 'Charon', 'gender': 'male', 'style': 'Read this like a curious, knowledgeable friend explaining something cool: natural American English, warm and confident, lively medium-fast pace (these are short videos), real (not forced) surprise only on the big reveal, clear emphasis on numbers, short natural breaths, never salesy or hyped, never robotic, never like a news anchor'}
+[01:37:31] Gemini TTS OK (gemini-3.1-flash-tts-preview, Charon)
+[01:37:34] Captions aligned to the voice (62 words)
+[01:37:38] Captions aligned to the voice (62 words)
+[01:37:38] Graphics theme: footage
+[01:37:53] Own graphics: 1
+[01:38:08] Picture editor: 54/54 previews loaded
+[01:38:11] Gemini OK (gemini-flash-lite-latest)
+[01:38:15] Gemini OK (gemini-flash-lite-latest)
+[01:38:15] Footage check: kept 2 fitting clips, 2 scenes had nothing fitting
+[01:38:18] Second footage search for 2 scenes
+[01:38:19] Picture editor: 26/26 previews loaded
+[01:38:23] Gemini OK (gemini-flash-lite-latest)
+[01:38:23] Footage check: kept 0 fitting clips, 2 scenes had nothing fitting
+[01:38:32] Skipping clip with burned-in text: WORLD WIDE lunar sci
+[01:38:35] Skipping clip with burned-in text: Credit Stephen Rahn
+[01:38:41] Skipping clip with burned-in text: shrinking growing Credit Nicolas Jouhet
+[01:38:46] Footage ready for 5 scenes
+[01:38:52] Gate (visuals): fit 100%, concept 20%, fallback 0
+[01:38:59] 9 clips rendered
+[01:38:59] Final render started
+[01:39:15] Freesound CC0 music: Suspenseful loop (id 849995)
+[01:39:38] Video ready: 20261124_0138_future_short.mp4 (27.6s)
+[01:39:39] Upload 77%
+[01:39:40] Uploaded: https://youtu.be/klqqkSjZaIc

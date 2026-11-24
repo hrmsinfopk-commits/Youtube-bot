@@ -2847,6 +2847,54 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-24 01:39",
+   "type": "short",
+   "title": "Why NASA Plans to Build a Nuclear Reactor on the Moon #shorts",
+   "topic": "Why NASA is Building a Nuclear Reactor on the Moon - Busting the myth that solar panels can power a permanent Moon base by revealing the brutal reality of the 14-day lunar night—and how NASA's planned Lunar Reactor-1 (LR-1) solves it with a self-contained nuclear fission engine.",
+   "style": "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
+   "youtube_id": "klqqkSjZaIc",
+   "voice": "Charon",
+   "seconds": 27.6,
+   "scene_times": [
+    [
+     0.0,
+     "Solar panels struggle to power a permanent base on the Moon."
+    ],
+    [
+     4.3,
+     "Each lunar night down there lasts fourteen straight days of total darkness."
+    ],
+    [
+     10.6,
+     "That is like carrying a freight train of car batteries inside a rocket."
+    ],
+    [
+     16.0,
+     "Now NASA is partnering to build Lunar Reactor one, a compact fission engine."
+    ],
+    [
+     22.0,
+     "If space nuclear power excites you, Tomorrowly has plenty more tech like this."
+    ]
+   ],
+   "format": "news",
+   "why": "Space and NASA missions consistently drive the highest views and 150%+ retention rates on Tomorrowly, with space-related Shorts regularly pulling millions of views across YouTube right now. This fresh announcement from NASA offers an irresistible physics paradox with abundant public-domain visuals that no major tech channel has yet tackled as a standalone Short.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics_added": 1,
+    "graphics": 1,
+    "own_share": 0.19,
+    "fact_fixes": 4,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.2,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -3570,6 +3618,11 @@
   "pixabay-v-337950",
   "nasa-v-MSFC_2020_XP_SLS_V_0130_PD002-Test-Case-TTF-4697 LOX Tank Test-to-Failure color-1_06242020_timelapse",
   "pixabay-v-189457",
-  "pixabay-v-210886"
+  "pixabay-v-210886",
+  "pixabay-v-42388",
+  "nasa-v-NHQ_2020_0914_Observe the moon promo",
+  "nasa-v-JPL-20191001-WHATSUf-0001-Whats Up October 2019",
+  "nasa-v-ObserveTheMoon_16x9",
+  "nasa-v-JPL-20190901-WHATSUf-0001-Whats Up September 2019"
  ]
 }

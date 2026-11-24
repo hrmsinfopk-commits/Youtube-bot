@@ -1,90 +1,92 @@
 {
- "topic": "How China's Modular Flying Car Actually Works",
- "angle": "Engineers finally solved the 'flying car' paradox not by building a car with clumsy folding wings, but by creating a two-part modular system: a 6-wheeled electric mothership that carries, charges, and launches an autonomous eVTOL straight out of its trunk.",
- "why": "Flying car content is exploding on YouTube right now, with related videos pulling between 1M and 10M views in the past week alone. Fresh reports confirm XPeng AeroHT's modular vehicle is slated for mass delivery by 2027, giving us a timely engineering explainer that avoids generic sci-fi hype.",
+ "topic": "Why NASA is Building a Nuclear Reactor on the Moon",
+ "angle": "Busting the myth that solar panels can power a permanent Moon base by revealing the brutal reality of the 14-day lunar night—and how NASA's planned Lunar Reactor-1 (LR-1) solves it with a self-contained nuclear fission engine.",
+ "why": "Space and NASA missions consistently drive the highest views and 150%+ retention rates on Tomorrowly, with space-related Shorts regularly pulling millions of views across YouTube right now. This fresh announcement from NASA offers an irresistible physics paradox with abundant public-domain visuals that no major tech channel has yet tackled as a standalone Short.",
  "keywords": [
-  "flying car",
-  "XPeng flying car",
-  "eVTOL aircraft",
-  "modular flying car",
-  "future transport",
-  "XPeng AeroHT",
-  "Land Aircraft Carrier",
-  "electric flying car",
-  "flying car 2027",
-  "autonomous aircraft",
-  "future technology",
-  "new transport technology"
+  "NASA Moon reactor",
+  "Lunar Reactor-1",
+  "NASA Artemis Moon base",
+  "nuclear reactor on the Moon",
+  "Moon night duration",
+  "how Moon base gets power",
+  "Artemis base camp electricity",
+  "NASA fission surface power",
+  "space nuclear power",
+  "lunar base energy",
+  "NASA space news",
+  "Artemis mission update"
  ],
  "facts": [
-  "Traditional flying car designs failed for decades because making a machine safe enough for highway crashes makes it too heavy to fly efficiently.",
-  "Chinese mobility firm XPeng AeroHT designed a modular vehicle dubbed the 'Land Aircraft Carrier' to bypass this fundamental engineering dilemma.",
-  "The system splits into two distinct parts: a 6x6 ground vehicle mothership and a detachable electric vertical takeoff and landing (eVTOL) air craft.",
-  "The ground vehicle uses an extended-range electric powertrain with all-wheel drive and rear-wheel steering to handle highway driving.",
-  "The air module is a fully electric two-seater multicopter equipped with six foldable rotor arms and dual-ducted propellers.",
-  "The drone-like air module automatically folds its arms and docks entirely inside the trunk of the ground van.",
-  "While docked, the ground mothership acts as a mobile supercharger, recharging the aircraft's high-voltage battery pack between flights.",
-  "The aircraft features both manual cockpit controls and single-button autonomous flight modes designed for automated route planning, takeoff, and landing.",
-  "XPeng plans to begin mass deliveries and commercial operations of the vehicle by 2027 (claimed/planned).",
-  "By decoupling road certification regulations from aviation airworthiness standards, the modular design allows each vehicle to meet safety rules independently.",
-  "The worldwide flying car industry is projected to experience swift expansion (market forecast).",
-  "A flying vehicle associated with China is claimed to offer a solution for avoiding traffic jams (manufacturer/media claim).",
-  "Escaping road congestion is promoted as a primary benefit of the Chinese flying car (promotional claim)."
+  "NASA officially initiated partnerships with commercial industry to design and construct the first operational nuclear reactor on the Moon, designated Lunar Reactor-1 (LR-1) [planned].",
+  "Unlike Earth, a single lunar 'day-night cycle' lasts approximately 28 Earth days, resulting in roughly 14 consecutive Earth days of sunlight followed by 14 consecutive days of total darkness.",
+  "During the two-week-long lunar night, surface temperatures plummet to minus 130 degrees Celsius (minus 200 degrees Fahrenheit) or lower, rendering standard solar arrays useless for 336 consecutive hours.",
+  "Attempting to store two weeks worth of solar electricity in conventional batteries would require launching hundreds of tons of battery weight from Earth, which is commercially and physically impractical.",
+  "LR-1 is designed as a compact, self-contained fission power system capable of generating at least 40 kilowatts of continuous electricity [planned].",
+  "Forty kilowatts of electrical output is enough to continuously power approximately 30 to 33 typical Earth homes, or sustain life support systems, rover charging, and water-ice mining equipment on the lunar surface.",
+  "NASA requires the reactor system to be light and compact enough to fit inside a commercial lunar lander (under 6 metric tons) [planned].",
+  "The reactor must be capable of operating autonomously without human intervention for a minimum design lifespan of 10 continuous years [planned].",
+  "Nuclear fission generates energy by splitting uranium atoms inside a secure core, providing continuous, weather-independent heat converted into electricity regardless of sunlight or shadowing.",
+  "NASA envisions the technology tested on LR-1 as a direct stepping stone toward powering future crewed habitats on Mars [planned].",
+  "Space-based nuclear technology is currently receiving dedicated industry attention.",
+  "The U.S. Department of Energy provides informational resources concerning fission surface power systems.",
+  "Jared Isaacman has proposed installing a lunar nuclear reactor to boost American space capabilities (pitch/proposal).",
+  "There is a proposal to use nuclear power alongside microorganisms to fabricate Martian dwellings prior to human arrival (concept/claim).",
+  "NASA is pursuing partnerships to design an initial nuclear reactor for the lunar surface (plan).",
+  "NASA aims to send a nuclear-driven rover called PROMISE to the Moon (plan).",
+  "A lunar base framework under NASA is projected to cost $20 billion, requiring 25 launches and three phases across seven years (estimate/plan).",
+  "NASA researchers have developed 3D mapping of California aimed at evaluating wildfire threats.",
+  "The Artemis program is NASA's designated effort to land humans back on the Moon (plan).",
+  "NASA has publicly introduced a nuclear-powered Moon rover known as PROMISE."
  ],
  "long_format": null,
  "format": "news",
  "sources": [
   {
-   "title": "China’s flying car could be in the sky by 2027",
-   "source": "Interesting Engineering",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWGZidGdndXU3ZGd2N2h3Qy1TZTFjV2U2Z05uSnhKRWxVenNBSVMzcDR4ZmFYa0RESExKR3dwd3hla18xblZaVEplazY0bmwyaGNhVktXdllZTWRNWUxMRERSUkdrbGFadkRCSWFTX1JDV2ViLWtTWENzS25CTi1qRlFiU2czMTdHRHRXSmpydUg?oc=5"
-  },
-  {
-   "title": "XPeng’s flying car set to take off in China by summer 2027",
-   "source": "Travel Tomorrow",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUGNGMmt0VFpBeUZRU2xoXzl0MUY4d2pqb0loZURlZmtMT3dCMGNkSzlMQzBQNmctd3gzSm1ZdVExenZJYW9mYjE0SVZZeU5WSVNjRHNHN3RzNXlRNHltMm96djV0Ny1USXVTTVd5RHlGSmU0S29Xak9uQlZQY0hETm81Rjg3eWt6Z0JUVUdR?oc=5"
+   "title": "NASA Seeks Partners to Design First Nuclear Reactor for the Moon",
+   "source": "NASA",
+   "link": "https://www.nasa.gov/directorates/rtmd/nasa-seeks-partners-to-design-first-nuclear-reactor-for-the-moon/"
   }
  ],
  "youtube_top": [
   {
-   "title": "Samsung Galaxy S27 Ultra Cobalt Violet 📱🔥 #noads #tiktok #usa",
-   "views": 31049840
+   "title": "Samsung Galaxy S27 Ultra Cobalt Violet📱🔥#noads #tiktok #usa Part 5",
+   "views": 24867278
+  },
+  {
+   "title": "WE BOUGHT THE MOST EXPENSIVE HOUSE | GTA 5 GAMEPLAY #172",
+   "views": 23913138
   },
   {
    "title": "iPhone Duo Survives 500,000 Folds in Ongoing CNET Lab Test",
-   "views": 13329663
-  },
-  {
-   "title": "Your Flashlight vs. Voyager 1",
-   "views": 13008404
-  },
-  {
-   "title": "Its Just A Flight Radar Glitch Police Cars School Bus and Marshaller near the Airplane",
-   "views": 10485396
+   "views": 23420488
   },
   {
    "title": "How This Device Copies Keys In Seconds",
-   "views": 10380898
+   "views": 14787736
   },
   {
-   "title": "My favorite Smartphone of 2026 (wait to see the insides)",
-   "views": 9760267
+   "title": "Your Flashlight vs. Voyager 1",
+   "views": 13636954
   },
   {
-   "title": "CIA Meeting Cold Open - SNL",
-   "views": 7202803
+   "title": "He scribbled on his CPU with a pencil… and it got 50% faster",
+   "views": 12945859
   },
   {
-   "title": "The FAA Crashes Out Over a Router & Why Is Trump Protecting AI and Jensen Huang? | The Daily Show",
-   "views": 6914500
-  },
-  {
-   "title": "Aagya GTA VI वाला Wifi 🥹🤩 #viral #trending #gta6 #new #gaming #streaming #gta6gameplay #gta #tech",
-   "views": 6357968
+   "title": "I ruined my $1,000 OLED monitor..",
+   "views": 12530893
   },
   {
    "title": "#dbsono #bass #headphones #automobile #tech #speaker",
-   "views": 6199049
+   "views": 10078099
+  },
+  {
+   "title": "We are now in Houston. Everyone is welcome to come and check out this aircraft.",
+   "views": 8521366
+  },
+  {
+   "title": "The FAA Crashes Out Over a Router & Why Is Trump Protecting AI and Jensen Huang? | The Daily Show",
+   "views": 7127922
   }
  ]
 }
