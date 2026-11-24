@@ -2895,6 +2895,58 @@
     "concept_share": 0.2,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-24 23:43",
+   "type": "short",
+   "title": "How Dead Neutron Stars Forge Gold in Space #shorts",
+   "topic": "How an Artificial Kilonova Forges Heavy Elements in Space - Explaining the physics of kilonovas—dead neutron star collisions that forge gold, platinum, and heavy elements—and how amateur astronomers can help catch them using new NASA initiatives.",
+   "style": "Before vs now: how this used to work vs what just changed",
+   "youtube_id": "B-HlK9qN8Wg",
+   "voice": "Charon",
+   "seconds": 31.6,
+   "scene_times": [
+    [
+     0.0,
+     "Dead neutron stars pack city-sized mass into raw cosmic density."
+    ],
+    [
+     6.3,
+     "When two of them crash, they release a flash called a kilonova."
+    ],
+    [
+     10.8,
+     "These titanic impacts forge gold, platinum, and heavy elements."
+    ],
+    [
+     16.1,
+     "These building blocks eventually spread to form planets like Earth."
+    ],
+    [
+     20.3,
+     "Because they fade fast, NASA needs amateur astronomers to act as kilonova catchers."
+    ],
+    [
+     26.2,
+     "If space discoveries excite you, Tomorrowly has plenty more like this."
+    ]
+   ],
+   "format": "news",
+   "why": "Space and astronomy news topics consistently achieve the highest view counts and engagement on our channel, outperforming other categories (similar space videos pull millions of views). This covers a brand new NASA initiative from the past 7 days with zero crowded direct competition for this specific angle.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics_added": 1,
+    "graphics": 1,
+    "own_share": 0.14,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -3623,6 +3675,15 @@
   "nasa-v-NHQ_2020_0914_Observe the moon promo",
   "nasa-v-JPL-20191001-WHATSUf-0001-Whats Up October 2019",
   "nasa-v-ObserveTheMoon_16x9",
-  "nasa-v-JPL-20190901-WHATSUf-0001-Whats Up September 2019"
+  "nasa-v-JPL-20190901-WHATSUf-0001-Whats Up September 2019",
+  "pixabay-v-208281",
+  "nasa-v-GSFC_20181010_FERMI_m13058_Pulsar4K",
+  "pixabay-v-379155",
+  "pixabay-v-218902",
+  "pixabay-v-232205",
+  "pixabay-v-19045",
+  "pixabay-v-31569",
+  "nasa-v-ksc_122104_telescope_program",
+  "pixabay-v-6045"
  ]
 }

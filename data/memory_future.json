@@ -45,7 +45,8 @@
   "How will SpaceX build massive rockets in zero-G without gravity pulling them out of shape?",
   "China's modular flying car docks inside a trunk.",
   "SpaceX is designing zero-gravity orbital factories to build massive rocket parts.",
-  "Solar panels struggle to power a permanent base on the Moon."
+  "Solar panels struggle to power a permanent base on the Moon.",
+  "Dead neutron stars pack city-sized mass into raw cosmic density."
  ],
  "endings": [
   "Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -93,7 +94,8 @@
   "If exploring futuristic space factories excites you, be sure to subscribe to Tomorrowly for more deep dives into the technologies shaping our cosmos.",
   "If modular flight surprises you, Tomorrowly has more ahead.",
   "If orbital factories become reality, manufacturing in space may change forever.",
-  "If space nuclear power excites you, Tomorrowly has plenty more tech like this."
+  "If space nuclear power excites you, Tomorrowly has plenty more tech like this.",
+  "If space discoveries excite you, Tomorrowly has plenty more like this."
  ],
  "scripts": [
   "Firing a multi-thousand-dollar missile at a cheap consumer drone is a financial trap. That is why modern defense forces are shifting toward directed-energy systems. KBR has introduced a novel base defense technology to fix this exact problem. The solution relies on weaponized light, deploying concentrated laser beams directly against aerial targets. It is designed to instantly neutralize incoming unmanned aerial vehicles before they reach the perimeter. Send this to the friend who loves tracking future military tech. Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -141,10 +143,10 @@
   "How will SpaceX build massive rockets in zero-G without gravity pulling them out of shape? When you build massive propellant tanks on the ground, gravity pulls them out of shape before they even leave the factory floor. Without gravity forcing metals to sag, engineers can cast flawless structures that are miles wide and impossibly thin. Can we actually lift an entire factory into orbit? How do you actually lift a factory into orbit without spending a billion dollars on fuel? Let's break down the mechanics. The secret lies in the cargo capacity of fully reusable launch systems currently being tested in Texas and Florida. Let's do the math on this payload shift. A single heavy launch delivers roughly 150 metric tons to low Earth orbit. That is the equivalent weight of about thirty five adult elephants hauled into the cosmos in one single flight. How do these modules come together in space? Once modular factory units arrive in orbit, autonomous robotic arms assemble them into a continuous production line. Inside these orbital stations, raw metal stock delivered from Earth or recycled components would be melted down using concentrated solar thermal energy. Without air currents or convection mixing up impurities, metal alloys can solidify with significantly fewer internal defects or microscopic bubbles. But what can go wrong? Here is the catch that the optimistic press releases tend to leave out. Solar radiation destroys sensitive electronics in orbit within months. Shielding a large-scale manufacturing plant from cosmic rays requires thick lead or water barriers that add massive weight penalties. Maintenance crews cannot simply walk outside to fix a jammed valve when micrometeorites punch holes through the hull. When do we test this? Despite these severe engineering hurdles, prototype automated casting chambers are scheduled for initial orbital tests by the late decade. Building rockets in space means humanity is finally stepping off its planetary cradle to build a true interplanetary industrial base. Our estimated outlook for orbital heavy manufacturing sits at around a six out of ten for realistic near-term deployment. The physics are proven, but the economic and radiation hurdles in low Earth orbit remain fiercely difficult to solve. Will this change your everyday life in the next five years? Not yet, because heavy orbital production stays out of consumer reach. If exploring futuristic space factories excites you, be sure to subscribe to Tomorrowly for more deep dives into the technologies shaping our cosmos.",
   "China's modular flying car docks inside a trunk. Highway crash armor makes dual-purpose vehicles too heavy. So engineers built a rolling supercharger mothership instead. It hauls the weight, launching a lightweight autonomous drone. Deliveries are planned by 2027. If modular flight surprises you, Tomorrowly has more ahead.",
   "SpaceX is designing zero-gravity orbital factories to build massive rocket parts. Building in space means no heavy metal molds. Without gravity, liquid metal behaves differently, which can help shape certain structures. This could help reduce internal flaws that normally crack rockets under pressure. The catch is launching raw materials costs thousands of dollars per kilo. If orbital factories become reality, manufacturing in space may change forever.",
-  "Solar panels struggle to power a permanent base on the Moon. Each lunar night down there lasts fourteen straight days of total darkness. That is like carrying a freight train of car batteries inside a rocket. Now NASA is partnering to build Lunar Reactor one, a compact fission engine. If space nuclear power excites you, Tomorrowly has plenty more tech like this."
+  "Solar panels struggle to power a permanent base on the Moon. Each lunar night down there lasts fourteen straight days of total darkness. That is like carrying a freight train of car batteries inside a rocket. Now NASA is partnering to build Lunar Reactor one, a compact fission engine. If space nuclear power excites you, Tomorrowly has plenty more tech like this.",
+  "Dead neutron stars pack city-sized mass into raw cosmic density. When two of them crash, they release a flash called a kilonova. These titanic impacts forge gold, platinum, and heavy elements. These building blocks eventually spread to form planets like Earth. Because they fade fast, NASA needs amateur astronomers to act as kilonova catchers. If space discoveries excite you, Tomorrowly has plenty more like this."
  ],
  "recent_signatures": [
-  "THE CATCH",
   "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
@@ -163,10 +165,10 @@
   "ALL",
   "WE DID THE MATH",
   "THE CATCH",
-  "WE DID THE MATH"
+  "WE DID THE MATH",
+  "THE CATCH"
  ],
  "recent_styles": [
-  "Before vs now: how this used to work vs what just changed",
   "Explainer: one big question, answered step by step with a surprise at the end",
   "Before vs now: how this used to work vs what just changed",
   "Explainer: one big question, answered step by step with a surprise at the end",
@@ -185,10 +187,10 @@
   "Countdown: 3-5 surprising facts about it, the most shocking one last",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Future scenario: 'It's 2040...' - show how this changes everyday life",
-  "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news"
+  "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
+  "Before vs now: how this used to work vs what just changed"
  ],
  "recent_themes": [
-  "navy",
   "blueprint",
   "navy",
   "footage",
@@ -207,6 +209,7 @@
   "blueprint",
   "footage",
   "blueprint",
-  "footage"
+  "footage",
+  "blueprint"
  ]
 }
