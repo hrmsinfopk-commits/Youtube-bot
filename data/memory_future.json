@@ -46,7 +46,8 @@
   "China's modular flying car docks inside a trunk.",
   "SpaceX is designing zero-gravity orbital factories to build massive rocket parts.",
   "Solar panels struggle to power a permanent base on the Moon.",
-  "Dead neutron stars pack city-sized mass into raw cosmic density."
+  "Dead neutron stars pack city-sized mass into raw cosmic density.",
+  "Euclid's telescope found an impossible black hole."
  ],
  "endings": [
   "Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -95,7 +96,8 @@
   "If modular flight surprises you, Tomorrowly has more ahead.",
   "If orbital factories become reality, manufacturing in space may change forever.",
   "If space nuclear power excites you, Tomorrowly has plenty more tech like this.",
-  "If space discoveries excite you, Tomorrowly has plenty more like this."
+  "If space discoveries excite you, Tomorrowly has plenty more like this.",
+  "If cosmic puzzles intrigue you, Tomorrowly explains them."
  ],
  "scripts": [
   "Firing a multi-thousand-dollar missile at a cheap consumer drone is a financial trap. That is why modern defense forces are shifting toward directed-energy systems. KBR has introduced a novel base defense technology to fix this exact problem. The solution relies on weaponized light, deploying concentrated laser beams directly against aerial targets. It is designed to instantly neutralize incoming unmanned aerial vehicles before they reach the perimeter. Send this to the friend who loves tracking future military tech. Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -144,10 +146,10 @@
   "China's modular flying car docks inside a trunk. Highway crash armor makes dual-purpose vehicles too heavy. So engineers built a rolling supercharger mothership instead. It hauls the weight, launching a lightweight autonomous drone. Deliveries are planned by 2027. If modular flight surprises you, Tomorrowly has more ahead.",
   "SpaceX is designing zero-gravity orbital factories to build massive rocket parts. Building in space means no heavy metal molds. Without gravity, liquid metal behaves differently, which can help shape certain structures. This could help reduce internal flaws that normally crack rockets under pressure. The catch is launching raw materials costs thousands of dollars per kilo. If orbital factories become reality, manufacturing in space may change forever.",
   "Solar panels struggle to power a permanent base on the Moon. Each lunar night down there lasts fourteen straight days of total darkness. That is like carrying a freight train of car batteries inside a rocket. Now NASA is partnering to build Lunar Reactor one, a compact fission engine. If space nuclear power excites you, Tomorrowly has plenty more tech like this.",
-  "Dead neutron stars pack city-sized mass into raw cosmic density. When two of them crash, they release a flash called a kilonova. These titanic impacts forge gold, platinum, and heavy elements. These building blocks eventually spread to form planets like Earth. Because they fade fast, NASA needs amateur astronomers to act as kilonova catchers. If space discoveries excite you, Tomorrowly has plenty more like this."
+  "Dead neutron stars pack city-sized mass into raw cosmic density. When two of them crash, they release a flash called a kilonova. These titanic impacts forge gold, platinum, and heavy elements. These building blocks eventually spread to form planets like Earth. Because they fade fast, NASA needs amateur astronomers to act as kilonova catchers. If space discoveries excite you, Tomorrowly has plenty more like this.",
+  "Euclid's telescope found an impossible black hole. It existed 630 million years after the Big Bang. Its core outshines hundreds of billions of stars. Normal growth takes billions of years. Giant gas clouds may have collapsed straight into a monster. If cosmic puzzles intrigue you, Tomorrowly explains them."
  ],
  "recent_signatures": [
-  "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
   "THE CATCH",
@@ -166,10 +168,10 @@
   "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
-  "THE CATCH"
+  "THE CATCH",
+  "WE DID THE MATH"
  ],
  "recent_styles": [
-  "Explainer: one big question, answered step by step with a surprise at the end",
   "Before vs now: how this used to work vs what just changed",
   "Explainer: one big question, answered step by step with a surprise at the end",
   "Myth vs fact: what people assume vs what is actually true",
@@ -188,10 +190,10 @@
   "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Future scenario: 'It's 2040...' - show how this changes everyday life",
   "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
-  "Before vs now: how this used to work vs what just changed"
+  "Before vs now: how this used to work vs what just changed",
+  "Shocking fact first: open with the most unbelievable detail, then explain why"
  ],
  "recent_themes": [
-  "blueprint",
   "navy",
   "footage",
   "blueprint",
@@ -210,6 +212,7 @@
   "footage",
   "blueprint",
   "footage",
-  "blueprint"
+  "blueprint",
+  "footage"
  ]
 }

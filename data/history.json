@@ -2947,6 +2947,57 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-25 23:17",
+   "type": "short",
+   "title": "Euclid Discovers the Universe's Oldest 'Impossible' Quasar #shorts",
+   "topic": "Euclid Telescope Discovers the Universe's Oldest 'Impossible' Quasar - ESA's dark matter telescope just shattered the cosmic distance record by finding a supermassive black hole quasar 40 million years earlier than anything known, presenting astronomers with a monster that shouldn't have had enough time to grow.",
+   "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
+   "youtube_id": "bGT2YcXt828",
+   "voice": "Charon",
+   "seconds": 24.1,
+   "scene_times": [
+    [
+     0.0,
+     "Euclid's telescope found an impossible black hole."
+    ],
+    [
+     3.9,
+     "It existed 630 million years after the Big Bang."
+    ],
+    [
+     8.3,
+     "Its core outshines hundreds of billions of stars."
+    ],
+    [
+     12.7,
+     "Normal growth takes billions of years."
+    ],
+    [
+     16.2,
+     "Giant gas clouds may have collapsed straight into a monster."
+    ],
+    [
+     20.4,
+     "If cosmic puzzles intrigue you, Tomorrowly explains them."
+    ]
+   ],
+   "format": "news",
+   "why": "Space mystery shorts consistently pull massive global viewership (recent deep-space Shorts generated between 1M and 14M views), and our channel's space content consistently achieves over 100% retention. This discovery is less than 48 hours old and provides a fresh astrophysics explainer that avoids recently covered topics like SpaceX, flying cars, and nuclear propulsion.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 2,
+    "own_share": 0.36,
+    "fact_fixes": 2,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -3684,6 +3735,16 @@
   "pixabay-v-19045",
   "pixabay-v-31569",
   "nasa-v-ksc_122104_telescope_program",
-  "pixabay-v-6045"
+  "pixabay-v-6045",
+  "wm-132020213",
+  "wm-132571306",
+  "wm-141833515",
+  "pixabay-v-137698",
+  "pixabay-v-129936",
+  "pixabay-v-138192",
+  "pixabay-v-267168",
+  "pixabay-v-126730",
+  "nasa-v-12987-Worth_the_Wait",
+  "nasa-v-ksc_111604_swift_checkout"
  ]
 }
