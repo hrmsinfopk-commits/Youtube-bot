@@ -2998,6 +2998,53 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-25 23:30",
+   "type": "short",
+   "title": "Why SpaceX Wants 1 Million Satellites for Space Data Centers #shorts",
+   "topic": "SpaceX's Plan to Put 1 Million Satellites in Orbit for Space Data Centers - Bypassing the standard satellite internet narrative to break down the mind-bending physics and engineering of why tech giants want to move giant AI compute servers into the freezing vacuum of space instead of Earth.",
+   "style": "Explainer: one big question, answered step by step with a surprise at the end",
+   "youtube_id": "1SzVIK6qbkM",
+   "voice": "Charon",
+   "seconds": 28.4,
+   "scene_times": [
+    [
+     0.0,
+     "Regulators just cleared SpaceX to launch a framework for up to one million satellites."
+    ],
+    [
+     6.3,
+     "In low Earth orbit, solar panels generate uninterrupted power without weather limits."
+    ],
+    [
+     11.9,
+     "But a vacuum has no air molecules, so heat cannot escape by convection."
+    ],
+    [
+     17.6,
+     "These orbital nodes must beam away excess heat using massive radiative panels."
+    ],
+    [
+     23.3,
+     "If orbital data centers surprise you, Tomorrowly has plenty more like it."
+    ]
+   ],
+   "format": "news",
+   "why": "Recent trending Shorts on space megastructures, SpaceX launches, and AI infrastructure easily capture millions of views (e.g. Starship chopsticks and space science trends surpassing 8M-16M views). With US regulatory approval just greenlit in late November 2026, this offers an untapped, massive-scale explainer on solving Earth's AI power and cooling crisis off-planet.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.2,
+    "fact_fixes": 1,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.0,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -3745,6 +3792,14 @@
   "pixabay-v-267168",
   "pixabay-v-126730",
   "nasa-v-12987-Worth_the_Wait",
-  "nasa-v-ksc_111604_swift_checkout"
+  "nasa-v-ksc_111604_swift_checkout",
+  "pixabay-v-301347",
+  "pixabay-v-323795",
+  "pixabay-v-107991",
+  "pixabay-v-216981",
+  "nasa-v-GSFC_20141015_ATLAS_m11709_RTA_exits_TVAC",
+  "nasa-v-A Future in Orbit",
+  "nasa-v-Our Planet Our Home An Earth Day Perspective_S",
+  "nasa-v-Seeing Earth as Only NASA Can"
  ]
 }
