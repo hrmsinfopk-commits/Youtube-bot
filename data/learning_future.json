@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "channel": {
-  "subscribers": 37,
-  "total_views": 34748,
-  "videos": 45,
-  "watch_hours_12m": 107.5
+  "subscribers": 40,
+  "total_views": 35171,
+  "videos": 46,
+  "watch_hours_12m": 111.9
  },
  "style_scores": {
   "Future scenario: 'It's 2040...' - show how this changes everyday life": 0.99,
@@ -20,25 +20,25 @@
   "short: news": {
    "videos": 28,
    "score": 0.98,
-   "avg_views": 871,
-   "avg_pct": 69.2
+   "avg_views": 874,
+   "avg_pct": 69.1
   },
   "short: big question": {
    "videos": 5,
-   "score": 0.95,
-   "avg_views": 861,
+   "score": 0.96,
+   "avg_views": 862,
    "avg_pct": 67.3
   },
   "short: teaser": {
-   "videos": 4,
+   "videos": 5,
    "score": 1.0,
-   "avg_views": 966,
-   "avg_pct": 69.2
+   "avg_views": 1005,
+   "avg_pct": 68.2
   },
   "long: deep dive": {
    "videos": 1,
    "score": 1.05,
-   "avg_views": 174,
+   "avg_views": 175,
    "avg_pct": 40.2
   },
   "long: big question": {
@@ -55,11 +55,13 @@
   }
  },
  "insights": [
-  "Space and aerospace news topics consistently achieve the highest view counts and engagement, outperforming other scientific categories.",
-  "Shorts that trigger high viewer drop-offs consistently lose audience members within the first 4 to 6 seconds due to weak opening hook sentences.",
-  "Long-form videos suffer from extremely low initial impressions and views (under 15 views generally), indicating that current long-form topic selection or packaging lacks discoverability.",
-  "Shorts with the 'Shocking fact first' style tend to secure higher view velocity and engagement compared to other formats.",
-  "Data for newer videos under 7 days old is currently too thin to draw final long-term performance conclusions, though early view velocity points to weak initial packaging for several recent uploads."
+  "Space exploration topics achieve the channel's highest retention, with multiple Shorts surpassing 100% average view percentage (Europa Clipper at 155%, Artemis III at 114%, and Voyager 1 at 106%).",
+  "Robotics and military tech generate the most reliable reach, consistently hitting 1,000 to 2,000 views, whereas medical and niche environmental topics severely underperformed under 250 views.",
+  "'Shocking fact first' and 'Myth vs fact' styles perform best overall for views and retention, whereas 'What if' formats struggled for reach (all under 400 views).",
+  "The 5 to 7 second mark is a critical drop-off zone across Shorts (often losing 4% to 8% of viewers immediately) when opening hooks shift too quickly into dry explanatory sentences.",
+  "Spoken channel plugs and CTAs around the 22 to 26 second mark ('Follow Tomorrowly...', 'If geology amazes you...') consistently cause 3% to 6% viewer drop-offs, killing loop potential.",
+  "Over 80% of Shorts received zero comments; current script endings fail to prompt audience discussion and need clear, opinion-driven questions.",
+  "Long-form data is too thin (only 6 videos, 5 stuck below 100 views) to evaluate style performance, pointing primarily to severe packaging (title/thumbnail) and initial reach bottlenecks."
  ],
  "videos": [
   {
@@ -79,7 +81,7 @@
     "Comments nahi aaye: aakhri sawal behtar hona chahiye."
    ],
    "traffic": null,
-   "age_days": 35,
+   "age_days": 36,
    "youtube_id": "J9O4qdiPSgk"
   },
   {
@@ -99,14 +101,14 @@
     "Comments nahi aaye: aakhri sawal behtar hona chahiye."
    ],
    "traffic": null,
-   "age_days": 35,
+   "age_days": 36,
    "youtube_id": "ujBL9LBgPHk"
   },
   {
    "title": "NASA's New Nuclear Spaceship: How SR-1 Freedom Changes Mars Travel",
    "type": "long",
    "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
-   "views": 174,
+   "views": 175,
    "averageViewPercentage": 40.18,
    "likes": 2,
    "comments": 0,
@@ -116,14 +118,14 @@
    "score": 1.05,
    "notes": [],
    "traffic": null,
-   "age_days": 34,
+   "age_days": 35,
    "youtube_id": "BZuC5VJ6kDM"
   },
   {
    "title": "NASA's First Nuclear Spaceship Built for Mars #shorts",
    "type": "short",
    "style": "",
-   "views": 392,
+   "views": 393,
    "averageViewPercentage": 66.32,
    "likes": 9,
    "comments": 0,
@@ -135,7 +137,7 @@
     "Comments nahi aaye: aakhri sawal behtar hona chahiye."
    ],
    "traffic": null,
-   "age_days": 34,
+   "age_days": 35,
    "youtube_id": "sWFi6T_3Kf8"
   },
   {
@@ -154,7 +156,7 @@
     "Jo log aaye unhon ne achhi dekhi, lekin bohat kam log aaye: topic/title/thumbnail ne kashish nahi ki."
    ],
    "traffic": null,
-   "age_days": 33,
+   "age_days": 34,
    "youtube_id": "RFzD-PyILsQ"
   },
   {
@@ -173,7 +175,7 @@
     "Comments nahi aaye: aakhri sawal behtar hona chahiye."
    ],
    "traffic": null,
-   "age_days": 32,
+   "age_days": 33,
    "youtube_id": "dck9ttHCJic"
   },
   {
@@ -192,7 +194,7 @@
     "Log jaldi chhod gaye: hook ya shuru ka hissa kamzor tha."
    ],
    "traffic": null,
-   "age_days": 31,
+   "age_days": 32,
    "youtube_id": "oGPOL4VkwGI"
   },
   {
@@ -209,7 +211,7 @@
    "score": 1.03,
    "notes": [],
    "traffic": null,
-   "age_days": 31,
+   "age_days": 32,
    "youtube_id": "5yhWmoUjmZY"
   },
   {
@@ -229,7 +231,7 @@
     "Average se kaafi behtar: yeh topic/andaaz dobara try karna chahiye."
    ],
    "traffic": null,
-   "age_days": 30,
+   "age_days": 31,
    "youtube_id": "CH5p37icZXU"
   },
   {
@@ -246,7 +248,7 @@
    "score": 1.01,
    "notes": [],
    "traffic": null,
-   "age_days": 30,
+   "age_days": 31,
    "youtube_id": "-oX0q-L56PM"
   },
   {
@@ -266,14 +268,14 @@
     "Comments nahi aaye: aakhri sawal behtar hona chahiye."
    ],
    "traffic": null,
-   "age_days": 29,
+   "age_days": 30,
    "youtube_id": "Pcj4yIUFDWs"
   },
   {
    "title": "Tesla Just Started Building Humanoid Robots on Real Production Lines #shorts",
    "type": "short",
    "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
-   "views": 1053,
+   "views": 1054,
    "averageViewPercentage": 59.08,
    "likes": 19,
    "comments": 0,
@@ -285,7 +287,7 @@
     "Comments nahi aaye: aakhri sawal behtar hona chahiye."
    ],
    "traffic": null,
-   "age_days": 28,
+   "age_days": 29,
    "youtube_id": "ID7098rLP6g"
   },
   {
@@ -305,7 +307,7 @@
     "Comments nahi aaye: aakhri sawal behtar hona chahiye."
    ],
    "traffic": null,
-   "age_days": 27,
+   "age_days": 28,
    "youtube_id": "G3FJYX7Fjv4"
   },
   {
@@ -322,7 +324,7 @@
    "score": 1.33,
    "notes": [],
    "traffic": null,
-   "age_days": 27,
+   "age_days": 28,
    "youtube_id": "OlcO352mcP4"
   },
   {
@@ -336,12 +338,12 @@
    "shares": 0,
    "subscribersGained": 1,
    "format": "big question",
-   "score": 1.05,
+   "score": 1.06,
    "notes": [
     "Average se kaafi behtar: yeh topic/andaaz dobara try karna chahiye."
    ],
    "traffic": null,
-   "age_days": 26,
+   "age_days": 27,
    "youtube_id": "L66lXYqmR7w"
   },
   {
@@ -358,14 +360,14 @@
    "score": 0.84,
    "notes": [],
    "traffic": null,
-   "age_days": 25,
+   "age_days": 26,
    "youtube_id": "yrzcrm1vSLY"
   },
   {
    "title": "US Army Tests Autonomous Combat Robots That Hunt Targets #shorts",
    "type": "short",
    "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
-   "views": 1994,
+   "views": 1995,
    "averageViewPercentage": 62.02000000000001,
    "likes": 45,
    "comments": 2,
@@ -377,14 +379,14 @@
     "Average se kaafi behtar: yeh topic/andaaz dobara try karna chahiye."
    ],
    "traffic": null,
-   "age_days": 24,
+   "age_days": 25,
    "youtube_id": "1anbm_UHR-w"
   },
   {
    "title": "How Maglev Trains Float Without Touching the Tracks",
    "type": "long",
    "style": "Before vs now: how this used to work vs what just changed",
-   "views": 96,
+   "views": 98,
    "averageViewPercentage": 29.31,
    "likes": 2,
    "comments": 0,
@@ -396,7 +398,7 @@
     "Log jaldi chhod gaye: hook ya shuru ka hissa kamzor tha."
    ],
    "traffic": null,
-   "age_days": 24,
+   "age_days": 25,
    "youtube_id": "xw8THeae5Ek"
   },
   {
@@ -413,7 +415,7 @@
    "score": 1.18,
    "notes": [],
    "traffic": null,
-   "age_days": 23,
+   "age_days": 24,
    "youtube_id": "-Rl6KWl7ygg"
   },
   {
@@ -428,19 +430,9 @@
    "subscribersGained": 1,
    "format": "news",
    "score": 0.99,
-   "notes": [
-    "Sab se zyada log 6.7s par chhod gaye (4.4% gire) - wahan line thi: \"Traditional quantum systems need giant room-sized freezers to function properly.\"."
-   ],
-   "traffic": {
-    "NO_LINK_OTHER": 0,
-    "SUBSCRIBER": 0,
-    "YT_CHANNEL": 0,
-    "YT_SEARCH": 14,
-    "YT_OTHER_PAGE": 3,
-    "SHORTS": 83,
-    "IMMERSIVE_LIVE": 0
-   },
-   "age_days": 21,
+   "notes": [],
+   "traffic": null,
+   "age_days": 22,
    "youtube_id": "4nHakSyIjVQ"
   },
   {
@@ -468,7 +460,7 @@
     "NOTIFICATION": 0,
     "SHORTS": 95
    },
-   "age_days": 20,
+   "age_days": 21,
    "youtube_id": "H14KvU2GdL0"
   },
   {
@@ -495,7 +487,7 @@
     "NOTIFICATION": 0,
     "SHORTS": 95
    },
-   "age_days": 20,
+   "age_days": 21,
    "youtube_id": "8465fDr77aU"
   },
   {
@@ -522,7 +514,7 @@
     "YT_OTHER_PAGE": 2,
     "SHORTS": 83
    },
-   "age_days": 18,
+   "age_days": 19,
    "youtube_id": "ZEOAv5rj1Nk"
   },
   {
@@ -550,7 +542,7 @@
     "PLAYLIST": 0,
     "SHORTS": 89
    },
-   "age_days": 18,
+   "age_days": 19,
    "youtube_id": "NLQTQQ15ct8"
   },
   {
@@ -575,7 +567,7 @@
     "YT_SEARCH": 14,
     "RELATED_VIDEO": 43
    },
-   "age_days": 17,
+   "age_days": 18,
    "youtube_id": "P0BubbItsl0"
   },
   {
@@ -602,7 +594,7 @@
     "YT_OTHER_PAGE": 1,
     "SHORTS": 96
    },
-   "age_days": 17,
+   "age_days": 18,
    "youtube_id": "iGO1RErj8eE"
   },
   {
@@ -629,7 +621,7 @@
     "YT_OTHER_PAGE": 2,
     "SHORTS": 88
    },
-   "age_days": 16,
+   "age_days": 17,
    "youtube_id": "bKNYiG4DQPA"
   },
   {
@@ -656,7 +648,7 @@
     "YT_OTHER_PAGE": 2,
     "SHORTS": 91
    },
-   "age_days": 15,
+   "age_days": 16,
    "youtube_id": "NqQpUszWLWY"
   },
   {
@@ -683,15 +675,15 @@
     "PLAYLIST": 1,
     "SHORTS": 55
    },
-   "age_days": 14,
+   "age_days": 15,
    "youtube_id": "7Fx6pMX3658"
   },
   {
    "title": "DARPA's Hypersonic Glider Bounces on Air #shorts",
    "type": "short",
    "style": "Myth vs fact: what people assume vs what is actually true",
-   "views": 499,
-   "averageViewPercentage": 65.27,
+   "views": 500,
+   "averageViewPercentage": 65.35,
    "likes": 5,
    "comments": 0,
    "shares": 0,
@@ -710,15 +702,15 @@
     "YT_OTHER_PAGE": 1,
     "SHORTS": 86
    },
-   "age_days": 13,
+   "age_days": 14,
    "youtube_id": "BVkvUKGWCnA"
   },
   {
    "title": "Boston Dynamics Atlas Robot Starts Real Factory Jobs #shorts",
    "type": "short",
    "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
-   "views": 1023,
-   "averageViewPercentage": 58.77,
+   "views": 1027,
+   "averageViewPercentage": 58.79,
    "likes": 17,
    "comments": 0,
    "shares": 0,
@@ -733,12 +725,12 @@
     "NO_LINK_OTHER": 0,
     "SUBSCRIBER": 0,
     "YT_CHANNEL": 0,
-    "YT_SEARCH": 5,
+    "YT_SEARCH": 6,
     "YT_OTHER_PAGE": 3,
     "EXT_URL": 0,
     "SHORTS": 91
    },
-   "age_days": 13,
+   "age_days": 14,
    "youtube_id": "826O8qnJi5Y"
   },
   {
@@ -766,7 +758,7 @@
     "EXT_URL": 0,
     "SHORTS": 90
    },
-   "age_days": 12,
+   "age_days": 13,
    "youtube_id": "yxnz4y441t4"
   },
   {
@@ -794,7 +786,7 @@
     "YT_OTHER_PAGE": 2,
     "SHORTS": 90
    },
-   "age_days": 11,
+   "age_days": 12,
    "youtube_id": "bciNKzWrsHk"
   },
   {
@@ -819,7 +811,7 @@
     "YT_SEARCH": 31,
     "RELATED_VIDEO": 23
    },
-   "age_days": 10,
+   "age_days": 11,
    "youtube_id": "74vcxIbIMTk"
   },
   {
@@ -846,7 +838,7 @@
     "YT_OTHER_PAGE": 1,
     "SHORTS": 90
    },
-   "age_days": 10,
+   "age_days": 11,
    "youtube_id": "0U0O-P43MNQ"
   },
   {
@@ -872,7 +864,7 @@
     "YT_OTHER_PAGE": 1,
     "SHORTS": 94
    },
-   "age_days": 9,
+   "age_days": 10,
    "youtube_id": "ReBCD46L--8"
   },
   {
@@ -898,7 +890,7 @@
     "YT_OTHER_PAGE": 2,
     "SHORTS": 93
    },
-   "age_days": 8,
+   "age_days": 9,
    "youtube_id": "wdrn65HCe8w"
   },
   {
@@ -924,15 +916,15 @@
     "YT_OTHER_PAGE": 11,
     "SHORTS": 27
    },
-   "age_days": 7,
+   "age_days": 8,
    "youtube_id": "EE1rIW98gto"
   },
   {
    "title": "How Starlink Direct-to-Cell Tech Bypasses Dead Zones #shorts",
    "type": "short",
    "style": "Myth vs fact: what people assume vs what is actually true",
-   "views": 122,
-   "averageViewPercentage": 47.95,
+   "views": 126,
+   "averageViewPercentage": 47.72,
    "likes": 2,
    "comments": 0,
    "shares": 0,
@@ -941,16 +933,16 @@
    "score": 0.7,
    "notes": [
     "Log jaldi chhod gaye: hook ya shuru ka hissa kamzor tha.",
-    "Sab se zyada log 5.2s par chhod gaye (8.5% gire) - wahan line thi: \"Starlink satellites now connect standard mobile phones straight from orbit.\"."
+    "Sab se zyada log 5.2s par chhod gaye (8.3% gire) - wahan line thi: \"Starlink satellites now connect standard mobile phones straight from orbit.\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "YT_CHANNEL": 2,
-    "YT_SEARCH": 23,
+    "YT_SEARCH": 25,
     "YT_OTHER_PAGE": 2,
-    "SHORTS": 73
+    "SHORTS": 71
    },
-   "age_days": 6,
+   "age_days": 7,
    "youtube_id": "n-STASASC2k"
   },
   {
@@ -976,15 +968,15 @@
     "YT_OTHER_PAGE": 1,
     "SHORTS": 90
    },
-   "age_days": 6,
+   "age_days": 7,
    "youtube_id": "7w9fmOy9IXQ"
   },
   {
    "title": "How Do Nuclear Submarines Create Oxygen Underwater? #shorts",
    "type": "short",
    "style": "Myth vs fact: what people assume vs what is actually true",
-   "views": 1288,
-   "averageViewPercentage": 60.83,
+   "views": 1293,
+   "averageViewPercentage": 60.9,
    "likes": 16,
    "comments": 0,
    "shares": 0,
@@ -993,7 +985,7 @@
    "score": 0.97,
    "notes": [
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
-    "Sab se zyada log 4.8s par chhod gaye (5.6% gire) - wahan line thi: \"Nuclear submarines stay submerged for months without ever surfacing for fresh ai\"."
+    "Sab se zyada log 4.8s par chhod gaye (5.4% gire) - wahan line thi: \"Nuclear submarines stay submerged for months without ever surfacing for fresh ai\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
@@ -1002,15 +994,15 @@
     "YT_OTHER_PAGE": 1,
     "SHORTS": 94
    },
-   "age_days": 5,
+   "age_days": 6,
    "youtube_id": "YZo2-LOkvr8"
   },
   {
    "title": "Fastest Soft Robot Moves Without Electronics - How Fluid Dynamics Replaced Batteries #shorts",
    "type": "short",
    "style": "Before vs now: how this used to work vs what just changed",
-   "views": 113,
-   "averageViewPercentage": 59.089999999999996,
+   "views": 131,
+   "averageViewPercentage": 57.72999999999999,
    "likes": 2,
    "comments": 0,
    "shares": 0,
@@ -1018,16 +1010,16 @@
    "format": "news",
    "score": 0.78,
    "notes": [
-    "Sab se zyada log 4.9s par chhod gaye (5.6% gire) - wahan line thi: \"UC San Diego engineers just built the fastest soft robot ever created.\"."
+    "Sab se zyada log 13.6s par chhod gaye (5.1% gire) - wahan line thi: \"Compressed air pushes through internal channels to drive movement.\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "YT_CHANNEL": 2,
-    "YT_SEARCH": 33,
+    "YT_SEARCH": 36,
     "YT_OTHER_PAGE": 4,
-    "SHORTS": 61
+    "SHORTS": 59
    },
-   "age_days": 4,
+   "age_days": 5,
    "youtube_id": "kSZEC4J9GxE"
   },
   {
@@ -1050,16 +1042,16 @@
     "SUBSCRIBER": 92,
     "NOTIFICATION": 8
    },
-   "age_days": 3,
+   "age_days": 4,
    "youtube_id": "3mZqe5gm-0U"
   },
   {
    "title": "How China's Modular Flying Car Solved a Nearly Impossible Dilemma #shorts",
    "type": "short",
    "style": "Shocking fact first: open with the most unbelievable detail, then explain why",
-   "views": 915,
-   "averageViewPercentage": 57.43000000000001,
-   "likes": 6,
+   "views": 969,
+   "averageViewPercentage": 57.24,
+   "likes": 8,
    "comments": 0,
    "shares": 0,
    "subscribersGained": 0,
@@ -1067,17 +1059,41 @@
    "score": 0.92,
    "notes": [
     "Comments nahi aaye: aakhri sawal behtar hona chahiye.",
-    "Sab se zyada log 5.2s par chhod gaye (9.0% gire) - wahan line thi: \"Highway crash armor makes dual-purpose vehicles too heavy.\"."
+    "Sab se zyada log 5.2s par chhod gaye (8.8% gire) - wahan line thi: \"Highway crash armor makes dual-purpose vehicles too heavy.\"."
    ],
    "traffic": {
     "NO_LINK_OTHER": 0,
     "YT_CHANNEL": 0,
-    "YT_SEARCH": 3,
+    "YT_SEARCH": 5,
     "YT_OTHER_PAGE": 1,
-    "SHORTS": 96
+    "SHORTS": 94
+   },
+   "age_days": 4,
+   "youtube_id": "KU0Xa9nSKuw"
+  },
+  {
+   "title": "Why SpaceX Wants to Build Rocket Parts in Space #shorts",
+   "type": "short",
+   "style": "Future scenario: 'It's 2040...' - show how this changes everyday life",
+   "views": 1159,
+   "averageViewPercentage": 64.29,
+   "likes": 20,
+   "comments": 2,
+   "shares": 0,
+   "subscribersGained": 1,
+   "format": "teaser",
+   "score": 0.99,
+   "notes": [
+    "Sab se zyada log 5.1s par chhod gaye (4.0% gire) - wahan line thi: \"SpaceX is designing zero-gravity orbital factories to build massive rocket parts\"."
+   ],
+   "traffic": {
+    "NO_LINK_OTHER": 0,
+    "YT_SEARCH": 6,
+    "YT_OTHER_PAGE": 2,
+    "SHORTS": 92
    },
    "age_days": 3,
-   "youtube_id": "KU0Xa9nSKuw"
+   "youtube_id": "8DjpiDivwq8"
   }
  ]
 }
