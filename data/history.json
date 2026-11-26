@@ -3045,6 +3045,61 @@
     "concept_share": 0.0,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-26 23:12",
+   "type": "short",
+   "title": "Why Ocean Bridges Almost Never Rust in Saltwater #shorts",
+   "topic": "How Do Bridges Never Rust in Saltwater? - A massive steel structure sits submerged in corrosive saltwater for decades, yet completely defies rust.",
+   "style": "Countdown: 3-5 surprising facts about it, the most shocking one last",
+   "youtube_id": "map9npQrIeU",
+   "voice": "Charon",
+   "seconds": 35.4,
+   "scene_times": [
+    [
+     0.0,
+     "Steel ocean bridges sit in saltwater without rotting away."
+    ],
+    [
+     4.4,
+     "Three: salt turns seawater into a rapid rust engine."
+    ],
+    [
+     9.2,
+     "Two: engineers bolt sacrificial zinc blocks directly to underwater pilings."
+    ],
+    [
+     15.7,
+     "Zinc releases electrons to the steel, halting oxidation completely."
+    ],
+    [
+     21.0,
+     "One: modern bridges actually pump live electric current into the steel."
+    ],
+    [
+     26.5,
+     "Still, crews must dive down and replace those crumbling blocks regularly."
+    ],
+    [
+     30.6,
+     "If marine engineering surprises you, Tomorrowly has plenty more ahead."
+    ]
+   ],
+   "format": "big question",
+   "why": "Zack D. Films style engineering explainers regularly pull tens of millions of views because they reveal hidden answers to everyday mysteries. This question leverages an impossible-sounding contradiction that triggers immediate curiosity from a global tech and science audience.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.13,
+    "fact_fixes": 0,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.14,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -3800,6 +3855,15 @@
   "nasa-v-GSFC_20141015_ATLAS_m11709_RTA_exits_TVAC",
   "nasa-v-A Future in Orbit",
   "nasa-v-Our Planet Our Home An Earth Day Perspective_S",
-  "nasa-v-Seeing Earth as Only NASA Can"
+  "nasa-v-Seeing Earth as Only NASA Can",
+  "pixabay-v-247893",
+  "pixabay-v-215485",
+  "pixabay-v-319587",
+  "wm-4088048",
+  "pixabay-v-85824",
+  "pixabay-v-2151",
+  "pixabay-v-247893",
+  "pixabay-v-119461",
+  "pixabay-v-22705"
  ]
 }
