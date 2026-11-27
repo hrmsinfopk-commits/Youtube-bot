@@ -1,4 +1,4 @@
-[00:57:19] Channel: Tomorrowly (future, mode=facts)
+[02:41:32] Channel: Tomorrowly (future, mode=facts)
 /home/runner/work/Youtube-bot/Youtube-bot/bot/main.py:489: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   now = datetime.datetime.utcnow()
-[00:57:19] Back-up run: today's short is already up (Why Ocean Bridges Almost Never Rust in Saltwater #shorts) - nothing to do
+[02:41:32] Back-up run: today's short is already up (Why Ocean Bridges Almost Never Rust in Saltwater #shorts) - nothing to do
