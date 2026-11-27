@@ -1,79 +1,90 @@
 {
- "topic": "How Do Bridges Never Rust in Saltwater?",
- "angle": "A massive steel structure sits submerged in corrosive saltwater for decades, yet completely defies rust.",
- "why": "Zack D. Films style engineering explainers regularly pull tens of millions of views because they reveal hidden answers to everyday mysteries. This question leverages an impossible-sounding contradiction that triggers immediate curiosity from a global tech and science audience.",
+ "topic": "AI Cracks 167-Year-Old Math Mystery",
+ "angle": "Bypassing generic AI hype to explain how Claude helped a mathematician make a breakthrough on a 167-year-old prime number puzzle that baffled humanity for nearly two centuries.",
+ "why": "Massive viral interest is exploding right now, with 3Blue1Brown's video hitting 3.5 million views in five days and related Shorts pulling over 1.3 million views. This gives Tomorrowly a timely, high-retention angle on AI transitioning from chatbots to cracking frontier theoretical science without competing in saturated political news.",
  "keywords": [
-  "how do bridges not rust",
-  "saltwater corrosion prevention",
-  "cathodic protection explained",
-  "sacrificial anodes engineering",
-  "how steel bridges survive ocean water",
-  "marine engineering secrets",
-  "corrosion science",
-  "how do bridge pilings stay strong",
-  "civil engineering marvels",
-  "why ocean metal doesn't rust",
-  "preventing rust underwater",
-  "tomorrowly science"
+  "AI solves Riemann hypothesis",
+  "Anthropic AI breakthrough",
+  "Claude AI math problem",
+  "Riemann hypothesis explained",
+  "167 year old math mystery",
+  "AI scientific discovery",
+  "Levent Alpoge AI math",
+  "artificial intelligence breakthrough 2026",
+  "future of AI reasoning",
+  "AI solves unsolved math problem",
+  "prime number pattern AI",
+  "can AI solve math puzzles"
  ],
  "facts": [
-  "Pure iron and standard steel naturally rust rapidly when exposed to oxygen and saltwater due to electrochemical reactions.",
-  "Ocean water is highly conductive because of dissolved salts, accelerating the corrosion process compared to freshwater.",
-  "Mega bridges crossing saltwater use massive steel and concrete foundations that sit directly in the corrosive ocean environment.",
-  "Engineers use a technique called cathodic protection to stop rust before it starts on underwater metal.",
-  "Cathodic protection works by turning the entire steel structure into the cathode of an electrical cell.",
-  "To protect the steel, engineers attach blocks of more reactive metals like zinc or aluminum to the structure.",
-  "These blocks are known as sacrificial anodes because they intentionally corrode instead of the expensive structural steel.",
-  "Because zinc has a higher electrochemical potential than steel, electrons flow from the zinc to the steel.",
-  "This electron flow forces the steel to accept electrons rather than lose them, halting the oxidation process entirely.",
-  "Engineers also use specialized waterproof concrete mixes packed with epoxy-coated rebar for extra protection.",
-  "Some modern marine structures use impressed current cathodic protection, which uses an external DC power source to continuously push electrons into the steel.",
-  "Maintenance crews regularly inspect and replace the sacrificial zinc anodes every few years as they slowly waste away.",
-  "Without these active anti-corrosion engineering systems, massive ocean bridges would structurally weaken and fail within a couple of decades."
+  "In 1859—exactly 167 years ago—German mathematician Bernhard Riemann formulated the famous Riemann Hypothesis regarding the distribution of prime numbers.",
+  "Prime numbers are the fundamental building blocks of mathematics and underpin modern digital encryption and cybersecurity systems worldwide.",
+  "The Riemann Hypothesis is widely regarded by mathematicians as the most important and difficult unsolved problem in pure mathematics.",
+  "It is officially designated as one of the seven Millennium Prize Problems by the Clay Mathematics Institute, with a standing 1-million-dollar reward for its proof.",
+  "Mathematician Levent Alpoge announced an AI-assisted research breakthrough tackling aspects of this 167-year-old mathematical conundrum [claimed/announced].",
+  "The breakthrough was achieved in collaboration with advanced AI models developed by Anthropic, including Claude.",
+  "Rather than simply calculating numbers, the AI model was used as a reasoning co-pilot to help identify logical bridges and steps that human mathematicians had missed for generations.",
+  "The claimed advance is currently undergoing scrutiny, verification, and formal peer review within the international mathematical community [claimed].",
+  "Unlike standard AI prompts that hallucinate text, mathematicians pair frontier models with formal proof verification systems to ensure every logical deduction is mathematically valid.",
+  "This milestone represents a dramatic shift in AI capability, proving neural networks can contribute to pure abstract human reasoning rather than just summarizing text or generating media.",
+  "The mathematical problem referenced is identified as the Riemann Hypothesis.",
+  "Anthropic's AI system, Claude, is claimed to potentially have solved the mystery.",
+  "A researcher named Levent Alpoge at Anthropic reportedly utilized Claude to tackle the problem.",
+  "It is claimed that the researcher cannot yet fully explain the AI-generated solution.",
+  "The mathematical mystery is reported to be valued at one million dollars.",
+  "Sources describe the problem as having stumped experts for 165 years or dating back 167 years.",
+  "Actor Matt Damon is reported to have a connection to the unfolding topic.",
+  "UCLA media is among the institutions reporting on whether AI resolved the question."
  ],
  "long_format": null,
- "format": "big question",
- "sources": [],
+ "format": "news",
+ "sources": [
+  {
+   "title": "Anthropic mathematician claims AI-assisted breakthrough on 167-year-old math problem",
+   "source": "Anadolu Ajansı",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYzhLSXhIeUczb2UxOHI4ZjN5bHZJODBHLWhub2hwUk9iX1hicVRXa0RRWmtFQXdtNC1jSUVUblpwRzFYSnlDWFNEYTE1X3A1eVp6eGVGdHlUdGR4MElIS01QbzlXc3N2ZTM3MVZjcUlVNXFGVEMxQTVZMmptVkhLa2pCQWJqZ0pMUDlVSERUNDc5SXgtdkdFQ3AxUWR6RHlkZEZ5cVV5Q1JSSVZEdE9LT0JWc2stSWtMRDhBTjFtdjdSaGRT?oc=5"
+  }
+ ],
  "youtube_top": [
   {
-   "title": "do you think he’s tired of me 🙂‍↕️ #hair #singing",
-   "views": 123931337
+   "title": "How This Device Copies Keys In Seconds",
+   "views": 17086681
   },
   {
-   "title": "You Can't Order Here Unless You Build With LEGO 🤯",
-   "views": 101321517
+   "title": "He scribbled on his CPU with a pencil… and it got 50% faster",
+   "views": 17053081
   },
   {
-   "title": "Can AI Build the Perfect Secret Room? Download Copilot! #CopilotPartner",
-   "views": 86700635
+   "title": "Your Flashlight vs. Voyager 1",
+   "views": 14084959
   },
   {
-   "title": "Satisfying 3D Print ASMR You Can’t Look Away From! 🎧🤫 #shorts",
-   "views": 83261549
+   "title": "NASA Again Did the IMPOSSIBLE! 1 Light Day in Space By Humans! Astronauts HAPPY! #shorts",
+   "views": 8306957
   },
   {
-   "title": "Build It, Go There!",
-   "views": 79998629
+   "title": "I need to find my PlayStation portal..",
+   "views": 6402627
   },
   {
-   "title": "How Electrical Outlets Work 🤔",
-   "views": 78785496
+   "title": "🇮🇳⚙️ Precision Assembly of Digital Tally Counters🇮🇳 #factoryprocess  #indianflag #factoryproducts",
+   "views": 6032763
   },
   {
-   "title": "How Long Does It Take To Build The Lego World Cup Trophy?",
-   "views": 77190946
+   "title": "Stop Buying Disposables — Switch to Mupoer AA Rechargeable Batteries #xbox  #rechargeablebatteries",
+   "views": 6004308
   },
   {
-   "title": "The Closest Thing We Have to Alien Technology",
-   "views": 67590864
+   "title": "Brilliant Mouse Design 🤯",
+   "views": 5985300
   },
   {
-   "title": "Steve Ballmer Explains: How Does Government Assistance Work? | Just the Facts",
-   "views": 63140317
+   "title": "Amazing Islamic Robot Helps Three Pilgrims at Holy Kaaba! 🤖🌙 #islam #islamicvideo #shorts #trending",
+   "views": 5424580
   },
   {
-   "title": "Mount St. Helens Eruption",
-   "views": 62857413
+   "title": "The robot that wants to take control of your life",
+   "views": 4843023
   }
  ]
 }

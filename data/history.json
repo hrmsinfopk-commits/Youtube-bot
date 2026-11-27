@@ -3100,6 +3100,57 @@
     "concept_share": 0.14,
     "fallback_scenes": 0
    }
+  },
+  {
+   "date": "2026-11-27 22:51",
+   "type": "short",
+   "title": "AI Solves Riemann Hypothesis? Claude's 167-Year Mystery #shorts",
+   "topic": "AI Cracks 167-Year-Old Math Mystery - Bypassing generic AI hype to explain how Claude helped a mathematician make a breakthrough on a 167-year-old prime number puzzle that baffled humanity for nearly two centuries.",
+   "style": "Before vs now: how this used to work vs what just changed",
+   "youtube_id": "ah9Hq2Ic4rs",
+   "voice": "Charon",
+   "seconds": 28.0,
+   "scene_times": [
+    [
+     0.0,
+     "Claude just tackled math's 167-year-old mystery."
+    ],
+    [
+     5.0,
+     "For generations, humans failed to explain the distribution of prime numbers."
+    ],
+    [
+     10.7,
+     "Now, AI spots logical steps humans missed."
+    ],
+    [
+     14.9,
+     "Formal verification systems ensure every logical deduction is mathematically valid."
+    ],
+    [
+     20.3,
+     "But this claimed breakthrough is still under review."
+    ],
+    [
+     23.0,
+     "If machine reasoning intrigues you, Tomorrowly tracks what comes."
+    ]
+   ],
+   "format": "news",
+   "why": "Massive viral interest is exploding right now, with 3Blue1Brown's video hitting 3.5 million views in five days and related Shorts pulling over 1.3 million views. This gives Tomorrowly a timely, high-retention angle on AI transitioning from chatbots to cracking frontier theoretical science without competing in saturated political news.",
+   "facts": [],
+   "keywords": [],
+   "gate": {
+    "graphics": 1,
+    "own_share": 0.15,
+    "fact_fixes": 2,
+    "source_overlap": 0.0,
+    "script_ok": true,
+    "problems": [],
+    "fit_share": 1.0,
+    "concept_share": 0.17,
+    "fallback_scenes": 0
+   }
   }
  ],
  "used_media": [
@@ -3864,6 +3915,17 @@
   "pixabay-v-2151",
   "pixabay-v-247893",
   "pixabay-v-119461",
-  "pixabay-v-22705"
+  "pixabay-v-22705",
+  "pixabay-v-278200",
+  "pixabay-v-9086",
+  "pixabay-v-131309",
+  "pixabay-v-5088",
+  "pixabay-v-107189",
+  "pixabay-v-379470",
+  "pixabay-v-159027",
+  "pixabay-v-159025",
+  "pixabay-v-2340",
+  "pixabay-v-88117",
+  "pixabay-v-45961"
  ]
 }

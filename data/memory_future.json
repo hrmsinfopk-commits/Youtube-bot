@@ -49,7 +49,8 @@
   "Dead neutron stars pack city-sized mass into raw cosmic density.",
   "Euclid's telescope found an impossible black hole.",
   "Regulators just cleared SpaceX to launch a framework for up to one million satellites.",
-  "Steel ocean bridges sit in saltwater without rotting away."
+  "Steel ocean bridges sit in saltwater without rotting away.",
+  "Claude just tackled math's 167-year-old mystery."
  ],
  "endings": [
   "Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -101,7 +102,8 @@
   "If space discoveries excite you, Tomorrowly has plenty more like this.",
   "If cosmic puzzles intrigue you, Tomorrowly explains them.",
   "If orbital data centers surprise you, Tomorrowly has plenty more like it.",
-  "If marine engineering surprises you, Tomorrowly has plenty more ahead."
+  "If marine engineering surprises you, Tomorrowly has plenty more ahead.",
+  "If machine reasoning intrigues you, Tomorrowly tracks what comes."
  ],
  "scripts": [
   "Firing a multi-thousand-dollar missile at a cheap consumer drone is a financial trap. That is why modern defense forces are shifting toward directed-energy systems. KBR has introduced a novel base defense technology to fix this exact problem. The solution relies on weaponized light, deploying concentrated laser beams directly against aerial targets. It is designed to instantly neutralize incoming unmanned aerial vehicles before they reach the perimeter. Send this to the friend who loves tracking future military tech. Hype meter score for this directed-energy breakthrough is a solid seven out of ten.",
@@ -153,10 +155,10 @@
   "Dead neutron stars pack city-sized mass into raw cosmic density. When two of them crash, they release a flash called a kilonova. These titanic impacts forge gold, platinum, and heavy elements. These building blocks eventually spread to form planets like Earth. Because they fade fast, NASA needs amateur astronomers to act as kilonova catchers. If space discoveries excite you, Tomorrowly has plenty more like this.",
   "Euclid's telescope found an impossible black hole. It existed 630 million years after the Big Bang. Its core outshines hundreds of billions of stars. Normal growth takes billions of years. Giant gas clouds may have collapsed straight into a monster. If cosmic puzzles intrigue you, Tomorrowly explains them.",
   "Regulators just cleared SpaceX to launch a framework for up to one million satellites. In low Earth orbit, solar panels generate uninterrupted power without weather limits. But a vacuum has no air molecules, so heat cannot escape by convection. These orbital nodes must beam away excess heat using massive radiative panels. If orbital data centers surprise you, Tomorrowly has plenty more like it.",
-  "Steel ocean bridges sit in saltwater without rotting away. Three: salt turns seawater into a rapid rust engine. Two: engineers bolt sacrificial zinc blocks directly to underwater pilings. Zinc releases electrons to the steel, halting oxidation completely. One: modern bridges actually pump live electric current into the steel. Still, crews must dive down and replace those crumbling blocks regularly. If marine engineering surprises you, Tomorrowly has plenty more ahead."
+  "Steel ocean bridges sit in saltwater without rotting away. Three: salt turns seawater into a rapid rust engine. Two: engineers bolt sacrificial zinc blocks directly to underwater pilings. Zinc releases electrons to the steel, halting oxidation completely. One: modern bridges actually pump live electric current into the steel. Still, crews must dive down and replace those crumbling blocks regularly. If marine engineering surprises you, Tomorrowly has plenty more ahead.",
+  "Claude just tackled math's 167-year-old mystery. For generations, humans failed to explain the distribution of prime numbers. Now, AI spots logical steps humans missed. Formal verification systems ensure every logical deduction is mathematically valid. But this claimed breakthrough is still under review. If machine reasoning intrigues you, Tomorrowly tracks what comes."
  ],
  "recent_signatures": [
-  "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
   "THE CATCH",
@@ -175,10 +177,10 @@
   "WE DID THE MATH",
   "THE CATCH",
   "WE DID THE MATH",
-  "THE CATCH"
+  "THE CATCH",
+  "WE DID THE MATH"
  ],
  "recent_styles": [
-  "Explainer: one big question, answered step by step with a surprise at the end",
   "Myth vs fact: what people assume vs what is actually true",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
   "Myth vs fact: what people assume vs what is actually true",
@@ -197,10 +199,10 @@
   "What if: put the viewer inside a vivid 'what if you...' scenario built on the real news",
   "Before vs now: how this used to work vs what just changed",
   "Shocking fact first: open with the most unbelievable detail, then explain why",
-  "Countdown: 3-5 surprising facts about it, the most shocking one last"
+  "Countdown: 3-5 surprising facts about it, the most shocking one last",
+  "Before vs now: how this used to work vs what just changed"
  ],
  "recent_themes": [
-  "footage",
   "blueprint",
   "footage",
   "blueprint",
@@ -219,6 +221,7 @@
   "footage",
   "blueprint",
   "footage",
-  "navy"
+  "navy",
+  "blueprint"
  ]
 }
